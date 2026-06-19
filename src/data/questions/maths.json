@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "mth-mult-001",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 2 \u00d7 3?",
+    "options": [
+      "5",
+      "6",
+      "8",
+      "4"
+    ],
+    "answer": "6",
+    "explanation": "2 \u00d7 3 = 6. Think of it as 2 groups of 3: \ud83c\udf4e\ud83c\udf4e\ud83c\udf4e and \ud83c\udf4e\ud83c\udf4e\ud83c\udf4e = 6 apples!"
+  },
+  {
+    "id": "mth-mult-002",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 5 \u00d7 4?",
+    "options": [
+      "9",
+      "20",
+      "15",
+      "25"
+    ],
+    "answer": "20",
+    "explanation": "5 \u00d7 4 = 20. Count by 5s: 5, 10, 15, 20!"
+  },
+  {
+    "id": "mth-mult-003",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 6 \u00d7 7?",
+    "options": [
+      "42",
+      "36",
+      "48",
+      "13"
+    ],
+    "answer": "42",
+    "explanation": "6 \u00d7 7 = 42. A fun trick: 5,6,7,8 \u2014 56 = 7\u00d78. And 42 = 6\u00d77!"
+  },
+  {
+    "id": "mth-mult-004",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 8 \u00d7 9?",
+    "options": [
+      "63",
+      "72",
+      "81",
+      "54"
+    ],
+    "answer": "72",
+    "explanation": "8 \u00d7 9 = 72. Try: 8 \u00d7 10 = 80, then subtract 8: 80 - 8 = 72!"
+  },
+  {
+    "id": "mth-mult-005",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 10 \u00d7 7?",
+    "options": [
+      "17",
+      "70",
+      "77",
+      "700"
+    ],
+    "answer": "70",
+    "explanation": "Multiplying by 10 is easy \u2014 just add a zero! 7 \u00d7 10 = 70."
+  },
+  {
+    "id": "mth-mult-006",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 3 \u00d7 9?",
+    "options": [
+      "27",
+      "21",
+      "18",
+      "30"
+    ],
+    "answer": "27",
+    "explanation": "3 \u00d7 9 = 27. Trick: the digits of 9 times tables always add up to 9! 2+7 = 9 \u2713"
+  },
+  {
+    "id": "mth-mult-007",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 4 \u00d7 8?",
+    "options": [
+      "24",
+      "36",
+      "32",
+      "28"
+    ],
+    "answer": "32",
+    "explanation": "4 \u00d7 8 = 32. Remember: 4\u00d78 is the same as doubling 4 three times: 4\u21928\u219216\u219232!"
+  },
+  {
+    "id": "mth-mult-008",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 7 \u00d7 7?",
+    "options": [
+      "42",
+      "49",
+      "56",
+      "14"
+    ],
+    "answer": "49",
+    "explanation": "7 \u00d7 7 = 49. Seven sevens are forty-nine!"
+  },
+  {
+    "id": "mth-mult-009",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 12 \u00d7 3?",
+    "options": [
+      "33",
+      "36",
+      "15",
+      "30"
+    ],
+    "answer": "36",
+    "explanation": "12 \u00d7 3 = 36. Think of it as 10\u00d73 + 2\u00d73 = 30 + 6 = 36!"
+  },
+  {
+    "id": "mth-mult-010",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 6 \u00d7 8?",
+    "options": [
+      "42",
+      "56",
+      "48",
+      "36"
+    ],
+    "answer": "48",
+    "explanation": "6 \u00d7 8 = 48. Try 6\u00d78 = 6\u00d74\u00d72 = 24\u00d72 = 48!"
+  },
+  {
+    "id": "mth-mult-011",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 7 \u00d7 8?",
+    "options": [
+      "54",
+      "56",
+      "58",
+      "62"
+    ],
+    "answer": "56",
+    "explanation": "7 \u00d7 8 = 56. Remember: 5,6,7,8 \u2014 56 = 7\u00d78!"
+  },
+  {
+    "id": "mth-mult-012",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 11 \u00d7 4?",
+    "options": [
+      "40",
+      "44",
+      "48",
+      "52"
+    ],
+    "answer": "44",
+    "explanation": "11 \u00d7 4 = 44. The 11 times table is easy \u2014 the answer repeats the digit: 11\u00d74 = 44, 11\u00d75 = 55!"
+  },
+  {
+    "id": "mth-mult-013",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A week has 7 days. How many days in 4 weeks?",
+    "options": [
+      "21",
+      "24",
+      "28",
+      "35"
+    ],
+    "answer": "28",
+    "explanation": "4 \u00d7 7 = 28 days. We use multiplication to find totals of equal groups!"
+  },
+  {
+    "id": "mth-mult-014",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A box has 9 rows of 8 eggs. How many eggs in the box?",
+    "options": [
+      "63",
+      "72",
+      "80",
+      "81"
+    ],
+    "answer": "72",
+    "explanation": "9 \u00d7 8 = 72 eggs. The times tables tell us how many are in equal groups!"
+  },
+  {
+    "id": "mth-mult-015",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 12 \u00d7 12?",
+    "options": [
+      "132",
+      "140",
+      "144",
+      "148"
+    ],
+    "answer": "144",
+    "explanation": "12 \u00d7 12 = 144. You can work it out as 12\u00d710 + 12\u00d72 = 120 + 24 = 144!"
+  },
+  {
+    "id": "mth-frac-001",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is half of 20?",
+    "options": [
+      "5",
+      "15",
+      "10",
+      "25"
+    ],
+    "answer": "10",
+    "explanation": "Half means dividing by 2. 20 \u00f7 2 = 10!"
+  },
+  {
+    "id": "mth-frac-002",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "If a pizza is cut into 4 equal pieces and you eat 1 piece, what fraction did you eat?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "2/4"
+    ],
+    "answer": "1/4",
+    "explanation": "1 piece out of 4 total = one quarter (1/4)!"
+  },
+  {
+    "id": "mth-frac-003",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which fraction is the biggest?",
+    "options": [
+      "1/4",
+      "1/2",
+      "1/8",
+      "1/6"
+    ],
+    "answer": "1/2",
+    "explanation": "The bigger the bottom number (denominator), the smaller the fraction! 1/2 is the biggest here."
+  },
+  {
+    "id": "mth-frac-004",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 1/4 of 12?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "2"
+    ],
+    "answer": "3",
+    "explanation": "To find 1/4, divide by 4. 12 \u00f7 4 = 3!"
+  },
+  {
+    "id": "mth-frac-005",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which fraction equals 1/2?",
+    "options": [
+      "2/6",
+      "3/4",
+      "2/4",
+      "3/8"
+    ],
+    "answer": "2/4",
+    "explanation": "2/4 = 1/2 because if you cut both numbers in half: 2\u00f72=1, 4\u00f72=2. So 2/4 = 1/2!"
+  },
+  {
+    "id": "mth-frac-006",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 3/4 of 8?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "2"
+    ],
+    "answer": "6",
+    "explanation": "3/4 of 8: First find 1/4 of 8 = 2, then multiply by 3: 2\u00d73 = 6!"
+  },
+  {
+    "id": "mth-frac-007",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the top number in a fraction tell you?",
+    "options": [
+      "How many equal parts in total",
+      "How many parts you have",
+      "How big each part is",
+      "How many parts are left"
+    ],
+    "answer": "How many parts you have",
+    "explanation": "The top number is called the numerator \u2014 it tells you how many parts you have!"
+  },
+  {
+    "id": "mth-frac-008",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 1/3 of 21?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "7",
+    "explanation": "To find 1/3, divide by 3. 21 \u00f7 3 = 7!"
+  },
+  {
+    "id": "mth-frac-009",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 2/3 of 12?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "9"
+    ],
+    "answer": "8",
+    "explanation": "First find 1/3 of 12: 12 \u00f7 3 = 4. Then multiply by 2: 4 \u00d7 2 = 8!"
+  },
+  {
+    "id": "mth-frac-010",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which fraction shows one half in a different way?",
+    "options": [
+      "2/4",
+      "1/3",
+      "2/5",
+      "3/5"
+    ],
+    "answer": "2/4",
+    "explanation": "2/4 = 1/2 because 2 out of 4 equal parts is the same as 1 out of 2 equal parts!"
+  },
+  {
+    "id": "mth-frac-011",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "If a pie is cut into 8 slices and you eat 2, what fraction is left?",
+    "options": [
+      "2/8",
+      "3/4",
+      "6/8",
+      "5/8"
+    ],
+    "answer": "6/8",
+    "explanation": "8 slices - 2 eaten = 6 left. 6 out of 8 = 6/8!"
+  },
+  {
+    "id": "mth-frac-012",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 1/4 of 100?",
+    "options": [
+      "10",
+      "20",
+      "25",
+      "50"
+    ],
+    "answer": "25",
+    "explanation": "To find 1/4, divide by 4. 100 \u00f7 4 = 25!"
+  },
+  {
+    "id": "mth-frac-013",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "If half of a class of 28 children wear glasses, how many is that?",
+    "options": [
+      "7",
+      "12",
+      "14",
+      "16"
+    ],
+    "answer": "14",
+    "explanation": "Half of 28 = 28 \u00f7 2 = 14 children!"
+  },
+  {
+    "id": "mth-frac-014",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Order from smallest to largest: 1/2, 1/4, 3/4, 1/8",
+    "options": [
+      "1/8, 1/4, 1/2, 3/4",
+      "1/4, 1/8, 3/4, 1/2",
+      "1/2, 1/4, 1/8, 3/4",
+      "3/4, 1/2, 1/4, 1/8"
+    ],
+    "answer": "1/8, 1/4, 1/2, 3/4",
+    "explanation": "The bigger the denominator (bottom number), the smaller the fraction. So 1/8 is smallest, and 3/4 is biggest!"
+  },
+  {
+    "id": "mth-frac-015",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the bottom number of a fraction (denominator) tell you?",
+    "options": [
+      "How many parts you have",
+      "How many equal parts in total",
+      "How big each part is",
+      "The value of the fraction"
+    ],
+    "answer": "How many equal parts in total",
+    "explanation": "The denominator (bottom number) tells you how many equal parts the whole is divided into!"
+  },
+  {
+    "id": "mth-add-001",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 47 + 36?",
+    "options": [
+      "73",
+      "83",
+      "93",
+      "76"
+    ],
+    "answer": "83",
+    "explanation": "47 + 36: Add the units first (7+6=13, carry 1), then tens (4+3+1=8). Answer: 83!"
+  },
+  {
+    "id": "mth-add-002",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 125 + 248?",
+    "options": [
+      "363",
+      "373",
+      "383",
+      "473"
+    ],
+    "answer": "373",
+    "explanation": "125 + 248 = 373. Units: 5+8=13 (carry 1). Tens: 2+4+1=7. Hundreds: 1+2=3. Answer: 373!"
+  },
+  {
+    "id": "mth-add-003",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 99 + 1?",
+    "options": [
+      "99",
+      "100",
+      "101",
+      "110"
+    ],
+    "answer": "100",
+    "explanation": "99 + 1 = 100. You've made it to 100!"
+  },
+  {
+    "id": "mth-add-004",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 346 + 275?",
+    "options": [
+      "611",
+      "621",
+      "631",
+      "641"
+    ],
+    "answer": "621",
+    "explanation": "346 + 275: Units 6+5=11 (carry 1), Tens 4+7+1=12 (carry 1), Hundreds 3+2+1=6. Answer: 621!"
+  },
+  {
+    "id": "mth-add-005",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 68 + 25 + 37?",
+    "options": [
+      "120",
+      "125",
+      "130",
+      "135"
+    ],
+    "answer": "130",
+    "explanation": "68 + 25 = 93. Then 93 + 37 = 130. Tip: look for pairs that make easy numbers first!"
+  },
+  {
+    "id": "mth-add-006",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 56 + 44?",
+    "options": [
+      "90",
+      "100",
+      "110",
+      "120"
+    ],
+    "answer": "100",
+    "explanation": "56 + 44 = 100. A number bond to 100! 56 + 44: units 6+4=10 (carry 1), tens 5+4+1=10."
+  },
+  {
+    "id": "mth-add-007",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 87 + 93?",
+    "options": [
+      "170",
+      "175",
+      "180",
+      "185"
+    ],
+    "answer": "180",
+    "explanation": "87 + 93: try rounding: 90 + 90 = 180, then adjust: 87 is 3 less, 93 is 3 more, so 3-3=0 adjustment. Answer: 180!"
+  },
+  {
+    "id": "mth-add-008",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 45 + 45 + 10?",
+    "options": [
+      "90",
+      "95",
+      "100",
+      "105"
+    ],
+    "answer": "100",
+    "explanation": "45 + 45 = 90 (double 45!), then 90 + 10 = 100!"
+  },
+  {
+    "id": "mth-sub-001",
+    "subject": "maths",
+    "topic": "subtraction",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 50 - 17?",
+    "options": [
+      "33",
+      "27",
+      "43",
+      "37"
+    ],
+    "answer": "33",
+    "explanation": "50 - 17 = 33. Try counting up: 17 + 3 = 20, + 30 = 50. So 3+30 = 33!"
+  },
+  {
+    "id": "mth-sub-002",
+    "subject": "maths",
+    "topic": "subtraction",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 100 - 38?",
+    "options": [
+      "62",
+      "72",
+      "58",
+      "68"
+    ],
+    "answer": "62",
+    "explanation": "100 - 38 = 62. Try 100 - 40 = 60, then add 2 back. Answer: 62!"
+  },
+  {
+    "id": "mth-sub-003",
+    "subject": "maths",
+    "topic": "subtraction",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 500 - 238?",
+    "options": [
+      "252",
+      "262",
+      "272",
+      "282"
+    ],
+    "answer": "262",
+    "explanation": "500 - 238: 500 - 200 = 300, 300 - 38 = 262. Or column subtraction with renaming!"
+  },
+  {
+    "id": "mth-sub-004",
+    "subject": "maths",
+    "topic": "subtraction",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 1000 - 456?",
+    "options": [
+      "444",
+      "454",
+      "544",
+      "556"
+    ],
+    "answer": "544",
+    "explanation": "1000 - 456 = 544. Try: 456 + 4 = 460, + 40 = 500, + 500 = 1000. So 4+40+500 = 544!"
+  },
+  {
+    "id": "mth-sub-005",
+    "subject": "maths",
+    "topic": "subtraction",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 425 - 168?",
+    "options": [
+      "247",
+      "257",
+      "267",
+      "277"
+    ],
+    "answer": "257",
+    "explanation": "425 - 168: Units 5-8 (rename), 15-8=7. Tens 1-6 (rename), 11-6=5. Hundreds 3-1=2. Answer: 257!"
+  },
+  {
+    "id": "mth-sub-006",
+    "subject": "maths",
+    "topic": "subtraction",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 300 - 145?",
+    "options": [
+      "145",
+      "155",
+      "165",
+      "175"
+    ],
+    "answer": "155",
+    "explanation": "300 - 145 = 155. Try 145 + 5 = 150, + 150 = 300. So 5+150 = 155!"
+  },
+  {
+    "id": "mth-sub-007",
+    "subject": "maths",
+    "topic": "subtraction",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 764 - 325?",
+    "options": [
+      "439",
+      "449",
+      "459",
+      "469"
+    ],
+    "answer": "439",
+    "explanation": "764 - 325: Units 4-5 (rename), 14-5=9. Tens 5-2=3. Wait \u2014 after renaming tens become 5. Hundreds 7-3=4... let me just confirm: 764-325=439!"
+  },
+  {
+    "id": "mth-shape-001",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many sides does a triangle have?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "5"
+    ],
+    "answer": "3",
+    "explanation": "A triangle has 3 sides \u2014 'tri' means three, like a tricycle has 3 wheels!"
+  },
+  {
+    "id": "mth-shape-002",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What shape has 4 equal sides?",
+    "options": [
+      "Rectangle",
+      "Triangle",
+      "Circle",
+      "Square"
+    ],
+    "answer": "Square",
+    "explanation": "A square has 4 sides that are ALL the same length!"
+  },
+  {
+    "id": "mth-shape-003",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many faces does a cube have?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "answer": "6",
+    "explanation": "A cube has 6 faces \u2014 like the 6 sides of a dice!"
+  },
+  {
+    "id": "mth-shape-004",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the perimeter of a square with sides of 5cm?",
+    "options": [
+      "10cm",
+      "15cm",
+      "20cm",
+      "25cm"
+    ],
+    "answer": "20cm",
+    "explanation": "Perimeter = distance all the way around. A square has 4 equal sides: 5+5+5+5 = 20cm!"
+  },
+  {
+    "id": "mth-shape-005",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the area of a rectangle that is 4cm long and 3cm wide?",
+    "options": [
+      "7cm\u00b2",
+      "12cm\u00b2",
+      "14cm\u00b2",
+      "10cm\u00b2"
+    ],
+    "answer": "12cm\u00b2",
+    "explanation": "Area = length \u00d7 width. 4 \u00d7 3 = 12 cm\u00b2!"
+  },
+  {
+    "id": "mth-shape-006",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A rectangle has how many lines of symmetry?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "explanation": "A rectangle has 2 lines of symmetry \u2014 through the middle the long way and the short way!"
+  },
+  {
+    "id": "mth-shape-007",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What 3D shape has a flat circle base and comes to a point at the top?",
+    "options": [
+      "Cube",
+      "Cone",
+      "Cylinder",
+      "Sphere"
+    ],
+    "answer": "Cone",
+    "explanation": "A cone has a circular base and comes to a point (apex) at the top \u2014 like an ice cream cone!"
+  },
+  {
+    "id": "mth-shape-008",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A cylinder has how many flat circular faces?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": "2",
+    "explanation": "A cylinder has 2 circular flat faces (the top and the bottom) and one curved surface!"
+  },
+  {
+    "id": "mth-shape-009",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a right angle?",
+    "options": [
+      "An angle less than 90\u00b0",
+      "An angle exactly equal to 90\u00b0",
+      "An angle greater than 90\u00b0",
+      "An angle equal to 180\u00b0"
+    ],
+    "answer": "An angle exactly equal to 90\u00b0",
+    "explanation": "A right angle is exactly 90\u00b0 \u2014 like the corner of a square or the corner of a page!"
+  },
+  {
+    "id": "mth-shape-010",
+    "subject": "maths",
+    "topic": "shapes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many right angles does a square have?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "answer": "4",
+    "explanation": "A square has 4 corners, and each corner is a right angle (90\u00b0) \u2014 that's 4 right angles in total!"
+  },
+  {
+    "id": "mth-time-001",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many minutes are in an hour?",
+    "options": [
+      "30",
+      "50",
+      "60",
+      "100"
+    ],
+    "answer": "60",
+    "explanation": "There are 60 minutes in an hour!"
+  },
+  {
+    "id": "mth-time-002",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "If it is 3:00pm now, what time will it be in 2 and a half hours?",
+    "options": [
+      "5:00pm",
+      "5:30pm",
+      "4:30pm",
+      "6:00pm"
+    ],
+    "answer": "5:30pm",
+    "explanation": "3:00 + 2 hours = 5:00, + 30 minutes = 5:30pm!"
+  },
+  {
+    "id": "mth-time-003",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many days are in a week?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "7",
+    "explanation": "There are 7 days in a week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday!"
+  },
+  {
+    "id": "mth-time-004",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many minutes are in 2 hours?",
+    "options": [
+      "90",
+      "100",
+      "120",
+      "130"
+    ],
+    "answer": "120",
+    "explanation": "1 hour = 60 minutes. So 2 hours = 60 \u00d7 2 = 120 minutes!"
+  },
+  {
+    "id": "mth-time-005",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What time is half past 4?",
+    "options": [
+      "4:00",
+      "4:15",
+      "4:30",
+      "4:45"
+    ],
+    "answer": "4:30",
+    "explanation": "Half past means 30 minutes past the hour. Half past 4 = 4:30!"
+  },
+  {
+    "id": "mth-time-006",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What time is quarter past 7?",
+    "options": [
+      "7:05",
+      "7:15",
+      "7:30",
+      "7:45"
+    ],
+    "answer": "7:15",
+    "explanation": "Quarter past = 15 minutes past the hour. Quarter past 7 = 7:15!"
+  },
+  {
+    "id": "mth-time-007",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What time is quarter to 3?",
+    "options": [
+      "2:15",
+      "2:30",
+      "2:45",
+      "3:15"
+    ],
+    "answer": "2:45",
+    "explanation": "Quarter to 3 means 15 minutes BEFORE 3 o'clock = 2:45!"
+  },
+  {
+    "id": "mth-time-008",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many months are in a year?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "answer": "12",
+    "explanation": "There are 12 months in a year: January, February, March, April, May, June, July, August, September, October, November, December!"
+  },
+  {
+    "id": "mth-time-009",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many days are in April?",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "answer": "30",
+    "explanation": "Thirty days hath September, April, June and November! So April has 30 days."
+  },
+  {
+    "id": "mth-time-010",
+    "subject": "maths",
+    "topic": "time",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What month comes after October?",
+    "options": [
+      "August",
+      "September",
+      "November",
+      "December"
+    ],
+    "answer": "November",
+    "explanation": "The months in order: ..., September, October, November, December. November comes after October!"
+  },
+  {
+    "id": "mth-money-001",
+    "subject": "maths",
+    "topic": "money",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "If you have \u20ac1.50 and spend 75 cents, how much is left?",
+    "options": [
+      "75c",
+      "80c",
+      "\u20ac1",
+      "65c"
+    ],
+    "answer": "75c",
+    "explanation": "\u20ac1.50 = 150 cents. 150 - 75 = 75 cents!"
+  },
+  {
+    "id": "mth-money-002",
+    "subject": "maths",
+    "topic": "money",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many 20c coins make \u20ac1?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "answer": "5",
+    "explanation": "\u20ac1 = 100 cents. 100 \u00f7 20 = 5 coins!"
+  },
+  {
+    "id": "mth-money-003",
+    "subject": "maths",
+    "topic": "money",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many cents are in \u20ac2?",
+    "options": [
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "answer": "200",
+    "explanation": "\u20ac1 = 100 cents. So \u20ac2 = 2 \u00d7 100 = 200 cents!"
+  },
+  {
+    "id": "mth-money-004",
+    "subject": "maths",
+    "topic": "money",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A book costs \u20ac4.50 and a pencil costs \u20ac1.20. What is the total cost?",
+    "options": [
+      "\u20ac5.60",
+      "\u20ac5.70",
+      "\u20ac5.80",
+      "\u20ac5.90"
+    ],
+    "answer": "\u20ac5.70",
+    "explanation": "\u20ac4.50 + \u20ac1.20 = \u20ac5.70. Add the euro amounts (4+1=5) and the cent amounts (50+20=70)!"
+  },
+  {
+    "id": "mth-money-005",
+    "subject": "maths",
+    "topic": "money",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Emilia has 3 \u00d7 \u20ac2 coins, 2 \u00d7 50c coins and 1 \u00d7 20c coin. How much does she have in total?",
+    "options": [
+      "\u20ac5.20",
+      "\u20ac6.20",
+      "\u20ac7.20",
+      "\u20ac8.20"
+    ],
+    "answer": "\u20ac7.20",
+    "explanation": "3\u00d7\u20ac2 = \u20ac6.00. 2\u00d750c = \u20ac1.00. 1\u00d720c = \u20ac0.20. Total: \u20ac6.00 + \u20ac1.00 + \u20ac0.20 = \u20ac7.20!"
+  },
+  {
+    "id": "mth-money-006",
+    "subject": "maths",
+    "topic": "money",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A pack of 5 pencils costs \u20ac2.50. What does one pencil cost?",
+    "options": [
+      "40c",
+      "50c",
+      "55c",
+      "60c"
+    ],
+    "answer": "50c",
+    "explanation": "\u20ac2.50 \u00f7 5 = 50 cents per pencil. Division helps us share equally!"
+  },
+  {
+    "id": "mth-money-007",
+    "subject": "maths",
+    "topic": "money",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "If you buy 3 items that cost \u20ac1.50 each, what is the total?",
+    "options": [
+      "\u20ac3.50",
+      "\u20ac4.00",
+      "\u20ac4.50",
+      "\u20ac5.00"
+    ],
+    "answer": "\u20ac4.50",
+    "explanation": "3 \u00d7 \u20ac1.50 = \u20ac4.50. Multiply the price by the number of items!"
+  },
+  {
+    "id": "mth-money-008",
+    "subject": "maths",
+    "topic": "money",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Emilia has \u20ac10. She spends \u20ac3.75. How much change does she get?",
+    "options": [
+      "\u20ac5.25",
+      "\u20ac6.00",
+      "\u20ac6.25",
+      "\u20ac7.25"
+    ],
+    "answer": "\u20ac6.25",
+    "explanation": "\u20ac10.00 - \u20ac3.75 = \u20ac6.25. Count up: \u20ac3.75 + 25c = \u20ac4.00, + \u20ac6.00 = \u20ac10.00. Change = 25c + \u20ac6.00 = \u20ac6.25!"
+  },
+  {
+    "id": "mth-div-001",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 12 \u00f7 2?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": "6",
+    "explanation": "12 \u00f7 2 = 6. Share 12 equally between 2 groups = 6 in each group!"
+  },
+  {
+    "id": "mth-div-002",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 15 \u00f7 3?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "5",
+    "explanation": "15 \u00f7 3 = 5. Count in 3s: 3, 6, 9, 12, 15 \u2014 that is 5 threes!"
+  },
+  {
+    "id": "mth-div-003",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 20 \u00f7 4?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": "5",
+    "explanation": "20 \u00f7 4 = 5. Think: 4 \u00d7 5 = 20, so 20 \u00f7 4 = 5!"
+  },
+  {
+    "id": "mth-div-004",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 24 \u00f7 6?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "4",
+    "explanation": "24 \u00f7 6 = 4. Think: 6 \u00d7 4 = 24. Division and multiplication are opposites!"
+  },
+  {
+    "id": "mth-div-005",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 35 \u00f7 7?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "5",
+    "explanation": "35 \u00f7 7 = 5. Think: 7 \u00d7 5 = 35!"
+  },
+  {
+    "id": "mth-div-006",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 48 \u00f7 8?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "6",
+    "explanation": "48 \u00f7 8 = 6. Think: 8 \u00d7 6 = 48!"
+  },
+  {
+    "id": "mth-div-007",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 36 \u00f7 9?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "4",
+    "explanation": "36 \u00f7 9 = 4. Think: 9 \u00d7 4 = 36!"
+  },
+  {
+    "id": "mth-div-008",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 63 \u00f7 7?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "6"
+    ],
+    "answer": "9",
+    "explanation": "63 \u00f7 7 = 9. Think: 7 \u00d7 9 = 63. The 7 times table!"
+  },
+  {
+    "id": "mth-div-009",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 56 \u00f7 8?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "5"
+    ],
+    "answer": "7",
+    "explanation": "56 \u00f7 8 = 7. Remember: 5,6,7,8 \u2014 56 = 7\u00d78. So 56 \u00f7 8 = 7!"
+  },
+  {
+    "id": "mth-div-010",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 72 \u00f7 9?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "6"
+    ],
+    "answer": "8",
+    "explanation": "72 \u00f7 9 = 8. Think: 9 \u00d7 8 = 72!"
+  },
+  {
+    "id": "mth-div-011",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 45 \u00f7 5?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "6"
+    ],
+    "answer": "9",
+    "explanation": "45 \u00f7 5 = 9. Count in 5s: 5,10,15,20,25,30,35,40,45 \u2014 that is 9 fives!"
+  },
+  {
+    "id": "mth-div-012",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 32 \u00f7 4?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": "8",
+    "explanation": "32 \u00f7 4 = 8. Think: 4 \u00d7 8 = 32!"
+  },
+  {
+    "id": "mth-div-013",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "18 sweets are shared equally among 3 friends. How many sweets does each friend get?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "6",
+    "explanation": "18 \u00f7 3 = 6 sweets each. We share equally using division!"
+  },
+  {
+    "id": "mth-div-014",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A baker has 24 cupcakes arranged in rows of 6. How many rows are there?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "explanation": "24 \u00f7 6 = 4 rows. Think: 6 \u00d7 4 = 24!"
+  },
+  {
+    "id": "mth-div-015",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "42 books are sorted equally onto 7 shelves. How many books on each shelf?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "6",
+    "explanation": "42 \u00f7 7 = 6 books per shelf. Think: 7 \u00d7 6 = 42!"
+  },
+  {
+    "id": "mth-div-016",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "If 4 \u00d7 7 = 28, what is 28 \u00f7 4?",
+    "options": [
+      "4",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "7",
+    "explanation": "Division is the inverse (opposite) of multiplication! If 4 \u00d7 7 = 28, then 28 \u00f7 4 = 7."
+  },
+  {
+    "id": "mth-div-017",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "If 9 \u00d7 5 = 45, what is 45 \u00f7 9?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": "5",
+    "explanation": "Use the multiplication fact! 9 \u00d7 5 = 45, so 45 \u00f7 9 = 5. Division and multiplication are a team!"
+  },
+  {
+    "id": "mth-div-018",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which number goes in the box? \u25a1 \u00d7 6 = 54",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": "9",
+    "explanation": "\u25a1 \u00d7 6 = 54. We need to find what times 6 equals 54. 54 \u00f7 6 = 9!"
+  },
+  {
+    "id": "mth-div-019",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Emilia has 40 stickers. She gives the same number to 8 friends. How many stickers does each friend get?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "5",
+    "explanation": "40 \u00f7 8 = 5 stickers each. Equal sharing uses division!"
+  },
+  {
+    "id": "mth-div-020",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 90 \u00f7 10?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": "9",
+    "explanation": "90 \u00f7 10 = 9. Dividing by 10 is the opposite of multiplying by 10 (just remove the zero)!"
+  },
+  {
+    "id": "mth-mental-001",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Round 47 to the nearest 10.",
+    "options": [
+      "40",
+      "45",
+      "50",
+      "55"
+    ],
+    "answer": "50",
+    "explanation": "47 is between 40 and 50. The units digit is 7, which is 5 or more, so we round UP to 50!"
+  },
+  {
+    "id": "mth-mental-002",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Round 123 to the nearest 10.",
+    "options": [
+      "100",
+      "120",
+      "125",
+      "130"
+    ],
+    "answer": "120",
+    "explanation": "123 is between 120 and 130. The units digit is 3 (less than 5), so we round DOWN to 120!"
+  },
+  {
+    "id": "mth-mental-003",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Round 85 to the nearest 10.",
+    "options": [
+      "80",
+      "83",
+      "85",
+      "90"
+    ],
+    "answer": "90",
+    "explanation": "When the units digit is 5, we round UP. 85 rounds up to 90!"
+  },
+  {
+    "id": "mth-mental-004",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Round 350 to the nearest 100.",
+    "options": [
+      "200",
+      "300",
+      "350",
+      "400"
+    ],
+    "answer": "400",
+    "explanation": "350 is halfway between 300 and 400. When we are exactly halfway, we round UP \u2014 so 400!"
+  },
+  {
+    "id": "mth-mental-005",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 7 + 8? (Hint: use near doubles!)",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "answer": "15",
+    "explanation": "Near doubles trick: 7+8 = double 7 + 1 = 14 + 1 = 15. Or double 8 - 1 = 16 - 1 = 15!"
+  },
+  {
+    "id": "mth-mental-006",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 99 + 26?",
+    "options": [
+      "124",
+      "125",
+      "126",
+      "127"
+    ],
+    "answer": "125",
+    "explanation": "Compensation strategy: 99 + 26 = 100 + 26 - 1 = 126 - 1 = 125. Round to nearest 10 or 100, then adjust!"
+  },
+  {
+    "id": "mth-mental-007",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 198 + 45?",
+    "options": [
+      "242",
+      "243",
+      "244",
+      "245"
+    ],
+    "answer": "243",
+    "explanation": "198 + 45: round 198 to 200 (added 2), so 200 + 45 = 245, then subtract the 2 we added: 245 - 2 = 243!"
+  },
+  {
+    "id": "mth-mental-008",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What number is 100 more than 347?",
+    "options": [
+      "347",
+      "437",
+      "447",
+      "357"
+    ],
+    "answer": "447",
+    "explanation": "Adding 100 increases the hundreds digit by 1. 347 + 100 = 447!"
+  },
+  {
+    "id": "mth-mental-009",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What number is 10 less than 203?",
+    "options": [
+      "193",
+      "291",
+      "213",
+      "190"
+    ],
+    "answer": "193",
+    "explanation": "Subtracting 10 decreases the tens digit by 1. 203 - 10 = 193!"
+  },
+  {
+    "id": "mth-mental-010",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is double 35?",
+    "options": [
+      "60",
+      "65",
+      "70",
+      "75"
+    ],
+    "answer": "70",
+    "explanation": "Double 35 = 35 \u00d7 2. Double 30 = 60, double 5 = 10. 60 + 10 = 70!"
+  },
+  {
+    "id": "mth-mental-011",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is half of 90?",
+    "options": [
+      "40",
+      "45",
+      "50",
+      "55"
+    ],
+    "answer": "45",
+    "explanation": "Half of 90 = 90 \u00f7 2. Half of 80 = 40, half of 10 = 5. 40 + 5 = 45!"
+  },
+  {
+    "id": "mth-mental-012",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 6 + 7 + 4?",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "15"
+    ],
+    "answer": "17",
+    "explanation": "Look for pairs that make 10: 6 + 4 = 10, then 10 + 7 = 17. That is the 'make 10' strategy!"
+  },
+  {
+    "id": "mth-mental-013",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Estimate: 48 + 32 is closest to...",
+    "options": [
+      "70",
+      "80",
+      "90",
+      "100"
+    ],
+    "answer": "80",
+    "explanation": "Round to nearest 10: 48 \u2248 50, 32 \u2248 30. Estimate: 50 + 30 = 80!"
+  },
+  {
+    "id": "mth-mental-014",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is 1000 - 999?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "100"
+    ],
+    "answer": "1",
+    "explanation": "Count up from 999: 999 + 1 = 1000. The answer is just 1!"
+  },
+  {
+    "id": "mth-mental-015",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What number is halfway between 20 and 30?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "28"
+    ],
+    "answer": "25",
+    "explanation": "Halfway between 20 and 30 is 25. Add the two numbers and divide by 2: (20+30) \u00f7 2 = 25!"
+  },
+  {
+    "id": "mth-pv-001",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the value of the digit 5 in the number 352?",
+    "options": [
+      "5",
+      "50",
+      "500",
+      "5000"
+    ],
+    "answer": "50",
+    "explanation": "In 352: 3 is in the hundreds place (=300), 5 is in the tens place (=50), 2 is in the units place (=2). So 5 = 50!"
+  },
+  {
+    "id": "mth-pv-002",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What number has 4 hundreds, 2 tens and 7 units?",
+    "options": [
+      "247",
+      "274",
+      "427",
+      "472"
+    ],
+    "answer": "427",
+    "explanation": "4 hundreds = 400, 2 tens = 20, 7 units = 7. 400 + 20 + 7 = 427!"
+  },
+  {
+    "id": "mth-pv-003",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is 600 + 30 + 5?",
+    "options": [
+      "365",
+      "536",
+      "635",
+      "653"
+    ],
+    "answer": "635",
+    "explanation": "600 + 30 + 5 = 635. The 6 is in the hundreds, the 3 in the tens, the 5 in the units!"
+  },
+  {
+    "id": "mth-pv-004",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the largest number you can make with the digits 7, 3, and 1?",
+    "options": [
+      "137",
+      "173",
+      "317",
+      "731"
+    ],
+    "answer": "731",
+    "explanation": "To make the largest number, put the biggest digit in the hundreds place, next in tens, smallest in units: 7-3-1 = 731!"
+  },
+  {
+    "id": "mth-pv-005",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the smallest 3-digit number you can make with the digits 5, 0, and 2?",
+    "options": [
+      "025",
+      "205",
+      "250",
+      "502"
+    ],
+    "answer": "205",
+    "explanation": "We cannot start with 0 (that would make a 2-digit number). The smallest using 2, 0, 5 is 205 (2 in hundreds, 0 in tens, 5 in units)!"
+  },
+  {
+    "id": "mth-pv-006",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What number comes between 499 and 501?",
+    "options": [
+      "498",
+      "499",
+      "500",
+      "502"
+    ],
+    "answer": "500",
+    "explanation": "The number after 499 is 500, and 500 comes before 501. So 500 is between them!"
+  },
+  {
+    "id": "mth-pv-007",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "In the number 827, what digit is in the hundreds place?",
+    "options": [
+      "2",
+      "7",
+      "8",
+      "0"
+    ],
+    "answer": "8",
+    "explanation": "In 827: 8 is in the hundreds place, 2 is in the tens place, 7 is in the units place!"
+  },
+  {
+    "id": "mth-pv-008",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which number is greater: 409 or 490?",
+    "options": [
+      "409",
+      "490",
+      "They are equal",
+      "Cannot tell"
+    ],
+    "answer": "490",
+    "explanation": "Compare the tens digit: 0 tens (409) vs 9 tens (490). 9 tens > 0 tens, so 490 > 409!"
+  },
+  {
+    "id": "mth-pv-009",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In the number 563, what does the 6 represent?",
+    "options": [
+      "6",
+      "60",
+      "600",
+      "6000"
+    ],
+    "answer": "60",
+    "explanation": "In 563: 5 is in the hundreds (=500), 6 is in the tens (=60), 3 is in the units (=3). The 6 represents 60!"
+  },
+  {
+    "id": "mth-pv-010",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Put these in order from smallest to largest: 342, 243, 432, 234",
+    "options": [
+      "342, 243, 432, 234",
+      "234, 243, 342, 432",
+      "243, 234, 342, 432",
+      "432, 342, 243, 234"
+    ],
+    "answer": "234, 243, 342, 432",
+    "explanation": "All start with 2 or 3. Hundreds first: 234 and 243 start with 2, 342 and 432 start with 3 or 4. Sort: 234, 243, 342, 432!"
+  },
+  {
+    "id": "mth-meas-001",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many centimetres are in 1 metre?",
+    "options": [
+      "10",
+      "50",
+      "100",
+      "1000"
+    ],
+    "answer": "100",
+    "explanation": "There are 100 centimetres in 1 metre (100cm = 1m)!"
+  },
+  {
+    "id": "mth-meas-002",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Emilia is 1m 25cm tall. How tall is she in centimetres?",
+    "options": [
+      "25",
+      "100",
+      "125",
+      "225"
+    ],
+    "answer": "125",
+    "explanation": "1 metre = 100cm. So 1m 25cm = 100cm + 25cm = 125cm!"
+  },
+  {
+    "id": "mth-meas-003",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many metres are in 1 kilometre?",
+    "options": [
+      "10",
+      "100",
+      "1000",
+      "10000"
+    ],
+    "answer": "1000",
+    "explanation": "There are 1000 metres in 1 kilometre (1000m = 1km)!"
+  },
+  {
+    "id": "mth-meas-004",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many grams are in 1 kilogram?",
+    "options": [
+      "10",
+      "100",
+      "1000",
+      "10000"
+    ],
+    "answer": "1000",
+    "explanation": "There are 1000 grams in 1 kilogram (1000g = 1kg)!"
+  },
+  {
+    "id": "mth-meas-005",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A bag weighs 2kg 500g. What is that in grams?",
+    "options": [
+      "250",
+      "2050",
+      "2500",
+      "25000"
+    ],
+    "answer": "2500",
+    "explanation": "2kg = 2000g. Then add 500g: 2000 + 500 = 2500g!"
+  },
+  {
+    "id": "mth-meas-006",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is heavier: 3kg or 3100g?",
+    "options": [
+      "3kg",
+      "3100g",
+      "They weigh the same",
+      "Cannot tell"
+    ],
+    "answer": "3100g",
+    "explanation": "3kg = 3000g. 3100g > 3000g, so 3100g is heavier by 100 grams!"
+  },
+  {
+    "id": "mth-meas-007",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many millilitres are in 1 litre?",
+    "options": [
+      "10",
+      "100",
+      "1000",
+      "10000"
+    ],
+    "answer": "1000",
+    "explanation": "There are 1000 millilitres in 1 litre (1000ml = 1l)!"
+  },
+  {
+    "id": "mth-meas-008",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A bottle holds 500ml. How many full bottles fill a 1-litre jug?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "explanation": "1 litre = 1000ml. 1000 \u00f7 500 = 2 bottles fill the jug!"
+  },
+  {
+    "id": "mth-meas-009",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A pencil is 15cm long. What is the total length of 3 pencils placed end to end?",
+    "options": [
+      "30cm",
+      "40cm",
+      "45cm",
+      "50cm"
+    ],
+    "answer": "45cm",
+    "explanation": "3 \u00d7 15cm = 45cm. Multiplication helps us find totals of equal lengths!"
+  },
+  {
+    "id": "mth-meas-010",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "A recipe needs 750ml of milk. How much more milk is needed to reach 1 litre?",
+    "options": [
+      "150ml",
+      "250ml",
+      "350ml",
+      "450ml"
+    ],
+    "answer": "250ml",
+    "explanation": "1 litre = 1000ml. 1000 - 750 = 250ml more needed!"
+  },
+  {
+    "id": "mth-meas-011",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Emilia runs 400m on Monday and 600m on Tuesday. How far did she run altogether?",
+    "options": [
+      "800m",
+      "900m",
+      "1000m",
+      "1100m"
+    ],
+    "answer": "1000m",
+    "explanation": "400m + 600m = 1000m = 1 kilometre! Great running, Emilia!"
+  },
+  {
+    "id": "mth-meas-012",
+    "subject": "maths",
+    "topic": "measurement",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "If a window is 80cm wide and a shelf is 1m 20cm long, how much longer is the shelf than the window is wide?",
+    "options": [
+      "20cm",
+      "30cm",
+      "40cm",
+      "50cm"
+    ],
+    "answer": "40cm",
+    "explanation": "1m 20cm = 120cm. 120cm - 80cm = 40cm longer!"
+  },
+  {
+    "id": "mth-word-001",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Emilia has 127 stickers. She gets 48 more for her birthday. How many does she have now?",
+    "options": [
+      "165",
+      "175",
+      "185",
+      "195"
+    ],
+    "answer": "175",
+    "explanation": "127 + 48 = 175. Add: units 7+8=15 (carry 1), tens 2+4+1=7, hundreds 1. Answer: 175!"
+  },
+  {
+    "id": "mth-word-002",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A library has 256 books. 89 are checked out. How many are on the shelves?",
+    "options": [
+      "157",
+      "167",
+      "177",
+      "187"
+    ],
+    "answer": "167",
+    "explanation": "256 - 89 = 167 books. Remember to subtract: 256 - 89 = 167!"
+  },
+  {
+    "id": "mth-word-003",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A baker makes 8 trays of 9 muffins. How many muffins are there in total?",
+    "options": [
+      "63",
+      "72",
+      "81",
+      "88"
+    ],
+    "answer": "72",
+    "explanation": "8 \u00d7 9 = 72 muffins! Multiplication tells us how many when there are equal groups."
+  },
+  {
+    "id": "mth-word-004",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "30 children sit in 5 equal rows. How many children are in each row?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "6",
+    "explanation": "30 \u00f7 5 = 6 children per row. Equal sharing uses division!"
+  },
+  {
+    "id": "mth-word-005",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Emilia scores 45 points in Game 1 and 68 points in Game 2. How many points altogether?",
+    "options": [
+      "103",
+      "113",
+      "123",
+      "133"
+    ],
+    "answer": "113",
+    "explanation": "45 + 68 = 113 points. Add: units 5+8=13 (carry 1), tens 4+6+1=11 (carry 1), hundreds 1. Answer: 113!"
+  },
+  {
+    "id": "mth-word-006",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "A cinema has 8 rows of 9 seats. 34 seats are occupied. How many seats are empty?",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "answer": "38",
+    "explanation": "Total seats: 8\u00d79 = 72. Empty: 72 - 34 = 38 seats!"
+  },
+  {
+    "id": "mth-word-007",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Emilia has \u20ac5.00. She buys a book for \u20ac2.75. How much change does she get?",
+    "options": [
+      "\u20ac1.25",
+      "\u20ac2.25",
+      "\u20ac2.50",
+      "\u20ac2.75"
+    ],
+    "answer": "\u20ac2.25",
+    "explanation": "\u20ac5.00 - \u20ac2.75 = \u20ac2.25. Count up: \u20ac2.75 + 25c = \u20ac3.00, + \u20ac2.00 = \u20ac5.00. Change = 25c + \u20ac2.00 = \u20ac2.25!"
+  },
+  {
+    "id": "mth-word-008",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A swimming pool is 25m long. Emilia swims 4 lengths. How far has she swum?",
+    "options": [
+      "75m",
+      "100m",
+      "125m",
+      "150m"
+    ],
+    "answer": "100m",
+    "explanation": "4 \u00d7 25m = 100m. Four lengths of 25m each = 100m = 1 kilometre!"
+  },
+  {
+    "id": "mth-word-009",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Emilia reads 12 pages a day. How many pages does she read in 7 days?",
+    "options": [
+      "72",
+      "84",
+      "96",
+      "108"
+    ],
+    "answer": "84",
+    "explanation": "7 \u00d7 12 = 84 pages. Multiply the daily amount by the number of days!"
+  },
+  {
+    "id": "mth-word-010",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "A playground is 24m long and 15m wide. What is its perimeter?",
+    "options": [
+      "39m",
+      "58m",
+      "78m",
+      "96m"
+    ],
+    "answer": "78m",
+    "explanation": "Perimeter of a rectangle = 2 \u00d7 (length + width) = 2 \u00d7 (24 + 15) = 2 \u00d7 39 = 78m!"
+  },
+  {
+    "id": "mth-word-011",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "A bag of 48 grapes is shared equally between 6 friends. Each friend then eats 3. How many grapes does each friend have left?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "5",
+    "explanation": "Step 1: 48 \u00f7 6 = 8 grapes each. Step 2: 8 - 3 = 5 grapes left. Two-step problems!"
+  },
+  {
+    "id": "mth-word-012",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Emilia buys 3 sandwiches for \u20ac2.50 each. She pays with \u20ac10. How much change does she get?",
+    "options": [
+      "\u20ac2.50",
+      "\u20ac2.00",
+      "\u20ac2.75",
+      "\u20ac3.50"
+    ],
+    "answer": "\u20ac2.50",
+    "explanation": "3 \u00d7 \u20ac2.50 = \u20ac7.50. Change: \u20ac10.00 - \u20ac7.50 = \u20ac2.50!"
+  },
+  {
+    "id": "mth-word-013",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "A train leaves Dublin at 9:30am and arrives in Cork at 11:15am. How long is the journey?",
+    "options": [
+      "1 hour",
+      "1 hour 30 minutes",
+      "1 hour 45 minutes",
+      "2 hours"
+    ],
+    "answer": "1 hour 45 minutes",
+    "explanation": "From 9:30 to 11:15: 9:30 to 10:30 = 1 hour, 10:30 to 11:15 = 45 minutes. Total = 1 hour 45 minutes!"
+  },
+  {
+    "id": "mth-word-014",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "There are 120 seats in a hall. 3/4 of the seats are filled. How many seats have people sitting in them?",
+    "options": [
+      "30",
+      "60",
+      "80",
+      "90"
+    ],
+    "answer": "90",
+    "explanation": "3/4 of 120: First find 1/4 of 120 = 30, then multiply by 3: 30 \u00d7 3 = 90 seats!"
+  },
+  {
+    "id": "mth-word-015",
+    "subject": "maths",
+    "topic": "word-problems",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Emilia has 5 bags of 9 marbles and 3 bags of 7 marbles. How many marbles in total?",
+    "options": [
+      "60",
+      "62",
+      "64",
+      "66"
+    ],
+    "answer": "66",
+    "explanation": "5 \u00d7 9 = 45 marbles + 3 \u00d7 7 = 21 marbles. 45 + 21 = 66 marbles total!"
+  },
+  {
+    "id": "mth-data-001",
+    "subject": "maths",
+    "topic": "data",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In a class survey: 8 children chose blue, 5 chose red, 3 chose yellow. How many children were surveyed in total?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "answer": "16",
+    "explanation": "8 + 5 + 3 = 16 children. We add all the amounts to find the total!"
+  },
+  {
+    "id": "mth-data-002",
+    "subject": "maths",
+    "topic": "data",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "On a pictogram, each picture represents 2 children. The 'Dogs' row has 4 pictures. How many children chose dogs?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "answer": "8",
+    "explanation": "4 pictures \u00d7 2 children each = 8 children chose dogs!"
+  },
+  {
+    "id": "mth-data-003",
+    "subject": "maths",
+    "topic": "data",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of graph uses small pictures to represent data?",
+    "options": [
+      "Bar chart",
+      "Pie chart",
+      "Pictogram",
+      "Line graph"
+    ],
+    "answer": "Pictogram",
+    "explanation": "A pictogram uses pictures or symbols to show data. Each picture represents a certain number!"
+  },
+  {
+    "id": "mth-data-004",
+    "subject": "maths",
+    "topic": "data",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "In a class survey about pets: 6 dogs, 4 cats, 2 fish, 3 rabbits. What is the most popular pet?",
+    "options": [
+      "Cats",
+      "Dogs",
+      "Fish",
+      "Rabbits"
+    ],
+    "answer": "Dogs",
+    "explanation": "6 dogs is the highest number, so dogs are the most popular pet!"
+  },
+  {
+    "id": "mth-data-005",
+    "subject": "maths",
+    "topic": "data",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "A tally shows IIII IIII I (9 marks total). What number does this tally represent?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": "9",
+    "explanation": "Count the tallies: IIII = 4, IIII = 4, I = 1. Total: 4 + 4 + 1 = 9!"
+  }
+]

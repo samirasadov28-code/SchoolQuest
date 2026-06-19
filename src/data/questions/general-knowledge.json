@@ -1,0 +1,6242 @@
+[
+  {
+    "id": "gk-animals-001",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the fastest land animal?",
+    "options": [
+      "Lion",
+      "Cheetah",
+      "Leopard",
+      "Horse"
+    ],
+    "answer": "Cheetah",
+    "explanation": "A cheetah can run up to 120 km/h \u2014 as fast as a car on a motorway! It can only keep that speed for short bursts though."
+  },
+  {
+    "id": "gk-animals-002",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the largest animal in the world?",
+    "options": [
+      "African Elephant",
+      "Whale Shark",
+      "Blue Whale",
+      "Giraffe"
+    ],
+    "answer": "Blue Whale",
+    "explanation": "The blue whale is the largest animal ever known on Earth! It can reach 30 metres long and weigh 200 tonnes \u2014 bigger than any dinosaur!"
+  },
+  {
+    "id": "gk-animals-003",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many legs does a spider have?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "4"
+    ],
+    "answer": "8",
+    "explanation": "Spiders have 8 legs \u2014 that's what makes them arachnids, not insects! Insects always have exactly 6 legs."
+  },
+  {
+    "id": "gk-animals-004",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a group of lions called?",
+    "options": [
+      "A pack",
+      "A herd",
+      "A pride",
+      "A flock"
+    ],
+    "answer": "A pride",
+    "explanation": "A group of lions is called a pride! Others: wolves = a pack, crows = a murder, fish = a school, geese in flight = a skein!"
+  },
+  {
+    "id": "gk-animals-005",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which animal has the longest neck?",
+    "options": [
+      "Ostrich",
+      "Flamingo",
+      "Giraffe",
+      "Camel"
+    ],
+    "answer": "Giraffe",
+    "explanation": "Giraffes have necks up to 2 metres long! Despite this, they have the same number of neck bones as humans (7) \u2014 just each bone is much, much bigger."
+  },
+  {
+    "id": "gk-animals-006",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which animal is unique to Ireland and found nowhere else in the world?",
+    "options": [
+      "Red Fox",
+      "Irish Hare",
+      "Badger",
+      "Red Squirrel"
+    ],
+    "answer": "Irish Hare",
+    "explanation": "The Irish Hare is a unique subspecies found only in Ireland! It stays brown all year round, unlike mountain hares in other countries that turn white in winter."
+  },
+  {
+    "id": "gk-animals-007",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which bird can mimic (copy) human speech?",
+    "options": [
+      "Robin",
+      "Parrot",
+      "Eagle",
+      "Pigeon"
+    ],
+    "answer": "Parrot",
+    "explanation": "Parrots are amazing mimics and can copy human speech, other birds, and even sounds like ringtones! Some parrots can learn hundreds of words."
+  },
+  {
+    "id": "gk-animals-008",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How do sharks breathe?",
+    "options": [
+      "Through lungs like dolphins",
+      "Through gills",
+      "Through both gills and lungs",
+      "Through their skin"
+    ],
+    "answer": "Through gills",
+    "explanation": "Sharks are fish and breathe through gills, extracting oxygen from water. Unlike dolphins and whales, sharks never need to surface for air!"
+  },
+  {
+    "id": "gk-animals-009",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What do you call a baby kangaroo?",
+    "options": [
+      "Cub",
+      "Pup",
+      "Joey",
+      "Kitten"
+    ],
+    "answer": "Joey",
+    "explanation": "A baby kangaroo is called a joey! When born, it is tiny (about 2cm) and crawls into its mother's pouch, where it continues to grow for months."
+  },
+  {
+    "id": "gk-animals-010",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which animal sleeps upside down?",
+    "options": [
+      "Koala",
+      "Bat",
+      "Sloth",
+      "Penguin"
+    ],
+    "answer": "Bat",
+    "explanation": "Bats sleep (roost) upside down! Their feet and claws lock onto branches or cave ceilings so they can sleep without effort. Ireland has 9 species of native bat!"
+  },
+  {
+    "id": "gk-animals-011",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the only mammal that can truly fly?",
+    "options": [
+      "Flying squirrel",
+      "Sugar glider",
+      "Bat",
+      "Flying fish"
+    ],
+    "answer": "Bat",
+    "explanation": "Bats are the only mammals capable of true, sustained flight. Flying squirrels and sugar gliders only glide \u2014 they cannot flap their way upward!"
+  },
+  {
+    "id": "gk-animals-012",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How many hearts does an octopus have?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "explanation": "Octopuses have 3 hearts! Two pump blood to the gills, and one pumps it to the rest of the body. Their blood is also blue \u2014 it contains copper instead of iron!"
+  },
+  {
+    "id": "gk-animals-013",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the tallest bird in the world?",
+    "options": [
+      "Flamingo",
+      "Emu",
+      "Ostrich",
+      "Albatross"
+    ],
+    "answer": "Ostrich",
+    "explanation": "The ostrich is the world's tallest and heaviest bird \u2014 up to 2.7 metres tall! It cannot fly, but can run at 70 km/h, making it the fastest running bird."
+  },
+  {
+    "id": "gk-animals-014",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which animal has the longest lifespan?",
+    "options": [
+      "Elephant",
+      "Giant Tortoise",
+      "Bowhead Whale",
+      "Greenland Shark"
+    ],
+    "answer": "Greenland Shark",
+    "explanation": "The Greenland Shark can live for over 400 years \u2014 making them the longest-lived vertebrate (backbone animal) on Earth! They grow very slowly and don't reach adulthood until age 150!"
+  },
+  {
+    "id": "gk-animals-015",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What sound does a cow make?",
+    "options": [
+      "Baa",
+      "Moo",
+      "Oink",
+      "Neigh"
+    ],
+    "answer": "Moo",
+    "explanation": "Cows moo! In Irish, this sound is called 'g\u00e9imneach'. Ireland has more cows than people \u2014 cattle farming is a huge part of Irish life!"
+  },
+  {
+    "id": "gk-animals-016",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is Ireland's largest native land animal?",
+    "options": [
+      "Irish Wolf",
+      "Red Deer",
+      "Brown Bear",
+      "Wild Boar"
+    ],
+    "answer": "Red Deer",
+    "explanation": "The Red Deer is Ireland's largest native land animal! They live in Killarney National Park, County Kerry. The Brown Bear and Wolf once lived in Ireland but are now extinct here."
+  },
+  {
+    "id": "gk-animals-017",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a group of fish swimming together called?",
+    "options": [
+      "A pride",
+      "A pack",
+      "A flock",
+      "A school"
+    ],
+    "answer": "A school",
+    "explanation": "A group of fish is called a school (or sometimes a shoal). Swimming together helps fish confuse predators \u2014 safety in numbers!"
+  },
+  {
+    "id": "gk-animals-018",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which Irish animal comes out mainly at night and eats earthworms?",
+    "options": [
+      "Hedgehog",
+      "Rabbit",
+      "Badger",
+      "Otter"
+    ],
+    "answer": "Badger",
+    "explanation": "Badgers are nocturnal (active at night) and love earthworms \u2014 eating hundreds in a single night! They live in underground burrows called setts and are protected by law in Ireland."
+  },
+  {
+    "id": "gk-animals-019",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many legs does an insect have?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "answer": "6",
+    "explanation": "All insects have exactly 6 legs \u2014 it's one of the rules for being an insect! Bees, butterflies, beetles and ants all have 6 legs."
+  },
+  {
+    "id": "gk-animals-020",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do butterflies eat?",
+    "options": [
+      "Leaves",
+      "Other insects",
+      "Nectar from flowers",
+      "Tree bark"
+    ],
+    "answer": "Nectar from flowers",
+    "explanation": "Butterflies drink nectar from flowers using a long tube-like tongue called a proboscis! They also help flowers reproduce by carrying pollen from plant to plant (pollination)."
+  },
+  {
+    "id": "gk-body-001",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many bones are in the adult human body?",
+    "options": [
+      "106",
+      "206",
+      "306",
+      "406"
+    ],
+    "answer": "206",
+    "explanation": "An adult has 206 bones! Babies are born with about 270-300 (some fuse together as we grow). Your skeleton is your body's framework!"
+  },
+  {
+    "id": "gk-body-002",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the largest organ in the human body?",
+    "options": [
+      "Heart",
+      "Brain",
+      "Liver",
+      "Skin"
+    ],
+    "answer": "Skin",
+    "explanation": "Skin is the largest organ! It covers your entire body, protects you from germs, helps control your temperature, and lets you feel things through touch."
+  },
+  {
+    "id": "gk-body-003",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which organ pumps blood around the body?",
+    "options": [
+      "Lungs",
+      "Brain",
+      "Kidney",
+      "Heart"
+    ],
+    "answer": "Heart",
+    "explanation": "Your heart is an amazing muscle that pumps blood around your body. It beats about 100,000 times every single day \u2014 that's about 70 times per minute!"
+  },
+  {
+    "id": "gk-body-004",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do the lungs do?",
+    "options": [
+      "Digest food",
+      "Filter blood",
+      "Exchange oxygen and carbon dioxide",
+      "Pump blood"
+    ],
+    "answer": "Exchange oxygen and carbon dioxide",
+    "explanation": "When you breathe in, your lungs take oxygen from the air into your blood. When you breathe out, they release carbon dioxide. Your lungs do this about 20,000 times per day!"
+  },
+  {
+    "id": "gk-body-005",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many teeth does an adult human have?",
+    "options": [
+      "20",
+      "28",
+      "32",
+      "36"
+    ],
+    "answer": "32",
+    "explanation": "Adults have 32 teeth, including 4 wisdom teeth. Children have 20 baby (milk) teeth which are gradually replaced by adult teeth from around age 6!"
+  },
+  {
+    "id": "gk-body-006",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the strongest muscle in the human body?",
+    "options": [
+      "Arm muscle (bicep)",
+      "Jaw muscle (masseter)",
+      "Leg muscle (quadricep)",
+      "Back muscle"
+    ],
+    "answer": "Jaw muscle (masseter)",
+    "explanation": "The masseter (jaw muscle) is the strongest muscle relative to its size! It can exert enormous force when you chew. The largest muscles overall are in the thighs."
+  },
+  {
+    "id": "gk-body-007",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the job of the kidneys?",
+    "options": [
+      "Pump blood",
+      "Digest food",
+      "Filter waste from the blood and make urine",
+      "Control breathing"
+    ],
+    "answer": "Filter waste from the blood and make urine",
+    "explanation": "Your two kidneys filter all the blood in your body about 40 times per day, removing waste products and excess water. The waste becomes urine!"
+  },
+  {
+    "id": "gk-body-008",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the human brain mainly made of?",
+    "options": [
+      "Bone and muscle",
+      "Mostly water and fat",
+      "Mostly iron and protein",
+      "Mostly calcium"
+    ],
+    "answer": "Mostly water and fat",
+    "explanation": "The brain is about 75% water and 60% fat \u2014 it's actually one of the fattiest organs in the body! It weighs about 1.5kg and uses 20% of all the energy your body produces."
+  },
+  {
+    "id": "gk-body-009",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many senses do humans have (basic senses)?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "5",
+    "explanation": "The five basic senses are: sight, hearing, taste, smell, and touch! Some scientists say we actually have more (like balance and temperature sense), but the 5 classic senses are most important."
+  },
+  {
+    "id": "gk-body-010",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the stomach do?",
+    "options": [
+      "Breathes",
+      "Pumps blood",
+      "Breaks down food using acid and muscles",
+      "Filters waste from blood"
+    ],
+    "answer": "Breaks down food using acid and muscles",
+    "explanation": "Your stomach uses strong acid (hydrochloric acid) and muscular churning to break food into a liquid that can pass into the intestines. It takes about 4 hours to digest a meal!"
+  },
+  {
+    "id": "gk-body-011",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How long are your small intestines?",
+    "options": [
+      "About 1 metre",
+      "About 3 metres",
+      "About 6 metres",
+      "About 10 metres"
+    ],
+    "answer": "About 6 metres",
+    "explanation": "The small intestine is about 6 metres long \u2014 coiled up inside your abdomen! This is where most of the nutrients from food are absorbed into your bloodstream."
+  },
+  {
+    "id": "gk-body-012",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is blood made of?",
+    "options": [
+      "Just red cells",
+      "Red cells, white cells, platelets, and plasma",
+      "Water and iron only",
+      "Oxygen and carbon dioxide"
+    ],
+    "answer": "Red cells, white cells, platelets, and plasma",
+    "explanation": "Blood contains: red blood cells (carry oxygen), white blood cells (fight infection), platelets (help clotting), and plasma (the liquid carrying everything). Amazing teamwork!"
+  },
+  {
+    "id": "gk-body-013",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which part of your body controls everything?",
+    "options": [
+      "Heart",
+      "Stomach",
+      "Brain",
+      "Lungs"
+    ],
+    "answer": "Brain",
+    "explanation": "Your brain is the command centre of your body! It controls breathing, movement, thinking, memory, feelings, and all your body's functions \u2014 even while you sleep!"
+  },
+  {
+    "id": "gk-body-014",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Why do we need sleep?",
+    "options": [
+      "We don't \u2014 sleep is a waste of time",
+      "To let the brain rest completely",
+      "To allow the body to repair itself and the brain to process memories",
+      "Only because we get bored"
+    ],
+    "answer": "To allow the body to repair itself and the brain to process memories",
+    "explanation": "During sleep, your body repairs muscles and cells, your brain sorts and stores memories, and growth hormones are released. Children need 9-11 hours per night for healthy development!"
+  },
+  {
+    "id": "gk-body-015",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How fast do nerve signals travel in the human body?",
+    "options": [
+      "1 km/h",
+      "10 km/h",
+      "100 km/h",
+      "400 km/h"
+    ],
+    "answer": "400 km/h",
+    "explanation": "Nerve signals can travel up to 400 km/h \u2014 faster than a Formula 1 racing car! That is why you can react so quickly to things like catching a ball or pulling your hand away from something hot."
+  },
+  {
+    "id": "gk-world-001",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the most spoken language in the world by number of native speakers?",
+    "options": [
+      "English",
+      "Spanish",
+      "Mandarin Chinese",
+      "Hindi"
+    ],
+    "answer": "Mandarin Chinese",
+    "explanation": "Mandarin Chinese has the most native speakers \u2014 about 1 billion people! English is the most widely spoken language overall when you include people who learn it as a second language."
+  },
+  {
+    "id": "gk-world-002",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What colours are on the Irish flag?",
+    "options": [
+      "Red, white and blue",
+      "Green, white and yellow",
+      "Green, white and orange",
+      "Blue, white and green"
+    ],
+    "answer": "Green, white and orange",
+    "explanation": "The Irish tricolour has three vertical stripes: green (Irish nationalists), white (peace between traditions), and orange (the unionist tradition). The white in the middle represents peace!"
+  },
+  {
+    "id": "gk-world-003",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the currency used in Ireland?",
+    "options": [
+      "Pound",
+      "Dollar",
+      "Euro",
+      "Franc"
+    ],
+    "answer": "Euro",
+    "explanation": "Ireland uses the Euro (\u20ac). Ireland joined the Eurozone in 1999. The UK uses the Pound Sterling. About 20 countries in Europe use the Euro!"
+  },
+  {
+    "id": "gk-world-004",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many colours are in a rainbow?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "7",
+    "explanation": "A rainbow has 7 colours: Red, Orange, Yellow, Green, Blue, Indigo, Violet. Remember with ROY G BIV! Ireland's rainy weather makes it a great place to spot rainbows!"
+  },
+  {
+    "id": "gk-world-005",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which country is Ireland's nearest neighbour?",
+    "options": [
+      "France",
+      "Spain",
+      "United Kingdom",
+      "Germany"
+    ],
+    "answer": "United Kingdom",
+    "explanation": "The UK (United Kingdom) is Ireland's nearest neighbour \u2014 Great Britain is just across the Irish Sea! Northern Ireland shares a land border with the Republic of Ireland."
+  },
+  {
+    "id": "gk-world-006",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the capital city of France?",
+    "options": [
+      "London",
+      "Berlin",
+      "Madrid",
+      "Paris"
+    ],
+    "answer": "Paris",
+    "explanation": "Paris is the capital of France, famous for the Eiffel Tower, the Louvre museum, and croissants! It is one of the most visited cities in the world."
+  },
+  {
+    "id": "gk-world-007",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the largest country in the world by area?",
+    "options": [
+      "China",
+      "USA",
+      "Canada",
+      "Russia"
+    ],
+    "answer": "Russia",
+    "explanation": "Russia is the largest country in the world \u2014 it is so big it covers 11 different time zones and spans both Europe and Asia!"
+  },
+  {
+    "id": "gk-world-008",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "On which day of the year is St Patrick's Day celebrated?",
+    "options": [
+      "17th March",
+      "25th December",
+      "1st January",
+      "31st October"
+    ],
+    "answer": "17th March",
+    "explanation": "St Patrick's Day is celebrated on 17th March every year! It honours St Patrick, the patron saint of Ireland who is said to have brought Christianity to Ireland in the 5th century."
+  },
+  {
+    "id": "gk-world-009",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the longest river in the world?",
+    "options": [
+      "Amazon",
+      "Mississippi",
+      "Nile",
+      "Yangtze"
+    ],
+    "answer": "Nile",
+    "explanation": "The Nile in Africa is generally considered the world's longest river at about 6,650 km! The Amazon in South America is the largest by volume of water, though."
+  },
+  {
+    "id": "gk-world-010",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which mountain is the tallest in the world?",
+    "options": [
+      "K2",
+      "Kilimanjaro",
+      "Mont Blanc",
+      "Mount Everest"
+    ],
+    "answer": "Mount Everest",
+    "explanation": "Mount Everest in the Himalayas is the world's tallest mountain at 8,849 metres above sea level! It lies on the border between Nepal and China (Tibet)."
+  },
+  {
+    "id": "gk-world-011",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which ocean is the largest?",
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "answer": "Pacific Ocean",
+    "explanation": "The Pacific Ocean is the largest ocean, covering more than 165 million square kilometres \u2014 that is bigger than all of Earth's landmasses combined!"
+  },
+  {
+    "id": "gk-world-012",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What language is spoken in Brazil?",
+    "options": [
+      "Spanish",
+      "English",
+      "French",
+      "Portuguese"
+    ],
+    "answer": "Portuguese",
+    "explanation": "Brazil speaks Portuguese, not Spanish! Brazil was colonised by Portugal, while most of the rest of South America was colonised by Spain. Brazil is the only Portuguese-speaking country in South America."
+  },
+  {
+    "id": "gk-world-013",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the name of the famous ancient stone circle in England?",
+    "options": [
+      "Stonehenge",
+      "Newgrange",
+      "Delphi",
+      "Colosseum"
+    ],
+    "answer": "Stonehenge",
+    "explanation": "Stonehenge is in Wiltshire, England \u2014 a mysterious prehistoric stone circle built around 3000 BC! Ireland also has an even older prehistoric monument: Newgrange in County Meath, built around 3200 BC."
+  },
+  {
+    "id": "gk-world-014",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which continent is the hottest on Earth?",
+    "options": [
+      "Asia",
+      "South America",
+      "Africa",
+      "Australia"
+    ],
+    "answer": "Africa",
+    "explanation": "Africa is the hottest continent \u2014 it contains the Sahara Desert, the world's largest hot desert. Temperatures there can reach 50\u00b0C! Africa also spans both north and south of the equator."
+  },
+  {
+    "id": "gk-world-015",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How many countries are in the world approximately?",
+    "options": [
+      "Around 100",
+      "Around 150",
+      "Around 195",
+      "Around 250"
+    ],
+    "answer": "Around 195",
+    "explanation": "There are approximately 195 countries in the world (193 members of the United Nations plus a couple more). The exact number changes as borders and recognition change over time."
+  },
+  {
+    "id": "gk-food-001",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which food group gives us most of our energy?",
+    "options": [
+      "Proteins",
+      "Carbohydrates",
+      "Vitamins",
+      "Minerals"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates (bread, rice, pasta, potatoes) are our main energy source! Ireland is famous for potatoes \u2014 they have been a staple food here for hundreds of years."
+  },
+  {
+    "id": "gk-food-002",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which traditional Irish dish is made from mashed potato mixed with cabbage or kale?",
+    "options": [
+      "Irish Stew",
+      "Soda Bread",
+      "Colcannon",
+      "Boxty"
+    ],
+    "answer": "Colcannon",
+    "explanation": "Colcannon is a classic Irish dish of mashed potato mixed with cabbage or kale and butter. It is traditionally eaten at Halloween! There is even a famous Irish song called 'Colcannon'."
+  },
+  {
+    "id": "gk-food-003",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Where does chocolate come from originally?",
+    "options": [
+      "Africa",
+      "South America",
+      "Asia",
+      "Europe"
+    ],
+    "answer": "South America",
+    "explanation": "Chocolate comes from cacao beans, originally from Central and South America. The ancient Maya and Aztec peoples drank it as a bitter liquid \u2014 very different from modern sweet chocolate!"
+  },
+  {
+    "id": "gk-food-004",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which vitamin do we get mainly from sunlight?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "answer": "Vitamin D",
+    "explanation": "Our bodies make Vitamin D when skin is exposed to sunlight! It helps keep our bones and teeth strong. In Ireland's cloudy climate, many people need to take Vitamin D supplements especially in winter."
+  },
+  {
+    "id": "gk-food-005",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which food is the best source of Vitamin C?",
+    "options": [
+      "Bread",
+      "Orange juice",
+      "Cheese",
+      "Rice"
+    ],
+    "answer": "Orange juice",
+    "explanation": "Citrus fruits like oranges are packed with Vitamin C, which helps your immune system fight illness and keeps your skin healthy. During the 1700s, sailors ate limes to prevent scurvy (a Vitamin C deficiency)!"
+  },
+  {
+    "id": "gk-food-006",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is soda bread?",
+    "options": [
+      "Bread made with yeast",
+      "A type of sweet cake",
+      "A traditional Irish bread made with baking soda instead of yeast",
+      "A bread soaked in fizzy water"
+    ],
+    "answer": "A traditional Irish bread made with baking soda instead of yeast",
+    "explanation": "Irish soda bread uses bicarbonate of soda (baking soda) instead of yeast to make it rise. It is quick to make and has been a staple of Irish cooking for centuries \u2014 you can still smell it baking in many Irish homes!"
+  },
+  {
+    "id": "gk-food-007",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which food group helps build and repair our muscles?",
+    "options": [
+      "Carbohydrates",
+      "Fats",
+      "Proteins",
+      "Vitamins"
+    ],
+    "answer": "Proteins",
+    "explanation": "Proteins build, repair and maintain our muscles and tissues. Good sources include meat, fish, eggs, beans, nuts and dairy products!"
+  },
+  {
+    "id": "gk-food-008",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Where does milk come from on an Irish farm?",
+    "options": [
+      "Goats only",
+      "Sheep only",
+      "Cows",
+      "All three equally"
+    ],
+    "answer": "Cows",
+    "explanation": "Most milk in Ireland comes from dairy cows! Ireland has about 1.4 million dairy cows and is famous worldwide for the quality of its dairy products. Irish grass-fed butter and cheese are exported around the world."
+  },
+  {
+    "id": "gk-food-009",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What are the natural colours of a traffic light? (Also think: fruit colours!)",
+    "options": [
+      "Red, blue, green",
+      "Red, yellow, green",
+      "Orange, yellow, white",
+      "Red, orange, blue"
+    ],
+    "answer": "Red, yellow, green",
+    "explanation": "Traffic lights use red (stop), yellow/amber (get ready), and green (go) \u2014 and these match a healthy eating reminder: RED fruits (strawberries), YELLOW/orange (bananas), GREEN vegetables. Eat a rainbow!"
+  },
+  {
+    "id": "gk-food-010",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many glasses of water should you aim to drink each day?",
+    "options": [
+      "1-2 glasses",
+      "4-5 glasses",
+      "6-8 glasses",
+      "10-12 glasses"
+    ],
+    "answer": "6-8 glasses",
+    "explanation": "Drinking 6-8 glasses of water per day keeps your body hydrated and helps your brain, kidneys, and skin work well. Our bodies are about 60% water \u2014 so we need to keep topping up!"
+  },
+  {
+    "id": "gk-tech-001",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'www' stand for in a website address?",
+    "options": [
+      "World Wide Web",
+      "World Wide Window",
+      "Wide World Web",
+      "World Website Web"
+    ],
+    "answer": "World Wide Web",
+    "explanation": "WWW stands for World Wide Web \u2014 the system of linked web pages that makes up most of the internet. It was invented by Tim Berners-Lee in 1989!"
+  },
+  {
+    "id": "gk-tech-002",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does AI stand for?",
+    "options": [
+      "Advanced Internet",
+      "Artificial Intelligence",
+      "Automatic Interface",
+      "Android Invention"
+    ],
+    "answer": "Artificial Intelligence",
+    "explanation": "AI stands for Artificial Intelligence \u2014 computer programs that can learn, solve problems, and make decisions in ways that seem human-like. SchoolQuest uses AI to help Emilia learn!"
+  },
+  {
+    "id": "gk-tech-003",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Who invented the telephone?",
+    "options": [
+      "Thomas Edison",
+      "Alexander Graham Bell",
+      "Nikola Tesla",
+      "Albert Einstein"
+    ],
+    "answer": "Alexander Graham Bell",
+    "explanation": "Alexander Graham Bell is credited with inventing the telephone in 1876! He made the first ever telephone call to his assistant. Bell was born in Scotland but emigrated to America."
+  },
+  {
+    "id": "gk-tech-004",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What was the internet originally called?",
+    "options": [
+      "WebNet",
+      "ARPANET",
+      "GlobalNet",
+      "CyberNet"
+    ],
+    "answer": "ARPANET",
+    "explanation": "The internet began as ARPANET (Advanced Research Projects Agency Network) in the 1960s, built by the US military. The World Wide Web (websites) was added on top of it in 1989 by Tim Berners-Lee."
+  },
+  {
+    "id": "gk-tech-005",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What year was the first iPhone released?",
+    "options": [
+      "1999",
+      "2004",
+      "2007",
+      "2010"
+    ],
+    "answer": "2007",
+    "explanation": "Apple launched the first iPhone in 2007, changing smartphones forever! Before iPhones, mobile phones had small screens and physical keyboards. Now almost everyone has a touchscreen smartphone!"
+  },
+  {
+    "id": "gk-tech-006",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Who invented the first mechanical computer?",
+    "options": [
+      "Alan Turing",
+      "Charles Babbage",
+      "Steve Jobs",
+      "Bill Gates"
+    ],
+    "answer": "Charles Babbage",
+    "explanation": "Charles Babbage designed the first mechanical computer (the 'Difference Engine') in the 1820s! Ada Lovelace wrote the first computer program for it \u2014 making her the world's first programmer!"
+  },
+  {
+    "id": "gk-tech-007",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do solar panels do?",
+    "options": [
+      "Store wind energy",
+      "Convert sunlight into electricity",
+      "Heat water only",
+      "Reflect heat away from buildings"
+    ],
+    "answer": "Convert sunlight into electricity",
+    "explanation": "Solar panels (photovoltaic panels) convert light from the sun into electricity. They are a clean, renewable energy source \u2014 once installed, they produce electricity with no pollution!"
+  },
+  {
+    "id": "gk-tech-008",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which Irish woman was one of the world's first computer programmers?",
+    "options": [
+      "Grace O'Malley",
+      "Ada Lovelace",
+      "Mary Robinson",
+      "Constance Markievicz"
+    ],
+    "answer": "Ada Lovelace",
+    "explanation": "Ada Lovelace (1815-1852) is considered the world's first computer programmer, writing instructions for Charles Babbage's mechanical computer! She was British/Irish. The programming language Ada was named after her."
+  },
+  {
+    "id": "gk-tech-009",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is a robot?",
+    "options": [
+      "Any computer",
+      "A machine that can carry out tasks automatically, often programmed by computers",
+      "A type of game console",
+      "A type of smartphone"
+    ],
+    "answer": "A machine that can carry out tasks automatically, often programmed by computers",
+    "explanation": "A robot is a machine that can perform tasks automatically. Robots are used in factories, hospitals, space exploration, and even as toys and helpers at home!"
+  },
+  {
+    "id": "gk-tech-010",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is renewable energy?",
+    "options": [
+      "Energy that comes from burning coal",
+      "Energy from sources that naturally replenish (like sun, wind, and water)",
+      "Energy stored in batteries only",
+      "Energy from nuclear power plants"
+    ],
+    "answer": "Energy from sources that naturally replenish (like sun, wind, and water)",
+    "explanation": "Renewable energy comes from sources that never run out \u2014 sun (solar), wind (turbines), water (hydro), and more. Ireland is a world leader in wind energy and is working toward 100% renewable electricity!"
+  },
+  {
+    "id": "gk-space-001",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the name of our galaxy?",
+    "options": [
+      "The Solar System",
+      "The Milky Way",
+      "Andromeda",
+      "The Universe"
+    ],
+    "answer": "The Milky Way",
+    "explanation": "Our galaxy is the Milky Way \u2014 a spiral galaxy containing about 200-400 billion stars! On a very clear night in Ireland, far from city lights, you can sometimes see a faint band of the Milky Way across the sky."
+  },
+  {
+    "id": "gk-space-002",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many planets are in our solar system?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": "8",
+    "explanation": "There are 8 planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Pluto was reclassified as a 'dwarf planet' in 2006!"
+  },
+  {
+    "id": "gk-space-003",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      "Venus",
+      "Earth",
+      "Mercury",
+      "Mars"
+    ],
+    "answer": "Mercury",
+    "explanation": "Mercury is the closest planet to the Sun! Despite this, it is not the hottest planet \u2014 Venus is actually hotter because it has a thick atmosphere that traps heat."
+  },
+  {
+    "id": "gk-space-004",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a shooting star?",
+    "options": [
+      "A real star moving across the sky",
+      "A piece of rock or dust burning up in Earth's atmosphere",
+      "A spacecraft flying past",
+      "A star that has exploded"
+    ],
+    "answer": "A piece of rock or dust burning up in Earth's atmosphere",
+    "explanation": "A 'shooting star' is actually a meteor \u2014 a small piece of rock or dust from space that burns up as it enters Earth's atmosphere at high speed, creating a bright streak of light!"
+  },
+  {
+    "id": "gk-space-005",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Who was the first person to walk on the Moon?",
+    "options": [
+      "Yuri Gagarin",
+      "Buzz Aldrin",
+      "Neil Armstrong",
+      "John Glenn"
+    ],
+    "answer": "Neil Armstrong",
+    "explanation": "Neil Armstrong was the first human to walk on the Moon on 20th July 1969 during NASA's Apollo 11 mission. His famous words: 'That's one small step for man, one giant leap for mankind.'"
+  },
+  {
+    "id": "gk-space-006",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Why does the Moon appear to change shape?",
+    "options": [
+      "The Moon actually changes shape",
+      "Clouds block different parts of the Moon",
+      "We see different amounts of the lit side of the Moon as it orbits Earth",
+      "The Moon spins very fast"
+    ],
+    "answer": "We see different amounts of the lit side of the Moon as it orbits Earth",
+    "explanation": "The Moon does not change shape \u2014 we just see different portions of its sunlit side as it moves around Earth. These are called the phases of the Moon: new moon, crescent, quarter, gibbous, full moon!"
+  },
+  {
+    "id": "gk-space-007",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the Sun?",
+    "options": [
+      "A planet like Earth",
+      "A star at the centre of our solar system",
+      "A moon orbiting Earth",
+      "A giant comet"
+    ],
+    "answer": "A star at the centre of our solar system",
+    "explanation": "The Sun is a star \u2014 a huge ball of hot gas undergoing nuclear fusion! It is about 150 million kilometres from Earth. It looks bigger than other stars only because it is much closer to us."
+  },
+  {
+    "id": "gk-space-008",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How long does light from the Sun take to reach Earth?",
+    "options": [
+      "About 8 seconds",
+      "About 8 minutes",
+      "About 8 hours",
+      "About 8 days"
+    ],
+    "answer": "About 8 minutes",
+    "explanation": "Light travels at 300,000 km per second \u2014 the fastest speed in the universe! Even at that incredible speed, it takes about 8 minutes for sunlight to travel the 150 million kilometres from the Sun to Earth."
+  },
+  {
+    "id": "gk-space-009",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Jupiter",
+      "Mars",
+      "Saturn"
+    ],
+    "answer": "Mars",
+    "explanation": "Mars is the Red Planet! Its reddish colour comes from iron oxide (rust) on its surface. Mars is the planet most like Earth and is the main target for future human space exploration."
+  },
+  {
+    "id": "gk-space-010",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What are Saturn's rings made of?",
+    "options": [
+      "Solid metal",
+      "Gas only",
+      "Billions of pieces of ice and rock",
+      "Liquid water"
+    ],
+    "answer": "Billions of pieces of ice and rock",
+    "explanation": "Saturn's stunning rings are made of billions of pieces of ice and rock, ranging from tiny grains to chunks as big as houses! They are about 282,000 km wide but only about 10 metres thick \u2014 incredibly thin!"
+  },
+  {
+    "id": "gk-irish-001",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What ancient Irish celebration takes place on 31st October?",
+    "options": [
+      "Bealtaine",
+      "L\u00fanasa",
+      "Imbolc",
+      "Samhain"
+    ],
+    "answer": "Samhain",
+    "explanation": "Samhain (SOW-in) is the ancient Celtic festival on 31st October \u2014 it is the origin of modern Halloween! The ancient Irish believed the barrier between the living and spirit worlds was thinnest on this night."
+  },
+  {
+    "id": "gk-irish-002",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the ancient passage tomb in County Meath, older than Stonehenge and the Egyptian pyramids?",
+    "options": [
+      "Cashel",
+      "Newgrange",
+      "Tara",
+      "Clonmacnoise"
+    ],
+    "answer": "Newgrange",
+    "explanation": "Newgrange in the Boyne Valley, County Meath, was built around 3200 BC \u2014 older than Stonehenge and the Pyramids of Giza! Every winter solstice (21st December), sunlight enters a narrow passageway and lights up the inner chamber."
+  },
+  {
+    "id": "gk-irish-003",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the traditional Irish instrument shaped like a teardrop that you pluck?",
+    "options": [
+      "Fiddle",
+      "Bodhran",
+      "Uilleann pipes",
+      "Harp"
+    ],
+    "answer": "Harp",
+    "explanation": "The harp is Ireland's national symbol \u2014 it even appears on Irish coins and the Presidential seal! It is one of the oldest musical instruments in Ireland, going back over a thousand years."
+  },
+  {
+    "id": "gk-irish-004",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What traditional Irish drum is played with a hand and a stick?",
+    "options": [
+      "Bongo",
+      "Bodhran",
+      "Bodhr\u00e1n",
+      "Both B and C (same instrument)"
+    ],
+    "answer": "Both B and C (same instrument)",
+    "explanation": "The bodhr\u00e1n (BOW-rawn) is a traditional Irish frame drum, usually played with a double-ended wooden stick (a tipper). It features in traditional Irish music sessions all over the world!"
+  },
+  {
+    "id": "gk-irish-005",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the famous Irish legend about a warrior from County Clare who caught a salmon of knowledge?",
+    "options": [
+      "C\u00fa Chulainn",
+      "Fionn Mac Cumhaill",
+      "Lugh",
+      "The Dagda"
+    ],
+    "answer": "Fionn Mac Cumhaill",
+    "explanation": "Fionn Mac Cumhaill (Finn McCool) is one of Ireland's greatest legendary heroes! As a boy he caught the Salmon of Knowledge, burned his thumb and sucked it \u2014 giving him all the world's wisdom. He later led the mighty Fianna warriors."
+  },
+  {
+    "id": "gk-irish-006",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What colour is most associated with Ireland?",
+    "options": [
+      "Red",
+      "Blue",
+      "Green",
+      "Orange"
+    ],
+    "answer": "Green",
+    "explanation": "Green is Ireland's colour \u2014 'The Emerald Isle' is one of Ireland's nicknames, because of its lush green fields and countryside! Ireland's green comes from its mild, rainy climate perfect for growing grass."
+  },
+  {
+    "id": "gk-irish-007",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the name of the famous illuminated medieval manuscript kept in Trinity College Dublin?",
+    "options": [
+      "The Magna Carta",
+      "The Book of Kells",
+      "The Dead Sea Scrolls",
+      "The Book of Armagh"
+    ],
+    "answer": "The Book of Kells",
+    "explanation": "The Book of Kells is a breathtaking illuminated manuscript of the four Gospels, created by Celtic monks around 800 AD. It is kept in Trinity College Dublin and is one of Ireland's greatest national treasures!"
+  },
+  {
+    "id": "gk-irish-008",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which sport is uniquely Irish and played with a stick called a hurley?",
+    "options": [
+      "Gaelic Football",
+      "Hurling",
+      "Camogie",
+      "Rugby"
+    ],
+    "answer": "Hurling",
+    "explanation": "Hurling is one of the world's oldest and fastest field sports, played in Ireland for over 3,000 years! Players use a wooden stick (hurley/cam\u00e1n) to strike a small ball (sliotar). Camogie is the women's version."
+  },
+  {
+    "id": "gk-irish-009",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What language, besides English, is an official language of Ireland?",
+    "options": [
+      "French",
+      "Welsh",
+      "Irish (Gaeilge)",
+      "Scottish Gaelic"
+    ],
+    "answer": "Irish (Gaeilge)",
+    "explanation": "Irish (Gaeilge) is the first official language of Ireland! It is a Celtic language that has been spoken in Ireland for over 2,000 years. You can see it on all road signs, government buildings and official documents."
+  },
+  {
+    "id": "gk-irish-010",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What natural formation in County Antrim consists of about 40,000 interlocking basalt columns?",
+    "options": [
+      "The Burren",
+      "The Cliffs of Moher",
+      "The Giant's Causeway",
+      "The Ring of Kerry"
+    ],
+    "answer": "The Giant's Causeway",
+    "explanation": "The Giant's Causeway on the north Antrim coast is a UNESCO World Heritage Site! Its hexagonal basalt columns were formed 60 million years ago by ancient volcanic activity. Legend says it was built by the giant Finn McCool!"
+  },
+  {
+    "id": "gko-animals-001",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the largest animal that has ever lived on Earth?",
+    "options": [
+      "African elephant",
+      "Blue whale",
+      "Giraffe",
+      "Great white shark"
+    ],
+    "answer": "Blue whale",
+    "explanation": "The blue whale is the biggest animal ever, even bigger than the dinosaurs! Its heart alone is as big as a small car."
+  },
+  {
+    "id": "gko-animals-002",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which land animal is the fastest runner?",
+    "options": [
+      "Cheetah",
+      "Horse",
+      "Greyhound",
+      "Ostrich"
+    ],
+    "answer": "Cheetah",
+    "explanation": "A cheetah can sprint at about 100 km/h, faster than a car on the motorway, but only for a short burst!"
+  },
+  {
+    "id": "gko-animals-003",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the tallest animal in the world?",
+    "options": [
+      "Elephant",
+      "Giraffe",
+      "Camel",
+      "Horse"
+    ],
+    "answer": "Giraffe",
+    "explanation": "A giraffe can be as tall as a two-storey house! Its long neck helps it reach leaves high in the trees."
+  },
+  {
+    "id": "gko-animals-004",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which animal is famous for sleeping up to 20 hours a day?",
+    "options": [
+      "Koala",
+      "Fox",
+      "Rabbit",
+      "Owl"
+    ],
+    "answer": "Koala",
+    "explanation": "Koalas sleep most of the day because the eucalyptus leaves they eat give them very little energy."
+  },
+  {
+    "id": "gko-animals-005",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many hearts does an octopus have?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "answer": "Three",
+    "explanation": "An octopus has three hearts! Two pump blood to the gills and one pumps it around the rest of the body."
+  },
+  {
+    "id": "gko-animals-006",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a baby kangaroo called?",
+    "options": [
+      "Cub",
+      "Joey",
+      "Calf",
+      "Kit"
+    ],
+    "answer": "Joey",
+    "explanation": "A baby kangaroo is called a joey, and it lives snugly inside its mother's pouch when it is tiny."
+  },
+  {
+    "id": "gko-animals-007",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which of these animals is a mammal?",
+    "options": [
+      "Frog",
+      "Snake",
+      "Dolphin",
+      "Crocodile"
+    ],
+    "answer": "Dolphin",
+    "explanation": "A dolphin is a mammal, not a fish! It breathes air and feeds its babies milk, just like a cow or a human."
+  },
+  {
+    "id": "gko-animals-008",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the fastest bird in the world when it dives?",
+    "options": [
+      "Eagle",
+      "Peregrine falcon",
+      "Swift",
+      "Hawk"
+    ],
+    "answer": "Peregrine falcon",
+    "explanation": "A peregrine falcon can dive at over 300 km/h, making it the fastest animal on the whole planet!"
+  },
+  {
+    "id": "gko-animals-009",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which animal has the longest migration of any in the world?",
+    "options": [
+      "Arctic tern",
+      "Robin",
+      "Pigeon",
+      "Seagull"
+    ],
+    "answer": "Arctic tern",
+    "explanation": "The Arctic tern flies from the Arctic to the Antarctic and back each year, a journey of about 70,000 km!"
+  },
+  {
+    "id": "gko-animals-010",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call a group of lions?",
+    "options": [
+      "Pack",
+      "Pride",
+      "Herd",
+      "Flock"
+    ],
+    "answer": "Pride",
+    "explanation": "A group of lions is called a pride. They live and hunt together as one big family."
+  },
+  {
+    "id": "gko-animals-011",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which sea creature can change colour to hide from danger?",
+    "options": [
+      "Cuttlefish",
+      "Tuna",
+      "Crab",
+      "Starfish"
+    ],
+    "answer": "Cuttlefish",
+    "explanation": "A cuttlefish can change its colour and pattern in a flash to blend in or to talk to other cuttlefish."
+  },
+  {
+    "id": "gko-animals-012",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the only mammal that can truly fly?",
+    "options": [
+      "Flying squirrel",
+      "Bat",
+      "Sugar glider",
+      "Flying fish"
+    ],
+    "answer": "Bat",
+    "explanation": "Bats are the only mammals that can really fly! Flying squirrels just glide, but bats flap their wings."
+  },
+  {
+    "id": "gko-animals-013",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which animal is known as the 'king of the jungle'?",
+    "options": [
+      "Tiger",
+      "Lion",
+      "Gorilla",
+      "Leopard"
+    ],
+    "answer": "Lion",
+    "explanation": "The lion is often called the king of the jungle because of its mighty roar and bushy mane."
+  },
+  {
+    "id": "gko-animals-014",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How does a snake smell things?",
+    "options": [
+      "With its nose",
+      "With its tongue",
+      "With its eyes",
+      "With its tail"
+    ],
+    "answer": "With its tongue",
+    "explanation": "A snake flicks out its tongue to catch tiny smells in the air, then it knows what is nearby!"
+  },
+  {
+    "id": "gko-animals-015",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which animal has the largest eyes of any creature on Earth?",
+    "options": [
+      "Giant squid",
+      "Owl",
+      "Whale shark",
+      "Tiger"
+    ],
+    "answer": "Giant squid",
+    "explanation": "The giant squid has eyes as big as dinner plates to help it see in the dark, deep ocean."
+  },
+  {
+    "id": "gko-animals-016",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is special about a tardigrade, also called a 'water bear'?",
+    "options": [
+      "It is the largest insect",
+      "It can survive in space",
+      "It glows in the dark",
+      "It changes into a butterfly"
+    ],
+    "answer": "It can survive in space",
+    "explanation": "Tiny tardigrades are so tough they can survive in the freezing, airless emptiness of space!"
+  },
+  {
+    "id": "gko-animals-017",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which animal is the largest living land animal?",
+    "options": [
+      "African elephant",
+      "Hippopotamus",
+      "White rhinoceros",
+      "Giraffe"
+    ],
+    "answer": "African elephant",
+    "explanation": "The African elephant is the biggest animal living on land, weighing as much as six cars!"
+  },
+  {
+    "id": "gko-animals-018",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do bees make that humans love to eat?",
+    "options": [
+      "Butter",
+      "Honey",
+      "Jam",
+      "Syrup"
+    ],
+    "answer": "Honey",
+    "explanation": "Bees make honey from the sweet nectar of flowers, and it takes thousands of bees to make one jar!"
+  },
+  {
+    "id": "gko-animals-019",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which animal never stops growing new teeth throughout its life?",
+    "options": [
+      "Dog",
+      "Shark",
+      "Cat",
+      "Horse"
+    ],
+    "answer": "Shark",
+    "explanation": "Sharks grow row after row of new teeth all their lives, so they never run out!"
+  },
+  {
+    "id": "gko-animals-020",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the loudest animal in the world for its size?",
+    "options": [
+      "Lion",
+      "Pistol shrimp",
+      "Howler monkey",
+      "Elephant"
+    ],
+    "answer": "Pistol shrimp",
+    "explanation": "The tiny pistol shrimp snaps its claw so hard it makes a sound louder than a jet engine!"
+  },
+  {
+    "id": "gko-animals-021",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which of these animals is endangered and lives only in China?",
+    "options": [
+      "Polar bear",
+      "Giant panda",
+      "Kangaroo",
+      "Bison"
+    ],
+    "answer": "Giant panda",
+    "explanation": "Giant pandas live in the bamboo forests of China and are a symbol for protecting endangered animals."
+  },
+  {
+    "id": "gko-animals-022",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In a food web, what do we call animals that only eat plants?",
+    "options": [
+      "Carnivores",
+      "Herbivores",
+      "Omnivores",
+      "Predators"
+    ],
+    "answer": "Herbivores",
+    "explanation": "Herbivores are plant-eaters, like rabbits and deer. Carnivores eat meat and omnivores eat both!"
+  },
+  {
+    "id": "gko-animals-023",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is an animal that eats both plants and meat called?",
+    "options": [
+      "Herbivore",
+      "Carnivore",
+      "Omnivore",
+      "Insectivore"
+    ],
+    "answer": "Omnivore",
+    "explanation": "Omnivores eat both plants and animals. Humans, bears and pigs are all omnivores!"
+  },
+  {
+    "id": "gko-animals-024",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which animal can regrow a lost tail or even a leg?",
+    "options": [
+      "Lizard",
+      "Sparrow",
+      "Mouse",
+      "Goldfish"
+    ],
+    "answer": "Lizard",
+    "explanation": "Many lizards can grow back a tail if they lose one while escaping a predator. Amazing!"
+  },
+  {
+    "id": "gko-animals-025",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Emilia learns that one animal can hold its breath underwater for over an hour. Which is it?",
+    "options": [
+      "Sperm whale",
+      "Seal",
+      "Penguin",
+      "Otter"
+    ],
+    "answer": "Sperm whale",
+    "explanation": "Sperm whales can dive deep and hold their breath for more than an hour while hunting giant squid!"
+  },
+  {
+    "id": "gko-animals-026",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which insect can lift objects many times heavier than its own body?",
+    "options": [
+      "Butterfly",
+      "Ant",
+      "Fly",
+      "Moth"
+    ],
+    "answer": "Ant",
+    "explanation": "Ants are super strong and can carry things up to 50 times their own body weight!"
+  },
+  {
+    "id": "gko-animals-027",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What colour is a polar bear's skin underneath its fur?",
+    "options": [
+      "White",
+      "Pink",
+      "Black",
+      "Brown"
+    ],
+    "answer": "Black",
+    "explanation": "A polar bear's skin is black to soak up the sun's warmth, even though its fur looks white!"
+  },
+  {
+    "id": "gko-animals-028",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which jellyfish is sometimes called 'immortal' because it can turn back into a baby?",
+    "options": [
+      "Moon jellyfish",
+      "Turritopsis (immortal jellyfish)",
+      "Box jellyfish",
+      "Lion's mane jellyfish"
+    ],
+    "answer": "Turritopsis (immortal jellyfish)",
+    "explanation": "This tiny jellyfish can change back into its baby form and start its life all over again!"
+  },
+  {
+    "id": "gko-animals-029",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the smallest bird in the world?",
+    "options": [
+      "Wren",
+      "Bee hummingbird",
+      "Sparrow",
+      "Robin"
+    ],
+    "answer": "Bee hummingbird",
+    "explanation": "The bee hummingbird is so tiny it is barely bigger than a bee, and its eggs are the size of peas!"
+  },
+  {
+    "id": "gko-animals-030",
+    "subject": "genknow",
+    "topic": "animals",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Why are honeybees so important to nature?",
+    "options": [
+      "They make silk",
+      "They pollinate flowers and crops",
+      "They eat harmful weeds",
+      "They clean rivers"
+    ],
+    "answer": "They pollinate flowers and crops",
+    "explanation": "Bees carry pollen from flower to flower, helping plants grow fruit and seeds. Many of our foods need them!"
+  },
+  {
+    "id": "gko-world-facts-001",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the largest ocean on Earth?",
+    "options": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    "answer": "Pacific Ocean",
+    "explanation": "The Pacific Ocean is the biggest of all. It is so huge it could hold all the land on Earth!"
+  },
+  {
+    "id": "gko-world-facts-002",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the tallest mountain in the world above sea level?",
+    "options": [
+      "Mount Everest",
+      "Carrauntoohil",
+      "Kilimanjaro",
+      "Mont Blanc"
+    ],
+    "answer": "Mount Everest",
+    "explanation": "Mount Everest in the Himalayas is the tallest mountain on Earth, with its peak high above the clouds!"
+  },
+  {
+    "id": "gko-world-facts-003",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the largest hot desert in the world?",
+    "options": [
+      "Gobi Desert",
+      "Sahara Desert",
+      "Kalahari Desert",
+      "Mojave Desert"
+    ],
+    "answer": "Sahara Desert",
+    "explanation": "The Sahara in Africa is the largest hot desert, almost as big as the whole United States!"
+  },
+  {
+    "id": "gko-world-facts-004",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which famous tall tower is found in Paris, France?",
+    "options": [
+      "Big Ben",
+      "Eiffel Tower",
+      "Leaning Tower",
+      "Spinnaker Tower"
+    ],
+    "answer": "Eiffel Tower",
+    "explanation": "The Eiffel Tower is a giant iron tower in Paris and one of the most famous landmarks in the world!"
+  },
+  {
+    "id": "gko-world-facts-005",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "The Great Wall is found in which country?",
+    "options": [
+      "India",
+      "China",
+      "Egypt",
+      "Japan"
+    ],
+    "answer": "China",
+    "explanation": "The Great Wall of China is thousands of kilometres long and was built to protect the country long ago."
+  },
+  {
+    "id": "gko-world-facts-006",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the longest river in the world?",
+    "options": [
+      "Amazon River",
+      "Nile River",
+      "Shannon River",
+      "Thames River"
+    ],
+    "answer": "Nile River",
+    "explanation": "The Nile in Africa is usually counted as the longest river in the world, winding through many countries."
+  },
+  {
+    "id": "gko-world-facts-007",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the longest river in Ireland?",
+    "options": [
+      "River Liffey",
+      "River Shannon",
+      "River Lee",
+      "River Boyne"
+    ],
+    "answer": "River Shannon",
+    "explanation": "The River Shannon is the longest river in Ireland and flows through many counties on its way to the sea."
+  },
+  {
+    "id": "gko-world-facts-008",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "The ancient pyramids are most famous in which country?",
+    "options": [
+      "Greece",
+      "Egypt",
+      "Italy",
+      "Spain"
+    ],
+    "answer": "Egypt",
+    "explanation": "The Pyramids of Giza in Egypt were built thousands of years ago as tombs for kings called pharaohs."
+  },
+  {
+    "id": "gko-world-facts-009",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the largest country in the world by land area?",
+    "options": [
+      "China",
+      "Russia",
+      "Canada",
+      "United States"
+    ],
+    "answer": "Russia",
+    "explanation": "Russia is the biggest country on Earth, so large it covers parts of both Europe and Asia!"
+  },
+  {
+    "id": "gko-world-facts-010",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the smallest country in the world?",
+    "options": [
+      "Monaco",
+      "Vatican City",
+      "Malta",
+      "Ireland"
+    ],
+    "answer": "Vatican City",
+    "explanation": "Vatican City is the tiniest country in the world. You could walk all the way around it in an afternoon!"
+  },
+  {
+    "id": "gko-world-facts-011",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many continents are there on Earth?",
+    "options": [
+      "Five",
+      "Six",
+      "Seven",
+      "Eight"
+    ],
+    "answer": "Seven",
+    "explanation": "There are seven continents: Africa, Antarctica, Asia, Australia, Europe, North America and South America."
+  },
+  {
+    "id": "gko-world-facts-012",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which continent is covered almost entirely in ice and is the coldest place on Earth?",
+    "options": [
+      "Asia",
+      "Antarctica",
+      "Africa",
+      "Europe"
+    ],
+    "answer": "Antarctica",
+    "explanation": "Antarctica is the coldest, windiest continent, blanketed in thick ice where penguins live!"
+  },
+  {
+    "id": "gko-world-facts-013",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the deepest place in all the world's oceans?",
+    "options": [
+      "Mariana Trench",
+      "Bermuda Triangle",
+      "Dead Sea",
+      "Grand Canyon"
+    ],
+    "answer": "Mariana Trench",
+    "explanation": "The Mariana Trench in the Pacific is so deep that Mount Everest could fit inside with room to spare!"
+  },
+  {
+    "id": "gko-world-facts-014",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which natural wonder in Australia is the largest living structure on Earth?",
+    "options": [
+      "Uluru",
+      "Great Barrier Reef",
+      "Blue Mountains",
+      "Niagara Falls"
+    ],
+    "answer": "Great Barrier Reef",
+    "explanation": "The Great Barrier Reef is made of billions of tiny coral animals and can even be seen from space!"
+  },
+  {
+    "id": "gko-world-facts-015",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In which country would you find the famous Statue of Liberty?",
+    "options": [
+      "France",
+      "United States",
+      "Canada",
+      "Brazil"
+    ],
+    "answer": "United States",
+    "explanation": "The Statue of Liberty stands in New York harbour and was a gift to America from the people of France."
+  },
+  {
+    "id": "gko-world-facts-016",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the name of the famous waterfall on the border of the USA and Canada?",
+    "options": [
+      "Victoria Falls",
+      "Niagara Falls",
+      "Angel Falls",
+      "Iguazu Falls"
+    ],
+    "answer": "Niagara Falls",
+    "explanation": "Niagara Falls is a thundering waterfall where huge amounts of water tumble over the edge every second!"
+  },
+  {
+    "id": "gko-world-facts-017",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which famous Irish natural wonder is made of thousands of hexagonal stone columns?",
+    "options": [
+      "Cliffs of Moher",
+      "Giant's Causeway",
+      "Ring of Kerry",
+      "Skellig Michael"
+    ],
+    "answer": "Giant's Causeway",
+    "explanation": "The Giant's Causeway in County Antrim was formed by cooling lava long ago, but legend says a giant built it!"
+  },
+  {
+    "id": "gko-world-facts-018",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call the imaginary line around the middle of the Earth?",
+    "options": [
+      "The Equator",
+      "The North Pole",
+      "The Horizon",
+      "The Tropic"
+    ],
+    "answer": "The Equator",
+    "explanation": "The Equator is an invisible line around the middle of the Earth. Countries near it are usually very warm!"
+  },
+  {
+    "id": "gko-world-facts-019",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which country is shaped like a boot?",
+    "options": [
+      "Spain",
+      "Italy",
+      "Greece",
+      "Portugal"
+    ],
+    "answer": "Italy",
+    "explanation": "If you look at a map, Italy looks just like a boot kicking a football into the sea!"
+  },
+  {
+    "id": "gko-world-facts-020",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the capital city of Ireland?",
+    "options": [
+      "Cork",
+      "Galway",
+      "Dublin",
+      "Limerick"
+    ],
+    "answer": "Dublin",
+    "explanation": "Dublin is the capital of Ireland and the River Liffey flows right through the middle of the city."
+  },
+  {
+    "id": "gko-world-facts-021",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "The ancient stone circle called Stonehenge is found in which country?",
+    "options": [
+      "Ireland",
+      "England",
+      "Scotland",
+      "Wales"
+    ],
+    "answer": "England",
+    "explanation": "Stonehenge is a mysterious circle of giant stones in England, built around 5,000 years ago!"
+  },
+  {
+    "id": "gko-world-facts-022",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which rainforest is the largest in the world?",
+    "options": [
+      "Congo Rainforest",
+      "Amazon Rainforest",
+      "Daintree Rainforest",
+      "Borneo Rainforest"
+    ],
+    "answer": "Amazon Rainforest",
+    "explanation": "The Amazon in South America is the biggest rainforest and is home to millions of kinds of plants and animals!"
+  },
+  {
+    "id": "gko-world-facts-023",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the name of the famous Irish cliffs on the west coast that drop straight into the sea?",
+    "options": [
+      "Cliffs of Moher",
+      "White Cliffs of Dover",
+      "Slieve League",
+      "Howth Head"
+    ],
+    "answer": "Cliffs of Moher",
+    "explanation": "The Cliffs of Moher in County Clare rise high above the Atlantic Ocean and are home to many seabirds."
+  },
+  {
+    "id": "gko-world-facts-024",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which famous building in India was built as a gift of love and is made of white marble?",
+    "options": [
+      "Taj Mahal",
+      "Colosseum",
+      "Sydney Opera House",
+      "Buckingham Palace"
+    ],
+    "answer": "Taj Mahal",
+    "explanation": "The Taj Mahal is a beautiful white palace in India built by an emperor in memory of his wife."
+  },
+  {
+    "id": "gko-world-facts-025",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the saltiest large body of water, so salty you float easily in it?",
+    "options": [
+      "The Dead Sea",
+      "Lake Victoria",
+      "The Mediterranean Sea",
+      "Lough Neagh"
+    ],
+    "answer": "The Dead Sea",
+    "explanation": "The Dead Sea is so salty that you bob like a cork on top of the water without even trying!"
+  },
+  {
+    "id": "gko-world-facts-026",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which planet do we live on?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Earth",
+      "Jupiter"
+    ],
+    "answer": "Earth",
+    "explanation": "We live on Earth, the only planet we know of with water, air and life all over it!"
+  },
+  {
+    "id": "gko-world-facts-027",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call a large area of land with very little rain and lots of sand?",
+    "options": [
+      "Forest",
+      "Desert",
+      "Swamp",
+      "Meadow"
+    ],
+    "answer": "Desert",
+    "explanation": "A desert is a dry place that gets very little rain. Some deserts are hot and sandy, others are cold!"
+  },
+  {
+    "id": "gko-world-facts-028",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which famous ancient amphitheatre is found in Rome, Italy?",
+    "options": [
+      "The Parthenon",
+      "The Colosseum",
+      "The Pantheon",
+      "The Acropolis"
+    ],
+    "answer": "The Colosseum",
+    "explanation": "The Colosseum is a giant round arena in Rome where, long ago, thousands of people watched shows and games."
+  },
+  {
+    "id": "gko-world-facts-029",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the name of the sea that lies to the east of Ireland, between it and Britain?",
+    "options": [
+      "Irish Sea",
+      "North Sea",
+      "Celtic Sea",
+      "Baltic Sea"
+    ],
+    "answer": "Irish Sea",
+    "explanation": "The Irish Sea separates Ireland from Britain, and ferries carry people across it every day."
+  },
+  {
+    "id": "gko-world-facts-030",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which ancient city in Peru is high up in the mountains and was built by the Inca people?",
+    "options": [
+      "Machu Picchu",
+      "Petra",
+      "Pompeii",
+      "Angkor Wat"
+    ],
+    "answer": "Machu Picchu",
+    "explanation": "Machu Picchu sits high in the Andes mountains and was a hidden Inca city discovered again over 100 years ago!"
+  },
+  {
+    "id": "gko-human-body-001",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which body part pumps blood all around your body?",
+    "options": [
+      "Lungs",
+      "Heart",
+      "Brain",
+      "Stomach"
+    ],
+    "answer": "Heart",
+    "explanation": "Your heart is a strong muscle that pumps blood everywhere, beating around 100,000 times a day!"
+  },
+  {
+    "id": "gko-human-body-002",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What do we use to breathe in air?",
+    "options": [
+      "Heart",
+      "Lungs",
+      "Liver",
+      "Kidneys"
+    ],
+    "answer": "Lungs",
+    "explanation": "Your two lungs fill up with air when you breathe in, taking in the oxygen your body needs."
+  },
+  {
+    "id": "gko-human-body-003",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which part of your body helps you think, remember and learn?",
+    "options": [
+      "Heart",
+      "Brain",
+      "Stomach",
+      "Bones"
+    ],
+    "answer": "Brain",
+    "explanation": "Your brain is the boss of your body! It helps you think, remember, move and feel everything."
+  },
+  {
+    "id": "gko-human-body-004",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "About how many bones does an adult human have?",
+    "options": [
+      "Around 50",
+      "Around 100",
+      "Around 206",
+      "Around 500"
+    ],
+    "answer": "Around 206",
+    "explanation": "Adults have about 206 bones. Babies are born with even more, but some join together as they grow!"
+  },
+  {
+    "id": "gko-human-body-005",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the largest organ of the human body?",
+    "options": [
+      "The heart",
+      "The skin",
+      "The liver",
+      "The brain"
+    ],
+    "answer": "The skin",
+    "explanation": "Your skin is your biggest organ! It covers your whole body and protects everything inside."
+  },
+  {
+    "id": "gko-human-body-006",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which organ helps clean your blood and is shaped like a bean?",
+    "options": [
+      "Heart",
+      "Kidney",
+      "Lung",
+      "Brain"
+    ],
+    "answer": "Kidney",
+    "explanation": "Your two kidneys clean your blood and make wee to remove the things your body does not need."
+  },
+  {
+    "id": "gko-human-body-007",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How many senses do humans traditionally have?",
+    "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Six"
+    ],
+    "answer": "Five",
+    "explanation": "The five main senses are sight, hearing, smell, taste and touch. They help us understand the world!"
+  },
+  {
+    "id": "gko-human-body-008",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which part of your body do you use to taste your food?",
+    "options": [
+      "Nose",
+      "Tongue",
+      "Ears",
+      "Eyes"
+    ],
+    "answer": "Tongue",
+    "explanation": "Your tongue is covered in tiny taste buds that help you taste sweet, salty, sour and bitter flavours."
+  },
+  {
+    "id": "gko-human-body-009",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the smallest bone in the human body?",
+    "options": [
+      "A finger bone",
+      "The stirrup bone in the ear",
+      "A toe bone",
+      "The collarbone"
+    ],
+    "answer": "The stirrup bone in the ear",
+    "explanation": "The tiniest bone, called the stirrup, is in your ear and is smaller than a grain of rice!"
+  },
+  {
+    "id": "gko-human-body-010",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the longest bone in the human body?",
+    "options": [
+      "The thigh bone (femur)",
+      "The arm bone",
+      "The backbone",
+      "The shin bone"
+    ],
+    "answer": "The thigh bone (femur)",
+    "explanation": "The femur in your thigh is the longest, strongest bone, helping to hold up your whole body!"
+  },
+  {
+    "id": "gko-human-body-011",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What colour is blood inside your body before it touches air?",
+    "options": [
+      "Blue",
+      "Green",
+      "Red",
+      "Clear"
+    ],
+    "answer": "Red",
+    "explanation": "Blood is always red! It just looks blue through your skin because of the way light works."
+  },
+  {
+    "id": "gko-human-body-012",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which body part can never be tickled by yourself?",
+    "options": [
+      "Your feet",
+      "Your tummy",
+      "You cannot tickle yourself anywhere",
+      "Your neck"
+    ],
+    "answer": "You cannot tickle yourself anywhere",
+    "explanation": "Your brain knows when you are about to touch yourself, so it stops the tickle feeling. Clever brain!"
+  },
+  {
+    "id": "gko-human-body-013",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What helps protect your soft brain inside your head?",
+    "options": [
+      "Skin only",
+      "The skull",
+      "Hair",
+      "Muscles"
+    ],
+    "answer": "The skull",
+    "explanation": "Your skull is a strong bony helmet that keeps your delicate brain safe and protected."
+  },
+  {
+    "id": "gko-human-body-014",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What are the tiny tubes that carry blood around your body called?",
+    "options": [
+      "Nerves",
+      "Blood vessels",
+      "Tendons",
+      "Glands"
+    ],
+    "answer": "Blood vessels",
+    "explanation": "Blood vessels are tubes that carry blood everywhere. If you lined yours up, they would stretch for thousands of miles!"
+  },
+  {
+    "id": "gko-human-body-015",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which part of your eye lets light in and gets bigger or smaller?",
+    "options": [
+      "Eyelash",
+      "Pupil",
+      "Eyebrow",
+      "Tear duct"
+    ],
+    "answer": "Pupil",
+    "explanation": "The pupil is the black dot in your eye. It gets bigger in the dark to let more light in!"
+  },
+  {
+    "id": "gko-human-body-016",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What grows back after you cut it and does not hurt at all?",
+    "options": [
+      "Skin",
+      "Hair and nails",
+      "Bones",
+      "Teeth"
+    ],
+    "answer": "Hair and nails",
+    "explanation": "Your hair and nails keep growing all your life, and snipping them does not hurt because they are not alive at the tips!"
+  },
+  {
+    "id": "gko-human-body-017",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "How fast can sneezes travel out of your nose and mouth?",
+    "options": [
+      "Walking speed",
+      "About 1 km/h",
+      "Over 100 km/h",
+      "Faster than a rocket"
+    ],
+    "answer": "Over 100 km/h",
+    "explanation": "A sneeze can shoot out faster than a car on the motorway! That is why we cover our mouths."
+  },
+  {
+    "id": "gko-human-body-018",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which sense do your ears give you?",
+    "options": [
+      "Smell",
+      "Hearing",
+      "Taste",
+      "Sight"
+    ],
+    "answer": "Hearing",
+    "explanation": "Your ears catch sounds and send them to your brain so you can hear music, voices and the wind!"
+  },
+  {
+    "id": "gko-human-body-019",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "How many times does the average human heart beat in one day?",
+    "options": [
+      "About 1,000 times",
+      "About 10,000 times",
+      "About 100,000 times",
+      "About 1 million times"
+    ],
+    "answer": "About 100,000 times",
+    "explanation": "Your tireless heart beats around 100,000 times every single day without ever taking a rest!"
+  },
+  {
+    "id": "gko-human-body-020",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which part of your body has a unique pattern that no one else in the world shares?",
+    "options": [
+      "Your fingertips",
+      "Your elbows",
+      "Your knees",
+      "Your ankles"
+    ],
+    "answer": "Your fingertips",
+    "explanation": "Your fingerprints are completely your own! No one else, not even a twin, has the same ones as Emilia."
+  },
+  {
+    "id": "gko-human-body-021",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the hardest substance in your whole body?",
+    "options": [
+      "Bones",
+      "Tooth enamel",
+      "Nails",
+      "Skin"
+    ],
+    "answer": "Tooth enamel",
+    "explanation": "The shiny outside layer of your teeth, called enamel, is the hardest part of your entire body!"
+  },
+  {
+    "id": "gko-human-body-022",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What should you do to keep your bones and teeth strong?",
+    "options": [
+      "Eat lots of sweets",
+      "Drink milk and eat healthy foods",
+      "Never go outside",
+      "Skip breakfast"
+    ],
+    "answer": "Drink milk and eat healthy foods",
+    "explanation": "Foods with calcium, like milk and cheese, help build strong bones and teeth as you grow!"
+  },
+  {
+    "id": "gko-human-body-023",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What happens to most of the air you breathe in?",
+    "options": [
+      "You breathe out all of it the same",
+      "Your lungs take in oxygen from it",
+      "It turns into water",
+      "It stays in your stomach"
+    ],
+    "answer": "Your lungs take in oxygen from it",
+    "explanation": "Your lungs grab the oxygen from the air and pass it into your blood to keep your whole body working!"
+  },
+  {
+    "id": "gko-human-body-024",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Roughly how much of your body is made up of water?",
+    "options": [
+      "About one quarter",
+      "About one half",
+      "About two thirds",
+      "Almost all of it"
+    ],
+    "answer": "About two thirds",
+    "explanation": "Around two thirds of your body is water! That is why it is so important to drink enough every day."
+  },
+  {
+    "id": "gko-human-body-025",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What part of your body do you use to smell flowers and food?",
+    "options": [
+      "Ears",
+      "Nose",
+      "Eyes",
+      "Hands"
+    ],
+    "answer": "Nose",
+    "explanation": "Your nose can tell the difference between thousands of smells, from yummy dinner to fresh rain!"
+  },
+  {
+    "id": "gko-human-body-026",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which group of bones protects your heart and lungs like a cage?",
+    "options": [
+      "The skull",
+      "The ribs",
+      "The spine",
+      "The hips"
+    ],
+    "answer": "The ribs",
+    "explanation": "Your ribs form a strong cage around your chest, keeping your heart and lungs safe inside."
+  },
+  {
+    "id": "gko-human-body-027",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the busy organ that breaks down the food you eat?",
+    "options": [
+      "The lungs",
+      "The stomach",
+      "The heart",
+      "The brain"
+    ],
+    "answer": "The stomach",
+    "explanation": "Your stomach mashes and mixes food with special juices so your body can use it for energy."
+  },
+  {
+    "id": "gko-human-body-028",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Why is it good to exercise and run around every day?",
+    "options": [
+      "It makes your heart and muscles stronger",
+      "It makes your bones shrink",
+      "It uses up all your energy forever",
+      "It stops you growing"
+    ],
+    "answer": "It makes your heart and muscles stronger",
+    "explanation": "Exercise keeps your heart, muscles and bones strong and healthy, and it is great fun too!"
+  },
+  {
+    "id": "gko-human-body-029",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What part of the body do you mostly use to feel whether something is hot, cold or rough?",
+    "options": [
+      "Skin",
+      "Hair",
+      "Teeth",
+      "Bones"
+    ],
+    "answer": "Skin",
+    "explanation": "Your skin is full of tiny sensors that let you feel touch, warmth, cold and even a gentle tickle!"
+  },
+  {
+    "id": "gko-human-body-030",
+    "subject": "genknow",
+    "topic": "human-body",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Where in your body are red blood cells mostly made?",
+    "options": [
+      "In your skin",
+      "Inside your bones (bone marrow)",
+      "In your hair",
+      "In your teeth"
+    ],
+    "answer": "Inside your bones (bone marrow)",
+    "explanation": "The soft middle of your bones, called marrow, makes millions of new blood cells every second!"
+  },
+  {
+    "id": "gko-food-001",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Where does milk come from?",
+    "options": [
+      "Plants",
+      "Cows and other animals",
+      "The sea",
+      "Trees"
+    ],
+    "answer": "Cows and other animals",
+    "explanation": "Most milk comes from cows, but goats and sheep give milk too. Farmers milk them to bring it to us!"
+  },
+  {
+    "id": "gko-food-002",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What food do bees help make?",
+    "options": [
+      "Bread",
+      "Honey",
+      "Cheese",
+      "Pasta"
+    ],
+    "answer": "Honey",
+    "explanation": "Bees gather nectar from flowers and turn it into sweet, golden honey inside their hive."
+  },
+  {
+    "id": "gko-food-003",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What plant do we get bread and pasta from?",
+    "options": [
+      "Wheat",
+      "Apples",
+      "Carrots",
+      "Potatoes"
+    ],
+    "answer": "Wheat",
+    "explanation": "Bread and pasta are made from wheat. The grains are ground into flour and then baked or shaped!"
+  },
+  {
+    "id": "gko-food-004",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which of these foods is full of calcium to help build strong bones?",
+    "options": [
+      "Crisps",
+      "Cheese",
+      "Sweets",
+      "Fizzy drinks"
+    ],
+    "answer": "Cheese",
+    "explanation": "Cheese, milk and yoghurt are full of calcium, which helps build strong bones and teeth!"
+  },
+  {
+    "id": "gko-food-005",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which food group do apples, bananas and oranges belong to?",
+    "options": [
+      "Dairy",
+      "Fruit",
+      "Meat",
+      "Grains"
+    ],
+    "answer": "Fruit",
+    "explanation": "Apples, bananas and oranges are all fruits, full of vitamins to help keep you healthy and strong!"
+  },
+  {
+    "id": "gko-food-006",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Where do potatoes grow?",
+    "options": [
+      "On tall trees",
+      "Underground",
+      "In the sea",
+      "On bushes high up"
+    ],
+    "answer": "Underground",
+    "explanation": "Potatoes grow under the soil! Farmers dig them up, which is why we sometimes call them spuds."
+  },
+  {
+    "id": "gko-food-007",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do we call the journey of food from the farm to your dinner plate?",
+    "options": [
+      "Farm to table",
+      "Field to fork hop",
+      "Soil to sky",
+      "Grow and go"
+    ],
+    "answer": "Farm to table",
+    "explanation": "'Farm to table' means the path food takes from where it is grown to your plate at home or school."
+  },
+  {
+    "id": "gko-food-008",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which food gives your body lots of energy and is found in bread, rice and pasta?",
+    "options": [
+      "Carbohydrates",
+      "Vitamins",
+      "Water",
+      "Salt"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates, like bread and pasta, are the fuel that gives your body energy to run and play!"
+  },
+  {
+    "id": "gko-food-009",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is chocolate made from?",
+    "options": [
+      "Cocoa beans",
+      "Coffee beans",
+      "Sugar cane only",
+      "Tea leaves"
+    ],
+    "answer": "Cocoa beans",
+    "explanation": "Chocolate is made from cocoa beans, which grow inside pods on cocoa trees in warm countries!"
+  },
+  {
+    "id": "gko-food-010",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which of these is a healthy source of protein to help your body grow?",
+    "options": [
+      "Eggs",
+      "Fizzy cola",
+      "Lollipops",
+      "Crisps"
+    ],
+    "answer": "Eggs",
+    "explanation": "Eggs are full of protein, which helps your body build muscles and grow big and strong!"
+  },
+  {
+    "id": "gko-food-011",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is butter made from?",
+    "options": [
+      "Cream from milk",
+      "Olive oil",
+      "Eggs",
+      "Flour"
+    ],
+    "answer": "Cream from milk",
+    "explanation": "Butter is made by churning the cream from milk until it turns thick and spreadable. Yum on toast!"
+  },
+  {
+    "id": "gko-food-012",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which vitamin do we get a lot of from oranges and helps fight off colds?",
+    "options": [
+      "Vitamin C",
+      "Vitamin K",
+      "Vitamin D",
+      "Iron"
+    ],
+    "answer": "Vitamin C",
+    "explanation": "Oranges are bursting with Vitamin C, which helps keep your body healthy and fights off germs!"
+  },
+  {
+    "id": "gko-food-013",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Honey is special because it is the only food that does what?",
+    "options": [
+      "Glows in the dark",
+      "Never goes off if stored well",
+      "Floats on water",
+      "Changes colour daily"
+    ],
+    "answer": "Never goes off if stored well",
+    "explanation": "Honey can last for thousands of years without spoiling! Jars have even been found in old Egyptian tombs."
+  },
+  {
+    "id": "gko-food-014",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which crop was once so important to Ireland that a failure of it caused a great famine?",
+    "options": [
+      "Rice",
+      "Potato",
+      "Wheat",
+      "Corn"
+    ],
+    "answer": "Potato",
+    "explanation": "The potato was a main food in Ireland, so when the crop failed in the 1840s it caused the Great Famine."
+  },
+  {
+    "id": "gko-food-015",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do we get from chickens that we can boil, fry or scramble?",
+    "options": [
+      "Milk",
+      "Eggs",
+      "Cheese",
+      "Wool"
+    ],
+    "answer": "Eggs",
+    "explanation": "Hens lay eggs, which we can cook in many tasty ways like boiled, fried, poached or scrambled!"
+  },
+  {
+    "id": "gko-food-016",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which part of a plant do we eat when we eat a carrot?",
+    "options": [
+      "The leaf",
+      "The root",
+      "The flower",
+      "The seed"
+    ],
+    "answer": "The root",
+    "explanation": "A carrot is the root of the plant! It grows down into the soil to store food for the plant."
+  },
+  {
+    "id": "gko-food-017",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is yoghurt made from?",
+    "options": [
+      "Milk",
+      "Fruit juice",
+      "Water",
+      "Oil"
+    ],
+    "answer": "Milk",
+    "explanation": "Yoghurt is made from milk that has special friendly bacteria added to make it thick and tangy!"
+  },
+  {
+    "id": "gko-food-018",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Rice, a food eaten all over the world, mostly grows in fields covered in what?",
+    "options": [
+      "Sand",
+      "Water (paddy fields)",
+      "Ice",
+      "Stones"
+    ],
+    "answer": "Water (paddy fields)",
+    "explanation": "Rice grows in flooded fields called paddies. The water helps the rice plants grow tall and healthy."
+  },
+  {
+    "id": "gko-food-019",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which of these is the healthiest snack choice?",
+    "options": [
+      "A bag of sweets",
+      "A bowl of fresh fruit",
+      "A chocolate bar",
+      "A fizzy drink"
+    ],
+    "answer": "A bowl of fresh fruit",
+    "explanation": "Fresh fruit is a great snack, full of vitamins and natural sweetness, and much better than lots of sugar!"
+  },
+  {
+    "id": "gko-food-020",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call foods like beef, chicken and fish that help us grow?",
+    "options": [
+      "Proteins",
+      "Sugars",
+      "Fats only",
+      "Spices"
+    ],
+    "answer": "Proteins",
+    "explanation": "Meat, fish, eggs and beans are protein foods that help your body build and repair itself."
+  },
+  {
+    "id": "gko-food-021",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which fruit grows hanging in big bunches and is often yellow when ripe?",
+    "options": [
+      "Banana",
+      "Strawberry",
+      "Apple",
+      "Grape"
+    ],
+    "answer": "Banana",
+    "explanation": "Bananas grow in big bunches on tall plants in warm countries and turn yellow as they ripen!"
+  },
+  {
+    "id": "gko-food-022",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Why is it important to drink water every day?",
+    "options": [
+      "It makes you taller instantly",
+      "Your body needs it to work properly",
+      "It replaces food entirely",
+      "It changes your eye colour"
+    ],
+    "answer": "Your body needs it to work properly",
+    "explanation": "Water keeps your body cool, helps your blood flow and keeps every part of you working well!"
+  },
+  {
+    "id": "gko-food-023",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What sweet treat do we get from sugar cane and sugar beet?",
+    "options": [
+      "Salt",
+      "Sugar",
+      "Pepper",
+      "Vinegar"
+    ],
+    "answer": "Sugar",
+    "explanation": "Sugar comes from plants called sugar cane and sugar beet. We should enjoy it only as a treat, though!"
+  },
+  {
+    "id": "gko-food-024",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which group of foods should we eat the most of for a balanced, healthy diet?",
+    "options": [
+      "Sweets and treats",
+      "Fruit and vegetables",
+      "Crisps",
+      "Fizzy drinks"
+    ],
+    "answer": "Fruit and vegetables",
+    "explanation": "Fruit and vegetables should fill a big part of your plate because they are packed with goodness!"
+  },
+  {
+    "id": "gko-food-025",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Cheese is made by farmers and cheesemakers using what main ingredient?",
+    "options": [
+      "Milk",
+      "Flour",
+      "Eggs",
+      "Sugar"
+    ],
+    "answer": "Milk",
+    "explanation": "Cheese is made from milk! It can take a lot of milk to make just one block of tasty cheese."
+  },
+  {
+    "id": "gko-food-026",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which spice, used to flavour curries and give a golden colour, comes from a root?",
+    "options": [
+      "Turmeric",
+      "Cinnamon",
+      "Vanilla",
+      "Mint"
+    ],
+    "answer": "Turmeric",
+    "explanation": "Turmeric comes from a root, a bit like ginger, and gives many curries their bright golden-yellow colour!"
+  },
+  {
+    "id": "gko-food-027",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call the gas that makes bread rise and become fluffy when baking?",
+    "options": [
+      "Carbon dioxide from yeast",
+      "Oxygen",
+      "Smoke",
+      "Steam only"
+    ],
+    "answer": "Carbon dioxide from yeast",
+    "explanation": "Tiny living things called yeast make bubbles of gas in the dough, which makes bread rise and go fluffy!"
+  },
+  {
+    "id": "gko-food-028",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which food comes straight from the sea?",
+    "options": [
+      "Bread",
+      "Fish",
+      "Apples",
+      "Cheese"
+    ],
+    "answer": "Fish",
+    "explanation": "Fish like salmon, cod and mackerel come from the sea and rivers, and are full of healthy goodness!"
+  },
+  {
+    "id": "gko-food-029",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What part of the plant is broccoli, which we eat as a green vegetable?",
+    "options": [
+      "The roots",
+      "The unopened flower buds",
+      "The seeds",
+      "The bark"
+    ],
+    "answer": "The unopened flower buds",
+    "explanation": "Those little green bumps on broccoli are tiny flower buds that have not opened yet. Healthy and tasty!"
+  },
+  {
+    "id": "gko-food-030",
+    "subject": "genknow",
+    "topic": "food",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Olive oil, used in cooking around the world, is squeezed from what?",
+    "options": [
+      "Olives",
+      "Coconuts",
+      "Sunflower seeds only",
+      "Corn only"
+    ],
+    "answer": "Olives",
+    "explanation": "Olive oil is made by squeezing small fruits called olives, which grow on trees in sunny countries."
+  },
+  {
+    "id": "gko-nature-001",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What do plants need from the sun to help them grow?",
+    "options": [
+      "Light",
+      "Snow",
+      "Wind",
+      "Darkness"
+    ],
+    "answer": "Light",
+    "explanation": "Plants soak up sunlight to make their own food in their leaves. This clever trick is called photosynthesis!"
+  },
+  {
+    "id": "gko-nature-002",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What part of a plant usually grows underground and drinks up water?",
+    "options": [
+      "Leaves",
+      "Roots",
+      "Flowers",
+      "Petals"
+    ],
+    "answer": "Roots",
+    "explanation": "Roots grow under the soil and drink up water and goodness to keep the whole plant healthy."
+  },
+  {
+    "id": "gko-nature-003",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What colourful arc do we sometimes see in the sky after rain and sunshine together?",
+    "options": [
+      "A rainbow",
+      "A cloud",
+      "A shadow",
+      "A star"
+    ],
+    "answer": "A rainbow",
+    "explanation": "A rainbow appears when sunlight shines through raindrops, splitting the light into beautiful colours!"
+  },
+  {
+    "id": "gko-nature-004",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many colours are usually counted in a rainbow?",
+    "options": [
+      "Three",
+      "Five",
+      "Seven",
+      "Ten"
+    ],
+    "answer": "Seven",
+    "explanation": "A rainbow has seven colours: red, orange, yellow, green, blue, indigo and violet. What a lovely sight!"
+  },
+  {
+    "id": "gko-nature-005",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do we call the bright flash of light during a storm?",
+    "options": [
+      "Thunder",
+      "Lightning",
+      "Rainbow",
+      "Fog"
+    ],
+    "answer": "Lightning",
+    "explanation": "Lightning is a huge spark of electricity in the sky. The rumble that follows it is called thunder!"
+  },
+  {
+    "id": "gko-nature-006",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which living things are neither plants nor animals and include mushrooms?",
+    "options": [
+      "Fungi",
+      "Insects",
+      "Reptiles",
+      "Birds"
+    ],
+    "answer": "Fungi",
+    "explanation": "Mushrooms are fungi, a special group of living things. Some fungi are so small you cannot even see them!"
+  },
+  {
+    "id": "gko-nature-007",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the name of the process where plants make their food using sunlight?",
+    "options": [
+      "Hibernation",
+      "Photosynthesis",
+      "Evaporation",
+      "Migration"
+    ],
+    "answer": "Photosynthesis",
+    "explanation": "Photosynthesis is how plants use sunlight, water and air to make their own food in their green leaves!"
+  },
+  {
+    "id": "gko-nature-008",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What gas do plants give out that humans and animals need to breathe?",
+    "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Helium",
+      "Smoke"
+    ],
+    "answer": "Oxygen",
+    "explanation": "Plants give out oxygen, the gas we breathe in to stay alive. That is why trees are so important!"
+  },
+  {
+    "id": "gko-nature-009",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call rain that soaks into the ground, then rises as vapour and falls again?",
+    "options": [
+      "The water cycle",
+      "The food chain",
+      "The rock cycle",
+      "The seasons"
+    ],
+    "answer": "The water cycle",
+    "explanation": "The water cycle is the never-ending journey of water from the sea, into clouds, down as rain, and back again!"
+  },
+  {
+    "id": "gko-nature-010",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the tallest type of tree in the world?",
+    "options": [
+      "Oak",
+      "Coast redwood",
+      "Apple tree",
+      "Palm tree"
+    ],
+    "answer": "Coast redwood",
+    "explanation": "Coast redwoods in California are the tallest trees on Earth, growing taller than a 30-storey building!"
+  },
+  {
+    "id": "gko-nature-011",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which part of a flower makes the seeds for new plants?",
+    "options": [
+      "The petals",
+      "The stem",
+      "Inside the flower (after pollination)",
+      "The leaves"
+    ],
+    "answer": "Inside the flower (after pollination)",
+    "explanation": "After bees carry pollen between flowers, seeds form inside, which can grow into brand new plants!"
+  },
+  {
+    "id": "gko-nature-012",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What causes the loud rumble of thunder during a storm?",
+    "options": [
+      "Clouds bumping together",
+      "Air heated quickly by lightning",
+      "Rain hitting the ground",
+      "Wind blowing trees"
+    ],
+    "answer": "Air heated quickly by lightning",
+    "explanation": "Lightning heats the air so fast it explodes outward, and that booming sound is the thunder we hear!"
+  },
+  {
+    "id": "gko-nature-013",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the name of the colourful lights sometimes seen in the night sky near the North Pole?",
+    "options": [
+      "Northern Lights (Aurora)",
+      "Shooting stars",
+      "Sunbeams",
+      "Rainbows"
+    ],
+    "answer": "Northern Lights (Aurora)",
+    "explanation": "The Northern Lights are glowing ribbons of colour in the sky, made when tiny bits from the Sun hit our air!"
+  },
+  {
+    "id": "gko-nature-014",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do caterpillars turn into?",
+    "options": [
+      "Beetles",
+      "Butterflies or moths",
+      "Spiders",
+      "Bees"
+    ],
+    "answer": "Butterflies or moths",
+    "explanation": "A caterpillar makes a cosy case and slowly changes into a beautiful butterfly or moth. What magic!"
+  },
+  {
+    "id": "gko-nature-015",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call the rings inside a tree trunk that tell us its age?",
+    "options": [
+      "Growth rings",
+      "Bark stripes",
+      "Sap lines",
+      "Root marks"
+    ],
+    "answer": "Growth rings",
+    "explanation": "Each year a tree grows a new ring. Counting the rings tells you how old the tree is!"
+  },
+  {
+    "id": "gko-nature-016",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the largest living thing on Earth, found in a forest in the USA?",
+    "options": [
+      "A blue whale",
+      "A giant fungus",
+      "An elephant",
+      "A redwood tree"
+    ],
+    "answer": "A giant fungus",
+    "explanation": "A huge honey fungus in Oregon spreads underground over a massive area, making it the biggest living thing!"
+  },
+  {
+    "id": "gko-nature-017",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call a habitat that is very wet and muddy, where reeds and frogs live?",
+    "options": [
+      "Desert",
+      "Wetland",
+      "Mountain",
+      "Beach"
+    ],
+    "answer": "Wetland",
+    "explanation": "Wetlands are soggy, marshy places full of life like frogs, dragonflies and water birds!"
+  },
+  {
+    "id": "gko-nature-018",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do bees and butterflies collect from flowers?",
+    "options": [
+      "Nectar",
+      "Mud",
+      "Sand",
+      "Stones"
+    ],
+    "answer": "Nectar",
+    "explanation": "Bees and butterflies sip sweet nectar from flowers, and as they do, they help the plants make seeds!"
+  },
+  {
+    "id": "gko-nature-019",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What happens to many trees in autumn in Ireland?",
+    "options": [
+      "They grow new flowers",
+      "Their leaves change colour and fall",
+      "They turn into bushes",
+      "They stop having roots"
+    ],
+    "answer": "Their leaves change colour and fall",
+    "explanation": "In autumn many trees drop their leaves after they turn red, orange and gold, ready to rest for winter."
+  },
+  {
+    "id": "gko-nature-020",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a volcano?",
+    "options": [
+      "A type of cloud",
+      "A mountain that can erupt with hot melted rock",
+      "A deep ocean",
+      "A kind of river"
+    ],
+    "answer": "A mountain that can erupt with hot melted rock",
+    "explanation": "A volcano is a mountain where red-hot melted rock, called lava, can burst out from deep inside the Earth!"
+  },
+  {
+    "id": "gko-nature-021",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the name of the hot melted rock that comes out of a volcano?",
+    "options": [
+      "Lava",
+      "Steam",
+      "Coal",
+      "Sand"
+    ],
+    "answer": "Lava",
+    "explanation": "When a volcano erupts, glowing hot melted rock called lava flows out and slowly cools into solid rock."
+  },
+  {
+    "id": "gko-nature-022",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What do we call a baby plant when it first sprouts from a seed?",
+    "options": [
+      "A seedling",
+      "A twig",
+      "A branch",
+      "A petal"
+    ],
+    "answer": "A seedling",
+    "explanation": "A tiny new plant that pops up from a seed is called a seedling. With water and sun it grows bigger!"
+  },
+  {
+    "id": "gko-nature-023",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is an earthquake?",
+    "options": [
+      "A big sea wave",
+      "A sudden shaking of the ground",
+      "A type of storm",
+      "A kind of cloud"
+    ],
+    "answer": "A sudden shaking of the ground",
+    "explanation": "An earthquake happens when huge pieces of the Earth's crust move, making the ground shake and rumble!"
+  },
+  {
+    "id": "gko-nature-024",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Why are rainforests sometimes called the 'lungs of the Earth'?",
+    "options": [
+      "They are shaped like lungs",
+      "They make a lot of the oxygen we breathe",
+      "They are always raining",
+      "They are full of animals only"
+    ],
+    "answer": "They make a lot of the oxygen we breathe",
+    "explanation": "Rainforest trees make huge amounts of oxygen, the gas all living things need, which is why we must protect them!"
+  },
+  {
+    "id": "gko-nature-025",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What do we call animals or plants that may disappear forever if we do not protect them?",
+    "options": [
+      "Endangered species",
+      "Extinct species",
+      "Common species",
+      "Wild species"
+    ],
+    "answer": "Endangered species",
+    "explanation": "Endangered species are in danger of dying out. By protecting their homes, we can help them survive!"
+  },
+  {
+    "id": "gko-nature-026",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is fog?",
+    "options": [
+      "A cloud near the ground",
+      "Falling snow",
+      "Bright sunshine",
+      "A strong wind"
+    ],
+    "answer": "A cloud near the ground",
+    "explanation": "Fog is really just a cloud that has formed close to the ground, making everything look misty!"
+  },
+  {
+    "id": "gko-nature-027",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do we call all the living things and their home working together in one area?",
+    "options": [
+      "An ecosystem",
+      "A galaxy",
+      "A factory",
+      "A city"
+    ],
+    "answer": "An ecosystem",
+    "explanation": "An ecosystem is a community of plants, animals and their surroundings all living and helping each other!"
+  },
+  {
+    "id": "gko-nature-028",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "How is snow different from rain?",
+    "options": [
+      "Snow is frozen water that falls as flakes",
+      "Snow is warmer than rain",
+      "Snow comes from the ground",
+      "Snow is made of sand"
+    ],
+    "answer": "Snow is frozen water that falls as flakes",
+    "explanation": "When it is cold enough, water in clouds freezes into tiny ice crystals that fall as beautiful snowflakes!"
+  },
+  {
+    "id": "gko-nature-029",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which plant grows the fastest of all and can shoot up almost a metre in a single day?",
+    "options": [
+      "Oak tree",
+      "Bamboo",
+      "Daisy",
+      "Rose"
+    ],
+    "answer": "Bamboo",
+    "explanation": "Bamboo is the fastest-growing plant in the world and can grow nearly a metre in just one day!"
+  },
+  {
+    "id": "gko-nature-030",
+    "subject": "genknow",
+    "topic": "nature",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Emilia plants a sunflower seed. What three things does it mainly need to grow?",
+    "options": [
+      "Water, sunlight and soil",
+      "Snow, darkness and salt",
+      "Sand, wind and ice",
+      "Sugar, milk and stones"
+    ],
+    "answer": "Water, sunlight and soil",
+    "explanation": "Seeds need water, sunlight and good soil to grow into healthy plants. Soon Emilia will have a tall sunflower!"
+  },
+  {
+    "id": "gko-space-001",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which planet do we live on, Emilia?",
+    "options": [
+      "Mars",
+      "Earth",
+      "Jupiter",
+      "Venus"
+    ],
+    "answer": "Earth",
+    "explanation": "We live on Earth, the only planet we know of with lots of water and life!"
+  },
+  {
+    "id": "gko-space-002",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the big bright star at the centre of our Solar System?",
+    "options": [
+      "The Moon",
+      "The Sun",
+      "Mars",
+      "A comet"
+    ],
+    "answer": "The Sun",
+    "explanation": "The Sun is a giant star, and all the planets travel around it."
+  },
+  {
+    "id": "gko-space-003",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What do we call the rocky object that goes around the Earth and lights up the night sky?",
+    "options": [
+      "The Sun",
+      "A planet",
+      "The Moon",
+      "A galaxy"
+    ],
+    "answer": "The Moon",
+    "explanation": "The Moon is Earth's only natural satellite, and it shines by reflecting sunlight."
+  },
+  {
+    "id": "gko-space-004",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which planet is famous for its beautiful rings?",
+    "options": [
+      "Mars",
+      "Saturn",
+      "Mercury",
+      "Earth"
+    ],
+    "answer": "Saturn",
+    "explanation": "Saturn's rings are made of billions of pieces of ice and rock that circle the planet."
+  },
+  {
+    "id": "gko-space-005",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the largest planet in our Solar System?",
+    "options": [
+      "Earth",
+      "Jupiter",
+      "Mars",
+      "Neptune"
+    ],
+    "answer": "Jupiter",
+    "explanation": "Jupiter is so huge that more than 1,000 Earths could fit inside it!"
+  },
+  {
+    "id": "gko-space-006",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "answer": "Mercury",
+    "explanation": "Mercury is the closest planet to the Sun and zooms around it the fastest."
+  },
+  {
+    "id": "gko-space-007",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which planet is often called the 'Red Planet'?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Saturn",
+      "Neptune"
+    ],
+    "answer": "Mars",
+    "explanation": "Mars looks red because its soil is full of rusty iron dust."
+  },
+  {
+    "id": "gko-space-008",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How many planets are in our Solar System?",
+    "options": [
+      "Six",
+      "Seven",
+      "Eight",
+      "Ten"
+    ],
+    "answer": "Eight",
+    "explanation": "There are eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune."
+  },
+  {
+    "id": "gko-space-009",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Who was the first person to walk on the Moon?",
+    "options": [
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Neil Armstrong",
+      "Tim Peake"
+    ],
+    "answer": "Neil Armstrong",
+    "explanation": "In 1969, Neil Armstrong became the first human to step onto the Moon."
+  },
+  {
+    "id": "gko-space-010",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a group of millions or billions of stars called?",
+    "options": [
+      "A galaxy",
+      "A comet",
+      "A meteor",
+      "A crater"
+    ],
+    "answer": "A galaxy",
+    "explanation": "A galaxy is a huge family of stars. Our galaxy is called the Milky Way!"
+  },
+  {
+    "id": "gko-space-011",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do astronauts wear to breathe and stay safe in space?",
+    "options": [
+      "A raincoat",
+      "A spacesuit",
+      "A swimsuit",
+      "A blanket"
+    ],
+    "answer": "A spacesuit",
+    "explanation": "A spacesuit gives astronauts air to breathe and keeps them safe from the cold of space."
+  },
+  {
+    "id": "gko-space-012",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Why do astronauts float around inside a spaceship?",
+    "options": [
+      "Because there is no air",
+      "Because they are very light",
+      "Because of weightlessness in orbit",
+      "Because they wear special boots"
+    ],
+    "answer": "Because of weightlessness in orbit",
+    "explanation": "In orbit, astronauts and their ship fall together, so everything feels weightless and floats!"
+  },
+  {
+    "id": "gko-space-013",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the name of the big space laboratory where astronauts live and work in orbit?",
+    "options": [
+      "The Space Shuttle",
+      "The International Space Station",
+      "The Hubble Telescope",
+      "The Moon Base"
+    ],
+    "answer": "The International Space Station",
+    "explanation": "The International Space Station, or ISS, is a home in space where astronauts from many countries work together."
+  },
+  {
+    "id": "gko-space-014",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which planet is the hottest in our Solar System?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter"
+    ],
+    "answer": "Venus",
+    "explanation": "Even though Mercury is closer to the Sun, Venus is hottest because thick clouds trap the heat like a blanket."
+  },
+  {
+    "id": "gko-space-015",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a shooting star, Emilia?",
+    "options": [
+      "A star falling from the sky",
+      "A small space rock burning up in the air",
+      "A type of planet",
+      "A spaceship"
+    ],
+    "answer": "A small space rock burning up in the air",
+    "explanation": "A 'shooting star' is really a meteor, a tiny piece of rock burning brightly as it falls through our air."
+  },
+  {
+    "id": "gko-space-016",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What did Neil Armstrong leave on the Moon that is still there today?",
+    "options": [
+      "Footprints",
+      "A car",
+      "A tree",
+      "A swimming pool"
+    ],
+    "answer": "Footprints",
+    "explanation": "With no wind on the Moon, the astronauts' footprints could stay for millions of years!"
+  },
+  {
+    "id": "gko-space-017",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Who was the first human to travel into space?",
+    "options": [
+      "Neil Armstrong",
+      "Yuri Gagarin",
+      "Valentina Tereshkova",
+      "Buzz Aldrin"
+    ],
+    "answer": "Yuri Gagarin",
+    "explanation": "In 1961, Russian astronaut Yuri Gagarin became the first person to fly into space."
+  },
+  {
+    "id": "gko-space-018",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Who was the first woman to travel into space?",
+    "options": [
+      "Sally Ride",
+      "Valentina Tereshkova",
+      "Mae Jemison",
+      "Helen Sharman"
+    ],
+    "answer": "Valentina Tereshkova",
+    "explanation": "Russian astronaut Valentina Tereshkova flew into space in 1963, the first woman to do so."
+  },
+  {
+    "id": "gko-space-019",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the name of the powerful telescope, launched in 2021, that takes amazing pictures of deep space?",
+    "options": [
+      "The Galileo Telescope",
+      "The James Webb Space Telescope",
+      "The Newton Telescope",
+      "The Star Spotter"
+    ],
+    "answer": "The James Webb Space Telescope",
+    "explanation": "The James Webb Space Telescope can see far-away galaxies that formed long, long ago."
+  },
+  {
+    "id": "gko-space-020",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which planet is the windiest, with the fastest winds in the Solar System?",
+    "options": [
+      "Neptune",
+      "Earth",
+      "Mercury",
+      "Venus"
+    ],
+    "answer": "Neptune",
+    "explanation": "Neptune is a stormy blue planet with super-fast winds blowing through its clouds."
+  },
+  {
+    "id": "gko-space-021",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the huge storm on Jupiter called?",
+    "options": [
+      "The Great Red Spot",
+      "The Big Blue Eye",
+      "The Yellow Swirl",
+      "The Purple Patch"
+    ],
+    "answer": "The Great Red Spot",
+    "explanation": "The Great Red Spot is a giant storm on Jupiter that is bigger than the whole Earth!"
+  },
+  {
+    "id": "gko-space-022",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is a black hole?",
+    "options": [
+      "A hole in a planet",
+      "A place in space where gravity is so strong even light can't escape",
+      "A dark cloud",
+      "An empty rocket"
+    ],
+    "answer": "A place in space where gravity is so strong even light can't escape",
+    "explanation": "A black hole pulls so strongly that nothing, not even light, can get away from it."
+  },
+  {
+    "id": "gko-space-023",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What are Saturn's rings mostly made of?",
+    "options": [
+      "Solid gold",
+      "Ice and rock",
+      "Coloured glass",
+      "Gas"
+    ],
+    "answer": "Ice and rock",
+    "explanation": "Saturn's rings are made of countless chunks of ice and rock, some tiny and some big."
+  },
+  {
+    "id": "gko-space-024",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Roughly how long does light from the Sun take to reach Earth?",
+    "options": [
+      "About 8 minutes",
+      "About 1 second",
+      "About 1 hour",
+      "About 1 day"
+    ],
+    "answer": "About 8 minutes",
+    "explanation": "Even though light is super fast, the Sun is so far away it takes about 8 minutes for its light to reach us."
+  },
+  {
+    "id": "gko-space-025",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the name of the spacecraft that took astronauts to the Moon in 1969?",
+    "options": [
+      "Apollo 11",
+      "Sputnik 1",
+      "Voyager 1",
+      "Mariner 4"
+    ],
+    "answer": "Apollo 11",
+    "explanation": "Apollo 11 was the mission that landed the first humans on the Moon."
+  },
+  {
+    "id": "gko-space-026",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which planet spins on its side, almost like it is rolling along?",
+    "options": [
+      "Uranus",
+      "Mars",
+      "Jupiter",
+      "Mercury"
+    ],
+    "answer": "Uranus",
+    "explanation": "Uranus is tipped over so much that it seems to roll around the Sun on its side."
+  },
+  {
+    "id": "gko-space-027",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the closest star to Earth?",
+    "options": [
+      "The North Star",
+      "The Sun",
+      "Sirius",
+      "Proxima Centauri"
+    ],
+    "answer": "The Sun",
+    "explanation": "The Sun is our nearest star. Every other star is much, much farther away."
+  },
+  {
+    "id": "gko-space-028",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What was the first artificial satellite launched into space, in 1957?",
+    "options": [
+      "Sputnik 1",
+      "Apollo 11",
+      "Hubble",
+      "Voyager"
+    ],
+    "answer": "Sputnik 1",
+    "explanation": "Sputnik 1 was a small metal ball launched by the Soviet Union, the first object ever sent into orbit."
+  },
+  {
+    "id": "gko-space-029",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the name of the dwarf planet that used to be called the ninth planet?",
+    "options": [
+      "Pluto",
+      "Ceres",
+      "Eris",
+      "Triton"
+    ],
+    "answer": "Pluto",
+    "explanation": "Pluto was once called a planet, but scientists now call it a 'dwarf planet' because it is quite small."
+  },
+  {
+    "id": "gko-space-030",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Why does the Moon appear to change shape during the month?",
+    "options": [
+      "It really changes shape",
+      "We see different amounts of its sunlit side",
+      "Clouds cover parts of it",
+      "It moves closer and farther"
+    ],
+    "answer": "We see different amounts of its sunlit side",
+    "explanation": "The Moon doesn't really change shape; we just see different amounts of its sunlit half as it orbits Earth."
+  },
+  {
+    "id": "gko-fp-001",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which famous scientist had wild grey hair and came up with ideas about time and space?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Charles Darwin",
+      "Marie Curie"
+    ],
+    "answer": "Albert Einstein",
+    "explanation": "Albert Einstein was a brilliant scientist famous for his messy hair and clever ideas about the universe."
+  },
+  {
+    "id": "gko-fp-002",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which scientist is famous for discovering gravity after seeing an apple fall?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo",
+      "Marie Curie"
+    ],
+    "answer": "Isaac Newton",
+    "explanation": "The story goes that Isaac Newton thought about gravity when he saw an apple fall from a tree."
+  },
+  {
+    "id": "gko-fp-003",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the name of the painter who painted the famous smiling lady, the 'Mona Lisa'?",
+    "options": [
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Claude Monet"
+    ],
+    "answer": "Leonardo da Vinci",
+    "explanation": "Leonardo da Vinci painted the Mona Lisa, one of the most famous paintings in the world."
+  },
+  {
+    "id": "gko-fp-004",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which scientist studied how living things change over a long time, an idea called evolution?",
+    "options": [
+      "Charles Darwin",
+      "Isaac Newton",
+      "Albert Einstein",
+      "Thomas Edison"
+    ],
+    "answer": "Charles Darwin",
+    "explanation": "Charles Darwin studied animals and plants and explained how living things slowly change over time."
+  },
+  {
+    "id": "gko-fp-005",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which famous scientist studied radioactivity and won two Nobel Prizes?",
+    "options": [
+      "Marie Curie",
+      "Charles Darwin",
+      "Galileo",
+      "Isaac Newton"
+    ],
+    "answer": "Marie Curie",
+    "explanation": "Marie Curie was a brilliant scientist who won two Nobel Prizes for her work on radioactivity."
+  },
+  {
+    "id": "gko-fp-006",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which artist painted lots of sunflowers and a swirly night sky called 'The Starry Night'?",
+    "options": [
+      "Vincent van Gogh",
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Michelangelo"
+    ],
+    "answer": "Vincent van Gogh",
+    "explanation": "Vincent van Gogh loved painting bright sunflowers and swirling, starry skies."
+  },
+  {
+    "id": "gko-fp-007",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Who is famous for inventing a working light bulb that many people could use?",
+    "options": [
+      "Thomas Edison",
+      "Albert Einstein",
+      "Alexander Graham Bell",
+      "Henry Ford"
+    ],
+    "answer": "Thomas Edison",
+    "explanation": "Thomas Edison helped create a practical light bulb so people could light their homes."
+  },
+  {
+    "id": "gko-fp-008",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Who is the famous composer who kept writing beautiful music even after he became deaf?",
+    "options": [
+      "Ludwig van Beethoven",
+      "Wolfgang Mozart",
+      "Johann Bach",
+      "Frederic Chopin"
+    ],
+    "answer": "Ludwig van Beethoven",
+    "explanation": "Beethoven was a great composer who wrote amazing music even though he could no longer hear it."
+  },
+  {
+    "id": "gko-fp-009",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which child genius started writing music when he was only about five years old?",
+    "options": [
+      "Wolfgang Amadeus Mozart",
+      "Ludwig van Beethoven",
+      "Elvis Presley",
+      "The Beatles"
+    ],
+    "answer": "Wolfgang Amadeus Mozart",
+    "explanation": "Mozart was a musical prodigy who began composing when he was just a little boy."
+  },
+  {
+    "id": "gko-fp-010",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Who invented the telephone, letting people talk to each other from far away?",
+    "options": [
+      "Alexander Graham Bell",
+      "Thomas Edison",
+      "Albert Einstein",
+      "Guglielmo Marconi"
+    ],
+    "answer": "Alexander Graham Bell",
+    "explanation": "Alexander Graham Bell is famous for inventing the telephone in 1876."
+  },
+  {
+    "id": "gko-fp-011",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which artist co-founded a bold new art style called Cubism, using lots of shapes?",
+    "options": [
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Leonardo da Vinci",
+      "Claude Monet"
+    ],
+    "answer": "Pablo Picasso",
+    "explanation": "Pablo Picasso helped create Cubism, painting people and objects as bold shapes and angles."
+  },
+  {
+    "id": "gko-fp-012",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which scientist used a telescope to discover that Jupiter has moons?",
+    "options": [
+      "Galileo Galilei",
+      "Isaac Newton",
+      "Albert Einstein",
+      "Charles Darwin"
+    ],
+    "answer": "Galileo Galilei",
+    "explanation": "Galileo pointed his telescope at the sky and discovered four moons going around Jupiter."
+  },
+  {
+    "id": "gko-fp-013",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which Irish scientist gave his name to the temperature scale that starts at absolute zero?",
+    "options": [
+      "Lord Kelvin",
+      "Robert Boyle",
+      "Ernest Walton",
+      "John Tyndall"
+    ],
+    "answer": "Lord Kelvin",
+    "explanation": "Lord Kelvin was born in Belfast, Ireland, and the Kelvin temperature scale is named after him."
+  },
+  {
+    "id": "gko-fp-014",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Marie Curie discovered two new chemical elements. One she named after her home country. What was it?",
+    "options": [
+      "Polonium",
+      "Carbon",
+      "Oxygen",
+      "Gold"
+    ],
+    "answer": "Polonium",
+    "explanation": "Marie Curie named polonium after Poland, the country where she was born."
+  },
+  {
+    "id": "gko-fp-015",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which Irish explorer led brave expeditions to Antarctica, including the famous 'Endurance' voyage?",
+    "options": [
+      "Ernest Shackleton",
+      "Tom Crean",
+      "Robert Scott",
+      "Roald Amundsen"
+    ],
+    "answer": "Ernest Shackleton",
+    "explanation": "Ernest Shackleton, born in Ireland, was a famous Antarctic explorer who led the Endurance expedition."
+  },
+  {
+    "id": "gko-fp-016",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which scientist created the famous equation E = mc squared?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Marie Curie",
+      "Galileo"
+    ],
+    "answer": "Albert Einstein",
+    "explanation": "Einstein's equation E = mc squared shows that energy and mass are connected."
+  },
+  {
+    "id": "gko-fp-017",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Charles Darwin made many discoveries on a long sea voyage. What was the name of his ship?",
+    "options": [
+      "HMS Beagle",
+      "The Endurance",
+      "The Titanic",
+      "The Mayflower"
+    ],
+    "answer": "HMS Beagle",
+    "explanation": "Darwin sailed on HMS Beagle, visiting faraway islands where he studied unusual animals."
+  },
+  {
+    "id": "gko-fp-018",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which Italian artist painted the ceiling of the Sistine Chapel?",
+    "options": [
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Raphael",
+      "Donatello"
+    ],
+    "answer": "Michelangelo",
+    "explanation": "Michelangelo spent years lying on scaffolding to paint the famous Sistine Chapel ceiling."
+  },
+  {
+    "id": "gko-fp-019",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Who is sometimes called the world's first computer programmer, writing instructions for an early machine?",
+    "options": [
+      "Ada Lovelace",
+      "Marie Curie",
+      "Grace Hopper",
+      "Florence Nightingale"
+    ],
+    "answer": "Ada Lovelace",
+    "explanation": "Ada Lovelace wrote the first computer program long before modern computers even existed."
+  },
+  {
+    "id": "gko-fp-020",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which scientist was the first woman to win a Nobel Prize?",
+    "options": [
+      "Marie Curie",
+      "Rosalind Franklin",
+      "Jane Goodall",
+      "Mae Jemison"
+    ],
+    "answer": "Marie Curie",
+    "explanation": "Marie Curie was the very first woman to win a Nobel Prize, and she later won a second one!"
+  },
+  {
+    "id": "gko-fp-021",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which Irish writer created the spooky vampire character Count Dracula?",
+    "options": [
+      "Bram Stoker",
+      "Oscar Wilde",
+      "W.B. Yeats",
+      "C.S. Lewis"
+    ],
+    "answer": "Bram Stoker",
+    "explanation": "Bram Stoker, born in Dublin, wrote the famous scary story 'Dracula'."
+  },
+  {
+    "id": "gko-fp-022",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which famous English playwright wrote 'Romeo and Juliet' and 'Hamlet'?",
+    "options": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Roald Dahl",
+      "J.K. Rowling"
+    ],
+    "answer": "William Shakespeare",
+    "explanation": "William Shakespeare is one of the most famous writers ever, known for his plays and poems."
+  },
+  {
+    "id": "gko-fp-023",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which artist painted lots of soft, dreamy pictures of water lilies in his garden pond?",
+    "options": [
+      "Claude Monet",
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Michelangelo"
+    ],
+    "answer": "Claude Monet",
+    "explanation": "Claude Monet loved painting his garden and is famous for his beautiful water lily paintings."
+  },
+  {
+    "id": "gko-fp-024",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which Irish scientist was the first person to split the atom using a machine?",
+    "options": [
+      "Ernest Walton",
+      "Robert Boyle",
+      "John Tyndall",
+      "William Rowan Hamilton"
+    ],
+    "answer": "Ernest Walton",
+    "explanation": "Ernest Walton, from Waterford in Ireland, helped split the atom and won a Nobel Prize."
+  },
+  {
+    "id": "gko-fp-025",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which famous nurse, known as 'The Lady with the Lamp', helped change how hospitals care for people?",
+    "options": [
+      "Florence Nightingale",
+      "Marie Curie",
+      "Mary Seacole",
+      "Clara Barton"
+    ],
+    "answer": "Florence Nightingale",
+    "explanation": "Florence Nightingale cared for sick soldiers at night with her lamp and helped make hospitals cleaner and safer."
+  },
+  {
+    "id": "gko-fp-026",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which scientist discovered penicillin, the first antibiotic medicine, by accident?",
+    "options": [
+      "Alexander Fleming",
+      "Louis Pasteur",
+      "Marie Curie",
+      "Edward Jenner"
+    ],
+    "answer": "Alexander Fleming",
+    "explanation": "Alexander Fleming noticed a mould killing germs in his lab, leading to the medicine penicillin."
+  },
+  {
+    "id": "gko-fp-027",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which Irish scientist is often called the 'father of modern chemistry'?",
+    "options": [
+      "Robert Boyle",
+      "Lord Kelvin",
+      "Ernest Walton",
+      "John Holland"
+    ],
+    "answer": "Robert Boyle",
+    "explanation": "Robert Boyle, born in Ireland, is famous for Boyle's Law and is called a father of modern chemistry."
+  },
+  {
+    "id": "gko-fp-028",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Who invented the wireless radio, sending messages through the air without wires?",
+    "options": [
+      "Guglielmo Marconi",
+      "Alexander Graham Bell",
+      "Thomas Edison",
+      "Nikola Tesla"
+    ],
+    "answer": "Guglielmo Marconi",
+    "explanation": "Guglielmo Marconi invented the wireless radio and even built a famous station in County Galway, Ireland."
+  },
+  {
+    "id": "gko-fp-029",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which composer, who lived long ago, wrote over 600 pieces of music in his short life?",
+    "options": [
+      "Wolfgang Amadeus Mozart",
+      "Elvis Presley",
+      "Louis Armstrong",
+      "Frederic Chopin"
+    ],
+    "answer": "Wolfgang Amadeus Mozart",
+    "explanation": "Mozart wrote hundreds of beautiful pieces of music, even though he died quite young."
+  },
+  {
+    "id": "gko-fp-030",
+    "subject": "genknow",
+    "topic": "famous-people",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which Irish inventor designed one of the first successful submarines for the navy?",
+    "options": [
+      "John Philip Holland",
+      "Harry Ferguson",
+      "Louis Brennan",
+      "John Joly"
+    ],
+    "answer": "John Philip Holland",
+    "explanation": "John Philip Holland, born in County Clare, Ireland, designed early submarines used by navies."
+  },
+  {
+    "id": "gko-irish-001",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the national colour most linked with Ireland and St Patrick's Day?",
+    "options": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+    ],
+    "answer": "Green",
+    "explanation": "Green is Ireland's special colour, seen on shamrocks and at St Patrick's Day parades."
+  },
+  {
+    "id": "gko-irish-002",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What little green plant with three leaves is a famous symbol of Ireland?",
+    "options": [
+      "Rose",
+      "Shamrock",
+      "Tulip",
+      "Daisy"
+    ],
+    "answer": "Shamrock",
+    "explanation": "The shamrock, with its three leaves, is one of Ireland's most famous symbols."
+  },
+  {
+    "id": "gko-irish-003",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "On which special day do people all over the world celebrate Ireland with parades?",
+    "options": [
+      "St Patrick's Day",
+      "Halloween",
+      "Valentine's Day",
+      "April Fools' Day"
+    ],
+    "answer": "St Patrick's Day",
+    "explanation": "St Patrick's Day, on the 17th of March, celebrates Ireland with parades and lots of green!"
+  },
+  {
+    "id": "gko-irish-004",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the saint's name that St Patrick's Day is named after?",
+    "options": [
+      "Saint Patrick",
+      "Saint Brigid",
+      "Saint Brendan",
+      "Saint Kevin"
+    ],
+    "answer": "Saint Patrick",
+    "explanation": "St Patrick is the patron saint of Ireland, and the day on 17 March is named after him."
+  },
+  {
+    "id": "gko-irish-005",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which ancient Irish festival is the ancestor of today's Halloween?",
+    "options": [
+      "Samhain",
+      "Bealtaine",
+      "Imbolc",
+      "Lughnasa"
+    ],
+    "answer": "Samhain",
+    "explanation": "Samhain was an old Irish festival marking the end of summer, and it grew into the Halloween we know today."
+  },
+  {
+    "id": "gko-irish-006",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "St Brigid's Day marks the start of spring in Ireland. In which month is it?",
+    "options": [
+      "February",
+      "October",
+      "July",
+      "December"
+    ],
+    "answer": "February",
+    "explanation": "St Brigid's Day is on the 1st of February and welcomes the beginning of spring."
+  },
+  {
+    "id": "gko-irish-007",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the traditional Irish musical instrument that you blow into and is shaped like a long pipe with bags?",
+    "options": [
+      "Uilleann pipes",
+      "Guitar",
+      "Trumpet",
+      "Drum kit"
+    ],
+    "answer": "Uilleann pipes",
+    "explanation": "The uilleann pipes are a special Irish bagpipe that players squeeze with their elbow."
+  },
+  {
+    "id": "gko-irish-008",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the name of the lively Irish dancing where dancers keep their arms straight and tap their feet fast?",
+    "options": [
+      "Irish step dancing",
+      "Ballet",
+      "Breakdancing",
+      "Salsa"
+    ],
+    "answer": "Irish step dancing",
+    "explanation": "Irish step dancing has fast, fancy footwork while the dancers hold their arms by their sides."
+  },
+  {
+    "id": "gko-irish-009",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which musical instrument is shown on the official symbol, or coat of arms, of Ireland?",
+    "options": [
+      "The harp",
+      "The fiddle",
+      "The tin whistle",
+      "The bodhran"
+    ],
+    "answer": "The harp",
+    "explanation": "The harp is the national symbol of Ireland and even appears on Irish coins."
+  },
+  {
+    "id": "gko-irish-010",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What craft is traditionally made for St Brigid's Day, often woven from rushes or straw?",
+    "options": [
+      "St Brigid's cross",
+      "A paper hat",
+      "A clay pot",
+      "A wooden boat"
+    ],
+    "answer": "St Brigid's cross",
+    "explanation": "People weave a St Brigid's cross from rushes and hang it up to bring good luck."
+  },
+  {
+    "id": "gko-irish-011",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the name of the Irish hand drum, played with a small wooden beater?",
+    "options": [
+      "Bodhran",
+      "Banjo",
+      "Cello",
+      "Xylophone"
+    ],
+    "answer": "Bodhran",
+    "explanation": "The bodhran is a traditional Irish drum held in one hand and played with a beater called a tipper."
+  },
+  {
+    "id": "gko-irish-012",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which language, spoken in Ireland, is also called 'Gaeilge'?",
+    "options": [
+      "Irish",
+      "French",
+      "Welsh",
+      "Latin"
+    ],
+    "answer": "Irish",
+    "explanation": "The Irish language is called Gaeilge in Irish, and many children learn it in school in Ireland."
+  },
+  {
+    "id": "gko-irish-013",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In Irish folklore, what is a leprechaun usually said to be?",
+    "options": [
+      "A tiny shoemaking fairy",
+      "A giant",
+      "A talking dog",
+      "A water monster"
+    ],
+    "answer": "A tiny shoemaking fairy",
+    "explanation": "In Irish stories, a leprechaun is a little fairy who mends shoes and hides a pot of gold."
+  },
+  {
+    "id": "gko-irish-014",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "At Samhain long ago, people carved scary faces into which vegetable before pumpkins were used?",
+    "options": [
+      "Turnips",
+      "Carrots",
+      "Cabbages",
+      "Potatoes"
+    ],
+    "answer": "Turnips",
+    "explanation": "Long ago in Ireland, people carved spooky lanterns from turnips at Samhain, before pumpkins became popular."
+  },
+  {
+    "id": "gko-irish-015",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the famous Irish stew traditionally made with potatoes, onions and lamb or mutton?",
+    "options": [
+      "Irish stew",
+      "Pizza",
+      "Sushi",
+      "Curry"
+    ],
+    "answer": "Irish stew",
+    "explanation": "Irish stew is a warming dish of meat, potatoes and onions, a much-loved traditional meal in Ireland."
+  },
+  {
+    "id": "gko-irish-016",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What Irish bread is made quickly with baking soda instead of yeast?",
+    "options": [
+      "Soda bread",
+      "Croissant",
+      "Bagel",
+      "Naan"
+    ],
+    "answer": "Soda bread",
+    "explanation": "Soda bread is a traditional Irish bread that rises with baking soda, so it doesn't need time to prove."
+  },
+  {
+    "id": "gko-irish-017",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "According to legend, St Patrick used the shamrock to explain which idea to the Irish people?",
+    "options": [
+      "The Holy Trinity",
+      "How to farm",
+      "How to count",
+      "The weather"
+    ],
+    "answer": "The Holy Trinity",
+    "explanation": "Legend says St Patrick used the shamrock's three leaves to explain the idea of the Holy Trinity."
+  },
+  {
+    "id": "gko-irish-018",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the name of the famous old Irish book with beautifully decorated pages, kept in Dublin?",
+    "options": [
+      "The Book of Kells",
+      "The Domesday Book",
+      "The Magna Carta",
+      "The Book of Tales"
+    ],
+    "answer": "The Book of Kells",
+    "explanation": "The Book of Kells is a stunning hand-decorated book made by monks over 1,000 years ago."
+  },
+  {
+    "id": "gko-irish-019",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a 'ceili' (ceilidh) in Irish culture?",
+    "options": [
+      "A social gathering with music and dancing",
+      "A type of food",
+      "A sport",
+      "A kind of boat"
+    ],
+    "answer": "A social gathering with music and dancing",
+    "explanation": "A ceili is a fun get-together where people play traditional music, sing and dance."
+  },
+  {
+    "id": "gko-irish-020",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Samhain marked the end of which season in the old Irish calendar?",
+    "options": [
+      "Summer",
+      "Winter",
+      "Spring",
+      "Autumn"
+    ],
+    "answer": "Summer",
+    "explanation": "Samhain marked the end of the harvest and summer, and the start of the dark winter half of the year."
+  },
+  {
+    "id": "gko-irish-021",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which sport, played with a stick called a hurley and a small ball, is one of Ireland's oldest games?",
+    "options": [
+      "Hurling",
+      "Cricket",
+      "Baseball",
+      "Golf"
+    ],
+    "answer": "Hurling",
+    "explanation": "Hurling is an ancient and fast Irish sport played with a wooden hurley and a ball called a sliotar."
+  },
+  {
+    "id": "gko-irish-022",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the name of the Irish symbol showing two hands holding a heart with a crown, often used in rings?",
+    "options": [
+      "The Claddagh",
+      "The Triskele",
+      "The Celtic knot",
+      "The harp"
+    ],
+    "answer": "The Claddagh",
+    "explanation": "The Claddagh symbol has two hands, a heart and a crown, standing for love, friendship and loyalty."
+  },
+  {
+    "id": "gko-irish-023",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the tin whistle, a popular instrument in Irish music, mainly made from?",
+    "options": [
+      "Metal",
+      "Glass",
+      "Stone",
+      "Rubber"
+    ],
+    "answer": "Metal",
+    "explanation": "The tin whistle is a small metal flute that makes a bright, cheerful sound in Irish music."
+  },
+  {
+    "id": "gko-irish-024",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "In Irish mythology, the 'banshee' is said to do what?",
+    "options": [
+      "Wail to warn of a death",
+      "Grant three wishes",
+      "Guard a castle",
+      "Bring good harvests"
+    ],
+    "answer": "Wail to warn of a death",
+    "explanation": "In Irish legend, the banshee is a spirit whose mournful cry was said to foretell a death."
+  },
+  {
+    "id": "gko-irish-025",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the Irish word used to greet someone, meaning 'hello'?",
+    "options": [
+      "Dia duit",
+      "Slan",
+      "Go raibh maith agat",
+      "Le do thoil"
+    ],
+    "answer": "Dia duit",
+    "explanation": "'Dia duit' is how you say hello in Irish; it literally means 'God be with you'."
+  },
+  {
+    "id": "gko-irish-026",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "In Irish legend, who was the giant warrior leader of the Fianna?",
+    "options": [
+      "Fionn mac Cumhaill",
+      "Cu Chulainn",
+      "Brian Boru",
+      "Saint Patrick"
+    ],
+    "answer": "Fionn mac Cumhaill",
+    "explanation": "Fionn mac Cumhaill (Finn McCool) is a famous hero in Irish legend, said to have built the Giant's Causeway."
+  },
+  {
+    "id": "gko-irish-027",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What rocky natural wonder in Northern Ireland is linked to the legend of Fionn mac Cumhaill?",
+    "options": [
+      "The Giant's Causeway",
+      "The Cliffs of Moher",
+      "Newgrange",
+      "The Burren"
+    ],
+    "answer": "The Giant's Causeway",
+    "explanation": "The Giant's Causeway is made of thousands of stone columns, and legend says a giant built it!"
+  },
+  {
+    "id": "gko-irish-028",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is Newgrange in Ireland, which is older than the pyramids of Egypt?",
+    "options": [
+      "An ancient burial mound",
+      "A castle",
+      "A church",
+      "A lighthouse"
+    ],
+    "answer": "An ancient burial mound",
+    "explanation": "Newgrange is a huge ancient burial mound built over 5,000 years ago, lit by the sun at midwinter."
+  },
+  {
+    "id": "gko-irish-029",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "The world-famous Irish dance show that toured the globe is called what?",
+    "options": [
+      "Riverdance",
+      "Swan Lake",
+      "The Nutcracker",
+      "Lord of the Rings"
+    ],
+    "answer": "Riverdance",
+    "explanation": "Riverdance is a famous Irish dance show that made step dancing popular all around the world."
+  },
+  {
+    "id": "gko-irish-030",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is a traditional 'bairin breac' (barmbrack) often eaten around Halloween in Ireland?",
+    "options": [
+      "A fruit bread with hidden charms",
+      "A meat pie",
+      "A bowl of soup",
+      "A chocolate cake"
+    ],
+    "answer": "A fruit bread with hidden charms",
+    "explanation": "Barmbrack is a fruity bread eaten at Halloween, with little charms baked inside to tell your fortune."
+  },
+  {
+    "id": "gko-tech-001",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What round invention helps cars, bikes and carts roll along the ground?",
+    "options": [
+      "The wheel",
+      "The hammer",
+      "The cup",
+      "The button"
+    ],
+    "answer": "The wheel",
+    "explanation": "The wheel is one of the most important inventions ever, helping us move heavy things easily."
+  },
+  {
+    "id": "gko-tech-002",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What invention lets you talk to a friend who is far away by hearing their voice?",
+    "options": [
+      "The telephone",
+      "The umbrella",
+      "The clock",
+      "The spoon"
+    ],
+    "answer": "The telephone",
+    "explanation": "The telephone lets us hear and talk to people even when they are miles and miles away."
+  },
+  {
+    "id": "gko-tech-003",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What do we call the huge network that connects computers all over the world?",
+    "options": [
+      "The internet",
+      "The radio",
+      "The wheel",
+      "The fridge"
+    ],
+    "answer": "The internet",
+    "explanation": "The internet connects computers worldwide so we can share information, videos and messages."
+  },
+  {
+    "id": "gko-tech-004",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What machine, invented long ago, allowed books to be printed quickly instead of copied by hand?",
+    "options": [
+      "The printing press",
+      "The television",
+      "The camera",
+      "The telephone"
+    ],
+    "answer": "The printing press",
+    "explanation": "The printing press let people make many copies of books quickly, so more people could read."
+  },
+  {
+    "id": "gko-tech-005",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How does a fridge keep your food fresh?",
+    "options": [
+      "By keeping it cold",
+      "By making it hot",
+      "By shaking it",
+      "By adding water"
+    ],
+    "answer": "By keeping it cold",
+    "explanation": "A fridge keeps food cold, which slows down the germs that make food go off."
+  },
+  {
+    "id": "gko-tech-006",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does a light switch do when you flick it on?",
+    "options": [
+      "Lets electricity flow to the bulb",
+      "Adds water to the bulb",
+      "Heats the room",
+      "Makes a sound"
+    ],
+    "answer": "Lets electricity flow to the bulb",
+    "explanation": "A switch closes a path so electricity can flow and make the bulb light up."
+  },
+  {
+    "id": "gko-tech-007",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What invention lets you watch moving pictures and shows at home?",
+    "options": [
+      "The television",
+      "The kettle",
+      "The wheel",
+      "The pencil"
+    ],
+    "answer": "The television",
+    "explanation": "The television, or TV, sends pictures and sound so we can watch programmes at home."
+  },
+  {
+    "id": "gko-tech-008",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How does a bicycle help you go faster with less effort?",
+    "options": [
+      "Wheels and gears spread your effort",
+      "It uses petrol",
+      "It floats",
+      "It has a motor"
+    ],
+    "answer": "Wheels and gears spread your effort",
+    "explanation": "A bike's wheels and gears turn your leg power into smooth, fast movement."
+  },
+  {
+    "id": "gko-tech-009",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What makes a hot air balloon rise up into the sky?",
+    "options": [
+      "Hot air is lighter than cool air",
+      "It is full of water",
+      "It has wings",
+      "It uses magnets"
+    ],
+    "answer": "Hot air is lighter than cool air",
+    "explanation": "Hot air rises because it is lighter than the cooler air around it, lifting the balloon up."
+  },
+  {
+    "id": "gko-tech-010",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How does a magnet pick up a paperclip?",
+    "options": [
+      "With an invisible magnetic force",
+      "With glue",
+      "By blowing air",
+      "By getting hot"
+    ],
+    "answer": "With an invisible magnetic force",
+    "explanation": "Magnets have an invisible force that pulls on certain metals like the iron in a paperclip."
+  },
+  {
+    "id": "gko-tech-011",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does a battery store, ready to power a torch or toy?",
+    "options": [
+      "Electrical energy",
+      "Water",
+      "Air",
+      "Sunshine"
+    ],
+    "answer": "Electrical energy",
+    "explanation": "A battery stores energy as chemicals and turns it into electricity to power things."
+  },
+  {
+    "id": "gko-tech-012",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How does a kettle make water hot so quickly?",
+    "options": [
+      "A heating element warms the water",
+      "It uses ice",
+      "It uses magnets",
+      "It uses wind"
+    ],
+    "answer": "A heating element warms the water",
+    "explanation": "A kettle has a heating element that gets very hot and quickly warms the water."
+  },
+  {
+    "id": "gko-tech-013",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What invention captures a picture of a moment so you can keep it forever?",
+    "options": [
+      "The camera",
+      "The clock",
+      "The fan",
+      "The drum"
+    ],
+    "answer": "The camera",
+    "explanation": "A camera captures light to make a photograph, freezing a moment in time."
+  },
+  {
+    "id": "gko-tech-014",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does a touchscreen do when Emilia taps it with her finger?",
+    "options": [
+      "Senses where you touch and responds",
+      "Heats up your finger",
+      "Plays music only",
+      "Sprays water"
+    ],
+    "answer": "Senses where you touch and responds",
+    "explanation": "A touchscreen senses where your finger touches the glass and tells the device what you want."
+  },
+  {
+    "id": "gko-tech-015",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How do headphones let you hear music without anyone else hearing it?",
+    "options": [
+      "Tiny speakers play sound right into your ears",
+      "They make the room quiet",
+      "They store sound in cushions",
+      "They use lights"
+    ],
+    "answer": "Tiny speakers play sound right into your ears",
+    "explanation": "Headphones have small speakers that play sound close to your ears, just for you."
+  },
+  {
+    "id": "gko-tech-016",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Who is credited with inventing the printing press in Europe around the 1440s?",
+    "options": [
+      "Johannes Gutenberg",
+      "Thomas Edison",
+      "Alexander Graham Bell",
+      "Tim Berners-Lee"
+    ],
+    "answer": "Johannes Gutenberg",
+    "explanation": "Johannes Gutenberg built a printing press that changed the world by making books cheaper and faster to make."
+  },
+  {
+    "id": "gko-tech-017",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Who is known for inventing the World Wide Web, which made the internet easy to use?",
+    "options": [
+      "Tim Berners-Lee",
+      "Bill Gates",
+      "Steve Jobs",
+      "Mark Zuckerberg"
+    ],
+    "answer": "Tim Berners-Lee",
+    "explanation": "Tim Berners-Lee invented the World Wide Web, the system of web pages we use every day."
+  },
+  {
+    "id": "gko-tech-018",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How does a GPS in a car know where you are?",
+    "options": [
+      "It receives signals from satellites in space",
+      "It reads road signs",
+      "It listens to the radio",
+      "It guesses"
+    ],
+    "answer": "It receives signals from satellites in space",
+    "explanation": "GPS uses signals from satellites high above Earth to work out exactly where you are."
+  },
+  {
+    "id": "gko-tech-019",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What makes a compass needle always point towards the north?",
+    "options": [
+      "Earth's magnetic field",
+      "The wind",
+      "The Sun",
+      "Gravity"
+    ],
+    "answer": "Earth's magnetic field",
+    "explanation": "Earth acts like a giant magnet, and the compass needle lines up with its magnetic field."
+  },
+  {
+    "id": "gko-tech-020",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How does an aeroplane's wing help it fly?",
+    "options": [
+      "Its shape lifts the plane as air flows over it",
+      "It flaps like a bird",
+      "It uses helium",
+      "It pushes against the ground"
+    ],
+    "answer": "Its shape lifts the plane as air flows over it",
+    "explanation": "A plane's wing is shaped so that moving air lifts it up, a force called lift."
+  },
+  {
+    "id": "gko-tech-021",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the 'www' at the start of a website address stand for?",
+    "options": [
+      "World Wide Web",
+      "Wide Wireless World",
+      "Web Working Window",
+      "World Watching Web"
+    ],
+    "answer": "World Wide Web",
+    "explanation": "'www' stands for World Wide Web, the huge collection of pages you can visit online."
+  },
+  {
+    "id": "gko-tech-022",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What did the very first wheels, made thousands of years ago, help people do?",
+    "options": [
+      "Move heavy loads and make pottery",
+      "Fly",
+      "Cook food",
+      "Tell the time"
+    ],
+    "answer": "Move heavy loads and make pottery",
+    "explanation": "Early wheels were used as potter's wheels and to make carts that moved heavy loads."
+  },
+  {
+    "id": "gko-tech-023",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How does a microwave oven heat up your food so fast?",
+    "options": [
+      "It uses waves that make water in food wobble and heat up",
+      "It uses fire",
+      "It uses ice",
+      "It uses sunlight"
+    ],
+    "answer": "It uses waves that make water in food wobble and heat up",
+    "explanation": "A microwave makes the tiny water bits in food wobble quickly, and that movement heats the food."
+  },
+  {
+    "id": "gko-tech-024",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Before the printing press, how were most books in Europe made?",
+    "options": [
+      "Copied by hand by monks and scribes",
+      "Printed by machines",
+      "Made by computers",
+      "Painted by children"
+    ],
+    "answer": "Copied by hand by monks and scribes",
+    "explanation": "Before the printing press, books were slowly copied by hand, so they were rare and very precious."
+  },
+  {
+    "id": "gko-tech-025",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is a 'robot'?",
+    "options": [
+      "A machine that can do tasks, sometimes on its own",
+      "A type of animal",
+      "A kind of plant",
+      "A musical instrument"
+    ],
+    "answer": "A machine that can do tasks, sometimes on its own",
+    "explanation": "A robot is a machine built to do jobs, and some can even make simple decisions by themselves."
+  },
+  {
+    "id": "gko-tech-026",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "How do solar panels make electricity?",
+    "options": [
+      "They turn sunlight into electricity",
+      "They burn coal",
+      "They use wind",
+      "They use water steam"
+    ],
+    "answer": "They turn sunlight into electricity",
+    "explanation": "Solar panels capture sunlight and turn it into clean electricity to power homes."
+  },
+  {
+    "id": "gko-tech-027",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What part of a computer is sometimes called its 'brain' because it does the thinking and calculating?",
+    "options": [
+      "The processor (CPU)",
+      "The screen",
+      "The keyboard",
+      "The mouse"
+    ],
+    "answer": "The processor (CPU)",
+    "explanation": "The processor, or CPU, is like the brain of a computer, doing millions of calculations every second."
+  },
+  {
+    "id": "gko-tech-028",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "How does Wi-Fi let your tablet connect to the internet without any wires?",
+    "options": [
+      "It uses invisible radio waves",
+      "It uses sound",
+      "It uses light only",
+      "It uses tiny strings"
+    ],
+    "answer": "It uses invisible radio waves",
+    "explanation": "Wi-Fi sends information through the air using invisible radio waves, so no cables are needed."
+  },
+  {
+    "id": "gko-tech-029",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What does a thermometer measure?",
+    "options": [
+      "Temperature",
+      "Weight",
+      "Sound",
+      "Speed"
+    ],
+    "answer": "Temperature",
+    "explanation": "A thermometer measures how hot or cold something is, like your body or the weather."
+  },
+  {
+    "id": "gko-tech-030",
+    "subject": "genknow",
+    "topic": "technology",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "How does an electric car move without using any petrol?",
+    "options": [
+      "A battery powers an electric motor",
+      "It uses steam",
+      "It rolls downhill only",
+      "It uses a sail"
+    ],
+    "answer": "A battery powers an electric motor",
+    "explanation": "An electric car stores electricity in a big battery, which spins an electric motor to drive the wheels."
+  },
+  {
+    "id": "gko-wr-001",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the tallest land animal in the world?",
+    "options": [
+      "The giraffe",
+      "The elephant",
+      "The horse",
+      "The kangaroo"
+    ],
+    "answer": "The giraffe",
+    "explanation": "The giraffe is the tallest animal on land, with a very long neck to reach leaves up high."
+  },
+  {
+    "id": "gko-wr-002",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the largest animal ever known to have lived on Earth?",
+    "options": [
+      "The blue whale",
+      "The elephant",
+      "Tyrannosaurus rex",
+      "The shark"
+    ],
+    "answer": "The blue whale",
+    "explanation": "The blue whale is the biggest animal ever, even bigger than the largest dinosaurs!"
+  },
+  {
+    "id": "gko-wr-003",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the fastest land animal in the world?",
+    "options": [
+      "The cheetah",
+      "The lion",
+      "The horse",
+      "The dog"
+    ],
+    "answer": "The cheetah",
+    "explanation": "The cheetah can run faster than any other land animal, reaching incredible speeds in short bursts."
+  },
+  {
+    "id": "gko-wr-004",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the tallest mountain on Earth, measured above sea level?",
+    "options": [
+      "Mount Everest",
+      "Mount Kilimanjaro",
+      "Ben Nevis",
+      "Carrauntoohil"
+    ],
+    "answer": "Mount Everest",
+    "explanation": "Mount Everest, in the Himalayas, is the highest mountain above sea level on Earth."
+  },
+  {
+    "id": "gko-wr-005",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the largest ocean on Earth?",
+    "options": [
+      "The Pacific Ocean",
+      "The Atlantic Ocean",
+      "The Indian Ocean",
+      "The Arctic Ocean"
+    ],
+    "answer": "The Pacific Ocean",
+    "explanation": "The Pacific Ocean is the biggest ocean, covering about a third of the whole planet."
+  },
+  {
+    "id": "gko-wr-006",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the largest desert in the world?",
+    "options": [
+      "The Antarctic Desert",
+      "The Sahara",
+      "The Gobi",
+      "The Kalahari"
+    ],
+    "answer": "The Antarctic Desert",
+    "explanation": "A desert is any very dry place, and icy Antarctica is the largest desert of all!"
+  },
+  {
+    "id": "gko-wr-007",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the largest planet in our Solar System, also a record holder?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Earth",
+      "Mars"
+    ],
+    "answer": "Jupiter",
+    "explanation": "Jupiter is the biggest planet in our Solar System by far."
+  },
+  {
+    "id": "gko-wr-008",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the longest river in the world?",
+    "options": [
+      "The Nile",
+      "The Shannon",
+      "The Thames",
+      "The Amazon"
+    ],
+    "answer": "The Nile",
+    "explanation": "The Nile in Africa is usually counted as the longest river in the world, though the Amazon is very close!"
+  },
+  {
+    "id": "gko-wr-009",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the largest country in the world by land area?",
+    "options": [
+      "Russia",
+      "Canada",
+      "China",
+      "Ireland"
+    ],
+    "answer": "Russia",
+    "explanation": "Russia is the biggest country in the world, stretching across two continents."
+  },
+  {
+    "id": "gko-wr-010",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the longest river in Ireland?",
+    "options": [
+      "The River Shannon",
+      "The River Liffey",
+      "The River Lee",
+      "The River Boyne"
+    ],
+    "answer": "The River Shannon",
+    "explanation": "The River Shannon is the longest river in Ireland, flowing right through the middle of the country."
+  },
+  {
+    "id": "gko-wr-011",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the smallest country in the world?",
+    "options": [
+      "Vatican City",
+      "Monaco",
+      "Malta",
+      "Ireland"
+    ],
+    "answer": "Vatican City",
+    "explanation": "Vatican City, inside Rome, is the smallest country in the world, both in size and people."
+  },
+  {
+    "id": "gko-wr-012",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the largest living thing by size on land, growing very tall?",
+    "options": [
+      "The giant sequoia tree",
+      "The oak tree",
+      "The sunflower",
+      "The cactus"
+    ],
+    "answer": "The giant sequoia tree",
+    "explanation": "Giant sequoia trees in California are among the biggest living things, growing taller than a tower block."
+  },
+  {
+    "id": "gko-wr-013",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which bird can fly the fastest, diving at amazing speeds?",
+    "options": [
+      "The peregrine falcon",
+      "The eagle",
+      "The sparrow",
+      "The owl"
+    ],
+    "answer": "The peregrine falcon",
+    "explanation": "The peregrine falcon is the fastest animal of all when it dives through the air to catch prey."
+  },
+  {
+    "id": "gko-wr-014",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the hottest place ever recorded on Earth, a desert valley in the USA?",
+    "options": [
+      "Death Valley",
+      "The Amazon",
+      "Iceland",
+      "The North Pole"
+    ],
+    "answer": "Death Valley",
+    "explanation": "Death Valley in California recorded one of the hottest air temperatures ever measured on Earth."
+  },
+  {
+    "id": "gko-wr-015",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the heaviest land animal alive today?",
+    "options": [
+      "The African elephant",
+      "The hippo",
+      "The rhino",
+      "The giraffe"
+    ],
+    "answer": "The African elephant",
+    "explanation": "The African elephant is the heaviest animal living on land, weighing as much as several cars!"
+  },
+  {
+    "id": "gko-wr-016",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the deepest part of the ocean, far down in the Pacific?",
+    "options": [
+      "The Mariana Trench",
+      "The Dead Sea",
+      "Loch Ness",
+      "The Red Sea"
+    ],
+    "answer": "The Mariana Trench",
+    "explanation": "The Mariana Trench is the deepest place in the ocean, deeper than Mount Everest is tall!"
+  },
+  {
+    "id": "gko-wr-017",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the tallest building in the world?",
+    "options": [
+      "The Burj Khalifa",
+      "The Eiffel Tower",
+      "The Empire State Building",
+      "The Spire in Dublin"
+    ],
+    "answer": "The Burj Khalifa",
+    "explanation": "The Burj Khalifa in Dubai is the tallest building in the world, soaring over 800 metres high."
+  },
+  {
+    "id": "gko-wr-018",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the largest hot desert in the world?",
+    "options": [
+      "The Sahara",
+      "The Gobi",
+      "The Mojave",
+      "The Arabian"
+    ],
+    "answer": "The Sahara",
+    "explanation": "The Sahara in Africa is the largest hot desert, almost as big as the whole United States."
+  },
+  {
+    "id": "gko-wr-019",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which animal has the longest neck and is the tallest, but which animal makes the loudest sound?",
+    "options": [
+      "The blue whale",
+      "The lion",
+      "The dog",
+      "The mouse"
+    ],
+    "answer": "The blue whale",
+    "explanation": "The blue whale makes one of the loudest sounds of any animal, louder than a jet engine!"
+  },
+  {
+    "id": "gko-wr-020",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the largest island in the world?",
+    "options": [
+      "Greenland",
+      "Ireland",
+      "Iceland",
+      "Madagascar"
+    ],
+    "answer": "Greenland",
+    "explanation": "Greenland is the world's largest island, mostly covered in a thick sheet of ice."
+  },
+  {
+    "id": "gko-wr-021",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the tallest waterfall in the world, found in Venezuela?",
+    "options": [
+      "Angel Falls",
+      "Niagara Falls",
+      "Victoria Falls",
+      "Powerscourt Waterfall"
+    ],
+    "answer": "Angel Falls",
+    "explanation": "Angel Falls in Venezuela is the world's tallest waterfall, with water dropping nearly a kilometre!"
+  },
+  {
+    "id": "gko-wr-022",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the largest type of shark, but a gentle giant that eats tiny food?",
+    "options": [
+      "The whale shark",
+      "The great white shark",
+      "The hammerhead",
+      "The tiger shark"
+    ],
+    "answer": "The whale shark",
+    "explanation": "The whale shark is the biggest fish in the sea, but it gently filters tiny plankton to eat."
+  },
+  {
+    "id": "gko-wr-023",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the largest rainforest in the world?",
+    "options": [
+      "The Amazon rainforest",
+      "The Congo rainforest",
+      "Sherwood Forest",
+      "The Black Forest"
+    ],
+    "answer": "The Amazon rainforest",
+    "explanation": "The Amazon rainforest in South America is the largest rainforest and home to millions of species."
+  },
+  {
+    "id": "gko-wr-024",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the largest mammal in the world?",
+    "options": [
+      "The blue whale",
+      "The African elephant",
+      "The giraffe",
+      "The polar bear"
+    ],
+    "answer": "The blue whale",
+    "explanation": "The blue whale is the largest mammal, and the largest animal ever known to live on Earth."
+  },
+  {
+    "id": "gko-wr-025",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the smallest bird in the world, so light it can hover in the air?",
+    "options": [
+      "The bee hummingbird",
+      "The robin",
+      "The sparrow",
+      "The wren"
+    ],
+    "answer": "The bee hummingbird",
+    "explanation": "The bee hummingbird is the smallest bird in the world, weighing less than a coin!"
+  },
+  {
+    "id": "gko-wr-026",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the most populated country in the world?",
+    "options": [
+      "India",
+      "China",
+      "the United States",
+      "Russia"
+    ],
+    "answer": "India",
+    "explanation": "India is now the country with the most people living in it, with over a billion people."
+  },
+  {
+    "id": "gko-wr-027",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the highest waterfall in Ireland, found in County Wicklow?",
+    "options": [
+      "Powerscourt Waterfall",
+      "Niagara Falls",
+      "Torc Waterfall",
+      "Glencar Waterfall"
+    ],
+    "answer": "Powerscourt Waterfall",
+    "explanation": "Powerscourt Waterfall in County Wicklow is the highest waterfall in Ireland."
+  },
+  {
+    "id": "gko-wr-028",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the longest wall in the world, built long ago to protect a country?",
+    "options": [
+      "The Great Wall of China",
+      "Hadrian's Wall",
+      "The Berlin Wall",
+      "The walls of Derry"
+    ],
+    "answer": "The Great Wall of China",
+    "explanation": "The Great Wall of China is the longest wall ever built, stretching thousands of kilometres."
+  },
+  {
+    "id": "gko-wr-029",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "Which land animal has the largest ears, helping it to keep cool?",
+    "options": [
+      "The African elephant",
+      "The rabbit",
+      "The fox",
+      "The donkey"
+    ],
+    "answer": "The African elephant",
+    "explanation": "The African elephant has the largest ears, which it flaps to help cool down its huge body."
+  },
+  {
+    "id": "gko-wr-030",
+    "subject": "genknow",
+    "topic": "world-records",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the largest coral reef system in the world, found near Australia?",
+    "options": [
+      "The Great Barrier Reef",
+      "The Red Sea Reef",
+      "The Maldives Reef",
+      "The Caribbean Reef"
+    ],
+    "answer": "The Great Barrier Reef",
+    "explanation": "The Great Barrier Reef off Australia is the largest coral reef on Earth and can be seen from space!"
+  }
+]

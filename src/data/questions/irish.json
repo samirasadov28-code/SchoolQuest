@@ -1,0 +1,498 @@
+[
+  {
+    "id": "irl-vocab-001",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What does 'Dia duit' mean in English?",
+    "options": [
+      "Goodbye",
+      "Good morning",
+      "Hello",
+      "Thank you"
+    ],
+    "answer": "Hello",
+    "explanation": "Dia duit (dee-ah gwit) means 'Hello' in Irish \u2014 it literally means 'God be with you'!"
+  },
+  {
+    "id": "irl-vocab-002",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How do you say 'Thank you' in Irish?",
+    "options": [
+      "Le do thoil",
+      "Go raibh maith agat",
+      "Sl\u00e1n",
+      "Gabh mo leithsc\u00e9al"
+    ],
+    "answer": "Go raibh maith agat",
+    "explanation": "Go raibh maith agat (guh rev mah agut) means 'Thank you' \u2014 literally 'may you have goodness'!"
+  },
+  {
+    "id": "irl-vocab-003",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What does 'Sl\u00e1n' mean?",
+    "options": [
+      "Hello",
+      "Please",
+      "Goodbye",
+      "Sorry"
+    ],
+    "answer": "Goodbye",
+    "explanation": "Sl\u00e1n (slawn) means goodbye in Irish. You might hear 'Sl\u00e1n leat' \u2014 goodbye to you!"
+  },
+  {
+    "id": "irl-vocab-004",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How do you say 'Yes' in Irish?",
+    "options": [
+      "N\u00edl",
+      "T\u00e1",
+      "Sea",
+      "Seo"
+    ],
+    "answer": "Sea",
+    "explanation": "Sea (shah) means 'Yes' in Irish. And 'N\u00edl' means No!"
+  },
+  {
+    "id": "irl-vocab-005",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'Cat' mean in Irish?",
+    "options": [
+      "Dog",
+      "Cat",
+      "Bird",
+      "Fish"
+    ],
+    "answer": "Cat",
+    "explanation": "Cat (cat) means the same in both Irish and English! It's the same word."
+  },
+  {
+    "id": "irl-vocab-006",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you say 'dog' in Irish?",
+    "options": [
+      "Cat",
+      "Capall",
+      "Madra",
+      "\u00c9an"
+    ],
+    "answer": "Madra",
+    "explanation": "Madra (mad-ra) means dog in Irish!"
+  },
+  {
+    "id": "irl-vocab-007",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does '\u00c9an' mean?",
+    "options": [
+      "Fish",
+      "Bird",
+      "Horse",
+      "Cat"
+    ],
+    "answer": "Bird",
+    "explanation": "\u00c9an (ayn) means bird in Irish!"
+  },
+  {
+    "id": "irl-vocab-008",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you say 'school' in Irish?",
+    "options": [
+      "Leabhar",
+      "Scoil",
+      "M\u00fainteoir",
+      "Rang"
+    ],
+    "answer": "Scoil",
+    "explanation": "Scoil (skull) means school. In fact, 'school' in English comes from the Irish word!"
+  },
+  {
+    "id": "irl-vocab-009",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'M\u00fainteoir' mean?",
+    "options": [
+      "Student",
+      "School",
+      "Teacher",
+      "Book"
+    ],
+    "answer": "Teacher",
+    "explanation": "M\u00fainteoir (mwin-chore) means teacher in Irish!"
+  },
+  {
+    "id": "irl-vocab-010",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you say 'book' in Irish?",
+    "options": [
+      "Leabhar",
+      "Peann",
+      "C\u00f3ipleabhar",
+      "Bord"
+    ],
+    "answer": "Leabhar",
+    "explanation": "Leabhar (l-yower) means book in Irish. A library is 'leabharlann'!"
+  },
+  {
+    "id": "irl-vocab-011",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'Uisce' mean?",
+    "options": [
+      "Fire",
+      "Wind",
+      "Water",
+      "Earth"
+    ],
+    "answer": "Water",
+    "explanation": "Uisce (ish-ka) means water in Irish. The drink 'whiskey' comes from 'uisce beatha' \u2014 water of life!"
+  },
+  {
+    "id": "irl-vocab-012",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you say 'Ireland' in Irish?",
+    "options": [
+      "Sasana",
+      "\u00c9ire",
+      "Alba",
+      "Albain"
+    ],
+    "answer": "\u00c9ire",
+    "explanation": "\u00c9ire (air-eh) is the Irish word for Ireland \u2014 you can see it on Irish coins and passports!"
+  },
+  {
+    "id": "irl-vocab-013",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does 'L\u00e1 breithe sona duit' mean?",
+    "options": [
+      "Good morning",
+      "Happy Christmas",
+      "Happy Birthday",
+      "Good night"
+    ],
+    "answer": "Happy Birthday",
+    "explanation": "L\u00e1 breithe sona duit (law breh-heh sun-ah dit) means Happy Birthday in Irish!"
+  },
+  {
+    "id": "irl-vocab-014",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you say 'mother' in Irish?",
+    "options": [
+      "Athair",
+      "M\u00e1thair",
+      "Dearth\u00e1ir",
+      "Deirfi\u00far"
+    ],
+    "answer": "M\u00e1thair",
+    "explanation": "M\u00e1thair (maw-her) means mother. Athair means father!"
+  },
+  {
+    "id": "irl-vocab-015",
+    "subject": "irish",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'Athair' mean?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Brother",
+      "Father"
+    ],
+    "answer": "Father",
+    "explanation": "Athair (ah-her) means father in Irish!"
+  },
+  {
+    "id": "irl-num-001",
+    "subject": "irish",
+    "topic": "numbers",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How do you say 'one' in Irish?",
+    "options": [
+      "d\u00f3",
+      "aon",
+      "tr\u00ed",
+      "ceathair"
+    ],
+    "answer": "aon",
+    "explanation": "Aon (ayn) means one in Irish. Think of it like 'one' sounds like 'ayn'!"
+  },
+  {
+    "id": "irl-num-002",
+    "subject": "irish",
+    "topic": "numbers",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How do you say 'two' in Irish?",
+    "options": [
+      "aon",
+      "tr\u00ed",
+      "d\u00f3",
+      "ceathair"
+    ],
+    "answer": "d\u00f3",
+    "explanation": "D\u00f3 (doh) means two in Irish!"
+  },
+  {
+    "id": "irl-num-003",
+    "subject": "irish",
+    "topic": "numbers",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What number is 'tr\u00ed' in Irish?",
+    "options": [
+      "1",
+      "4",
+      "3",
+      "2"
+    ],
+    "answer": "3",
+    "explanation": "Tr\u00ed (tree) means three in Irish \u2014 it sounds a bit like 'tree'!"
+  },
+  {
+    "id": "irl-num-004",
+    "subject": "irish",
+    "topic": "numbers",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How do you say 'four' in Irish?",
+    "options": [
+      "c\u00faig",
+      "ceathair",
+      "s\u00e9",
+      "seacht"
+    ],
+    "answer": "ceathair",
+    "explanation": "Ceathair (kah-her) means four in Irish!"
+  },
+  {
+    "id": "irl-num-005",
+    "subject": "irish",
+    "topic": "numbers",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What number is 'deich' in Irish?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": "10",
+    "explanation": "Deich (deh) means ten in Irish. Count to deich!"
+  },
+  {
+    "id": "irl-num-006",
+    "subject": "irish",
+    "topic": "numbers",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you say 'five' in Irish?",
+    "options": [
+      "ceathair",
+      "s\u00e9",
+      "c\u00faig",
+      "seacht"
+    ],
+    "answer": "c\u00faig",
+    "explanation": "C\u00faig (koo-ig) means five in Irish!"
+  },
+  {
+    "id": "irl-colour-001",
+    "subject": "irish",
+    "topic": "colours",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What colour is 'glas'?",
+    "options": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow"
+    ],
+    "answer": "Green",
+    "explanation": "Glas (gloss) means green in Irish \u2014 the colour of Ireland's beautiful green fields!"
+  },
+  {
+    "id": "irl-colour-002",
+    "subject": "irish",
+    "topic": "colours",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "How do you say 'red' in Irish?",
+    "options": [
+      "gorm",
+      "dearg",
+      "bu\u00ed",
+      "b\u00e1n"
+    ],
+    "answer": "dearg",
+    "explanation": "Dearg (dar-ug) means red in Irish!"
+  },
+  {
+    "id": "irl-colour-003",
+    "subject": "irish",
+    "topic": "colours",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What colour is 'gorm'?",
+    "options": [
+      "Green",
+      "Yellow",
+      "Blue",
+      "Black"
+    ],
+    "answer": "Blue",
+    "explanation": "Gorm (gur-um) means blue in Irish. The sea is gorm!"
+  },
+  {
+    "id": "irl-colour-004",
+    "subject": "irish",
+    "topic": "colours",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you say 'white' in Irish?",
+    "options": [
+      "dubh",
+      "b\u00e1n",
+      "bu\u00ed",
+      "\u00f3rga"
+    ],
+    "answer": "b\u00e1n",
+    "explanation": "B\u00e1n (bawn) means white in Irish!"
+  },
+  {
+    "id": "irl-colour-005",
+    "subject": "irish",
+    "topic": "colours",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What colour is 'bu\u00ed'?",
+    "options": [
+      "Purple",
+      "Orange",
+      "Yellow",
+      "Pink"
+    ],
+    "answer": "Yellow",
+    "explanation": "Bu\u00ed (bwee) means yellow in Irish \u2014 like the sun!"
+  },
+  {
+    "id": "irl-phrase-001",
+    "subject": "irish",
+    "topic": "phrases",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'Conas at\u00e1 t\u00fa?' mean?",
+    "options": [
+      "What is your name?",
+      "How are you?",
+      "Where do you live?",
+      "How old are you?"
+    ],
+    "answer": "How are you?",
+    "explanation": "Conas at\u00e1 t\u00fa? (kun-us ah-taw too) means 'How are you?' in Irish!"
+  },
+  {
+    "id": "irl-phrase-002",
+    "subject": "irish",
+    "topic": "phrases",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you answer 'Conas at\u00e1 t\u00fa?' if you feel good?",
+    "options": [
+      "T\u00e1 m\u00e9 go dona",
+      "T\u00e1 m\u00e9 go maith",
+      "N\u00edl m\u00e9 go maith",
+      "T\u00e1 m\u00e9 tuirseach"
+    ],
+    "answer": "T\u00e1 m\u00e9 go maith",
+    "explanation": "T\u00e1 m\u00e9 go maith (taw may guh mah) means 'I am well/good'!"
+  },
+  {
+    "id": "irl-phrase-003",
+    "subject": "irish",
+    "topic": "phrases",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'Cad is ainm duit?' mean?",
+    "options": [
+      "How are you?",
+      "Where do you live?",
+      "What is your name?",
+      "How old are you?"
+    ],
+    "answer": "What is your name?",
+    "explanation": "Cad is ainm duit? (cod iss an-im dit) means 'What is your name?' in Irish!"
+  },
+  {
+    "id": "irl-phrase-004",
+    "subject": "irish",
+    "topic": "phrases",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "How do you say 'My name is Emilia'?",
+    "options": [
+      "Is mise Emilia",
+      "T\u00e1 Emilia m\u00e9",
+      "Ainm Emilia",
+      "Mise t\u00e1 Emilia"
+    ],
+    "answer": "Is mise Emilia",
+    "explanation": "Is mise Emilia (iss mish-a Emilia) means 'I am Emilia' / 'My name is Emilia'!"
+  },
+  {
+    "id": "irl-phrase-005",
+    "subject": "irish",
+    "topic": "phrases",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does 'Le do thoil' mean?",
+    "options": [
+      "Thank you",
+      "Sorry",
+      "Please",
+      "Hello"
+    ],
+    "answer": "Please",
+    "explanation": "Le do thoil (leh duh hull) means 'Please' in Irish!"
+  }
+]
