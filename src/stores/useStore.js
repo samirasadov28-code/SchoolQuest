@@ -1,141 +1,169 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import supabase, {
-  getProfile, upsertProfile,
-  getProgress, upsertProgress,
-  getAchievements, addAchievement,
-  saveSession
-} from '../services/supabase'
-import { calcLevel, calcXP } from '../services/adaptive'
-import { checkNewBadges, subjectAverage } from '../services/gamification'
+import { INITIAL_MASTERY, DAILY_GOAL_SECONDS } from '../services/adaptive'
 
-const useStore = create(persist(
-  (set, get) => ({
-    user: null,
-    profile: null,
-    masteryMap: {},
-    achievements: [],
-    session: null,
+/**
+ * Global app state — persisted to localStorage for offline support.
+ * Synced to Supabase when online.
+ */
+const useStore = create(
+  persist(
+    (set, get) => ({
+      // ── Auth ──────────────────────────────────────
+      user:        null,
+      profile:     null,
+      isParentMode:false,
 
-    initAuth: () => {
-      supabase.auth.getSession().then(({ data: { session } }) => {
-        if (session?.user) get().loadUser(session.user)
-      })
-      supabase.auth.onAuthStateChange((_, session) => {
-        if (session?.user) get().loadUser(session.user)
-        else set({ user: null, profile: null })
-      })
-    },
+      setUser:       (user)    => set({ user }),
+      setProfile:    (profile) => set({ profile }),
+      setParentMode: (val)     => set({ isParentMode: val }),
 
-    loadUser: async (user) => {
-      set({ user })
-      const [profile, progress, achievements] = await Promise.all([
-        getProfile(user.id),
-        getProgress(user.id),
-        getAchievements(user.id)
-      ])
-      const masteryMap = {}
-      progress.forEach(p => { masteryMap[`${p.subject}:${p.topic}`] = p.mastery_score })
-      set({ profile, masteryMap, achievements: achievements.map(a => a.badge_id) })
-    },
+      // ── Mastery map: { subject: { topic: score } } ──
+      masteryMap: Object.fromEntries(
+        Object.entries(INITIAL_MASTERY).map(([s, score]) => [s, { _overall: score }])
+      ),
 
-    login: async (email, password) => {
-      const { error } = await supabase.auth.signInWithPassword({ email, password })
-      if (error) throw error
-    },
+      updateMasteryMap: (subject, topic, newScore) =>
+        set(state => ({
+          masteryMap: {
+            ...state.masteryMap,
+            [subject]: {
+              ...state.masteryMap[subject],
+              [topic]: newScore,
+            },
+          },
+        })),
 
-    register: async (email, password, name) => {
-      const { data, error } = await supabase.auth.signUp({ email, password })
-      if (error) throw error
-      if (data.user) {
-        await upsertProfile({ id: data.user.id, name, email, xp: 0, level: 1, streak: 0 })
-      }
-    },
-
-    logout: async () => {
-      await supabase.auth.signOut()
-      set({ user: null, profile: null, masteryMap: {}, achievements: [], session: null })
-    },
-
-    startSession: () => {
-      set({ session: { startTime: Date.now(), questions: [], xpEarned: 0, usedIds: [] } })
-    },
-
-    answerQuestion: async (question, isCorrect) => {
-      const { session, masteryMap, user, profile, achievements } = get()
-      if (!session) return
-
-      const key = `${question.subject}:${question.topic}`
-      const currentMastery = masteryMap[key] ?? 50
-      const delta = isCorrect ? question.difficulty * 3 : -(question.difficulty * 2)
-      const newMastery = Math.max(0, Math.min(100, currentMastery + delta))
-      const xp = isCorrect ? calcXP(question.difficulty) : 0
-
-      const newMasteryMap = { ...masteryMap, [key]: newMastery }
-      const newXP = (profile?.xp ?? 0) + xp
-      const newLevel = calcLevel(newXP)
-      const updatedProfile = { ...profile, xp: newXP, level: newLevel }
-
-      set({
-        masteryMap: newMasteryMap,
-        session: {
-          ...session,
-          questions: [...session.questions, { ...question, isCorrect }],
-          xpEarned: session.xpEarned + xp,
-          usedIds: [...session.usedIds, question.id]
-        },
-        profile: updatedProfile
-      })
-
-      if (user) {
-        await upsertProgress({
-          user_id: user.id,
-          subject: question.subject,
-          topic: question.topic,
-          mastery_score: newMastery,
-          last_practiced: new Date().toISOString()
-        })
-        await upsertProfile({ ...updatedProfile, id: user.id })
-
-        const answeredCorrectly = session.questions.filter(q => q.isCorrect).length + (isCorrect ? 1 : 0)
-        const stats = {
-          totalSessions: 1,
-          totalCorrect: answeredCorrectly,
-          maxMastery: Math.max(0, ...Object.values(newMasteryMap)),
-          streak: profile?.streak ?? 0,
-          level: newLevel,
-          subjectAverages: {
-            maths: subjectAverage(newMasteryMap, 'maths'),
-            english: subjectAverage(newMasteryMap, 'english'),
-            irish: subjectAverage(newMasteryMap, 'irish')
-          }
+      loadMasteryFromDB: (progressRows) => {
+        const map = { ...get().masteryMap }
+        for (const row of progressRows) {
+          if (!map[row.subject]) map[row.subject] = {}
+          map[row.subject][row.topic] = row.mastery_score
         }
-        const newBadges = checkNewBadges(stats, achievements)
-        for (const b of newBadges) await addAchievement(user.id, b)
-        if (newBadges.length) set({ achievements: [...achievements, ...newBadges] })
-      }
-    },
+        set({ masteryMap: map })
+      },
 
-    endSession: async () => {
-      const { session, user } = get()
-      if (!session || !user) return
-      const duration = Math.round((Date.now() - session.startTime) / 1000)
-      const subjects = [...new Set(session.questions.map(q => q.subject))]
-      await saveSession({
-        user_id: user.id,
-        date: new Date().toISOString().split('T')[0],
-        duration_seconds: duration,
-        xp_earned: session.xpEarned,
-        subjects_covered: subjects,
-        created_at: new Date().toISOString()
-      })
-      set({ session: null })
+      // ── XP & Level ───────────────────────────────
+      xp:    0,
+      level: 1,
+
+      addXP: (amount) => {
+        const currentLevel = get().level
+        const newXP    = get().xp + amount
+        const newLevel = Math.floor(Math.sqrt(newXP / 50)) + 1
+        set({ xp: newXP, level: newLevel })
+        return { newXP, newLevel, leveledUp: newLevel > currentLevel }
+      },
+
+      setXP:    (xp)    => set({ xp, level: Math.floor(Math.sqrt(xp / 50)) + 1 }),
+      setLevel: (level) => set({ level }),
+
+      // ── Streak ───────────────────────────────────
+      streak:          0,
+      lastSessionDate: null,
+
+      checkAndUpdateStreak: () => {
+        const today     = new Date().toISOString().split('T')[0]
+        const lastDate  = get().lastSessionDate
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0]
+
+        if (lastDate === today) return get().streak        // already counted today
+        if (lastDate === yesterday) {
+          const newStreak = get().streak + 1
+          set({ streak: newStreak, lastSessionDate: today })
+          return newStreak
+        }
+        // Streak broken
+        set({ streak: 1, lastSessionDate: today })
+        return 1
+      },
+
+      // ── Daily timer ───────────────────────────────
+      todaySeconds:    0,
+      dailyGoalMet:    false,
+      sessionSeconds:  0,
+
+      addSessionSeconds: (s) => {
+        const today = get().todaySeconds + s
+        set({
+          todaySeconds:   today,
+          sessionSeconds: get().sessionSeconds + s,
+          dailyGoalMet:   today >= DAILY_GOAL_SECONDS,
+        })
+      },
+
+      resetSession: () => set({ sessionSeconds: 0 }),
+
+      // ── Achievements (badges) ─────────────────────
+      achievements: [],
+      addAchievement: (badgeId) => {
+        if (get().achievements.includes(badgeId)) return false
+        set(state => ({ achievements: [...state.achievements, badgeId] }))
+        return true
+      },
+
+      // ── Prizes ────────────────────────────────────
+      prizes: [],
+      setPrizes: (prizes) => set({ prizes }),
+
+      // ── Current session question tracking ─────────
+      sessionSeenIds:      [],
+      sessionSubjects:     [],
+      consecutiveWrong:    0,
+      sessionXP:           0,
+
+      addSeenQuestion: (id, subject) =>
+        set(state => ({
+          sessionSeenIds:  [...state.sessionSeenIds, id],
+          sessionSubjects: state.sessionSubjects.includes(subject)
+            ? state.sessionSubjects
+            : [...state.sessionSubjects, subject],
+        })),
+
+      incrementWrong:  ()  => set(state => ({ consecutiveWrong: state.consecutiveWrong + 1 })),
+      resetWrong:      ()  => set({ consecutiveWrong: 0 }),
+      addSessionXP:    (n) => set(state => ({ sessionXP: state.sessionXP + n })),
+
+      clearSession: () => set({
+        sessionSeenIds:   [],
+        sessionSubjects:  [],
+        consecutiveWrong: 0,
+        sessionXP:        0,
+      }),
+
+      // ── Supplemental (Groq-generated) questions ───
+      generatedQuestions: [],
+      addGeneratedQuestions: (qs) =>
+        set(state => ({ generatedQuestions: [...state.generatedQuestions, ...qs] })),
+    }),
+    {
+      name: 'emilia-quest-store',
+      // Don't persist session-level transient state
+      partialize: (state) => ({
+        user:              state.user,
+        profile:           state.profile,
+        masteryMap:        state.masteryMap,
+        xp:                state.xp,
+        level:             state.level,
+        streak:            state.streak,
+        lastSessionDate:   state.lastSessionDate,
+        todaySeconds:      state.todaySeconds,
+        dailyGoalMet:      state.dailyGoalMet,
+        achievements:      state.achievements,
+        prizes:            state.prizes,
+        generatedQuestions:state.generatedQuestions,
+      }),
     }
-  }),
-  {
-    name: 'schoolquest-store',
-    partialize: (s) => ({ masteryMap: s.masteryMap, profile: s.profile })
-  }
-))
+  )
+)
 
 export default useStore
+
+// XP needed for a given level
+export function xpForLevel(level) { return (level - 1) ** 2 * 50 }
+export function xpForNextLevel(level) { return level ** 2 * 50 }
+export function xpProgressInLevel(xp, level) {
+  const start = xpForLevel(level)
+  const end   = xpForNextLevel(level)
+  return Math.min(1, (xp - start) / (end - start))
+}

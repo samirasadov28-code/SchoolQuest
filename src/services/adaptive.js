@@ -1,50 +1,117 @@
-import { QUESTION_BANK } from '../data/questions/index.js'
+/**
+ * Adaptive Learning Engine
+ * Weights question selection inversely to mastery score.
+ * Ensures curriculum coverage — every subject appears at least once per 3 sessions.
+ */
 
-export const SUBJECT_WEIGHTS = {
-  english: 30,
-  irish: 30,
-  maths: 60,
-  history: 50,
-  geography: 50,
-  science: 50,
-  genknow: 50,
-  sphe: 50,
-  ethics: 50,
-  coding: 50
+export const SUBJECTS = [
+  { id: 'english',   label: 'English',           emoji: '📚', color: 'var(--subject-english)'  },
+  { id: 'irish',     label: 'Irish / Gaeilge',   emoji: '☘️', color: 'var(--subject-irish)'    },
+  { id: 'maths',     label: 'Mathematics',       emoji: '🔢', color: 'var(--subject-maths)'    },
+  { id: 'history',   label: 'History',           emoji: '🏰', color: 'var(--subject-history)'  },
+  { id: 'geography', label: 'Geography',         emoji: '🗺️', color: 'var(--subject-geography)'},
+  { id: 'science',   label: 'Science',           emoji: '🔬', color: 'var(--subject-science)'  },
+  { id: 'genknow',   label: 'World Explorer',    emoji: '🌍', color: 'var(--subject-genknow)'  },
+  { id: 'sphe',      label: 'SPHE',              emoji: '💚', color: 'var(--subject-sphe)'     },
+  { id: 'ethics',    label: 'Ethical Education', emoji: '⭐', color: 'var(--subject-ethics)'   },
+  { id: 'coding',    label: 'Coding & Digital',  emoji: '💻', color: 'var(--subject-coding)'   },
+]
+
+// XP awarded per correct answer (scales with difficulty)
+export const XP_PER_CORRECT = { 1: 5, 2: 10, 3: 15, 4: 20, 5: 25 }
+export const MASTERY_DELTA   = { correct: +10, incorrect: -5 }
+export const MASTERY_FLOOR   = 0
+export const MASTERY_CAP     = 100
+export const LEARN_MODE_THRESHOLD = 40   // trigger Learn Mode if mastery < 40 AND 2 wrong in row
+export const MASTERED_THRESHOLD   = 85   // badge eligible
+
+// Starting mastery weights based on Emilia's report card
+// Lower = will be selected more often at start
+export const INITIAL_MASTERY = {
+  english:   30,  // all 3s — needs most work
+  irish:     30,  // all 3s
+  maths:     60,  // all 4s — strong
+  history:   50,  // 4s
+  geography: 50,  // 4s
+  science:   50,  // 4s
+  genknow:   40,  // world explorer
+  sphe:      35,  // 3
+  ethics:    35,  // 3
+  coding:    25,  // new subject — start low so it appears early
 }
 
-export function pickNextQuestion(masteryMap, usedIds = []) {
-  const available = QUESTION_BANK.filter(q => !usedIds.includes(q.id))
-  const pool = available.length ? available : QUESTION_BANK
+/**
+ * Pick the next question from the bank.
+ * @param {Object[]} questionBank - full array of questions
+ * @param {Object}   masteryMap   - { subject: { topic: score } }
+ * @param {string[]} seenIds      - IDs shown in this session already
+ * @param {string[]} sessionSubjects - subjects covered this session
+ * @returns Question object
+ */
+export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects) {
+  const unseenBank = questionBank.filter(q => !seenIds.includes(q.id))
+  if (unseenBank.length === 0) return questionBank[Math.floor(Math.random() * questionBank.length)]
 
-  const weighted = pool.map(q => {
-    const mastery = masteryMap[`${q.subject}:${q.topic}`] ?? SUBJECT_WEIGHTS[q.subject] ?? 50
-    const weight = Math.max(1, 100 - mastery)
+  // If any subject hasn't appeared this session yet and session > 5 questions, force it
+  const missedSubjects = SUBJECTS
+    .map(s => s.id)
+    .filter(sid => !sessionSubjects.includes(sid))
+
+  if (missedSubjects.length > 0 && sessionSubjects.length >= 5) {
+    const forced = unseenBank.filter(q => missedSubjects.includes(q.subject))
+    if (forced.length > 0) return forced[Math.floor(Math.random() * forced.length)]
+  }
+
+  // Weight each question by (100 - mastery) for its topic
+  const weighted = unseenBank.map(q => {
+    const topicScore = masteryMap[q.subject]?.[q.topic] ?? INITIAL_MASTERY[q.subject] ?? 50
+    const weight     = Math.max(1, 100 - topicScore)
     return { q, weight }
   })
 
-  const total = weighted.reduce((s, w) => s + w.weight, 0)
-  let rand = Math.random() * total
+  const totalWeight = weighted.reduce((sum, w) => sum + w.weight, 0)
+  let rand = Math.random() * totalWeight
   for (const { q, weight } of weighted) {
     rand -= weight
     if (rand <= 0) return q
   }
-  return weighted[0].q
+  return unseenBank[0]
 }
 
-export function updateMastery(currentMastery, isCorrect, difficulty) {
-  const delta = isCorrect ? difficulty * 3 : -(difficulty * 2)
-  return Math.max(0, Math.min(100, (currentMastery ?? 50) + delta))
+/**
+ * Calculate new mastery after an answer.
+ */
+export function updateMastery(currentScore, isCorrect) {
+  const delta = isCorrect ? MASTERY_DELTA.correct : MASTERY_DELTA.incorrect
+  return Math.max(MASTERY_FLOOR, Math.min(MASTERY_CAP, currentScore + delta))
 }
 
-export function shouldTriggerLearnMode(mastery, consecutiveWrong) {
-  return mastery < 40 && consecutiveWrong >= 2
+/**
+ * Should Learn Mode be triggered?
+ */
+export function shouldTriggerLearnMode(masteryScore, consecutiveWrong) {
+  return masteryScore < LEARN_MODE_THRESHOLD && consecutiveWrong >= 2
 }
 
-export function calcXP(difficulty) {
-  return difficulty * 5
+/**
+ * Format session time mm:ss
+ */
+export function formatTime(seconds) {
+  const m = Math.floor(seconds / 60).toString().padStart(2, '0')
+  const s = (seconds % 60).toString().padStart(2, '0')
+  return `${m}:${s}`
 }
 
-export function calcLevel(xp) {
-  return Math.floor(Math.sqrt(xp / 50)) + 1
+/**
+ * Daily session goal: 45 minutes = 2700 seconds
+ */
+export const DAILY_GOAL_SECONDS = 2700
+
+/**
+ * Compute overall mastery percentage across all subjects
+ */
+export function overallMastery(masteryMap) {
+  const allScores = Object.values(masteryMap).flatMap(topics => Object.values(topics))
+  if (allScores.length === 0) return 0
+  return Math.round(allScores.reduce((a, b) => a + b, 0) / allScores.length)
 }

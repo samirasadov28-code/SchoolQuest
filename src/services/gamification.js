@@ -1,88 +1,163 @@
+/**
+ * Badge definitions and unlock logic.
+ * Badges use Take 3 (Chibi) style — mapped to Irish mythology names.
+ */
+
 export const BADGES = [
+  // ── Journey badges (progression) ──────────────────────────────
   {
-    id: 'celtic-explorer',
-    name: 'Celtic Explorer',
-    icon: '🗺️',
-    description: 'Complete your first session',
-    condition: (stats) => stats.totalSessions >= 1
+    id:          'celtic-explorer',
+    name:        'Celtic Explorer',
+    description: 'Started your first quest!',
+    icon:        '🧭',
+    rarity:      'common',
+    type:        'journey',
+    condition:   ({ sessions }) => sessions >= 1,
   },
   {
-    id: 'fionns-friend',
-    name: "Fionn's Friend",
-    icon: '🐟',
-    description: 'Answer 50 questions correctly',
-    condition: (stats) => stats.totalCorrect >= 50
+    id:          'fionns-friend',
+    name:        "Fionn's Friend",
+    description: 'Kept your streak for 7 days in a row!',
+    icon:        '🔥',
+    rarity:      'rare',
+    type:        'streak',
+    condition:   ({ streak }) => streak >= 7,
   },
   {
-    id: 'druid-scholar',
-    name: 'Druid Scholar',
-    icon: '🌿',
-    description: 'Reach mastery 80+ in any topic',
-    condition: (stats) => stats.maxMastery >= 80
+    id:          'druid-scholar',
+    name:        'Druid Scholar',
+    description: 'Mastered your first subject!',
+    icon:        '📜',
+    rarity:      'rare',
+    type:        'mastery',
+    condition:   ({ masteredSubjects }) => masteredSubjects >= 1,
   },
   {
-    id: 'si-stone-seeker',
-    name: 'Sí Stone Seeker',
-    icon: '🪨',
-    description: 'Maintain a 7-day streak',
-    condition: (stats) => stats.streak >= 7
+    id:          'si-stone-seeker',
+    name:        'Sí Stone Seeker',
+    description: 'Covered all subjects in one session!',
+    icon:        '💎',
+    rarity:      'epic',
+    type:        'session',
+    condition:   ({ sessionSubjectsCount }) => sessionSubjectsCount >= 9,
   },
   {
-    id: 'bard-of-boyne',
-    name: 'Bard of the Boyne',
-    icon: '🎵',
-    description: 'Complete 10 sessions',
-    condition: (stats) => stats.totalSessions >= 10
+    id:          'bard-of-boyne',
+    name:        'Bard of the Boyne',
+    description: '30-day streak — legendary dedication!',
+    icon:        '🎵',
+    rarity:      'legendary',
+    type:        'streak',
+    condition:   ({ streak }) => streak >= 30,
   },
   {
-    id: 'high-queen-tara',
-    name: 'High Queen of Tara',
-    icon: '👑',
-    description: 'Reach Level 10',
-    condition: (stats) => stats.level >= 10
+    id:          'high-queen-tara',
+    name:        'High Queen of Tara',
+    description: 'Overall mastery over 80%!',
+    icon:        '👑',
+    rarity:      'legendary',
+    type:        'mastery',
+    condition:   ({ overallMastery }) => overallMastery >= 80,
+  },
+
+  // ── Subject badges ─────────────────────────────────────────────
+  {
+    id:          'english-bard',
+    name:        'The Bard',
+    description: 'English mastery unlocked!',
+    icon:        '📚',
+    rarity:      'rare',
+    type:        'subject',
+    subject:     'english',
+    condition:   ({ subjectMastery }) => (subjectMastery?.english ?? 0) >= 85,
   },
   {
-    id: 'maths-master',
-    name: 'Maths Master',
-    icon: '🔢',
-    description: 'Reach 80% mastery in Maths',
-    condition: (stats) => (stats.subjectAverages?.maths ?? 0) >= 80
+    id:          'gaeilge-wizard',
+    name:        'Wizard of Words',
+    description: 'Irish / Gaeilge mastery unlocked!',
+    icon:        '☘️',
+    rarity:      'rare',
+    type:        'subject',
+    subject:     'irish',
+    condition:   ({ subjectMastery }) => (subjectMastery?.irish ?? 0) >= 85,
   },
   {
-    id: 'english-enchanter',
-    name: 'English Enchanter',
-    icon: '📚',
-    description: 'Reach 80% mastery in English',
-    condition: (stats) => (stats.subjectAverages?.english ?? 0) >= 80
+    id:          'maths-druid',
+    name:        'Maths Druid',
+    description: 'Mathematics mastery unlocked!',
+    icon:        '🔢',
+    rarity:      'rare',
+    type:        'subject',
+    subject:     'maths',
+    condition:   ({ subjectMastery }) => (subjectMastery?.maths ?? 0) >= 85,
   },
   {
-    id: 'irish-hero',
-    name: 'Irish Hero',
-    icon: '☘️',
-    description: 'Reach 80% mastery in Irish',
-    condition: (stats) => (stats.subjectAverages?.irish ?? 0) >= 80
-  }
+    id:          'time-guardian',
+    name:        'Time Guardian',
+    description: 'Completed 45 minutes in a single day!',
+    icon:        '⏰',
+    rarity:      'common',
+    type:        'time',
+    condition:   ({ dailyGoalMet }) => dailyGoalMet,
+  },
+  {
+    id:          'perfect-quest',
+    name:        'Perfect Quest',
+    description: 'Got 10 correct answers in a row!',
+    icon:        '⚡',
+    rarity:      'epic',
+    type:        'session',
+    condition:   ({ correctStreak }) => correctStreak >= 10,
+  },
 ]
 
-export function checkNewBadges(stats, earned) {
-  return BADGES.filter(b => !earned.includes(b.id) && b.condition(stats)).map(b => b.id)
+export const RARITY_COLORS = {
+  common:    '#b0a48f',
+  rare:      '#4a90d9',
+  epic:      '#8e44ad',
+  legendary: '#c9a227',
 }
 
-export function subjectAverage(masteryMap, subject) {
-  const entries = Object.entries(masteryMap).filter(([k]) => k.startsWith(subject + ':'))
-  if (!entries.length) return 0
-  return Math.round(entries.reduce((s, [, v]) => s + v, 0) / entries.length)
+/**
+ * Check which new badges should be unlocked given current state.
+ * Returns array of newly earned badge IDs.
+ */
+export function checkBadges(state, alreadyEarned) {
+  return BADGES
+    .filter(b => !alreadyEarned.includes(b.id) && b.condition(state))
+    .map(b => b.id)
 }
 
+/**
+ * Get average mastery per subject (from masteryMap)
+ */
+export function getSubjectAverages(masteryMap) {
+  const avgs = {}
+  for (const [subject, topics] of Object.entries(masteryMap)) {
+    const scores = Object.values(topics).filter(v => typeof v === 'number')
+    avgs[subject] = scores.length ? Math.round(scores.reduce((a,b)=>a+b,0) / scores.length) : 0
+  }
+  return avgs
+}
+
+/**
+ * Count subjects with average mastery >= threshold
+ */
+export function countMasteredSubjects(masteryMap, threshold = 85) {
+  return Object.values(getSubjectAverages(masteryMap)).filter(s => s >= threshold).length
+}
+
+/**
+ * Irish mythology region unlocked per subject mastery level
+ */
 export const MYTHOLOGY_REGIONS = [
-  { name: 'The Emerald Plains', subject: 'maths', color: '#14b8a6', icon: '🌿' },
-  { name: 'Tír na nÓg', subject: 'english', color: '#a855f7', icon: '🌟' },
-  { name: "Fionn's Forest", subject: 'irish', color: '#22c55e', icon: '🌲' },
-  { name: 'The Hill of Tara', subject: 'history', color: '#f59e0b', icon: '🏰' },
-  { name: 'The Wild Atlantic', subject: 'geography', color: '#3b82f6', icon: '🌊' },
-  { name: "The Druid's Grove", subject: 'science', color: '#8b5cf6', icon: '🧪' },
-  { name: 'The Storyteller Circle', subject: 'genknow', color: '#ec4899', icon: '📖' },
-  { name: "The Healer's Hearth", subject: 'sphe', color: '#f97316', icon: '🔥' },
-  { name: 'The Sacred Grove', subject: 'ethics', color: '#84cc16', icon: '🌱' },
-  { name: "Lugh's Workshop", subject: 'coding', color: '#06b6d4', icon: '⚡' }
+  { id: 'hill-of-tara',   subject: 'english',   name: 'Hill of Tara',    unlockAt: 40, emoji: '🏔️' },
+  { id: 'river-boyne',    subject: 'history',   name: 'River Boyne',     unlockAt: 40, emoji: '🌊' },
+  { id: 'burren',         subject: 'science',   name: 'The Burren',      unlockAt: 40, emoji: '🪨' },
+  { id: 'wicklow-mtns',   subject: 'geography', name: 'Wicklow Mountains',unlockAt: 40, emoji: '⛰️' },
+  { id: 'cliffs-moher',   subject: 'maths',     name: 'Cliffs of Moher', unlockAt: 40, emoji: '🌅' },
+  { id: 'connemara',      subject: 'irish',     name: 'Connemara',       unlockAt: 40, emoji: '🌿' },
+  { id: 'newgrange',      subject: 'genknow',   name: 'Newgrange',       unlockAt: 40, emoji: '🌀' },
+  { id: 'ring-of-kerry',  subject: 'sphe',      name: 'Ring of Kerry',   unlockAt: 40, emoji: '💚' },
+  { id: 'skellig-michael',subject: 'ethics',    name: 'Skellig Michael', unlockAt: 40, emoji: '🦅' },
 ]

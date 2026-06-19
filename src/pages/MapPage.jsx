@@ -1,50 +1,67 @@
+import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
 import { MYTHOLOGY_REGIONS } from '../services/gamification'
-import NavBar from '../components/shared/NavBar'
+import { getSubjectAverages } from '../services/gamification'
+import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 
 export default function MapPage() {
-  const { masteryMap } = useStore()
-
-  const getSubjectAvg = (subject) => {
-    const entries = Object.entries(masteryMap).filter(([k]) => k.startsWith(subject + ':'))
-    if (!entries.length) return 0
-    return Math.round(entries.reduce((s, [, v]) => s + v, 0) / entries.length)
-  }
+  const navigate   = useNavigate()
+  const masteryMap = useStore(s => s.masteryMap)
+  const subjectAvgs = getSubjectAverages(masteryMap)
 
   return (
-    <div className="page" style={{ paddingBottom: '5rem' }}>
-      <div style={{ paddingTop: '1rem', marginBottom: '1.5rem' }}>
-        <h1 style={{ fontSize: '1.5rem', fontWeight: 800 }}>🗺️ Mythological Map</h1>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Explore the lands of knowledge</p>
+    <div className="bg-mythic" style={{ minHeight: '100vh', padding: '16px 16px 60px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 }}>
+        <button onClick={() => navigate('/')} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '1.2rem' }}>←</button>
+        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.3rem' }}>🗺️ Map of Ireland</h1>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+      <p style={{ color: 'var(--color-stone-light)', fontSize: '0.85rem', marginBottom: 20, textAlign: 'center' }}>
+        Unlock regions of ancient Ireland by mastering each subject!
+      </p>
+
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20 }}>
+        <EmiliaCharacter mood="idle" size="sm" showBubble={false} />
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
         {MYTHOLOGY_REGIONS.map(region => {
-          const avg = getSubjectAvg(region.subject)
+          const score    = Math.round(subjectAvgs[region.subject] ?? 0)
+          const unlocked = score >= region.unlockAt
           return (
-            <div key={region.subject} className="card" style={{ border: `1px solid ${region.color}33` }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <span style={{ fontSize: '1.8rem' }}>{region.icon}</span>
-                  <div>
-                    <div style={{ fontWeight: 700, color: region.color }}>{region.name}</div>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', textTransform: 'capitalize' }}>{region.subject}</div>
+            <div key={region.id} style={{
+              background: unlocked ? 'rgba(45,90,39,0.25)' : 'rgba(0,0,0,0.25)',
+              border: `2px solid ${unlocked ? 'var(--color-forest-light)' : 'rgba(255,255,255,0.08)'}`,
+              borderRadius: 'var(--radius-md)',
+              padding: '16px 18px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 16,
+              opacity: unlocked ? 1 : 0.6,
+            }}>
+              <span style={{ fontSize: '2.2rem' }}>{unlocked ? region.emoji : '🔒'}</span>
+              <div style={{ flex: 1 }}>
+                <p style={{ fontWeight: 800, color: unlocked ? 'var(--color-gold)' : 'var(--color-parchment)', marginBottom: 4 }}>
+                  {unlocked ? region.name : `??? (${region.unlockAt}% mastery needed)`}
+                </p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <div style={{ flex: 1, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 6 }}>
+                    <div style={{ width: `${score}%`, height: '100%', background: unlocked ? 'var(--color-forest-light)' : 'var(--color-stone)', borderRadius: 20, transition: 'width 0.6s ease' }} />
                   </div>
+                  <span style={{ color: 'var(--color-stone-light)', fontSize: '0.75rem', whiteSpace: 'nowrap' }}>{score}%</span>
                 </div>
-                <div style={{ textAlign: 'right' }}>
-                  <div style={{ fontWeight: 800, fontSize: '1.2rem', color: region.color }}>{avg}%</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>mastery</div>
-                </div>
-              </div>
-              <div className="xp-bar" style={{ marginTop: '0.75rem' }}>
-                <div className="xp-bar-fill" style={{ width: `${avg}%`, background: region.color }} />
               </div>
             </div>
           )
         })}
       </div>
 
-      <NavBar />
+      <div style={{ marginTop: 28, padding: '16px', background: 'rgba(201,162,39,0.1)', border: '1px solid rgba(201,162,39,0.3)', borderRadius: 'var(--radius-md)', textAlign: 'center' }}>
+        <p style={{ color: 'var(--color-gold)', fontWeight: 700, marginBottom: 4 }}>🏔️ The Quest of the Sí Stones</p>
+        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.82rem', lineHeight: 1.6 }}>
+          Long ago, the druids of Ireland hid magical Sí Stones across the land. Only a true Celtic scholar can unlock each region and recover all nine stones!
+        </p>
+      </div>
     </div>
   )
 }

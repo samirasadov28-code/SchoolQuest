@@ -1,106 +1,208 @@
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import useStore from '../stores/useStore'
-import { calcLevel } from '../services/adaptive'
-import { BADGES } from '../services/gamification'
-import NavBar from '../components/shared/NavBar'
+import useStore, { xpForLevel, xpForNextLevel } from '../stores/useStore'
+import { getProgress, getAchievements, getPrizes } from '../services/supabase'
+import { SUBJECTS } from '../services/adaptive'
+import { getSubjectAverages } from '../services/gamification'
+import { getUnlockedPrizes, getNextPrize } from '../data/prizes'
+import EmiliaCharacter from '../components/shared/EmiliaCharacter'
+import { DAILY_GOAL_SECONDS, formatTime } from '../services/adaptive'
 
 export default function DashboardPage() {
-  const { profile, masteryMap, achievements, startSession, logout } = useStore()
-  const navigate = useNavigate()
+  const navigate   = useNavigate()
+  const user       = useStore(s => s.user)
+  const profile    = useStore(s => s.profile)
+  const xp         = useStore(s => s.xp)
+  const level      = useStore(s => s.level)
+  const streak     = useStore(s => s.streak)
+  const masteryMap = useStore(s => s.masteryMap)
+  const todaySeconds = useStore(s => s.todaySeconds)
+  const dailyGoalMet = useStore(s => s.dailyGoalMet)
+  const loadMastery  = useStore(s => s.loadMasteryFromDB)
+  const setPrizes    = useStore(s => s.setPrizes)
+  const setXP        = useStore(s => s.setXP)
+  const achievements = useStore(s => s.achievements)
+  const setParentMode = useStore(s => s.setParentMode)
 
-  const xp = profile?.xp ?? 0
-  const level = calcLevel(xp)
-  const streak = profile?.streak ?? 0
+  const [showParentPIN, setShowParentPIN] = useState(false)
+  const [pinInput,      setPinInput]      = useState('')
+  const [pinError,      setPinError]      = useState('')
 
-  const xpForLevel = (l) => (l - 1) ** 2 * 50
-  const xpProgress = xp - xpForLevel(level)
-  const xpNeeded = xpForLevel(level + 1) - xpForLevel(level)
-  const xpPercent = Math.min(100, Math.round((xpProgress / xpNeeded) * 100))
+  useEffect(() => {
+    if (!user) return
+    // Sync DB state
+    getProgress(user.id).then(rows => rows && loadMastery(rows))
+    getPrizes(user.id).then(prizes => prizes && setPrizes(prizes))
+    // Sync XP from profile if higher (DB is source of truth)
+    if (profile?.xp > xp) setXP(profile.xp)
+  }, [user])
 
-  const subjects = ['maths', 'english', 'irish', 'history', 'geography', 'science', 'genknow']
-  const subjectEmojis = { maths: '🔢', english: '📚', irish: '☘️', history: '🏰', geography: '🌍', science: '🧪', genknow: '💡' }
+  const subjectAvgs = getSubjectAverages(masteryMap)
+  const todayPct    = Math.min(1, todaySeconds / DAILY_GOAL_SECONDS)
+  const xpStart     = xpForLevel(level)
+  const xpEnd       = xpForNextLevel(level)
+  const xpPct       = Math.min(1, (xp - xpStart) / (xpEnd - xpStart))
+  const nextPrize   = getNextPrize(xp)
+  const unlockedPrizes = getUnlockedPrizes(xp)
 
-  const getSubjectAvg = (subject) => {
-    const entries = Object.entries(masteryMap).filter(([k]) => k.startsWith(subject + ':'))
-    if (!entries.length) return 0
-    return Math.round(entries.reduce((s, [, v]) => s + v, 0) / entries.length)
+  function handleParentUnlock() {
+    const storedPin = profile?.parent_pin ?? '1234'
+    if (pinInput === storedPin) {
+      setParentMode(true)
+      setShowParentPIN(false)
+      navigate('/parent')
+    } else {
+      setPinError('Wrong PIN! Try again.')
+      setPinInput('')
+    }
   }
 
-  const earnedBadges = BADGES.filter(b => achievements.includes(b.id))
-
-  const handleStart = () => {
-    startSession()
-    navigate('/session')
-  }
+  const name = profile?.name ?? user?.user_metadata?.name ?? 'Explorer'
 
   return (
-    <div className="page" style={{ paddingBottom: '5rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.5rem', paddingTop: '1rem' }}>
+    <div className="bg-mythic" style={{ minHeight: '100vh', padding: '16px 16px 80px' }}>
+      {/* Header */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
         <div>
-          <h1 style={{ fontSize: '1.3rem', fontWeight: 700 }}>Hi, {profile?.name || 'Hero'}! 👋</h1>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Ready to learn?</p>
+          <h2 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.1rem' }}>
+            ☘️ SchoolQuest
+          </h2>
+          <p style={{ color: 'var(--color-parchment)', opacity: 0.7, fontSize: '0.8rem' }}>
+            Welcome back, {name}!
+          </p>
         </div>
-        <button onClick={logout} style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.8rem' }}>Sign out</button>
+        <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+          {/* Streak */}
+          <div className="streak-flame">🔥 {streak}</div>
+          {/* Parent button */}
+          <button onClick={() => setShowParentPIN(true)} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '6px 12px', color: 'var(--color-parchment)', fontSize: '0.8rem', cursor: 'pointer' }}>
+            👨‍👩‍👧 Parent
+          </button>
+        </div>
       </div>
 
-      <div className="card" style={{ marginBottom: '1rem', background: 'linear-gradient(135deg, var(--purple-dark), var(--bg-card))' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
+      {/* Level + XP bar */}
+      <div className="celtic-border" style={{ background: 'rgba(0,0,0,0.3)', borderRadius: 'var(--radius-md)', padding: '14px 18px', marginBottom: 16 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+          <span style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '1rem' }}>⚔️ Level {level}</span>
+          <span style={{ color: 'var(--color-parchment)', fontSize: '0.85rem', opacity: 0.8 }}>{xp} / {xpEnd} XP</span>
+        </div>
+        <div className="xp-bar-track">
+          <div className="xp-bar-fill" style={{ width: `${xpPct * 100}%` }} />
+        </div>
+        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.75rem', marginTop: 6 }}>
+          {xpEnd - xp} XP to Level {level + 1}
+        </p>
+      </div>
+
+      {/* Daily goal */}
+      <div style={{ background: dailyGoalMet ? 'rgba(39,174,96,0.15)' : 'rgba(0,0,0,0.2)', border: `2px solid ${dailyGoalMet ? 'var(--color-emerald)' : 'rgba(255,255,255,0.1)'}`, borderRadius: 'var(--radius-md)', padding: '12px 18px', marginBottom: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div>
+          <p style={{ color: 'var(--color-parchment)', fontWeight: 700, fontSize: '0.9rem' }}>
+            {dailyGoalMet ? '✅ Daily quest complete!' : '⏰ Today\'s quest'}
+          </p>
+          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem' }}>
+            {formatTime(todaySeconds)} / 45:00 studied
+          </p>
+        </div>
+        <svg width="48" height="48" viewBox="0 0 36 36">
+          <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="3.5" />
+          <circle cx="18" cy="18" r="15.9" fill="none"
+            stroke={dailyGoalMet ? '#27ae60' : '#c9a227'}
+            strokeWidth="3.5"
+            strokeDasharray={`${todayPct * 100} 100`}
+            strokeLinecap="round"
+            transform="rotate(-90 18 18)"
+          />
+          <text x="18" y="22" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">
+            {Math.round(todayPct * 100)}%
+          </text>
+        </svg>
+      </div>
+
+      {/* Next digital prize teaser */}
+      {nextPrize && (
+        <div style={{ background: 'rgba(201,162,39,0.1)', border: '2px solid rgba(201,162,39,0.3)', borderRadius: 'var(--radius-md)', padding: '12px 18px', marginBottom: 16, display: 'flex', gap: 14, alignItems: 'center' }}>
+          <img src={nextPrize.image} alt={nextPrize.name} style={{ width: 60, height: 60, borderRadius: 8, objectFit: 'cover', filter: 'brightness(0.4) blur(2px)' }} />
           <div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Level</div>
-            <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--gold)' }}>{level}</div>
-          </div>
-          <div style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: '2rem' }}>🔥</div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{streak} day streak</div>
-          </div>
-          <div style={{ textAlign: 'right' }}>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>XP</div>
-            <div style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--purple-light)' }}>{xp}</div>
+            <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.9rem' }}>🌟 Next reward</p>
+            <p style={{ color: 'var(--color-parchment)', fontSize: '0.85rem' }}>{nextPrize.name}</p>
+            <p style={{ color: 'var(--color-stone-light)', fontSize: '0.78rem' }}>{nextPrize.xpRequired - xp} XP away</p>
           </div>
         </div>
-        <div className="xp-bar">
-          <div className="xp-bar-fill" style={{ width: `${xpPercent}%` }} />
-        </div>
-        <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem', textAlign: 'right' }}>
-          {xpProgress}/{xpNeeded} XP to Level {level + 1}
-        </div>
-      </div>
+      )}
 
-      <button onClick={handleStart} className="btn btn-gold btn-full" style={{ marginBottom: '1.5rem', padding: '1.1rem', fontSize: '1.1rem' }}>
-        ⚔️ Start Learning Quest
-      </button>
-
-      <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Your Subjects</h3>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
-        {subjects.map(subj => {
-          const avg = getSubjectAvg(subj)
+      {/* Subject mastery grid */}
+      <h3 style={{ color: 'var(--color-gold-light)', fontFamily: 'var(--font-title)', fontSize: '0.95rem', marginBottom: 12 }}>
+        Your Subjects
+      </h3>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 24 }}>
+        {SUBJECTS.map(subj => {
+          const score = Math.round(subjectAvgs[subj.id] ?? 0)
           return (
-            <div key={subj} className="card" style={{ padding: '1rem' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-                <span style={{ fontSize: '1.2rem' }}>{subjectEmojis[subj]}</span>
-                <span style={{ fontSize: '0.85rem', fontWeight: 700, color: avg >= 70 ? 'var(--teal)' : avg >= 40 ? 'var(--gold)' : 'var(--rose)' }}>{avg}%</span>
+            <div key={subj.id} style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 'var(--radius-md)', padding: '12px 14px', border: '1px solid rgba(255,255,255,0.08)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
+                <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--color-parchment)' }}>
+                  {subj.emoji} {subj.label.split(' ')[0]}
+                </span>
+                <span style={{ fontSize: '0.8rem', color: subj.color, fontWeight: 800 }}>{score}%</span>
               </div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', textTransform: 'capitalize', marginBottom: '0.4rem' }}>{subj === 'genknow' ? 'Gen. Knowledge' : subj}</div>
-              <div className="xp-bar">
-                <div className="xp-bar-fill" style={{ width: `${avg}%`, background: avg >= 70 ? 'var(--teal)' : avg >= 40 ? 'var(--gold)' : 'var(--rose)' }} />
+              <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 6, overflow: 'hidden' }}>
+                <div style={{ width: `${score}%`, height: '100%', background: subj.color, borderRadius: 20, transition: 'width 0.6s ease' }} />
               </div>
             </div>
           )
         })}
       </div>
 
-      {earnedBadges.length > 0 && (
-        <>
-          <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Your Badges</h3>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1.5rem' }}>
-            {earnedBadges.map(b => (
-              <span key={b.id} className="badge-chip badge-earned">{b.icon} {b.name}</span>
-            ))}
-          </div>
-        </>
-      )}
+      {/* Emilia + Start button */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+        <EmiliaCharacter mood="idle" size="md" showBubble />
+        <button className="btn-primary" style={{ fontSize: '1.2rem', padding: '16px 48px', width: '100%' }} onClick={() => navigate('/session')}>
+          ⚔️ Start Today's Quest!
+        </button>
+        <div style={{ display: 'flex', gap: 12, width: '100%' }}>
+          <button className="btn-secondary" style={{ flex: 1 }} onClick={() => navigate('/rewards')}>🏆 Rewards</button>
+          <button className="btn-secondary" style={{ flex: 1 }} onClick={() => navigate('/map')}>🗺️ Map</button>
+        </div>
+      </div>
 
-      <NavBar />
+      {/* Parent PIN modal */}
+      {showParentPIN && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
+          <div className="celtic-border" style={{ background: '#1a3a15', borderRadius: 'var(--radius-lg)', padding: 28, width: '100%', maxWidth: 340 }}>
+            <h3 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginBottom: 8, textAlign: 'center' }}>Parent Access</h3>
+            <p style={{ color: 'var(--color-stone-light)', fontSize: '0.85rem', textAlign: 'center', marginBottom: 20 }}>Enter your 4-digit parent PIN</p>
+            {pinError && <p style={{ color: '#ff8a8a', fontSize: '0.85rem', marginBottom: 12, textAlign: 'center' }}>{pinError}</p>}
+            <input
+              type="password"
+              inputMode="numeric"
+              maxLength={4}
+              placeholder="• • • •"
+              value={pinInput}
+              onChange={e => setPinInput(e.target.value.replace(/\D/g, '').slice(0, 4))}
+              style={{ ...inputStyle, textAlign: 'center', fontSize: '1.5rem', letterSpacing: '0.5em', marginBottom: 16 }}
+              autoFocus
+            />
+            <div style={{ display: 'flex', gap: 10 }}>
+              <button className="btn-secondary" style={{ flex: 1 }} onClick={() => { setShowParentPIN(false); setPinInput(''); setPinError('') }}>Cancel</button>
+              <button className="btn-primary" style={{ flex: 1 }} onClick={handleParentUnlock}>Unlock</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
+}
+
+const inputStyle = {
+  background: 'rgba(255,255,255,0.08)',
+  border: '2px solid rgba(255,255,255,0.2)',
+  borderRadius: 'var(--radius-md)',
+  padding: '13px 16px',
+  color: 'var(--color-parchment)',
+  fontFamily: 'var(--font-body)',
+  fontSize: '1rem',
+  outline: 'none',
+  width: '100%',
 }
