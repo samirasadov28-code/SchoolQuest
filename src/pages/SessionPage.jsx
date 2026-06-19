@@ -180,7 +180,7 @@ export default function SessionPage() {
     if (user) {
       logSession(user.id, elapsed, sessionXP, [...new Set(sessionSubjects)]).catch(() => {})
     }
-    navigate('/')
+    navigate('/home')
   }
 
   if (!question) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-gold)' }}>Loading quest...</div>
