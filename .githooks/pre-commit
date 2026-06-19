@@ -1,0 +1,9 @@
+#!/bin/sh
+# SchoolQuest pre-commit hook — blocks commits that break the question bank.
+# Activate once after `git init`:   git config core.hooksPath .githooks
+echo "🔍 Validating question bank..."
+node scripts/validate-questions.mjs || {
+  echo ""
+  echo "✖ Question bank validation failed — commit aborted. Fix the issues above and retry."
+  exit 1
+}
