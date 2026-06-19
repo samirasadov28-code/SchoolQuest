@@ -6,7 +6,11 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
+      workbox: {
+        skipWaiting: false,
+        clientsClaim: true
+      },
       manifest: {
         name: 'SchoolQuest',
         short_name: 'SchoolQuest',
