@@ -81,5 +81,8 @@ export const MYTHOLOGY_REGIONS = [
   { name: 'The Hill of Tara', subject: 'history', color: '#f59e0b', icon: '🏰' },
   { name: 'The Wild Atlantic', subject: 'geography', color: '#3b82f6', icon: '🌊' },
   { name: "The Druid's Grove", subject: 'science', color: '#8b5cf6', icon: '🧪' },
-  { name: 'The Storyteller Circle', subject: 'genknow', color: '#ec4899', icon: '📖' }
+  { name: 'The Storyteller Circle', subject: 'genknow', color: '#ec4899', icon: '📖' },
+  { name: "The Healer's Hearth", subject: 'sphe', color: '#f97316', icon: '🔥' },
+  { name: 'The Sacred Grove', subject: 'ethics', color: '#84cc16', icon: '🌱' },
+  { name: "Lugh's Workshop", subject: 'coding', color: '#06b6d4', icon: '⚡' }
 ]

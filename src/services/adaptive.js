@@ -9,7 +9,8 @@ export const SUBJECT_WEIGHTS = {
   science: 50,
   genknow: 50,
   sphe: 50,
-  ethics: 50
+  ethics: 50,
+  coding: 50
 }
 
 export function pickNextQuestion(masteryMap, usedIds = []) {

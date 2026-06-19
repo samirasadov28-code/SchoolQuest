@@ -97,11 +97,13 @@ export default function ParentPage() {
 
       <h3 style={{ marginBottom: '0.75rem', color: 'var(--text-secondary)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Subject Progress</h3>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
-        {['maths', 'english', 'irish', 'history', 'geography', 'science', 'genknow'].map(subj => {
+        {['maths', 'english', 'irish', 'history', 'geography', 'science', 'genknow', 'sphe', 'ethics', 'coding'].map(subj => {
           const avg = getSubjectAvg(subj)
           return (
             <div key={subj} className="card" style={{ padding: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <span style={{ textTransform: 'capitalize', fontSize: '0.9rem', minWidth: '90px', color: 'var(--text-secondary)' }}>{subj === 'genknow' ? 'Gen. Know.' : subj}</span>
+              <span style={{ textTransform: 'capitalize', fontSize: '0.9rem', minWidth: '90px', color: 'var(--text-secondary)' }}>
+                {subj === 'genknow' ? 'Gen. Know.' : subj === 'sphe' ? 'SPHE' : subj}
+              </span>
               <div className="xp-bar" style={{ flex: 1 }}>
                 <div className="xp-bar-fill" style={{ width: `${avg}%` }} />
               </div>
