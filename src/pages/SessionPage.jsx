@@ -29,6 +29,7 @@ export default function SessionPage() {
   const clearSession      = useStore(s => s.clearSession)
   const sessionXP         = useStore(s => s.sessionXP)
   const generatedQuestions= useStore(s => s.generatedQuestions)
+  const feedActivePet     = useStore(s => s.feedActivePet)
 
   const allQuestions = [...QUESTION_BANK, ...generatedQuestions]
 
@@ -112,6 +113,8 @@ export default function SessionPage() {
       addSessionXP(xpGain)
       const result = addXP(xpGain)
       if (result?.leveledUp) setFeedbackMsg(`🎉 LEVEL UP! You're now Level ${result.newLevel}!`)
+      const petResult = feedActivePet(xpGain)
+      if (petResult?.stageUp) setFeedbackMsg(`⭐ ${petResult.petName} evolved to Stage ${petResult.newStage}!`)
     }
 
     // Streaks

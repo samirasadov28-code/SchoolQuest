@@ -135,6 +135,75 @@ const useStore = create(
       generatedQuestions: [],
       addGeneratedQuestions: (qs) =>
         set(state => ({ generatedQuestions: [...state.generatedQuestions, ...qs] })),
+
+      // ── Pets ─────────────────────────────────────────────────────
+      activePetId: null,
+      pets: [], // [{ id, name, stage, petXp, happiness, hunger, lastFed, acquiredAt }]
+
+      chooseStarterPet: (speciesId, name) => {
+        const now = new Date().toISOString()
+        const pet = { id: speciesId, name, stage: 1, petXp: 0, happiness: 80, hunger: 30, lastFed: now, acquiredAt: now }
+        set(state => ({ pets: [...state.pets.filter(p => p.id !== speciesId), pet], activePetId: speciesId }))
+      },
+
+      unlockPet: (speciesId, name) => {
+        if (get().pets.find(p => p.id === speciesId)) return
+        const now = new Date().toISOString()
+        const pet = { id: speciesId, name, stage: 1, petXp: 0, happiness: 80, hunger: 30, lastFed: now, acquiredAt: now }
+        set(state => ({ pets: [...state.pets, pet] }))
+      },
+
+      setActivePet: (speciesId) => set({ activePetId: speciesId }),
+
+      feedActivePet: (xpAmount) => {
+        const { activePetId, pets } = get()
+        if (!activePetId) return null
+        const pet = pets.find(p => p.id === activePetId)
+        if (!pet) return null
+        const now = new Date().toISOString()
+        const newPetXp = pet.petXp + xpAmount
+        // Determine stage (thresholds: 200, 800)
+        const newStage = newPetXp >= 800 ? 3 : newPetXp >= 200 ? 2 : 1
+        const stageUp  = newStage > pet.stage
+        const updated  = { ...pet, petXp: newPetXp, stage: newStage, hunger: Math.max(0, pet.hunger - 15), happiness: Math.min(100, pet.happiness + 8), lastFed: now }
+        set(state => ({ pets: state.pets.map(p => p.id === activePetId ? updated : p) }))
+        return { stageUp, newStage, petName: pet.name }
+      },
+
+      playWithPet: () => {
+        const { activePetId, pets } = get()
+        if (!activePetId) return false
+        const pet = pets.find(p => p.id === activePetId)
+        if (!pet) return false
+        // Rate-limit: once per 5 minutes
+        const lastFed = pet.lastFed ? new Date(pet.lastFed).getTime() : 0
+        if (Date.now() - lastFed < 5 * 60 * 1000) return false
+        const now = new Date().toISOString()
+        const updated = { ...pet, happiness: Math.min(100, pet.happiness + 15), lastFed: now }
+        set(state => ({ pets: state.pets.map(p => p.id === activePetId ? updated : p) }))
+        return true
+      },
+
+      renamePet: (speciesId, name) => {
+        set(state => ({ pets: state.pets.map(p => p.id === speciesId ? { ...p, name } : p) }))
+      },
+
+      _applyPetDecay: () => {
+        const now = Date.now()
+        set(state => ({
+          pets: state.pets.map(pet => {
+            if (!pet.lastFed) return pet
+            const hoursSince = (now - new Date(pet.lastFed).getTime()) / 3600000
+            const decayAmt = Math.floor(hoursSince * 2)
+            if (decayAmt === 0) return pet
+            return {
+              ...pet,
+              happiness: Math.max(40, pet.happiness - decayAmt),
+              hunger:    Math.min(80, pet.hunger    + decayAmt),
+            }
+          }),
+        }))
+      },
     }),
     {
       name: 'emilia-quest-store',
@@ -152,6 +221,8 @@ const useStore = create(
         achievements:      state.achievements,
         prizes:            state.prizes,
         generatedQuestions:state.generatedQuestions,
+        activePetId:       state.activePetId,
+        pets:              state.pets,
       }),
     }
   )

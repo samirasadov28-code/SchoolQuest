@@ -5,6 +5,7 @@ const items = [
   { path: '/session', label: 'Learn', icon: '⚔️' },
   { path: '/map', label: 'Map', icon: '🗺️' },
   { path: '/rewards', label: 'Rewards', icon: '🏆' },
+  { path: '/pets', label: 'Pets', icon: '🐾' },
   { path: '/parent', label: 'Parent', icon: '👨‍👩‍👧' },
 ]
 

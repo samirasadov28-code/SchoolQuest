@@ -6,6 +6,8 @@ import { SUBJECTS } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
 import { getUnlockedPrizes, getNextPrize } from '../data/prizes'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
+import PetCompanion from '../components/shared/PetCompanion'
+import { getPetStage, getPetMoodFromState } from '../data/pets'
 import { DAILY_GOAL_SECONDS, formatTime } from '../services/adaptive'
 
 export default function DashboardPage() {
@@ -23,6 +25,9 @@ export default function DashboardPage() {
   const setXP        = useStore(s => s.setXP)
   const achievements = useStore(s => s.achievements)
   const setParentMode = useStore(s => s.setParentMode)
+  const pets          = useStore(s => s.pets)
+  const activePetId   = useStore(s => s.activePetId)
+  const activePet     = pets.find(p => p.id === activePetId)
 
   const [showParentPIN, setShowParentPIN] = useState(false)
   const [pinInput,      setPinInput]      = useState('')
@@ -155,9 +160,23 @@ export default function DashboardPage() {
         })}
       </div>
 
-      {/* Emilia + Start button */}
+      {/* Emilia + Pet + Start button */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
-        <EmiliaCharacter mood="idle" size="md" showBubble />
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
+          <EmiliaCharacter mood="idle" size="md" showBubble />
+          {activePet && (
+            <div style={{ textAlign: 'center', cursor: 'pointer' }} onClick={() => navigate('/pets')}>
+              <PetCompanion
+                speciesId={activePet.id}
+                stage={getPetStage(activePet.petXp, activePet.id)}
+                mood={getPetMoodFromState(activePet.happiness)}
+                name={activePet.name}
+                size="sm"
+                showBubble={false}
+              />
+            </div>
+          )}
+        </div>
         <button className="btn-primary" style={{ fontSize: '1.2rem', padding: '16px 48px', width: '100%' }} onClick={() => navigate('/session')}>
           ⚔️ Start Today's Quest!
         </button>
