@@ -30,3 +30,6 @@ npm-debug.log*
 
 # PWA dev files (generated at build)
 dev-dist/
+
+# Claude Code agent worktrees (ephemeral, not source)
+.claude/worktrees/
