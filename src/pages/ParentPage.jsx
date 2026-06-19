@@ -56,7 +56,7 @@ export default function ParentPage() {
 
   function handleExit() {
     setParentMode(false)
-    navigate('/')
+    navigate('/home')
   }
 
   const name = profile?.name ?? 'Your child'

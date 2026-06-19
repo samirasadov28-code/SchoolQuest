@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const items = [
-  { path: '/', label: 'Home', icon: '🏠' },
+  { path: '/home', label: 'Home', icon: '🏠' },
   { path: '/session', label: 'Learn', icon: '⚔️' },
   { path: '/map', label: 'Map', icon: '🗺️' },
   { path: '/rewards', label: 'Rewards', icon: '🏆' },

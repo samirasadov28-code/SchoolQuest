@@ -4,6 +4,7 @@ import { supabase } from './services/supabase'
 import useStore from './stores/useStore'
 
 // Pages
+import LandingPage    from './pages/LandingPage'
 import LoginPage      from './pages/LoginPage'
 import RegisterPage   from './pages/RegisterPage'
 import DashboardPage  from './pages/DashboardPage'
@@ -11,7 +12,7 @@ import SessionPage    from './pages/SessionPage'
 import RewardsPage    from './pages/RewardsPage'
 import ParentPage     from './pages/ParentPage'
 import MapPage        from './pages/MapPage'
-import PetHubPage    from './pages/PetHubPage'
+import PetHubPage     from './pages/PetHubPage'
 
 function ProtectedRoute({ children }) {
   const user = useStore(s => s.user)
@@ -45,9 +46,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/"         element={<LandingPage />} />
         <Route path="/login"    element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
+        <Route path="/home"     element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
         <Route path="/session"  element={<ProtectedRoute><SessionPage /></ProtectedRoute>} />
         <Route path="/rewards"  element={<ProtectedRoute><RewardsPage /></ProtectedRoute>} />
         <Route path="/map"      element={<ProtectedRoute><MapPage /></ProtectedRoute>} />

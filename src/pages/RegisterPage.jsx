@@ -22,7 +22,7 @@ export default function RegisterPage() {
     setError('')
     try {
       await signUp(email, password, name, pin)
-      navigate('/')
+      navigate('/home')
     } catch (err) {
       setError(err.message || 'Something went wrong. Please try again!')
     } finally {
