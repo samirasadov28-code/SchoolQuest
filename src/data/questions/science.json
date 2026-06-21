@@ -13,7 +13,7 @@
       "Wind and darkness"
     ],
     "answer": "Sunlight, water, and carbon dioxide",
-    "explanation": "Plants make their own food through photosynthesis \u2014 using sunlight, water from the soil, and carbon dioxide from the air. They're amazing little food factories!"
+    "explanation": "Plants make their own food through photosynthesis — using sunlight, water from the soil, and carbon dioxide from the air. They're amazing little food factories!"
   },
   {
     "id": "sci-life-002",
@@ -29,7 +29,7 @@
       "Hydrogen"
     ],
     "answer": "Oxygen",
-    "explanation": "During photosynthesis, plants take in carbon dioxide and give out oxygen \u2014 the gas we need to breathe. Trees and plants are our oxygen factories!"
+    "explanation": "During photosynthesis, plants take in carbon dioxide and give out oxygen — the gas we need to breathe. Trees and plants are our oxygen factories!"
   },
   {
     "id": "sci-life-003",
@@ -61,7 +61,7 @@
       "Bird eggs"
     ],
     "answer": "Frog eggs",
-    "explanation": "Tadpoles hatch from frog eggs (frogspawn). They gradually grow legs and lose their tails to become frogs \u2014 a process called metamorphosis!"
+    "explanation": "Tadpoles hatch from frog eggs (frogspawn). They gradually grow legs and lose their tails to become frogs — a process called metamorphosis!"
   },
   {
     "id": "sci-life-005",
@@ -77,7 +77,7 @@
       "Frog"
     ],
     "answer": "Dolphin",
-    "explanation": "Mammals have fur/hair, are warm-blooded, and feed their young with milk. Dolphins breathe air and give birth to live young \u2014 so they're mammals even though they live in the sea!"
+    "explanation": "Mammals have fur/hair, are warm-blooded, and feed their young with milk. Dolphins breathe air and give birth to live young — so they're mammals even though they live in the sea!"
   },
   {
     "id": "sci-life-006",
@@ -93,7 +93,7 @@
       "Pollination"
     ],
     "answer": "Metamorphosis",
-    "explanation": "Metamorphosis means a big change in body form. A caterpillar creates a chrysalis and transforms into a butterfly \u2014 one of nature's most magical processes!"
+    "explanation": "Metamorphosis means a big change in body form. A caterpillar creates a chrysalis and transforms into a butterfly — one of nature's most magical processes!"
   },
   {
     "id": "sci-life-007",
@@ -125,7 +125,7 @@
       "A type of habitat"
     ],
     "answer": "The order in which animals eat each other",
-    "explanation": "A food chain shows who eats what. For example: grass \u2192 rabbit \u2192 fox. Energy passes from one living thing to the next!"
+    "explanation": "A food chain shows who eats what. For example: grass → rabbit → fox. Energy passes from one living thing to the next!"
   },
   {
     "id": "sci-life-009",
@@ -173,7 +173,7 @@
       "Metal foil"
     ],
     "answer": "Wood",
-    "explanation": "Wood comes directly from trees \u2014 it's a natural material. Plastic, glass, and metal foil are all processed or manufactured materials!"
+    "explanation": "Wood comes directly from trees — it's a natural material. Plastic, glass, and metal foil are all processed or manufactured materials!"
   },
   {
     "id": "sci-mat-002",
@@ -181,7 +181,7 @@
     "topic": "materials",
     "difficulty": 2,
     "type": "multiple-choice",
-    "question": "What happens to water when it is heated to 100\u00b0C?",
+    "question": "What happens to water when it is heated to 100°C?",
     "options": [
       "It freezes",
       "It boils and turns to steam",
@@ -189,7 +189,7 @@
       "It disappears"
     ],
     "answer": "It boils and turns to steam",
-    "explanation": "Water boils at 100\u00b0C and turns into water vapour (steam). This is called evaporation. Steam is still water \u2014 just in a gas form!"
+    "explanation": "Water boils at 100°C and turns into water vapour (steam). This is called evaporation. Steam is still water — just in a gas form!"
   },
   {
     "id": "sci-mat-003",
@@ -205,7 +205,7 @@
       "Copper"
     ],
     "answer": "Copper",
-    "explanation": "Metals like copper are good conductors \u2014 electricity flows through them easily. That's why electrical wires are made of copper!"
+    "explanation": "Metals like copper are good conductors — electricity flows through them easily. That's why electrical wires are made of copper!"
   },
   {
     "id": "sci-mat-004",
@@ -213,7 +213,7 @@
     "topic": "materials",
     "difficulty": 2,
     "type": "multiple-choice",
-    "question": "What is the state of water at -10\u00b0C?",
+    "question": "What is the state of water at -10°C?",
     "options": [
       "Liquid",
       "Gas",
@@ -221,7 +221,7 @@
       "Steam"
     ],
     "answer": "Solid (ice)",
-    "explanation": "Water freezes at 0\u00b0C. At -10\u00b0C, water is solid ice! The three states of matter are solid, liquid, and gas."
+    "explanation": "Water freezes at 0°C. At -10°C, water is solid ice! The three states of matter are solid, liquid, and gas."
   },
   {
     "id": "sci-mat-005",
@@ -237,7 +237,7 @@
       "Generator"
     ],
     "answer": "Insulator",
-    "explanation": "Insulators block electricity \u2014 rubber, plastic, and wood are good insulators. That's why the handles of electrical tools are covered in rubber!"
+    "explanation": "Insulators block electricity — rubber, plastic, and wood are good insulators. That's why the handles of electrical tools are covered in rubber!"
   },
   {
     "id": "sci-energy-001",
@@ -285,7 +285,7 @@
       "Oil"
     ],
     "answer": "Wind",
-    "explanation": "Wind is renewable \u2014 it never runs out! Coal, oil, and gas are fossil fuels that took millions of years to form and will run out one day. Ireland has lots of great wind energy!"
+    "explanation": "Wind is renewable — it never runs out! Coal, oil, and gas are fossil fuels that took millions of years to form and will run out one day. Ireland has lots of great wind energy!"
   },
   {
     "id": "sci-energy-004",
@@ -333,7 +333,7 @@
       "Jupiter"
     ],
     "answer": "Earth",
-    "explanation": "We live on Earth \u2014 the third planet from the Sun! Earth is special because it has liquid water and supports life."
+    "explanation": "We live on Earth — the third planet from the Sun! Earth is special because it has liquid water and supports life."
   },
   {
     "id": "sci-space-002",
@@ -365,7 +365,7 @@
       "The Earth's shadow"
     ],
     "answer": "The way the Sun lights different parts of the Moon as it orbits Earth",
-    "explanation": "As the Moon orbits Earth, we see different amounts of its lit-up side \u2014 giving us the phases from new moon to full moon and back!"
+    "explanation": "As the Moon orbits Earth, we see different amounts of its lit-up side — giving us the phases from new moon to full moon and back!"
   },
   {
     "id": "sci-space-004",
@@ -414,22 +414,6 @@
     ],
     "answer": "A bird",
     "explanation": "A robin has feathers, a beak and wings, so it is a bird."
-  },
-  {
-    "id": "sci-animals-003",
-    "subject": "science",
-    "topic": "animals",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which of these is a mammal?",
-    "options": [
-      "Salmon",
-      "Frog",
-      "Cow",
-      "Ladybird"
-    ],
-    "answer": "Cow",
-    "explanation": "A cow has fur, breathes air and feeds its babies milk, so it is a mammal."
   },
   {
     "id": "sci-animals-004",
@@ -807,12 +791,12 @@
     "type": "multiple-choice",
     "question": "What is the correct order of a butterfly's life cycle?",
     "options": [
-      "Egg \u2192 caterpillar \u2192 chrysalis \u2192 butterfly",
-      "Caterpillar \u2192 egg \u2192 butterfly \u2192 chrysalis",
-      "Butterfly \u2192 egg \u2192 chrysalis \u2192 caterpillar",
-      "Egg \u2192 chrysalis \u2192 caterpillar \u2192 butterfly"
+      "Egg → caterpillar → chrysalis → butterfly",
+      "Caterpillar → egg → butterfly → chrysalis",
+      "Butterfly → egg → chrysalis → caterpillar",
+      "Egg → chrysalis → caterpillar → butterfly"
     ],
-    "answer": "Egg \u2192 caterpillar \u2192 chrysalis \u2192 butterfly",
+    "answer": "Egg → caterpillar → chrysalis → butterfly",
     "explanation": "A butterfly goes from egg, to caterpillar, into a chrysalis, then out as a butterfly."
   },
   {
@@ -1397,7 +1381,7 @@
     "topic": "animals",
     "difficulty": 1,
     "type": "multiple-choice",
-    "question": "In the food chain grass \u2192 rabbit \u2192 fox, what does the rabbit eat?",
+    "question": "In the food chain grass → rabbit → fox, what does the rabbit eat?",
     "options": [
       "Grass",
       "The fox",
@@ -1429,7 +1413,7 @@
     "topic": "animals",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In the food chain leaf \u2192 caterpillar \u2192 bird, which one is the producer?",
+    "question": "In the food chain leaf → caterpillar → bird, which one is the producer?",
     "options": [
       "The leaf",
       "The caterpillar",
@@ -1445,7 +1429,7 @@
     "topic": "animals",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In an Irish field, grass \u2192 rabbit \u2192 fox is a food chain. Which animal is the predator?",
+    "question": "In an Irish field, grass → rabbit → fox is a food chain. Which animal is the predator?",
     "options": [
       "The fox",
       "The rabbit",
@@ -1477,7 +1461,7 @@
     "topic": "animals",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In the chain pond plant \u2192 tadpole \u2192 heron, where does the heron's energy first come from?",
+    "question": "In the chain pond plant → tadpole → heron, where does the heron's energy first come from?",
     "options": [
       "The sun, captured by the pond plant",
       "The water",
@@ -1509,7 +1493,7 @@
     "topic": "animals",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In the food chain seeds \u2192 mouse \u2192 owl, which animal is both a consumer and prey?",
+    "question": "In the food chain seeds → mouse → owl, which animal is both a consumer and prey?",
     "options": [
       "The mouse",
       "The owl",
@@ -1525,7 +1509,7 @@
     "topic": "animals",
     "difficulty": 4,
     "type": "multiple-choice",
-    "question": "In the food chain grass \u2192 rabbit \u2192 fox, what would most likely happen if all the grass disappeared?",
+    "question": "In the food chain grass → rabbit → fox, what would most likely happen if all the grass disappeared?",
     "options": [
       "The rabbits would have nothing to eat, and the foxes would lose their food too",
       "The foxes would eat more grass",
@@ -1543,12 +1527,12 @@
     "type": "multiple-choice",
     "question": "Emilia draws a food chain. Which order shows energy passing correctly?",
     "options": [
-      "Producer \u2192 consumer \u2192 predator",
-      "Predator \u2192 consumer \u2192 producer",
-      "Consumer \u2192 producer \u2192 predator",
-      "Predator \u2192 producer \u2192 consumer"
+      "Producer → consumer → predator",
+      "Predator → consumer → producer",
+      "Consumer → producer → predator",
+      "Predator → producer → consumer"
     ],
-    "answer": "Producer \u2192 consumer \u2192 predator",
+    "answer": "Producer → consumer → predator",
     "explanation": "Energy flows from the producer that makes food, to consumers, and on to the predators."
   },
   {
@@ -1573,7 +1557,7 @@
     "topic": "animals",
     "difficulty": 5,
     "type": "multiple-choice",
-    "question": "In the chain grass \u2192 rabbit \u2192 fox, the number of foxes suddenly drops. What is the most likely first change?",
+    "question": "In the chain grass → rabbit → fox, the number of foxes suddenly drops. What is the most likely first change?",
     "options": [
       "The number of rabbits rises because fewer are eaten",
       "The grass disappears at once",
@@ -1959,12 +1943,12 @@
     "type": "multiple-choice",
     "question": "What is the correct order food travels through the digestive system?",
     "options": [
-      "Mouth \u2192 oesophagus \u2192 stomach \u2192 small intestine \u2192 large intestine",
-      "Mouth \u2192 stomach \u2192 oesophagus \u2192 large intestine \u2192 small intestine",
-      "Stomach \u2192 mouth \u2192 small intestine \u2192 large intestine",
-      "Mouth \u2192 small intestine \u2192 stomach \u2192 oesophagus"
+      "Mouth → oesophagus → stomach → small intestine → large intestine",
+      "Mouth → stomach → oesophagus → large intestine → small intestine",
+      "Stomach → mouth → small intestine → large intestine",
+      "Mouth → small intestine → stomach → oesophagus"
     ],
-    "answer": "Mouth \u2192 oesophagus \u2192 stomach \u2192 small intestine \u2192 large intestine",
+    "answer": "Mouth → oesophagus → stomach → small intestine → large intestine",
     "explanation": "Food goes mouth, down the oesophagus, into the stomach, then the small and large intestines."
   },
   {
@@ -2087,12 +2071,12 @@
     "type": "multiple-choice",
     "question": "A nutrient is absorbed in the small intestine. Trace its likely path INTO that organ from the start.",
     "options": [
-      "Mouth \u2192 oesophagus \u2192 stomach \u2192 small intestine",
-      "Stomach \u2192 mouth \u2192 large intestine \u2192 small intestine",
-      "Mouth \u2192 stomach \u2192 large intestine \u2192 small intestine",
-      "Oesophagus \u2192 mouth \u2192 small intestine"
+      "Mouth → oesophagus → stomach → small intestine",
+      "Stomach → mouth → large intestine → small intestine",
+      "Mouth → stomach → large intestine → small intestine",
+      "Oesophagus → mouth → small intestine"
     ],
-    "answer": "Mouth \u2192 oesophagus \u2192 stomach \u2192 small intestine",
+    "answer": "Mouth → oesophagus → stomach → small intestine",
     "explanation": "Food enters the mouth, goes down the oesophagus to the stomach, then reaches the small intestine."
   },
   {
@@ -2439,12 +2423,12 @@
     "type": "multiple-choice",
     "question": "To kick a football, Emilia's brain, muscles and bones all work as a team. What is the correct chain of events?",
     "options": [
-      "Brain sends a signal \u2192 muscle pulls \u2192 bone moves the leg",
-      "Bone sends a signal \u2192 brain pulls \u2192 muscle moves",
-      "Muscle thinks \u2192 bone signals \u2192 brain moves",
-      "Skin signals \u2192 bone pulls \u2192 muscle moves"
+      "Brain sends a signal → muscle pulls → bone moves the leg",
+      "Bone sends a signal → brain pulls → muscle moves",
+      "Muscle thinks → bone signals → brain moves",
+      "Skin signals → bone pulls → muscle moves"
     ],
-    "answer": "Brain sends a signal \u2192 muscle pulls \u2192 bone moves the leg",
+    "answer": "Brain sends a signal → muscle pulls → bone moves the leg",
     "explanation": "The brain signals the muscle to pull, and the muscle moves the leg bone to kick."
   },
   {
@@ -3454,22 +3438,6 @@
     ],
     "answer": "Because rubber is waterproof",
     "explanation": "Rubber is waterproof, so it stops water getting in and keeps your feet dry."
-  },
-  {
-    "id": "sci-materials-011",
-    "subject": "science",
-    "topic": "materials",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which of these is a natural material?",
-    "options": [
-      "Wood",
-      "Plastic",
-      "Nylon",
-      "Glass"
-    ],
-    "answer": "Wood",
-    "explanation": "Wood is a natural material because it comes from trees, not from a factory."
   },
   {
     "id": "sci-materials-012",
@@ -5376,22 +5344,6 @@
     "explanation": "Counting from the Sun, the sixth planet is Saturn."
   },
   {
-    "id": "sci-space-031",
-    "subject": "science",
-    "topic": "space",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which planet is known as the Red Planet?",
-    "options": [
-      "Mars",
-      "Venus",
-      "Neptune",
-      "Mercury"
-    ],
-    "answer": "Mars",
-    "explanation": "Mars is called the Red Planet because its surface has reddish, rusty-coloured soil."
-  },
-  {
     "id": "sci-space-032",
     "subject": "science",
     "topic": "space",
@@ -6247,12 +6199,12 @@
     "type": "multiple-choice",
     "question": "Which order shows the life cycle of a flowering plant correctly?",
     "options": [
-      "Seed \u2192 germination \u2192 growth \u2192 flowering",
-      "Flowering \u2192 seed \u2192 growth \u2192 germination",
-      "Growth \u2192 seed \u2192 germination \u2192 flowering",
-      "Germination \u2192 flowering \u2192 seed \u2192 growth"
+      "Seed → germination → growth → flowering",
+      "Flowering → seed → growth → germination",
+      "Growth → seed → germination → flowering",
+      "Germination → flowering → seed → growth"
     ],
-    "answer": "Seed \u2192 germination \u2192 growth \u2192 flowering",
+    "answer": "Seed → germination → growth → flowering",
     "explanation": "A plant starts as a seed, germinates, grows bigger, and then makes flowers."
   },
   {
@@ -7664,22 +7616,6 @@
     "explanation": "A habitat is the natural home where an animal finds food, water and shelter."
   },
   {
-    "id": "sci-living-011",
-    "subject": "science",
-    "topic": "living-things",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "In a food chain, what do we call a plant that makes its own food?",
-    "options": [
-      "A producer",
-      "A consumer",
-      "A predator",
-      "A habitat"
-    ],
-    "answer": "A producer",
-    "explanation": "Plants are producers because they make their own food and start the food chain."
-  },
-  {
     "id": "sci-living-012",
     "subject": "science",
     "topic": "living-things",
@@ -7717,7 +7653,7 @@
     "topic": "living-things",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In the food chain grass \u2192 rabbit \u2192 fox, which is the producer?",
+    "question": "In the food chain grass → rabbit → fox, which is the producer?",
     "options": [
       "Grass",
       "Rabbit",
@@ -7733,7 +7669,7 @@
     "topic": "living-things",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In the food chain grass \u2192 rabbit \u2192 fox, which is the predator?",
+    "question": "In the food chain grass → rabbit → fox, which is the predator?",
     "options": [
       "Fox",
       "Grass",
@@ -7989,7 +7925,7 @@
     "topic": "living-things",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In the chain leaf \u2192 caterpillar \u2192 bird, which is the consumer that eats the leaf?",
+    "question": "In the chain leaf → caterpillar → bird, which is the consumer that eats the leaf?",
     "options": [
       "Caterpillar",
       "Leaf",
@@ -8005,7 +7941,7 @@
     "topic": "living-things",
     "difficulty": 4,
     "type": "multiple-choice",
-    "question": "In the chain grass \u2192 rabbit \u2192 fox, what would happen if all the grass died?",
+    "question": "In the chain grass → rabbit → fox, what would happen if all the grass died?",
     "options": [
       "The rabbits would have no food and decline",
       "The foxes would make their own food",
@@ -8160,22 +8096,6 @@
     "explanation": "Bees, ants and butterflies are all insects with six legs and three body parts."
   },
   {
-    "id": "sci-living-042",
-    "subject": "science",
-    "topic": "living-things",
-    "difficulty": 4,
-    "type": "multiple-choice",
-    "question": "What is the correct order of a butterfly's life cycle?",
-    "options": [
-      "Egg \u2192 caterpillar \u2192 chrysalis \u2192 butterfly",
-      "Butterfly \u2192 egg \u2192 chrysalis \u2192 caterpillar",
-      "Caterpillar \u2192 egg \u2192 butterfly \u2192 chrysalis",
-      "Egg \u2192 chrysalis \u2192 caterpillar \u2192 butterfly"
-    ],
-    "answer": "Egg \u2192 caterpillar \u2192 chrysalis \u2192 butterfly",
-    "explanation": "A butterfly starts as an egg, becomes a caterpillar, forms a chrysalis, then becomes a butterfly."
-  },
-  {
     "id": "sci-living-043",
     "subject": "science",
     "topic": "living-things",
@@ -8183,12 +8103,12 @@
     "type": "multiple-choice",
     "question": "What is the correct order of a frog's life cycle?",
     "options": [
-      "Egg \u2192 tadpole \u2192 froglet \u2192 frog",
-      "Frog \u2192 tadpole \u2192 egg \u2192 froglet",
-      "Tadpole \u2192 egg \u2192 frog \u2192 froglet",
-      "Egg \u2192 froglet \u2192 tadpole \u2192 frog"
+      "Egg → tadpole → froglet → frog",
+      "Frog → tadpole → egg → froglet",
+      "Tadpole → egg → frog → froglet",
+      "Egg → froglet → tadpole → frog"
     ],
-    "answer": "Egg \u2192 tadpole \u2192 froglet \u2192 frog",
+    "answer": "Egg → tadpole → froglet → frog",
     "explanation": "A frog starts as an egg, hatches into a tadpole, becomes a froglet, then a frog."
   },
   {
@@ -8293,7 +8213,7 @@
     "topic": "living-things",
     "difficulty": 4,
     "type": "multiple-choice",
-    "question": "In the chain plankton \u2192 small fish \u2192 seal, what is the seal?",
+    "question": "In the chain plankton → small fish → seal, what is the seal?",
     "options": [
       "A predator",
       "A producer",
@@ -8485,7 +8405,7 @@
     "topic": "living-things",
     "difficulty": 5,
     "type": "multiple-choice",
-    "question": "If a disease wiped out most of the rabbits in a food chain grass \u2192 rabbit \u2192 fox, what is the most likely effect on the foxes?",
+    "question": "If a disease wiped out most of the rabbits in a food chain grass → rabbit → fox, what is the most likely effect on the foxes?",
     "options": [
       "The foxes would have less food and may decline",
       "The foxes would turn into producers",
@@ -8709,7 +8629,7 @@
     "topic": "living-things",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In the chain seaweed \u2192 limpet \u2192 crab, which is the producer?",
+    "question": "In the chain seaweed → limpet → crab, which is the producer?",
     "options": [
       "Seaweed",
       "Limpet",
@@ -8853,7 +8773,7 @@
     "topic": "living-things",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "In the chain plant \u2192 snail \u2192 thrush, which animal is eaten by the thrush?",
+    "question": "In the chain plant → snail → thrush, which animal is eaten by the thrush?",
     "options": [
       "The snail",
       "The plant",

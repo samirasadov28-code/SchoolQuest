@@ -13,7 +13,7 @@
       "freiend"
     ],
     "answer": "friend",
-    "explanation": "Remember: 'i before e except after c' \u2014 so it's fr-I-E-nd!"
+    "explanation": "Remember: 'i before e except after c' — so it's fr-I-E-nd!"
   },
   {
     "id": "eng-spell-002",
@@ -29,7 +29,7 @@
       "niight"
     ],
     "answer": "night",
-    "explanation": "Night has a silent 'gh' \u2014 n-i-g-h-t."
+    "explanation": "Night has a silent 'gh' — n-i-g-h-t."
   },
   {
     "id": "eng-spell-003",
@@ -61,39 +61,7 @@
       "receeve"
     ],
     "answer": "receive",
-    "explanation": "After 'c', it is 'ei' not 'ie' \u2014 so re-C-EI-ve."
-  },
-  {
-    "id": "eng-spell-005",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which word is spelled correctly?",
-    "options": [
-      "becuase",
-      "becasue",
-      "because",
-      "becaus"
-    ],
-    "answer": "because",
-    "explanation": "Because: b-e-c-a-u-s-e. Try: Big Elephants Can Always Use Small Exits!"
-  },
-  {
-    "id": "eng-spell-006",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Choose the correct spelling:",
-    "options": [
-      "beautifull",
-      "beutiful",
-      "beautiful",
-      "beautifal"
-    ],
-    "answer": "beautiful",
-    "explanation": "Beautiful: b-e-a-u-t-i-f-u-l. It has a 'eau' in the middle!"
+    "explanation": "After 'c', it is 'ei' not 'ie' — so re-C-EI-ve."
   },
   {
     "id": "eng-spell-007",
@@ -128,54 +96,6 @@
     "explanation": "Joyful only has one 'l' at the end: joy-ful."
   },
   {
-    "id": "eng-spell-009",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Choose the correct spelling:",
-    "options": [
-      "wednesday",
-      "Wensday",
-      "Wednesday",
-      "Wednsday"
-    ],
-    "answer": "Wednesday",
-    "explanation": "Wednesday: Wed-nes-day. It hides the word 'wed' at the start!"
-  },
-  {
-    "id": "eng-spell-010",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which word is spelled correctly?",
-    "options": [
-      "necesary",
-      "necessary",
-      "neccesary",
-      "necesery"
-    ],
-    "answer": "necessary",
-    "explanation": "Necessary: one collar (c) and two socks (ss) \u2014 n-e-c-e-ss-a-r-y."
-  },
-  {
-    "id": "eng-spell-011",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which word is spelled correctly?",
-    "options": [
-      "tommorow",
-      "tomorrow",
-      "tomorow",
-      "tommorrow"
-    ],
-    "answer": "tomorrow",
-    "explanation": "Tomorrow: t-o-m-o-r-r-o-w. One 'm', two 'r's! Think: TOM-OR-ROW."
-  },
-  {
     "id": "eng-spell-012",
     "subject": "english",
     "topic": "spelling",
@@ -208,22 +128,6 @@
     "explanation": "Sometimes = some + times. Two separate words joined together!"
   },
   {
-    "id": "eng-spell-014",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which word is spelled correctly?",
-    "options": [
-      "independent",
-      "independant",
-      "independint",
-      "indeependent"
-    ],
-    "answer": "independent",
-    "explanation": "Independent: in-de-pen-dent. The tricky part is the 'e' in -ent (not -ant)!"
-  },
-  {
     "id": "eng-spell-015",
     "subject": "english",
     "topic": "spelling",
@@ -238,22 +142,6 @@
     ],
     "answer": "alternative",
     "explanation": "Alternative: al-ter-na-tive. Say it in syllables to help remember!"
-  },
-  {
-    "id": "eng-spell-016",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which word is spelled correctly?",
-    "options": [
-      "said",
-      "sayd",
-      "sayed",
-      "sed"
-    ],
-    "answer": "said",
-    "explanation": "Said is a common tricky word \u2014 s-a-i-d. It sounds like 'sed' but is spelled 'said'!"
   },
   {
     "id": "eng-spell-017",
@@ -286,38 +174,6 @@
     ],
     "answer": "repeat",
     "explanation": "Repeat: re-peat. The prefix 're' means 'again', and 'peat' comes from the root!"
-  },
-  {
-    "id": "eng-spell-019",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which spelling is correct?",
-    "options": [
-      "definately",
-      "definitly",
-      "definitely",
-      "defenitely"
-    ],
-    "answer": "definitely",
-    "explanation": "Definitely: def-in-ite-ly. There is 'finite' hiding inside it \u2014 def-FINITE-ly!"
-  },
-  {
-    "id": "eng-spell-020",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which word is spelled correctly?",
-    "options": [
-      "thier",
-      "there",
-      "their",
-      "theer"
-    ],
-    "answer": "their",
-    "explanation": "Their (belonging to them): t-h-e-i-r. Remember: THEIR contains 'heir' (like a prince or princess)!"
   },
   {
     "id": "eng-gram-001",
@@ -429,7 +285,7 @@
       "childrens"
     ],
     "answer": "children",
-    "explanation": "Child is irregular \u2014 its plural is 'children', not 'childs'!"
+    "explanation": "Child is irregular — its plural is 'children', not 'childs'!"
   },
   {
     "id": "eng-gram-008",
@@ -461,7 +317,7 @@
       "A word that names a feeling"
     ],
     "answer": "A word that describes a verb",
-    "explanation": "Adverbs tell us HOW, WHEN, or WHERE something happens. 'She ran quickly' \u2014 'quickly' is the adverb."
+    "explanation": "Adverbs tell us HOW, WHEN, or WHERE something happens. 'She ran quickly' — 'quickly' is the adverb."
   },
   {
     "id": "eng-gram-010",
@@ -493,7 +349,7 @@
       "A word that shows action"
     ],
     "answer": "A word used instead of a noun",
-    "explanation": "Pronouns replace nouns so we don't repeat them. 'Emilia ran fast. SHE won the race.' \u2014 'she' is the pronoun!"
+    "explanation": "Pronouns replace nouns so we don't repeat them. 'Emilia ran fast. SHE won the race.' — 'she' is the pronoun!"
   },
   {
     "id": "eng-gram-012",
@@ -509,7 +365,7 @@
       "I have eaten"
     ],
     "answer": "I will eat",
-    "explanation": "Future tense talks about something that has not happened yet. 'I will eat' \u2014 that hasn't happened yet!"
+    "explanation": "Future tense talks about something that has not happened yet. 'I will eat' — that hasn't happened yet!"
   },
   {
     "id": "eng-gram-013",
@@ -541,7 +397,7 @@
       "went"
     ],
     "answer": "went",
-    "explanation": "'Go' is an irregular verb \u2014 its past tense is 'went', not 'goed'. Irregular verbs change their whole form!"
+    "explanation": "'Go' is an irregular verb — its past tense is 'went', not 'goed'. Irregular verbs change their whole form!"
   },
   {
     "id": "eng-gram-015",
@@ -557,7 +413,7 @@
       "Collective noun"
     ],
     "answer": "Abstract noun",
-    "explanation": "Abstract nouns are things you cannot touch or see, only feel. Happiness, love, courage \u2014 all abstract nouns!"
+    "explanation": "Abstract nouns are things you cannot touch or see, only feel. Happiness, love, courage — all abstract nouns!"
   },
   {
     "id": "eng-gram-016",
@@ -653,7 +509,7 @@
       "scary"
     ],
     "answer": "very large",
-    "explanation": "Enormous means very, very big \u2014 bigger than huge!"
+    "explanation": "Enormous means very, very big — bigger than huge!"
   },
   {
     "id": "eng-read-002",
@@ -669,7 +525,7 @@
       "the theme"
     ],
     "answer": "the protagonist",
-    "explanation": "The protagonist is the main character \u2014 the hero of the story!"
+    "explanation": "The protagonist is the main character — the hero of the story!"
   },
   {
     "id": "eng-read-003",
@@ -685,7 +541,7 @@
       "a river"
     ],
     "answer": "a person",
-    "explanation": "This is personification \u2014 giving human qualities to something that is not human. Wind does not really howl (that is what wolves do)!"
+    "explanation": "This is personification — giving human qualities to something that is not human. Wind does not really howl (that is what wolves do)!"
   },
   {
     "id": "eng-read-004",
@@ -717,7 +573,7 @@
       "large"
     ],
     "answer": "modern",
-    "explanation": "Ancient means very old. The opposite is modern \u2014 new and current!"
+    "explanation": "Ancient means very old. The opposite is modern — new and current!"
   },
   {
     "id": "eng-read-006",
@@ -733,7 +589,7 @@
       "personification"
     ],
     "answer": "a simile",
-    "explanation": "A simile compares two things using 'as' or 'like'. As sweet AS honey \u2014 that is a simile!"
+    "explanation": "A simile compares two things using 'as' or 'like'. As sweet AS honey — that is a simile!"
   },
   {
     "id": "eng-read-007",
@@ -765,7 +621,7 @@
       "the conclusion"
     ],
     "answer": "the introduction",
-    "explanation": "The beginning/start of a story is called the introduction \u2014 it introduces the characters and setting."
+    "explanation": "The beginning/start of a story is called the introduction — it introduces the characters and setting."
   },
   {
     "id": "eng-read-009",
@@ -797,7 +653,7 @@
       "character"
     ],
     "answer": "setting",
-    "explanation": "The setting is the time and place of a story \u2014 like 'ancient Ireland, 500 years ago'!"
+    "explanation": "The setting is the time and place of a story — like 'ancient Ireland, 500 years ago'!"
   },
   {
     "id": "eng-read-011",
@@ -813,7 +669,7 @@
       "a rhyme"
     ],
     "answer": "a metaphor",
-    "explanation": "A metaphor says one thing IS another thing (without using 'as' or 'like'). Lightning IS described as a firework \u2014 that is a metaphor!"
+    "explanation": "A metaphor says one thing IS another thing (without using 'as' or 'like'). Lightning IS described as a firework — that is a metaphor!"
   },
   {
     "id": "eng-read-012",
@@ -829,7 +685,7 @@
       "Look up a word in the dictionary"
     ],
     "answer": "Work out something that is not directly said using clues",
-    "explanation": "Inference means reading between the lines \u2014 figuring out what the author means without them saying it directly!"
+    "explanation": "Inference means reading between the lines — figuring out what the author means without them saying it directly!"
   },
   {
     "id": "eng-read-013",
@@ -845,7 +701,7 @@
       "A very long describing word"
     ],
     "answer": "A word that sounds like the noise it describes",
-    "explanation": "Onomatopoeia: words that sound like what they describe! BUZZ, CRASH, HISS, SPLAT \u2014 you can almost hear them!"
+    "explanation": "Onomatopoeia: words that sound like what they describe! BUZZ, CRASH, HISS, SPLAT — you can almost hear them!"
   },
   {
     "id": "eng-read-014",
@@ -877,7 +733,7 @@
       "The message of the story"
     ],
     "answer": "The events that happen in the story",
-    "explanation": "The plot is all the events that happen \u2014 the problem, what the characters do about it, and how it ends!"
+    "explanation": "The plot is all the events that happen — the problem, what the characters do about it, and how it ends!"
   },
   {
     "id": "eng-read-016",
@@ -893,7 +749,7 @@
       "A science book about space"
     ],
     "answer": "A fairy tale about a dragon",
-    "explanation": "Fiction means made-up stories. Fairy tales are fictional \u2014 dragons are not real!"
+    "explanation": "Fiction means made-up stories. Fairy tales are fictional — dragons are not real!"
   },
   {
     "id": "eng-read-017",
@@ -909,7 +765,7 @@
       "Emilia is hungry"
     ],
     "answer": "Emilia is upset about something",
-    "explanation": "Inference: slamming doors and avoiding eye contact are clues that someone is upset \u2014 even though the text doesn't say it directly!"
+    "explanation": "Inference: slamming doors and avoiding eye contact are clues that someone is upset — even though the text doesn't say it directly!"
   },
   {
     "id": "eng-read-018",
@@ -925,7 +781,7 @@
       "Instructions for how to do something"
     ],
     "answer": "A retelling of events that really happened",
-    "explanation": "A recount retells something that happened in the past \u2014 like a diary, a news report, or an account of a trip!"
+    "explanation": "A recount retells something that happened in the past — like a diary, a news report, or an account of a trip!"
   },
   {
     "id": "eng-read-019",
@@ -941,7 +797,7 @@
       "Personification"
     ],
     "answer": "Alliteration",
-    "explanation": "Slowly, Silently \u2014 two words starting with the same 'S' sound. That is alliteration!"
+    "explanation": "Slowly, Silently — two words starting with the same 'S' sound. That is alliteration!"
   },
   {
     "id": "eng-read-020",
@@ -989,7 +845,7 @@
       "Then"
     ],
     "answer": "Then",
-    "explanation": "'Then' is a time connective \u2014 it shows the order of events: first this, THEN that."
+    "explanation": "'Then' is a time connective — it shows the order of events: first this, THEN that."
   },
   {
     "id": "eng-write-003",
@@ -1165,7 +1021,7 @@
       "Repeating the beginning word for word"
     ],
     "answer": "A satisfying conclusion that ties up the loose ends",
-    "explanation": "A good ending resolves the problem and leaves the reader satisfied \u2014 but can still surprise!"
+    "explanation": "A good ending resolves the problem and leaves the reader satisfied — but can still surprise!"
   },
   {
     "id": "eng-write-014",
@@ -1229,7 +1085,7 @@
       ","
     ],
     "answer": "?",
-    "explanation": "Questions end with a question mark (?). 'What is your name?' \u2014 see the question mark at the end!"
+    "explanation": "Questions end with a question mark (?). 'What is your name?' — see the question mark at the end!"
   },
   {
     "id": "eng-punc-003",
@@ -1245,7 +1101,7 @@
       ":"
     ],
     "answer": "!",
-    "explanation": "An exclamation mark (!) is used for strong feelings \u2014 excitement, surprise, or a command: 'Brilliant! Well done!'"
+    "explanation": "An exclamation mark (!) is used for strong feelings — excitement, surprise, or a command: 'Brilliant! Well done!'"
   },
   {
     "id": "eng-punc-004",
@@ -1277,7 +1133,7 @@
       "The 'd' in 'do'"
     ],
     "answer": "The 'o' in 'not'",
-    "explanation": "Don't = do + not. The apostrophe replaces the 'o' in 'not'. do-n-[o]-t \u2192 don't!"
+    "explanation": "Don't = do + not. The apostrophe replaces the 'o' in 'not'. do-n-[o]-t → don't!"
   },
   {
     "id": "eng-punc-006",
@@ -1293,7 +1149,7 @@
       "I'am"
     ],
     "answer": "I'm",
-    "explanation": "I am \u2192 I'm. The apostrophe replaces the 'a' in 'am'. Always use a capital I!"
+    "explanation": "I am → I'm. The apostrophe replaces the 'a' in 'am'. Always use a capital I!"
   },
   {
     "id": "eng-punc-007",
@@ -1309,7 +1165,7 @@
       "i'ts"
     ],
     "answer": "it's",
-    "explanation": "it is \u2192 it's (with apostrophe). 'Its' (without apostrophe) means belonging to it. Remember: it's = it IS!"
+    "explanation": "it is → it's (with apostrophe). 'Its' (without apostrophe) means belonging to it. Remember: it's = it IS!"
   },
   {
     "id": "eng-punc-008",
@@ -1325,7 +1181,7 @@
       "tail"
     ],
     "answer": "its",
-    "explanation": "'Its' without an apostrophe shows the tail belongs to the dog. 'It's' (with apostrophe) = 'it is' \u2014 different meaning!"
+    "explanation": "'Its' without an apostrophe shows the tail belongs to the dog. 'It's' (with apostrophe) = 'it is' — different meaning!"
   },
   {
     "id": "eng-punc-009",
@@ -1373,7 +1229,7 @@
       "Come here, said \"Mum.\""
     ],
     "answer": "\"Come here,\" said Mum.",
-    "explanation": "Speech marks go around the words that are spoken. 'Come here' is what was said \u2014 so those words go inside the speech marks!"
+    "explanation": "Speech marks go around the words that are spoken. 'Come here' is what was said — so those words go inside the speech marks!"
   },
   {
     "id": "eng-punc-012",
@@ -1389,7 +1245,7 @@
       "w'are"
     ],
     "answer": "we're",
-    "explanation": "we are \u2192 we're. The apostrophe replaces the 'a' in 'are'. Do not confuse with 'were' (past tense) or 'wear' (clothes)!"
+    "explanation": "we are → we're. The apostrophe replaces the 'a' in 'are'. Do not confuse with 'were' (past tense) or 'wear' (clothes)!"
   },
   {
     "id": "eng-punc-013",
@@ -1421,7 +1277,7 @@
       "could not have"
     ],
     "answer": "could and not",
-    "explanation": "could not \u2192 couldn't. The apostrophe replaces the 'o' in 'not'. could-n-[o]-t \u2192 couldn't!"
+    "explanation": "could not → couldn't. The apostrophe replaces the 'o' in 'not'. could-n-[o]-t → couldn't!"
   },
   {
     "id": "eng-punc-015",
@@ -1485,7 +1341,7 @@
       "emilia, tuesday, and dublin"
     ],
     "answer": "emilia, tuesday, and dublin",
-    "explanation": "Names (Emilia), days of the week (Tuesday), and place names (Dublin) are all proper nouns \u2014 they always need capital letters!"
+    "explanation": "Names (Emilia), days of the week (Tuesday), and place names (Dublin) are all proper nouns — they always need capital letters!"
   },
   {
     "id": "eng-punc-019",
@@ -1501,7 +1357,7 @@
       "theys"
     ],
     "answer": "they're",
-    "explanation": "they are \u2192 they're. Do not confuse with 'there' (place: over there) or 'their' (belonging to them: their house)!"
+    "explanation": "they are → they're. Do not confuse with 'there' (place: over there) or 'their' (belonging to them: their house)!"
   },
   {
     "id": "eng-punc-020",
@@ -1517,7 +1373,7 @@
       "girls bags'"
     ],
     "answer": "girls' bags",
-    "explanation": "For plural possession (more than one): add apostrophe AFTER the s. The girls (plural) own the bags \u2192 girls' bags!"
+    "explanation": "For plural possession (more than one): add apostrophe AFTER the s. The girls (plural) own the bags → girls' bags!"
   },
   {
     "id": "eng-plur-001",
@@ -1533,7 +1389,7 @@
       "dog's"
     ],
     "answer": "dogs",
-    "explanation": "Most nouns just add -s to make their plural. Dog \u2192 dogs!"
+    "explanation": "Most nouns just add -s to make their plural. Dog → dogs!"
   },
   {
     "id": "eng-plur-002",
@@ -1549,7 +1405,7 @@
       "boxxes"
     ],
     "answer": "boxes",
-    "explanation": "Words ending in -x, -s, -sh, or -ch add -es. Box \u2192 boxes!"
+    "explanation": "Words ending in -x, -s, -sh, or -ch add -es. Box → boxes!"
   },
   {
     "id": "eng-plur-003",
@@ -1565,7 +1421,7 @@
       "babyes"
     ],
     "answer": "babies",
-    "explanation": "When a word ends in consonant + y, change the y to i and add -es. Baby \u2192 babi + es = babies!"
+    "explanation": "When a word ends in consonant + y, change the y to i and add -es. Baby → babi + es = babies!"
   },
   {
     "id": "eng-plur-004",
@@ -1581,7 +1437,7 @@
       "leives"
     ],
     "answer": "leaves",
-    "explanation": "Some words ending in -f or -fe change to -ves. Leaf \u2192 leaves! (Also: wolf \u2192 wolves, loaf \u2192 loaves)"
+    "explanation": "Some words ending in -f or -fe change to -ves. Leaf → leaves! (Also: wolf → wolves, loaf → loaves)"
   },
   {
     "id": "eng-plur-005",
@@ -1597,7 +1453,7 @@
       "childs'"
     ],
     "answer": "children",
-    "explanation": "'Child' is an irregular plural \u2014 it completely changes form! Child \u2192 children. Just has to be learned!"
+    "explanation": "'Child' is an irregular plural — it completely changes form! Child → children. Just has to be learned!"
   },
   {
     "id": "eng-plur-006",
@@ -1613,7 +1469,7 @@
       "mices"
     ],
     "answer": "mice",
-    "explanation": "Mouse \u2192 mice. Another irregular plural! Mouse, louse, and grouse all follow this pattern."
+    "explanation": "Mouse → mice. Another irregular plural! Mouse, louse, and grouse all follow this pattern."
   },
   {
     "id": "eng-plur-007",
@@ -1629,7 +1485,7 @@
       "teeth"
     ],
     "answer": "teeth",
-    "explanation": "Tooth \u2192 teeth. Irregular plural \u2014 the vowel sound changes completely!"
+    "explanation": "Tooth → teeth. Irregular plural — the vowel sound changes completely!"
   },
   {
     "id": "eng-plur-008",
@@ -1645,7 +1501,7 @@
       "footies"
     ],
     "answer": "feet",
-    "explanation": "Foot \u2192 feet. Another vowel-change irregular plural \u2014 just like tooth \u2192 teeth!"
+    "explanation": "Foot → feet. Another vowel-change irregular plural — just like tooth → teeth!"
   },
   {
     "id": "eng-plur-009",
@@ -1677,7 +1533,7 @@
       "potato's"
     ],
     "answer": "potatoes",
-    "explanation": "Words ending in -o often add -es. Potato \u2192 potatoes! (Also: tomato \u2192 tomatoes, hero \u2192 heroes)"
+    "explanation": "Words ending in -o often add -es. Potato → potatoes! (Also: tomato → tomatoes, hero → heroes)"
   },
   {
     "id": "eng-plur-011",
@@ -1693,7 +1549,7 @@
       "story's"
     ],
     "answer": "stories",
-    "explanation": "Story ends in consonant + y, so change y to i and add -es. Story \u2192 stories!"
+    "explanation": "Story ends in consonant + y, so change y to i and add -es. Story → stories!"
   },
   {
     "id": "eng-plur-012",
@@ -1709,7 +1565,7 @@
       "wolvs"
     ],
     "answer": "wolves",
-    "explanation": "Wolf \u2192 wolves. Words ending in -f often change to -ves. Wolf, shelf, half \u2014 wolves, shelves, halves!"
+    "explanation": "Wolf → wolves. Words ending in -f often change to -ves. Wolf, shelf, half — wolves, shelves, halves!"
   },
   {
     "id": "eng-plur-013",
@@ -1725,7 +1581,7 @@
       "city's"
     ],
     "answer": "cities",
-    "explanation": "City ends in consonant + y, so change y to i and add -es. City \u2192 cities!"
+    "explanation": "City ends in consonant + y, so change y to i and add -es. City → cities!"
   },
   {
     "id": "eng-plur-014",
@@ -1741,7 +1597,7 @@
       "bench's"
     ],
     "answer": "benches",
-    "explanation": "Words ending in -ch add -es. Bench \u2192 benches! (Also: church \u2192 churches, march \u2192 marches)"
+    "explanation": "Words ending in -ch add -es. Bench → benches! (Also: church → churches, march → marches)"
   },
   {
     "id": "eng-plur-015",
@@ -1757,7 +1613,7 @@
       "perple"
     ],
     "answer": "people",
-    "explanation": "Person \u2192 people. Irregular plural! In formal writing 'persons' can also be used, but 'people' is the most common form."
+    "explanation": "Person → people. Irregular plural! In formal writing 'persons' can also be used, but 'people' is the most common form."
   },
   {
     "id": "eng-comp-001",
@@ -1901,7 +1757,7 @@
       "beautiful"
     ],
     "answer": "beautiful",
-    "explanation": "Sunshine (sun+shine), rainbow (rain+bow), butterfly (butter+fly) are all compound words. Beautiful is just one word \u2014 not two words joined together!"
+    "explanation": "Sunshine (sun+shine), rainbow (rain+bow), butterfly (butter+fly) are all compound words. Beautiful is just one word — not two words joined together!"
   },
   {
     "id": "eng-comp-010",
@@ -1933,7 +1789,7 @@
       "soilworm"
     ],
     "answer": "earthworm",
-    "explanation": "Earth + worm = earthworm. The long thin creature that lives in soil \u2014 great for gardens!"
+    "explanation": "Earth + worm = earthworm. The long thin creature that lives in soil — great for gardens!"
   },
   {
     "id": "eng-comp-012",
@@ -1982,22 +1838,6 @@
     ],
     "answer": "foot+ball",
     "explanation": "Foot + ball = football. The sport where you kick a ball with your foot!"
-  },
-  {
-    "id": "eng-comp-015",
-    "subject": "english",
-    "topic": "compound-words",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "What compound word describes something made of butter AND chocolate that you eat?",
-    "options": [
-      "butterscotch",
-      "buttercup",
-      "buttermilk",
-      "butterscotch"
-    ],
-    "answer": "butterscotch",
-    "explanation": "Butter + scotch = butterscotch. A sweet toffee-like flavour made with butter and brown sugar!"
   },
   {
     "id": "eng-vocab-001",
@@ -2109,7 +1949,7 @@
       "frightened"
     ],
     "answer": "very tired",
-    "explanation": "Exhausted means extremely tired \u2014 much more than just tired. After running a marathon, you would be exhausted!"
+    "explanation": "Exhausted means extremely tired — much more than just tired. After running a marathon, you would be exhausted!"
   },
   {
     "id": "eng-vocab-008",
@@ -2157,7 +1997,7 @@
       "glided"
     ],
     "answer": "stomped",
-    "explanation": "Precise verbs paint a vivid picture! Stomped means walking heavily and noisily \u2014 you can almost hear it!"
+    "explanation": "Precise verbs paint a vivid picture! Stomped means walking heavily and noisily — you can almost hear it!"
   },
   {
     "id": "eng-vocab-011",
@@ -2173,7 +2013,7 @@
       "mysterious"
     ],
     "answer": "very old",
-    "explanation": "Ancient means extremely old \u2014 like ancient ruins, ancient history, or the ancient Celts in Ireland!"
+    "explanation": "Ancient means extremely old — like ancient ruins, ancient history, or the ancient Celts in Ireland!"
   },
   {
     "id": "eng-vocab-012",
@@ -2205,7 +2045,7 @@
       "to grow larger"
     ],
     "answer": "to shine with small flashes of light",
-    "explanation": "Glisten means to shine or sparkle \u2014 like dew glistening on a spider's web in the morning sun!"
+    "explanation": "Glisten means to shine or sparkle — like dew glistening on a spider's web in the morning sun!"
   },
   {
     "id": "eng-vocab-014",
@@ -2221,7 +2061,7 @@
       "Turns it into a verb"
     ],
     "answer": "Turns it into an adverb",
-    "explanation": "Adding -ly to an adjective makes an adverb! Quick \u2192 quickly. Slow \u2192 slowly. Bright \u2192 brightly!"
+    "explanation": "Adding -ly to an adjective makes an adverb! Quick → quickly. Slow → slowly. Bright → brightly!"
   },
   {
     "id": "eng-vocab-015",
@@ -2628,21 +2468,6 @@
     ],
     "answer": "swam",
     "explanation": "'Swim' is irregular, so its simple past tense is 'swam'."
-  },
-  {
-    "id": "eng-extra-027",
-    "subject": "english",
-    "topic": "grammar",
-    "difficulty": 4,
-    "question": "Which sentence has correct subject-verb agreement?",
-    "options": [
-      "My dog and cat sleeps together.",
-      "My dog and cat sleep together.",
-      "My dog and cat sleeping together.",
-      "My dog and cat is sleeping."
-    ],
-    "answer": "My dog and cat sleep together.",
-    "explanation": "Two animals joined by 'and' need the plural verb 'sleep'."
   },
   {
     "id": "eng-extra-028",
@@ -3965,21 +3790,6 @@
     "explanation": "A report gives facts in a clear, formal way."
   },
   {
-    "id": "eng-extra-116",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 2,
-    "question": "Which sentence uses commas correctly in a list?",
-    "options": [
-      "Emilia packed apples bread and water.",
-      "Emilia packed apples, bread, and water.",
-      "Emilia packed, apples bread water.",
-      "Emilia, packed apples bread water."
-    ],
-    "answer": "Emilia packed apples, bread, and water.",
-    "explanation": "Commas separate the items in a list to make it clear."
-  },
-  {
     "id": "eng-extra-117",
     "subject": "english",
     "topic": "punctuation",
@@ -4940,21 +4750,6 @@
     "explanation": "Waves cannot really whisper, so giving them this human action is personification."
   },
   {
-    "id": "eng-extra-181",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 2,
-    "question": "Which is the correct spelling?",
-    "options": [
-      "freind",
-      "friend",
-      "frend",
-      "frined"
-    ],
-    "answer": "friend",
-    "explanation": "'Friend' is spelled with 'i' before 'e', a tricky word to remember."
-  },
-  {
     "id": "eng-extra-182",
     "subject": "english",
     "topic": "spelling",
@@ -5015,21 +4810,6 @@
     "explanation": "'Their' shows the wellies belong to them."
   },
   {
-    "id": "eng-extra-186",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 2,
-    "question": "Which is spelled correctly?",
-    "options": [
-      "beutiful",
-      "beautiful",
-      "beautifull",
-      "beatiful"
-    ],
-    "answer": "beautiful",
-    "explanation": "'Beautiful' is a tricky word spelled b-e-a-u-t-i-f-u-l."
-  },
-  {
     "id": "eng-extra-187",
     "subject": "english",
     "topic": "spelling",
@@ -5075,21 +4855,6 @@
     "explanation": "'Re-' means again, so 'rebuild' means to build again."
   },
   {
-    "id": "eng-extra-190",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 2,
-    "question": "Which is spelled correctly?",
-    "options": [
-      "wich",
-      "whitch",
-      "which",
-      "wiche"
-    ],
-    "answer": "which",
-    "explanation": "'Which' is a tricky question word spelled w-h-i-c-h."
-  },
-  {
     "id": "eng-extra-191",
     "subject": "english",
     "topic": "spelling",
@@ -5118,21 +4883,6 @@
     ],
     "answer": "leaves",
     "explanation": "For words ending in 'f', we often change it to 'ves', making 'leaves'."
-  },
-  {
-    "id": "eng-extra-193",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 2,
-    "question": "Which is spelled correctly?",
-    "options": [
-      "sed",
-      "said",
-      "saide",
-      "sayd"
-    ],
-    "answer": "said",
-    "explanation": "'Said' is a common tricky word spelled s-a-i-d."
   },
   {
     "id": "eng-extra-194",
@@ -5195,21 +4945,6 @@
     "explanation": "'Kind' plus '-ness' makes 'kindness', the quality of being kind."
   },
   {
-    "id": "eng-extra-198",
-    "subject": "english",
-    "topic": "spelling",
-    "difficulty": 2,
-    "question": "Which is spelled correctly?",
-    "options": [
-      "tomorow",
-      "tommorow",
-      "tomorrow",
-      "tommorrow"
-    ],
-    "answer": "tomorrow",
-    "explanation": "'Tomorrow' is spelled with one 'm' and two 'r's."
-  },
-  {
     "id": "eng-extra-199",
     "subject": "english",
     "topic": "spelling",
@@ -5238,22 +4973,6 @@
     ],
     "answer": "children",
     "explanation": "'Child' has an irregular plural, becoming 'children'."
-  },
-  {
-    "id": "eng-grammar-001",
-    "subject": "english",
-    "topic": "grammar",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which word is a noun?",
-    "options": [
-      "river",
-      "splash",
-      "shiny",
-      "loudly"
-    ],
-    "answer": "river",
-    "explanation": "A noun is a person, place, or thing. A river is a thing you can see in nature!"
   },
   {
     "id": "eng-grammar-002",
@@ -5317,7 +5036,7 @@
       "spoon"
     ],
     "answer": "bravery",
-    "explanation": "An abstract noun is something you cannot touch or see \u2014 only feel or think. Bravery is a feeling, so it is abstract!"
+    "explanation": "An abstract noun is something you cannot touch or see — only feel or think. Bravery is a feeling, so it is abstract!"
   },
   {
     "id": "eng-grammar-006",
@@ -5333,7 +5052,7 @@
       "window"
     ],
     "answer": "kindness",
-    "explanation": "Abstract nouns are ideas and feelings you cannot hold in your hand. Kindness is one \u2014 just like love and friendship!"
+    "explanation": "Abstract nouns are ideas and feelings you cannot hold in your hand. Kindness is one — just like love and friendship!"
   },
   {
     "id": "eng-grammar-007",
@@ -5384,22 +5103,6 @@
     "explanation": "A swarm of bees buzzes around the wildflowers! A swarm means a big busy group of insects."
   },
   {
-    "id": "eng-grammar-010",
-    "subject": "english",
-    "topic": "grammar",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which word is a verb?",
-    "options": [
-      "happy",
-      "swim",
-      "blue",
-      "table"
-    ],
-    "answer": "swim",
-    "explanation": "A verb is an action word \u2014 something you do. Swim is an action!"
-  },
-  {
     "id": "eng-grammar-011",
     "subject": "english",
     "topic": "grammar",
@@ -5414,54 +5117,6 @@
     ],
     "answer": "climb",
     "explanation": "A verb tells us what someone is doing. You can climb a hill, so 'climb' is a verb!"
-  },
-  {
-    "id": "eng-grammar-012",
-    "subject": "english",
-    "topic": "grammar",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which sentence is in the present tense?",
-    "options": [
-      "She walked to school.",
-      "She walks to school.",
-      "She will walk to school.",
-      "She had walked to school."
-    ],
-    "answer": "She walks to school.",
-    "explanation": "Present tense means something happens now. 'She walks' is happening today, not yesterday or tomorrow!"
-  },
-  {
-    "id": "eng-grammar-013",
-    "subject": "english",
-    "topic": "grammar",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which sentence is in the past tense?",
-    "options": [
-      "I play in the garden.",
-      "I will play in the garden.",
-      "I played in the garden.",
-      "I am playing in the garden."
-    ],
-    "answer": "I played in the garden.",
-    "explanation": "Past tense means it already happened. 'Played' tells us the playing is finished and in the past!"
-  },
-  {
-    "id": "eng-grammar-014",
-    "subject": "english",
-    "topic": "grammar",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which sentence is in the future tense?",
-    "options": [
-      "We visited the farm.",
-      "We visit the farm.",
-      "We will visit the farm.",
-      "We are visiting the farm."
-    ],
-    "answer": "We will visit the farm.",
-    "explanation": "Future tense talks about something that has not happened yet. The word 'will' tells us it is still to come!"
   },
   {
     "id": "eng-grammar-015",
@@ -5493,7 +5148,7 @@
       "playing"
     ],
     "answer": "played",
-    "explanation": "Add -ed to make the past tense. Play becomes played \u2014 easy as that!"
+    "explanation": "Add -ed to make the past tense. Play becomes played — easy as that!"
   },
   {
     "id": "eng-grammar-017",
@@ -5509,7 +5164,7 @@
       "runs"
     ],
     "answer": "ran",
-    "explanation": "'Run' is an irregular verb \u2014 it changes completely. The past tense is 'ran', not 'runned'!"
+    "explanation": "'Run' is an irregular verb — it changes completely. The past tense is 'ran', not 'runned'!"
   },
   {
     "id": "eng-grammar-018",
@@ -5525,7 +5180,7 @@
       "going"
     ],
     "answer": "went",
-    "explanation": "'Go' is an irregular verb. Its past tense is 'went' \u2014 a whole new word to learn!"
+    "explanation": "'Go' is an irregular verb. Its past tense is 'went' — a whole new word to learn!"
   },
   {
     "id": "eng-grammar-019",
@@ -5558,22 +5213,6 @@
     ],
     "answer": "green",
     "explanation": "An adjective describes a noun. 'Green' tells us the colour of the hill, so it is the adjective!"
-  },
-  {
-    "id": "eng-grammar-021",
-    "subject": "english",
-    "topic": "grammar",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which word is a comparative adjective?",
-    "options": [
-      "tall",
-      "taller",
-      "tallest",
-      "tallness"
-    ],
-    "answer": "taller",
-    "explanation": "A comparative adjective compares two things and ends in -er. 'Taller' compares one person to another!"
   },
   {
     "id": "eng-grammar-022",
@@ -5733,7 +5372,7 @@
       "April"
     ],
     "answer": "forest",
-    "explanation": "A common noun names an everyday thing. 'Forest' is common, while 'Shannon' is the name of a river \u2014 a proper noun!"
+    "explanation": "A common noun names an everyday thing. 'Forest' is common, while 'Shannon' is the name of a river — a proper noun!"
   },
   {
     "id": "eng-grammar-032",
@@ -5861,7 +5500,7 @@
       "The sky was bright blue."
     ],
     "answer": "A herd of deer ran across the field.",
-    "explanation": "'Herd' is a collective noun \u2014 it names a whole group of deer as one thing!"
+    "explanation": "'Herd' is a collective noun — it names a whole group of deer as one thing!"
   },
   {
     "id": "eng-grammar-040",
@@ -5893,7 +5532,7 @@
       "The bird is singing sweetly."
     ],
     "answer": "The bird sang sweetly.",
-    "explanation": "Past tense already happened. 'Sang' is the past tense of 'sing' \u2014 the singing is over!"
+    "explanation": "Past tense already happened. 'Sang' is the past tense of 'sing' — the singing is over!"
   },
   {
     "id": "eng-grammar-042",
@@ -5957,7 +5596,7 @@
       "swums"
     ],
     "answer": "swam",
-    "explanation": "'Swim' is an irregular verb. Its past tense is 'swam' \u2014 the spelling changes inside the word!"
+    "explanation": "'Swim' is an irregular verb. Its past tense is 'swam' — the spelling changes inside the word!"
   },
   {
     "id": "eng-grammar-046",
@@ -5973,7 +5612,7 @@
       "eating"
     ],
     "answer": "ate",
-    "explanation": "'Eat' is an irregular verb. Its past tense is 'ate' \u2014 a special word you just have to learn!"
+    "explanation": "'Eat' is an irregular verb. Its past tense is 'ate' — a special word you just have to learn!"
   },
   {
     "id": "eng-grammar-047",
@@ -5989,7 +5628,7 @@
       "gone"
     ],
     "answer": "went",
-    "explanation": "'Go' is irregular, so its past tense is 'went'. We never say 'goed' \u2014 that is a common mistake to avoid!"
+    "explanation": "'Go' is irregular, so its past tense is 'went'. We never say 'goed' — that is a common mistake to avoid!"
   },
   {
     "id": "eng-grammar-048",
@@ -6005,7 +5644,7 @@
       "running"
     ],
     "answer": "ran",
-    "explanation": "'Run' is irregular \u2014 the past tense is 'ran'. The whole word changes instead of adding -ed!"
+    "explanation": "'Run' is irregular — the past tense is 'ran'. The whole word changes instead of adding -ed!"
   },
   {
     "id": "eng-grammar-049",
@@ -6197,7 +5836,7 @@
       "although"
     ],
     "answer": "because",
-    "explanation": "'Because' gives a reason. We stayed in BECAUSE of the storm \u2014 it explains why!"
+    "explanation": "'Because' gives a reason. We stayed in BECAUSE of the storm — it explains why!"
   },
   {
     "id": "eng-grammar-061",
@@ -6309,7 +5948,7 @@
       "four"
     ],
     "answer": "three",
-    "explanation": "Emilia (a name), Galway (a place), and July (a month) are all proper nouns \u2014 three in total!"
+    "explanation": "Emilia (a name), Galway (a place), and July (a month) are all proper nouns — three in total!"
   },
   {
     "id": "eng-grammar-068",
@@ -6325,7 +5964,7 @@
       "The leaves fell from the tree."
     ],
     "answer": "Her honesty made everyone trust her.",
-    "explanation": "'Honesty' is an abstract noun \u2014 a quality you feel and value but cannot touch!"
+    "explanation": "'Honesty' is an abstract noun — a quality you feel and value but cannot touch!"
   },
   {
     "id": "eng-grammar-069",
@@ -6341,7 +5980,7 @@
       "branch"
     ],
     "answer": "freedom",
-    "explanation": "Freedom is an idea you can think about and feel, but cannot hold \u2014 that makes it an abstract noun!"
+    "explanation": "Freedom is an idea you can think about and feel, but cannot hold — that makes it an abstract noun!"
   },
   {
     "id": "eng-grammar-070",
@@ -6469,7 +6108,7 @@
       "seeing"
     ],
     "answer": "saw",
-    "explanation": "'See' is an irregular verb. Its past tense is 'saw' \u2014 'I saw a rainbow yesterday!'"
+    "explanation": "'See' is an irregular verb. Its past tense is 'saw' — 'I saw a rainbow yesterday!'"
   },
   {
     "id": "eng-grammar-078",
@@ -6485,7 +6124,7 @@
       "maded"
     ],
     "answer": "made",
-    "explanation": "'Make' is an irregular verb. Its past tense is 'made' \u2014 'We made a den in the woods!'"
+    "explanation": "'Make' is an irregular verb. Its past tense is 'made' — 'We made a den in the woods!'"
   },
   {
     "id": "eng-grammar-079",
@@ -6501,7 +6140,7 @@
       "flying"
     ],
     "answer": "flew",
-    "explanation": "'Fly' is irregular \u2014 its past tense is 'flew'. The clue word 'Last night' tells us it is in the past!"
+    "explanation": "'Fly' is irregular — its past tense is 'flew'. The clue word 'Last night' tells us it is in the past!"
   },
   {
     "id": "eng-grammar-080",
@@ -6517,7 +6156,7 @@
       "Last week she swam in the lake."
     ],
     "answer": "Yesterday I goed to the park.",
-    "explanation": "'Goed' is wrong \u2014 'go' is irregular and its past tense is 'went'. It should be 'Yesterday I went to the park.'"
+    "explanation": "'Goed' is wrong — 'go' is irregular and its past tense is 'went'. It should be 'Yesterday I went to the park.'"
   },
   {
     "id": "eng-grammar-081",
@@ -6581,7 +6220,7 @@
       "hotter"
     ],
     "answer": "hottest",
-    "explanation": "Double the last letter and add -est for the superlative. Hot becomes hottest \u2014 the most hot of all!"
+    "explanation": "Double the last letter and add -est for the superlative. Hot becomes hottest — the most hot of all!"
   },
   {
     "id": "eng-grammar-085",
@@ -7029,7 +6668,7 @@
       "fear"
     ],
     "answer": "table",
-    "explanation": "Joy, anger, and fear are feelings you cannot touch \u2014 abstract nouns. A table is a real thing you can touch!"
+    "explanation": "Joy, anger, and fear are feelings you cannot touch — abstract nouns. A table is a real thing you can touch!"
   },
   {
     "id": "eng-grammar-113",
@@ -7061,7 +6700,7 @@
       "The tall tree swayed."
     ],
     "answer": "Emilia showed great kindness.",
-    "explanation": "'Emilia' is a proper noun (a name) and 'kindness' is an abstract noun (a feeling) \u2014 both in one sentence!"
+    "explanation": "'Emilia' is a proper noun (a name) and 'kindness' is an abstract noun (a feeling) — both in one sentence!"
   },
   {
     "id": "eng-grammar-115",
@@ -7125,7 +6764,7 @@
       "I sees a red squirrel in the tree."
     ],
     "answer": "I saw a red squirrel in the tree.",
-    "explanation": "'See' is irregular \u2014 its past tense is 'saw'. 'I saw' means it already happened!"
+    "explanation": "'See' is irregular — its past tense is 'saw'. 'I saw' means it already happened!"
   },
   {
     "id": "eng-grammar-119",
@@ -7141,7 +6780,7 @@
       "broughten"
     ],
     "answer": "brought",
-    "explanation": "'Bring' is an irregular verb. Its past tense is 'brought' \u2014 'She brought her umbrella!'"
+    "explanation": "'Bring' is an irregular verb. Its past tense is 'brought' — 'She brought her umbrella!'"
   },
   {
     "id": "eng-grammar-120",
@@ -7157,7 +6796,7 @@
       "cotch"
     ],
     "answer": "caught",
-    "explanation": "'Catch' is an irregular verb. Its past tense is 'caught' \u2014 'He caught the falling leaf!'"
+    "explanation": "'Catch' is an irregular verb. Its past tense is 'caught' — 'He caught the falling leaf!'"
   },
   {
     "id": "eng-grammar-121",
@@ -7173,7 +6812,7 @@
       "Yesterday the river will freeze over."
     ],
     "answer": "Yesterday the river froze over.",
-    "explanation": "'Freeze' is irregular \u2014 its past tense is 'froze'. The word 'Yesterday' tells us we need the past tense!"
+    "explanation": "'Freeze' is irregular — its past tense is 'froze'. The word 'Yesterday' tells us we need the past tense!"
   },
   {
     "id": "eng-grammar-122",
@@ -7221,7 +6860,7 @@
       "most pretty"
     ],
     "answer": "prettiest",
-    "explanation": "When a word ends in -y, change y to i and add -est. Pretty becomes prettiest \u2014 the most pretty of all!"
+    "explanation": "When a word ends in -y, change y to i and add -est. Pretty becomes prettiest — the most pretty of all!"
   },
   {
     "id": "eng-grammar-125",
@@ -7269,7 +6908,7 @@
       "smaller"
     ],
     "answer": "gooder",
-    "explanation": "'Good' is irregular \u2014 its comparative is 'better', not 'gooder'! The others follow the normal -er rule."
+    "explanation": "'Good' is irregular — its comparative is 'better', not 'gooder'! The others follow the normal -er rule."
   },
   {
     "id": "eng-grammar-128",
@@ -7461,7 +7100,7 @@
       "but"
     ],
     "answer": "while",
-    "explanation": "'While' shows two actions at once. 'The dog slept WHILE the cat played' \u2014 both happening together!"
+    "explanation": "'While' shows two actions at once. 'The dog slept WHILE the cat played' — both happening together!"
   },
   {
     "id": "eng-grammar-140",
@@ -7477,7 +7116,7 @@
       "while"
     ],
     "answer": "because",
-    "explanation": "'Because' gives the reason we brought the map \u2014 so we would not get lost. It explains why!"
+    "explanation": "'Because' gives the reason we brought the map — so we would not get lost. It explains why!"
   },
   {
     "id": "eng-grammar-141",
@@ -7557,7 +7196,7 @@
       "between"
     ],
     "answer": "on",
-    "explanation": "'On' means resting on top of a surface. 'The book is on the table' \u2014 it sits on top of it!"
+    "explanation": "'On' means resting on top of a surface. 'The book is on the table' — it sits on top of it!"
   },
   {
     "id": "eng-grammar-146",
@@ -7621,7 +7260,7 @@
       "Over and under."
     ],
     "answer": "The shiny apple fell.",
-    "explanation": "'Shiny' is the adjective, 'apple' is the noun, and 'fell' is the verb \u2014 all three in one sentence!"
+    "explanation": "'Shiny' is the adjective, 'apple' is the noun, and 'fell' is the verb — all three in one sentence!"
   },
   {
     "id": "eng-grammar-150",
@@ -7653,7 +7292,7 @@
       "leaves"
     ],
     "answer": "beneath",
-    "explanation": "'Beneath' shows position \u2014 it means under. It tells us where the squirrel hid the nut!"
+    "explanation": "'Beneath' shows position — it means under. It tells us where the squirrel hid the nut!"
   },
   {
     "id": "eng-grammar-152",
@@ -7701,7 +7340,7 @@
       "taken"
     ],
     "answer": "took",
-    "explanation": "'Take' is an irregular verb. Its past tense is 'took' \u2014 'She took her bag to school!'"
+    "explanation": "'Take' is an irregular verb. Its past tense is 'took' — 'She took her bag to school!'"
   },
   {
     "id": "eng-grammar-155",
@@ -7717,7 +7356,7 @@
       "singing"
     ],
     "answer": "sang",
-    "explanation": "'Sing' is an irregular verb. Its past tense is 'sang' \u2014 'The choir sang a lovely song!'"
+    "explanation": "'Sing' is an irregular verb. Its past tense is 'sang' — 'The choir sang a lovely song!'"
   },
   {
     "id": "eng-grammar-156",
@@ -7733,7 +7372,7 @@
       "She will drank all her milk."
     ],
     "answer": "She drank all her milk.",
-    "explanation": "'Drink' is irregular \u2014 its past tense is 'drank'. 'She drank all her milk' is correct!"
+    "explanation": "'Drink' is irregular — its past tense is 'drank'. 'She drank all her milk' is correct!"
   },
   {
     "id": "eng-grammar-157",
@@ -7813,7 +7452,7 @@
       "Dogs live in kennels"
     ],
     "answer": "Dogs are wonderful, helpful pets",
-    "explanation": "The main idea is what the whole passage is mostly about \u2014 here, all the sentences show how great dogs are!"
+    "explanation": "The main idea is what the whole passage is mostly about — here, all the sentences show how great dogs are!"
   },
   {
     "id": "eng-reading-002",
@@ -7893,7 +7532,7 @@
       "There is no wind"
     ],
     "answer": "It is rainy and wet",
-    "explanation": "Wellies, a raincoat and an umbrella are all for rain \u2014 so we can guess it's a wet day!"
+    "explanation": "Wellies, a raincoat and an umbrella are all for rain — so we can guess it's a wet day!"
   },
   {
     "id": "eng-reading-007",
@@ -7925,7 +7564,7 @@
       "Quiet and calm"
     ],
     "answer": "Busy bees buzzing",
-    "explanation": "'Busy bees buzzing' all start with the 'b' sound \u2014 that's alliteration, and it's fun to say!"
+    "explanation": "'Busy bees buzzing' all start with the 'b' sound — that's alliteration, and it's fun to say!"
   },
   {
     "id": "eng-reading-009",
@@ -7973,7 +7612,7 @@
       "A letter to a friend"
     ],
     "answer": "A list of instructions in order",
-    "explanation": "The words 'first, next, then, finally' show steps in order \u2014 this is a recount or set of instructions!"
+    "explanation": "The words 'first, next, then, finally' show steps in order — this is a recount or set of instructions!"
   },
   {
     "id": "eng-reading-012",
@@ -8053,7 +7692,7 @@
       "A shopping list"
     ],
     "answer": "A story explaining how the giant built the Giant's Causeway",
-    "explanation": "Myths are old stories that explain how things came to be, often with giants or heroes \u2014 like the Giant's Causeway tale!"
+    "explanation": "Myths are old stories that explain how things came to be, often with giants or heroes — like the Giant's Causeway tale!"
   },
   {
     "id": "eng-reading-017",
@@ -8085,7 +7724,7 @@
       "Big and small"
     ],
     "answer": "Tree and bee",
-    "explanation": "'Tree' and 'bee' end with the same 'ee' sound, so they rhyme \u2014 perfect for a poem!"
+    "explanation": "'Tree' and 'bee' end with the same 'ee' sound, so they rhyme — perfect for a poem!"
   },
   {
     "id": "eng-reading-019",
@@ -8101,7 +7740,7 @@
       "The room was empty"
     ],
     "answer": "The classroom was very noisy and wild",
-    "explanation": "Calling the classroom 'a zoo' is a metaphor \u2014 it means it was as noisy and wild as a zoo, not full of real animals!"
+    "explanation": "Calling the classroom 'a zoo' is a metaphor — it means it was as noisy and wild as a zoo, not full of real animals!"
   },
   {
     "id": "eng-reading-020",
@@ -8117,7 +7756,7 @@
       "From the rain"
     ],
     "answer": "From flowers",
-    "explanation": "The passage says bees collect nectar from flowers \u2014 that's a supporting detail that helps explain how honey is made!"
+    "explanation": "The passage says bees collect nectar from flowers — that's a supporting detail that helps explain how honey is made!"
   },
   {
     "id": "eng-reading-021",
@@ -8133,7 +7772,7 @@
       "She was playing a game"
     ],
     "answer": "She did not want to wake the baby",
-    "explanation": "We can deduce that Emilia tiptoed quietly so she wouldn't wake her sleeping brother \u2014 that's good thinking!"
+    "explanation": "We can deduce that Emilia tiptoed quietly so she wouldn't wake her sleeping brother — that's good thinking!"
   },
   {
     "id": "eng-reading-022",
@@ -8149,7 +7788,7 @@
       "Simile"
     ],
     "answer": "Personification",
-    "explanation": "A lighthouse doesn't really have an eye \u2014 giving it one is personification, making it seem alive and watchful!"
+    "explanation": "A lighthouse doesn't really have an eye — giving it one is personification, making it seem alive and watchful!"
   },
   {
     "id": "eng-reading-023",
@@ -8165,7 +7804,7 @@
       "Four"
     ],
     "answer": "Eight",
-    "explanation": "The passage clearly states spiders have eight legs \u2014 that's a fact we can find right in the text!"
+    "explanation": "The passage clearly states spiders have eight legs — that's a fact we can find right in the text!"
   },
   {
     "id": "eng-reading-024",
@@ -8213,7 +7852,7 @@
       "The and against"
     ],
     "answer": "Crashed and splash",
-    "explanation": "'Crashed' and 'splash' both sound like the noises they describe \u2014 that's onomatopoeia!"
+    "explanation": "'Crashed' and 'splash' both sound like the noises they describe — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-027",
@@ -8277,7 +7916,7 @@
       "A pile of toys"
     ],
     "answer": "Leaves covering the ground thickly",
-    "explanation": "Calling the leaves 'a carpet' is a metaphor \u2014 it means the leaves covered the ground like a soft, colourful carpet!"
+    "explanation": "Calling the leaves 'a carpet' is a metaphor — it means the leaves covered the ground like a soft, colourful carpet!"
   },
   {
     "id": "eng-reading-031",
@@ -8293,7 +7932,7 @@
       "Paint pictures"
     ],
     "answer": "Read books",
-    "explanation": "The first sentence tells us Emilia loves to read \u2014 that's the main idea of the passage!"
+    "explanation": "The first sentence tells us Emilia loves to read — that's the main idea of the passage!"
   },
   {
     "id": "eng-reading-032",
@@ -8309,7 +7948,7 @@
       "Metaphor"
     ],
     "answer": "Personification",
-    "explanation": "Thunder can't really grumble angrily like a person \u2014 giving it that feeling is personification!"
+    "explanation": "Thunder can't really grumble angrily like a person — giving it that feeling is personification!"
   },
   {
     "id": "eng-reading-033",
@@ -8325,7 +7964,7 @@
       "Facts about the weather"
     ],
     "answer": "A story about Fionn mac Cumhaill and the Salmon of Knowledge",
-    "explanation": "Legends are old stories about brave heroes, like Fionn mac Cumhaill \u2014 a famous Irish legend!"
+    "explanation": "Legends are old stories about brave heroes, like Fionn mac Cumhaill — a famous Irish legend!"
   },
   {
     "id": "eng-reading-034",
@@ -8357,7 +7996,7 @@
       "Tadpoles eat plants"
     ],
     "answer": "How a frog grows and changes",
-    "explanation": "The whole passage describes how a frog grows from egg to tadpole to frog \u2014 that's the main idea!"
+    "explanation": "The whole passage describes how a frog grows from egg to tadpole to frog — that's the main idea!"
   },
   {
     "id": "eng-reading-036",
@@ -8389,7 +8028,7 @@
       "Because it was snowing"
     ],
     "answer": "Because she knew the picnic would still be fun",
-    "explanation": "Even though the weather was gloomy, Emilia smiled because she had a happy plan \u2014 the picnic would be fun indoors!"
+    "explanation": "Even though the weather was gloomy, Emilia smiled because she had a happy plan — the picnic would be fun indoors!"
   },
   {
     "id": "eng-reading-038",
@@ -8421,7 +8060,7 @@
       "She walked to the shop"
     ],
     "answer": "Silly snakes slither slowly",
-    "explanation": "'Silly snakes slither slowly' all start with the 's' sound \u2014 that's alliteration!"
+    "explanation": "'Silly snakes slither slowly' all start with the 's' sound — that's alliteration!"
   },
   {
     "id": "eng-reading-040",
@@ -8437,7 +8076,7 @@
       "To dig holes"
     ],
     "answer": "To stay warm and dry while swimming",
-    "explanation": "Waterproof fur helps otters stay dry and warm in the water \u2014 a clever detail from the passage!"
+    "explanation": "Waterproof fur helps otters stay dry and warm in the water — a clever detail from the passage!"
   },
   {
     "id": "eng-reading-041",
@@ -8469,7 +8108,7 @@
       "Alliteration"
     ],
     "answer": "Metaphor",
-    "explanation": "The owl isn't really a teacher \u2014 calling him one without 'like' or 'as' is a metaphor!"
+    "explanation": "The owl isn't really a teacher — calling him one without 'like' or 'as' is a metaphor!"
   },
   {
     "id": "eng-reading-043",
@@ -8485,7 +8124,7 @@
       "Tap"
     ],
     "answer": "Drip",
-    "explanation": "'Drip' sounds just like the noise water makes \u2014 that's onomatopoeia!"
+    "explanation": "'Drip' sounds just like the noise water makes — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-044",
@@ -8501,7 +8140,7 @@
       "One"
     ],
     "answer": "Five",
-    "explanation": "Boat, bobbed, bravely, big, blue, bay \u2014 that's lots of 'b' words! Five of them is a great answer (boat, bobbed, bravely, big, blue, bay)."
+    "explanation": "Boat, bobbed, bravely, big, blue, bay — that's lots of 'b' words! Five of them is a great answer (boat, bobbed, bravely, big, blue, bay)."
   },
   {
     "id": "eng-reading-045",
@@ -8517,7 +8156,7 @@
       "A fairy tale"
     ],
     "answer": "A diary entry",
-    "explanation": "It starts with 'Dear Diary' and tells about the writer's day \u2014 that's a diary entry, a kind of recount!"
+    "explanation": "It starts with 'Dear Diary' and tells about the writer's day — that's a diary entry, a kind of recount!"
   },
   {
     "id": "eng-reading-046",
@@ -8533,7 +8172,7 @@
       "The clouds and the rain"
     ],
     "answer": "The sun and the flowers",
-    "explanation": "The sun 'smiled' and the flowers 'nodded' \u2014 these are human actions, so it's personification of the sun and flowers!"
+    "explanation": "The sun 'smiled' and the flowers 'nodded' — these are human actions, so it's personification of the sun and flowers!"
   },
   {
     "id": "eng-reading-047",
@@ -8581,7 +8220,7 @@
       "Repeating sounds (alliteration)"
     ],
     "answer": "Hair compared to midnight using 'as' (simile)",
-    "explanation": "Using 'as black as midnight' compares her hair to midnight with the word 'as' \u2014 that's a simile!"
+    "explanation": "Using 'as black as midnight' compares her hair to midnight with the word 'as' — that's a simile!"
   },
   {
     "id": "eng-reading-050",
@@ -8597,7 +8236,7 @@
       "The author's name"
     ],
     "answer": "The introduction or beginning",
-    "explanation": "This is the start of the story \u2014 it introduces the hero and sets the scene. That's the introduction!"
+    "explanation": "This is the start of the story — it introduces the hero and sets the scene. That's the introduction!"
   },
   {
     "id": "eng-reading-051",
@@ -8645,7 +8284,7 @@
       "All day"
     ],
     "answer": "At night",
-    "explanation": "The passage tells us bats hunt at night \u2014 they're nocturnal! That's a supporting detail."
+    "explanation": "The passage tells us bats hunt at night — they're nocturnal! That's a supporting detail."
   },
   {
     "id": "eng-reading-054",
@@ -8677,7 +8316,7 @@
       "A poem that rhymes"
     ],
     "answer": "A story telling what happened on a school trip",
-    "explanation": "A recount retells real events in the order they happened, like a school trip \u2014 that's a recount!"
+    "explanation": "A recount retells real events in the order they happened, like a school trip — that's a recount!"
   },
   {
     "id": "eng-reading-056",
@@ -8693,7 +8332,7 @@
       "Sparks and spat"
     ],
     "answer": "Crackle and pop",
-    "explanation": "'Crackle' and 'pop' sound like the noises a fire makes \u2014 that's onomatopoeia!"
+    "explanation": "'Crackle' and 'pop' sound like the noises a fire makes — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-057",
@@ -8709,7 +8348,7 @@
       "Because it is small"
     ],
     "answer": "Because its books are like wonderful treasures",
-    "explanation": "This metaphor means the library's books are as precious and exciting as treasure \u2014 full of adventures to find!"
+    "explanation": "This metaphor means the library's books are as precious and exciting as treasure — full of adventures to find!"
   },
   {
     "id": "eng-reading-058",
@@ -8725,7 +8364,7 @@
       "To climb a tree"
     ],
     "answer": "To protect itself from the fox",
-    "explanation": "Hedgehogs roll up so their spikes protect them from danger \u2014 here, the fox! That's a clever guess from the clues."
+    "explanation": "Hedgehogs roll up so their spikes protect them from danger — here, the fox! That's a clever guess from the clues."
   },
   {
     "id": "eng-reading-059",
@@ -8741,7 +8380,7 @@
       "Repeats the first letter"
     ],
     "answer": "Says one thing IS another thing",
-    "explanation": "A metaphor says one thing is another, like 'the moon is a silver coin' \u2014 without using 'like' or 'as'!"
+    "explanation": "A metaphor says one thing is another, like 'the moon is a silver coin' — without using 'like' or 'as'!"
   },
   {
     "id": "eng-reading-060",
@@ -8757,7 +8396,7 @@
       "Emilia is tall"
     ],
     "answer": "A small acorn can grow into a big tree",
-    "explanation": "The whole passage shows how a tiny acorn became a mighty oak \u2014 that's the main idea!"
+    "explanation": "The whole passage shows how a tiny acorn became a mighty oak — that's the main idea!"
   },
   {
     "id": "eng-reading-061",
@@ -8773,7 +8412,7 @@
       "Very small"
     ],
     "answer": "Very tired",
-    "explanation": "After walking five hours up a mountain, the hikers would be very tired \u2014 that's what 'exhausted' means!"
+    "explanation": "After walking five hours up a mountain, the hikers would be very tired — that's what 'exhausted' means!"
   },
   {
     "id": "eng-reading-062",
@@ -8821,7 +8460,7 @@
       "Alliteration"
     ],
     "answer": "Personification",
-    "explanation": "Fog can't have arms or wrap them around things \u2014 giving it arms is personification!"
+    "explanation": "Fog can't have arms or wrap them around things — giving it arms is personification!"
   },
   {
     "id": "eng-reading-065",
@@ -8837,7 +8476,7 @@
       "A bee's nest"
     ],
     "answer": "A dance that shows other bees where flowers are",
-    "explanation": "The passage tells us the waggle dance is how bees show each other where flowers are \u2014 how clever!"
+    "explanation": "The passage tells us the waggle dance is how bees show each other where flowers are — how clever!"
   },
   {
     "id": "eng-reading-066",
@@ -8869,7 +8508,7 @@
       "Purple"
     ],
     "answer": "Red",
-    "explanation": "The passage says foxes have red fur \u2014 that's a detail you can find right in the text!"
+    "explanation": "The passage says foxes have red fur — that's a detail you can find right in the text!"
   },
   {
     "id": "eng-reading-068",
@@ -8885,7 +8524,7 @@
       "Deafening and the"
     ],
     "answer": "Whoosh and roar",
-    "explanation": "'Whoosh' and 'roar' both sound like the noises they describe \u2014 that's onomatopoeia!"
+    "explanation": "'Whoosh' and 'roar' both sound like the noises they describe — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-069",
@@ -8901,7 +8540,7 @@
       "Bang went the door"
     ],
     "answer": "Time is a thief",
-    "explanation": "'Time is a thief' says time IS a thief, without 'like' or 'as' \u2014 that's a metaphor!"
+    "explanation": "'Time is a thief' says time IS a thief, without 'like' or 'as' — that's a metaphor!"
   },
   {
     "id": "eng-reading-070",
@@ -8917,7 +8556,7 @@
       "It was raining"
     ],
     "answer": "The prize cup has disappeared",
-    "explanation": "The problem is the trouble that needs solving \u2014 here, the missing prize cup is the mystery to solve!"
+    "explanation": "The problem is the trouble that needs solving — here, the missing prize cup is the mystery to solve!"
   },
   {
     "id": "eng-reading-071",
@@ -8933,7 +8572,7 @@
       "Simile and alliteration"
     ],
     "answer": "Metaphor and personification",
-    "explanation": "Calling the oak a 'gentle giant' is a metaphor, and its branches 'reaching out to shelter' gives it human action \u2014 personification!"
+    "explanation": "Calling the oak a 'gentle giant' is a metaphor, and its branches 'reaching out to shelter' gives it human action — personification!"
   },
   {
     "id": "eng-reading-072",
@@ -8949,7 +8588,7 @@
       "To climb trees"
     ],
     "answer": "To swim like flippers",
-    "explanation": "The passage explains penguins use their wings as flippers to swim \u2014 a great supporting detail!"
+    "explanation": "The passage explains penguins use their wings as flippers to swim — a great supporting detail!"
   },
   {
     "id": "eng-reading-073",
@@ -9013,7 +8652,7 @@
       "They refused to play"
     ],
     "answer": "They showed good sportsmanship",
-    "explanation": "Even after losing, clapping for the winners shows the team had great sportsmanship \u2014 being kind and fair!"
+    "explanation": "Even after losing, clapping for the winners shows the team had great sportsmanship — being kind and fair!"
   },
   {
     "id": "eng-reading-077",
@@ -9029,7 +8668,7 @@
       "Said"
     ],
     "answer": "Tick-tock",
-    "explanation": "'Tick-tock' sounds just like the noise a clock makes \u2014 that's onomatopoeia!"
+    "explanation": "'Tick-tock' sounds just like the noise a clock makes — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-078",
@@ -9061,7 +8700,7 @@
       "Personification"
     ],
     "answer": "Alliteration",
-    "explanation": "Sneaky, snake, silently, slid, shed \u2014 so many 's' sounds! That's alliteration."
+    "explanation": "Sneaky, snake, silently, slid, shed — so many 's' sounds! That's alliteration."
   },
   {
     "id": "eng-reading-080",
@@ -9093,7 +8732,7 @@
       "A horse"
     ],
     "answer": "A horse",
-    "explanation": "The passage lists cows, sheep and a lamb \u2014 but it never mentions a horse, so that's the one they didn't see!"
+    "explanation": "The passage lists cows, sheep and a lamb — but it never mentions a horse, so that's the one they didn't see!"
   },
   {
     "id": "eng-reading-082",
@@ -9109,7 +8748,7 @@
       "Alliteration"
     ],
     "answer": "Personification",
-    "explanation": "A house can't really complain \u2014 giving it that human feeling is personification!"
+    "explanation": "A house can't really complain — giving it that human feeling is personification!"
   },
   {
     "id": "eng-reading-083",
@@ -9125,7 +8764,7 @@
       "Hot days are nice"
     ],
     "answer": "Trees are important and useful",
-    "explanation": "The whole passage lists why trees are important \u2014 that's the main idea!"
+    "explanation": "The whole passage lists why trees are important — that's the main idea!"
   },
   {
     "id": "eng-reading-084",
@@ -9141,7 +8780,7 @@
       "Emilia's teacher"
     ],
     "answer": "The family dog",
-    "explanation": "Muddy paw prints leading to the empty tin are clues that the dog probably took the biscuits \u2014 good detective work!"
+    "explanation": "Muddy paw prints leading to the empty tin are clues that the dog probably took the biscuits — good detective work!"
   },
   {
     "id": "eng-reading-085",
@@ -9157,7 +8796,7 @@
       "No other device"
     ],
     "answer": "Metaphor",
-    "explanation": "Calling dew 'diamonds' (without 'like' or 'as') is a metaphor, and the repeated 'd' sound is alliteration \u2014 two devices!"
+    "explanation": "Calling dew 'diamonds' (without 'like' or 'as') is a metaphor, and the repeated 'd' sound is alliteration — two devices!"
   },
   {
     "id": "eng-reading-086",
@@ -9173,7 +8812,7 @@
       "A fairy tale about a giant"
     ],
     "answer": "A factual piece about how volcanoes erupt",
-    "explanation": "A report gives real facts and information, like how volcanoes work \u2014 that's non-fiction!"
+    "explanation": "A report gives real facts and information, like how volcanoes work — that's non-fiction!"
   },
   {
     "id": "eng-reading-087",
@@ -9189,7 +8828,7 @@
       "She spoke too loudly"
     ],
     "answer": "What she said was lovely to hear",
-    "explanation": "Calling her words 'music' is a metaphor \u2014 it means what she said was wonderful and pleasant to hear!"
+    "explanation": "Calling her words 'music' is a metaphor — it means what she said was wonderful and pleasant to hear!"
   },
   {
     "id": "eng-reading-088",
@@ -9205,7 +8844,7 @@
       "Simile"
     ],
     "answer": "Alliteration",
-    "explanation": "Seagull, swooped, snatched, sandwich all start with the 's' sound \u2014 that's alliteration!"
+    "explanation": "Seagull, swooped, snatched, sandwich all start with the 's' sound — that's alliteration!"
   },
   {
     "id": "eng-reading-089",
@@ -9221,7 +8860,7 @@
       "A diary entry"
     ],
     "answer": "An Irish legend or myth",
-    "explanation": "This is the famous Children of Lir story \u2014 an old Irish legend full of magic and transformation!"
+    "explanation": "This is the famous Children of Lir story — an old Irish legend full of magic and transformation!"
   },
   {
     "id": "eng-reading-090",
@@ -9253,7 +8892,7 @@
       "To escape the rain"
     ],
     "answer": "To lay their eggs where they were born",
-    "explanation": "The passage tells us salmon return upriver to lay eggs in their birthplace \u2014 an amazing journey!"
+    "explanation": "The passage tells us salmon return upriver to lay eggs in their birthplace — an amazing journey!"
   },
   {
     "id": "eng-reading-092",
@@ -9269,7 +8908,7 @@
       "Alliteration"
     ],
     "answer": "Personification",
-    "explanation": "The sea can't really be angry or throw things \u2014 giving it those human qualities is personification!"
+    "explanation": "The sea can't really be angry or throw things — giving it those human qualities is personification!"
   },
   {
     "id": "eng-reading-093",
@@ -9301,7 +8940,7 @@
       "Nothing is compared"
     ],
     "answer": "Scales to gold, using 'like' (simile)",
-    "explanation": "Using 'like polished gold' compares the scales to gold with the word 'like' \u2014 that's a simile!"
+    "explanation": "Using 'like polished gold' compares the scales to gold with the word 'like' — that's a simile!"
   },
   {
     "id": "eng-reading-095",
@@ -9333,7 +8972,7 @@
       "Went"
     ],
     "answer": "Snap",
-    "explanation": "'Snap' sounds just like the noise a breaking twig makes \u2014 that's onomatopoeia!"
+    "explanation": "'Snap' sounds just like the noise a breaking twig makes — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-097",
@@ -9349,7 +8988,7 @@
       "The title"
     ],
     "answer": "The resolution or ending",
-    "explanation": "The lost dog being returned and everyone cheering solves the problem \u2014 that's the resolution and happy ending!"
+    "explanation": "The lost dog being returned and everyone cheering solves the problem — that's the resolution and happy ending!"
   },
   {
     "id": "eng-reading-098",
@@ -9381,7 +9020,7 @@
       "They scare away birds"
     ],
     "answer": "They dig tunnels that help air and water reach roots",
-    "explanation": "The passage explains earthworm tunnels help air and water reach plant roots \u2014 a helpful detail!"
+    "explanation": "The passage explains earthworm tunnels help air and water reach plant roots — a helpful detail!"
   },
   {
     "id": "eng-reading-100",
@@ -9397,7 +9036,7 @@
       "Three"
     ],
     "answer": "Two",
-    "explanation": "The moon is a 'silver coin' and the sky is 'velvet' \u2014 both are metaphors comparing things without 'like' or 'as'!"
+    "explanation": "The moon is a 'silver coin' and the sky is 'velvet' — both are metaphors comparing things without 'like' or 'as'!"
   },
   {
     "id": "eng-reading-101",
@@ -9413,7 +9052,7 @@
       "Soft"
     ],
     "answer": "Misty",
-    "explanation": "The passage tells us the cat's name is Misty \u2014 a detail you can find right in the text!"
+    "explanation": "The passage tells us the cat's name is Misty — a detail you can find right in the text!"
   },
   {
     "id": "eng-reading-102",
@@ -9429,7 +9068,7 @@
       "Went and the"
     ],
     "answer": "Pitter-patter and howled",
-    "explanation": "'Pitter-patter' and 'howled' both sound like the noises they describe \u2014 that's onomatopoeia!"
+    "explanation": "'Pitter-patter' and 'howled' both sound like the noises they describe — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-103",
@@ -9445,7 +9084,7 @@
       "Alliteration"
     ],
     "answer": "Personification",
-    "explanation": "A candle can't really be brave or fight or refuse \u2014 giving it those human qualities is personification!"
+    "explanation": "A candle can't really be brave or fight or refuse — giving it those human qualities is personification!"
   },
   {
     "id": "eng-reading-104",
@@ -9461,7 +9100,7 @@
       "Crash went the plate"
     ],
     "answer": "He ran as fast as a cheetah",
-    "explanation": "Using 'as fast as a cheetah' compares his running to a cheetah with 'as' \u2014 that's a simile!"
+    "explanation": "Using 'as fast as a cheetah' compares his running to a cheetah with 'as' — that's a simile!"
   },
   {
     "id": "eng-reading-105",
@@ -9477,7 +9116,7 @@
       "Music plays"
     ],
     "answer": "Sunlight shines into its inner chamber",
-    "explanation": "The passage tells us that once a year sunlight shines into Newgrange's inner chamber \u2014 a real and amazing fact!"
+    "explanation": "The passage tells us that once a year sunlight shines into Newgrange's inner chamber — a real and amazing fact!"
   },
   {
     "id": "eng-reading-106",
@@ -9493,7 +9132,7 @@
       "She loved the dark"
     ],
     "answer": "She was brave even though she was scared",
-    "explanation": "Being scared but doing the hard thing anyway is true bravery \u2014 Emilia helped her friend despite her fear!"
+    "explanation": "Being scared but doing the hard thing anyway is true bravery — Emilia helped her friend despite her fear!"
   },
   {
     "id": "eng-reading-107",
@@ -9509,7 +9148,7 @@
       "Personification"
     ],
     "answer": "Alliteration",
-    "explanation": "Big, brown, bears, bravely, battled, buzzing, bees \u2014 so many 'b' sounds! That's alliteration."
+    "explanation": "Big, brown, bears, bravely, battled, buzzing, bees — so many 'b' sounds! That's alliteration."
   },
   {
     "id": "eng-reading-108",
@@ -9573,7 +9212,7 @@
       "Ending, beginning, middle"
     ],
     "answer": "Introduction, problem, resolution",
-    "explanation": "The party introduces the story, the missing puppy is the problem, and finding him is the resolution \u2014 perfect story order!"
+    "explanation": "The party introduces the story, the missing puppy is the problem, and finding him is the resolution — perfect story order!"
   },
   {
     "id": "eng-reading-112",
@@ -9589,7 +9228,7 @@
       "To catch the wind"
     ],
     "answer": "To help them see in every direction",
-    "explanation": "The passage explains owls turn their heads to see all around them \u2014 a clever supporting detail!"
+    "explanation": "The passage explains owls turn their heads to see all around them — a clever supporting detail!"
   },
   {
     "id": "eng-reading-113",
@@ -9605,7 +9244,7 @@
       "Metaphor"
     ],
     "answer": "Personification",
-    "explanation": "A fire can't really be cheerful or dance \u2014 giving it those human actions is personification! (Though 'crackled' is also onomatopoeia.)"
+    "explanation": "A fire can't really be cheerful or dance — giving it those human actions is personification! (Though 'crackled' is also onomatopoeia.)"
   },
   {
     "id": "eng-reading-114",
@@ -9621,7 +9260,7 @@
       "A bike"
     ],
     "answer": "A bus",
-    "explanation": "The passage says Emilia climbed onto the bus \u2014 a detail right there in the text!"
+    "explanation": "The passage says Emilia climbed onto the bus — a detail right there in the text!"
   },
   {
     "id": "eng-reading-115",
@@ -9653,7 +9292,7 @@
       "Alliteration only"
     ],
     "answer": "Snow is 'a blanket' (metaphor) and the town is 'sleeping' (personification)",
-    "explanation": "Snow being 'a blanket' is a metaphor, and a 'sleeping town' gives the town a human action \u2014 personification!"
+    "explanation": "Snow being 'a blanket' is a metaphor, and a 'sleeping town' gives the town a human action — personification!"
   },
   {
     "id": "eng-reading-117",
@@ -9669,7 +9308,7 @@
       "A magic underwater castle"
     ],
     "answer": "Real facts about how deep the ocean is",
-    "explanation": "Non-fiction gives real, true facts \u2014 like how deep the ocean really is!"
+    "explanation": "Non-fiction gives real, true facts — like how deep the ocean really is!"
   },
   {
     "id": "eng-reading-118",
@@ -9717,7 +9356,7 @@
       "Across"
     ],
     "answer": "Boom",
-    "explanation": "'Boom' sounds just like the noise of thunder \u2014 that's onomatopoeia!"
+    "explanation": "'Boom' sounds just like the noise of thunder — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-121",
@@ -9733,7 +9372,7 @@
       "Polar bears eat fish"
     ],
     "answer": "Polar bears are well suited to cold places",
-    "explanation": "The passage shows how polar bears' fur and fat help them live in the cold \u2014 that's the main idea!"
+    "explanation": "The passage shows how polar bears' fur and fat help them live in the cold — that's the main idea!"
   },
   {
     "id": "eng-reading-122",
@@ -9749,7 +9388,7 @@
       "The bell rang loudly"
     ],
     "answer": "The classroom was a beehive of activity",
-    "explanation": "'The classroom was a beehive' says it IS a beehive, without 'like' or 'as' \u2014 that's a metaphor!"
+    "explanation": "'The classroom was a beehive' says it IS a beehive, without 'like' or 'as' — that's a metaphor!"
   },
   {
     "id": "eng-reading-123",
@@ -9797,7 +9436,7 @@
       "A lake"
     ],
     "answer": "The longest river in Ireland",
-    "explanation": "The passage tells us the Shannon is Ireland's longest river \u2014 a real geography fact!"
+    "explanation": "The passage tells us the Shannon is Ireland's longest river — a real geography fact!"
   },
   {
     "id": "eng-reading-126",
@@ -9829,7 +9468,7 @@
       "Silly and funny"
     ],
     "answer": "Tense and suspenseful",
-    "explanation": "The silence, watching eyes and echoing footsteps create a tense, suspenseful mood \u2014 something is about to happen!"
+    "explanation": "The silence, watching eyes and echoing footsteps create a tense, suspenseful mood — something is about to happen!"
   },
   {
     "id": "eng-reading-128",
@@ -9845,7 +9484,7 @@
       "Field"
     ],
     "answer": "Squelch",
-    "explanation": "'Squelch' sounds just like the noise boots make in mud \u2014 that's onomatopoeia!"
+    "explanation": "'Squelch' sounds just like the noise boots make in mud — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-129",
@@ -9861,7 +9500,7 @@
       "Ate its dinner"
     ],
     "answer": "Chased its tail until it got dizzy",
-    "explanation": "The passage tells us the puppy chased its tail and got dizzy \u2014 that's the main thing that happened!"
+    "explanation": "The passage tells us the puppy chased its tail and got dizzy — that's the main thing that happened!"
   },
   {
     "id": "eng-reading-130",
@@ -9877,7 +9516,7 @@
       "A list of rules"
     ],
     "answer": "A child's report of their day at the zoo",
-    "explanation": "A recount retells real events in order \u2014 like telling about a real day at the zoo!"
+    "explanation": "A recount retells real events in order — like telling about a real day at the zoo!"
   },
   {
     "id": "eng-reading-131",
@@ -9909,7 +9548,7 @@
       "About a million"
     ],
     "answer": "About 5,000",
-    "explanation": "The passage tells us hedgehogs have around 5,000 spikes \u2014 a fact you can find right in the text!"
+    "explanation": "The passage tells us hedgehogs have around 5,000 spikes — a fact you can find right in the text!"
   },
   {
     "id": "eng-reading-133",
@@ -9925,7 +9564,7 @@
       "Metaphor"
     ],
     "answer": "Personification",
-    "explanation": "Waves can't really be hungry or gobble things \u2014 giving them those human actions is personification!"
+    "explanation": "Waves can't really be hungry or gobble things — giving them those human actions is personification!"
   },
   {
     "id": "eng-reading-134",
@@ -9941,7 +9580,7 @@
       "The bee flew away"
     ],
     "answer": "Buzz went the bee",
-    "explanation": "'Buzz' sounds like the noise a bee makes \u2014 that's onomatopoeia!"
+    "explanation": "'Buzz' sounds like the noise a bee makes — that's onomatopoeia!"
   },
   {
     "id": "eng-reading-135",
@@ -10005,7 +9644,7 @@
       "The kitten could fly"
     ],
     "answer": "The kitten was very light",
-    "explanation": "The simile 'as light as a feather' tells us the kitten weighed very little \u2014 easy to lift!"
+    "explanation": "The simile 'as light as a feather' tells us the kitten weighed very little — easy to lift!"
   },
   {
     "id": "eng-reading-139",
@@ -10021,7 +9660,7 @@
       "Grass"
     ],
     "answer": "Sunflowers",
-    "explanation": "The passage tells us sunflowers grew from Emilia's seeds \u2014 a detail right in the text!"
+    "explanation": "The passage tells us sunflowers grew from Emilia's seeds — a detail right in the text!"
   },
   {
     "id": "eng-reading-140",
@@ -10037,7 +9676,7 @@
       "Simile"
     ],
     "answer": "Alliteration",
-    "explanation": "Rumbled, rusty, railway all start with the 'r' sound \u2014 that's alliteration! ('Rattle' and 'clang' are onomatopoeia.)"
+    "explanation": "Rumbled, rusty, railway all start with the 'r' sound — that's alliteration! ('Rattle' and 'clang' are onomatopoeia.)"
   },
   {
     "id": "eng-reading-141",
@@ -10053,7 +9692,7 @@
       "She lost her money"
     ],
     "answer": "She had some change left over",
-    "explanation": "Two euro is 200 cent; the apple and pencil cost 150 cent, so Emilia had change left \u2014 that's why the shopkeeper gave it back!"
+    "explanation": "Two euro is 200 cent; the apple and pencil cost 150 cent, so Emilia had change left — that's why the shopkeeper gave it back!"
   },
   {
     "id": "eng-reading-142",
@@ -10085,7 +9724,7 @@
       "Dolphins eat fish"
     ],
     "answer": "Dolphins are clever and communicate",
-    "explanation": "The passage shows how clever dolphins are at talking to each other \u2014 that's the main idea!"
+    "explanation": "The passage shows how clever dolphins are at talking to each other — that's the main idea!"
   },
   {
     "id": "eng-reading-144",
@@ -10101,7 +9740,7 @@
       "Big and tall"
     ],
     "answer": "Star and far",
-    "explanation": "'Star' and 'far' both end with the 'ar' sound, so they rhyme \u2014 perfect for a poem!"
+    "explanation": "'Star' and 'far' both end with the 'ar' sound, so they rhyme — perfect for a poem!"
   },
   {
     "id": "eng-reading-145",
@@ -10117,7 +9756,7 @@
       "Sleepiness"
     ],
     "answer": "Fear and unease",
-    "explanation": "The dark forest, quick steps and nervous glances build a feeling of fear and unease \u2014 spooky!"
+    "explanation": "The dark forest, quick steps and nervous glances build a feeling of fear and unease — spooky!"
   },
   {
     "id": "eng-reading-146",
@@ -10133,7 +9772,7 @@
       "Sand"
     ],
     "answer": "Fat for energy",
-    "explanation": "The passage tells us a camel's hump stores fat that gives energy \u2014 a surprising fact!"
+    "explanation": "The passage tells us a camel's hump stores fat that gives energy — a surprising fact!"
   },
   {
     "id": "eng-reading-147",
@@ -10149,7 +9788,7 @@
       "No device"
     ],
     "answer": "Personification",
-    "explanation": "A kettle can't really wheeze like a tired person \u2014 giving it that human action is personification! ('Whistled' is also onomatopoeia.)"
+    "explanation": "A kettle can't really wheeze like a tired person — giving it that human action is personification! ('Whistled' is also onomatopoeia.)"
   },
   {
     "id": "eng-reading-148",
@@ -10165,7 +9804,7 @@
       "Owl"
     ],
     "answer": "Owl",
-    "explanation": "The passage names robins, blackbirds and wrens \u2014 but not owls, so the owl is the one not mentioned!"
+    "explanation": "The passage names robins, blackbirds and wrens — but not owls, so the owl is the one not mentioned!"
   },
   {
     "id": "eng-reading-149",
@@ -10197,7 +9836,7 @@
       "They were short"
     ],
     "answer": "They were comforting and cheering",
-    "explanation": "Comparing the stories to 'a warm fire' is a metaphor \u2014 it means they felt cosy, comforting and cheering!"
+    "explanation": "Comparing the stories to 'a warm fire' is a metaphor — it means they felt cosy, comforting and cheering!"
   },
   {
     "id": "eng-reading-151",
@@ -10213,7 +9852,7 @@
       "Rocks"
     ],
     "answer": "Roared",
-    "explanation": "'Roared' sounds like the loud noise of rushing water \u2014 that's onomatopoeia! ('Whispered' is personification here.)"
+    "explanation": "'Roared' sounds like the loud noise of rushing water — that's onomatopoeia! ('Whispered' is personification here.)"
   },
   {
     "id": "eng-reading-152",
@@ -10245,7 +9884,7 @@
       "A kind of pencil"
     ],
     "answer": "A type or kind of writing, like a fairy tale or poem",
-    "explanation": "A genre is a type of writing \u2014 fairy tales, poems, reports and recounts are all different genres!"
+    "explanation": "A genre is a type of writing — fairy tales, poems, reports and recounts are all different genres!"
   },
   {
     "id": "eng-reading-154",
@@ -10261,7 +9900,7 @@
       "Personification"
     ],
     "answer": "Onomatopoeia",
-    "explanation": "All those 'g' words make alliteration, and 'gobbled' sounds like the noise of eating quickly \u2014 onomatopoeia!"
+    "explanation": "All those 'g' words make alliteration, and 'gobbled' sounds like the noise of eating quickly — onomatopoeia!"
   },
   {
     "id": "eng-reading-155",
@@ -10269,7 +9908,7 @@
     "topic": "reading",
     "difficulty": 2,
     "type": "multiple-choice",
-    "question": "Read this: 'Long ago, C\u00fa Chulainn was a great Irish warrior with amazing strength and courage.' What genre is this?",
+    "question": "Read this: 'Long ago, Cú Chulainn was a great Irish warrior with amazing strength and courage.' What genre is this?",
     "options": [
       "An Irish legend",
       "A weather report",
@@ -10277,7 +9916,7 @@
       "A diary entry"
     ],
     "answer": "An Irish legend",
-    "explanation": "C\u00fa Chulainn is a famous warrior hero from old Irish stories \u2014 that makes this a legend!"
+    "explanation": "Cú Chulainn is a famous warrior hero from old Irish stories — that makes this a legend!"
   },
   {
     "id": "eng-reading-156",
@@ -10309,7 +9948,7 @@
       "He became bigger only"
     ],
     "answer": "He went from wild to calm and gentle",
-    "explanation": "The puppy changed from a 'whirlwind' (wild) to calm and gentle after patient training \u2014 that's how he changed!"
+    "explanation": "The puppy changed from a 'whirlwind' (wild) to calm and gentle after patient training — that's how he changed!"
   },
   {
     "id": "eng-reading-158",
@@ -10357,7 +9996,7 @@
       "Only a simile"
     ],
     "answer": "Personification (lonely scarecrow, sleepy sun, crow whispered)",
-    "explanation": "A lonely scarecrow standing guard, a sleepy sun, and a crow whispering all give human qualities to non-human things \u2014 that's personification used beautifully!"
+    "explanation": "A lonely scarecrow standing guard, a sleepy sun, and a crow whispering all give human qualities to non-human things — that's personification used beautifully!"
   },
   {
     "id": "eng-vocab-016",
@@ -10696,22 +10335,6 @@
     "explanation": "'Chilly' and 'cold' are synonyms. A chilly morning in Ireland needs a warm jumper."
   },
   {
-    "id": "eng-vocab-037",
-    "subject": "english",
-    "topic": "vocabulary",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which word is the opposite of 'noisy'?",
-    "options": [
-      "loud",
-      "silent",
-      "busy",
-      "quick"
-    ],
-    "answer": "silent",
-    "explanation": "'Silent' is the antonym of 'noisy'. A noisy room is full of sound; a silent one has none."
-  },
-  {
     "id": "eng-vocab-038",
     "subject": "english",
     "topic": "vocabulary",
@@ -10840,22 +10463,6 @@
     "explanation": "'Smart' and 'clever' are synonyms. Both describe someone who learns and thinks well."
   },
   {
-    "id": "eng-vocab-046",
-    "subject": "english",
-    "topic": "vocabulary",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which word is the opposite of 'arrive'?",
-    "options": [
-      "reach",
-      "leave",
-      "wait",
-      "enter"
-    ],
-    "answer": "leave",
-    "explanation": "'Leave' is the antonym of 'arrive'. You arrive when you get somewhere and leave when you go."
-  },
-  {
     "id": "eng-vocab-047",
     "subject": "english",
     "topic": "vocabulary",
@@ -10966,38 +10573,6 @@
     ],
     "answer": "ran away",
     "explanation": "'Fled' means ran away quickly, usually because of fear or danger."
-  },
-  {
-    "id": "eng-vocab-054",
-    "subject": "english",
-    "topic": "vocabulary",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which word means the same as 'glad'?",
-    "options": [
-      "upset",
-      "pleased",
-      "bored",
-      "angry"
-    ],
-    "answer": "pleased",
-    "explanation": "'Pleased' and 'glad' are synonyms. Both mean feeling happy about something."
-  },
-  {
-    "id": "eng-vocab-055",
-    "subject": "english",
-    "topic": "vocabulary",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which word is the opposite of 'brave'?",
-    "options": [
-      "bold",
-      "cowardly",
-      "strong",
-      "daring"
-    ],
-    "answer": "cowardly",
-    "explanation": "'Cowardly' is the antonym of 'brave'. A brave person faces fear; a cowardly one runs from it."
   },
   {
     "id": "eng-vocab-056",
@@ -12504,22 +12079,6 @@
     "explanation": "\"Shouted\" is a powerful verb that shows exactly how the person was speaking."
   },
   {
-    "id": "eng-writing-012",
-    "subject": "english",
-    "topic": "writing",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which sentence uses the most descriptive language?",
-    "options": [
-      "The glittering stream tumbled over mossy rocks.",
-      "The stream was there.",
-      "Water went down.",
-      "It was a stream."
-    ],
-    "answer": "The glittering stream tumbled over mossy rocks.",
-    "explanation": "This sentence uses strong describing words so the reader can really see and hear the stream."
-  },
-  {
     "id": "eng-writing-013",
     "subject": "english",
     "topic": "writing",
@@ -12934,22 +12493,6 @@
     ],
     "answer": "Although the bog looked still, tiny insects buzzed everywhere.",
     "explanation": "It uses \"although\" to show contrast and reads smoothly with a comma in the right place."
-  },
-  {
-    "id": "eng-writing-039",
-    "subject": "english",
-    "topic": "writing",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "What is a paragraph?",
-    "options": [
-      "A group of sentences about one main idea",
-      "A single word",
-      "A list of numbers",
-      "A type of punctuation mark"
-    ],
-    "answer": "A group of sentences about one main idea",
-    "explanation": "A paragraph groups sentences together that are all about the same main idea."
   },
   {
     "id": "eng-writing-040",
@@ -13640,22 +13183,6 @@
     "explanation": "A question mark goes at the end of a sentence that asks something."
   },
   {
-    "id": "eng-punct-003",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which sentence has a capital letter in the right place?",
-    "options": [
-      "The fox ran across the field.",
-      "the fox ran across the field.",
-      "the Fox ran across the field.",
-      "the fox Ran across the field."
-    ],
-    "answer": "The fox ran across the field.",
-    "explanation": "Every sentence starts with a capital letter, so \"The\" must be capitalised."
-  },
-  {
     "id": "eng-punct-004",
     "subject": "english",
     "topic": "punctuation",
@@ -13702,22 +13229,6 @@
     ],
     "answer": "dublin",
     "explanation": "Dublin is the name of a place, so it must begin with a capital letter."
-  },
-  {
-    "id": "eng-punct-007",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which sentence is punctuated correctly?",
-    "options": [
-      "Did you see the deer in the woods?",
-      "Did you see the deer in the woods.",
-      "did you see the deer in the woods?",
-      "Did you see the deer in the woods"
-    ],
-    "answer": "Did you see the deer in the woods?",
-    "explanation": "It starts with a capital letter and ends with a question mark because it asks a question."
   },
   {
     "id": "eng-punct-008",
@@ -13864,22 +13375,6 @@
     "explanation": "In a list, commas separate the items and \"and\" comes before the last one."
   },
   {
-    "id": "eng-punct-017",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which sentence uses commas correctly in a list?",
-    "options": [
-      "We saw frogs, newts, fish and snails in the pond.",
-      "We saw frogs newts fish and snails in the pond.",
-      "We, saw frogs newts, fish and snails.",
-      "We saw, frogs, newts fish and, snails."
-    ],
-    "answer": "We saw frogs, newts, fish and snails in the pond.",
-    "explanation": "Commas neatly separate each animal in the list."
-  },
-  {
     "id": "eng-punct-018",
     "subject": "english",
     "topic": "punctuation",
@@ -13942,22 +13437,6 @@
     ],
     "answer": "Because it was raining, we stayed indoors.",
     "explanation": "When a sentence begins with a clause like this, a comma separates it from the rest."
-  },
-  {
-    "id": "eng-punct-022",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 5,
-    "type": "multiple-choice",
-    "question": "Which sentence is punctuated perfectly?",
-    "options": [
-      "On Saturday, Emilia, Tom and Saoirse picked apples, pears and plums.",
-      "On saturday Emilia Tom and Saoirse picked apples pears and plums.",
-      "On Saturday Emilia, Tom and Saoirse, picked apples pears, and plums.",
-      "on Saturday, Emilia Tom, and Saoirse picked, apples pears and plums."
-    ],
-    "answer": "On Saturday, Emilia, Tom and Saoirse picked apples, pears and plums.",
-    "explanation": "It uses capitals for names and the day, plus commas to separate the people and the fruit."
   },
   {
     "id": "eng-punct-023",
@@ -14088,22 +13567,6 @@
     "explanation": "The apostrophe and s show the wings belong to one butterfly."
   },
   {
-    "id": "eng-punct-031",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 5,
-    "type": "multiple-choice",
-    "question": "Which sentence uses the possessive apostrophe correctly?",
-    "options": [
-      "Saoirse's pony grazed in Liam's field.",
-      "Saoirses pony grazed in Liams field.",
-      "Saoirse's pony grazed in Liams' field.",
-      "Saoirses' pony grazed in Liam's field."
-    ],
-    "answer": "Saoirse's pony grazed in Liam's field.",
-    "explanation": "Each name gets an apostrophe and s to show the pony is Saoirse's and the field is Liam's."
-  },
-  {
     "id": "eng-punct-032",
     "subject": "english",
     "topic": "punctuation",
@@ -14118,22 +13581,6 @@
     ],
     "answer": "The owl's hoot echoed through the dark wood.",
     "explanation": "The apostrophe before the s shows the hoot belongs to one owl."
-  },
-  {
-    "id": "eng-punct-033",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which sentence uses speech marks correctly?",
-    "options": [
-      "\"I love the seaside,\" said Emilia.",
-      "I love the seaside, said Emilia.",
-      "\"I love the seaside, said Emilia.",
-      "I love the seaside,\" said Emilia."
-    ],
-    "answer": "\"I love the seaside,\" said Emilia.",
-    "explanation": "Speech marks go around the exact words a person says, at the start and end."
   },
   {
     "id": "eng-punct-034",
@@ -14280,38 +13727,6 @@
     "explanation": "\"It's\" with an apostrophe means \"it is,\" so \"It's raining\" means \"it is raining.\""
   },
   {
-    "id": "eng-punct-043",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which sentence is correct?",
-    "options": [
-      "The dog wagged its tail.",
-      "The dog wagged it's tail.",
-      "The dog wagged its' tail.",
-      "The dog wagged its is tail."
-    ],
-    "answer": "The dog wagged its tail.",
-    "explanation": "Here \"its\" shows the tail belongs to the dog, so no apostrophe is needed."
-  },
-  {
-    "id": "eng-punct-044",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which sentence is correct?",
-    "options": [
-      "It's a lovely day for a walk.",
-      "Its a lovely day for a walk.",
-      "Its' a lovely day for a walk.",
-      "It is's a lovely day for a walk."
-    ],
-    "answer": "It's a lovely day for a walk.",
-    "explanation": "\"It's\" means \"it is,\" so \"It's a lovely day\" is the same as \"It is a lovely day.\""
-  },
-  {
     "id": "eng-punct-045",
     "subject": "english",
     "topic": "punctuation",
@@ -14342,22 +13757,6 @@
     ],
     "answer": "It's sunny, so the snail hid in its shell.",
     "explanation": "\"It's sunny\" means \"it is sunny,\" and \"its shell\" shows the shell belongs to the snail."
-  },
-  {
-    "id": "eng-punct-047",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 5,
-    "type": "multiple-choice",
-    "question": "Which sentence is correct?",
-    "options": [
-      "The river is high because it's been raining, and its banks are full.",
-      "The river is high because its been raining, and it's banks are full.",
-      "The river is high because its' been raining, and its banks are full.",
-      "The river is high because it's been raining, and it's banks are full."
-    ],
-    "answer": "The river is high because it's been raining, and its banks are full.",
-    "explanation": "\"It's been\" means \"it has been,\" while \"its banks\" shows the banks belong to the river."
   },
   {
     "id": "eng-punct-048",
@@ -14472,22 +13871,6 @@
     "explanation": "The comma follows the opening phrase, and \"Emilia's\" shows the garden belongs to her."
   },
   {
-    "id": "eng-punct-055",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which sentence correctly uses an exclamation mark?",
-    "options": [
-      "What a huge wave that was!",
-      "What a huge wave that was.",
-      "What a huge wave that was?",
-      "what a huge wave that was,"
-    ],
-    "answer": "What a huge wave that was!",
-    "explanation": "The exclamation mark shows the strong feeling about the huge wave."
-  },
-  {
     "id": "eng-punct-056",
     "subject": "english",
     "topic": "punctuation",
@@ -14566,22 +13949,6 @@
     ],
     "answer": "!",
     "explanation": "This sentence shows urgency and strong feeling, so an exclamation mark fits."
-  },
-  {
-    "id": "eng-punct-061",
-    "subject": "english",
-    "topic": "punctuation",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which sentence uses speech marks correctly?",
-    "options": [
-      "\"It's a beautiful morning,\" smiled Emilia.",
-      "It's a beautiful morning, smiled Emilia.",
-      "\"It's a beautiful morning smiled Emilia.\"",
-      "It's a beautiful morning\" smiled Emilia."
-    ],
-    "answer": "\"It's a beautiful morning,\" smiled Emilia.",
-    "explanation": "The speech marks surround exactly what Emilia said, with a comma before the closing mark."
   },
   {
     "id": "eng-punct-062",

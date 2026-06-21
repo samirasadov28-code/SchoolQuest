@@ -61,7 +61,7 @@
       "Smart TV"
     ],
     "answer": "iPad",
-    "explanation": "An iPad is a tablet computer \u2014 a flat touchscreen device without a physical keyboard!"
+    "explanation": "An iPad is a tablet computer — a flat touchscreen device without a physical keyboard!"
   },
   {
     "id": "cod-basic-005",
@@ -77,7 +77,7 @@
       "The computer has no keyboard"
     ],
     "answer": "The computer connects to the internet without cables",
-    "explanation": "Wireless means connecting without physical cables \u2014 like Wi-Fi! Your device sends and receives information through the air."
+    "explanation": "Wireless means connecting without physical cables — like Wi-Fi! Your device sends and receives information through the air."
   },
   {
     "id": "cod-basic-006",
@@ -125,7 +125,7 @@
       "A computer program only"
     ],
     "answer": "A stored piece of information or document",
-    "explanation": "A file is any stored piece of information on a computer \u2014 a photo, a document, a song, a video. Everything on a computer is stored as a file!"
+    "explanation": "A file is any stored piece of information on a computer — a photo, a document, a song, a video. Everything on a computer is stored as a file!"
   },
   {
     "id": "cod-basic-009",
@@ -157,7 +157,7 @@
       "A special type of tablet"
     ],
     "answer": "A phone that can also run apps and connect to the internet",
-    "explanation": "A smartphone is a mobile phone that also works like a mini-computer \u2014 you can browse the internet, take photos, play games, and run apps!"
+    "explanation": "A smartphone is a mobile phone that also works like a mini-computer — you can browse the internet, take photos, play games, and run apps!"
   },
   {
     "id": "cod-basic-011",
@@ -173,7 +173,7 @@
       "Core Program Unit"
     ],
     "answer": "Central Processing Unit",
-    "explanation": "CPU = Central Processing Unit. It is the 'brain' of the computer \u2014 it processes all instructions and calculations!"
+    "explanation": "CPU = Central Processing Unit. It is the 'brain' of the computer — it processes all instructions and calculations!"
   },
   {
     "id": "cod-basic-012",
@@ -189,7 +189,7 @@
       "In the monitor"
     ],
     "answer": "In the hard drive or storage",
-    "explanation": "Hard drives and SSDs permanently store your files even when the computer is turned off. RAM is temporary \u2014 it only stores things while the computer is running!"
+    "explanation": "Hard drives and SSDs permanently store your files even when the computer is turned off. RAM is temporary — it only stores things while the computer is running!"
   },
   {
     "id": "cod-algo-001",
@@ -221,7 +221,7 @@
       "Only the first step matters"
     ],
     "answer": "Doing steps in the wrong order could give the wrong result",
-    "explanation": "Order is crucial! Imagine putting on shoes before socks, or eating before cooking \u2014 the wrong order makes the algorithm fail!"
+    "explanation": "Order is crucial! Imagine putting on shoes before socks, or eating before cooking — the wrong order makes the algorithm fail!"
   },
   {
     "id": "cod-algo-003",
@@ -237,7 +237,7 @@
       "Eat the toast"
     ],
     "answer": "Put the bread in the toaster",
-    "explanation": "In an algorithm, you must follow the correct order. You cannot spread butter before you have made the toast \u2014 so the first step is putting the bread in the toaster!"
+    "explanation": "In an algorithm, you must follow the correct order. You cannot spread butter before you have made the toast — so the first step is putting the bread in the toaster!"
   },
   {
     "id": "cod-algo-004",
@@ -285,7 +285,7 @@
       "Triangle"
     ],
     "answer": "Diamond",
-    "explanation": "Diamond shapes in flowcharts show decisions \u2014 questions with two possible paths, like 'Is the light green? YES \u2192 cross, NO \u2192 wait.'"
+    "explanation": "Diamond shapes in flowcharts show decisions — questions with two possible paths, like 'Is the light green? YES → cross, NO → wait.'"
   },
   {
     "id": "cod-algo-007",
@@ -344,12 +344,12 @@
     "question": "Can a computer follow instructions if they are unclear or ambiguous?",
     "options": [
       "Yes, always",
-      "No \u2014 computers need precise, clear instructions",
+      "No — computers need precise, clear instructions",
       "Sometimes, if they try hard",
       "Only if they are written in English"
     ],
-    "answer": "No \u2014 computers need precise, clear instructions",
-    "explanation": "Computers only do exactly what they are told. If instructions are vague or unclear, the computer cannot guess \u2014 it will fail or do the wrong thing!"
+    "answer": "No — computers need precise, clear instructions",
+    "explanation": "Computers only do exactly what they are told. If instructions are vague or unclear, the computer cannot guess — it will fail or do the wrong thing!"
   },
   {
     "id": "cod-algo-011",
@@ -365,7 +365,7 @@
       "Rinse, Get toothpaste, Brush"
     ],
     "answer": "Get toothpaste, put on brush, Brush, Rinse",
-    "explanation": "The correct order is: get toothpaste \u2192 put it on the brush \u2192 brush \u2192 rinse. Order matters \u2014 you need the toothpaste before you can brush!"
+    "explanation": "The correct order is: get toothpaste → put it on the brush → brush → rinse. Order matters — you need the toothpaste before you can brush!"
   },
   {
     "id": "cod-algo-012",
@@ -381,7 +381,7 @@
       "A way to colour the screen"
     ],
     "answer": "Noticing repeated elements or similarities in a problem",
-    "explanation": "Pattern recognition means spotting things that repeat. Days of the week, times tables, seasons \u2014 once you spot a pattern, you can predict what comes next!"
+    "explanation": "Pattern recognition means spotting things that repeat. Days of the week, times tables, seasons — once you spot a pattern, you can predict what comes next!"
   },
   {
     "id": "cod-algo-013",
@@ -413,7 +413,7 @@
       "Making things more complicated"
     ],
     "answer": "Focusing only on the important details and ignoring unnecessary ones",
-    "explanation": "Abstraction means simplifying. A map is an abstraction of a real place \u2014 it shows roads and towns but leaves out unnecessary details like every single tree!"
+    "explanation": "Abstraction means simplifying. A map is an abstraction of a real place — it shows roads and towns but leaves out unnecessary details like every single tree!"
   },
   {
     "id": "cod-algo-015",
@@ -425,10 +425,10 @@
     "options": [
       "Pattern recognition only",
       "Abstraction only",
-      "Decomposition \u2014 break the maze into smaller sections to solve one at a time",
-      "Algorithm \u2014 just write one big list of every step"
+      "Decomposition — break the maze into smaller sections to solve one at a time",
+      "Algorithm — just write one big list of every step"
     ],
-    "answer": "Decomposition \u2014 break the maze into smaller sections to solve one at a time",
+    "answer": "Decomposition — break the maze into smaller sections to solve one at a time",
     "explanation": "Decomposition! Break the big problem (navigate the whole maze) into smaller problems (navigate each section). Solve each piece, and the big problem is solved!"
   },
   {
@@ -493,7 +493,7 @@
       "8"
     ],
     "answer": "6",
-    "explanation": "3 repeats \u00d7 2 steps each = 6 steps total. The loop runs 3 times and each time it moves 2 steps: 2 + 2 + 2 = 6!"
+    "explanation": "3 repeats × 2 steps each = 6 steps total. The loop runs 3 times and each time it moves 2 steps: 2 + 2 + 2 = 6!"
   },
   {
     "id": "cod-loop-005",
@@ -557,7 +557,7 @@
       "The computer turns off"
     ],
     "answer": "The loop might not run enough times or might run too many times",
-    "explanation": "If the repeat number is wrong, the loop runs the wrong number of times \u2014 a common bug! Always check your loop counts carefully."
+    "explanation": "If the repeat number is wrong, the loop runs the wrong number of times — a common bug! Always check your loop counts carefully."
   },
   {
     "id": "cod-loop-009",
@@ -573,7 +573,7 @@
       "Eating breakfast only once"
     ],
     "answer": "A washing machine cycle that spins, stops, spins, stops...",
-    "explanation": "A washing machine cycle repeats steps (fill, wash, spin, drain) \u2014 just like a loop in programming repeats its instructions!"
+    "explanation": "A washing machine cycle repeats steps (fill, wash, spin, drain) — just like a loop in programming repeats its instructions!"
   },
   {
     "id": "cod-loop-010",
@@ -586,10 +586,10 @@
       "Because copying is broken in computers",
       "Loops are easier to read, change, and less likely to contain mistakes",
       "Loops run much faster always",
-      "There is no reason \u2014 copying is just as good"
+      "There is no reason — copying is just as good"
     ],
     "answer": "Loops are easier to read, change, and less likely to contain mistakes",
-    "explanation": "If you want to change from 10 repeats to 50, in a loop you change one number. If you copied code 10 times, you need to update every copy \u2014 much more chance of making errors!"
+    "explanation": "If you want to change from 10 repeats to 50, in a loop you change one number. If you copied code 10 times, you need to update every copy — much more chance of making errors!"
   },
   {
     "id": "cod-debug-001",
@@ -605,7 +605,7 @@
       "Writing a new algorithm from scratch"
     ],
     "answer": "Finding and fixing errors in a program",
-    "explanation": "Debugging = finding and fixing bugs (errors) in a program. Every programmer debugs \u2014 it is a normal and important part of coding!"
+    "explanation": "Debugging = finding and fixing bugs (errors) in a program. Every programmer debugs — it is a normal and important part of coding!"
   },
   {
     "id": "cod-debug-002",
@@ -632,12 +632,12 @@
     "question": "Emilia's robot should go forward 3 steps then turn right, but it turns left instead. What should she do?",
     "options": [
       "Delete the whole program and start again",
-      "Debug \u2014 find the wrong instruction and change 'turn left' to 'turn right'",
+      "Debug — find the wrong instruction and change 'turn left' to 'turn right'",
       "Add more steps to the program",
       "Restart the computer"
     ],
-    "answer": "Debug \u2014 find the wrong instruction and change 'turn left' to 'turn right'",
-    "explanation": "Debugging! Find the bug (wrong instruction) and fix it. You don't need to start over \u2014 just locate and correct the specific error!"
+    "answer": "Debug — find the wrong instruction and change 'turn left' to 'turn right'",
+    "explanation": "Debugging! Find the bug (wrong instruction) and fix it. You don't need to start over — just locate and correct the specific error!"
   },
   {
     "id": "cod-debug-004",
@@ -669,7 +669,7 @@
       "A slow internet connection"
     ],
     "answer": "An error or mistake in the program",
-    "explanation": "A bug is any error in a program that makes it behave incorrectly or not at all. Every programmer encounters bugs \u2014 the skill is finding and fixing them!"
+    "explanation": "A bug is any error in a program that makes it behave incorrectly or not at all. Every programmer encounters bugs — the skill is finding and fixing them!"
   },
   {
     "id": "cod-debug-006",
@@ -680,7 +680,7 @@
     "question": "A good programmer tests their code...",
     "options": [
       "Once, at the very end",
-      "Never \u2014 if you wrote it correctly it should work",
+      "Never — if you wrote it correctly it should work",
       "After every few steps to catch errors early",
       "Only when the program crashes"
     ],
@@ -701,7 +701,7 @@
       "When the computer overheats"
     ],
     "answer": "When instructions are written using the wrong format or spelling",
-    "explanation": "Syntax errors are like grammar errors in coding \u2014 the computer cannot understand the instruction because it was written incorrectly. Like writing 'repaet' instead of 'repeat'!"
+    "explanation": "Syntax errors are like grammar errors in coding — the computer cannot understand the instruction because it was written incorrectly. Like writing 'repaet' instead of 'repeat'!"
   },
   {
     "id": "cod-debug-008",
@@ -781,7 +781,7 @@
       "To share your information with others"
     ],
     "answer": "To protect your account so only you can access it",
-    "explanation": "A password is a secret code that keeps your account safe. Only you should know your password \u2014 it stops other people logging in as you!"
+    "explanation": "A password is a secret code that keeps your account safe. Only you should know your password — it stops other people logging in as you!"
   },
   {
     "id": "cod-safe-003",
@@ -809,10 +809,10 @@
     "options": [
       "Yes, with your best friend only",
       "Yes, always share passwords",
-      "No \u2014 keep your password private, even from friends",
+      "No — keep your password private, even from friends",
       "Only share school passwords"
     ],
-    "answer": "No \u2014 keep your password private, even from friends",
+    "answer": "No — keep your password private, even from friends",
     "explanation": "Keep your password private! Even if your friend is kind, they might accidentally tell someone else. Your password should be known ONLY by you (and your parents for safety)!"
   },
   {
@@ -845,7 +845,7 @@
       "Ignore it and never tell anyone"
     ],
     "answer": "Tell a trusted adult",
-    "explanation": "If someone is mean to you online, tell a trusted adult \u2014 a parent, teacher, or carer. Never deal with cyberbullying alone!"
+    "explanation": "If someone is mean to you online, tell a trusted adult — a parent, teacher, or carer. Never deal with cyberbullying alone!"
   },
   {
     "id": "cod-safe-007",
@@ -877,7 +877,7 @@
       "Tell no one because it might get you in trouble"
     ],
     "answer": "Tell a trusted adult straight away",
-    "explanation": "If anything online upsets you \u2014 scary content, mean messages, confusing requests \u2014 tell a trusted adult straight away. You will never get in trouble for telling!"
+    "explanation": "If anything online upsets you — scary content, mean messages, confusing requests — tell a trusted adult straight away. You will never get in trouble for telling!"
   },
   {
     "id": "cod-safe-009",
@@ -888,11 +888,11 @@
     "question": "What does the 'S' in the SMART internet safety rules stand for?",
     "options": [
       "Share your details with friends",
-      "Safe \u2014 keep personal information safe",
+      "Safe — keep personal information safe",
       "Screens should be avoided",
       "Social media is dangerous"
     ],
-    "answer": "Safe \u2014 keep personal information safe",
+    "answer": "Safe — keep personal information safe",
     "explanation": "SMART rules: Safe (keep personal info safe), Meet (never meet online-only contacts in person), Accept (don't accept files from strangers), Reliable (not all online info is true), Tell (tell a trusted adult about anything that worries you)!"
   },
   {
@@ -925,7 +925,7 @@
       "The apps you use"
     ],
     "answer": "Information that identifies you, like your name, address, phone number, or photos",
-    "explanation": "Personal information is anything that identifies YOU specifically. Name, address, school, phone number, photos \u2014 all personal. Keep it private online!"
+    "explanation": "Personal information is anything that identifies YOU specifically. Name, address, school, phone number, photos — all personal. Keep it private online!"
   },
   {
     "id": "cod-safe-012",
@@ -989,7 +989,7 @@
       "If many people have shared it, it must be true"
     ],
     "answer": "Check multiple trusted websites and look for the author's credentials",
-    "explanation": "Anyone can post anything online \u2014 not all of it is true! Good fact-checking: look at multiple reliable sources, check who wrote the information and why, and look for scientific or expert evidence!"
+    "explanation": "Anyone can post anything online — not all of it is true! Good fact-checking: look at multiple reliable sources, check who wrote the information and why, and look for scientific or expert evidence!"
   },
   {
     "id": "cod-scratch-001",
@@ -1021,7 +1021,7 @@
       "A special Scratch block"
     ],
     "answer": "A character or object you control in your program",
-    "explanation": "A sprite is any character or object in your Scratch project \u2014 a cat, a ball, a rocket. You can add code to sprites to make them move, talk, and react!"
+    "explanation": "A sprite is any character or object in your Scratch project — a cat, a ball, a rocket. You can add code to sprites to make them move, talk, and react!"
   },
   {
     "id": "cod-scratch-003",
@@ -1037,7 +1037,7 @@
       "Adds a new sprite"
     ],
     "answer": "Starts and runs your program",
-    "explanation": "Clicking the green flag starts your Scratch program running. It is like pressing 'play' \u2014 all blocks that start with 'when green flag clicked' will begin!"
+    "explanation": "Clicking the green flag starts your Scratch program running. It is like pressing 'play' — all blocks that start with 'when green flag clicked' will begin!"
   },
   {
     "id": "cod-scratch-004",
@@ -1053,7 +1053,7 @@
       "Saves your work"
     ],
     "answer": "Stops the program running",
-    "explanation": "The red stop button stops all running scripts immediately. It is like pressing 'pause' on a video \u2014 everything stops where it is!"
+    "explanation": "The red stop button stops all running scripts immediately. It is like pressing 'pause' on a video — everything stops where it is!"
   },
   {
     "id": "cod-scratch-005",
@@ -1101,7 +1101,7 @@
       "The menu at the top"
     ],
     "answer": "The background area where sprites perform and your project plays out",
-    "explanation": "The stage is the area where you see your project running \u2014 like a theatre stage. Your sprites perform on the stage!"
+    "explanation": "The stage is the area where you see your project running — like a theatre stage. Your sprites perform on the stage!"
   },
   {
     "id": "cod-scratch-008",
@@ -1117,7 +1117,7 @@
       "A background scene"
     ],
     "answer": "A different visual appearance for a sprite",
-    "explanation": "Sprites can have multiple costumes \u2014 different images that make them look different. Switching costumes quickly creates animation, like a character walking!"
+    "explanation": "Sprites can have multiple costumes — different images that make them look different. Switching costumes quickly creates animation, like a character walking!"
   },
   {
     "id": "cod-scratch-009",
@@ -1133,7 +1133,7 @@
       "Play a sound"
     ],
     "answer": "Start these instructions when someone clicks the green flag",
-    "explanation": "'When green flag clicked' is an event block \u2014 it tells Scratch to run all the connected blocks whenever someone clicks the green flag to start the project!"
+    "explanation": "'When green flag clicked' is an event block — it tells Scratch to run all the connected blocks whenever someone clicks the green flag to start the project!"
   },
   {
     "id": "cod-scratch-010",
@@ -1165,7 +1165,7 @@
       "Numbers only"
     ],
     "answer": "Pieces of information that can be collected and stored",
-    "explanation": "Data is any piece of information \u2014 numbers, words, photos, sounds. Computers collect, store, process, and display data!"
+    "explanation": "Data is any piece of information — numbers, words, photos, sounds. Computers collect, store, process, and display data!"
   },
   {
     "id": "cod-data-002",
@@ -1181,7 +1181,7 @@
       "A type of computer virus"
     ],
     "answer": "A way to organise and group related files together",
-    "explanation": "A folder (also called a directory) groups related files together \u2014 just like a physical folder holds related papers. Good organisation makes files easier to find!"
+    "explanation": "A folder (also called a directory) groups related files together — just like a physical folder holds related papers. Good organisation makes files easier to find!"
   },
   {
     "id": "cod-data-003",
@@ -1213,7 +1213,7 @@
       "A programming language"
     ],
     "answer": "A global network connecting millions of computers together",
-    "explanation": "The internet is a huge global network \u2014 billions of computers and devices connected together so they can share information. It was invented in the 1960s and became public in the 1990s!"
+    "explanation": "The internet is a huge global network — billions of computers and devices connected together so they can share information. It was invented in the 1960s and became public in the 1990s!"
   },
   {
     "id": "cod-data-005",
@@ -1245,7 +1245,7 @@
       "Because only adults can understand online information"
     ],
     "answer": "Because some online information can be false, outdated, or misleading",
-    "explanation": "Anyone can publish information online \u2014 which means not all of it is accurate or trustworthy. Always check multiple reliable sources, especially for important information!"
+    "explanation": "Anyone can publish information online — which means not all of it is accurate or trustworthy. Always check multiple reliable sources, especially for important information!"
   },
   {
     "id": "cod-data-007",
@@ -1277,7 +1277,7 @@
       "A programming language"
     ],
     "answer": "An organised collection of information that can be searched and sorted",
-    "explanation": "A database is an organised store of information. School records, hospital records, library catalogues \u2014 all databases! They let you search, sort and find specific information quickly."
+    "explanation": "A database is an organised store of information. School records, hospital records, library catalogues — all databases! They let you search, sort and find specific information quickly."
   },
   {
     "id": "cod-data-009",
@@ -1306,10 +1306,10 @@
       "It makes computers run faster",
       "It makes files easier to find and keeps your work neat",
       "It creates more storage space",
-      "Computers require it \u2014 they cannot work without folders"
+      "Computers require it — they cannot work without folders"
     ],
     "answer": "It makes files easier to find and keeps your work neat",
-    "explanation": "Good file organisation is like a tidy room \u2014 much easier to find what you need! Create folders for different subjects or projects, and name files clearly so you can find them later."
+    "explanation": "Good file organisation is like a tidy room — much easier to find what you need! Create folders for different subjects or projects, and name files clearly so you can find them later."
   },
   {
     "id": "cod-basics-001",
@@ -1390,22 +1390,6 @@
     ],
     "answer": "Speaker",
     "explanation": "A speaker is an output device that turns the computer's sound into something you can hear. Time to dance, Emilia!"
-  },
-  {
-    "id": "cod-basics-006",
-    "subject": "coding",
-    "topic": "computing-basics",
-    "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which of these is an INPUT device?",
-    "options": [
-      "Printer",
-      "Speaker",
-      "Microphone",
-      "Monitor"
-    ],
-    "answer": "Microphone",
-    "explanation": "A microphone lets you put sound, like your voice, INTO the computer, so it is an input device. Speak up, Emilia!"
   },
   {
     "id": "cod-basics-007",
@@ -1710,22 +1694,6 @@
     ],
     "answer": "Hardware needs software to be useful",
     "explanation": "Hardware is the body and software is the instructions, so a computer needs both to do anything. They work together, Emilia!"
-  },
-  {
-    "id": "cod-basics-026",
-    "subject": "coding",
-    "topic": "computing-basics",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which of these is an output device?",
-    "options": [
-      "Keyboard",
-      "Mouse",
-      "Speaker",
-      "Microphone"
-    ],
-    "answer": "Speaker",
-    "explanation": "A speaker sends sound OUT of the computer so you can hear it, so it is an output device. Good listening, Emilia!"
   },
   {
     "id": "cod-basics-027",
@@ -4096,22 +4064,6 @@
     "explanation": "Strong passwords are tricky for others but easy for you to remember, Emilia!"
   },
   {
-    "id": "cod-debug-046",
-    "subject": "coding",
-    "topic": "internet-safety",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Why is it important to take breaks from screens?",
-    "options": [
-      "To rest your eyes and stay healthy",
-      "To make the computer faster",
-      "To save the internet",
-      "To win more games"
-    ],
-    "answer": "To rest your eyes and stay healthy",
-    "explanation": "Screen breaks help your eyes and body feel good, Emilia. Balance is healthy!"
-  },
-  {
     "id": "cod-debug-047",
     "subject": "coding",
     "topic": "internet-safety",
@@ -4990,22 +4942,6 @@
     ],
     "answer": "Count how many times something happens",
     "explanation": "Tally marks help you count quickly, Emilia, and four with a line through makes five!"
-  },
-  {
-    "id": "cod-debug-109",
-    "subject": "coding",
-    "topic": "data",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "What is a database?",
-    "options": [
-      "An organised collection of information",
-      "A type of sprite",
-      "A loud speaker",
-      "A coding bug"
-    ],
-    "answer": "An organised collection of information",
-    "explanation": "A database stores lots of information in a tidy, organised way, Emilia, so it is easy to find!"
   },
   {
     "id": "cod-debug-110",

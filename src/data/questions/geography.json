@@ -13,7 +13,7 @@
       "Limerick"
     ],
     "answer": "Dublin",
-    "explanation": "Dublin (Baile \u00c1tha Cliath in Irish) is Ireland's capital city and largest city. It's on the east coast!"
+    "explanation": "Dublin (Baile Átha Cliath in Irish) is Ireland's capital city and largest city. It's on the east coast!"
   },
   {
     "id": "geo-ire-002",
@@ -29,7 +29,7 @@
       "Atlantic Ocean"
     ],
     "answer": "Atlantic Ocean",
-    "explanation": "The Atlantic Ocean is to the west of Ireland. That's why Ireland gets so much rain \u2014 the Atlantic brings lots of clouds!"
+    "explanation": "The Atlantic Ocean is to the west of Ireland. That's why Ireland gets so much rain — the Atlantic brings lots of clouds!"
   },
   {
     "id": "geo-ire-003",
@@ -93,7 +93,7 @@
       "Kerry"
     ],
     "answer": "Cork",
-    "explanation": "Cork is known as 'The Rebel County' \u2014 its people are famously independent and proud! Cork is also the second-largest city in Ireland."
+    "explanation": "Cork is known as 'The Rebel County' — its people are famously independent and proud! Cork is also the second-largest city in Ireland."
   },
   {
     "id": "geo-ire-007",
@@ -125,7 +125,7 @@
       "Cliffs of Moher"
     ],
     "answer": "The Burren",
-    "explanation": "The Burren (Boireann = rocky place) is a unique limestone landscape in County Clare. It has plants from the Arctic, the Alps, and the Mediterranean all growing together \u2014 amazing!"
+    "explanation": "The Burren (Boireann = rocky place) is a unique limestone landscape in County Clare. It has plants from the Arctic, the Alps, and the Mediterranean all growing together — amazing!"
   },
   {
     "id": "geo-ire-009",
@@ -205,7 +205,7 @@
       "Pacific Ocean"
     ],
     "answer": "Pacific Ocean",
-    "explanation": "The Pacific Ocean is the largest ocean \u2014 it's bigger than all the continents put together!"
+    "explanation": "The Pacific Ocean is the largest ocean — it's bigger than all the continents put together!"
   },
   {
     "id": "geo-world-004",
@@ -237,7 +237,7 @@
       "Africa"
     ],
     "answer": "Africa",
-    "explanation": "The Sahara Desert is in northern Africa. It's the world's largest hot desert \u2014 about the same size as the United States!"
+    "explanation": "The Sahara Desert is in northern Africa. It's the world's largest hot desert — about the same size as the United States!"
   },
   {
     "id": "geo-world-006",
@@ -285,7 +285,7 @@
       "Liechtenstein"
     ],
     "answer": "Vatican City",
-    "explanation": "Vatican City in Rome is the smallest country in the world \u2014 it's only about 0.44 km\u00b2! It's where the Pope lives."
+    "explanation": "Vatican City in Rome is the smallest country in the world — it's only about 0.44 km²! It's where the Pope lives."
   },
   {
     "id": "geo-world-009",
@@ -301,7 +301,7 @@
       "The Tropic of Cancer"
     ],
     "answer": "The Equator",
-    "explanation": "The Equator is the imaginary line at 0\u00b0 latitude that divides Earth into the Northern and Southern Hemispheres. It's always warm near the Equator!"
+    "explanation": "The Equator is the imaginary line at 0° latitude that divides Earth into the Northern and Southern Hemispheres. It's always warm near the Equator!"
   },
   {
     "id": "geo-world-010",
@@ -333,7 +333,7 @@
       "Rain gauge"
     ],
     "answer": "Thermometer",
-    "explanation": "A thermometer measures how hot or cold something is. Temperature is measured in degrees Celsius (\u00b0C) in Ireland!"
+    "explanation": "A thermometer measures how hot or cold something is. Temperature is measured in degrees Celsius (°C) in Ireland!"
   },
   {
     "id": "geo-weather-002",
@@ -382,22 +382,6 @@
     ],
     "answer": "4",
     "explanation": "Ireland is divided into four provinces, Emilia: Leinster, Munster, Connacht and Ulster."
-  },
-  {
-    "id": "geo-ireland-002",
-    "subject": "geography",
-    "topic": "ireland",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "What is the capital city of Ireland?",
-    "options": [
-      "Cork",
-      "Galway",
-      "Dublin",
-      "Belfast"
-    ],
-    "answer": "Dublin",
-    "explanation": "Dublin is the capital city of Ireland and its biggest city."
   },
   {
     "id": "geo-ireland-003",
@@ -1760,22 +1744,6 @@
     "explanation": "The island of Ireland has 32 counties grouped into 4 provinces."
   },
   {
-    "id": "geo-ireland-088",
-    "subject": "geography",
-    "topic": "ireland",
-    "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "Which of these counties is in Leinster?",
-    "options": [
-      "Carlow",
-      "Kerry",
-      "Mayo",
-      "Down"
-    ],
-    "answer": "Carlow",
-    "explanation": "Carlow is the second-smallest county in Ireland and is in Leinster."
-  },
-  {
     "id": "geo-ireland-089",
     "subject": "geography",
     "topic": "ireland",
@@ -1824,22 +1792,6 @@
     "explanation": "Galway is in Connacht. Cork is in Munster, Dublin is in Leinster, and Belfast is in Ulster."
   },
   {
-    "id": "geo-rivers-mountains-001",
-    "subject": "geography",
-    "topic": "rivers-mountains",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "What is the longest river in Ireland?",
-    "options": [
-      "The Liffey",
-      "The Shannon",
-      "The Lee",
-      "The Nore"
-    ],
-    "answer": "The Shannon",
-    "explanation": "The River Shannon is the longest river in Ireland, Emilia!"
-  },
-  {
     "id": "geo-rivers-mountains-002",
     "subject": "geography",
     "topic": "rivers-mountains",
@@ -1854,22 +1806,6 @@
     ],
     "answer": "The Liffey",
     "explanation": "The River Liffey flows right through the middle of Dublin."
-  },
-  {
-    "id": "geo-rivers-mountains-003",
-    "subject": "geography",
-    "topic": "rivers-mountains",
-    "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "What is the highest mountain in Ireland?",
-    "options": [
-      "Croagh Patrick",
-      "Carrauntoohil",
-      "Lugnaquilla",
-      "Slieve Donard"
-    ],
-    "answer": "Carrauntoohil",
-    "explanation": "Carrauntoohil, in County Kerry, is the highest mountain in Ireland."
   },
   {
     "id": "geo-rivers-mountains-004",
@@ -3381,7 +3317,7 @@
     "topic": "weather",
     "difficulty": 2,
     "type": "multiple-choice",
-    "question": "Emilia reads 18\u00b0C on the thermometer. What kind of day is it?",
+    "question": "Emilia reads 18°C on the thermometer. What kind of day is it?",
     "options": [
       "A mild, pleasant day",
       "A freezing cold day",
@@ -3389,7 +3325,7 @@
       "A snowy day"
     ],
     "answer": "A mild, pleasant day",
-    "explanation": "18\u00b0C is a comfortable, mild temperature, common on a nice Irish day."
+    "explanation": "18°C is a comfortable, mild temperature, common on a nice Irish day."
   },
   {
     "id": "geo-weather-013",
@@ -3399,12 +3335,12 @@
     "type": "multiple-choice",
     "question": "At what temperature does water freeze into ice?",
     "options": [
-      "0\u00b0C",
-      "10\u00b0C",
-      "100\u00b0C",
-      "50\u00b0C"
+      "0°C",
+      "10°C",
+      "100°C",
+      "50°C"
     ],
-    "answer": "0\u00b0C",
+    "answer": "0°C",
     "explanation": "Water freezes and turns to ice at 0 degrees Celsius."
   },
   {
@@ -3415,13 +3351,13 @@
     "type": "multiple-choice",
     "question": "Which of these temperatures is the coldest?",
     "options": [
-      "-3\u00b0C",
-      "5\u00b0C",
-      "12\u00b0C",
-      "20\u00b0C"
+      "-3°C",
+      "5°C",
+      "12°C",
+      "20°C"
     ],
-    "answer": "-3\u00b0C",
-    "explanation": "A temperature below zero, like -3\u00b0C, is colder than any temperature above zero."
+    "answer": "-3°C",
+    "explanation": "A temperature below zero, like -3°C, is colder than any temperature above zero."
   },
   {
     "id": "geo-weather-015",
@@ -3605,7 +3541,7 @@
     "topic": "weather",
     "difficulty": 3,
     "type": "multiple-choice",
-    "question": "Emilia measures 22\u00b0C in the garden on Monday and 16\u00b0C on Tuesday. How did the temperature change?",
+    "question": "Emilia measures 22°C in the garden on Monday and 16°C on Tuesday. How did the temperature change?",
     "options": [
       "It got 6 degrees cooler",
       "It got 6 degrees warmer",
@@ -3613,7 +3549,7 @@
       "It got 22 degrees warmer"
     ],
     "answer": "It got 6 degrees cooler",
-    "explanation": "From 22\u00b0C down to 16\u00b0C is a drop of 6 degrees, so it got cooler."
+    "explanation": "From 22°C down to 16°C is a drop of 6 degrees, so it got cooler."
   },
   {
     "id": "geo-weather-029",
@@ -3893,7 +3829,7 @@
     "topic": "weather",
     "difficulty": 4,
     "type": "multiple-choice",
-    "question": "Emilia's class measures these midday temperatures: Mon 12\u00b0C, Tue 15\u00b0C, Wed 9\u00b0C, Thu 14\u00b0C. Which day was warmest?",
+    "question": "Emilia's class measures these midday temperatures: Mon 12°C, Tue 15°C, Wed 9°C, Thu 14°C. Which day was warmest?",
     "options": [
       "Tuesday",
       "Monday",
@@ -3901,7 +3837,7 @@
       "Thursday"
     ],
     "answer": "Tuesday",
-    "explanation": "Tuesday's 15\u00b0C is the highest number, so it was the warmest day."
+    "explanation": "Tuesday's 15°C is the highest number, so it was the warmest day."
   },
   {
     "id": "geo-weather-052",
@@ -3925,15 +3861,15 @@
     "topic": "weather",
     "difficulty": 4,
     "type": "multiple-choice",
-    "question": "The temperature was 7\u00b0C in the morning and rose by 8 degrees by noon. What was it at noon?",
+    "question": "The temperature was 7°C in the morning and rose by 8 degrees by noon. What was it at noon?",
     "options": [
-      "15\u00b0C",
-      "8\u00b0C",
-      "1\u00b0C",
-      "78\u00b0C"
+      "15°C",
+      "8°C",
+      "1°C",
+      "78°C"
     ],
-    "answer": "15\u00b0C",
-    "explanation": "7\u00b0C plus a rise of 8 degrees equals 15\u00b0C."
+    "answer": "15°C",
+    "explanation": "7°C plus a rise of 8 degrees equals 15°C."
   },
   {
     "id": "geo-weather-054",
@@ -3941,15 +3877,15 @@
     "topic": "weather",
     "difficulty": 4,
     "type": "multiple-choice",
-    "question": "At night the temperature dropped from 4\u00b0C by 6 degrees. What was the new temperature?",
+    "question": "At night the temperature dropped from 4°C by 6 degrees. What was the new temperature?",
     "options": [
-      "-2\u00b0C",
-      "2\u00b0C",
-      "10\u00b0C",
-      "-6\u00b0C"
+      "-2°C",
+      "2°C",
+      "10°C",
+      "-6°C"
     ],
-    "answer": "-2\u00b0C",
-    "explanation": "4\u00b0C minus 6 degrees goes below zero to -2\u00b0C."
+    "answer": "-2°C",
+    "explanation": "4°C minus 6 degrees goes below zero to -2°C."
   },
   {
     "id": "geo-weather-055",
@@ -4069,15 +4005,15 @@
     "topic": "weather",
     "difficulty": 4,
     "type": "multiple-choice",
-    "question": "The midday temperatures for a week were 10, 12, 11, 13, 9\u00b0C. What was the highest minus the lowest?",
+    "question": "The midday temperatures for a week were 10, 12, 11, 13, 9°C. What was the highest minus the lowest?",
     "options": [
-      "4\u00b0C",
-      "9\u00b0C",
-      "13\u00b0C",
-      "2\u00b0C"
+      "4°C",
+      "9°C",
+      "13°C",
+      "2°C"
     ],
-    "answer": "4\u00b0C",
-    "explanation": "The highest was 13\u00b0C and the lowest was 9\u00b0C, and 13 minus 9 is 4."
+    "answer": "4°C",
+    "explanation": "The highest was 13°C and the lowest was 9°C, and 13 minus 9 is 4."
   },
   {
     "id": "geo-weather-070",
@@ -4117,7 +4053,7 @@
     "topic": "weather",
     "difficulty": 5,
     "type": "multiple-choice",
-    "question": "The temperature at 6am was -2\u00b0C and by 2pm it had risen to 9\u00b0C. By how many degrees did it rise?",
+    "question": "The temperature at 6am was -2°C and by 2pm it had risen to 9°C. By how many degrees did it rise?",
     "options": [
       "11 degrees",
       "7 degrees",
@@ -4125,7 +4061,7 @@
       "2 degrees"
     ],
     "answer": "11 degrees",
-    "explanation": "Going from -2\u00b0C up to 9\u00b0C is a rise of 11 degrees (2 to reach 0, then 9 more)."
+    "explanation": "Going from -2°C up to 9°C is a rise of 11 degrees (2 to reach 0, then 9 more)."
   },
   {
     "id": "geo-weather-073",
@@ -4149,15 +4085,15 @@
     "topic": "weather",
     "difficulty": 5,
     "type": "multiple-choice",
-    "question": "Two thermometers read 0\u00b0C and -5\u00b0C. Which statement is correct?",
+    "question": "Two thermometers read 0°C and -5°C. Which statement is correct?",
     "options": [
-      "-5\u00b0C is colder than 0\u00b0C",
-      "0\u00b0C is colder than -5\u00b0C",
+      "-5°C is colder than 0°C",
+      "0°C is colder than -5°C",
       "They are the same temperature",
-      "-5\u00b0C is warmer than 5\u00b0C"
+      "-5°C is warmer than 5°C"
     ],
-    "answer": "-5\u00b0C is colder than 0\u00b0C",
-    "explanation": "Temperatures below zero are colder, so -5\u00b0C is colder than 0\u00b0C."
+    "answer": "-5°C is colder than 0°C",
+    "explanation": "Temperatures below zero are colder, so -5°C is colder than 0°C."
   },
   {
     "id": "geo-weather-075",
@@ -4181,7 +4117,7 @@
     "topic": "weather",
     "difficulty": 5,
     "type": "multiple-choice",
-    "question": "Emilia reads that average July temperature in Ireland is about 15\u00b0C and in a desert it is about 40\u00b0C. The best conclusion is:",
+    "question": "Emilia reads that average July temperature in Ireland is about 15°C and in a desert it is about 40°C. The best conclusion is:",
     "options": [
       "Ireland's summer is much milder than a desert's",
       "Ireland is hotter than the desert",
@@ -4189,7 +4125,7 @@
       "The desert is freezing"
     ],
     "answer": "Ireland's summer is much milder than a desert's",
-    "explanation": "15\u00b0C is far cooler than 40\u00b0C, showing Ireland's summers are much milder than a desert's."
+    "explanation": "15°C is far cooler than 40°C, showing Ireland's summers are much milder than a desert's."
   },
   {
     "id": "geo-weather-079",
@@ -4621,7 +4557,7 @@
       "5km"
     ],
     "answer": "6km",
-    "explanation": "Each centimetre stands for 2km, so 3cm means 3 \u00d7 2 = 6 kilometres."
+    "explanation": "Each centimetre stands for 2km, so 3cm means 3 × 2 = 6 kilometres."
   },
   {
     "id": "geo-maps-031",
@@ -4893,7 +4829,7 @@
       "5km"
     ],
     "answer": "30km",
-    "explanation": "Each centimetre is 5km, so 6cm means 6 \u00d7 5 = 30 kilometres."
+    "explanation": "Each centimetre is 5km, so 6cm means 6 × 5 = 30 kilometres."
   },
   {
     "id": "geo-maps-053",
@@ -5037,7 +4973,7 @@
       "50m"
     ],
     "answer": "500m",
-    "explanation": "Each centimetre is 100m, so 5cm means 5 \u00d7 100 = 500 metres."
+    "explanation": "Each centimetre is 100m, so 5cm means 5 × 100 = 500 metres."
   },
   {
     "id": "geo-maps-070",
@@ -5069,7 +5005,7 @@
       "8km"
     ],
     "answer": "20km",
-    "explanation": "The route is 5cm in total, and 5 \u00d7 4km equals 20 kilometres."
+    "explanation": "The route is 5cm in total, and 5 × 4km equals 20 kilometres."
   },
   {
     "id": "geo-maps-072",
@@ -5149,7 +5085,7 @@
       "1250m"
     ],
     "answer": "2000m",
-    "explanation": "8cm at 250m per centimetre is 8 \u00d7 250 = 2000 metres."
+    "explanation": "8cm at 250m per centimetre is 8 × 250 = 2000 metres."
   },
   {
     "id": "geo-maps-078",
@@ -5901,7 +5837,7 @@
       "110 sheets"
     ],
     "answer": "1000 sheets",
-    "explanation": "Saving 100 sheets each week for 10 weeks gives 100 \u00d7 10 = 1000 sheets."
+    "explanation": "Saving 100 sheets each week for 10 weeks gives 100 × 10 = 1000 sheets."
   },
   {
     "id": "geo-environment-058",
@@ -5997,7 +5933,7 @@
       "240 bottles"
     ],
     "answer": "120 bottles",
-    "explanation": "Saving 30 bottles a week for 4 weeks gives 30 \u00d7 4 = 120 bottles saved."
+    "explanation": "Saving 30 bottles a week for 4 weeks gives 30 × 4 = 120 bottles saved."
   },
   {
     "id": "geo-environment-071",
