@@ -42,7 +42,7 @@ const SKATE = {
 
 const SPEECH_BUBBLES = {
   idle:        ["Ready for your quest, brave explorer! 🗺️", "Let's learn something amazing today! ⭐", "Ancient Ireland is waiting for you! ☘️"],
-  happy:       ["Brilliant! You're amazing! 🌟", "Fantastic work! The druids would be proud! 📜", "YES! That's exactly right! 🎉"],
+  happy:       ["Hi! I'm Emilia — join the quest with me! 🌟", "Hello! Let's learn and have fun together! ☘️", "Hey there! Come on the quest with me! 🎉"],
   thinking:    ["Hmm, take your time... 🤔", "Think carefully, you know this! 💭", "Use what you know... you've got this! 🧠"],
   wrong:       ["Don't worry — even heroes make mistakes! 💪", "Good try! Let's learn from this one! 📚", "Almost! You're getting there! 🌱"],
   celebrate:   ["INCREDIBLE!!! You're a legend! 👑", "WOOHOO! You're on FIRE! 🔥", "THE CROWD GOES WILD! 🎊"],

@@ -30,8 +30,8 @@ export default function LandingPage() {
         </span>
       </div>
 
-      {/* Emilia — background matches page so checkerboard PNG edges are hidden */}
-      <div style={{ margin: '16px 0', background: '#0d1f0b', borderRadius: '50%', padding: 8 }}>
+      {/* Emilia */}
+      <div style={{ margin: '16px 0' }}>
         <EmiliaCharacter mood="happy" size="lg" showBubble animate />
       </div>
 
