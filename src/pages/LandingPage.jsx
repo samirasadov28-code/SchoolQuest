@@ -30,8 +30,8 @@ export default function LandingPage() {
         </span>
       </div>
 
-      {/* Emilia */}
-      <div style={{ margin: '16px 0' }}>
+      {/* Emilia — background matches page so checkerboard PNG edges are hidden */}
+      <div style={{ margin: '16px 0', background: '#0d1f0b', borderRadius: '50%', padding: 8 }}>
         <EmiliaCharacter mood="happy" size="lg" showBubble animate />
       </div>
 
@@ -69,18 +69,19 @@ export default function LandingPage() {
       </div>
 
       {/* Footer */}
-      <div style={{ textAlign: 'center', marginTop: 'auto', paddingTop: 16 }}>
+      <div style={{ textAlign: 'center', marginTop: 'auto', paddingTop: 16, display: 'flex', flexDirection: 'column', gap: 8, alignItems: 'center' }}>
         <button
           onClick={handleForceUpdate}
-          style={{ background: 'none', border: 'none', color: 'var(--color-stone-light)', fontSize: '0.72rem', cursor: 'pointer', textDecoration: 'underline', marginBottom: 10, opacity: 0.6 }}>
+          style={{ background: 'none', border: 'none', color: 'var(--color-stone-light)', fontSize: '0.72rem', cursor: 'pointer', textDecoration: 'underline', opacity: 0.6 }}>
           🔄 Force update app
         </button>
-        <div style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', opacity: 0.5 }}>
-          <a href="https://asadov-stack.netlify.app" target="_blank" rel="noopener noreferrer"
-            style={{ color: 'var(--color-gold)', textDecoration: 'none', opacity: 0.7, fontWeight: 700 }}>
-            🛠️ More apps by Asadov Stack
-          </a>
-        </div>
+        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.68rem', opacity: 0.45, margin: 0 }}>
+          v{APP_VERSION} · Built {new Date(__BUILD_DATE__).toLocaleDateString('en-IE', { day: 'numeric', month: 'short', year: 'numeric' })}
+        </p>
+        <a href="https://asadov-stack.netlify.app" target="_blank" rel="noopener noreferrer"
+          style={{ color: 'var(--color-gold)', textDecoration: 'none', opacity: 0.7, fontWeight: 700, fontSize: '0.72rem' }}>
+          🛠️ More apps by Asadov Stack
+        </a>
       </div>
     </div>
   )
