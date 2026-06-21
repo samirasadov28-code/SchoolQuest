@@ -4,7 +4,7 @@ import useStore from '../stores/useStore'
 import { QUESTION_BANK } from '../data/questions/index'
 import { pickNextQuestion, updateMastery, shouldTriggerLearnMode, formatTime, XP_PER_CORRECT, SUBJECTS } from '../services/adaptive'
 import { upsertProgress, logSession, grantAchievement } from '../services/supabase'
-import { generateExplanation } from '../services/groq'
+import { getExplanation as generateExplanation } from '../services/groq'
 import { checkBadges, getSubjectAverages, countMasteredSubjects } from '../services/gamification'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 
