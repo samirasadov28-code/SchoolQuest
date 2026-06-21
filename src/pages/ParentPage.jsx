@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
-import { SUBJECTS, DAILY_GOAL_SECONDS, formatTime } from '../services/adaptive'
+import { SUBJECTS, DAILY_GOAL_SECONDS, formatTime, INITIAL_MASTERY } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
 import { addPrize, confirmPrize, getPrizes } from '../services/supabase'
 
@@ -23,6 +23,8 @@ export default function ParentPage() {
   const [newPrizeXP,     setNewPrizeXP]     = useState(500)
   const [addingPrize,    setAddingPrize]    = useState(false)
   const [savingPrize,    setSavingPrize]    = useState(false)
+  const [expandedSubject, setExpandedSubject] = useState(null)
+  const [progressView,   setProgressView]   = useState('absolute') // 'absolute' | 'delta'
 
   const subjectAvgs = getSubjectAverages(masteryMap)
   const claimedPrizes = prizes.filter(p => p.status === 'claimed')
@@ -94,18 +96,71 @@ export default function ParentPage() {
 
       {/* Subject breakdown */}
       <section style={{ marginBottom: 24 }}>
-        <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800, marginBottom: 12 }}>📊 Subject Progress</h2>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+          <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800 }}>📊 Subject Progress</h2>
+          <div style={{ display: 'flex', gap: 6 }}>
+            {[{ key: 'absolute', label: '0–100%' }, { key: 'delta', label: 'Progress' }].map(v => (
+              <button key={v.key} onClick={() => setProgressView(v.key)}
+                style={{ fontSize: '0.7rem', padding: '4px 10px', borderRadius: 20, border: '1px solid rgba(255,255,255,0.2)', background: progressView === v.key ? 'var(--color-gold)' : 'transparent', color: progressView === v.key ? '#1a1a00' : 'var(--color-stone-light)', cursor: 'pointer', fontWeight: 700 }}>
+                {v.label}
+              </button>
+            ))}
+          </div>
+        </div>
+        {progressView === 'delta' && (
+          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 10, opacity: 0.8 }}>
+            Shows improvement from 50% starting point. Green = growing, red = needs work.
+          </p>
+        )}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
           {SUBJECTS.map(subj => {
-            const score = Math.round(subjectAvgs[subj.id] ?? 0)
+            const score  = Math.round(subjectAvgs[subj.id] ?? INITIAL_MASTERY[subj.id] ?? 50)
+            const delta  = score - 50
+            const isDelta = progressView === 'delta'
+            const display = isDelta ? Math.abs(delta) : score
+            const barPct  = isDelta ? Math.min(100, Math.abs(delta) * 2) : score
+            const barColor = isDelta
+              ? (delta >= 0 ? 'var(--color-emerald)' : 'var(--color-crimson)')
+              : (score >= 70 ? 'var(--color-emerald)' : score >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)')
+            const topicsInSubject = masteryMap[subj.id] ? Object.entries(masteryMap[subj.id]).filter(([k]) => k !== '_overall') : []
+            const isExpanded = expandedSubject === subj.id
             return (
-              <div key={subj.id} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                <span style={{ width: 24, textAlign: 'center' }}>{subj.emoji}</span>
-                <span style={{ flex: 1, color: 'var(--color-parchment)', fontSize: '0.85rem', fontWeight: 600 }}>{subj.label}</span>
-                <div style={{ width: 100, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 8 }}>
-                  <div style={{ width: `${score}%`, height: '100%', background: score >= 70 ? 'var(--color-emerald)' : score >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)', borderRadius: 20 }} />
+              <div key={subj.id}>
+                <div onClick={() => setExpandedSubject(isExpanded ? null : subj.id)}
+                  style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', padding: '8px 0' }}>
+                  <span style={{ width: 22, textAlign: 'center', fontSize: '0.9rem' }}>{subj.emoji}</span>
+                  <span style={{ flex: 1, color: 'var(--color-parchment)', fontSize: '0.83rem', fontWeight: 600 }}>{subj.label}</span>
+                  <div style={{ width: 90, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 7 }}>
+                    <div style={{ width: `${barPct}%`, height: '100%', background: barColor, borderRadius: 20, transition: 'width 0.4s' }} />
+                  </div>
+                  <span style={{ width: 42, color: barColor, fontSize: '0.78rem', textAlign: 'right', fontWeight: 800 }}>
+                    {isDelta ? (delta >= 0 ? `+${delta}` : delta) : `${score}%`}
+                  </span>
+                  <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem' }}>{isExpanded ? '▲' : '▼'}</span>
                 </div>
-                <span style={{ width: 36, color: 'var(--color-parchment)', fontSize: '0.8rem', textAlign: 'right', fontWeight: 700 }}>{score}%</span>
+                {isExpanded && topicsInSubject.length > 0 && (
+                  <div style={{ marginLeft: 32, marginBottom: 8, background: 'rgba(0,0,0,0.2)', borderRadius: 10, padding: '10px 12px', display: 'flex', flexDirection: 'column', gap: 7 }}>
+                    {topicsInSubject.sort((a, b) => a[1] - b[1]).map(([topic, topicScore]) => {
+                      const ts = Math.round(topicScore)
+                      const td = ts - 50
+                      const tDisplay = isDelta ? (td >= 0 ? `+${td}` : `${td}`) : `${ts}%`
+                      const tColor   = isDelta ? (td >= 0 ? 'var(--color-emerald)' : 'var(--color-crimson)') : (ts >= 70 ? 'var(--color-emerald)' : ts >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)')
+                      const tBar     = isDelta ? Math.min(100, Math.abs(td) * 2) : ts
+                      return (
+                        <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                          <span style={{ flex: 1, color: 'var(--color-stone-light)', fontSize: '0.75rem', textTransform: 'capitalize' }}>{topic.replace(/-/g, ' ')}</span>
+                          <div style={{ width: 70, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 5 }}>
+                            <div style={{ width: `${tBar}%`, height: '100%', background: tColor, borderRadius: 20 }} />
+                          </div>
+                          <span style={{ width: 34, color: tColor, fontSize: '0.72rem', fontWeight: 800, textAlign: 'right' }}>{tDisplay}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
+                {isExpanded && topicsInSubject.length === 0 && (
+                  <p style={{ marginLeft: 32, color: 'var(--color-stone-light)', fontSize: '0.75rem', marginBottom: 8 }}>No topic data yet — keep practising!</p>
+                )}
               </div>
             )
           })}

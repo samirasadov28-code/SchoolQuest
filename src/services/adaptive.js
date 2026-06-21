@@ -30,19 +30,18 @@ export const MASTERY_CAP     = 100
 export const LEARN_MODE_THRESHOLD = 40   // trigger Learn Mode if mastery < 40 AND 2 wrong in row
 export const MASTERED_THRESHOLD   = 85   // badge eligible
 
-// Starting mastery weights based on Emilia's report card
-// Lower = will be selected more often at start
+// Neutral starting point for any child — adaptive engine learns from answers
 export const INITIAL_MASTERY = {
-  english:   30,  // all 3s — needs most work
-  irish:     30,  // all 3s
-  maths:     60,  // all 4s — strong
-  history:   50,  // 4s
-  geography: 50,  // 4s
-  science:   50,  // 4s
-  genknow:   40,  // world explorer
-  sphe:      35,  // 3
-  ethics:    35,  // 3
-  coding:    25,  // new subject — start low so it appears early
+  english:   50,
+  irish:     50,
+  maths:     50,
+  history:   50,
+  geography: 50,
+  science:   50,
+  genknow:   50,
+  sphe:      50,
+  ethics:    50,
+  coding:    50,
 }
 
 /**

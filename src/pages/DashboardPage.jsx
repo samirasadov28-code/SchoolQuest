@@ -171,8 +171,8 @@ export default function DashboardPage() {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
           <EmiliaCharacter mood="idle" size="md" showBubble />
-          {activePet && (
-            <div style={{ textAlign: 'center', cursor: 'pointer' }} onClick={() => navigate('/pets')}>
+          <div style={{ textAlign: 'center', cursor: 'pointer' }} onClick={() => navigate('/pets')}>
+            {activePet ? (
               <PetCompanion
                 speciesId={activePet.id}
                 stage={getPetStage(activePet.petXp, activePet.id)}
@@ -181,8 +181,13 @@ export default function DashboardPage() {
                 size="sm"
                 showBubble={false}
               />
-            </div>
-          )}
+            ) : (
+              <div style={{ background: 'rgba(201,162,39,0.1)', border: '2px dashed rgba(201,162,39,0.4)', borderRadius: 16, padding: '10px 14px' }}>
+                <div style={{ fontSize: '2rem' }}>🐾</div>
+                <p style={{ color: 'var(--color-gold)', fontSize: '0.7rem', fontWeight: 700, marginTop: 4 }}>Get a pet!</p>
+              </div>
+            )}
+          </div>
         </div>
         <button className="btn-primary" style={{ fontSize: '1.2rem', padding: '16px 48px', width: '100%' }} onClick={() => navigate('/session')}>
           ⚔️ Start Today's Quest!

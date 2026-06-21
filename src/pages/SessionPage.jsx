@@ -56,9 +56,11 @@ export default function SessionPage() {
   const [reviewQLeft,     setReviewQLeft]     = useState(0)      // review questions remaining
   const phaseRef = useRef({ phase: 'drill', drillTopic: null, topicQCount: 0, newTopicCount: 0, reviewQLeft: 0 })
 
-  const timerRef    = useRef(null)
-  const qTimerRef   = useRef(null)
-  const sessionStartRef = useRef(Date.now())
+  const timerRef       = useRef(null)
+  const qTimerRef      = useRef(null)
+  const sessionStartRef   = useRef(Date.now())
+  const questionStartRef  = useRef(Date.now())
+  const [lastAnswerMs, setLastAnswerMs] = useState(null)
 
   // Load first question
   useEffect(() => {
@@ -114,11 +116,14 @@ export default function SessionPage() {
     setLearnMode(false)
     setLearnText('')
     setFeedbackMsg('')
+    questionStartRef.current = Date.now()
   }
 
   async function handleAnswer(choice) {
     if (revealed) return
     clearInterval(qTimerRef.current)
+    const msElapsed = Date.now() - questionStartRef.current
+    setLastAnswerMs(msElapsed)
 
     const isCorrect = choice === question.answer
     setSelected(choice)
@@ -296,6 +301,14 @@ export default function SessionPage() {
         <EmiliaCharacter mood={revealed ? (selected === question.answer ? 'happy' : emiliaMood) : 'thinking'} size="md" showBubble={!revealed} />
       </div>
 
+      {/* Reading passage (shown above question for passage-type questions) */}
+      {question.type === 'reading-passage' && question.passage && (
+        <div style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 'var(--radius-md)', padding: '16px 18px', marginBottom: 12 }}>
+          <p style={{ color: 'var(--color-gold)', fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>📖 Read this passage</p>
+          <p style={{ color: 'var(--color-parchment)', fontSize: '0.95rem', lineHeight: 1.7 }}>{question.passage}</p>
+        </div>
+      )}
+
       {/* Question card */}
       <div className="celtic-border" style={{ background: 'rgba(0,0,0,0.35)', borderRadius: 'var(--radius-lg)', padding: 24, marginBottom: 16 }}>
         <p style={{ color: 'var(--color-parchment)', fontSize: '1.1rem', fontWeight: 700, lineHeight: 1.5, textAlign: 'center', marginBottom: 20 }}>
@@ -330,9 +343,16 @@ export default function SessionPage() {
         <div>
           {/* Correct/wrong feedback */}
           <div style={{ background: selected === question.answer ? 'rgba(39,174,96,0.15)' : 'rgba(192,57,43,0.15)', border: `1px solid ${selected === question.answer ? 'var(--color-emerald)' : 'var(--color-crimson)'}`, borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 12 }}>
-            <p style={{ fontWeight: 800, color: selected === question.answer ? '#5dde8b' : '#ff8a8a', marginBottom: 4 }}>
-              {selected === question.answer ? `⭐ Brilliant! +${XP_PER_CORRECT[question.difficulty] ?? 10} XP` : '💪 Not quite — but you\'re learning!'}
-            </p>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+              <p style={{ fontWeight: 800, color: selected === question.answer ? '#5dde8b' : '#ff8a8a' }}>
+                {selected === question.answer ? `⭐ Brilliant! +${XP_PER_CORRECT[question.difficulty] ?? 10} XP` : '💪 Not quite — but you\'re learning!'}
+              </p>
+              {lastAnswerMs != null && (
+                <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem', opacity: 0.6 }}>
+                  ⏱ {(lastAnswerMs / 1000).toFixed(1)}s
+                </span>
+              )}
+            </div>
             <p style={{ color: 'var(--color-parchment)', fontSize: '0.9rem', lineHeight: 1.5 }}>
               {question.explanation}
             </p>

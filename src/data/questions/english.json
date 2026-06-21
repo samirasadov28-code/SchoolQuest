@@ -14253,5 +14253,124 @@
     ],
     "answer": "At the beach, Emilia, Liam and Saoirse built a sandcastle.",
     "explanation": "A comma follows the opening phrase, and commas separate the names with \"and\" before the last."
+  },
+  {
+    "id": "eng-reading-passage-001a",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "Finn was a boy who loved exploring the forest near his house. One autumn morning, he found a small fox cub sitting alone under an oak tree. The cub had a hurt paw and could not walk. Finn carefully picked it up and carried it home. His mother helped him clean the wound and wrap it in a soft bandage. Every day, Finn fed the cub and kept it warm. After two weeks, the cub was strong enough to run. Finn brought it back to the forest and watched it disappear into the trees.",
+    "question": "Why did Finn bring the fox cub home?",
+    "options": [
+      "He wanted to keep it as a pet",
+      "The cub was hurt and could not walk",
+      "His mother asked him to find a fox",
+      "The cub was lost in the forest"
+    ],
+    "answer": "The cub was hurt and could not walk",
+    "explanation": "The passage tells us the cub had a hurt paw and could not walk, so Finn carefully carried it home to help it recover."
+  },
+  {
+    "id": "eng-reading-passage-001b",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "Finn was a boy who loved exploring the forest near his house. One autumn morning, he found a small fox cub sitting alone under an oak tree. The cub had a hurt paw and could not walk. Finn carefully picked it up and carried it home. His mother helped him clean the wound and wrap it in a soft bandage. Every day, Finn fed the cub and kept it warm. After two weeks, the cub was strong enough to run. Finn brought it back to the forest and watched it disappear into the trees.",
+    "question": "How long did it take for the fox cub to recover?",
+    "options": [
+      "One day",
+      "One week",
+      "Two weeks",
+      "Two months"
+    ],
+    "answer": "Two weeks",
+    "explanation": "The passage says \"after two weeks, the cub was strong enough to run.\""
+  },
+  {
+    "id": "eng-reading-passage-001c",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "reading-passage",
+    "passage": "Finn was a boy who loved exploring the forest near his house. One autumn morning, he found a small fox cub sitting alone under an oak tree. The cub had a hurt paw and could not walk. Finn carefully picked it up and carried it home. His mother helped him clean the wound and wrap it in a soft bandage. Every day, Finn fed the cub and kept it warm. After two weeks, the cub was strong enough to run. Finn brought it back to the forest and watched it disappear into the trees.",
+    "question": "What word best describes Finn as a person?",
+    "options": [
+      "Selfish",
+      "Caring",
+      "Fearful",
+      "Clumsy"
+    ],
+    "answer": "Caring",
+    "explanation": "Finn rescues the cub, cares for it every day, and returns it to the wild when it is better — all signs of a caring, kind character."
+  },
+  {
+    "id": "eng-reading-passage-002a",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "The island of Ireland is famous for its green fields and rainy weather. Ireland lies on the western edge of Europe, in the Atlantic Ocean. The island has four provinces: Leinster, Munster, Connacht and Ulster. The River Shannon is the longest river in Ireland and flows through the middle of the country. Ireland is also called the Emerald Isle because of how green it looks from above.",
+    "question": "Why is Ireland called the Emerald Isle?",
+    "options": [
+      "Because it has lots of emerald gemstones",
+      "Because it looks very green from above",
+      "Because it is surrounded by emerald water",
+      "Because its flag is green"
+    ],
+    "answer": "Because it looks very green from above",
+    "explanation": "The passage tells us Ireland is called the Emerald Isle \"because of how green it looks from above.\""
+  },
+  {
+    "id": "eng-reading-passage-002b",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "The island of Ireland is famous for its green fields and rainy weather. Ireland lies on the western edge of Europe, in the Atlantic Ocean. The island has four provinces: Leinster, Munster, Connacht and Ulster. The River Shannon is the longest river in Ireland and flows through the middle of the country. Ireland is also called the Emerald Isle because of how green it looks from above.",
+    "question": "How many provinces does Ireland have?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "answer": "Four",
+    "explanation": "The passage lists four provinces: Leinster, Munster, Connacht and Ulster."
+  },
+  {
+    "id": "eng-reading-passage-003a",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "reading-passage",
+    "passage": "Maya could not sleep. The wind was howling outside her window like a pack of wolves. She pulled her duvet up to her chin and tried to count sheep, but her mind kept jumping to the strange noise she had heard from the attic earlier. A creak. Then silence. Then another creak. She told herself it was just the old house settling, but her heart was thumping too fast for that excuse to work.",
+    "question": "What technique does the author use in the phrase \"wind was howling like a pack of wolves\"?",
+    "options": [
+      "Alliteration",
+      "Rhyme",
+      "Simile",
+      "Personification"
+    ],
+    "answer": "Simile",
+    "explanation": "A simile compares two things using \"like\" or \"as\". Here the wind is compared to howling wolves using the word \"like\"."
+  },
+  {
+    "id": "eng-reading-passage-003b",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "Maya could not sleep. The wind was howling outside her window like a pack of wolves. She pulled her duvet up to her chin and tried to count sheep, but her mind kept jumping to the strange noise she had heard from the attic earlier. A creak. Then silence. Then another creak. She told herself it was just the old house settling, but her heart was thumping too fast for that excuse to work.",
+    "question": "How did Maya feel at the end of the passage?",
+    "options": [
+      "Calm and sleepy",
+      "Excited and happy",
+      "Scared and anxious",
+      "Angry and frustrated"
+    ],
+    "answer": "Scared and anxious",
+    "explanation": "Maya's heart was \"thumping too fast\" and she could not convince herself the noise was normal — clear signs she was scared."
   }
 ]
