@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore, { xpForLevel, xpForNextLevel } from '../stores/useStore'
-import { getProgress, getAchievements, getPrizes } from '../services/supabase'
+import { getProgress, getAchievements, getPrizes, signOut } from '../services/supabase'
 import { SUBJECTS } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
 import { getUnlockedPrizes, getNextPrize } from '../data/prizes'
@@ -83,6 +83,10 @@ export default function DashboardPage() {
           <button onClick={() => setShowParentPIN(true)} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '6px 12px', color: 'var(--color-parchment)', fontSize: '0.8rem', cursor: 'pointer' }}>
             👨‍👩‍👧 Parent
           </button>
+          {/* Sign out */}
+          <button onClick={async () => { await signOut(); navigate('/') }} style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 8, padding: '6px 10px', color: 'var(--color-stone-light)', fontSize: '0.8rem', cursor: 'pointer' }}>
+            🚪
+          </button>
         </div>
       </div>
 
@@ -138,9 +142,12 @@ export default function DashboardPage() {
       )}
 
       {/* Subject mastery grid */}
-      <h3 style={{ color: 'var(--color-gold-light)', fontFamily: 'var(--font-title)', fontSize: '0.95rem', marginBottom: 12 }}>
+      <h3 style={{ color: 'var(--color-gold-light)', fontFamily: 'var(--font-title)', fontSize: '0.95rem', marginBottom: 4 }}>
         Your Subjects
       </h3>
+      <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 12, opacity: 0.7 }}>
+        % = mastery score — how well you know that subject. Grows as you answer questions!
+      </p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 24 }}>
         {SUBJECTS.map(subj => {
           const score = Math.round(subjectAvgs[subj.id] ?? 0)

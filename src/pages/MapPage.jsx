@@ -42,7 +42,7 @@ export default function MapPage() {
               <span style={{ fontSize: '2.2rem' }}>{unlocked ? region.emoji : '🔒'}</span>
               <div style={{ flex: 1 }}>
                 <p style={{ fontWeight: 800, color: unlocked ? 'var(--color-gold)' : 'var(--color-parchment)', marginBottom: 4 }}>
-                  {unlocked ? region.name : `??? (${region.unlockAt}% mastery needed)`}
+                  {unlocked ? region.name : `🔒 Locked — reach ${region.unlockAt}% in ${region.subject}`}
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                   <div style={{ flex: 1, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 6 }}>
