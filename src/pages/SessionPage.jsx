@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
 import { QUESTION_BANK } from '../data/questions/index'
-import { pickNextQuestion, updateMastery, shouldTriggerLearnMode, formatTime, XP_PER_CORRECT, SUBJECTS } from '../services/adaptive'
+import { pickNextQuestion, updateMastery, shouldTriggerLearnMode, formatTime, XP_PER_CORRECT, SUBJECTS, DRILL_QUESTIONS_PER_TOPIC, TOPICS_BEFORE_REVIEW, REVIEW_QUESTIONS } from '../services/adaptive'
 import { upsertProgress, logSession, grantAchievement } from '../services/supabase'
 import { getExplanation as generateExplanation } from '../services/groq'
 import { checkBadges, getSubjectAverages, countMasteredSubjects } from '../services/gamification'
@@ -48,6 +48,14 @@ export default function SessionPage() {
   const [sessionDone,  setSessionDone] = useState(false)
   const [feedbackMsg,  setFeedbackMsg] = useState('')
 
+  // Session phase state
+  const [phase,           setPhase]           = useState('drill')
+  const [drillTopic,      setDrillTopic]      = useState(null)   // { subject, topic }
+  const [topicQCount,     setTopicQCount]     = useState(0)      // Qs shown on current drill topic
+  const [newTopicCount,   setNewTopicCount]   = useState(0)      // new topics drilled since last review
+  const [reviewQLeft,     setReviewQLeft]     = useState(0)      // review questions remaining
+  const phaseRef = useRef({ phase: 'drill', drillTopic: null, topicQCount: 0, newTopicCount: 0, reviewQLeft: 0 })
+
   const timerRef    = useRef(null)
   const qTimerRef   = useRef(null)
   const sessionStartRef = useRef(Date.now())
@@ -79,8 +87,26 @@ export default function SessionPage() {
     return () => clearInterval(qTimerRef.current)
   }, [question])
 
-  function loadNextQuestion() {
-    const q = pickNextQuestion(allQuestions, masteryMap, sessionSeenIds, sessionSubjects)
+  function loadNextQuestion(ctx) {
+    const p = ctx ?? phaseRef.current
+    const q = pickNextQuestion(allQuestions, masteryMap, sessionSeenIds, sessionSubjects, p)
+
+    // If we just started a brand-new drill topic, record it
+    if (p.phase === 'drill') {
+      const isNewTopic = !p.drillTopic || q.subject !== p.drillTopic.subject || q.topic !== p.drillTopic.topic
+      if (isNewTopic) {
+        const newDrillTopic = { subject: q.subject, topic: q.topic }
+        const newTopicQCount = 1
+        phaseRef.current = { ...phaseRef.current, drillTopic: newDrillTopic, topicQCount: newTopicQCount }
+        setDrillTopic(newDrillTopic)
+        setTopicQCount(newTopicQCount)
+      } else {
+        const newTopicQCount = p.topicQCount + 1
+        phaseRef.current = { ...phaseRef.current, topicQCount: newTopicQCount }
+        setTopicQCount(newTopicQCount)
+      }
+    }
+
     setQuestion(q)
     setSelected(null)
     setRevealed(false)
@@ -171,7 +197,41 @@ export default function SessionPage() {
 
   function handleNext() {
     if (learnMode && !learnText && loadingLearn) return // wait
-    loadNextQuestion()
+
+    const p = phaseRef.current
+    let nextCtx
+
+    if (p.phase === 'drill') {
+      if (p.topicQCount >= DRILL_QUESTIONS_PER_TOPIC) {
+        // Topic drill complete
+        const newCount = p.newTopicCount + 1
+        if (newCount >= TOPICS_BEFORE_REVIEW) {
+          // Switch to review
+          nextCtx = { phase: 'review', drillTopic: null, topicQCount: 0, newTopicCount: 0, reviewQLeft: REVIEW_QUESTIONS }
+          setPhase('review'); setDrillTopic(null); setTopicQCount(0); setNewTopicCount(0); setReviewQLeft(REVIEW_QUESTIONS)
+        } else {
+          // Next new topic
+          nextCtx = { phase: 'drill', drillTopic: null, topicQCount: 0, newTopicCount: newCount, reviewQLeft: 0 }
+          setDrillTopic(null); setTopicQCount(0); setNewTopicCount(newCount)
+        }
+      } else {
+        nextCtx = p // continue same topic
+      }
+    } else {
+      // Review phase
+      const left = p.reviewQLeft - 1
+      if (left <= 0) {
+        // Review done — back to drill
+        nextCtx = { phase: 'drill', drillTopic: null, topicQCount: 0, newTopicCount: 0, reviewQLeft: 0 }
+        setPhase('drill'); setDrillTopic(null); setTopicQCount(0); setNewTopicCount(0); setReviewQLeft(0)
+      } else {
+        nextCtx = { ...p, reviewQLeft: left }
+        setReviewQLeft(left)
+      }
+    }
+
+    phaseRef.current = nextCtx
+    loadNextQuestion(nextCtx)
   }
 
   async function handleEndSession() {
@@ -216,11 +276,19 @@ export default function SessionPage() {
         </svg>
       </div>
 
-      {/* Subject badge */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 16 }}>
+      {/* Subject badge + phase indicator */}
+      <div style={{ display: 'flex', justifyContent: 'center', gap: 8, marginBottom: 16, flexWrap: 'wrap' }}>
         <span className="subject-pill" style={{ background: subj?.color + '30', color: subj?.color, border: `1px solid ${subj?.color}50` }}>
           {subj?.emoji} {subj?.label}
         </span>
+        {phase === 'review'
+          ? <span className="subject-pill" style={{ background: 'rgba(201,162,39,0.2)', color: 'var(--color-gold)', border: '1px solid var(--color-gold)' }}>
+              ⚡ Review — {reviewQLeft} left
+            </span>
+          : drillTopic && <span className="subject-pill" style={{ background: 'rgba(74,144,217,0.15)', color: '#7ec8e3', border: '1px solid #7ec8e360' }}>
+              📖 Topic drill {topicQCount}/{DRILL_QUESTIONS_PER_TOPIC}
+            </span>
+        }
       </div>
 
       {/* Emilia */}

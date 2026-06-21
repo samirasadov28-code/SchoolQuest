@@ -19,6 +19,11 @@ export const SUBJECTS = [
 
 // XP awarded per correct answer (scales with difficulty)
 export const XP_PER_CORRECT = { 1: 5, 2: 10, 3: 15, 4: 20, 5: 25 }
+
+// Session phase constants
+export const DRILL_QUESTIONS_PER_TOPIC = 3  // questions per new topic in drill mode
+export const TOPICS_BEFORE_REVIEW      = 5  // new topics before a review session kicks in
+export const REVIEW_QUESTIONS          = 10 // questions in each adaptive review session
 export const MASTERY_DELTA   = { correct: +10, incorrect: -5 }
 export const MASTERY_FLOOR   = 0
 export const MASTERY_CAP     = 100
@@ -48,29 +53,49 @@ export const INITIAL_MASTERY = {
  * @param {string[]} sessionSubjects - subjects covered this session
  * @returns Question object
  */
-export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects) {
+/**
+ * Pick the next question based on the current session phase.
+ *
+ * ctx shape:
+ *   phase: 'drill' | 'review'
+ *   drillTopic: { subject, topic } | null   — current topic being drilled
+ *
+ * Drill mode  — 3 Qs per new topic, then review after every 5 new topics.
+ * Review mode — pure adaptive weighted pick (weakest topics get more questions).
+ */
+export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects, ctx = {}) {
+  const { phase = 'drill', drillTopic = null } = ctx
   const unseenBank = questionBank.filter(q => !seenIds.includes(q.id))
   if (unseenBank.length === 0) return questionBank[Math.floor(Math.random() * questionBank.length)]
 
-  // If any subject hasn't appeared this session yet and session > 5 questions, force it
-  const missedSubjects = SUBJECTS
-    .map(s => s.id)
-    .filter(sid => !sessionSubjects.includes(sid))
+  // REVIEW phase — pure adaptive
+  if (phase === 'review') return _weightedPick(unseenBank, masteryMap)
 
-  if (missedSubjects.length > 0 && sessionSubjects.length >= 5) {
-    const forced = unseenBank.filter(q => missedSubjects.includes(q.subject))
-    if (forced.length > 0) return forced[Math.floor(Math.random() * forced.length)]
+  // DRILL phase — continue current topic if set
+  if (drillTopic) {
+    const qs = unseenBank.filter(q => q.subject === drillTopic.subject && q.topic === drillTopic.topic)
+    if (qs.length > 0) return qs[Math.floor(Math.random() * qs.length)]
+    // Ran out of unseen Qs on this topic → fall through to fresh topic
   }
 
-  // Weight each question by (100 - mastery) for its topic
-  const weighted = unseenBank.map(q => {
-    const topicScore = masteryMap[q.subject]?.[q.topic] ?? INITIAL_MASTERY[q.subject] ?? 50
-    const weight     = Math.max(1, 100 - topicScore)
-    return { q, weight }
-  })
+  // DRILL phase — pick a brand-new topic (not yet seen this session at all)
+  const seenTopicKeys = new Set(
+    questionBank.filter(q => seenIds.includes(q.id)).map(q => `${q.subject}::${q.topic}`)
+  )
+  const freshTopicQs = unseenBank.filter(q => !seenTopicKeys.has(`${q.subject}::${q.topic}`))
+  if (freshTopicQs.length > 0) return freshTopicQs[Math.floor(Math.random() * freshTopicQs.length)]
 
-  const totalWeight = weighted.reduce((sum, w) => sum + w.weight, 0)
-  let rand = Math.random() * totalWeight
+  // All topics seen — fall back to adaptive
+  return _weightedPick(unseenBank, masteryMap)
+}
+
+function _weightedPick(unseenBank, masteryMap) {
+  const weighted = unseenBank.map(q => ({
+    q,
+    weight: Math.max(1, 100 - (masteryMap[q.subject]?.[q.topic] ?? INITIAL_MASTERY[q.subject] ?? 50)),
+  }))
+  const total = weighted.reduce((s, w) => s + w.weight, 0)
+  let rand = Math.random() * total
   for (const { q, weight } of weighted) {
     rand -= weight
     if (rand <= 0) return q
