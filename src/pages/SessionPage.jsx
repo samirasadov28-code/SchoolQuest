@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
 import { QUESTION_BANK } from '../data/questions/index'
@@ -9,12 +9,13 @@ import { checkBadges, getSubjectAverages, countMasteredSubjects } from '../servi
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import { getTopicIntro } from '../data/topicIntros'
 
-const QUESTION_TIMER = 30 // seconds per question
+function getTimerForQuestion(q) { return q?.type === 'reading-passage' ? 90 : 60 }
 
 export default function SessionPage() {
   const navigate    = useNavigate()
   const user        = useStore(s => s.user)
   const masteryMap  = useStore(s => s.masteryMap)
+  const level       = useStore(s => s.level)
   const sessionSeenIds    = useStore(s => s.sessionSeenIds)
   const sessionSubjects   = useStore(s => s.sessionSubjects)
   const consecutiveWrong  = useStore(s => s.consecutiveWrong)
@@ -31,38 +32,52 @@ export default function SessionPage() {
   const sessionXP         = useStore(s => s.sessionXP)
   const generatedQuestions= useStore(s => s.generatedQuestions)
   const feedActivePet     = useStore(s => s.feedActivePet)
+  const prizes            = useStore(s => s.prizes)
 
   const allQuestions = [...QUESTION_BANK, ...generatedQuestions]
 
   // Mode selection — shown before session starts
   const [sessionMode, setSessionMode] = useState(null) // null | 'quest' | 'explore'
+  const sessionModeRef = useRef(null)
 
   // Component state
   const [question,        setQuestion]       = useState(null)
   const [shuffledOptions, setShuffledOptions] = useState([])
-  const [selected,     setSelected]    = useState(null)  // chosen option
-  const [revealed,     setRevealed]    = useState(false) // answer shown
+  const [selected,     setSelected]    = useState(null)
+  const [revealed,     setRevealed]    = useState(false)
   const [emiliaMood,   setEmiliaMood]  = useState('thinking')
   const [learnMode,    setLearnMode]   = useState(false)
   const [learnText,    setLearnText]   = useState('')
   const [loadingLearn, setLoadingLearn]= useState(false)
-  const [questionTimer,setQuestionTimer]= useState(QUESTION_TIMER)
+  const [questionTimer,setQuestionTimer]= useState(60)
   const [sessionSecs,  setSessionSecs] = useState(0)
   const [correctStreak,setCorrectStreak]= useState(0)
   const [newBadges,    setNewBadges]   = useState([])
-  const [sessionDone,  setSessionDone] = useState(false)
   const [feedbackMsg,  setFeedbackMsg] = useState('')
+  const [lastXpGain,   setLastXpGain]  = useState(0)
+
+  // End session screen
+  const [showEndScreen,         setShowEndScreen]         = useState(false)
+  const [sessionPrizesUnlocked, setSessionPrizesUnlocked] = useState([])
+  const sessionStartXP = useRef(0)
+
+  // Review phase banner
+  const [showReviewBanner, setShowReviewBanner] = useState(false)
+
+  // Topic intro (explore mode)
+  const [showTopicIntro, setShowTopicIntro] = useState(false)
+  const [introTopic,     setIntroTopic]     = useState(null)
 
   // Session phase state
-  const [phase,           setPhase]           = useState('drill')
-  const [drillTopic,      setDrillTopic]      = useState(null)   // { subject, topic }
-  const [topicQCount,     setTopicQCount]     = useState(0)      // Qs shown on current drill topic
-  const [newTopicCount,   setNewTopicCount]   = useState(0)      // new topics drilled since last review
-  const [reviewQLeft,     setReviewQLeft]     = useState(0)      // review questions remaining
+  const [phase,         setPhase]         = useState('drill')
+  const [drillTopic,    setDrillTopic]    = useState(null)
+  const [topicQCount,   setTopicQCount]   = useState(0)
+  const [newTopicCount, setNewTopicCount] = useState(0)
+  const [reviewQLeft,   setReviewQLeft]   = useState(0)
   const phaseRef = useRef({ phase: 'drill', drillTopic: null, topicQCount: 0, newTopicCount: 0, reviewQLeft: 0 })
 
-  const timerRef       = useRef(null)
-  const qTimerRef      = useRef(null)
+  const timerRef          = useRef(null)
+  const qTimerRef         = useRef(null)
   const sessionStartRef   = useRef(Date.now())
   const questionStartRef  = useRef(Date.now())
   const [lastAnswerMs, setLastAnswerMs] = useState(null)
@@ -70,7 +85,9 @@ export default function SessionPage() {
   // Load first question once mode is chosen
   useEffect(() => {
     if (!sessionMode) return
+    sessionModeRef.current = sessionMode
     clearSession()
+    sessionStartXP.current = useStore.getState().xp
     loadNextQuestion()
     timerRef.current = setInterval(() => setSessionSecs(s => s + 1), 1000)
     return () => { clearInterval(timerRef.current); clearInterval(qTimerRef.current) }
@@ -79,16 +96,13 @@ export default function SessionPage() {
   // Question countdown timer
   useEffect(() => {
     if (!question || revealed) return
-    setQuestionTimer(QUESTION_TIMER)
+    const t = getTimerForQuestion(question)
+    setQuestionTimer(t)
     clearInterval(qTimerRef.current)
     qTimerRef.current = setInterval(() => {
-      setQuestionTimer(t => {
-        if (t <= 1) {
-          clearInterval(qTimerRef.current)
-          handleAnswer(null) // time's up = wrong
-          return 0
-        }
-        return t - 1
+      setQuestionTimer(prev => {
+        if (prev <= 1) { clearInterval(qTimerRef.current); handleAnswer(null); return 0 }
+        return prev - 1
       })
     }, 1000)
     return () => clearInterval(qTimerRef.current)
@@ -96,9 +110,8 @@ export default function SessionPage() {
 
   function loadNextQuestion(ctx) {
     const p = ctx ?? phaseRef.current
-    const q = pickNextQuestion(allQuestions, masteryMap, sessionSeenIds, sessionSubjects, p)
+    const q = pickNextQuestion(allQuestions, masteryMap, sessionSeenIds, sessionSubjects, p, level)
 
-    // If we just started a brand-new drill topic, record it
     if (p.phase === 'drill') {
       const isNewTopic = !p.drillTopic || q.subject !== p.drillTopic.subject || q.topic !== p.drillTopic.topic
       if (isNewTopic) {
@@ -107,6 +120,12 @@ export default function SessionPage() {
         phaseRef.current = { ...phaseRef.current, drillTopic: newDrillTopic, topicQCount: newTopicQCount }
         setDrillTopic(newDrillTopic)
         setTopicQCount(newTopicQCount)
+
+        // Show fullscreen intro in explore mode
+        if (sessionModeRef.current === 'explore') {
+          setShowTopicIntro(true)
+          setIntroTopic({ subject: q.subject, topic: q.topic })
+        }
       } else {
         const newTopicQCount = p.topicQCount + 1
         phaseRef.current = { ...phaseRef.current, topicQCount: newTopicQCount }
@@ -135,17 +154,31 @@ export default function SessionPage() {
     setSelected(choice)
     setRevealed(true)
 
-    // Update mastery
+    // Timing multiplier
+    const secs = msElapsed / 1000
+    const timeLimit = getTimerForQuestion(question)
+    let timeMult = 1
+    if (secs < timeLimit * 0.25) timeMult = 1.5
+    else if (secs < timeLimit * 0.5) timeMult = 1.2
+    else if (secs > timeLimit * 0.75) timeMult = 0.75
+
+    // Wrong streak multiplier
+    const wrongStreakMult = consecutiveWrong >= 4 ? 0.4 : consecutiveWrong >= 2 ? 0.7 : 1
+
+    // XP
+    const xpGain = isCorrect ? Math.round((XP_PER_CORRECT[question.difficulty] ?? 10) * timeMult * wrongStreakMult) : 0
+    setLastXpGain(xpGain)
+
+    // Mastery delta based on timing
     const currentScore = masteryMap[question.subject]?.[question.topic] ?? 50
-    const newScore     = updateMastery(currentScore, isCorrect)
+    const masteryDelta = isCorrect ? (secs < timeLimit * 0.5 ? 12 : 8) : -5
+    const newScore = Math.max(0, Math.min(100, currentScore + masteryDelta))
     updateMasteryMap(question.subject, question.topic, newScore)
 
     if (user) {
-      upsertProgress(user.id, question.subject, question.topic, isCorrect ? 10 : -5).catch(() => {})
+      upsertProgress(user.id, question.subject, question.topic, masteryDelta).catch(() => {})
     }
 
-    // XP
-    const xpGain = isCorrect ? (XP_PER_CORRECT[question.difficulty] ?? 10) : 0
     if (xpGain > 0) {
       addSessionXP(xpGain)
       const result = addXP(xpGain)
@@ -167,7 +200,6 @@ export default function SessionPage() {
       setEmiliaMood(consecutiveWrong + 1 >= 2 ? 'frustrated' : 'wrong')
       addSeenQuestion(question.id, question.subject)
 
-      // Learn mode?
       if (shouldTriggerLearnMode(newScore, consecutiveWrong + 1)) {
         setLearnMode(true)
         setLoadingLearn(true)
@@ -207,32 +239,29 @@ export default function SessionPage() {
   }
 
   function handleNext() {
-    if (learnMode && !learnText && loadingLearn) return // wait
+    if (learnMode && !learnText && loadingLearn) return
 
     const p = phaseRef.current
     let nextCtx
 
     if (p.phase === 'drill') {
       if (p.topicQCount >= DRILL_QUESTIONS_PER_TOPIC) {
-        // Topic drill complete
         const newCount = p.newTopicCount + 1
         if (newCount >= TOPICS_BEFORE_REVIEW) {
-          // Switch to review
           nextCtx = { phase: 'review', drillTopic: null, topicQCount: 0, newTopicCount: 0, reviewQLeft: REVIEW_QUESTIONS }
           setPhase('review'); setDrillTopic(null); setTopicQCount(0); setNewTopicCount(0); setReviewQLeft(REVIEW_QUESTIONS)
+          setShowReviewBanner(true)
+          setTimeout(() => setShowReviewBanner(false), 3000)
         } else {
-          // Next new topic
           nextCtx = { phase: 'drill', drillTopic: null, topicQCount: 0, newTopicCount: newCount, reviewQLeft: 0 }
           setDrillTopic(null); setTopicQCount(0); setNewTopicCount(newCount)
         }
       } else {
-        nextCtx = p // continue same topic
+        nextCtx = p
       }
     } else {
-      // Review phase
       const left = p.reviewQLeft - 1
       if (left <= 0) {
-        // Review done — back to drill
         nextCtx = { phase: 'drill', drillTopic: null, topicQCount: 0, newTopicCount: 0, reviewQLeft: 0 }
         setPhase('drill'); setDrillTopic(null); setTopicQCount(0); setNewTopicCount(0); setReviewQLeft(0)
       } else {
@@ -251,7 +280,14 @@ export default function SessionPage() {
     if (user) {
       logSession(user.id, elapsed, sessionXP, [...new Set(sessionSubjects)]).catch(() => {})
     }
-    navigate('/home')
+    const currentXP = useStore.getState().xp
+    const unlocked = prizes.filter(p =>
+      p.status === 'active' &&
+      p.xp_threshold > sessionStartXP.current &&
+      p.xp_threshold <= currentXP
+    )
+    setSessionPrizesUnlocked(unlocked)
+    setShowEndScreen(true)
   }
 
   // Mode picker screen
@@ -283,14 +319,79 @@ export default function SessionPage() {
     </div>
   )
 
+  // End session screen
+  if (showEndScreen) return (
+    <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '32px 24px', gap: 20, textAlign: 'center' }}>
+      <EmiliaCharacter mood="celebrate" size="lg" showBubble={false} />
+      <div>
+        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.6rem', marginBottom: 8 }}>Quest Complete! 🎉</h1>
+        <p style={{ color: 'var(--color-parchment)', fontSize: '1rem' }}>You earned <strong style={{ color: 'var(--color-gold)' }}>⚡ {sessionXP} XP</strong> this session!</p>
+      </div>
+      {newBadges.length > 0 && (
+        <div style={{ background: 'rgba(201,162,39,0.15)', border: '2px solid var(--color-gold)', borderRadius: 16, padding: '14px 20px', width: '100%' }}>
+          <p style={{ color: 'var(--color-gold)', fontWeight: 800, marginBottom: 6 }}>🏅 New Badges!</p>
+          <p style={{ color: 'var(--color-parchment)' }}>{newBadges.join(', ')}</p>
+        </div>
+      )}
+      {sessionPrizesUnlocked.length > 0 && (
+        <div style={{ background: 'rgba(39,174,96,0.15)', border: '2px solid var(--color-emerald)', borderRadius: 16, padding: '14px 20px', width: '100%' }}>
+          <p style={{ color: '#5dde8b', fontWeight: 800, marginBottom: 6 }}>🎁 Prize{sessionPrizesUnlocked.length > 1 ? 's' : ''} Unlocked!</p>
+          {sessionPrizesUnlocked.map(p => (
+            <p key={p.id} style={{ color: 'var(--color-parchment)', fontSize: '0.9rem' }}>✅ {p.title}</p>
+          ))}
+          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.78rem', marginTop: 6 }}>Show this to Mum or Dad! 🌟</p>
+        </div>
+      )}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10, width: '100%', maxWidth: 300 }}>
+        <button className="btn-primary" style={{ padding: '14px' }} onClick={() => navigate('/rewards')}>
+          🏆 See All Rewards
+        </button>
+        <button className="btn-secondary" style={{ padding: '14px' }} onClick={() => navigate('/home')}>
+          🏠 Home
+        </button>
+      </div>
+    </div>
+  )
+
+  // Topic intro screen (explore mode)
+  if (showTopicIntro && introTopic) return (
+    <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '40px 24px', gap: 20 }}>
+      <div style={{ textAlign: 'center' }}>
+        <EmiliaCharacter mood="happy" size="md" showBubble={false} />
+      </div>
+      <div style={{ background: 'rgba(201,162,39,0.1)', border: '2px solid var(--color-gold)', borderRadius: 20, padding: 24 }}>
+        <p style={{ color: 'var(--color-gold)', fontWeight: 800, textTransform: 'uppercase', fontSize: '0.75rem', marginBottom: 8 }}>
+          📖 New Topic in {SUBJECTS.find(s=>s.id===introTopic.subject)?.label}
+        </p>
+        <h2 style={{ color: 'var(--color-parchment)', fontFamily: 'var(--font-title)', fontSize: '1.4rem', marginBottom: 16, textTransform: 'capitalize' }}>
+          {introTopic.topic.replace(/-/g, ' ')}
+        </h2>
+        <p style={{ color: 'var(--color-parchment)', lineHeight: 1.7, fontSize: '1rem' }}>
+          {getTopicIntro(introTopic.subject, introTopic.topic)}
+        </p>
+      </div>
+      <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => setShowTopicIntro(false)}>
+        Let's Begin! ⚔️
+      </button>
+    </div>
+  )
+
   if (!question) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-gold)' }}>Loading quest...</div>
 
   const subj = SUBJECTS.find(s => s.id === question.subject)
-  const timerPct = questionTimer / QUESTION_TIMER
+  const maxTimer = question ? getTimerForQuestion(question) : 60
+  const timerPct = questionTimer / maxTimer
   const timerColor = timerPct > 0.5 ? 'var(--color-emerald)' : timerPct > 0.25 ? 'var(--color-gold)' : 'var(--color-crimson)'
 
   return (
     <div className="bg-mythic" style={{ minHeight: '100vh', padding: '16px 16px 32px', maxWidth: 600, margin: '0 auto' }}>
+      {/* Review banner */}
+      {showReviewBanner && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 200, background: 'var(--color-gold)', color: '#1a1a00', padding: '14px 20px', textAlign: 'center', fontWeight: 800, fontSize: '1.1rem', animation: 'slideDown 0.3s ease' }}>
+          ⚡ Review Time! Let's test what you've learned!
+        </div>
+      )}
+
       {/* Top bar */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
         <button onClick={handleEndSession} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '0.9rem' }}>← End session</button>
@@ -336,19 +437,7 @@ export default function SessionPage() {
         <EmiliaCharacter mood={revealed ? (selected === question.answer ? 'happy' : emiliaMood) : 'thinking'} size="md" showBubble={!revealed} />
       </div>
 
-      {/* Explore mode: show topic intro when a brand-new drill topic starts */}
-      {sessionMode === 'explore' && drillTopic && topicQCount === 1 && !revealed && (
-        <div style={{ background: 'rgba(201,162,39,0.1)', border: '2px solid rgba(201,162,39,0.35)', borderRadius: 'var(--radius-md)', padding: '14px 16px', marginBottom: 12 }}>
-          <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.8rem', marginBottom: 4 }}>
-            🌟 New topic: {drillTopic.topic.replace(/-/g, ' ')}
-          </p>
-          <p style={{ color: 'var(--color-parchment)', fontSize: '0.85rem', lineHeight: 1.6 }}>
-            {getTopicIntro(drillTopic.subject, drillTopic.topic)}
-          </p>
-        </div>
-      )}
-
-      {/* Reading passage (shown above question for passage-type questions) */}
+      {/* Reading passage */}
       {question.type === 'reading-passage' && question.passage && (
         <div style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 'var(--radius-md)', padding: '16px 18px', marginBottom: 12 }}>
           <p style={{ color: 'var(--color-gold)', fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>📖 Read this passage</p>
@@ -388,11 +477,10 @@ export default function SessionPage() {
       {/* Feedback / explanation after answer */}
       {revealed && (
         <div>
-          {/* Correct/wrong feedback */}
           <div style={{ background: selected === question.answer ? 'rgba(39,174,96,0.15)' : 'rgba(192,57,43,0.15)', border: `1px solid ${selected === question.answer ? 'var(--color-emerald)' : 'var(--color-crimson)'}`, borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 12 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
               <p style={{ fontWeight: 800, color: selected === question.answer ? '#5dde8b' : '#ff8a8a' }}>
-                {selected === question.answer ? `⭐ Brilliant! +${XP_PER_CORRECT[question.difficulty] ?? 10} XP` : '💪 Not quite — but you\'re learning!'}
+                {selected === question.answer ? `⭐ Brilliant! +${lastXpGain} XP` : '💪 Not quite — but you\'re learning!'}
               </p>
               {lastAnswerMs != null && (
                 <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem', opacity: 0.6 }}>
@@ -405,14 +493,12 @@ export default function SessionPage() {
             </p>
           </div>
 
-          {/* Level up message */}
           {feedbackMsg && (
             <div style={{ background: 'rgba(201,162,39,0.2)', border: '2px solid var(--color-gold)', borderRadius: 'var(--radius-md)', padding: '10px 16px', marginBottom: 12, textAlign: 'center', color: 'var(--color-gold)', fontWeight: 800 }}>
               {feedbackMsg}
             </div>
           )}
 
-          {/* Learn mode */}
           {learnMode && (
             <div style={{ background: 'rgba(74,144,217,0.1)', border: '2px solid var(--color-sky)', borderRadius: 'var(--radius-md)', padding: '14px 16px', marginBottom: 12 }}>
               <p style={{ color: 'var(--color-sky-light)', fontWeight: 800, marginBottom: 8 }}>📚 Learn Mode — Let's understand this together!</p>
@@ -423,7 +509,6 @@ export default function SessionPage() {
             </div>
           )}
 
-          {/* New badges */}
           {newBadges.length > 0 && (
             <div style={{ background: 'rgba(201,162,39,0.15)', border: '2px solid var(--color-gold)', borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 12, textAlign: 'center' }}>
               <p style={{ color: 'var(--color-gold)', fontWeight: 800 }}>🏆 New badge{newBadges.length > 1 ? 's' : ''} unlocked!</p>

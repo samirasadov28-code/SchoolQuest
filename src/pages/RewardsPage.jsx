@@ -12,7 +12,9 @@ export default function RewardsPage() {
   const xp           = useStore(s => s.xp)
   const achievements = useStore(s => s.achievements)
   const prizes       = useStore(s => s.prizes)
-  const [activeTab,  setActiveTab] = useState(0)
+  const [activeTab,      setActiveTab]      = useState(0)
+  const [expandedBadge,  setExpandedBadge]  = useState(null)
+  const [expandedPrize,  setExpandedPrize]  = useState(null)
 
   const activePrizes   = prizes.filter(p => p.status === 'active')
   const unlockedParent = prizes.filter(p => ['unlocked','claimed','confirmed'].includes(p.status))
@@ -44,7 +46,7 @@ export default function RewardsPage() {
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginBottom: 14 }}>
             🦄 Collect all 6 magical unicorn scenes — {DIGITAL_PRIZES.filter(p => xp >= p.xpRequired).length}/{DIGITAL_PRIZES.length} unlocked!
           </p>
-          <PrizeGrid prizes={DIGITAL_PRIZES} xp={xp} />
+          <PrizeGrid prizes={DIGITAL_PRIZES} xp={xp} onExpand={setExpandedPrize} />
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 28 }}>
             <EmiliaCharacter mood="celebrate" size="sm" showBubble={false} />
           </div>
@@ -57,7 +59,7 @@ export default function RewardsPage() {
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginBottom: 14 }}>
             🛼 Emilia on wheels — {SKATE_PRIZES.filter(p => xp >= p.xpRequired).length}/{SKATE_PRIZES.length} skate scenes unlocked!
           </p>
-          <PrizeGrid prizes={SKATE_PRIZES} xp={xp} />
+          <PrizeGrid prizes={SKATE_PRIZES} xp={xp} onExpand={setExpandedPrize} />
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 28 }}>
             <EmiliaCharacter mood="skating" size="sm" showBubble={false} skateMode />
           </div>
@@ -68,18 +70,18 @@ export default function RewardsPage() {
       {activeTab === 2 && (
         <section>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginBottom: 14 }}>
-            🏅 {achievements.length}/{BADGES.length} badges earned
+            🏅 {achievements.length}/{BADGES.length} badges earned — tap to see details!
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8 }}>
             {BADGES.map(badge => {
               const earned = achievements.includes(badge.id)
               return (
-                <div key={badge.id} style={{ background: earned ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.2)', borderRadius: 'var(--radius-md)', padding: '14px 10px', textAlign: 'center', border: `2px solid ${earned ? RARITY_COLORS[badge.rarity] : 'rgba(255,255,255,0.06)'}`, opacity: earned ? 1 : 0.45 }}>
-                  <div style={{ fontSize: '2rem', marginBottom: 6 }}>{earned ? badge.icon : '🔒'}</div>
-                  <p style={{ color: earned ? RARITY_COLORS[badge.rarity] : 'var(--color-stone-light)', fontWeight: 800, fontSize: '0.7rem', lineHeight: 1.3 }}>
+                <div key={badge.id} onClick={() => setExpandedBadge(earned ? badge : null)}
+                  style={{ background: earned ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.2)', borderRadius: 12, padding: '10px 6px', textAlign: 'center', border: `2px solid ${earned ? RARITY_COLORS[badge.rarity] : 'rgba(255,255,255,0.06)'}`, opacity: earned ? 1 : 0.45, cursor: earned ? 'pointer' : 'default' }}>
+                  <div style={{ fontSize: '1.5rem', marginBottom: 4 }}>{earned ? badge.icon : '🔒'}</div>
+                  <p style={{ color: earned ? RARITY_COLORS[badge.rarity] : 'var(--color-stone-light)', fontWeight: 800, fontSize: '0.6rem', lineHeight: 1.3 }}>
                     {badge.name}
                   </p>
-                  {earned && <p style={{ color: 'var(--color-stone-light)', fontSize: '0.65rem', marginTop: 3 }}>{badge.description}</p>}
                 </div>
               )
             })}
@@ -126,27 +128,52 @@ export default function RewardsPage() {
           )}
         </section>
       )}
+
+      {/* Badge expanded modal */}
+      {expandedBadge && (
+        <div onClick={() => setExpandedBadge(null)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 300, padding: 24 }}>
+          <div onClick={e => e.stopPropagation()} style={{ background: 'var(--color-forest-dark)', border: `2px solid ${RARITY_COLORS[expandedBadge.rarity]}`, borderRadius: 24, padding: 32, maxWidth: 320, width: '100%', textAlign: 'center' }}>
+            <div style={{ fontSize: '4rem', marginBottom: 16 }}>{expandedBadge.icon}</div>
+            <h2 style={{ color: RARITY_COLORS[expandedBadge.rarity], fontFamily: 'var(--font-title)', marginBottom: 8 }}>{expandedBadge.name}</h2>
+            <p style={{ color: 'var(--color-parchment)', lineHeight: 1.6, marginBottom: 16 }}>{expandedBadge.description}</p>
+            <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{RARITY_LABEL[expandedBadge.rarity]}</p>
+            <button onClick={() => setExpandedBadge(null)} style={{ marginTop: 20, padding: '10px 24px', borderRadius: 12, border: 'none', background: 'var(--color-gold)', color: '#1a1a00', fontWeight: 800, cursor: 'pointer' }}>Close</button>
+          </div>
+        </div>
+      )}
+
+      {/* Prize expanded modal */}
+      {expandedPrize && (
+        <div onClick={() => setExpandedPrize(null)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.92)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', zIndex: 300, padding: 24 }}>
+          <img src={expandedPrize.image} alt={expandedPrize.name} style={{ maxWidth: '90vw', maxHeight: '70vh', objectFit: 'contain', borderRadius: 16, marginBottom: 20 }} />
+          <h2 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginBottom: 8, textAlign: 'center' }}>{expandedPrize.name}</h2>
+          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.85rem', marginBottom: 20 }}>{RARITY_LABEL[expandedPrize.rarity]}</p>
+          <button onClick={() => setExpandedPrize(null)} style={{ padding: '12px 28px', borderRadius: 12, border: 'none', background: 'var(--color-gold)', color: '#1a1a00', fontWeight: 800, cursor: 'pointer', fontSize: '0.95rem' }}>Close ✕</button>
+        </div>
+      )}
     </div>
   )
 }
 
-function PrizeGrid({ prizes, xp }) {
+function PrizeGrid({ prizes, xp, onExpand }) {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
       {prizes.map(prize => {
         const unlocked = xp >= prize.xpRequired
         return (
-          <div key={prize.id} style={{ borderRadius: 'var(--radius-md)', overflow: 'hidden', border: unlocked ? '2px solid var(--color-gold)' : '2px solid rgba(255,255,255,0.1)', boxShadow: unlocked ? RARITY_GLOW[prize.rarity] : 'none', position: 'relative' }}>
+          <div key={prize.id}
+            onClick={() => unlocked && onExpand && onExpand(prize)}
+            style={{ borderRadius: 'var(--radius-md)', overflow: 'hidden', border: unlocked ? '2px solid var(--color-gold)' : '2px solid rgba(255,255,255,0.1)', boxShadow: unlocked ? RARITY_GLOW[prize.rarity] : 'none', position: 'relative', cursor: unlocked ? 'pointer' : 'default' }}>
             <img
               src={prize.image}
               alt={prize.name}
               style={{ width: '100%', aspectRatio: '1', objectFit: 'cover', filter: unlocked ? 'none' : 'brightness(0.2) blur(4px)' }}
             />
-            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(transparent, rgba(0,0,0,0.88))', padding: '20px 10px 10px' }}>
-              <p style={{ color: unlocked ? 'var(--color-gold)' : 'var(--color-stone-light)', fontWeight: 800, fontSize: '0.78rem' }}>
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(transparent, rgba(0,0,0,0.88))', padding: '12px 8px 8px' }}>
+              <p style={{ color: unlocked ? 'var(--color-gold)' : 'var(--color-stone-light)', fontWeight: 800, fontSize: '0.68rem' }}>
                 {unlocked ? prize.name : `🔒 ${prize.xpRequired} XP`}
               </p>
-              {unlocked && <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.68rem' }}>{RARITY_LABEL[prize.rarity]}</p>}
+              {unlocked && <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.6rem' }}>{RARITY_LABEL[prize.rarity]}</p>}
             </div>
           </div>
         )

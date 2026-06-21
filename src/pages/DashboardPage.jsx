@@ -170,7 +170,9 @@ export default function DashboardPage() {
       {/* Emilia + Pet + Start button */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
-          <EmiliaCharacter mood="idle" size="md" showBubble />
+          <div style={{ cursor: 'pointer' }} onClick={() => navigate('/rewards')}>
+            <EmiliaCharacter mood="idle" size="md" showBubble />
+          </div>
           <div style={{ textAlign: 'center', cursor: 'pointer' }} onClick={() => navigate('/pets')}>
             {activePet ? (
               <PetCompanion

@@ -4,6 +4,7 @@ import useStore from '../stores/useStore'
 import { SUBJECTS, DAILY_GOAL_SECONDS, formatTime, INITIAL_MASTERY } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
 import { addPrize, confirmPrize, getPrizes } from '../services/supabase'
+import { QUESTION_BANK } from '../data/questions/index'
 
 export default function ParentPage() {
   const navigate      = useNavigate()
@@ -25,6 +26,8 @@ export default function ParentPage() {
   const [savingPrize,    setSavingPrize]    = useState(false)
   const [expandedSubject, setExpandedSubject] = useState(null)
   const [progressView,   setProgressView]   = useState('absolute') // 'absolute' | 'delta'
+  const [suggestions,    setSuggestions]    = useState([])
+  const [loadingSugg,    setLoadingSugg]    = useState(false)
 
   const subjectAvgs = getSubjectAverages(masteryMap)
   const claimedPrizes = prizes.filter(p => p.status === 'claimed')
@@ -58,12 +61,36 @@ export default function ParentPage() {
 
   function handleExit() {
     setParentMode(false)
-    navigate('/rewards')
+    navigate('/home')
+  }
+
+  async function handleGetSuggestions() {
+    setLoadingSugg(true)
+    try {
+      const res = await fetch('/.netlify/functions/groq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          messages: [{
+            role: 'user',
+            content: `Generate 5 creative, fun prize ideas suitable for an 8-year-old girl who loves learning. These are real-world rewards a parent gives for educational achievement. Format: JSON array of short strings under 6 words each. Examples: "Movie night pick", "Ice cream adventure". Return ONLY the JSON array.`
+          }],
+          max_tokens: 150,
+          temperature: 0.9
+        })
+      })
+      const data = await res.json()
+      const m = data.content?.match(/\[[\s\S]*\]/)
+      setSuggestions(m ? JSON.parse(m[0]) : ['Movie night pick', 'Ice cream trip', 'New book choice', 'Swimming pool day', 'Stay up late night'])
+    } catch {
+      setSuggestions(['Movie night pick', 'Ice cream trip', 'New book choice', 'Swimming pool day', 'Stay up late night'])
+    } finally {
+      setLoadingSugg(false)
+    }
   }
 
   const name = profile?.name ?? 'Your child'
   const weakest = SUBJECTS.filter(s => (subjectAvgs[s.id] ?? 0) < 50)
-  const strongest = SUBJECTS.filter(s => (subjectAvgs[s.id] ?? 0) >= 70)
 
   return (
     <div className="bg-mythic" style={{ minHeight: '100vh', padding: '16px 16px 60px' }}>
@@ -109,7 +136,7 @@ export default function ParentPage() {
         </div>
         {progressView === 'delta' && (
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 10, opacity: 0.8 }}>
-            Shows improvement from 50% starting point. Green = growing, red = needs work.
+            Shows improvement from 50% starting point. Green = growing, grey = not yet started.
           </p>
         )}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -117,12 +144,16 @@ export default function ParentPage() {
             const score  = Math.round(subjectAvgs[subj.id] ?? INITIAL_MASTERY[subj.id] ?? 50)
             const delta  = score - 50
             const isDelta = progressView === 'delta'
-            const display = isDelta ? Math.abs(delta) : score
-            const barPct  = isDelta ? Math.min(100, Math.abs(delta) * 2) : score
+            const display = isDelta ? Math.max(0, delta) : score
+            const barPct  = isDelta ? Math.min(100, Math.max(0, delta) * 2) : score
             const barColor = isDelta
-              ? (delta >= 0 ? 'var(--color-emerald)' : 'var(--color-crimson)')
+              ? (delta >= 0 ? 'var(--color-emerald)' : 'rgba(255,255,255,0.2)')
               : (score >= 70 ? 'var(--color-emerald)' : score >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)')
-            const topicsInSubject = masteryMap[subj.id] ? Object.entries(masteryMap[subj.id]).filter(([k]) => k !== '_overall') : []
+
+            // Show ALL topics from question bank, not just practiced ones
+            const allTopics = [...new Set(QUESTION_BANK.filter(q => q.subject === subj.id).map(q => q.topic))].sort()
+            const topicsWithScore = allTopics.map(topic => [topic, masteryMap[subj.id]?.[topic] ?? 50])
+
             const isExpanded = expandedSubject === subj.id
             return (
               <div key={subj.id}>
@@ -134,18 +165,18 @@ export default function ParentPage() {
                     <div style={{ width: `${barPct}%`, height: '100%', background: barColor, borderRadius: 20, transition: 'width 0.4s' }} />
                   </div>
                   <span style={{ width: 42, color: barColor, fontSize: '0.78rem', textAlign: 'right', fontWeight: 800 }}>
-                    {isDelta ? (delta >= 0 ? `+${delta}` : delta) : `${score}%`}
+                    {isDelta ? (delta >= 0 ? `+${delta}` : '0') : `${score}%`}
                   </span>
                   <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem' }}>{isExpanded ? '▲' : '▼'}</span>
                 </div>
-                {isExpanded && topicsInSubject.length > 0 && (
+                {isExpanded && (
                   <div style={{ marginLeft: 32, marginBottom: 8, background: 'rgba(0,0,0,0.2)', borderRadius: 10, padding: '10px 12px', display: 'flex', flexDirection: 'column', gap: 7 }}>
-                    {topicsInSubject.sort((a, b) => a[1] - b[1]).map(([topic, topicScore]) => {
+                    {topicsWithScore.sort((a, b) => a[1] - b[1]).map(([topic, topicScore]) => {
                       const ts = Math.round(topicScore)
-                      const td = ts - 50
-                      const tDisplay = isDelta ? (td >= 0 ? `+${td}` : `${td}`) : `${ts}%`
-                      const tColor   = isDelta ? (td >= 0 ? 'var(--color-emerald)' : 'var(--color-crimson)') : (ts >= 70 ? 'var(--color-emerald)' : ts >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)')
-                      const tBar     = isDelta ? Math.min(100, Math.abs(td) * 2) : ts
+                      const td = Math.max(0, ts - 50)
+                      const tDisplay = isDelta ? (td > 0 ? `+${td}` : '0') : `${ts}%`
+                      const tColor   = isDelta ? (td > 0 ? 'var(--color-emerald)' : 'rgba(255,255,255,0.3)') : (ts >= 70 ? 'var(--color-emerald)' : ts >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)')
+                      const tBar     = isDelta ? Math.min(100, td * 2) : ts
                       return (
                         <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                           <span style={{ flex: 1, color: 'var(--color-stone-light)', fontSize: '0.75rem', textTransform: 'capitalize' }}>{topic.replace(/-/g, ' ')}</span>
@@ -157,9 +188,6 @@ export default function ParentPage() {
                       )
                     })}
                   </div>
-                )}
-                {isExpanded && topicsInSubject.length === 0 && (
-                  <p style={{ marginLeft: 32, color: 'var(--color-stone-light)', fontSize: '0.75rem', marginBottom: 8 }}>No topic data yet — keep practising!</p>
                 )}
               </div>
             )
@@ -191,8 +219,20 @@ export default function ParentPage() {
               placeholder="e.g. Ice cream trip, New book..."
               value={newPrizeTitle}
               onChange={e => setNewPrizeTitle(e.target.value)}
-              style={{ ...inputStyle, marginBottom: 10 }}
+              style={{ ...inputStyle, marginBottom: 8 }}
             />
+            <div style={{ display: 'flex', gap: 8, marginBottom: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+              <button type="button" onClick={handleGetSuggestions} disabled={loadingSugg}
+                style={{ fontSize: '0.75rem', padding: '6px 12px', borderRadius: 20, border: '1px solid var(--color-gold)', background: 'transparent', color: 'var(--color-gold)', cursor: 'pointer', fontWeight: 700 }}>
+                {loadingSugg ? '...' : '💡 Get ideas'}
+              </button>
+              {suggestions.map((s, i) => (
+                <button key={i} type="button" onClick={() => setNewPrizeTitle(s)}
+                  style={{ fontSize: '0.72rem', padding: '5px 10px', borderRadius: 20, border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.07)', color: 'var(--color-parchment)', cursor: 'pointer' }}>
+                  {s}
+                </button>
+              ))}
+            </div>
             <label style={{ color: 'var(--color-parchment)', fontSize: '0.85rem', display: 'block', marginBottom: 6 }}>
               XP required: <strong style={{ color: 'var(--color-gold)' }}>{newPrizeXP} XP</strong>
             </label>

@@ -115,7 +115,7 @@ export default function EmiliaCharacter({ mood = 'idle', size = 'md', showBubble
         alt={`Emilia ${mood}`}
         width={px}
         height={px}
-        className={`animate-float ${bouncing ? 'animate-bounce-in' : ''}`}
+        className={`animate-float avatar-breathe ${bouncing ? 'animate-bounce-in' : ''}`}
         style={{ objectFit: 'contain' }}
       />
     </div>

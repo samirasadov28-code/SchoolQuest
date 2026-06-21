@@ -8,6 +8,7 @@ import NavBar from '../components/shared/NavBar'
 export default function PetHubPage() {
   const navigate       = useNavigate()
   const xp             = useStore(s => s.xp)
+  const level          = useStore(s => s.level)
   const masteryMap     = useStore(s => s.masteryMap)
   const achievements   = useStore(s => s.achievements)
   const pets           = useStore(s => s.pets)
@@ -34,17 +35,19 @@ export default function PetHubPage() {
   function isUnlocked(species) {
     const c = species.unlockCondition
     if (c.type === 'starter') return true
+    if (c.type === 'level') return level >= c.value
     if (c.type === 'mastery') return overallMastery >= c.value
-    if (c.type === 'xp')     return xp >= c.value
-    if (c.type === 'badge')  return achievements.includes(c.value)
+    if (c.type === 'xp') return xp >= c.value
+    if (c.type === 'badge') return achievements.includes(c.value)
     return false
   }
 
   function unlockHint(species) {
     const c = species.unlockCondition
+    if (c.type === 'level') return `Reach Level ${c.value}`
     if (c.type === 'mastery') return `Reach ${c.value}% overall mastery`
-    if (c.type === 'xp')     return `Earn ${c.value} XP`
-    if (c.type === 'badge')  return `Earn the ${c.value} badge`
+    if (c.type === 'xp') return `Earn ${c.value} XP`
+    if (c.type === 'badge') return `Earn the ${c.value} badge`
     return ''
   }
 
@@ -84,14 +87,24 @@ export default function PetHubPage() {
           <h2 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginBottom: 8 }}>Choose your companion!</h2>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.9rem', marginBottom: 24 }}>Pick a pet to join you on your learning quest!</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-            {PET_SPECIES.map(sp => (
-              <button key={sp.id} onClick={() => { setChoosing(true); setChosenId(sp.id); setNameInput(sp.defaultName) }}
-                style={{ background: 'rgba(255,255,255,0.07)', border: '2px solid var(--color-gold)', borderRadius: 16, padding: '16px 10px', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-                <img src={getArt(sp.id, 1, 'portrait')} alt={sp.name} style={{ width: 80, height: 80, objectFit: 'contain' }} />
-                <span style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.9rem' }}>{sp.emoji} {sp.name}</span>
-                <span style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem' }}>{sp.description}</span>
-              </button>
-            ))}
+            {PET_SPECIES.map(sp => {
+              const unlocked = isUnlocked(sp)
+              if (!unlocked) return (
+                <div key={sp.id} style={{ background: 'rgba(0,0,0,0.2)', border: '2px solid rgba(255,255,255,0.08)', borderRadius: 16, padding: '16px 10px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: 0.5 }}>
+                  <img src={getArt(sp.id, 1, 'portrait')} alt={sp.name} style={{ width: 80, height: 80, objectFit: 'contain', filter: 'grayscale(1) brightness(0.5)' }} />
+                  <span style={{ color: 'var(--color-stone-light)', fontWeight: 800, fontSize: '0.9rem' }}>{sp.emoji} {sp.name}</span>
+                  <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem' }}>🔒 {unlockHint(sp)}</span>
+                </div>
+              )
+              return (
+                <button key={sp.id} onClick={() => { setChoosing(true); setChosenId(sp.id); setNameInput(sp.defaultName) }}
+                  style={{ background: 'rgba(255,255,255,0.07)', border: '2px solid var(--color-gold)', borderRadius: 16, padding: '16px 10px', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
+                  <img src={getArt(sp.id, 1, 'portrait')} alt={sp.name} style={{ width: 80, height: 80, objectFit: 'contain' }} />
+                  <span style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.9rem' }}>{sp.emoji} {sp.name}</span>
+                  <span style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem' }}>{sp.description}</span>
+                </button>
+              )
+            })}
           </div>
         </div>
       )}
@@ -110,7 +123,7 @@ export default function PetHubPage() {
             />
             {nameError && <p style={{ color: 'var(--color-crimson)', fontSize: '0.8rem', marginBottom: 8 }}>{nameError}</p>}
             <div style={{ display: 'flex', gap: 10 }}>
-              <button onClick={() => { setChoosing(false); setNameError('') }} style={{ flex: 1, padding: '10px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'transparent', color: 'var(--color-stone-light)', cursor: 'pointer' }}>Cancel</button>
+              <button onClick={() => { setChoosing(false); setNameError('') }} style={{ flex: 1, padding: '10px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'rgba(255,255,255,0.07)', color: 'var(--color-stone-light)', cursor: 'pointer' }}>Cancel</button>
               <button onClick={handleAdopt} style={{ flex: 2, padding: '10px', borderRadius: 10, border: 'none', background: 'var(--color-gold)', color: '#1a1a00', fontWeight: 800, cursor: 'pointer', fontSize: '0.95rem' }}>
                 Adopt {nameInput || '...'}! 🐾
               </button>
@@ -128,7 +141,7 @@ export default function PetHubPage() {
               style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '2px solid var(--color-gold)', background: 'rgba(255,255,255,0.08)', color: 'var(--color-parchment)', fontSize: '1rem', textAlign: 'center', marginBottom: 8 }} />
             {nameError && <p style={{ color: 'var(--color-crimson)', fontSize: '0.8rem', marginBottom: 8 }}>{nameError}</p>}
             <div style={{ display: 'flex', gap: 10 }}>
-              <button onClick={() => { setRenaming(null); setNameError('') }} style={{ flex: 1, padding: '10px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'transparent', color: 'var(--color-stone-light)', cursor: 'pointer' }}>Cancel</button>
+              <button onClick={() => { setRenaming(null); setNameError('') }} style={{ flex: 1, padding: '10px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'rgba(255,255,255,0.07)', color: 'var(--color-stone-light)', cursor: 'pointer' }}>Cancel</button>
               <button onClick={handleRename} style={{ flex: 2, padding: '10px', borderRadius: 10, border: 'none', background: 'var(--color-gold)', color: '#1a1a00', fontWeight: 800, cursor: 'pointer' }}>Save 💛</button>
             </div>
           </div>
@@ -177,7 +190,7 @@ export default function PetHubPage() {
 
           <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginTop: 14 }}>
             <button onClick={() => { setRenaming(activePet.id); setRenameInput(activePet.name); setNameError('') }}
-              style={{ padding: '8px 16px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'transparent', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '0.8rem' }}>
+              style={{ padding: '8px 16px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'rgba(255,255,255,0.07)', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '0.8rem' }}>
               ✏️ Rename
             </button>
           </div>

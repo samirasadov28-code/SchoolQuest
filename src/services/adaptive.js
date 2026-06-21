@@ -3,6 +3,7 @@
  * Weights question selection inversely to mastery score.
  * Ensures curriculum coverage — every subject appears at least once per 3 sessions.
  */
+import { getTopicClass } from '../data/topicClasses'
 
 export const SUBJECTS = [
   { id: 'english',   label: 'English',           emoji: '📚', color: 'var(--subject-english)'  },
@@ -62,10 +63,16 @@ export const INITIAL_MASTERY = {
  * Drill mode  — 3 Qs per new topic, then review after every 5 new topics.
  * Review mode — pure adaptive weighted pick (weakest topics get more questions).
  */
-export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects, ctx = {}) {
+export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects, ctx = {}, level = 1) {
   const { phase = 'drill', drillTopic = null } = ctx
-  const unseenBank = questionBank.filter(q => !seenIds.includes(q.id))
-  if (unseenBank.length === 0) return questionBank[Math.floor(Math.random() * questionBank.length)]
+
+  // Filter by topic class — only class 2 topics until level 5
+  const classLimit = level < 5 ? 2 : 3
+  const classFilteredBank = questionBank.filter(q => getTopicClass(q.subject, q.topic) <= classLimit)
+  const effectiveBank = classFilteredBank.length > 0 ? classFilteredBank : questionBank
+
+  const unseenBank = effectiveBank.filter(q => !seenIds.includes(q.id))
+  if (unseenBank.length === 0) return effectiveBank[Math.floor(Math.random() * effectiveBank.length)]
 
   // REVIEW phase — topic-fair adaptive (pick topic first, then question)
   if (phase === 'review') return _topicFairWeightedPick(unseenBank, masteryMap)
@@ -78,7 +85,7 @@ export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubje
 
   // DRILL phase — pick a brand-new topic, topic-fair (not biased by question count)
   const seenTopicKeys = new Set(
-    questionBank.filter(q => seenIds.includes(q.id)).map(q => `${q.subject}::${q.topic}`)
+    effectiveBank.filter(q => seenIds.includes(q.id)).map(q => `${q.subject}::${q.topic}`)
   )
   // Collect unique fresh topic keys
   const freshTopicMap = {}

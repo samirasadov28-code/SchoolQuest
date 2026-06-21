@@ -262,8 +262,32 @@ body {
   animation: petCelebrating 0.7s ease-in-out 2;
 }
 
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.pet-float {
+  animation: floatBob 3s ease-in-out infinite;
+}
+
+.avatar-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pet-idle, .pet-eating, .pet-celebrating,
+  .pet-float, .avatar-breathe,
   .emilia-character, .emilia-character.bounce {
     animation: none !important;
     transition: none !important;

@@ -40,7 +40,7 @@ export default function PetCompanion({ speciesId, stage = 1, mood = 'idle', name
         alt={`${name ?? speciesId} ${mood}`}
         width={px}
         height={px}
-        className={`pet-idle ${animClass}`}
+        className={`pet-idle pet-float ${animClass}`}
         style={{ objectFit: 'contain', cursor: onTap ? 'pointer' : 'default' }}
         onClick={onTap}
       />
