@@ -7,6 +7,7 @@ import { upsertProgress, logSession, grantAchievement } from '../services/supaba
 import { getExplanation as generateExplanation } from '../services/groq'
 import { checkBadges, getSubjectAverages, countMasteredSubjects } from '../services/gamification'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
+import { getTopicIntro } from '../data/topicIntros'
 
 const QUESTION_TIMER = 30 // seconds per question
 
@@ -33,8 +34,12 @@ export default function SessionPage() {
 
   const allQuestions = [...QUESTION_BANK, ...generatedQuestions]
 
+  // Mode selection — shown before session starts
+  const [sessionMode, setSessionMode] = useState(null) // null | 'quest' | 'explore'
+
   // Component state
-  const [question,     setQuestion]    = useState(null)
+  const [question,        setQuestion]       = useState(null)
+  const [shuffledOptions, setShuffledOptions] = useState([])
   const [selected,     setSelected]    = useState(null)  // chosen option
   const [revealed,     setRevealed]    = useState(false) // answer shown
   const [emiliaMood,   setEmiliaMood]  = useState('thinking')
@@ -62,14 +67,14 @@ export default function SessionPage() {
   const questionStartRef  = useRef(Date.now())
   const [lastAnswerMs, setLastAnswerMs] = useState(null)
 
-  // Load first question
+  // Load first question once mode is chosen
   useEffect(() => {
+    if (!sessionMode) return
     clearSession()
     loadNextQuestion()
-    // Session-level timer
     timerRef.current = setInterval(() => setSessionSecs(s => s + 1), 1000)
     return () => { clearInterval(timerRef.current); clearInterval(qTimerRef.current) }
-  }, [])
+  }, [sessionMode])
 
   // Question countdown timer
   useEffect(() => {
@@ -110,6 +115,7 @@ export default function SessionPage() {
     }
 
     setQuestion(q)
+    setShuffledOptions(q.options ? [...q.options].sort(() => Math.random() - 0.5) : [])
     setSelected(null)
     setRevealed(false)
     setEmiliaMood('thinking')
@@ -248,6 +254,35 @@ export default function SessionPage() {
     navigate('/home')
   }
 
+  // Mode picker screen
+  if (!sessionMode) return (
+    <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px 20px', gap: 24 }}>
+      <button onClick={() => navigate('/home')} style={{ position: 'absolute', top: 20, left: 20, background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '1rem' }}>← Back</button>
+      <EmiliaCharacter mood="happy" size="md" showBubble={false} />
+      <div style={{ textAlign: 'center' }}>
+        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.4rem', marginBottom: 6 }}>Choose your quest!</h1>
+        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.85rem' }}>What do you want to do today?</p>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, width: '100%', maxWidth: 320 }}>
+        <button onClick={() => setSessionMode('quest')} className="btn-primary"
+          style={{ padding: '20px 24px', borderRadius: 'var(--radius-lg)', textAlign: 'left', display: 'flex', gap: 16, alignItems: 'center' }}>
+          <span style={{ fontSize: '2rem' }}>⚔️</span>
+          <div>
+            <p style={{ fontWeight: 800, fontSize: '1rem', marginBottom: 2 }}>Quest Mode</p>
+            <p style={{ fontSize: '0.78rem', opacity: 0.8, fontWeight: 400 }}>Answer questions, earn XP, beat your score!</p>
+          </div>
+        </button>
+        <button onClick={() => setSessionMode('explore')} style={{ padding: '20px 24px', borderRadius: 'var(--radius-lg)', textAlign: 'left', display: 'flex', gap: 16, alignItems: 'center', background: 'rgba(201,162,39,0.12)', border: '2px solid rgba(201,162,39,0.4)', color: 'var(--color-parchment)', cursor: 'pointer' }}>
+          <span style={{ fontSize: '2rem' }}>📖</span>
+          <div>
+            <p style={{ fontWeight: 800, fontSize: '1rem', marginBottom: 2, color: 'var(--color-gold)' }}>Explore Mode</p>
+            <p style={{ fontSize: '0.78rem', opacity: 0.8, fontWeight: 400 }}>Discover something new from 3rd class!</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  )
+
   if (!question) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-gold)' }}>Loading quest...</div>
 
   const subj = SUBJECTS.find(s => s.id === question.subject)
@@ -301,6 +336,18 @@ export default function SessionPage() {
         <EmiliaCharacter mood={revealed ? (selected === question.answer ? 'happy' : emiliaMood) : 'thinking'} size="md" showBubble={!revealed} />
       </div>
 
+      {/* Explore mode: show topic intro when a brand-new drill topic starts */}
+      {sessionMode === 'explore' && drillTopic && topicQCount === 1 && !revealed && (
+        <div style={{ background: 'rgba(201,162,39,0.1)', border: '2px solid rgba(201,162,39,0.35)', borderRadius: 'var(--radius-md)', padding: '14px 16px', marginBottom: 12 }}>
+          <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.8rem', marginBottom: 4 }}>
+            🌟 New topic: {drillTopic.topic.replace(/-/g, ' ')}
+          </p>
+          <p style={{ color: 'var(--color-parchment)', fontSize: '0.85rem', lineHeight: 1.6 }}>
+            {getTopicIntro(drillTopic.subject, drillTopic.topic)}
+          </p>
+        </div>
+      )}
+
       {/* Reading passage (shown above question for passage-type questions) */}
       {question.type === 'reading-passage' && question.passage && (
         <div style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 'var(--radius-md)', padding: '16px 18px', marginBottom: 12 }}>
@@ -316,7 +363,7 @@ export default function SessionPage() {
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-          {question.options?.map(opt => {
+          {shuffledOptions.map(opt => {
             let variant = ''
             if (revealed) {
               if (opt === question.answer) variant = 'correct'

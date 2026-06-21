@@ -67,39 +67,66 @@ export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubje
   const unseenBank = questionBank.filter(q => !seenIds.includes(q.id))
   if (unseenBank.length === 0) return questionBank[Math.floor(Math.random() * questionBank.length)]
 
-  // REVIEW phase — pure adaptive
-  if (phase === 'review') return _weightedPick(unseenBank, masteryMap)
+  // REVIEW phase — topic-fair adaptive (pick topic first, then question)
+  if (phase === 'review') return _topicFairWeightedPick(unseenBank, masteryMap)
 
   // DRILL phase — continue current topic if set
   if (drillTopic) {
     const qs = unseenBank.filter(q => q.subject === drillTopic.subject && q.topic === drillTopic.topic)
     if (qs.length > 0) return qs[Math.floor(Math.random() * qs.length)]
-    // Ran out of unseen Qs on this topic → fall through to fresh topic
   }
 
-  // DRILL phase — pick a brand-new topic (not yet seen this session at all)
+  // DRILL phase — pick a brand-new topic, topic-fair (not biased by question count)
   const seenTopicKeys = new Set(
     questionBank.filter(q => seenIds.includes(q.id)).map(q => `${q.subject}::${q.topic}`)
   )
-  const freshTopicQs = unseenBank.filter(q => !seenTopicKeys.has(`${q.subject}::${q.topic}`))
-  if (freshTopicQs.length > 0) return freshTopicQs[Math.floor(Math.random() * freshTopicQs.length)]
+  // Collect unique fresh topic keys
+  const freshTopicMap = {}
+  for (const q of unseenBank) {
+    const key = `${q.subject}::${q.topic}`
+    if (!seenTopicKeys.has(key)) {
+      if (!freshTopicMap[key]) freshTopicMap[key] = []
+      freshTopicMap[key].push(q)
+    }
+  }
+  const freshTopicKeys = Object.keys(freshTopicMap)
+  if (freshTopicKeys.length > 0) {
+    // Pick a random topic (each topic equally likely regardless of question count)
+    const chosenKey = freshTopicKeys[Math.floor(Math.random() * freshTopicKeys.length)]
+    const qs = freshTopicMap[chosenKey]
+    return qs[Math.floor(Math.random() * qs.length)]
+  }
 
-  // All topics seen — fall back to adaptive
-  return _weightedPick(unseenBank, masteryMap)
+  // All topics seen — fall back to topic-fair adaptive
+  return _topicFairWeightedPick(unseenBank, masteryMap)
 }
 
-function _weightedPick(unseenBank, masteryMap) {
-  const weighted = unseenBank.map(q => ({
-    q,
-    weight: Math.max(1, 100 - (masteryMap[q.subject]?.[q.topic] ?? INITIAL_MASTERY[q.subject] ?? 50)),
+// Pick topic first weighted by (100 - mastery), then random question within that topic.
+// Prevents high-volume subjects dominating just because they have more questions.
+function _topicFairWeightedPick(unseenBank, masteryMap) {
+  // Build a map of topic → questions
+  const topicMap = {}
+  for (const q of unseenBank) {
+    const key = `${q.subject}::${q.topic}`
+    if (!topicMap[key]) topicMap[key] = { subject: q.subject, topic: q.topic, qs: [] }
+    topicMap[key].qs.push(q)
+  }
+  const topics = Object.values(topicMap)
+  // Weight each topic by (100 - mastery score)
+  const weighted = topics.map(t => ({
+    t,
+    weight: Math.max(1, 100 - (masteryMap[t.subject]?.[t.topic] ?? INITIAL_MASTERY[t.subject] ?? 50)),
   }))
   const total = weighted.reduce((s, w) => s + w.weight, 0)
   let rand = Math.random() * total
-  for (const { q, weight } of weighted) {
+  for (const { t, weight } of weighted) {
     rand -= weight
-    if (rand <= 0) return q
+    if (rand <= 0) {
+      return t.qs[Math.floor(Math.random() * t.qs.length)]
+    }
   }
-  return unseenBank[0]
+  const last = topics[topics.length - 1]
+  return last.qs[Math.floor(Math.random() * last.qs.length)]
 }
 
 /**

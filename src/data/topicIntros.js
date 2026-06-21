@@ -1,0 +1,108 @@
+// Short topic introductions for Explore mode — shown when a brand-new topic starts.
+// 2-3 sentences pitched at a 3rd class level (age 8-9).
+const INTROS = {
+  english: {
+    grammar:         'Grammar is the set of rules that help us speak and write clearly. In 3rd class you will learn about nouns, verbs, adjectives and more — the building blocks of every sentence!',
+    spelling:        'Good spellers learn patterns, not just individual words. Look out for common word endings like -tion, -ing, and -ed — they appear in hundreds of words!',
+    reading:         'Reading is about more than just the words on the page. Skilled readers also think about what the author means, the feelings of characters, and the big ideas in the story.',
+    writing:         'Great writers plan before they write! In 3rd class you will practise writing stories, reports and letters — each with a clear beginning, middle and end.',
+    punctuation:     'Punctuation marks are like road signs for readers — they tell you when to pause, stop, or ask a question. Full stops, commas, question marks and speech marks all have important jobs.',
+    vocabulary:      'A wide vocabulary helps you understand everything you read and express yourself clearly. Try to learn at least one new word every day!',
+    'compound-words':'Compound words are made by joining two smaller words together — like "rain" + "bow" = "rainbow". They are very common in English!',
+    plurals:         'Most words become plural (more than one) by just adding -s. But some words are tricky — like "child" becomes "children" and "mouse" becomes "mice".',
+  },
+  maths: {
+    addition:        'Addition means putting amounts together to find a total. In 3rd class you will add numbers up to 999 and even start adding four-digit numbers!',
+    subtraction:     'Subtraction is finding the difference between two numbers. You can think of it as "taking away" or "counting back".',
+    multiplication:  'Multiplication is a quick way to do repeated addition. Knowing your tables up to 10 × 10 will help you solve problems much faster!',
+    division:        'Division is splitting a number into equal groups. It is the opposite of multiplication — if 3 × 4 = 12, then 12 ÷ 4 = 3.',
+    fractions:       'A fraction shows part of a whole. The bottom number (denominator) tells you how many equal parts there are, and the top number (numerator) tells you how many parts you have.',
+    'place-value':   'Place value means the value of each digit depends on its position. In 3,456 — the 3 is worth 3 thousand, the 4 is worth 4 hundred, the 5 is worth 5 tens, and the 6 is worth 6 units.',
+    measurement:     'We measure length in centimetres and metres, weight in grams and kilograms, and capacity in millilitres and litres. Estimating before measuring is a great skill to practise!',
+    time:            'Time is measured in seconds, minutes, hours, days, weeks, months and years. In 3rd class you will read clocks to the nearest minute and use the 24-hour clock.',
+    shapes:          'Shapes with straight sides are called polygons. A triangle has 3 sides, a quadrilateral has 4, a pentagon has 5, and a hexagon has 6.',
+    money:           'We use euros and cents in Ireland. 100 cents = 1 euro. Being able to add prices and calculate change is a really useful life skill!',
+    data:            'Data is information we collect and organise. We can show data in tally charts, bar charts and pictograms to make it easy to compare.',
+    'mental-maths':  'Mental maths means doing calculations in your head, without writing anything down. Using rounding and number bonds makes mental maths much faster.',
+    'word-problems': 'Word problems hide maths inside a story. The trick is to read carefully, pick out the numbers, and decide which operation (+, -, ×, ÷) to use.',
+  },
+  history: {
+    'ancient-ireland':      'Ancient Ireland, thousands of years ago, was home to Stone Age and Bronze Age peoples who built amazing monuments like Newgrange — a tomb older than the pyramids of Egypt!',
+    'early-christian-ireland': 'Christianity came to Ireland around 432 AD, traditionally brought by Saint Patrick. Monks in monasteries kept learning alive by copying books and building round towers.',
+    vikings:                'The Vikings were fierce sea warriors from Scandinavia who raided Ireland from 795 AD. They also founded towns — Dublin, Waterford, and Limerick were all started by Vikings!',
+    normans:                'The Normans came to Ireland in 1169 AD from France and England. They built stone castles and introduced new laws and farming methods to Ireland.',
+    'famous-irish-people':  'Ireland has produced many remarkable people throughout history — from ancient high kings to writers, scientists, rebels and explorers who changed the world.',
+    'irish-history':        'Irish history is full of dramatic events — rebellions, famines, and independence. Understanding this history helps us appreciate modern Ireland.',
+    'changes-over-time':    'Life in the past was very different — no electricity, no cars, no internet! Studying how things have changed over time helps us understand how we got to where we are today.',
+    'world-history':        'World history connects events from different countries. Great civilisations like Ancient Egypt, Rome and Greece all shaped the modern world we live in.',
+  },
+  geography: {
+    ireland:             'Ireland is an island on the western edge of Europe. It has 32 counties, four provinces, and two countries — the Republic of Ireland and Northern Ireland.',
+    'continents-oceans': 'The world has seven continents — Africa, Antarctica, Asia, Australia, Europe, North America and South America — and five oceans — Pacific, Atlantic, Indian, Arctic and Southern.',
+    weather:             'Ireland has a mild, wet climate because of the Atlantic Ocean. Weather forecasters study temperature, rainfall, wind and cloud cover to make predictions.',
+    'rivers-mountains':  'Ireland\'s longest river is the Shannon (360 km). The highest mountain is Carrauntoohil in Kerry (1,038 m). Rivers and mountains shape the landscape around us.',
+    maps:                'Maps are bird\'s-eye views of places. They use symbols, keys and compass directions (North, South, East, West) to help us find our way.',
+    environment:         'Our environment includes everything around us — air, water, land and living things. Looking after it means reducing waste, recycling, and protecting nature.',
+    'world-geography':   'Every country has its own physical features — deserts, rainforests, mountains and plains. Learning world geography helps us understand different people and places.',
+  },
+  science: {
+    plants:        'Plants make their own food using sunlight, water and carbon dioxide in a process called photosynthesis. They are the foundation of almost every food chain on Earth.',
+    animals:       'Animals are living things that move, feed, grow and reproduce. They are grouped into vertebrates (with backbones) and invertebrates (without backbones).',
+    'living-things': 'All living things share seven life processes: movement, respiration, sensitivity, growth, reproduction, excretion and nutrition (MRSGREN).',
+    'human-body':  'The human body has many systems working together — the skeleton, muscles, digestive system, heart and lungs all have important jobs to keep you healthy.',
+    materials:     'Materials are what things are made from — wood, metal, plastic, glass, fabric. Scientists test materials for properties like strength, flexibility and waterproofness.',
+    forces:        'A force is a push or pull. Gravity is the force that pulls everything towards the Earth. Friction is the force that slows things down when surfaces rub together.',
+    energy:        'Energy makes things happen — it heats our homes, powers cars and keeps our bodies working. Energy can change form but it is never created or destroyed.',
+    'light-sound': 'Light travels in straight lines at 300,000 km per second. Sound travels in waves through air, water and solids — but it cannot travel through space (there is no air!).',
+    space:         'Our solar system has one star (the Sun) and eight planets. Earth is the third planet from the Sun and the only one known to have life.',
+  },
+  irish: {
+    vocabulary: 'Gaeilge (Irish) is Ireland\'s first official language. Learning common words helps you greet people, name objects and describe the world around you as Gaeilge.',
+    phrases:    'Useful phrases like "Conas atá tú?" (How are you?) and "Go raibh maith agat" (Thank you) are great to practise every day.',
+    numbers:    'In Irish, numbers 1-10 are: aon, dó, trí, ceathair, cúig, sé, seacht, ocht, naoi, deich. Try counting objects around you as Gaeilge!',
+    colours:    'Colours in Irish: dearg (red), glas (green), gorm (blue), buí (yellow), bán (white), dubh (black). Ireland\'s flag has three colours: bán, glas, and flannbhuí (orange).',
+  },
+  genknow: {
+    animals:       'The animal kingdom is astonishing — there are over 8 million species on Earth! Each one has adapted to survive in its habitat.',
+    'world-facts': 'Our planet Earth is 4.5 billion years old, has 7 continents, and is home to around 8 billion people who speak over 7,000 different languages.',
+    space:         'Our galaxy — the Milky Way — contains over 200 billion stars. The nearest star to Earth (after the Sun) is Proxima Centauri, 4.2 light years away.',
+    technology:    'Technology changes faster than any other area of human activity. The smartphones of today are more powerful than the computers that sent people to the Moon in 1969!',
+    food:          'Food gives our bodies energy and nutrients. Different cultures around the world have developed unique cuisines using local ingredients and traditions.',
+    'famous-people': 'Throughout history, certain people have changed the world through their ideas, discoveries, leadership or art. Learning about them can inspire us too!',
+    nature:        'Nature includes everything not made by humans — mountains, rivers, plants, animals, weather. Spending time in nature is great for both body and mind.',
+    'irish-culture': 'Ireland has a rich culture of music, dance, storytelling, sport (GAA!) and language that has been passed down through generations.',
+    'world-records': 'World records celebrate extraordinary human and natural achievements — from the tallest building to the fastest runner.',
+    'human-body':  'The human body is remarkable — it contains 37 trillion cells, 206 bones, and enough DNA to stretch to the Sun and back 300 times!',
+  },
+  sphe: {
+    feelings:       'Everyone experiences a wide range of feelings — happy, sad, angry, anxious, proud. Recognising and naming our feelings is the first step to managing them well.',
+    friendships:    'Good friendships are built on kindness, respect and honesty. True friends support each other through good times and bad.',
+    bullying:       'Bullying is repeated unkind behaviour intended to hurt someone. If you see bullying, you can help by telling a trusted adult and supporting the person being bullied.',
+    health:         'Staying healthy means eating well, exercising, getting enough sleep, and looking after your mental health too.',
+    safety:         'Safety means protecting yourself from harm. Knowing who to trust, what to do in an emergency, and how to stay safe online are all important skills.',
+    communication:  'Good communication means listening as well as speaking. It also means being able to express your feelings clearly and respectfully.',
+    choices:        'Every day we make choices that affect ourselves and others. Thinking about consequences before we act helps us make better decisions.',
+    wellbeing:      'Wellbeing means feeling good about yourself and the world around you. Small daily habits — like gratitude, kindness and exercise — make a big difference.',
+  },
+  ethics: {
+    default: 'Ethical education helps us think about right and wrong, fairness and responsibility. It encourages us to consider how our actions affect other people, animals and the environment.',
+  },
+  coding: {
+    sequences:           'A sequence is a set of instructions carried out in a specific order. Computers follow sequences exactly — if the order is wrong, the result will be wrong too!',
+    loops:               'A loop repeats a set of instructions a number of times. Instead of writing the same code over and over, a loop does it automatically!',
+    algorithms:          'An algorithm is a step-by-step plan for solving a problem. Every app, game and website is built on algorithms.',
+    'computing-basics':  'Computers have hardware (physical parts you can touch) and software (programs that run on the hardware). Together they let us create, communicate and solve problems.',
+    debugging:           'Debugging means finding and fixing errors (bugs) in code. All programmers make mistakes — what matters is knowing how to find and fix them!',
+    scratch:             'Scratch is a free coding platform where you build programs by snapping together coloured blocks. It is a great way to create games, animations and stories!',
+    'digital-citizenship': 'Being a good digital citizen means using technology responsibly — being kind online, protecting your privacy, and thinking before you post.',
+    'internet-safety':   'The internet is an amazing tool but it is important to stay safe: never share personal information with strangers, and always tell a trusted adult if something online makes you uncomfortable.',
+    'input-output':      'Computers take input (like a keyboard press), process it, and produce output (like text on the screen). Almost every digital device works this way.',
+    data:                'Data is information stored by a computer. Computers store data as binary code — patterns of 0s and 1s that represent text, images, sound and more.',
+  },
+}
+
+export function getTopicIntro(subject, topic) {
+  const subjectIntros = INTROS[subject]
+  if (!subjectIntros) return `Let\'s explore ${topic.replace(/-/g, ' ')} — a brand new topic!`
+  return subjectIntros[topic] ?? subjectIntros.default ?? `Let\'s explore ${topic.replace(/-/g, ' ')} — a fascinating new topic in 3rd class!`
+}
