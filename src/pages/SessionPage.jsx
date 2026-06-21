@@ -9,6 +9,34 @@ import { checkBadges, getSubjectAverages, countMasteredSubjects } from '../servi
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import { getTopicIntro } from '../data/topicIntros'
 
+// Topic-specific emojis for visual variety during sessions
+const TOPIC_EMOJIS = {
+  // English
+  spelling:'✏️', grammar:'📝', reading:'📚', writing:'🖊️', punctuation:'❓', vocabulary:'💬', plurals:'🔤', 'compound-words':'🔗',
+  // Maths
+  addition:'➕', subtraction:'➖', multiplication:'✖️', division:'➗', fractions:'🍕', 'place-value':'🔢', measurement:'📏', time:'⏰', shapes:'🔷', money:'💰', data:'📊', 'mental-maths':'🧠', 'word-problems':'📖',
+  // Irish
+  greetings:'👋', numbers:'🔢', colours:'🎨', animals:'🐾', family:'👨‍👩‍👧', school:'🏫', food:'🍎', weather:'🌦️', seasons:'🍂', body:'🦴',
+  // History
+  'ancient-ireland':'🪨', celts:'⚔️', vikings:'⛵', normans:'🏰', 'irish-myths':'🐉', famine:'🌾', independence:'🦅', 'local-history':'🗺️', 'world-history':'🌍',
+  // Geography
+  'ireland-physical':'🏝️', 'ireland-counties':'📍', continents:'🌏', europe:'🌍', 'world-physical':'🗺️', mapping:'🧭', environment:'🌿',
+  // Science
+  'living-things':'🌱', plants:'🌻', 'human-body':'🫀', materials:'🧲', forces:'⚡', 'light-sound':'💡', electricity:'🔋', ecosystems:'🌳',
+  // GenKnow
+  ireland:'☘️', world:'🌍', nature:'🦋', space:'🚀', sports:'⚽', 'famous-people':'🌟',
+  // SPHE / Ethics
+  feelings:'💚', friendship:'🤝', safety:'🛡️', 'healthy-living':'🥦', bullying:'🤜', 'digital-safety':'💻', 'right-wrong':'⚖️', fairness:'🫶', respect:'🙏', honesty:'💎',
+  // Coding
+  sequences:'🔄', algorithms:'🤖', debugging:'🐛', patterns:'🧩', loops:'♾️', conditionals:'❔', 'input-output':'⌨️',
+  // default
+  general:'⭐',
+}
+
+function getTopicEmoji(topic) {
+  return TOPIC_EMOJIS[topic] ?? TOPIC_EMOJIS.general
+}
+
 function getTimerForQuestion(q) { return q?.type === 'reading-passage' ? 90 : 60 }
 
 export default function SessionPage() {
@@ -446,13 +474,18 @@ export default function SessionPage() {
       )}
 
       {/* Question card */}
-      <div className="celtic-border" style={{ background: 'rgba(0,0,0,0.35)', borderRadius: 'var(--radius-lg)', padding: 24, marginBottom: 16 }}>
-        <p style={{ color: 'var(--color-parchment)', fontSize: '1.1rem', fontWeight: 700, lineHeight: 1.5, textAlign: 'center', marginBottom: 20 }}>
+      <div className="celtic-border" style={{ background: `linear-gradient(135deg, rgba(0,0,0,0.45) 0%, ${(subj?.color ?? '#c9a227') + '18'} 100%)`, borderRadius: 'var(--radius-lg)', padding: 24, marginBottom: 16, border: `2px solid ${(subj?.color ?? '#c9a227') + '40'}`, position: 'relative' }}>
+        {/* Topic emoji badge */}
+        <div style={{ position: 'absolute', top: -18, left: '50%', transform: 'translateX(-50%)', background: subj?.color ?? 'var(--color-gold)', borderRadius: '50%', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.1rem', boxShadow: '0 2px 8px rgba(0,0,0,0.4)', border: '2px solid rgba(255,255,255,0.15)' }}>
+          {getTopicEmoji(question.topic)}
+        </div>
+        <p style={{ color: 'var(--color-parchment)', fontSize: '1.1rem', fontWeight: 700, lineHeight: 1.5, textAlign: 'center', marginBottom: 20, marginTop: 10 }}>
           {question.question}
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-          {shuffledOptions.map(opt => {
+          {shuffledOptions.map((opt, i) => {
+            const letters = ['A', 'B', 'C', 'D']
             let variant = ''
             if (revealed) {
               if (opt === question.answer) variant = 'correct'
@@ -464,9 +497,11 @@ export default function SessionPage() {
                 className={`answer-option ${variant}`}
                 onClick={() => !revealed && handleAnswer(opt)}
                 disabled={revealed}
+                style={{ display: 'flex', alignItems: 'center', gap: 12, textAlign: 'left' }}
               >
-                {revealed && opt === question.answer && '✅ '}
-                {revealed && opt === selected && opt !== question.answer && '❌ '}
+                <span style={{ minWidth: 28, height: 28, borderRadius: '50%', background: revealed && opt === question.answer ? 'rgba(39,174,96,0.4)' : revealed && opt === selected ? 'rgba(192,57,43,0.4)' : 'rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.8rem', flexShrink: 0 }}>
+                  {revealed && opt === question.answer ? '✅' : revealed && opt === selected && opt !== question.answer ? '❌' : letters[i]}
+                </span>
                 {opt}
               </button>
             )
@@ -477,10 +512,16 @@ export default function SessionPage() {
       {/* Feedback / explanation after answer */}
       {revealed && (
         <div>
-          <div style={{ background: selected === question.answer ? 'rgba(39,174,96,0.15)' : 'rgba(192,57,43,0.15)', border: `1px solid ${selected === question.answer ? 'var(--color-emerald)' : 'var(--color-crimson)'}`, borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 12 }}>
+          {/* Star burst on correct */}
+          {selected === question.answer && (
+            <div style={{ textAlign: 'center', fontSize: '2rem', marginBottom: 8, animation: 'bounceIn 0.4s ease' }}>
+              {'⭐'.repeat(Math.min(3, Math.ceil(lastXpGain / 10)))}
+            </div>
+          )}
+          <div style={{ background: selected === question.answer ? 'rgba(39,174,96,0.15)' : 'rgba(192,57,43,0.15)', border: `2px solid ${selected === question.answer ? 'var(--color-emerald)' : 'var(--color-crimson)'}`, borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 12 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
-              <p style={{ fontWeight: 800, color: selected === question.answer ? '#5dde8b' : '#ff8a8a' }}>
-                {selected === question.answer ? `⭐ Brilliant! +${lastXpGain} XP` : '💪 Not quite — but you\'re learning!'}
+              <p style={{ fontWeight: 800, color: selected === question.answer ? '#5dde8b' : '#ff8a8a', fontSize: '1rem' }}>
+                {selected === question.answer ? `🎉 Brilliant! +${lastXpGain} XP` : '💪 Not quite — keep going!'}
               </p>
               {lastAnswerMs != null && (
                 <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem', opacity: 0.6 }}>
@@ -488,8 +529,8 @@ export default function SessionPage() {
                 </span>
               )}
             </div>
-            <p style={{ color: 'var(--color-parchment)', fontSize: '0.9rem', lineHeight: 1.5 }}>
-              {question.explanation}
+            <p style={{ color: 'var(--color-parchment)', fontSize: '0.9rem', lineHeight: 1.6 }}>
+              {getTopicEmoji(question.topic)} {question.explanation}
             </p>
           </div>
 
