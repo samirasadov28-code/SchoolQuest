@@ -101,6 +101,8 @@ const INTROS = {
   },
 }
 
+export { INTROS }
+
 export function getTopicIntro(subject, topic) {
   const subjectIntros = INTROS[subject]
   if (!subjectIntros) return `Let\'s explore ${topic.replace(/-/g, ' ')} — a brand new topic!`

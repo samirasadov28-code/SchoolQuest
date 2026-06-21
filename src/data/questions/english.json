@@ -14372,5 +14372,6853 @@
     ],
     "answer": "Scared and anxious",
     "explanation": "Maya's heart was \"thumping too fast\" and she could not convince herself the noise was normal — clear signs she was scared."
+  },
+  {
+    "id": "eng-spell-020",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correctly spelled word.",
+    "options": [
+      "beautiful",
+      "beautifull",
+      "beatiful",
+      "buetiful"
+    ],
+    "answer": "beautiful",
+    "explanation": "Think: beau-ti-ful — three syllables!"
+  },
+  {
+    "id": "eng-spell-177",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"run\"?",
+    "options": [
+      "runningg",
+      "ruing",
+      "running",
+      "runing"
+    ],
+    "answer": "running",
+    "explanation": "run ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: running."
+  },
+  {
+    "id": "eng-spell-178",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"swim\"?",
+    "options": [
+      "swiing",
+      "swimming",
+      "swiming",
+      "swimmingg"
+    ],
+    "answer": "swimming",
+    "explanation": "swim ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: swimming."
+  },
+  {
+    "id": "eng-spell-179",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"sit\"?",
+    "options": [
+      "siing",
+      "sitting",
+      "siting",
+      "sittingg"
+    ],
+    "answer": "sitting",
+    "explanation": "sit ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: sitting."
+  },
+  {
+    "id": "eng-spell-180",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"hop\"?",
+    "options": [
+      "hopping",
+      "hoping",
+      "hoppingg",
+      "hoing"
+    ],
+    "answer": "hopping",
+    "explanation": "hop ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: hopping."
+  },
+  {
+    "id": "eng-spell-181",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"cut\"?",
+    "options": [
+      "cuing",
+      "cutting",
+      "cuting",
+      "cuttingg"
+    ],
+    "answer": "cutting",
+    "explanation": "cut ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: cutting."
+  },
+  {
+    "id": "eng-spell-182",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"get\"?",
+    "options": [
+      "geing",
+      "getting",
+      "geting",
+      "gettingg"
+    ],
+    "answer": "getting",
+    "explanation": "get ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: getting."
+  },
+  {
+    "id": "eng-spell-183",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"put\"?",
+    "options": [
+      "putting",
+      "puting",
+      "puttingg",
+      "puing"
+    ],
+    "answer": "putting",
+    "explanation": "put ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: putting."
+  },
+  {
+    "id": "eng-spell-184",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"hit\"?",
+    "options": [
+      "hitting",
+      "hiting",
+      "hittingg",
+      "hiing"
+    ],
+    "answer": "hitting",
+    "explanation": "hit ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: hitting."
+  },
+  {
+    "id": "eng-spell-185",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"dig\"?",
+    "options": [
+      "digging",
+      "diging",
+      "diggingg",
+      "diing"
+    ],
+    "answer": "digging",
+    "explanation": "dig ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: digging."
+  },
+  {
+    "id": "eng-spell-186",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the -ing form of \"jog\"?",
+    "options": [
+      "joggingg",
+      "joing",
+      "jogging",
+      "joging"
+    ],
+    "answer": "jogging",
+    "explanation": "jog ends in a consonant-vowel-consonant pattern, so double the final letter before adding -ing: jogging."
+  },
+  {
+    "id": "eng-plural-001",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"cat\"?",
+    "options": [
+      "caties",
+      "cats",
+      "cates",
+      "option A"
+    ],
+    "answer": "cats",
+    "explanation": "Most nouns just add -s."
+  },
+  {
+    "id": "eng-plural-002",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"dog\"?",
+    "options": [
+      "dogs",
+      "doges",
+      "dogies",
+      "dogges"
+    ],
+    "answer": "dogs",
+    "explanation": "Most nouns just add -s."
+  },
+  {
+    "id": "eng-plural-003",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"bus\"?",
+    "options": [
+      "bus's",
+      "busies",
+      "buses",
+      "buss"
+    ],
+    "answer": "buses",
+    "explanation": "Words ending in -s add -es."
+  },
+  {
+    "id": "eng-plural-004",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"box\"?",
+    "options": [
+      "boxies",
+      "boxi",
+      "boxes",
+      "boxs"
+    ],
+    "answer": "boxes",
+    "explanation": "Words ending in -x add -es."
+  },
+  {
+    "id": "eng-plural-005",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"church\"?",
+    "options": [
+      "churchs",
+      "churches",
+      "churchies",
+      "option A"
+    ],
+    "answer": "churches",
+    "explanation": "Words ending in -ch add -es."
+  },
+  {
+    "id": "eng-plural-006",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"wish\"?",
+    "options": [
+      "wishs",
+      "wishes",
+      "wishies",
+      "option A"
+    ],
+    "answer": "wishes",
+    "explanation": "Words ending in -sh add -es."
+  },
+  {
+    "id": "eng-plural-007",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"potato\"?",
+    "options": [
+      "potatoes",
+      "potatos",
+      "potatoe",
+      "potatoies"
+    ],
+    "answer": "potatoes",
+    "explanation": "Some words ending in -o add -es."
+  },
+  {
+    "id": "eng-plural-008",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"tomato\"?",
+    "options": [
+      "tomatoes",
+      "tomatos",
+      "tomatoe",
+      "tomatoies"
+    ],
+    "answer": "tomatoes",
+    "explanation": "Tomato → tomatoes. Some -o words add -es."
+  },
+  {
+    "id": "eng-plural-009",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"leaf\"?",
+    "options": [
+      "leaves",
+      "leafs",
+      "leafes",
+      "leafies"
+    ],
+    "answer": "leaves",
+    "explanation": "Words ending in -f change to -ves: leaf → leaves."
+  },
+  {
+    "id": "eng-plural-010",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"wolf\"?",
+    "options": [
+      "wolfies",
+      "wolves",
+      "wolfs",
+      "wolfes"
+    ],
+    "answer": "wolves",
+    "explanation": "Words ending in -f change to -ves: wolf → wolves."
+  },
+  {
+    "id": "eng-plural-011",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"knife\"?",
+    "options": [
+      "knifeies",
+      "knives",
+      "knifes",
+      "option A"
+    ],
+    "answer": "knives",
+    "explanation": "Words ending in -fe change to -ves: knife → knives."
+  },
+  {
+    "id": "eng-plural-012",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"life\"?",
+    "options": [
+      "lives",
+      "lifes",
+      "lifees",
+      "lifeies"
+    ],
+    "answer": "lives",
+    "explanation": "Words ending in -fe change to -ves: life → lives."
+  },
+  {
+    "id": "eng-plural-013",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"child\"?",
+    "options": [
+      "childies",
+      "children",
+      "childs",
+      "childes"
+    ],
+    "answer": "children",
+    "explanation": "Child is irregular: child → children."
+  },
+  {
+    "id": "eng-plural-014",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"mouse\"?",
+    "options": [
+      "mouses",
+      "mooses",
+      "mousse",
+      "mice"
+    ],
+    "answer": "mice",
+    "explanation": "Mouse is irregular: mouse → mice."
+  },
+  {
+    "id": "eng-plural-015",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"tooth\"?",
+    "options": [
+      "teeth",
+      "tooths",
+      "teeths",
+      "tootheths"
+    ],
+    "answer": "teeth",
+    "explanation": "Tooth is irregular: tooth → teeth."
+  },
+  {
+    "id": "eng-plural-016",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"foot\"?",
+    "options": [
+      "feets",
+      "fots",
+      "feet",
+      "foots"
+    ],
+    "answer": "feet",
+    "explanation": "Foot is irregular: foot → feet."
+  },
+  {
+    "id": "eng-plural-017",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"man\"?",
+    "options": [
+      "mans",
+      "manes",
+      "mons",
+      "men"
+    ],
+    "answer": "men",
+    "explanation": "Man is irregular: man → men."
+  },
+  {
+    "id": "eng-plural-018",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"woman\"?",
+    "options": [
+      "womons",
+      "women",
+      "womans",
+      "womens"
+    ],
+    "answer": "women",
+    "explanation": "Woman is irregular: woman → women."
+  },
+  {
+    "id": "eng-plural-019",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"goose\"?",
+    "options": [
+      "goosies",
+      "geese",
+      "gooses",
+      "option A"
+    ],
+    "answer": "geese",
+    "explanation": "Goose is irregular: goose → geese."
+  },
+  {
+    "id": "eng-plural-020",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"ox\"?",
+    "options": [
+      "oxies",
+      "oxen",
+      "oxes",
+      "oxs"
+    ],
+    "answer": "oxen",
+    "explanation": "Ox has an unusual plural: ox → oxen."
+  },
+  {
+    "id": "eng-plural-021",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"story\"?",
+    "options": [
+      "storyes",
+      "stories",
+      "storys",
+      "storees"
+    ],
+    "answer": "stories",
+    "explanation": "Words ending in consonant + -y change to -ies: story → stories."
+  },
+  {
+    "id": "eng-plural-022",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"baby\"?",
+    "options": [
+      "babees",
+      "babyies",
+      "babies",
+      "babys"
+    ],
+    "answer": "babies",
+    "explanation": "Baby ends in consonant + -y, so: baby → babies."
+  },
+  {
+    "id": "eng-plural-023",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"city\"?",
+    "options": [
+      "cityies",
+      "cities",
+      "citys",
+      "citees"
+    ],
+    "answer": "cities",
+    "explanation": "City ends in -ty: city → cities."
+  },
+  {
+    "id": "eng-plural-024",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"country\"?",
+    "options": [
+      "countryies",
+      "countries",
+      "countrys",
+      "countrees"
+    ],
+    "answer": "countries",
+    "explanation": "Country → countries."
+  },
+  {
+    "id": "eng-plural-025",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"family\"?",
+    "options": [
+      "familees",
+      "familyies",
+      "families",
+      "familys"
+    ],
+    "answer": "families",
+    "explanation": "Family → families."
+  },
+  {
+    "id": "eng-plural-026",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"donkey\"?",
+    "options": [
+      "donkeys",
+      "donkies",
+      "donkeies",
+      "donkeyes"
+    ],
+    "answer": "donkeys",
+    "explanation": "Donkey ends in vowel + -y, so just add -s: donkeys."
+  },
+  {
+    "id": "eng-plural-027",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"monkey\"?",
+    "options": [
+      "monkies",
+      "monkeies",
+      "monkeyes",
+      "monkeys"
+    ],
+    "answer": "monkeys",
+    "explanation": "Monkey → monkeys. Vowel + -y: just add -s."
+  },
+  {
+    "id": "eng-plural-028",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"key\"?",
+    "options": [
+      "keyes",
+      "keys",
+      "kies",
+      "keies"
+    ],
+    "answer": "keys",
+    "explanation": "Key ends in vowel + -y, so just add -s: keys."
+  },
+  {
+    "id": "eng-plural-029",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"toy\"?",
+    "options": [
+      "toys",
+      "toies",
+      "toyies",
+      "toyes"
+    ],
+    "answer": "toys",
+    "explanation": "Toy ends in vowel + -y: just add -s."
+  },
+  {
+    "id": "eng-plural-030",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"day\"?",
+    "options": [
+      "days",
+      "daies",
+      "dayies",
+      "dayes"
+    ],
+    "answer": "days",
+    "explanation": "Day ends in vowel + -y: just add -s."
+  },
+  {
+    "id": "eng-plural-031",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"fish\"?",
+    "options": [
+      "fishes",
+      "fishies",
+      "fish",
+      "fishs"
+    ],
+    "answer": "fish",
+    "explanation": "Fish is the same in singular and plural: one fish, two fish."
+  },
+  {
+    "id": "eng-plural-032",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"sheep\"?",
+    "options": [
+      "sheepies",
+      "sheep",
+      "sheeps",
+      "sheepes"
+    ],
+    "answer": "sheep",
+    "explanation": "Sheep doesn't change: one sheep, two sheep."
+  },
+  {
+    "id": "eng-plural-033",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"deer\"?",
+    "options": [
+      "deer",
+      "deers",
+      "deeres",
+      "deerses"
+    ],
+    "answer": "deer",
+    "explanation": "Deer doesn't change: one deer, many deer."
+  },
+  {
+    "id": "eng-plural-034",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 5,
+    "type": "multiple-choice",
+    "question": "What is the plural of \"crisis\"?",
+    "options": [
+      "crisises",
+      "crises",
+      "crisiss",
+      "crisies"
+    ],
+    "answer": "crises",
+    "explanation": "Crisis comes from Greek: crisis → crises."
+  },
+  {
+    "id": "eng-compound-001",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"sun\" + \"flower\"?",
+    "options": [
+      "suflower",
+      "sunflower",
+      "sunflowers",
+      "flowersun"
+    ],
+    "answer": "sunflower",
+    "explanation": "A sunflower grows toward the sun — sun + flower!"
+  },
+  {
+    "id": "eng-compound-002",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"sunflower\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"sunflower\" and \"the\"",
+      "\"su\" and \"flower\"",
+      "\"sun\" and \"flower\"",
+      "\"flower\" and \"sun\""
+    ],
+    "answer": "\"sun\" and \"flower\"",
+    "explanation": "A sunflower grows toward the sun — sun + flower!"
+  },
+  {
+    "id": "eng-compound-003",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"rain\" + \"bow\"?",
+    "options": [
+      "bowrain",
+      "raibow",
+      "rainbow",
+      "rainbows"
+    ],
+    "answer": "rainbow",
+    "explanation": "Rain + bow = rainbow. You see one after rain in sunshine!"
+  },
+  {
+    "id": "eng-compound-004",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"rainbow\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"rainbow\" and \"the\"",
+      "\"ra\" and \"bow\"",
+      "\"rain\" and \"bow\"",
+      "\"bow\" and \"rain\""
+    ],
+    "answer": "\"rain\" and \"bow\"",
+    "explanation": "Rain + bow = rainbow. You see one after rain in sunshine!"
+  },
+  {
+    "id": "eng-compound-005",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"foot\" + \"ball\"?",
+    "options": [
+      "ballfoot",
+      "fooball",
+      "football",
+      "footballs"
+    ],
+    "answer": "football",
+    "explanation": "Foot + ball = football — Ireland's favourite sport!"
+  },
+  {
+    "id": "eng-compound-006",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"football\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"football\" and \"the\"",
+      "\"fo\" and \"ball\"",
+      "\"foot\" and \"ball\"",
+      "\"ball\" and \"foot\""
+    ],
+    "answer": "\"foot\" and \"ball\"",
+    "explanation": "Foot + ball = football — Ireland's favourite sport!"
+  },
+  {
+    "id": "eng-compound-007",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"book\" + \"shelf\"?",
+    "options": [
+      "shelfbook",
+      "booshelf",
+      "bookshelf",
+      "bookshelfs"
+    ],
+    "answer": "bookshelf",
+    "explanation": "Book + shelf = bookshelf — where you keep books."
+  },
+  {
+    "id": "eng-compound-008",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"bookshelf\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"bookshelf\" and \"the\"",
+      "\"bo\" and \"shelf\"",
+      "\"book\" and \"shelf\"",
+      "\"shelf\" and \"book\""
+    ],
+    "answer": "\"book\" and \"shelf\"",
+    "explanation": "Book + shelf = bookshelf — where you keep books."
+  },
+  {
+    "id": "eng-compound-009",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"butter\" + \"fly\"?",
+    "options": [
+      "flybutter",
+      "buttefly",
+      "butterfly",
+      "butterflys"
+    ],
+    "answer": "butterfly",
+    "explanation": "Butter + fly = butterfly — a beautiful compound word!"
+  },
+  {
+    "id": "eng-compound-010",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"butterfly\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"butterfly\" and \"the\"",
+      "\"bu\" and \"fly\"",
+      "\"butter\" and \"fly\"",
+      "\"fly\" and \"butter\""
+    ],
+    "answer": "\"butter\" and \"fly\"",
+    "explanation": "Butter + fly = butterfly — a beautiful compound word!"
+  },
+  {
+    "id": "eng-compound-011",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"fire\" + \"place\"?",
+    "options": [
+      "placefire",
+      "firplace",
+      "fireplace",
+      "fireplaces"
+    ],
+    "answer": "fireplace",
+    "explanation": "Fire + place = fireplace — where you light a fire indoors."
+  },
+  {
+    "id": "eng-compound-012",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"fireplace\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"fireplace\" and \"the\"",
+      "\"fi\" and \"place\"",
+      "\"fire\" and \"place\"",
+      "\"place\" and \"fire\""
+    ],
+    "answer": "\"fire\" and \"place\"",
+    "explanation": "Fire + place = fireplace — where you light a fire indoors."
+  },
+  {
+    "id": "eng-compound-013",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"class\" + \"room\"?",
+    "options": [
+      "clasroom",
+      "classroom",
+      "classrooms",
+      "roomclass"
+    ],
+    "answer": "classroom",
+    "explanation": "Class + room = classroom — where you learn!"
+  },
+  {
+    "id": "eng-compound-014",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"classroom\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"classroom\" and \"the\"",
+      "\"cl\" and \"room\"",
+      "\"class\" and \"room\"",
+      "\"room\" and \"class\""
+    ],
+    "answer": "\"class\" and \"room\"",
+    "explanation": "Class + room = classroom — where you learn!"
+  },
+  {
+    "id": "eng-compound-015",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"play\" + \"ground\"?",
+    "options": [
+      "playground",
+      "playgrounds",
+      "groundplay",
+      "plaground"
+    ],
+    "answer": "playground",
+    "explanation": "Play + ground = playground — where you play at school."
+  },
+  {
+    "id": "eng-compound-016",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"playground\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"playground\" and \"the\"",
+      "\"pl\" and \"ground\"",
+      "\"play\" and \"ground\"",
+      "\"ground\" and \"play\""
+    ],
+    "answer": "\"play\" and \"ground\"",
+    "explanation": "Play + ground = playground — where you play at school."
+  },
+  {
+    "id": "eng-compound-017",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"some\" + \"thing\"?",
+    "options": [
+      "somthing",
+      "something",
+      "somethings",
+      "thingsome"
+    ],
+    "answer": "something",
+    "explanation": "Some + thing = something."
+  },
+  {
+    "id": "eng-compound-018",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"something\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"something\" and \"the\"",
+      "\"so\" and \"thing\"",
+      "\"some\" and \"thing\"",
+      "\"thing\" and \"some\""
+    ],
+    "answer": "\"some\" and \"thing\"",
+    "explanation": "Some + thing = something."
+  },
+  {
+    "id": "eng-compound-019",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"every\" + \"one\"?",
+    "options": [
+      "everyones",
+      "oneevery",
+      "everone",
+      "everyone"
+    ],
+    "answer": "everyone",
+    "explanation": "Every + one = everyone."
+  },
+  {
+    "id": "eng-compound-020",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"everyone\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"everyone\" and \"the\"",
+      "\"ev\" and \"one\"",
+      "\"every\" and \"one\"",
+      "\"one\" and \"every\""
+    ],
+    "answer": "\"every\" and \"one\"",
+    "explanation": "Every + one = everyone."
+  },
+  {
+    "id": "eng-compound-021",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"any\" + \"where\"?",
+    "options": [
+      "anywheres",
+      "whereany",
+      "anwhere",
+      "anywhere"
+    ],
+    "answer": "anywhere",
+    "explanation": "Any + where = anywhere."
+  },
+  {
+    "id": "eng-compound-022",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"anywhere\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"anywhere\" and \"the\"",
+      "\"an\" and \"where\"",
+      "\"any\" and \"where\"",
+      "\"where\" and \"any\""
+    ],
+    "answer": "\"any\" and \"where\"",
+    "explanation": "Any + where = anywhere."
+  },
+  {
+    "id": "eng-compound-023",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"some\" + \"where\"?",
+    "options": [
+      "somwhere",
+      "somewhere",
+      "somewheres",
+      "wheresome"
+    ],
+    "answer": "somewhere",
+    "explanation": "Some + where = somewhere."
+  },
+  {
+    "id": "eng-compound-024",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"somewhere\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"somewhere\" and \"the\"",
+      "\"so\" and \"where\"",
+      "\"some\" and \"where\"",
+      "\"where\" and \"some\""
+    ],
+    "answer": "\"some\" and \"where\"",
+    "explanation": "Some + where = somewhere."
+  },
+  {
+    "id": "eng-compound-025",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"out\" + \"side\"?",
+    "options": [
+      "ouside",
+      "outside",
+      "outsides",
+      "sideout"
+    ],
+    "answer": "outside",
+    "explanation": "Out + side = outside."
+  },
+  {
+    "id": "eng-compound-026",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"outside\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"outside\" and \"the\"",
+      "\"ou\" and \"side\"",
+      "\"out\" and \"side\"",
+      "\"side\" and \"out\""
+    ],
+    "answer": "\"out\" and \"side\"",
+    "explanation": "Out + side = outside."
+  },
+  {
+    "id": "eng-compound-027",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"in\" + \"side\"?",
+    "options": [
+      "insides",
+      "sidein",
+      "iside",
+      "inside"
+    ],
+    "answer": "inside",
+    "explanation": "In + side = inside."
+  },
+  {
+    "id": "eng-compound-028",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"inside\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"inside\" and \"the\"",
+      "\"in\" and \"side\"",
+      "\"side\" and \"in\"",
+      "option A"
+    ],
+    "answer": "\"in\" and \"side\"",
+    "explanation": "In + side = inside."
+  },
+  {
+    "id": "eng-compound-029",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"up\" + \"stairs\"?",
+    "options": [
+      "upstairss",
+      "stairsup",
+      "ustairs",
+      "upstairs"
+    ],
+    "answer": "upstairs",
+    "explanation": "Up + stairs = upstairs."
+  },
+  {
+    "id": "eng-compound-030",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"upstairs\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"upstairs\" and \"the\"",
+      "\"up\" and \"stairs\"",
+      "\"stairs\" and \"up\"",
+      "option A"
+    ],
+    "answer": "\"up\" and \"stairs\"",
+    "explanation": "Up + stairs = upstairs."
+  },
+  {
+    "id": "eng-compound-031",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"down\" + \"stairs\"?",
+    "options": [
+      "downstairs",
+      "downstairss",
+      "stairsdown",
+      "dowstairs"
+    ],
+    "answer": "downstairs",
+    "explanation": "Down + stairs = downstairs."
+  },
+  {
+    "id": "eng-compound-032",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"downstairs\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"downstairs\" and \"the\"",
+      "\"do\" and \"stairs\"",
+      "\"down\" and \"stairs\"",
+      "\"stairs\" and \"down\""
+    ],
+    "answer": "\"down\" and \"stairs\"",
+    "explanation": "Down + stairs = downstairs."
+  },
+  {
+    "id": "eng-compound-033",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"bed\" + \"room\"?",
+    "options": [
+      "roombed",
+      "beroom",
+      "bedroom",
+      "bedrooms"
+    ],
+    "answer": "bedroom",
+    "explanation": "Bed + room = bedroom — where you sleep!"
+  },
+  {
+    "id": "eng-compound-034",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"bedroom\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"bedroom\" and \"the\"",
+      "\"be\" and \"room\"",
+      "\"bed\" and \"room\"",
+      "\"room\" and \"bed\""
+    ],
+    "answer": "\"bed\" and \"room\"",
+    "explanation": "Bed + room = bedroom — where you sleep!"
+  },
+  {
+    "id": "eng-compound-035",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"bath\" + \"room\"?",
+    "options": [
+      "roombath",
+      "batroom",
+      "bathroom",
+      "bathrooms"
+    ],
+    "answer": "bathroom",
+    "explanation": "Bath + room = bathroom."
+  },
+  {
+    "id": "eng-compound-036",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"bathroom\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"bathroom\" and \"the\"",
+      "\"ba\" and \"room\"",
+      "\"bath\" and \"room\"",
+      "\"room\" and \"bath\""
+    ],
+    "answer": "\"bath\" and \"room\"",
+    "explanation": "Bath + room = bathroom."
+  },
+  {
+    "id": "eng-compound-037",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"hand\" + \"bag\"?",
+    "options": [
+      "handbag",
+      "handbags",
+      "baghand",
+      "hanbag"
+    ],
+    "answer": "handbag",
+    "explanation": "Hand + bag = handbag."
+  },
+  {
+    "id": "eng-compound-038",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"handbag\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"handbag\" and \"the\"",
+      "\"ha\" and \"bag\"",
+      "\"hand\" and \"bag\"",
+      "\"bag\" and \"hand\""
+    ],
+    "answer": "\"hand\" and \"bag\"",
+    "explanation": "Hand + bag = handbag."
+  },
+  {
+    "id": "eng-compound-039",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"tooth\" + \"brush\"?",
+    "options": [
+      "toothbrush",
+      "toothbrushs",
+      "brushtooth",
+      "tootbrush"
+    ],
+    "answer": "toothbrush",
+    "explanation": "Tooth + brush = toothbrush — use yours twice a day!"
+  },
+  {
+    "id": "eng-compound-040",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"toothbrush\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"toothbrush\" and \"the\"",
+      "\"to\" and \"brush\"",
+      "\"tooth\" and \"brush\"",
+      "\"brush\" and \"tooth\""
+    ],
+    "answer": "\"tooth\" and \"brush\"",
+    "explanation": "Tooth + brush = toothbrush — use yours twice a day!"
+  },
+  {
+    "id": "eng-compound-041",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"eye\" + \"brow\"?",
+    "options": [
+      "eyebrows",
+      "broweye",
+      "eybrow",
+      "eyebrow"
+    ],
+    "answer": "eyebrow",
+    "explanation": "Eye + brow = eyebrow."
+  },
+  {
+    "id": "eng-compound-042",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"eyebrow\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"eyebrow\" and \"the\"",
+      "\"ey\" and \"brow\"",
+      "\"eye\" and \"brow\"",
+      "\"brow\" and \"eye\""
+    ],
+    "answer": "\"eye\" and \"brow\"",
+    "explanation": "Eye + brow = eyebrow."
+  },
+  {
+    "id": "eng-compound-043",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"ear\" + \"ring\"?",
+    "options": [
+      "earrings",
+      "ringear",
+      "earing",
+      "earring"
+    ],
+    "answer": "earring",
+    "explanation": "Ear + ring = earring."
+  },
+  {
+    "id": "eng-compound-044",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"earring\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"earring\" and \"the\"",
+      "\"ea\" and \"ring\"",
+      "\"ear\" and \"ring\"",
+      "\"ring\" and \"ear\""
+    ],
+    "answer": "\"ear\" and \"ring\"",
+    "explanation": "Ear + ring = earring."
+  },
+  {
+    "id": "eng-compound-045",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"finger\" + \"nail\"?",
+    "options": [
+      "nailfinger",
+      "fingenail",
+      "fingernail",
+      "fingernails"
+    ],
+    "answer": "fingernail",
+    "explanation": "Finger + nail = fingernail."
+  },
+  {
+    "id": "eng-compound-046",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"fingernail\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"fingernail\" and \"the\"",
+      "\"fi\" and \"nail\"",
+      "\"finger\" and \"nail\"",
+      "\"nail\" and \"finger\""
+    ],
+    "answer": "\"finger\" and \"nail\"",
+    "explanation": "Finger + nail = fingernail."
+  },
+  {
+    "id": "eng-compound-047",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"hair\" + \"cut\"?",
+    "options": [
+      "haircut",
+      "haircuts",
+      "cuthair",
+      "haicut"
+    ],
+    "answer": "haircut",
+    "explanation": "Hair + cut = haircut."
+  },
+  {
+    "id": "eng-compound-048",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"haircut\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"haircut\" and \"the\"",
+      "\"ha\" and \"cut\"",
+      "\"hair\" and \"cut\"",
+      "\"cut\" and \"hair\""
+    ],
+    "answer": "\"hair\" and \"cut\"",
+    "explanation": "Hair + cut = haircut."
+  },
+  {
+    "id": "eng-compound-049",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"news\" + \"paper\"?",
+    "options": [
+      "papernews",
+      "newpaper",
+      "newspaper",
+      "newspapers"
+    ],
+    "answer": "newspaper",
+    "explanation": "News + paper = newspaper."
+  },
+  {
+    "id": "eng-compound-050",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"newspaper\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"newspaper\" and \"the\"",
+      "\"ne\" and \"paper\"",
+      "\"news\" and \"paper\"",
+      "\"paper\" and \"news\""
+    ],
+    "answer": "\"news\" and \"paper\"",
+    "explanation": "News + paper = newspaper."
+  },
+  {
+    "id": "eng-compound-051",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"shop\" + \"keeper\"?",
+    "options": [
+      "shokeeper",
+      "shopkeeper",
+      "shopkeepers",
+      "keepershop"
+    ],
+    "answer": "shopkeeper",
+    "explanation": "Shop + keeper = shopkeeper."
+  },
+  {
+    "id": "eng-compound-052",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"shopkeeper\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"shopkeeper\" and \"the\"",
+      "\"sh\" and \"keeper\"",
+      "\"shop\" and \"keeper\"",
+      "\"keeper\" and \"shop\""
+    ],
+    "answer": "\"shop\" and \"keeper\"",
+    "explanation": "Shop + keeper = shopkeeper."
+  },
+  {
+    "id": "eng-compound-053",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"door\" + \"step\"?",
+    "options": [
+      "doorstep",
+      "doorsteps",
+      "stepdoor",
+      "doostep"
+    ],
+    "answer": "doorstep",
+    "explanation": "Door + step = doorstep."
+  },
+  {
+    "id": "eng-compound-054",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"doorstep\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"doorstep\" and \"the\"",
+      "\"do\" and \"step\"",
+      "\"door\" and \"step\"",
+      "\"step\" and \"door\""
+    ],
+    "answer": "\"door\" and \"step\"",
+    "explanation": "Door + step = doorstep."
+  },
+  {
+    "id": "eng-compound-055",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"wind\" + \"mill\"?",
+    "options": [
+      "winmill",
+      "windmill",
+      "windmills",
+      "millwind"
+    ],
+    "answer": "windmill",
+    "explanation": "Wind + mill = windmill — wind turns the sails!"
+  },
+  {
+    "id": "eng-compound-056",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"windmill\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"windmill\" and \"the\"",
+      "\"wi\" and \"mill\"",
+      "\"wind\" and \"mill\"",
+      "\"mill\" and \"wind\""
+    ],
+    "answer": "\"wind\" and \"mill\"",
+    "explanation": "Wind + mill = windmill — wind turns the sails!"
+  },
+  {
+    "id": "eng-compound-057",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"water\" + \"fall\"?",
+    "options": [
+      "watefall",
+      "waterfall",
+      "waterfalls",
+      "fallwater"
+    ],
+    "answer": "waterfall",
+    "explanation": "Water + fall = waterfall — water falling from a great height."
+  },
+  {
+    "id": "eng-compound-058",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"waterfall\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"waterfall\" and \"the\"",
+      "\"wa\" and \"fall\"",
+      "\"water\" and \"fall\"",
+      "\"fall\" and \"water\""
+    ],
+    "answer": "\"water\" and \"fall\"",
+    "explanation": "Water + fall = waterfall — water falling from a great height."
+  },
+  {
+    "id": "eng-compound-059",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"sea\" + \"shell\"?",
+    "options": [
+      "seshell",
+      "seashell",
+      "seashells",
+      "shellsea"
+    ],
+    "answer": "seashell",
+    "explanation": "Sea + shell = seashell — found on the beach!"
+  },
+  {
+    "id": "eng-compound-060",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"seashell\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"seashell\" and \"the\"",
+      "\"se\" and \"shell\"",
+      "\"sea\" and \"shell\"",
+      "\"shell\" and \"sea\""
+    ],
+    "answer": "\"sea\" and \"shell\"",
+    "explanation": "Sea + shell = seashell — found on the beach!"
+  },
+  {
+    "id": "eng-compound-061",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"star\" + \"fish\"?",
+    "options": [
+      "stafish",
+      "starfish",
+      "starfishs",
+      "fishstar"
+    ],
+    "answer": "starfish",
+    "explanation": "Star + fish = starfish — a sea creature shaped like a star."
+  },
+  {
+    "id": "eng-compound-062",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"starfish\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"starfish\" and \"the\"",
+      "\"st\" and \"fish\"",
+      "\"star\" and \"fish\"",
+      "\"fish\" and \"star\""
+    ],
+    "answer": "\"star\" and \"fish\"",
+    "explanation": "Star + fish = starfish — a sea creature shaped like a star."
+  },
+  {
+    "id": "eng-compound-063",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"back\" + \"pack\"?",
+    "options": [
+      "packback",
+      "bacpack",
+      "backpack",
+      "backpacks"
+    ],
+    "answer": "backpack",
+    "explanation": "Back + pack = backpack — carried on your back."
+  },
+  {
+    "id": "eng-compound-064",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"backpack\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"backpack\" and \"the\"",
+      "\"ba\" and \"pack\"",
+      "\"back\" and \"pack\"",
+      "\"pack\" and \"back\""
+    ],
+    "answer": "\"back\" and \"pack\"",
+    "explanation": "Back + pack = backpack — carried on your back."
+  },
+  {
+    "id": "eng-compound-065",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"cup\" + \"cake\"?",
+    "options": [
+      "cucake",
+      "cupcake",
+      "cupcakes",
+      "cakecup"
+    ],
+    "answer": "cupcake",
+    "explanation": "Cup + cake = cupcake — a small individual cake."
+  },
+  {
+    "id": "eng-compound-066",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"cupcake\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"cupcake\" and \"the\"",
+      "\"cu\" and \"cake\"",
+      "\"cup\" and \"cake\"",
+      "\"cake\" and \"cup\""
+    ],
+    "answer": "\"cup\" and \"cake\"",
+    "explanation": "Cup + cake = cupcake — a small individual cake."
+  },
+  {
+    "id": "eng-compound-067",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"pop\" + \"corn\"?",
+    "options": [
+      "popcorn",
+      "popcorns",
+      "cornpop",
+      "pocorn"
+    ],
+    "answer": "popcorn",
+    "explanation": "Pop + corn = popcorn — corn that pops!"
+  },
+  {
+    "id": "eng-compound-068",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"popcorn\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"popcorn\" and \"the\"",
+      "\"po\" and \"corn\"",
+      "\"pop\" and \"corn\"",
+      "\"corn\" and \"pop\""
+    ],
+    "answer": "\"pop\" and \"corn\"",
+    "explanation": "Pop + corn = popcorn — corn that pops!"
+  },
+  {
+    "id": "eng-compound-069",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"home\" + \"work\"?",
+    "options": [
+      "homework",
+      "homeworks",
+      "workhome",
+      "homwork"
+    ],
+    "answer": "homework",
+    "explanation": "Home + work = homework — work you do at home."
+  },
+  {
+    "id": "eng-compound-070",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"homework\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"homework\" and \"the\"",
+      "\"ho\" and \"work\"",
+      "\"home\" and \"work\"",
+      "\"work\" and \"home\""
+    ],
+    "answer": "\"home\" and \"work\"",
+    "explanation": "Home + work = homework — work you do at home."
+  },
+  {
+    "id": "eng-compound-071",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"snow\" + \"flake\"?",
+    "options": [
+      "snoflake",
+      "snowflake",
+      "snowflakes",
+      "flakesnow"
+    ],
+    "answer": "snowflake",
+    "explanation": "Snow + flake = snowflake — each one is unique!"
+  },
+  {
+    "id": "eng-compound-072",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"snowflake\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"snowflake\" and \"the\"",
+      "\"sn\" and \"flake\"",
+      "\"snow\" and \"flake\"",
+      "\"flake\" and \"snow\""
+    ],
+    "answer": "\"snow\" and \"flake\"",
+    "explanation": "Snow + flake = snowflake — each one is unique!"
+  },
+  {
+    "id": "eng-compound-073",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"sun\" + \"shine\"?",
+    "options": [
+      "sushine",
+      "sunshine",
+      "sunshines",
+      "shinesun"
+    ],
+    "answer": "sunshine",
+    "explanation": "Sun + shine = sunshine — bright light from the sun."
+  },
+  {
+    "id": "eng-compound-074",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"sunshine\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"sunshine\" and \"the\"",
+      "\"su\" and \"shine\"",
+      "\"sun\" and \"shine\"",
+      "\"shine\" and \"sun\""
+    ],
+    "answer": "\"sun\" and \"shine\"",
+    "explanation": "Sun + shine = sunshine — bright light from the sun."
+  },
+  {
+    "id": "eng-compound-075",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"rain\" + \"coat\"?",
+    "options": [
+      "coatrain",
+      "raicoat",
+      "raincoat",
+      "raincoats"
+    ],
+    "answer": "raincoat",
+    "explanation": "Rain + coat = raincoat — very useful in Ireland!"
+  },
+  {
+    "id": "eng-compound-076",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"raincoat\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"raincoat\" and \"the\"",
+      "\"ra\" and \"coat\"",
+      "\"rain\" and \"coat\"",
+      "\"coat\" and \"rain\""
+    ],
+    "answer": "\"rain\" and \"coat\"",
+    "explanation": "Rain + coat = raincoat — very useful in Ireland!"
+  },
+  {
+    "id": "eng-compound-077",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"over\" + \"coat\"?",
+    "options": [
+      "ovecoat",
+      "overcoat",
+      "overcoats",
+      "coatover"
+    ],
+    "answer": "overcoat",
+    "explanation": "Over + coat = overcoat — a long warm coat."
+  },
+  {
+    "id": "eng-compound-078",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"overcoat\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"overcoat\" and \"the\"",
+      "\"ov\" and \"coat\"",
+      "\"over\" and \"coat\"",
+      "\"coat\" and \"over\""
+    ],
+    "answer": "\"over\" and \"coat\"",
+    "explanation": "Over + coat = overcoat — a long warm coat."
+  },
+  {
+    "id": "eng-compound-079",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"hand\" + \"shake\"?",
+    "options": [
+      "handshake",
+      "handshakes",
+      "shakehand",
+      "hanshake"
+    ],
+    "answer": "handshake",
+    "explanation": "Hand + shake = handshake — a greeting."
+  },
+  {
+    "id": "eng-compound-080",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"handshake\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"handshake\" and \"the\"",
+      "\"ha\" and \"shake\"",
+      "\"hand\" and \"shake\"",
+      "\"shake\" and \"hand\""
+    ],
+    "answer": "\"hand\" and \"shake\"",
+    "explanation": "Hand + shake = handshake — a greeting."
+  },
+  {
+    "id": "eng-compound-081",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"day\" + \"dream\"?",
+    "options": [
+      "daydream",
+      "daydreams",
+      "dreamday",
+      "dadream"
+    ],
+    "answer": "daydream",
+    "explanation": "Day + dream = daydream — imagining while awake."
+  },
+  {
+    "id": "eng-compound-082",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"daydream\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"daydream\" and \"the\"",
+      "\"da\" and \"dream\"",
+      "\"day\" and \"dream\"",
+      "\"dream\" and \"day\""
+    ],
+    "answer": "\"day\" and \"dream\"",
+    "explanation": "Day + dream = daydream — imagining while awake."
+  },
+  {
+    "id": "eng-compound-083",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"moon\" + \"light\"?",
+    "options": [
+      "moonlights",
+      "lightmoon",
+      "moolight",
+      "moonlight"
+    ],
+    "answer": "moonlight",
+    "explanation": "Moon + light = moonlight — light from the moon."
+  },
+  {
+    "id": "eng-compound-084",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"moonlight\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"moonlight\" and \"the\"",
+      "\"mo\" and \"light\"",
+      "\"moon\" and \"light\"",
+      "\"light\" and \"moon\""
+    ],
+    "answer": "\"moon\" and \"light\"",
+    "explanation": "Moon + light = moonlight — light from the moon."
+  },
+  {
+    "id": "eng-compound-085",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"candle\" + \"stick\"?",
+    "options": [
+      "candlstick",
+      "candlestick",
+      "candlesticks",
+      "stickcandle"
+    ],
+    "answer": "candlestick",
+    "explanation": "Candle + stick = candlestick."
+  },
+  {
+    "id": "eng-compound-086",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"candlestick\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"candlestick\" and \"the\"",
+      "\"ca\" and \"stick\"",
+      "\"candle\" and \"stick\"",
+      "\"stick\" and \"candle\""
+    ],
+    "answer": "\"candle\" and \"stick\"",
+    "explanation": "Candle + stick = candlestick."
+  },
+  {
+    "id": "eng-compound-087",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"door\" + \"bell\"?",
+    "options": [
+      "doorbell",
+      "doorbells",
+      "belldoor",
+      "doobell"
+    ],
+    "answer": "doorbell",
+    "explanation": "Door + bell = doorbell — ring it to say you're there!"
+  },
+  {
+    "id": "eng-compound-088",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"doorbell\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"doorbell\" and \"the\"",
+      "\"do\" and \"bell\"",
+      "\"door\" and \"bell\"",
+      "\"bell\" and \"door\""
+    ],
+    "answer": "\"door\" and \"bell\"",
+    "explanation": "Door + bell = doorbell — ring it to say you're there!"
+  },
+  {
+    "id": "eng-compound-089",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"table\" + \"cloth\"?",
+    "options": [
+      "tablecloth",
+      "tablecloths",
+      "clothtable",
+      "tablcloth"
+    ],
+    "answer": "tablecloth",
+    "explanation": "Table + cloth = tablecloth."
+  },
+  {
+    "id": "eng-compound-090",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"tablecloth\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"tablecloth\" and \"the\"",
+      "\"ta\" and \"cloth\"",
+      "\"table\" and \"cloth\"",
+      "\"cloth\" and \"table\""
+    ],
+    "answer": "\"table\" and \"cloth\"",
+    "explanation": "Table + cloth = tablecloth."
+  },
+  {
+    "id": "eng-compound-091",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"arm\" + \"chair\"?",
+    "options": [
+      "armchairs",
+      "chairarm",
+      "archair",
+      "armchair"
+    ],
+    "answer": "armchair",
+    "explanation": "Arm + chair = armchair — a comfy chair with arms."
+  },
+  {
+    "id": "eng-compound-092",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"armchair\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"armchair\" and \"the\"",
+      "\"ar\" and \"chair\"",
+      "\"arm\" and \"chair\"",
+      "\"chair\" and \"arm\""
+    ],
+    "answer": "\"arm\" and \"chair\"",
+    "explanation": "Arm + chair = armchair — a comfy chair with arms."
+  },
+  {
+    "id": "eng-compound-093",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is made from \"neck\" + \"lace\"?",
+    "options": [
+      "laceneck",
+      "neclace",
+      "necklace",
+      "necklaces"
+    ],
+    "answer": "necklace",
+    "explanation": "Neck + lace = necklace — jewellery worn around the neck."
+  },
+  {
+    "id": "eng-compound-094",
+    "subject": "english",
+    "topic": "compound-words",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"necklace\" is a compound word. Which two words make it up?",
+    "options": [
+      "\"necklace\" and \"the\"",
+      "\"ne\" and \"lace\"",
+      "\"neck\" and \"lace\"",
+      "\"lace\" and \"neck\""
+    ],
+    "answer": "\"neck\" and \"lace\"",
+    "explanation": "Neck + lace = necklace — jewellery worn around the neck."
+  },
+  {
+    "id": "eng-gram-079",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"Cork\"?",
+    "options": [
+      "proper noun",
+      "common noun",
+      "verb",
+      "adjective"
+    ],
+    "answer": "proper noun",
+    "explanation": "Cork is the name of a specific place, so it is a proper noun — always capitalised!"
+  },
+  {
+    "id": "eng-gram-080",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"dog\"?",
+    "options": [
+      "adverb",
+      "common noun",
+      "proper noun",
+      "verb"
+    ],
+    "answer": "common noun",
+    "explanation": "Dog is a common noun — a general word for a type of animal."
+  },
+  {
+    "id": "eng-gram-081",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"happiness\"?",
+    "options": [
+      "common noun",
+      "proper noun",
+      "verb",
+      "abstract noun"
+    ],
+    "answer": "abstract noun",
+    "explanation": "Happiness is an abstract noun — you can't see or touch it, but you can feel it!"
+  },
+  {
+    "id": "eng-gram-082",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"friendship\"?",
+    "options": [
+      "common noun",
+      "proper noun",
+      "adjective",
+      "abstract noun"
+    ],
+    "answer": "abstract noun",
+    "explanation": "Friendship is an abstract noun — a feeling, not a physical object."
+  },
+  {
+    "id": "eng-gram-083",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"bravery\"?",
+    "options": [
+      "common noun",
+      "verb",
+      "adverb",
+      "abstract noun"
+    ],
+    "answer": "abstract noun",
+    "explanation": "Bravery is an abstract noun — a quality we admire."
+  },
+  {
+    "id": "eng-gram-084",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"Ireland\"?",
+    "options": [
+      "proper noun",
+      "common noun",
+      "adjective",
+      "verb"
+    ],
+    "answer": "proper noun",
+    "explanation": "Ireland is a specific place name — proper nouns always start with a capital letter."
+  },
+  {
+    "id": "eng-gram-085",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"Shannon\"?",
+    "options": [
+      "proper noun",
+      "common noun",
+      "adjective",
+      "verb"
+    ],
+    "answer": "proper noun",
+    "explanation": "Shannon (the river) is a proper noun — it names a specific river."
+  },
+  {
+    "id": "eng-gram-086",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"book\"?",
+    "options": [
+      "adverb",
+      "common noun",
+      "proper noun",
+      "verb"
+    ],
+    "answer": "common noun",
+    "explanation": "Book is a common noun — a general word for a type of thing."
+  },
+  {
+    "id": "eng-gram-087",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"teacher\"?",
+    "options": [
+      "adjective",
+      "common noun",
+      "proper noun",
+      "abstract noun"
+    ],
+    "answer": "common noun",
+    "explanation": "Teacher is a common noun — a general word for a type of person."
+  },
+  {
+    "id": "eng-gram-088",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"love\"?",
+    "options": [
+      "common noun",
+      "proper noun",
+      "verb",
+      "abstract noun"
+    ],
+    "answer": "abstract noun",
+    "explanation": "Love is an abstract noun — a feeling you can't hold in your hands."
+  },
+  {
+    "id": "eng-gram-089",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"excitement\"?",
+    "options": [
+      "common noun",
+      "verb",
+      "adjective",
+      "abstract noun"
+    ],
+    "answer": "abstract noun",
+    "explanation": "Excitement is an abstract noun — a feeling, not a thing."
+  },
+  {
+    "id": "eng-gram-090",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of noun is \"Dublin\"?",
+    "options": [
+      "proper noun",
+      "common noun",
+      "adjective",
+      "adverb"
+    ],
+    "answer": "proper noun",
+    "explanation": "Dublin is a specific place — always capitalised as a proper noun."
+  },
+  {
+    "id": "eng-gram-091",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"run\"?",
+    "options": [
+      "rund",
+      "Runed",
+      "ran",
+      "runed"
+    ],
+    "answer": "ran",
+    "explanation": "Run is irregular — past tense is ran, not runned!"
+  },
+  {
+    "id": "eng-gram-092",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"run\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "ruing",
+      "running",
+      "runing",
+      "option A"
+    ],
+    "answer": "running",
+    "explanation": "The present participle of run is running."
+  },
+  {
+    "id": "eng-gram-093",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"jump\"?",
+    "options": [
+      "jumpd",
+      "Jumped",
+      "jumped",
+      "option A"
+    ],
+    "answer": "jumped",
+    "explanation": "Jump is regular — just add -ed for past tense."
+  },
+  {
+    "id": "eng-gram-094",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"jump\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "juming",
+      "jumpping",
+      "jumping",
+      "option A"
+    ],
+    "answer": "jumping",
+    "explanation": "The present participle of jump is jumping."
+  },
+  {
+    "id": "eng-gram-095",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"eat\"?",
+    "options": [
+      "eated",
+      "eatd",
+      "Eated",
+      "ate"
+    ],
+    "answer": "ate",
+    "explanation": "Eat is irregular — past tense is ate."
+  },
+  {
+    "id": "eng-gram-096",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"eat\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "eating",
+      "eaing",
+      "eatting",
+      "option A"
+    ],
+    "answer": "eating",
+    "explanation": "The present participle of eat is eating."
+  },
+  {
+    "id": "eng-gram-097",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"sing\"?",
+    "options": [
+      "Singed",
+      "sang",
+      "singed",
+      "singd"
+    ],
+    "answer": "sang",
+    "explanation": "Sing is irregular — past tense is sang."
+  },
+  {
+    "id": "eng-gram-098",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"sing\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "singging",
+      "singing",
+      "sining",
+      "option A"
+    ],
+    "answer": "singing",
+    "explanation": "The present participle of sing is singing."
+  },
+  {
+    "id": "eng-gram-099",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"write\"?",
+    "options": [
+      "Writeed",
+      "wrote",
+      "writeed",
+      "writed"
+    ],
+    "answer": "wrote",
+    "explanation": "Write is irregular — past tense is wrote."
+  },
+  {
+    "id": "eng-gram-100",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"write\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "writeeing",
+      "writing",
+      "writeing",
+      "option A"
+    ],
+    "answer": "writing",
+    "explanation": "The present participle of write is writing."
+  },
+  {
+    "id": "eng-gram-101",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"swim\"?",
+    "options": [
+      "Swimed",
+      "swam",
+      "swimed",
+      "swimd"
+    ],
+    "answer": "swam",
+    "explanation": "Swim is irregular — past tense is swam."
+  },
+  {
+    "id": "eng-gram-102",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"swim\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "swimming",
+      "swiming",
+      "swiing",
+      "option A"
+    ],
+    "answer": "swimming",
+    "explanation": "The present participle of swim is swimming."
+  },
+  {
+    "id": "eng-gram-103",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"fly\"?",
+    "options": [
+      "flyd",
+      "Flyed",
+      "flew",
+      "flyed"
+    ],
+    "answer": "flew",
+    "explanation": "Fly is irregular — past tense is flew!"
+  },
+  {
+    "id": "eng-gram-104",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"fly\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "fling",
+      "flyying",
+      "flying",
+      "option A"
+    ],
+    "answer": "flying",
+    "explanation": "The present participle of fly is flying."
+  },
+  {
+    "id": "eng-gram-105",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"grow\"?",
+    "options": [
+      "Growed",
+      "grew",
+      "growed",
+      "growd"
+    ],
+    "answer": "grew",
+    "explanation": "Grow is irregular — past tense is grew."
+  },
+  {
+    "id": "eng-gram-106",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"grow\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "growwing",
+      "growing",
+      "groing",
+      "option A"
+    ],
+    "answer": "growing",
+    "explanation": "The present participle of grow is growing."
+  },
+  {
+    "id": "eng-gram-107",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"know\"?",
+    "options": [
+      "Knowed",
+      "knew",
+      "knowed",
+      "knowd"
+    ],
+    "answer": "knew",
+    "explanation": "Know is irregular — past tense is knew."
+  },
+  {
+    "id": "eng-gram-108",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"know\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "knowwing",
+      "knowing",
+      "knoing",
+      "option A"
+    ],
+    "answer": "knowing",
+    "explanation": "The present participle of know is knowing."
+  },
+  {
+    "id": "eng-gram-109",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"throw\"?",
+    "options": [
+      "threw",
+      "throwed",
+      "throwd",
+      "Throwed"
+    ],
+    "answer": "threw",
+    "explanation": "Throw is irregular — past tense is threw."
+  },
+  {
+    "id": "eng-gram-110",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"throw\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "throwing",
+      "throing",
+      "throwwing",
+      "option A"
+    ],
+    "answer": "throwing",
+    "explanation": "The present participle of throw is throwing."
+  },
+  {
+    "id": "eng-gram-111",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"bring\"?",
+    "options": [
+      "bringd",
+      "Bringed",
+      "brought",
+      "bringed"
+    ],
+    "answer": "brought",
+    "explanation": "Bring is irregular — past tense is brought."
+  },
+  {
+    "id": "eng-gram-112",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"bring\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "brining",
+      "bringging",
+      "bringing",
+      "option A"
+    ],
+    "answer": "bringing",
+    "explanation": "The present participle of bring is bringing."
+  },
+  {
+    "id": "eng-gram-113",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"buy\"?",
+    "options": [
+      "buyd",
+      "Buyed",
+      "bought",
+      "buyed"
+    ],
+    "answer": "bought",
+    "explanation": "Buy is irregular — past tense is bought."
+  },
+  {
+    "id": "eng-gram-114",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"buy\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "buing",
+      "buyying",
+      "buying",
+      "option A"
+    ],
+    "answer": "buying",
+    "explanation": "The present participle of buy is buying."
+  },
+  {
+    "id": "eng-gram-115",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"catch\"?",
+    "options": [
+      "Catched",
+      "caught",
+      "catched",
+      "catchd"
+    ],
+    "answer": "caught",
+    "explanation": "Catch is irregular — past tense is caught."
+  },
+  {
+    "id": "eng-gram-116",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"catch\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "catchhing",
+      "catching",
+      "catcing",
+      "option A"
+    ],
+    "answer": "catching",
+    "explanation": "The present participle of catch is catching."
+  },
+  {
+    "id": "eng-gram-117",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"teach\"?",
+    "options": [
+      "taught",
+      "teached",
+      "teachd",
+      "Teached"
+    ],
+    "answer": "taught",
+    "explanation": "Teach is irregular — past tense is taught."
+  },
+  {
+    "id": "eng-gram-118",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"teach\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "teaching",
+      "teacing",
+      "teachhing",
+      "option A"
+    ],
+    "answer": "teaching",
+    "explanation": "The present participle of teach is teaching."
+  },
+  {
+    "id": "eng-gram-119",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"think\"?",
+    "options": [
+      "thought",
+      "thinked",
+      "thinkd",
+      "Thinked"
+    ],
+    "answer": "thought",
+    "explanation": "Think is irregular — past tense is thought."
+  },
+  {
+    "id": "eng-gram-120",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"think\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "thinking",
+      "thining",
+      "thinkking",
+      "option A"
+    ],
+    "answer": "thinking",
+    "explanation": "The present participle of think is thinking."
+  },
+  {
+    "id": "eng-gram-121",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"feel\"?",
+    "options": [
+      "feeld",
+      "Feeled",
+      "felt",
+      "feeled"
+    ],
+    "answer": "felt",
+    "explanation": "Feel is irregular — past tense is felt."
+  },
+  {
+    "id": "eng-gram-122",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"feel\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "feeing",
+      "feelling",
+      "feeling",
+      "option A"
+    ],
+    "answer": "feeling",
+    "explanation": "The present participle of feel is feeling."
+  },
+  {
+    "id": "eng-gram-123",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"meet\"?",
+    "options": [
+      "meeted",
+      "meetd",
+      "Meeted",
+      "met"
+    ],
+    "answer": "met",
+    "explanation": "Meet is irregular — past tense is met."
+  },
+  {
+    "id": "eng-gram-124",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"meet\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "meeting",
+      "meeing",
+      "meetting",
+      "option A"
+    ],
+    "answer": "meeting",
+    "explanation": "The present participle of meet is meeting."
+  },
+  {
+    "id": "eng-gram-125",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"sit\"?",
+    "options": [
+      "Sited",
+      "sat",
+      "sited",
+      "sitd"
+    ],
+    "answer": "sat",
+    "explanation": "Sit is irregular — past tense is sat."
+  },
+  {
+    "id": "eng-gram-126",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"sit\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "sitting",
+      "siting",
+      "siing",
+      "option A"
+    ],
+    "answer": "sitting",
+    "explanation": "The present participle of sit is sitting."
+  },
+  {
+    "id": "eng-gram-127",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"stand\"?",
+    "options": [
+      "Standed",
+      "stood",
+      "standed",
+      "standd"
+    ],
+    "answer": "stood",
+    "explanation": "Stand is irregular — past tense is stood."
+  },
+  {
+    "id": "eng-gram-128",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"stand\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "standding",
+      "standing",
+      "staning",
+      "option A"
+    ],
+    "answer": "standing",
+    "explanation": "The present participle of stand is standing."
+  },
+  {
+    "id": "eng-gram-129",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of \"sleep\"?",
+    "options": [
+      "Sleeped",
+      "slept",
+      "sleeped",
+      "sleepd"
+    ],
+    "answer": "slept",
+    "explanation": "Sleep is irregular — past tense is slept."
+  },
+  {
+    "id": "eng-gram-130",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"sleep\" is the base form of a verb. What is the present participle (-ing form)?",
+    "options": [
+      "sleepping",
+      "sleeping",
+      "sleeing",
+      "option A"
+    ],
+    "answer": "sleeping",
+    "explanation": "The present participle of sleep is sleeping."
+  },
+  {
+    "id": "eng-gram-131",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"The ____ fox ran past the farm.\"",
+    "options": [
+      "ran",
+      "farm",
+      "The",
+      "quick"
+    ],
+    "answer": "quick",
+    "explanation": "Quick describes the noun fox — it is an adjective."
+  },
+  {
+    "id": "eng-gram-132",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"She wore a ____ dress to the party.\"",
+    "options": [
+      "She",
+      "sparkly",
+      "wore",
+      "party"
+    ],
+    "answer": "sparkly",
+    "explanation": "Sparkly describes the dress — it is an adjective."
+  },
+  {
+    "id": "eng-gram-133",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"The ____ giant stomped through the village.\"",
+    "options": [
+      "stomped",
+      "through",
+      "The",
+      "enormous"
+    ],
+    "answer": "enormous",
+    "explanation": "Enormous tells us what kind of giant — adjective."
+  },
+  {
+    "id": "eng-gram-134",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"It was a ____ day for a walk in the park.\"",
+    "options": [
+      "park",
+      "was",
+      "beautiful",
+      "walk"
+    ],
+    "answer": "beautiful",
+    "explanation": "Beautiful describes the day — adjective."
+  },
+  {
+    "id": "eng-gram-135",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"The ____ kitten curled up by the fire.\"",
+    "options": [
+      "tiny",
+      "curled",
+      "fire",
+      "The"
+    ],
+    "answer": "tiny",
+    "explanation": "Tiny describes the kitten — adjective."
+  },
+  {
+    "id": "eng-gram-136",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"He told a ____ story about dragons.\"",
+    "options": [
+      "told",
+      "dragons",
+      "He",
+      "mysterious"
+    ],
+    "answer": "mysterious",
+    "explanation": "Mysterious describes the story — adjective."
+  },
+  {
+    "id": "eng-gram-137",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"The ____ athlete won three gold medals.\"",
+    "options": [
+      "talented",
+      "won",
+      "medals",
+      "The"
+    ],
+    "answer": "talented",
+    "explanation": "Talented describes the athlete — adjective."
+  },
+  {
+    "id": "eng-gram-138",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"We had a ____ time at the festival.\"",
+    "options": [
+      "We",
+      "wonderful",
+      "had",
+      "festival"
+    ],
+    "answer": "wonderful",
+    "explanation": "Wonderful describes the time — adjective."
+  },
+  {
+    "id": "eng-gram-139",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"The ____ old castle stood on the hill.\"",
+    "options": [
+      "stood",
+      "hill",
+      "The",
+      "ancient"
+    ],
+    "answer": "ancient",
+    "explanation": "Ancient describes the castle — adjective."
+  },
+  {
+    "id": "eng-gram-140",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the adjective that best fits the gap: \"She gave a ____ answer to the question.\"",
+    "options": [
+      "She",
+      "clever",
+      "gave",
+      "question"
+    ],
+    "answer": "clever",
+    "explanation": "Clever describes the answer — adjective."
+  },
+  {
+    "id": "eng-gram-141",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb? \"She sang ____.\"",
+    "options": [
+      "beauty",
+      "beautify",
+      "beautifully",
+      "beautiful"
+    ],
+    "answer": "beautifully",
+    "explanation": "Beautifully tells us HOW she sang — it is an adverb."
+  },
+  {
+    "id": "eng-gram-142",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb? \"He ran ____ to catch the bus.\"",
+    "options": [
+      "quick",
+      "quickness",
+      "quicker",
+      "quickly"
+    ],
+    "answer": "quickly",
+    "explanation": "Quickly tells us HOW he ran — adverb."
+  },
+  {
+    "id": "eng-gram-143",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb? \"The baby slept ____ through the night.\"",
+    "options": [
+      "soundness",
+      "soundly",
+      "sound",
+      "sounder"
+    ],
+    "answer": "soundly",
+    "explanation": "Soundly tells us HOW the baby slept — adverb."
+  },
+  {
+    "id": "eng-gram-144",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb? \"She spoke ____ to the elderly woman.\"",
+    "options": [
+      "kindness",
+      "kindly",
+      "kind",
+      "kinder"
+    ],
+    "answer": "kindly",
+    "explanation": "Kindly tells us HOW she spoke — adverb."
+  },
+  {
+    "id": "eng-gram-145",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb? \"He answered every question ____.\"",
+    "options": [
+      "corrector",
+      "correctly",
+      "correct",
+      "correction"
+    ],
+    "answer": "correctly",
+    "explanation": "Correctly tells us HOW he answered — adverb."
+  },
+  {
+    "id": "eng-gram-146",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb? \"The dog barked ____ at the postman.\"",
+    "options": [
+      "loudly",
+      "loud",
+      "louder",
+      "loudness"
+    ],
+    "answer": "loudly",
+    "explanation": "Loudly tells us HOW the dog barked — adverb."
+  },
+  {
+    "id": "eng-gram-147",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb? \"She ____ finished her homework before dinner.\"",
+    "options": [
+      "more careful",
+      "carefully",
+      "careful",
+      "carefulness"
+    ],
+    "answer": "carefully",
+    "explanation": "Carefully tells us HOW she finished — adverb."
+  },
+  {
+    "id": "eng-gram-148",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb? \"He ____ climbed the tall tree.\"",
+    "options": [
+      "braver",
+      "braveness",
+      "bravely",
+      "brave"
+    ],
+    "answer": "bravely",
+    "explanation": "Bravely tells us HOW he climbed — adverb."
+  },
+  {
+    "id": "eng-gram-149",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct pronoun: \"Aoife went to the shop. ____ bought some bread.\"",
+    "options": [
+      "They",
+      "She",
+      "Her",
+      "Hers"
+    ],
+    "answer": "She",
+    "explanation": "We replace \"Aoife\" (a girl's name) with the pronoun \"She\"."
+  },
+  {
+    "id": "eng-gram-150",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct pronoun: \"The boys played football. ____ won the match.\"",
+    "options": [
+      "They",
+      "Them",
+      "Their",
+      "Those"
+    ],
+    "answer": "They",
+    "explanation": "We replace \"the boys\" with the pronoun \"They\"."
+  },
+  {
+    "id": "eng-gram-151",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct pronoun: \"Seán and I went to the park. ____ had great fun.\"",
+    "options": [
+      "They",
+      "We",
+      "Us",
+      "Our"
+    ],
+    "answer": "We",
+    "explanation": "\"Seán and I\" = We — use \"we\" as the subject of a sentence."
+  },
+  {
+    "id": "eng-gram-152",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct pronoun: \"The book is on the table. Can you pass ____ to me?\"",
+    "options": [
+      "its",
+      "itself",
+      "them",
+      "it"
+    ],
+    "answer": "it",
+    "explanation": "We replace \"the book\" with the pronoun \"it\"."
+  },
+  {
+    "id": "eng-gram-153",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct pronoun: \"That cat is always scratching. ____ claws are sharp.\"",
+    "options": [
+      "It's",
+      "Their",
+      "It",
+      "Its"
+    ],
+    "answer": "Its",
+    "explanation": "\"Its\" (no apostrophe) shows belonging — its claws."
+  },
+  {
+    "id": "eng-gram-154",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct pronoun: \"I gave the flowers to Mam. I gave them to ____.\"",
+    "options": [
+      "her",
+      "she",
+      "hers",
+      "herself"
+    ],
+    "answer": "her",
+    "explanation": "After a verb or preposition, use \"her\" not \"she\"."
+  },
+  {
+    "id": "eng-gram-155",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct pronoun: \"Is this bag ____?\"",
+    "options": [
+      "you",
+      "your",
+      "yourself",
+      "yours"
+    ],
+    "answer": "yours",
+    "explanation": "\"Yours\" is a possessive pronoun — it replaces \"your bag\"."
+  },
+  {
+    "id": "eng-gram-156",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Choose the correct pronoun: \"The children cleaned up after ____.\"",
+    "options": [
+      "themselves",
+      "theirselves",
+      "them",
+      "they"
+    ],
+    "answer": "themselves",
+    "explanation": "\"Themselves\" is a reflexive pronoun — the children did it to themselves."
+  },
+  {
+    "id": "eng-gram-157",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"The cat sat ____ the mat.\"",
+    "options": [
+      "by",
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": "on",
+    "explanation": "\"On\" shows where the cat is — on the mat. Prepositions tell us where or when."
+  },
+  {
+    "id": "eng-gram-158",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"The bird flew ____ the tree.\"",
+    "options": [
+      "through",
+      "over",
+      "under",
+      "beside"
+    ],
+    "answer": "over",
+    "explanation": "\"Over\" tells us where the bird went."
+  },
+  {
+    "id": "eng-gram-159",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"She hid ____ the door.\"",
+    "options": [
+      "above",
+      "over",
+      "behind",
+      "between"
+    ],
+    "answer": "behind",
+    "explanation": "\"Behind\" tells us where she hid."
+  },
+  {
+    "id": "eng-gram-160",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"We walked ____ the bridge.\"",
+    "options": [
+      "around",
+      "beside",
+      "above",
+      "across"
+    ],
+    "answer": "across",
+    "explanation": "\"Across\" means from one side to the other."
+  },
+  {
+    "id": "eng-gram-161",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"He sat ____ his two friends.\"",
+    "options": [
+      "beside",
+      "over",
+      "between",
+      "among"
+    ],
+    "answer": "between",
+    "explanation": "\"Between\" is used for two people or things."
+  },
+  {
+    "id": "eng-gram-162",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"She shared her sweets ____ all her classmates.\"",
+    "options": [
+      "between",
+      "beside",
+      "over",
+      "among"
+    ],
+    "answer": "among",
+    "explanation": "\"Among\" is used for more than two."
+  },
+  {
+    "id": "eng-gram-163",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"The poster is ____ the whiteboard.\"",
+    "options": [
+      "under",
+      "over",
+      "beside",
+      "behind"
+    ],
+    "answer": "beside",
+    "explanation": "\"Beside\" means next to."
+  },
+  {
+    "id": "eng-gram-164",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"The cat is hiding ____ the sofa.\"",
+    "options": [
+      "over",
+      "beside",
+      "between",
+      "under"
+    ],
+    "answer": "under",
+    "explanation": "\"Under\" means below."
+  },
+  {
+    "id": "eng-gram-165",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"Put your bag ____ the hook.\"",
+    "options": [
+      "among",
+      "on",
+      "in",
+      "beside"
+    ],
+    "answer": "on",
+    "explanation": "\"On\" — the bag hangs on the hook."
+  },
+  {
+    "id": "eng-gram-166",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"He arrived ____ five o'clock.\"",
+    "options": [
+      "in",
+      "on",
+      "by",
+      "at"
+    ],
+    "answer": "at",
+    "explanation": "\"At\" is used with specific times."
+  },
+  {
+    "id": "eng-gram-167",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"She was born ____ Monday.\"",
+    "options": [
+      "by",
+      "on",
+      "at",
+      "in"
+    ],
+    "answer": "on",
+    "explanation": "\"On\" is used with days of the week."
+  },
+  {
+    "id": "eng-gram-168",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct preposition: \"We go on holidays ____ summer.\"",
+    "options": [
+      "on",
+      "at",
+      "by",
+      "in"
+    ],
+    "answer": "in",
+    "explanation": "\"In\" is used with seasons and months."
+  },
+  {
+    "id": "eng-gram-169",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"I wanted to go out, ____ it was raining.\"",
+    "options": [
+      "so",
+      "or",
+      "but",
+      "and"
+    ],
+    "answer": "but",
+    "explanation": "\"But\" joins two contrasting ideas."
+  },
+  {
+    "id": "eng-gram-170",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"You can have cake ____ biscuits.\"",
+    "options": [
+      "so",
+      "or",
+      "and",
+      "but"
+    ],
+    "answer": "or",
+    "explanation": "\"Or\" offers a choice between two things."
+  },
+  {
+    "id": "eng-gram-171",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"She was tired ____ she went to bed early.\"",
+    "options": [
+      "or",
+      "so",
+      "but",
+      "and"
+    ],
+    "answer": "so",
+    "explanation": "\"So\" shows a result."
+  },
+  {
+    "id": "eng-gram-172",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"I like swimming ____ I don't like cold water.\"",
+    "options": [
+      "so",
+      "or",
+      "but",
+      "and"
+    ],
+    "answer": "but",
+    "explanation": "\"But\" shows contrast."
+  },
+  {
+    "id": "eng-gram-173",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"He practised every day ____ he improved quickly.\"",
+    "options": [
+      "but",
+      "or",
+      "so",
+      "and"
+    ],
+    "answer": "and",
+    "explanation": "\"And\" joins two related ideas."
+  },
+  {
+    "id": "eng-gram-174",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"We can go to the beach ____ it rains.\"",
+    "options": [
+      "if",
+      "because",
+      "although",
+      "unless"
+    ],
+    "answer": "unless",
+    "explanation": "\"Unless\" means \"except if\"."
+  },
+  {
+    "id": "eng-gram-175",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"She stayed in ____ the weather was bad.\"",
+    "options": [
+      "although",
+      "so",
+      "because",
+      "unless"
+    ],
+    "answer": "because",
+    "explanation": "\"Because\" explains the reason."
+  },
+  {
+    "id": "eng-gram-176",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"____ he was tired, he still finished his homework.\"",
+    "options": [
+      "Because",
+      "So",
+      "Unless",
+      "Although"
+    ],
+    "answer": "Although",
+    "explanation": "\"Although\" shows contrast — he did it despite being tired."
+  },
+  {
+    "id": "eng-gram-177",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"I will come ____ you need me.\"",
+    "options": [
+      "unless",
+      "although",
+      "so",
+      "if"
+    ],
+    "answer": "if",
+    "explanation": "\"If\" introduces a condition."
+  },
+  {
+    "id": "eng-gram-178",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct conjunction: \"She can read ____ she can write.\"",
+    "options": [
+      "or",
+      "but",
+      "although",
+      "and"
+    ],
+    "answer": "and",
+    "explanation": "\"And\" adds information — she can do both."
+  },
+  {
+    "id": "eng-gram-179",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct verb: \"The dog ______ in the garden.\"",
+    "options": [
+      "plays",
+      "play",
+      "playing",
+      "played"
+    ],
+    "answer": "plays",
+    "explanation": "\"The dog\" is singular, so use \"plays\" (with an s)."
+  },
+  {
+    "id": "eng-gram-180",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct verb: \"The children ______ football every day.\"",
+    "options": [
+      "play",
+      "plays",
+      "playing",
+      "played"
+    ],
+    "answer": "play",
+    "explanation": "\"The children\" is plural, so use \"play\" (no s)."
+  },
+  {
+    "id": "eng-gram-181",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct verb: \"She ______ her homework before dinner.\"",
+    "options": [
+      "does",
+      "do",
+      "doing",
+      "done"
+    ],
+    "answer": "does",
+    "explanation": "\"She\" is singular, so use \"does\"."
+  },
+  {
+    "id": "eng-gram-182",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct verb: \"They ______ to school by bus.\"",
+    "options": [
+      "went",
+      "go",
+      "goes",
+      "going"
+    ],
+    "answer": "go",
+    "explanation": "\"They\" is plural, so use \"go\"."
+  },
+  {
+    "id": "eng-gram-183",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct verb: \"He ______ the fastest in his class.\"",
+    "options": [
+      "running",
+      "ran",
+      "runs",
+      "run"
+    ],
+    "answer": "runs",
+    "explanation": "\"He\" is singular — \"runs\"."
+  },
+  {
+    "id": "eng-gram-184",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct verb: \"The birds ______ south in winter.\"",
+    "options": [
+      "flying",
+      "flew",
+      "fly",
+      "flies"
+    ],
+    "answer": "fly",
+    "explanation": "\"The birds\" is plural — \"fly\"."
+  },
+  {
+    "id": "eng-gram-185",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Choose the correct verb: \"Each of the students ______ a pen.\"",
+    "options": [
+      "has",
+      "have",
+      "having",
+      "had"
+    ],
+    "answer": "has",
+    "explanation": "\"Each\" is singular, even though students is plural — so \"has\"."
+  },
+  {
+    "id": "eng-gram-186",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Choose the correct verb: \"Neither the cat nor the dog ______ happy.\"",
+    "options": [
+      "are",
+      "were",
+      "been",
+      "is"
+    ],
+    "answer": "is",
+    "explanation": "When using \"neither...nor\", the verb agrees with the noun closest to it — \"dog\" is singular, so \"is\"."
+  },
+  {
+    "id": "eng-gram-187",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of sentence is this? \"What time does the film start?\"",
+    "options": [
+      "statement",
+      "command",
+      "exclamation",
+      "question"
+    ],
+    "answer": "question",
+    "explanation": "This sentence asks something — it ends with a question mark, so it is a question (interrogative)."
+  },
+  {
+    "id": "eng-gram-188",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence is this? \"Close the door, please.\"",
+    "options": [
+      "exclamation",
+      "command",
+      "question",
+      "statement"
+    ],
+    "answer": "command",
+    "explanation": "This sentence gives an instruction — it is a command (imperative)."
+  },
+  {
+    "id": "eng-gram-189",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence is this? \"What a brilliant goal that was!\"",
+    "options": [
+      "statement",
+      "question",
+      "command",
+      "exclamation"
+    ],
+    "answer": "exclamation",
+    "explanation": "This sentence expresses strong feeling with an exclamation mark — it is an exclamation."
+  },
+  {
+    "id": "eng-gram-190",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of sentence is this? \"The cat sat on the mat.\"",
+    "options": [
+      "exclamation",
+      "statement",
+      "question",
+      "command"
+    ],
+    "answer": "statement",
+    "explanation": "This sentence tells us a fact — it is a statement (declarative)."
+  },
+  {
+    "id": "eng-gram-191",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of sentence is this? \"Please sit down.\"",
+    "options": [
+      "exclamation",
+      "command",
+      "question",
+      "statement"
+    ],
+    "answer": "command",
+    "explanation": "A command gives an instruction or request."
+  },
+  {
+    "id": "eng-gram-192",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence is this? \"How wonderful the sunset is!\"",
+    "options": [
+      "statement",
+      "question",
+      "command",
+      "exclamation"
+    ],
+    "answer": "exclamation",
+    "explanation": "An exclamation expresses strong emotion — wonderful surprise or joy."
+  },
+  {
+    "id": "eng-gram-193",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of sentence is this? \"Where did you put my keys?\"",
+    "options": [
+      "statement",
+      "command",
+      "exclamation",
+      "question"
+    ],
+    "answer": "question",
+    "explanation": "A question asks for information and ends with a ?."
+  },
+  {
+    "id": "eng-gram-194",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What type of sentence is this? \"Ireland won the match.\"",
+    "options": [
+      "exclamation",
+      "statement",
+      "question",
+      "command"
+    ],
+    "answer": "statement",
+    "explanation": "A statement gives information."
+  },
+  {
+    "id": "eng-gram-195",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct article: \"Give me ____ apple, please.\"",
+    "options": [
+      "a",
+      "the",
+      "some",
+      "an"
+    ],
+    "answer": "an",
+    "explanation": "\"An\" is used before words starting with a vowel sound — apple starts with \"a\"."
+  },
+  {
+    "id": "eng-gram-196",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct article: \"I saw ____ elephant at the zoo.\"",
+    "options": [
+      "a",
+      "the",
+      "some",
+      "an"
+    ],
+    "answer": "an",
+    "explanation": "\"An\" before a vowel sound — elephant starts with \"e\"."
+  },
+  {
+    "id": "eng-gram-197",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Choose the correct article: \"She is ____ honest person.\"",
+    "options": [
+      "a",
+      "the",
+      "one",
+      "an"
+    ],
+    "answer": "an",
+    "explanation": "\"An\" before a vowel SOUND — \"honest\" starts with a silent h, so the vowel sound \"o\" comes first."
+  },
+  {
+    "id": "eng-gram-198",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct article: \"He bought ____ new book.\"",
+    "options": [
+      "an",
+      "the",
+      "some",
+      "a"
+    ],
+    "answer": "a",
+    "explanation": "\"A\" before a consonant sound — new starts with \"n\"."
+  },
+  {
+    "id": "eng-gram-199",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct article: \"____ River Shannon is the longest river in Ireland.\"",
+    "options": [
+      "The",
+      "A",
+      "An",
+      "Some"
+    ],
+    "answer": "The",
+    "explanation": "\"The\" is used with specific named things."
+  },
+  {
+    "id": "eng-gram-200",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Choose the correct article: \"Can I have ____ glass of water?\"",
+    "options": [
+      "an",
+      "the",
+      "some",
+      "a"
+    ],
+    "answer": "a",
+    "explanation": "\"A\" before a consonant sound — glass starts with \"g\"."
+  },
+  {
+    "id": "eng-gram-201",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Choose the correct article: \"She plays ____ violin.\"",
+    "options": [
+      "the",
+      "a",
+      "an",
+      "some"
+    ],
+    "answer": "the",
+    "explanation": "We use \"the\" with musical instruments."
+  },
+  {
+    "id": "eng-gram-202",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Choose the correct article: \"He is ____ engineer.\"",
+    "options": [
+      "a",
+      "the",
+      "some",
+      "an"
+    ],
+    "answer": "an",
+    "explanation": "\"An\" before a vowel sound — engineer starts with \"e\"."
+  },
+  {
+    "id": "eng-gram-203",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Identify the verb: \"The happy children ran quickly to school.\"",
+    "options": [
+      "quickly",
+      "children",
+      "ran",
+      "happy"
+    ],
+    "answer": "ran",
+    "explanation": "Ran is the verb — it tells us the action (what the children did)."
+  },
+  {
+    "id": "eng-gram-204",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Identify the adjective: \"The tiny kitten mewed softly.\"",
+    "options": [
+      "tiny",
+      "mewed",
+      "softly",
+      "The"
+    ],
+    "answer": "tiny",
+    "explanation": "Tiny is the adjective — it describes the kitten."
+  },
+  {
+    "id": "eng-gram-205",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Identify the adverb: \"She spoke very quietly to the baby.\"",
+    "options": [
+      "spoke",
+      "very",
+      "baby",
+      "quietly"
+    ],
+    "answer": "quietly",
+    "explanation": "Quietly is the adverb — it tells us HOW she spoke. (Very is an adverb too, but quietly is the main one!)"
+  },
+  {
+    "id": "eng-gram-206",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Identify the noun: \"The brave knight crossed the dark forest.\"",
+    "options": [
+      "crossed",
+      "dark",
+      "forest",
+      "brave"
+    ],
+    "answer": "forest",
+    "explanation": "Forest is a noun — a person, place or thing. Knight is also a noun!"
+  },
+  {
+    "id": "eng-gram-207",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Identify the preposition: \"The ball rolled under the table.\"",
+    "options": [
+      "rolled",
+      "ball",
+      "table",
+      "under"
+    ],
+    "answer": "under",
+    "explanation": "Under is the preposition — it tells us WHERE the ball went."
+  },
+  {
+    "id": "eng-gram-208",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Identify the conjunction: \"I was tired but I kept going.\"",
+    "options": [
+      "kept",
+      "going",
+      "but",
+      "tired"
+    ],
+    "answer": "but",
+    "explanation": "But is the conjunction — it joins the two parts of the sentence."
+  },
+  {
+    "id": "eng-gram-209",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Identify the pronoun: \"She gave it to them.\"",
+    "options": [
+      "to",
+      "She",
+      "gave",
+      "them"
+    ],
+    "answer": "She",
+    "explanation": "She is a pronoun — it replaces a person's name."
+  },
+  {
+    "id": "eng-gram-210",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Identify the proper noun: \"Ciarán went to school in Limerick.\"",
+    "options": [
+      "Limerick",
+      "school",
+      "went",
+      "Ciarán"
+    ],
+    "answer": "Limerick",
+    "explanation": "Limerick is a proper noun — a specific place name. Ciarán is also a proper noun!"
+  },
+  {
+    "id": "eng-gram-211",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"big\"?",
+    "options": [
+      "bigr",
+      "biggest",
+      "bigger",
+      "biger"
+    ],
+    "answer": "bigger",
+    "explanation": "Big → bigger (comparative) → biggest (superlative). Double the g before -er/-est!"
+  },
+  {
+    "id": "eng-gram-212",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"big\"?",
+    "options": [
+      "bigst",
+      "bigger",
+      "biggest",
+      "bigest"
+    ],
+    "answer": "biggest",
+    "explanation": "Big → bigger (comparative) → biggest (superlative). Double the g before -er/-est!"
+  },
+  {
+    "id": "eng-gram-213",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"fast\"?",
+    "options": [
+      "fastr",
+      "fastest",
+      "faster",
+      "option A"
+    ],
+    "answer": "faster",
+    "explanation": "Fast → faster → fastest. Regular adjective — just add -er/-est."
+  },
+  {
+    "id": "eng-gram-214",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"fast\"?",
+    "options": [
+      "fastst",
+      "faster",
+      "fastest",
+      "option A"
+    ],
+    "answer": "fastest",
+    "explanation": "Fast → faster → fastest. Regular adjective — just add -er/-est."
+  },
+  {
+    "id": "eng-gram-215",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"tall\"?",
+    "options": [
+      "taller",
+      "tallr",
+      "tallest",
+      "option A"
+    ],
+    "answer": "taller",
+    "explanation": "Tall → taller → tallest. Regular — add -er/-est."
+  },
+  {
+    "id": "eng-gram-216",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"tall\"?",
+    "options": [
+      "tallest",
+      "tallst",
+      "taller",
+      "option A"
+    ],
+    "answer": "tallest",
+    "explanation": "Tall → taller → tallest. Regular — add -er/-est."
+  },
+  {
+    "id": "eng-gram-217",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"happy\"?",
+    "options": [
+      "happier",
+      "happyer",
+      "happyr",
+      "happiest"
+    ],
+    "answer": "happier",
+    "explanation": "Happy → happier → happiest. Change the y to i before -er/-est."
+  },
+  {
+    "id": "eng-gram-218",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"happy\"?",
+    "options": [
+      "happiest",
+      "happyest",
+      "happyst",
+      "happier"
+    ],
+    "answer": "happiest",
+    "explanation": "Happy → happier → happiest. Change the y to i before -er/-est."
+  },
+  {
+    "id": "eng-gram-219",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"funny\"?",
+    "options": [
+      "funnyr",
+      "funniest",
+      "funnier",
+      "funnyer"
+    ],
+    "answer": "funnier",
+    "explanation": "Funny → funnier → funniest. Y changes to i."
+  },
+  {
+    "id": "eng-gram-220",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"funny\"?",
+    "options": [
+      "funnyst",
+      "funnier",
+      "funniest",
+      "funnyest"
+    ],
+    "answer": "funniest",
+    "explanation": "Funny → funnier → funniest. Y changes to i."
+  },
+  {
+    "id": "eng-gram-221",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"good\"?",
+    "options": [
+      "goodr",
+      "best",
+      "better",
+      "gooder"
+    ],
+    "answer": "better",
+    "explanation": "Good is irregular — better (comparative) and best (superlative)."
+  },
+  {
+    "id": "eng-gram-222",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"good\"?",
+    "options": [
+      "goodst",
+      "better",
+      "best",
+      "goodest"
+    ],
+    "answer": "best",
+    "explanation": "Good is irregular — better (comparative) and best (superlative)."
+  },
+  {
+    "id": "eng-gram-223",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"bad\"?",
+    "options": [
+      "worst",
+      "worse",
+      "bader",
+      "badr"
+    ],
+    "answer": "worse",
+    "explanation": "Bad is irregular — worse and worst."
+  },
+  {
+    "id": "eng-gram-224",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"bad\"?",
+    "options": [
+      "worse",
+      "worst",
+      "badest",
+      "badst"
+    ],
+    "answer": "worst",
+    "explanation": "Bad is irregular — worse and worst."
+  },
+  {
+    "id": "eng-gram-225",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"far\"?",
+    "options": [
+      "farr",
+      "farthest",
+      "farther",
+      "farer"
+    ],
+    "answer": "farther",
+    "explanation": "Far → farther → farthest (or further/furthest)."
+  },
+  {
+    "id": "eng-gram-226",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"far\"?",
+    "options": [
+      "farst",
+      "farther",
+      "farthest",
+      "farest"
+    ],
+    "answer": "farthest",
+    "explanation": "Far → farther → farthest (or further/furthest)."
+  },
+  {
+    "id": "eng-gram-227",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"little\"?",
+    "options": [
+      "less",
+      "littleer",
+      "littler",
+      "least"
+    ],
+    "answer": "less",
+    "explanation": "Little → less → least. Irregular!"
+  },
+  {
+    "id": "eng-gram-228",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"little\"?",
+    "options": [
+      "least",
+      "littleest",
+      "littlest",
+      "less"
+    ],
+    "answer": "least",
+    "explanation": "Little → less → least. Irregular!"
+  },
+  {
+    "id": "eng-gram-229",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the comparative form of \"many\"?",
+    "options": [
+      "manyer",
+      "manyr",
+      "most",
+      "more"
+    ],
+    "answer": "more",
+    "explanation": "Many → more → most. Irregular!"
+  },
+  {
+    "id": "eng-gram-230",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the superlative form of \"many\"?",
+    "options": [
+      "manyest",
+      "manyst",
+      "more",
+      "most"
+    ],
+    "answer": "most",
+    "explanation": "Many → more → most. Irregular!"
+  },
+  {
+    "id": "eng-punct-085",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What punctuation mark goes at the end of a question?",
+    "options": [
+      "A full stop (.)",
+      "An exclamation mark (!)",
+      "A comma (,)",
+      "A question mark (?)"
+    ],
+    "answer": "A question mark (?)",
+    "explanation": "Questions always end with a question mark (?)."
+  },
+  {
+    "id": "eng-punct-086",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What punctuation mark goes at the end of a statement?",
+    "options": [
+      "A question mark (?)",
+      "An exclamation mark (!)",
+      "A comma (,)",
+      "A full stop (.)"
+    ],
+    "answer": "A full stop (.)",
+    "explanation": "Statements (telling sentences) end with a full stop (.)."
+  },
+  {
+    "id": "eng-punct-087",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What punctuation mark goes at the end of an exclamation?",
+    "options": [
+      "A full stop (.)",
+      "A question mark (?)",
+      "A comma (,)",
+      "An exclamation mark (!)"
+    ],
+    "answer": "An exclamation mark (!)",
+    "explanation": "Exclamations — strong feelings or surprises — end with an exclamation mark (!)."
+  },
+  {
+    "id": "eng-punct-088",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Add the correct punctuation: \"What is your name __\"",
+    "options": [
+      ",",
+      "?",
+      ".",
+      "!"
+    ],
+    "answer": "?",
+    "explanation": "This is a question, so it needs a question mark."
+  },
+  {
+    "id": "eng-punct-089",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Add the correct punctuation: \"The dog ate my homework __\"",
+    "options": [
+      "!",
+      ",",
+      ".",
+      "?"
+    ],
+    "answer": ".",
+    "explanation": "This is a statement, so it ends with a full stop."
+  },
+  {
+    "id": "eng-punct-090",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Add the correct punctuation: \"What a lovely day it is __\"",
+    "options": [
+      ".",
+      "?",
+      ",",
+      "!"
+    ],
+    "answer": "!",
+    "explanation": "What a... — this is an exclamation of pleasure!"
+  },
+  {
+    "id": "eng-punct-094",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Where does the comma go in this list sentence: \"I like reading writing and maths\"?",
+    "options": [
+      "I like, reading writing and maths.",
+      "I like reading writing, and maths.",
+      "I like reading writing and, maths.",
+      "I like reading, writing and maths."
+    ],
+    "answer": "I like reading, writing and maths.",
+    "explanation": "Commas go between items in a list."
+  },
+  {
+    "id": "eng-punct-095",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which sentence needs a comma?",
+    "options": [
+      "When I, grow up I want to be a doctor.",
+      "When I grow up, I want to be a doctor.",
+      "When I grow up I want to be a doctor.",
+      "When, I grow up I want to be a doctor."
+    ],
+    "answer": "When I grow up, I want to be a doctor.",
+    "explanation": "After a subordinate clause at the start, add a comma."
+  },
+  {
+    "id": "eng-punct-096",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the apostrophe show in \"Aoife's book\"?",
+    "options": [
+      "Possession — the book belongs to Aoife",
+      "A missing letter",
+      "Plural — more than one book",
+      "The end of a sentence"
+    ],
+    "answer": "Possession — the book belongs to Aoife",
+    "explanation": "The apostrophe + s shows that the book belongs to Aoife — this is a possessive apostrophe."
+  },
+  {
+    "id": "eng-punct-097",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the apostrophe show in \"don't\"?",
+    "options": [
+      "Possession",
+      "Plural",
+      "The start of a new word",
+      "A missing letter (do not)"
+    ],
+    "answer": "A missing letter (do not)",
+    "explanation": "\"Don't\" = \"do not\" — the apostrophe shows the missing letter o."
+  },
+  {
+    "id": "eng-punct-098",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is correct: \"The dogs bone\" or \"The dog's bone\"?",
+    "options": [
+      "The dog's bone",
+      "The dogs bone",
+      "The dogs' bone",
+      "The dog'es bone"
+    ],
+    "answer": "The dog's bone",
+    "explanation": "Add apostrophe + s to show the bone belongs to the dog."
+  },
+  {
+    "id": "eng-punct-099",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is correct: \"I cant go\" or \"I can't go\"?",
+    "options": [
+      "I cant go",
+      "I can't go.",
+      "I cant' go",
+      "I can't go"
+    ],
+    "answer": "I can't go",
+    "explanation": "\"Can't\" = \"cannot\" — apostrophe for the missing letters \"no\"."
+  },
+  {
+    "id": "eng-punct-100",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What is the contraction of \"I am\"?",
+    "options": [
+      "Im",
+      "I'am",
+      "Iam",
+      "I'm"
+    ],
+    "answer": "I'm",
+    "explanation": "\"I'm\" = \"I am\" — the apostrophe replaces the letter a."
+  },
+  {
+    "id": "eng-punct-101",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the contraction of \"they are\"?",
+    "options": [
+      "they're",
+      "their",
+      "there",
+      "they'are"
+    ],
+    "answer": "they're",
+    "explanation": "\"They're\" = \"they are\" — apostrophe replaces the letter a."
+  },
+  {
+    "id": "eng-punct-102",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the contraction of \"it is\"?",
+    "options": [
+      "its",
+      "it'is",
+      "its'",
+      "it's"
+    ],
+    "answer": "it's",
+    "explanation": "\"It's\" = \"it is\" — the apostrophe replaces the letter i."
+  },
+  {
+    "id": "eng-punct-103",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the contraction of \"would not\"?",
+    "options": [
+      "would'nt",
+      "wouldn't",
+      "wouldnt",
+      "woudln't"
+    ],
+    "answer": "wouldn't",
+    "explanation": "\"Wouldn't\" = \"would not\" — apostrophe replaces the o in \"not\"."
+  },
+  {
+    "id": "eng-punct-104",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the contraction of \"she will\"?",
+    "options": [
+      "shel'l",
+      "she'll",
+      "shell",
+      "she'will"
+    ],
+    "answer": "she'll",
+    "explanation": "\"She'll\" = \"she will\" — apostrophe replaces \"wi\"."
+  },
+  {
+    "id": "eng-punct-105",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which is correct: \"The girls coats\" (belonging to several girls) or \"The girls' coats\"?",
+    "options": [
+      "The girls' coats",
+      "The girls's coats",
+      "The girl's coats",
+      "The girls coats"
+    ],
+    "answer": "The girls' coats",
+    "explanation": "When plural nouns ending in s show possession, add the apostrophe AFTER the s: girls'."
+  },
+  {
+    "id": "eng-punct-106",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which sentence correctly uses speech marks?",
+    "options": [
+      "\"I love football, said Seán.",
+      "I love \"football,\" said Seán.",
+      "\"I love football,\" said Seán.",
+      "I love football, said Seán."
+    ],
+    "answer": "\"I love football,\" said Seán.",
+    "explanation": "Speech marks (inverted commas) go around the exact words spoken."
+  },
+  {
+    "id": "eng-punct-107",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Where do speech marks go?",
+    "options": [
+      "Around the whole sentence",
+      "Around the speaker's name",
+      "After the full stop",
+      "Around the exact words spoken"
+    ],
+    "answer": "Around the exact words spoken",
+    "explanation": "Speech marks surround only the words that are actually said out loud."
+  },
+  {
+    "id": "eng-punct-108",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is punctuated correctly?",
+    "options": [
+      "Put on your coat,\" said Mam.",
+      "\"Put on your coat\", said Mam.",
+      "\"Put on your coat,\" said Mam.",
+      "\"Put on your coat\" said Mam."
+    ],
+    "answer": "\"Put on your coat,\" said Mam.",
+    "explanation": "The comma goes inside the closing speech mark."
+  },
+  {
+    "id": "eng-punct-109",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is correct?",
+    "options": [
+      "\"Where are you going?\" Asked Dad.",
+      "\"Where are you going\" asked Dad?",
+      "\"Where are you going?\" asked Dad.",
+      "\"Where are you going\"? asked Dad."
+    ],
+    "answer": "\"Where are you going?\" asked Dad.",
+    "explanation": "The question mark goes inside the closing speech mark, and asked starts with a lowercase letter."
+  },
+  {
+    "id": "eng-vocab-081",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"happy\"?",
+    "options": [
+      "angry",
+      "bored",
+      "joyful",
+      "sad"
+    ],
+    "answer": "joyful",
+    "explanation": "\"Joyful\" means the same as happy — both describe a positive feeling."
+  },
+  {
+    "id": "eng-vocab-082",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"big\"?",
+    "options": [
+      "tiny",
+      "flat",
+      "fast",
+      "enormous"
+    ],
+    "answer": "enormous",
+    "explanation": "\"Enormous\" is a synonym for big — it means very large."
+  },
+  {
+    "id": "eng-vocab-083",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"quick\"?",
+    "options": [
+      "heavy",
+      "quiet",
+      "fast",
+      "slow"
+    ],
+    "answer": "fast",
+    "explanation": "\"Fast\" means the same as quick."
+  },
+  {
+    "id": "eng-vocab-084",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"scared\"?",
+    "options": [
+      "calm",
+      "happy",
+      "frightened",
+      "brave"
+    ],
+    "answer": "frightened",
+    "explanation": "\"Frightened\" means the same as scared."
+  },
+  {
+    "id": "eng-vocab-085",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"funny\"?",
+    "options": [
+      "hilarious",
+      "serious",
+      "boring",
+      "sad"
+    ],
+    "answer": "hilarious",
+    "explanation": "\"Hilarious\" means extremely funny — a synonym with extra intensity!"
+  },
+  {
+    "id": "eng-vocab-086",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"sad\"?",
+    "options": [
+      "happy",
+      "cheerful",
+      "excited",
+      "miserable"
+    ],
+    "answer": "miserable",
+    "explanation": "\"Miserable\" means very sad — a synonym for sad."
+  },
+  {
+    "id": "eng-vocab-087",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"tired\"?",
+    "options": [
+      "energetic",
+      "awake",
+      "fresh",
+      "exhausted"
+    ],
+    "answer": "exhausted",
+    "explanation": "\"Exhausted\" means extremely tired."
+  },
+  {
+    "id": "eng-vocab-088",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"smart\"?",
+    "options": [
+      "foolish",
+      "lazy",
+      "clumsy",
+      "intelligent"
+    ],
+    "answer": "intelligent",
+    "explanation": "\"Intelligent\" is a synonym for smart."
+  },
+  {
+    "id": "eng-vocab-089",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"angry\"?",
+    "options": [
+      "peaceful",
+      "happy",
+      "furious",
+      "calm"
+    ],
+    "answer": "furious",
+    "explanation": "\"Furious\" means extremely angry."
+  },
+  {
+    "id": "eng-vocab-090",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"beautiful\"?",
+    "options": [
+      "dull",
+      "stunning",
+      "ugly",
+      "plain"
+    ],
+    "answer": "stunning",
+    "explanation": "\"Stunning\" is a synonym for beautiful."
+  },
+  {
+    "id": "eng-vocab-091",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"walk\"?",
+    "options": [
+      "fly",
+      "stroll",
+      "run",
+      "jump"
+    ],
+    "answer": "stroll",
+    "explanation": "\"Stroll\" is a gentle synonym for walk."
+  },
+  {
+    "id": "eng-vocab-092",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"eat\"?",
+    "options": [
+      "devour",
+      "starve",
+      "drink",
+      "breathe"
+    ],
+    "answer": "devour",
+    "explanation": "\"Devour\" means to eat quickly and greedily."
+  },
+  {
+    "id": "eng-vocab-093",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"begin\"?",
+    "options": [
+      "stop",
+      "commence",
+      "finish",
+      "end"
+    ],
+    "answer": "commence",
+    "explanation": "\"Commence\" is a formal synonym for begin."
+  },
+  {
+    "id": "eng-vocab-094",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"help\"?",
+    "options": [
+      "hinder",
+      "ignore",
+      "stop",
+      "assist"
+    ],
+    "answer": "assist",
+    "explanation": "\"Assist\" is a synonym for help."
+  },
+  {
+    "id": "eng-vocab-095",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"use\"?",
+    "options": [
+      "ignore",
+      "discard",
+      "drop",
+      "utilise"
+    ],
+    "answer": "utilise",
+    "explanation": "\"Utilise\" is a formal synonym for use."
+  },
+  {
+    "id": "eng-vocab-096",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"small\"?",
+    "options": [
+      "huge",
+      "enormous",
+      "giant",
+      "minuscule"
+    ],
+    "answer": "minuscule",
+    "explanation": "\"Minuscule\" means extremely small — a synonym with great precision!"
+  },
+  {
+    "id": "eng-vocab-097",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"cold\"?",
+    "options": [
+      "warm",
+      "hot",
+      "freezing",
+      "boiling"
+    ],
+    "answer": "freezing",
+    "explanation": "\"Freezing\" means extremely cold."
+  },
+  {
+    "id": "eng-vocab-098",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"shout\"?",
+    "options": [
+      "whisper",
+      "murmur",
+      "sigh",
+      "yell"
+    ],
+    "answer": "yell",
+    "explanation": "\"Yell\" means the same as shout."
+  },
+  {
+    "id": "eng-vocab-099",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"said\"?",
+    "options": [
+      "listened",
+      "heard",
+      "thought",
+      "exclaimed"
+    ],
+    "answer": "exclaimed",
+    "explanation": "\"Exclaimed\" is a vivid synonym for said — it suggests speaking with surprise or emotion."
+  },
+  {
+    "id": "eng-vocab-100",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which word is a synonym (similar meaning) for \"went\"?",
+    "options": [
+      "remained",
+      "waited",
+      "journeyed",
+      "stayed"
+    ],
+    "answer": "journeyed",
+    "explanation": "\"Journeyed\" is a more descriptive synonym for went."
+  },
+  {
+    "id": "eng-vocab-101",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"hot\"?",
+    "options": [
+      "tepid",
+      "cold",
+      "warm",
+      "cool"
+    ],
+    "answer": "cold",
+    "explanation": "\"Cold\" is the opposite of hot."
+  },
+  {
+    "id": "eng-vocab-102",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"day\"?",
+    "options": [
+      "dusk",
+      "dawn",
+      "night",
+      "evening"
+    ],
+    "answer": "night",
+    "explanation": "\"Night\" is the opposite of day."
+  },
+  {
+    "id": "eng-vocab-103",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"happy\"?",
+    "options": [
+      "calm",
+      "sad",
+      "tired",
+      "bored"
+    ],
+    "answer": "sad",
+    "explanation": "\"Sad\" is the opposite of happy."
+  },
+  {
+    "id": "eng-vocab-104",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"beginning\"?",
+    "options": [
+      "middle",
+      "centre",
+      "halfway",
+      "end"
+    ],
+    "answer": "end",
+    "explanation": "\"End\" is the opposite of beginning."
+  },
+  {
+    "id": "eng-vocab-105",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"ancient\"?",
+    "options": [
+      "old",
+      "historic",
+      "past",
+      "modern"
+    ],
+    "answer": "modern",
+    "explanation": "\"Modern\" is the opposite of ancient."
+  },
+  {
+    "id": "eng-vocab-106",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"courage\"?",
+    "options": [
+      "boldness",
+      "cowardice",
+      "bravery",
+      "strength"
+    ],
+    "answer": "cowardice",
+    "explanation": "\"Cowardice\" is the opposite of courage."
+  },
+  {
+    "id": "eng-vocab-107",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"success\"?",
+    "options": [
+      "achievement",
+      "triumph",
+      "failure",
+      "win"
+    ],
+    "answer": "failure",
+    "explanation": "\"Failure\" is the opposite of success."
+  },
+  {
+    "id": "eng-vocab-108",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"generous\"?",
+    "options": [
+      "kind",
+      "giving",
+      "charitable",
+      "mean"
+    ],
+    "answer": "mean",
+    "explanation": "\"Mean\" (stingy) is the opposite of generous."
+  },
+  {
+    "id": "eng-vocab-109",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"expand\"?",
+    "options": [
+      "stretch",
+      "shrink",
+      "grow",
+      "enlarge"
+    ],
+    "answer": "shrink",
+    "explanation": "\"Shrink\" is the opposite of expand."
+  },
+  {
+    "id": "eng-vocab-110",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"victory\"?",
+    "options": [
+      "defeat",
+      "win",
+      "triumph",
+      "achievement"
+    ],
+    "answer": "defeat",
+    "explanation": "\"Defeat\" is the opposite of victory."
+  },
+  {
+    "id": "eng-vocab-111",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"presence\"?",
+    "options": [
+      "attendance",
+      "arrival",
+      "appearance",
+      "absence"
+    ],
+    "answer": "absence",
+    "explanation": "\"Absence\" is the opposite of presence."
+  },
+  {
+    "id": "eng-vocab-112",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which word is an antonym (opposite) of \"innocent\"?",
+    "options": [
+      "truthful",
+      "guilty",
+      "pure",
+      "honest"
+    ],
+    "answer": "guilty",
+    "explanation": "\"Guilty\" is the opposite of innocent."
+  },
+  {
+    "id": "eng-vocab-113",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In the sentence \"The ancient ruins stood for thousands of years,\" what does \"ancient\" mean?",
+    "options": [
+      "Very tall",
+      "Very small",
+      "Very old",
+      "Very new"
+    ],
+    "answer": "Very old",
+    "explanation": "\"Ancient\" means extremely old — from long ago in history."
+  },
+  {
+    "id": "eng-vocab-114",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In the sentence \"She was famished after the long walk,\" what does \"famished\" mean?",
+    "options": [
+      "Very cold",
+      "Very happy",
+      "Very hungry",
+      "Very tired"
+    ],
+    "answer": "Very hungry",
+    "explanation": "\"Famished\" means extremely hungry."
+  },
+  {
+    "id": "eng-vocab-115",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In the sentence \"The tranquil lake reflected the mountains,\" what does \"tranquil\" mean?",
+    "options": [
+      "Wide and flat",
+      "Calm and peaceful",
+      "Wild and stormy",
+      "Deep and dark"
+    ],
+    "answer": "Calm and peaceful",
+    "explanation": "\"Tranquil\" means calm, quiet and peaceful."
+  },
+  {
+    "id": "eng-vocab-116",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In the sentence \"He was reluctant to eat his vegetables,\" what does \"reluctant\" mean?",
+    "options": [
+      "Excited",
+      "Happy",
+      "Eager",
+      "Unwilling"
+    ],
+    "answer": "Unwilling",
+    "explanation": "\"Reluctant\" means unwilling or hesitant to do something."
+  },
+  {
+    "id": "eng-vocab-117",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In the sentence \"The path was treacherous in the ice,\" what does \"treacherous\" mean?",
+    "options": [
+      "Dangerous",
+      "Beautiful",
+      "Long",
+      "Narrow"
+    ],
+    "answer": "Dangerous",
+    "explanation": "\"Treacherous\" means very dangerous, especially in a deceptive way."
+  },
+  {
+    "id": "eng-vocab-118",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In the sentence \"She gazed in astonishment at the magic trick,\" what does \"astonishment\" mean?",
+    "options": [
+      "Great boredom",
+      "Great surprise",
+      "Great anger",
+      "Great sadness"
+    ],
+    "answer": "Great surprise",
+    "explanation": "\"Astonishment\" means great surprise or amazement."
+  },
+  {
+    "id": "eng-vocab-119",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In the sentence \"The explorer was determined to reach the summit,\" what does \"summit\" mean?",
+    "options": [
+      "The top",
+      "The bottom",
+      "The middle",
+      "The side"
+    ],
+    "answer": "The top",
+    "explanation": "\"Summit\" means the very top of a mountain or hill."
+  },
+  {
+    "id": "eng-vocab-120",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In the sentence \"His speech was so tedious that people fell asleep,\" what does \"tedious\" mean?",
+    "options": [
+      "Very exciting",
+      "Very funny",
+      "Very short",
+      "Extremely boring"
+    ],
+    "answer": "Extremely boring",
+    "explanation": "\"Tedious\" means long, slow and very boring."
+  },
+  {
+    "id": "eng-vocab-121",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In the sentence \"She was elated when she won the prize,\" what does \"elated\" mean?",
+    "options": [
+      "Very nervous",
+      "Very surprised",
+      "Quite tired",
+      "Extremely happy"
+    ],
+    "answer": "Extremely happy",
+    "explanation": "\"Elated\" means overjoyed — feeling on top of the world!"
+  },
+  {
+    "id": "eng-vocab-122",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In the sentence \"The cunning fox tricked the crow,\" what does \"cunning\" mean?",
+    "options": [
+      "Kind and gentle",
+      "Clever and crafty",
+      "Strong and powerful",
+      "Slow and clumsy"
+    ],
+    "answer": "Clever and crafty",
+    "explanation": "\"Cunning\" means clever in a tricky or sly way."
+  },
+  {
+    "id": "eng-vocab-123",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"un-\" mean? Example: \"unhappy\"",
+    "options": [
+      "before",
+      "too much",
+      "not or opposite of",
+      "again"
+    ],
+    "answer": "not or opposite of",
+    "explanation": "\"Un-\" means not or opposite — unhappy means not happy."
+  },
+  {
+    "id": "eng-vocab-124",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"re-\" mean? Example: \"redo\"",
+    "options": [
+      "not",
+      "before",
+      "after",
+      "again"
+    ],
+    "answer": "again",
+    "explanation": "\"Re-\" means again — redo means to do again."
+  },
+  {
+    "id": "eng-vocab-125",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"pre-\" mean? Example: \"preview\"",
+    "options": [
+      "again",
+      "not",
+      "before",
+      "after"
+    ],
+    "answer": "before",
+    "explanation": "\"Pre-\" means before — preview means to view before the main event."
+  },
+  {
+    "id": "eng-vocab-126",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"mis-\" mean? Example: \"misunderstand\"",
+    "options": [
+      "not",
+      "wrongly",
+      "again",
+      "before"
+    ],
+    "answer": "wrongly",
+    "explanation": "\"Mis-\" means wrongly — misunderstand means to understand wrongly."
+  },
+  {
+    "id": "eng-vocab-127",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"dis-\" mean? Example: \"disagree\"",
+    "options": [
+      "before",
+      "too much",
+      "not or opposite of",
+      "again"
+    ],
+    "answer": "not or opposite of",
+    "explanation": "\"Dis-\" means not or the opposite — disagree means not agree."
+  },
+  {
+    "id": "eng-vocab-128",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"over-\" mean? Example: \"overeat\"",
+    "options": [
+      "too much",
+      "not enough",
+      "again",
+      "before"
+    ],
+    "answer": "too much",
+    "explanation": "\"Over-\" means too much — overeat means to eat too much."
+  },
+  {
+    "id": "eng-vocab-129",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"under-\" mean? Example: \"undercooked\"",
+    "options": [
+      "again",
+      "before",
+      "not enough",
+      "too much"
+    ],
+    "answer": "not enough",
+    "explanation": "\"Under-\" means not enough — undercooked means not cooked enough."
+  },
+  {
+    "id": "eng-vocab-130",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"im-\" mean? Example: \"impossible\"",
+    "options": [
+      "before",
+      "too much",
+      "not (before m/p)",
+      "again"
+    ],
+    "answer": "not (before m/p)",
+    "explanation": "\"Im-\" = not, used before words starting with m or p. Impossible = not possible."
+  },
+  {
+    "id": "eng-vocab-131",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"ir-\" mean? Example: \"irregular\"",
+    "options": [
+      "before",
+      "too much",
+      "not (before r)",
+      "again"
+    ],
+    "answer": "not (before r)",
+    "explanation": "\"Ir-\" = not, used before words starting with r. Irregular = not regular."
+  },
+  {
+    "id": "eng-vocab-132",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 4,
+    "type": "multiple-choice",
+    "question": "What does the prefix \"inter-\" mean? Example: \"international\"",
+    "options": [
+      "above",
+      "below",
+      "between or among",
+      "inside"
+    ],
+    "answer": "between or among",
+    "explanation": "\"Inter-\" means between — international means between nations."
+  },
+  {
+    "id": "eng-vocab-133",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Adding \"-ful\" to \"care\" makes \"careful.\" What does \"-ful\" mean?",
+    "options": [
+      "one who",
+      "the act of",
+      "full of",
+      "without"
+    ],
+    "answer": "full of",
+    "explanation": "\"-ful\" means full of — careful means full of care."
+  },
+  {
+    "id": "eng-vocab-134",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Adding \"-less\" to \"hope\" makes \"hopeless.\" What does \"-less\" mean?",
+    "options": [
+      "related to",
+      "without",
+      "full of",
+      "one who"
+    ],
+    "answer": "without",
+    "explanation": "\"-less\" means without — hopeless means without hope."
+  },
+  {
+    "id": "eng-vocab-135",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Adding \"-er\" to \"teach\" makes \"teacher.\" What does \"-er\" mean here?",
+    "options": [
+      "full of",
+      "one who does it",
+      "more",
+      "the state of"
+    ],
+    "answer": "one who does it",
+    "explanation": "\"-er\" can mean \"one who does something\" — a teacher is one who teaches."
+  },
+  {
+    "id": "eng-vocab-136",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Adding \"-ness\" to \"kind\" makes \"kindness.\" What does \"-ness\" mean?",
+    "options": [
+      "the state or quality of",
+      "without",
+      "full of",
+      "one who"
+    ],
+    "answer": "the state or quality of",
+    "explanation": "\"-ness\" turns an adjective into a noun — kindness is the state of being kind."
+  },
+  {
+    "id": "eng-vocab-137",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Adding \"-tion\" to \"act\" makes \"action.\" What does \"-tion\" mean?",
+    "options": [
+      "the act or result of",
+      "one who",
+      "full of",
+      "without"
+    ],
+    "answer": "the act or result of",
+    "explanation": "\"-tion\" creates a noun — action is the result of acting."
+  },
+  {
+    "id": "eng-vocab-138",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Adding \"-able\" to \"read\" makes \"readable.\" What does \"-able\" mean?",
+    "options": [
+      "one who",
+      "can be done",
+      "without",
+      "the state of"
+    ],
+    "answer": "can be done",
+    "explanation": "\"-able\" means can be done — readable means can be read."
+  },
+  {
+    "id": "eng-vocab-139",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Adding \"-ly\" to \"quick\" makes \"quickly.\" What does \"-ly\" do here?",
+    "options": [
+      "turns an adjective into an adverb",
+      "turns a noun into a verb",
+      "turns a verb into a noun",
+      "turns an adverb into a noun"
+    ],
+    "answer": "turns an adjective into an adverb",
+    "explanation": "\"-ly\" added to an adjective creates an adverb — quickly tells us HOW."
+  },
+  {
+    "id": "eng-vocab-140",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Adding \"-ment\" to \"amaze\" makes \"amazement.\" What does \"-ment\" mean?",
+    "options": [
+      "the state or result of",
+      "one who",
+      "full of",
+      "without"
+    ],
+    "answer": "the state or result of",
+    "explanation": "\"-ment\" creates a noun — amazement is the state of being amazed."
+  },
+  {
+    "id": "eng-write-016",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What must every sentence have?",
+    "options": [
+      "A noun and an adjective",
+      "A verb and an adverb",
+      "A comma and a full stop",
+      "A subject and a verb"
+    ],
+    "answer": "A subject and a verb",
+    "explanation": "Every sentence needs a subject (who/what) and a verb (the action or state of being)."
+  },
+  {
+    "id": "eng-write-017",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which of these is a complete sentence?",
+    "options": [
+      "The horse galloped across the field.",
+      "Across the field.",
+      "The horse galloped.",
+      "Galloped across."
+    ],
+    "answer": "The horse galloped across the field.",
+    "explanation": "\"The horse galloped across the field\" has a subject (the horse) and a verb (galloped)."
+  },
+  {
+    "id": "eng-write-018",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which of these is NOT a complete sentence?",
+    "options": [
+      "The park is beautiful.",
+      "We run in the park.",
+      "Running through the park.",
+      "She runs through the park."
+    ],
+    "answer": "Running through the park.",
+    "explanation": "\"Running through the park\" has no subject — who is running?"
+  },
+  {
+    "id": "eng-write-019",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a simple sentence?",
+    "options": [
+      "A sentence with two clauses joined by \"and\"",
+      "A very short sentence",
+      "A sentence with no verbs",
+      "A sentence with one main clause"
+    ],
+    "answer": "A sentence with one main clause",
+    "explanation": "A simple sentence has one subject and one verb — just one main clause."
+  },
+  {
+    "id": "eng-write-020",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a compound sentence?",
+    "options": [
+      "Two main clauses joined by a conjunction",
+      "A sentence with a subject and verb",
+      "A very long sentence",
+      "A sentence with no conjunctions"
+    ],
+    "answer": "Two main clauses joined by a conjunction",
+    "explanation": "A compound sentence joins two main clauses with a conjunction like \"and\", \"but\" or \"so\"."
+  },
+  {
+    "id": "eng-write-021",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What makes a good opening sentence for a story?",
+    "options": [
+      "It explains everything that happens",
+      "It lists all the characters",
+      "It tells the ending first",
+      "It grabs the reader's attention immediately"
+    ],
+    "answer": "It grabs the reader's attention immediately",
+    "explanation": "A great opening sentence makes the reader want to know more!"
+  },
+  {
+    "id": "eng-write-022",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the purpose of a paragraph?",
+    "options": [
+      "To group related ideas together",
+      "To end a story",
+      "To introduce a new character",
+      "To start a new sentence"
+    ],
+    "answer": "To group related ideas together",
+    "explanation": "Paragraphs group sentences about the same idea together."
+  },
+  {
+    "id": "eng-write-023",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What should the opening paragraph of a story do?",
+    "options": [
+      "Solve the problem",
+      "End the story",
+      "List the events",
+      "Introduce the setting and characters"
+    ],
+    "answer": "Introduce the setting and characters",
+    "explanation": "The opening paragraph sets the scene — it introduces where, when and who."
+  },
+  {
+    "id": "eng-write-024",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What goes in the middle (build-up) of a story?",
+    "options": [
+      "The problem or conflict develops",
+      "The story ends happily",
+      "The characters are introduced",
+      "The setting is described"
+    ],
+    "answer": "The problem or conflict develops",
+    "explanation": "The middle of a story develops the problem or conflict that needs to be solved."
+  },
+  {
+    "id": "eng-write-025",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What should the closing paragraph of a story do?",
+    "options": [
+      "Create a new problem",
+      "Describe the weather",
+      "Resolve the problem and round off the story",
+      "Introduce new characters"
+    ],
+    "answer": "Resolve the problem and round off the story",
+    "explanation": "The ending resolves the conflict and gives the reader a satisfying conclusion."
+  },
+  {
+    "id": "eng-write-026",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"The wind whispered through the trees.\" This is an example of:",
+    "options": [
+      "personification",
+      "simile",
+      "alliteration",
+      "rhyme"
+    ],
+    "answer": "personification",
+    "explanation": "\"Whispered\" is a human action — giving human qualities to the wind is personification."
+  },
+  {
+    "id": "eng-write-027",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"She was as fast as a cheetah.\" This is an example of:",
+    "options": [
+      "alliteration",
+      "simile",
+      "metaphor",
+      "personification"
+    ],
+    "answer": "simile",
+    "explanation": "A simile compares two things using \"as\" or \"like\" — as fast as a cheetah."
+  },
+  {
+    "id": "eng-write-028",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "\"He is a lion on the football pitch.\" This is an example of:",
+    "options": [
+      "simile",
+      "personification",
+      "hyperbole",
+      "metaphor"
+    ],
+    "answer": "metaphor",
+    "explanation": "A metaphor says something IS something else (without \"like\" or \"as\") — he is a lion."
+  },
+  {
+    "id": "eng-write-029",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"Peter Piper picked a peck of pickled peppers.\" This is an example of:",
+    "options": [
+      "simile",
+      "metaphor",
+      "personification",
+      "alliteration"
+    ],
+    "answer": "alliteration",
+    "explanation": "Alliteration is the repetition of the same starting sound — all the P sounds!"
+  },
+  {
+    "id": "eng-write-030",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "\"I've told you a million times!\" This is an example of:",
+    "options": [
+      "hyperbole",
+      "simile",
+      "metaphor",
+      "personification"
+    ],
+    "answer": "hyperbole",
+    "explanation": "Hyperbole is extreme exaggeration for effect — you haven't literally said it a million times!"
+  },
+  {
+    "id": "eng-write-031",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "\"The thunder grumbled overhead.\" This is an example of:",
+    "options": [
+      "personification",
+      "simile",
+      "alliteration",
+      "hyperbole"
+    ],
+    "answer": "personification",
+    "explanation": "Thunder can't grumble — giving it a human quality is personification."
+  },
+  {
+    "id": "eng-write-032",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"Her eyes were like two bright stars.\" This is an example of:",
+    "options": [
+      "personification",
+      "simile",
+      "metaphor",
+      "alliteration"
+    ],
+    "answer": "simile",
+    "explanation": "A simile uses \"like\" or \"as\" to compare — eyes like stars."
+  },
+  {
+    "id": "eng-write-033",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "\"She sells seashells by the seashore.\" This is an example of:",
+    "options": [
+      "rhyme",
+      "simile",
+      "personification",
+      "alliteration"
+    ],
+    "answer": "alliteration",
+    "explanation": "Alliteration: the repeated \"s\" sound at the start of words."
+  },
+  {
+    "id": "eng-write-035",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "\"Buzz,\" \"crash,\" and \"sizzle\" are examples of:",
+    "options": [
+      "alliteration",
+      "onomatopoeia",
+      "simile",
+      "metaphor"
+    ],
+    "answer": "onomatopoeia",
+    "explanation": "These words sound like the actions they describe — that's onomatopoeia!"
+  },
+  {
+    "id": "eng-write-036",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What does \"setting\" mean in a story?",
+    "options": [
+      "How the story ends",
+      "Where and when the story takes place",
+      "Who the story is about",
+      "What problem occurs"
+    ],
+    "answer": "Where and when the story takes place",
+    "explanation": "The setting is the place and time of the story."
+  },
+  {
+    "id": "eng-write-037",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the \"plot\" of a story?",
+    "options": [
+      "The sequence of events",
+      "The characters",
+      "The setting",
+      "The style of writing"
+    ],
+    "answer": "The sequence of events",
+    "explanation": "The plot is everything that happens in the story — the sequence of events."
+  },
+  {
+    "id": "eng-write-038",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the \"theme\" of a story?",
+    "options": [
+      "The big idea or message",
+      "The main character",
+      "Where it takes place",
+      "How it is written"
+    ],
+    "answer": "The big idea or message",
+    "explanation": "The theme is the underlying message — for example: friendship, courage, or kindness."
+  },
+  {
+    "id": "eng-write-039",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a \"protagonist\"?",
+    "options": [
+      "The main character",
+      "The villain",
+      "The setting",
+      "The narrator"
+    ],
+    "answer": "The main character",
+    "explanation": "The protagonist is the main character — the hero of the story."
+  },
+  {
+    "id": "eng-write-040",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is an \"antagonist\"?",
+    "options": [
+      "The character who creates conflict",
+      "The main character",
+      "The setting",
+      "The narrator"
+    ],
+    "answer": "The character who creates conflict",
+    "explanation": "The antagonist creates the problem or opposes the protagonist."
+  },
+  {
+    "id": "eng-write-041",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which type of writing tells a story with characters and events?",
+    "options": [
+      "Persuasive writing",
+      "Procedural writing",
+      "Narrative writing",
+      "Report writing"
+    ],
+    "answer": "Narrative writing",
+    "explanation": "Narrative writing tells a story — it has characters, a setting, a problem and a resolution."
+  },
+  {
+    "id": "eng-write-042",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which type of writing gives facts and information about a topic?",
+    "options": [
+      "Persuasive writing",
+      "Recount writing",
+      "Report writing",
+      "Narrative writing"
+    ],
+    "answer": "Report writing",
+    "explanation": "Report writing presents facts and information in an organised way."
+  },
+  {
+    "id": "eng-write-043",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which type of writing tries to change the reader's opinion?",
+    "options": [
+      "Persuasive writing",
+      "Report writing",
+      "Narrative writing",
+      "Procedural writing"
+    ],
+    "answer": "Persuasive writing",
+    "explanation": "Persuasive writing aims to convince — it uses arguments and evidence."
+  },
+  {
+    "id": "eng-write-044",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which type of writing explains how to do something step by step?",
+    "options": [
+      "Procedural writing",
+      "Narrative writing",
+      "Report writing",
+      "Persuasive writing"
+    ],
+    "answer": "Procedural writing",
+    "explanation": "Procedural writing gives instructions — recipes and how-to guides are examples."
+  },
+  {
+    "id": "eng-write-045",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which type of writing retells events that actually happened?",
+    "options": [
+      "Report writing",
+      "Persuasive writing",
+      "Recount writing",
+      "Narrative writing"
+    ],
+    "answer": "Recount writing",
+    "explanation": "A recount retells real events in the order they happened — like a diary or news report."
+  },
+  {
+    "id": "eng-write-046",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does a persuasive text often use to convince the reader?",
+    "options": [
+      "Step-by-step instructions",
+      "A list of events in order",
+      "Facts, opinions and emotive language",
+      "Made-up characters and settings"
+    ],
+    "answer": "Facts, opinions and emotive language",
+    "explanation": "Persuasive texts use evidence, statistics and emotive language to change minds."
+  },
+  {
+    "id": "eng-write-047",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a \"diary entry\"?",
+    "options": [
+      "A fictional story",
+      "A set of instructions",
+      "A fact file",
+      "A personal recount written from the writer's point of view"
+    ],
+    "answer": "A personal recount written from the writer's point of view",
+    "explanation": "A diary entry is a personal account of events — written in first person (I, we)."
+  },
+  {
+    "id": "eng-write-048",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a \"fact file\"?",
+    "options": [
+      "A fictional narrative",
+      "A persuasive letter",
+      "A story with a moral",
+      "A short piece of informational writing about one topic"
+    ],
+    "answer": "A short piece of informational writing about one topic",
+    "explanation": "A fact file presents key facts about a topic, usually using headings and bullet points."
+  },
+  {
+    "id": "eng-write-049",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which connective would you use to add more information?",
+    "options": [
+      "Therefore",
+      "Although",
+      "Furthermore",
+      "However"
+    ],
+    "answer": "Furthermore",
+    "explanation": "\"Furthermore\" adds more information — it means \"in addition to that.\""
+  },
+  {
+    "id": "eng-write-050",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which connective shows contrast?",
+    "options": [
+      "However",
+      "Furthermore",
+      "Therefore",
+      "As a result"
+    ],
+    "answer": "However",
+    "explanation": "\"However\" introduces a contrasting point — \"but\" said in a more formal way."
+  },
+  {
+    "id": "eng-write-051",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which connective shows a result or consequence?",
+    "options": [
+      "Therefore",
+      "However",
+      "Furthermore",
+      "Although"
+    ],
+    "answer": "Therefore",
+    "explanation": "\"Therefore\" shows a logical result — because of this, that happened."
+  },
+  {
+    "id": "eng-write-052",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which connective introduces a time sequence?",
+    "options": [
+      "Therefore, as a result",
+      "Furthermore, in addition",
+      "Firstly, then, finally",
+      "However, although, but"
+    ],
+    "answer": "Firstly, then, finally",
+    "explanation": "Time connectives show sequence: firstly, then, next, after that, finally."
+  },
+  {
+    "id": "eng-write-053",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which phrase is a good way to open a persuasive argument?",
+    "options": [
+      "Once upon a time...",
+      "First, you will need...",
+      "On Monday, I woke up and...",
+      "Many people believe that..."
+    ],
+    "answer": "Many people believe that...",
+    "explanation": 3
+  },
+  {
+    "id": "eng-read-skill-001",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does it mean to \"infer\" something from a text?",
+    "options": [
+      "Copy words from the text",
+      "Work out something not directly stated using clues",
+      "Read every word carefully",
+      "Find the main character"
+    ],
+    "answer": "Work out something not directly stated using clues",
+    "explanation": "Inference means using clues in the text to work out something the author didn't say directly."
+  },
+  {
+    "id": "eng-read-skill-002",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the \"main idea\" of a text?",
+    "options": [
+      "The most important point the author is making",
+      "The first sentence",
+      "The last paragraph",
+      "The title"
+    ],
+    "answer": "The most important point the author is making",
+    "explanation": "The main idea is the central message or most important point the whole text is about."
+  },
+  {
+    "id": "eng-read-skill-003",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does \"summarise\" mean?",
+    "options": [
+      "Find all the adjectives",
+      "Guess what happens next",
+      "Retell the key points briefly in your own words",
+      "Copy out the whole text"
+    ],
+    "answer": "Retell the key points briefly in your own words",
+    "explanation": "To summarise is to pick out the most important points and restate them briefly."
+  },
+  {
+    "id": "eng-read-skill-004",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does \"predict\" mean when reading?",
+    "options": [
+      "Identify the author's technique",
+      "Guess what might happen next, using clues",
+      "Find the meaning of a word",
+      "Summarise the text"
+    ],
+    "answer": "Guess what might happen next, using clues",
+    "explanation": "Predicting means using clues from the text to make an educated guess about what comes next."
+  },
+  {
+    "id": "eng-read-skill-005",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does it mean to \"visualise\" while reading?",
+    "options": [
+      "Picture the events in your mind as you read",
+      "Sound out every word",
+      "Find the main idea",
+      "Look up unknown words"
+    ],
+    "answer": "Picture the events in your mind as you read",
+    "explanation": "Good readers create mental images — they \"see\" the story playing in their head."
+  },
+  {
+    "id": "eng-read-skill-006",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a \"text feature\" in non-fiction writing?",
+    "options": [
+      "Headings, diagrams, bold text, captions",
+      "Made-up characters",
+      "A plot twist",
+      "Rhyme and rhythm"
+    ],
+    "answer": "Headings, diagrams, bold text, captions",
+    "explanation": "Text features in non-fiction help the reader — headings, captions, bullet points and diagrams."
+  },
+  {
+    "id": "eng-read-skill-007",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does \"author's purpose\" mean?",
+    "options": [
+      "The reason the author wrote the text",
+      "The author's name",
+      "The title of the book",
+      "The number of pages"
+    ],
+    "answer": "The reason the author wrote the text",
+    "explanation": "Authors write to entertain, inform or persuade — that's their purpose."
+  },
+  {
+    "id": "eng-read-skill-008",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is \"point of view\" in a story?",
+    "options": [
+      "When the story happens",
+      "Who is telling the story",
+      "What the story is about",
+      "Where the story is set"
+    ],
+    "answer": "Who is telling the story",
+    "explanation": "Point of view (or perspective) is about who narrates the story — first person (I) or third person (he/she/they)."
+  },
+  {
+    "id": "eng-read-skill-009",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In first-person narration, which pronouns does the narrator use?",
+    "options": [
+      "He, she, it, they",
+      "You, your",
+      "One, someone",
+      "I, me, my, we"
+    ],
+    "answer": "I, me, my, we",
+    "explanation": "First-person narration uses \"I\" — the narrator is a character inside the story."
+  },
+  {
+    "id": "eng-read-skill-010",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In third-person narration, which pronouns are used?",
+    "options": [
+      "He, she, they, it",
+      "I, me, my",
+      "You, your",
+      "We, us"
+    ],
+    "answer": "He, she, they, it",
+    "explanation": "Third-person narration uses \"he\", \"she\" or \"they\" — the narrator is outside the story."
+  },
+  {
+    "id": "eng-read-skill-011",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a \"genre\" of writing?",
+    "options": [
+      "A character in a story",
+      "A type of punctuation",
+      "A writing technique",
+      "A category or type of text"
+    ],
+    "answer": "A category or type of text",
+    "explanation": "Genre is the category of writing — e.g., fantasy, mystery, biography, science fiction."
+  },
+  {
+    "id": "eng-read-skill-012",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which of these is a \"fiction\" text?",
+    "options": [
+      "A fact file about dragons",
+      "A news report about a festival",
+      "A set of instructions",
+      "A story about a dragon who learns to read"
+    ],
+    "answer": "A story about a dragon who learns to read",
+    "explanation": "Fiction is made-up — stories, novels and poems are fiction."
+  },
+  {
+    "id": "eng-read-skill-013",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which of these is a \"non-fiction\" text?",
+    "options": [
+      "A story about a talking whale",
+      "A poem about the sea",
+      "A legend about sea monsters",
+      "A fact file about whales"
+    ],
+    "answer": "A fact file about whales",
+    "explanation": "Non-fiction is based on facts — encyclopaedias, biographies and fact files are non-fiction."
+  },
+  {
+    "id": "eng-read-skill-014",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a \"caption\"?",
+    "options": [
+      "The title of a book",
+      "The first sentence of a paragraph",
+      "A type of punctuation",
+      "A short description under a picture"
+    ],
+    "answer": "A short description under a picture",
+    "explanation": "Captions explain or describe pictures or diagrams in a non-fiction text."
+  },
+  {
+    "id": "eng-read-skill-015",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does \"blurb\" mean?",
+    "options": [
+      "The short description on the back cover of a book",
+      "The title of the book",
+      "The first chapter",
+      "The author's name"
+    ],
+    "answer": "The short description on the back cover of a book",
+    "explanation": "The blurb is on the back of a book — it tells you what the book is about to help you decide whether to read it."
+  },
+  {
+    "id": "eng-read-skill-016",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the purpose of a \"contents page\" in a book?",
+    "options": [
+      "To show what chapters are in the book and where they start",
+      "To summarise the whole book",
+      "To list all the characters",
+      "To explain the author's purpose"
+    ],
+    "answer": "To show what chapters are in the book and where they start",
+    "explanation": "A contents page lists chapters and their page numbers so you can find sections quickly."
+  },
+  {
+    "id": "eng-read-skill-017",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is an \"index\" at the back of a non-fiction book?",
+    "options": [
+      "A list of chapters",
+      "A summary of the book",
+      "A list of pictures",
+      "An alphabetical list of topics and their page numbers"
+    ],
+    "answer": "An alphabetical list of topics and their page numbers",
+    "explanation": "An index helps you find specific information — it's in alphabetical order at the back."
+  },
+  {
+    "id": "eng-read-skill-018",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does \"glossary\" mean in a non-fiction book?",
+    "options": [
+      "A list of chapters",
+      "A summary of the book",
+      "A list of pictures",
+      "A list of key words and their meanings"
+    ],
+    "answer": "A list of key words and their meanings",
+    "explanation": "A glossary defines important words used in the book — usually at the back."
   }
 ]

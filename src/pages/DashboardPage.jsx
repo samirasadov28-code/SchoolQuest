@@ -195,6 +195,7 @@ export default function DashboardPage() {
         <div style={{ display: 'flex', gap: 12, width: '100%' }}>
           <button className="btn-secondary" style={{ flex: 1 }} onClick={() => navigate('/rewards')}>🏆 Rewards</button>
           <button className="btn-secondary" style={{ flex: 1 }} onClick={() => navigate('/map')}>🗺️ Map</button>
+          <button className="btn-secondary" style={{ flex: 1 }} onClick={() => navigate('/topics')}>📖 Topics</button>
         </div>
       </div>
 
