@@ -76,7 +76,7 @@ export default function LandingPage() {
           🔄 Force update app
         </button>
         <p style={{ color: 'var(--color-stone-light)', fontSize: '0.68rem', opacity: 0.45, margin: 0 }}>
-          v{APP_VERSION} · Built {new Date(__BUILD_DATE__).toLocaleDateString('en-IE', { day: 'numeric', month: 'short', year: 'numeric' })}
+          v{APP_VERSION} · Built {new Date(__BUILD_DATE__).toLocaleString('en-IE', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
         </p>
         <a href="https://asadov-stack.netlify.app" target="_blank" rel="noopener noreferrer"
           style={{ color: 'var(--color-gold)', textDecoration: 'none', opacity: 0.7, fontWeight: 700, fontSize: '0.72rem' }}>
