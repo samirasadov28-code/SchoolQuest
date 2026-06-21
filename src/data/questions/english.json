@@ -21220,5 +21220,4741 @@
     ],
     "answer": "A list of key words and their meanings",
     "explanation": "A glossary defines important words used in the book — usually at the back."
+  },
+  {
+    "id": "eng-spell-187",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'to put words on paper'?",
+    "options": [
+      "wright",
+      "write",
+      "right",
+      "rite"
+    ],
+    "answer": "write",
+    "explanation": "Write means to put words on paper. Right means correct."
+  },
+  {
+    "id": "eng-spell-188",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'the correct answer'?",
+    "options": [
+      "rite",
+      "wright",
+      "right",
+      "write"
+    ],
+    "answer": "right",
+    "explanation": "Right means correct. Write means to put words on paper."
+  },
+  {
+    "id": "eng-spell-189",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'the large body of salt water'?",
+    "options": [
+      "cee",
+      "sea",
+      "see",
+      "si"
+    ],
+    "answer": "sea",
+    "explanation": "The sea is the large body of salt water. See means to look with your eyes."
+  },
+  {
+    "id": "eng-spell-190",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'to look with your eyes'?",
+    "options": [
+      "cee",
+      "see",
+      "sea",
+      "si"
+    ],
+    "answer": "see",
+    "explanation": "See means to look with your eyes. Sea is the large body of salt water."
+  },
+  {
+    "id": "eng-spell-191",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'in this place'?",
+    "options": [
+      "here",
+      "hear",
+      "heir",
+      "hare"
+    ],
+    "answer": "here",
+    "explanation": "Here means in this place. Hear means to listen."
+  },
+  {
+    "id": "eng-spell-192",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'to listen'?",
+    "options": [
+      "hear",
+      "here",
+      "heir",
+      "hare"
+    ],
+    "answer": "hear",
+    "explanation": "Hear means to listen. Here means in this place."
+  },
+  {
+    "id": "eng-spell-193",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'the number 2'?",
+    "options": [
+      "two",
+      "to",
+      "too",
+      "tow"
+    ],
+    "answer": "two",
+    "explanation": "Two is the number 2. To means moving toward. Too means also."
+  },
+  {
+    "id": "eng-spell-194",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'also'?",
+    "options": [
+      "too",
+      "to",
+      "two",
+      "tow"
+    ],
+    "answer": "too",
+    "explanation": "Too means also. To means moving toward. Two is the number."
+  },
+  {
+    "id": "eng-spell-195",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'moving toward'?",
+    "options": [
+      "to",
+      "two",
+      "too",
+      "tow"
+    ],
+    "answer": "to",
+    "explanation": "To means moving toward something. Two is the number. Too means also."
+  },
+  {
+    "id": "eng-spell-196",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'to have knowledge of'?",
+    "options": [
+      "nor",
+      "know",
+      "no",
+      "now"
+    ],
+    "answer": "know",
+    "explanation": "Know means to have knowledge of something. No means not yes."
+  },
+  {
+    "id": "eng-spell-197",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'not yes'?",
+    "options": [
+      "now",
+      "nor",
+      "no",
+      "know"
+    ],
+    "answer": "no",
+    "explanation": "No means not yes. Know means to have knowledge of something."
+  },
+  {
+    "id": "eng-spell-198",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'recently made'?",
+    "options": [
+      "gnu",
+      "nu",
+      "new",
+      "knew"
+    ],
+    "answer": "new",
+    "explanation": "New means recently made. Knew is the past tense of know."
+  },
+  {
+    "id": "eng-spell-199",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'was aware of in the past'?",
+    "options": [
+      "nu",
+      "knew",
+      "new",
+      "gnu"
+    ],
+    "answer": "knew",
+    "explanation": "Knew is the past tense of know. New means recently made."
+  },
+  {
+    "id": "eng-spell-200",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'food from animals'?",
+    "options": [
+      "meet",
+      "mete",
+      "mead",
+      "meat"
+    ],
+    "answer": "meat",
+    "explanation": "Meat is food from animals. Meet means to come together."
+  },
+  {
+    "id": "eng-spell-201",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'to come together'?",
+    "options": [
+      "meat",
+      "mete",
+      "mead",
+      "meet"
+    ],
+    "answer": "meet",
+    "explanation": "Meet means to come together. Meat is food from animals."
+  },
+  {
+    "id": "eng-spell-202",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'seven days'?",
+    "options": [
+      "weke",
+      "week",
+      "weak",
+      "wick"
+    ],
+    "answer": "week",
+    "explanation": "A week is seven days. Weak means not strong."
+  },
+  {
+    "id": "eng-spell-203",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'not strong'?",
+    "options": [
+      "weke",
+      "weak",
+      "week",
+      "wick"
+    ],
+    "answer": "weak",
+    "explanation": "Weak means not strong. A week is seven days."
+  },
+  {
+    "id": "eng-spell-204",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'a wild animal with antlers'?",
+    "options": [
+      "deer",
+      "dear",
+      "dare",
+      "dere"
+    ],
+    "answer": "deer",
+    "explanation": "A deer is a wild animal with antlers. Dear means much loved."
+  },
+  {
+    "id": "eng-spell-205",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'much loved'?",
+    "options": [
+      "dear",
+      "deer",
+      "dare",
+      "dere"
+    ],
+    "answer": "dear",
+    "explanation": "Dear means much loved. A deer is a wild animal with antlers."
+  },
+  {
+    "id": "eng-spell-206",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'a large wild animal'?",
+    "options": [
+      "beer",
+      "bore",
+      "bear",
+      "bare"
+    ],
+    "answer": "bear",
+    "explanation": "A bear is a large wild animal. Bare means with nothing covering it."
+  },
+  {
+    "id": "eng-spell-207",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'with nothing covering it'?",
+    "options": [
+      "beer",
+      "bore",
+      "bare",
+      "bear"
+    ],
+    "answer": "bare",
+    "explanation": "Bare means with nothing covering it. A bear is a large wild animal."
+  },
+  {
+    "id": "eng-spell-208",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'two matching things'?",
+    "options": [
+      "pair",
+      "pear",
+      "pare",
+      "pier"
+    ],
+    "answer": "pair",
+    "explanation": "A pair is two matching things. A pear is a green fruit."
+  },
+  {
+    "id": "eng-spell-209",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'a green fruit'?",
+    "options": [
+      "pear",
+      "pair",
+      "pare",
+      "pier"
+    ],
+    "answer": "pear",
+    "explanation": "A pear is a green fruit. A pair is two matching things."
+  },
+  {
+    "id": "eng-spell-210",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'a part of something'?",
+    "options": [
+      "piece",
+      "peace",
+      "peas",
+      "peice"
+    ],
+    "answer": "piece",
+    "explanation": "A piece is a part of something. Peace means quiet and calm."
+  },
+  {
+    "id": "eng-spell-211",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'quiet and calm'?",
+    "options": [
+      "peace",
+      "piece",
+      "peas",
+      "peice"
+    ],
+    "answer": "peace",
+    "explanation": "Peace means quiet and calm. A piece is a part of something."
+  },
+  {
+    "id": "eng-spell-212",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'the star that gives us light'?",
+    "options": [
+      "sen",
+      "sun",
+      "son",
+      "sin"
+    ],
+    "answer": "sun",
+    "explanation": "The sun is the star that gives us light. Son means a male child."
+  },
+  {
+    "id": "eng-spell-213",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'a male child'?",
+    "options": [
+      "sen",
+      "son",
+      "sun",
+      "sin"
+    ],
+    "answer": "son",
+    "explanation": "A son is a male child. The sun is the star that gives us light."
+  },
+  {
+    "id": "eng-spell-214",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'a plant with petals'?",
+    "options": [
+      "floor",
+      "flore",
+      "flower",
+      "flour"
+    ],
+    "answer": "flower",
+    "explanation": "A flower is a plant with petals. Flour is powder used for baking."
+  },
+  {
+    "id": "eng-spell-215",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'powder used for baking'?",
+    "options": [
+      "floor",
+      "flore",
+      "flour",
+      "flower"
+    ],
+    "answer": "flour",
+    "explanation": "Flour is powder used for baking. A flower is a plant with petals."
+  },
+  {
+    "id": "eng-spell-216",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'to take something that is not yours'?",
+    "options": [
+      "stele",
+      "steal",
+      "steel",
+      "stile"
+    ],
+    "answer": "steal",
+    "explanation": "Steal means to take something that is not yours. Steel is a strong metal."
+  },
+  {
+    "id": "eng-spell-217",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'a strong metal'?",
+    "options": [
+      "stele",
+      "steel",
+      "steal",
+      "stile"
+    ],
+    "answer": "steel",
+    "explanation": "Steel is a strong metal. Steal means to take something that is not yours."
+  },
+  {
+    "id": "eng-spell-218",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'an aircraft'?",
+    "options": [
+      "plane",
+      "plain",
+      "plein",
+      "plaine"
+    ],
+    "answer": "plane",
+    "explanation": "A plane is an aircraft. Plain means simple and not fancy."
+  },
+  {
+    "id": "eng-spell-219",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'simple and not fancy'?",
+    "options": [
+      "plain",
+      "plane",
+      "plein",
+      "plaine"
+    ],
+    "answer": "plain",
+    "explanation": "Plain means simple and not fancy. A plane is an aircraft."
+  },
+  {
+    "id": "eng-spell-221",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'the back part of an animal'?",
+    "options": [
+      "tail",
+      "tale",
+      "tael",
+      "taile"
+    ],
+    "answer": "tail",
+    "explanation": "A tail is the back part of an animal. A tale is a story."
+  },
+  {
+    "id": "eng-spell-222",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'the dark time after sunset'?",
+    "options": [
+      "nite",
+      "nigt",
+      "night",
+      "knight"
+    ],
+    "answer": "night",
+    "explanation": "Night is the dark time after sunset. A knight is a medieval warrior on a horse."
+  },
+  {
+    "id": "eng-spell-223",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'a medieval warrior on a horse'?",
+    "options": [
+      "nigt",
+      "knight",
+      "night",
+      "nite"
+    ],
+    "answer": "knight",
+    "explanation": "A knight is a medieval warrior on a horse. Night is the dark time after sunset."
+  },
+  {
+    "id": "eng-spell-224",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'an animal like a large rabbit'?",
+    "options": [
+      "hare",
+      "hair",
+      "here",
+      "haire"
+    ],
+    "answer": "hare",
+    "explanation": "A hare is an animal like a large rabbit. Hair is what grows on your head."
+  },
+  {
+    "id": "eng-spell-225",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which spelling means 'what grows on your head'?",
+    "options": [
+      "hair",
+      "hare",
+      "here",
+      "haire"
+    ],
+    "answer": "hair",
+    "explanation": "Hair is what grows on your head. A hare is an animal like a large rabbit."
+  },
+  {
+    "id": "eng-spell-226",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the first day of the working week?",
+    "options": [
+      "Munday",
+      "Mondey",
+      "Mondai",
+      "Monday"
+    ],
+    "answer": "Monday",
+    "explanation": "Monday is spelled M-o-n-d-a-y. It starts with a capital letter as it is a day of the week."
+  },
+  {
+    "id": "eng-spell-227",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the day after Monday?",
+    "options": [
+      "Tuesday",
+      "Tuseday",
+      "Twosday",
+      "Tuesady"
+    ],
+    "answer": "Tuesday",
+    "explanation": "Tuesday is spelled T-u-e-s-d-a-y. Remember: Tues-day!"
+  },
+  {
+    "id": "eng-spell-228",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the day between Wednesday and Friday?",
+    "options": [
+      "Thursday",
+      "Thurdsay",
+      "Thrusday",
+      "Thurzday"
+    ],
+    "answer": "Thursday",
+    "explanation": "Thursday is spelled T-h-u-r-s-d-a-y. Remember: Thurs-day!"
+  },
+  {
+    "id": "eng-spell-229",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the last day before Sunday?",
+    "options": [
+      "Satturday",
+      "Saturday",
+      "Saterday",
+      "Saturady"
+    ],
+    "answer": "Saturday",
+    "explanation": "Saturday is spelled S-a-t-u-r-d-a-y. Remember: Satur-day!"
+  },
+  {
+    "id": "eng-spell-230",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the first month of the year?",
+    "options": [
+      "Januery",
+      "Januray",
+      "January",
+      "Janury"
+    ],
+    "answer": "January",
+    "explanation": "January is spelled J-a-n-u-a-r-y. It starts with a capital letter."
+  },
+  {
+    "id": "eng-spell-231",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the third month of the year?",
+    "options": [
+      "Marche",
+      "Murch",
+      "Martch",
+      "March"
+    ],
+    "answer": "March",
+    "explanation": "March is spelled M-a-r-c-h. It is the third month of the year."
+  },
+  {
+    "id": "eng-spell-232",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the fourth month of the year?",
+    "options": [
+      "Aprel",
+      "Appril",
+      "Aprile",
+      "April"
+    ],
+    "answer": "April",
+    "explanation": "April is spelled A-p-r-i-l. It is the fourth month of the year."
+  },
+  {
+    "id": "eng-spell-233",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the eighth month of the year?",
+    "options": [
+      "Augost",
+      "Agust",
+      "Augast",
+      "August"
+    ],
+    "answer": "August",
+    "explanation": "August is spelled A-u-g-u-s-t. It is the eighth month of the year."
+  },
+  {
+    "id": "eng-spell-234",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the tenth month of the year?",
+    "options": [
+      "Octobor",
+      "October",
+      "Octobur",
+      "Ocktober"
+    ],
+    "answer": "October",
+    "explanation": "October is spelled O-c-t-o-b-e-r. Remember: Oct-o-ber!"
+  },
+  {
+    "id": "eng-spell-235",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the eleventh month of the year?",
+    "options": [
+      "Novembar",
+      "Novembur",
+      "November",
+      "Novimber"
+    ],
+    "answer": "November",
+    "explanation": "November is spelled N-o-v-e-m-b-e-r. Remember: Novem-ber!"
+  },
+  {
+    "id": "eng-spell-236",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the last month of the year?",
+    "options": [
+      "December",
+      "Decembur",
+      "Desember",
+      "Decembar"
+    ],
+    "answer": "December",
+    "explanation": "December is spelled D-e-c-e-m-b-e-r. Remember: Decem-ber!"
+  },
+  {
+    "id": "eng-spell-237",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of your mother's mother?",
+    "options": [
+      "grandmoter",
+      "grandmother",
+      "grandmather",
+      "grandmothar"
+    ],
+    "answer": "grandmother",
+    "explanation": "Grandmother is spelled g-r-a-n-d-m-o-t-h-e-r."
+  },
+  {
+    "id": "eng-spell-238",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of your father's father?",
+    "options": [
+      "grandfahter",
+      "grandfather",
+      "grandfathar",
+      "grandfother"
+    ],
+    "answer": "grandfather",
+    "explanation": "Grandfather is spelled g-r-a-n-d-f-a-t-h-e-r."
+  },
+  {
+    "id": "eng-spell-239",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of a female child?",
+    "options": [
+      "daughter",
+      "daugter",
+      "doughter",
+      "dauther"
+    ],
+    "answer": "daughter",
+    "explanation": "Daughter is spelled d-a-u-g-h-t-e-r. Remember the silent gh!"
+  },
+  {
+    "id": "eng-spell-240",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning your brother's son?",
+    "options": [
+      "nephue",
+      "nephu",
+      "nephew",
+      "nevew"
+    ],
+    "answer": "nephew",
+    "explanation": "Nephew is spelled n-e-p-h-e-w. Remember the silent ph!"
+  },
+  {
+    "id": "eng-spell-241",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning your brother's daughter?",
+    "options": [
+      "niese",
+      "nease",
+      "niece",
+      "neice"
+    ],
+    "answer": "niece",
+    "explanation": "Niece is spelled n-i-e-c-e. Remember: i before e except after c!"
+  },
+  {
+    "id": "eng-spell-242",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the past tense of jump?",
+    "options": [
+      "jumed",
+      "jumpd",
+      "jumped",
+      "jumpped"
+    ],
+    "answer": "jumped",
+    "explanation": "Jumped is spelled j-u-m-p-e-d. Just add -ed to jump."
+  },
+  {
+    "id": "eng-spell-243",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the past tense of laugh?",
+    "options": [
+      "laughed",
+      "laffed",
+      "laugfed",
+      "lawfed"
+    ],
+    "answer": "laughed",
+    "explanation": "Laughed is spelled l-a-u-g-h-e-d. Remember the silent gh in laugh!"
+  },
+  {
+    "id": "eng-spell-244",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning in fact or in truth?",
+    "options": [
+      "actualy",
+      "actuelly",
+      "actally",
+      "actually"
+    ],
+    "answer": "actually",
+    "explanation": "Actually is spelled a-c-t-u-a-l-l-y. Remember the double l!"
+  },
+  {
+    "id": "eng-spell-245",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning very likely?",
+    "options": [
+      "probably",
+      "probaly",
+      "probbably",
+      "proberbly"
+    ],
+    "answer": "probably",
+    "explanation": "Probably is spelled p-r-o-b-a-b-l-y. Remember: prob-ab-ly!"
+  },
+  {
+    "id": "eng-spell-246",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning more than usual or particularly?",
+    "options": [
+      "especialy",
+      "espesially",
+      "esspecially",
+      "especially"
+    ],
+    "answer": "especially",
+    "explanation": "Especially is spelled e-s-p-e-c-i-a-l-l-y. Remember the double l!"
+  },
+  {
+    "id": "eng-spell-247",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning certainly or without doubt?",
+    "options": [
+      "definitely",
+      "definately",
+      "definetly",
+      "definitly"
+    ],
+    "answer": "definitely",
+    "explanation": "Definitely is spelled d-e-f-i-n-i-t-e-l-y. Remember: defin-ite-ly!"
+  },
+  {
+    "id": "eng-spell-248",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning easy to sit or relax in?",
+    "options": [
+      "comfurtable",
+      "comfortable",
+      "confortable",
+      "comfortible"
+    ],
+    "answer": "comfortable",
+    "explanation": "Comfortable is spelled c-o-m-f-o-r-t-a-b-l-e."
+  },
+  {
+    "id": "eng-spell-249",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning holding your attention?",
+    "options": [
+      "intresting",
+      "interesing",
+      "interresting",
+      "interesting"
+    ],
+    "answer": "interesting",
+    "explanation": "Interesting is spelled i-n-t-e-r-e-s-t-i-n-g."
+  },
+  {
+    "id": "eng-spell-250",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning talking together?",
+    "options": [
+      "conversasion",
+      "conversation",
+      "converation",
+      "converstation"
+    ],
+    "answer": "conversation",
+    "explanation": "Conversation is spelled c-o-n-v-e-r-s-a-t-i-o-n."
+  },
+  {
+    "id": "eng-spell-251",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning facts or knowledge?",
+    "options": [
+      "infomation",
+      "informasion",
+      "informaton",
+      "information"
+    ],
+    "answer": "information",
+    "explanation": "Information is spelled i-n-f-o-r-m-a-t-i-o-n."
+  },
+  {
+    "id": "eng-spell-252",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning the natural world around us?",
+    "options": [
+      "enviroment",
+      "enviorment",
+      "envirnment",
+      "environment"
+    ],
+    "answer": "environment",
+    "explanation": "Environment is spelled e-n-v-i-r-o-n-m-e-n-t. Remember: environ-ment!"
+  },
+  {
+    "id": "eng-spell-253",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning something you like best?",
+    "options": [
+      "favorrite",
+      "favrite",
+      "favourite",
+      "favorit"
+    ],
+    "answer": "favourite",
+    "explanation": "Favourite is spelled f-a-v-o-u-r-i-t-e in Irish/British English."
+  },
+  {
+    "id": "eng-spell-254",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning an exciting journey?",
+    "options": [
+      "adventur",
+      "adventture",
+      "advenure",
+      "adventure"
+    ],
+    "answer": "adventure",
+    "explanation": "Adventure is spelled a-d-v-e-n-t-u-r-e."
+  },
+  {
+    "id": "eng-spell-255",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning a person in a story?",
+    "options": [
+      "charcter",
+      "character",
+      "charater",
+      "charactor"
+    ],
+    "answer": "character",
+    "explanation": "Character is spelled c-h-a-r-a-c-t-e-r."
+  },
+  {
+    "id": "eng-spell-256",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning very good?",
+    "options": [
+      "excelent",
+      "excellant",
+      "exellent",
+      "excellent"
+    ],
+    "answer": "excellent",
+    "explanation": "Excellent is spelled e-x-c-e-l-l-e-n-t. Remember the double l!"
+  },
+  {
+    "id": "eng-spell-257",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning of great significance?",
+    "options": [
+      "importent",
+      "importint",
+      "impotant",
+      "important"
+    ],
+    "answer": "important",
+    "explanation": "Important is spelled i-m-p-o-r-t-a-n-t."
+  },
+  {
+    "id": "eng-spell-258",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning a system of communication?",
+    "options": [
+      "language",
+      "languaje",
+      "languge",
+      "lannguage"
+    ],
+    "answer": "language",
+    "explanation": "Language is spelled l-a-n-g-u-a-g-e."
+  },
+  {
+    "id": "eng-spell-259",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning found in nature?",
+    "options": [
+      "natrual",
+      "naturall",
+      "natural",
+      "naturel"
+    ],
+    "answer": "natural",
+    "explanation": "Natural is spelled n-a-t-u-r-a-l."
+  },
+  {
+    "id": "eng-spell-260",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning having great strength or force?",
+    "options": [
+      "powerful",
+      "powerfull",
+      "powerfil",
+      "powerfel"
+    ],
+    "answer": "powerful",
+    "explanation": "Powerful is spelled p-o-w-e-r-f-u-l. Just one l at the end!"
+  },
+  {
+    "id": "eng-spell-261",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning a sentence that asks something?",
+    "options": [
+      "qestion",
+      "queston",
+      "questoin",
+      "question"
+    ],
+    "answer": "question",
+    "explanation": "Question is spelled q-u-e-s-t-i-o-n."
+  },
+  {
+    "id": "eng-spell-262",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning happening often or as a usual pattern?",
+    "options": [
+      "reglar",
+      "regualar",
+      "regular",
+      "reguler"
+    ],
+    "answer": "regular",
+    "explanation": "Regular is spelled r-e-g-u-l-a-r."
+  },
+  {
+    "id": "eng-spell-263",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning almost the same?",
+    "options": [
+      "simillar",
+      "similar",
+      "simlar",
+      "simmlar"
+    ],
+    "answer": "similar",
+    "explanation": "Similar is spelled s-i-m-i-l-a-r."
+  },
+  {
+    "id": "eng-spell-264",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning different from the ordinary?",
+    "options": [
+      "specil",
+      "special",
+      "speceal",
+      "spesial"
+    ],
+    "answer": "special",
+    "explanation": "Special is spelled s-p-e-c-i-a-l."
+  },
+  {
+    "id": "eng-spell-265",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning as a group or at the same time?",
+    "options": [
+      "together",
+      "togather",
+      "togeather",
+      "togither"
+    ],
+    "answer": "together",
+    "explanation": "Together is spelled t-o-g-e-t-h-e-r."
+  },
+  {
+    "id": "eng-spell-266",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning most of the time?",
+    "options": [
+      "usully",
+      "usualy",
+      "ussually",
+      "usually"
+    ],
+    "answer": "usually",
+    "explanation": "Usually is spelled u-s-u-a-l-l-y. Remember the double l!"
+  },
+  {
+    "id": "eng-spell-267",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning very good or causing wonder?",
+    "options": [
+      "wondirful",
+      "wonderful",
+      "wonderfull",
+      "wonderfel"
+    ],
+    "answer": "wonderful",
+    "explanation": "Wonderful is spelled w-o-n-d-e-r-f-u-l. Just one l at the end!"
+  },
+  {
+    "id": "eng-spell-268",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning the day before today?",
+    "options": [
+      "yesturday",
+      "yestarday",
+      "yesterdy",
+      "yesterday"
+    ],
+    "answer": "yesterday",
+    "explanation": "Yesterday is spelled y-e-s-t-e-r-d-a-y."
+  },
+  {
+    "id": "eng-spell-269",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'stop' (doubling the last letter)?",
+    "options": [
+      "stopted",
+      "stopped",
+      "stoped",
+      "stoppped"
+    ],
+    "answer": "stopped",
+    "explanation": "Stopped doubles the p before adding -ed: stop → stopped."
+  },
+  {
+    "id": "eng-spell-270",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'drop' (doubling the last letter)?",
+    "options": [
+      "dropped",
+      "droped",
+      "droppped",
+      "dropt"
+    ],
+    "answer": "dropped",
+    "explanation": "Dropped doubles the p before adding -ed: drop → dropped."
+  },
+  {
+    "id": "eng-spell-271",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'plan' (doubling the last letter)?",
+    "options": [
+      "planned",
+      "planed",
+      "plannd",
+      "plannned"
+    ],
+    "answer": "planned",
+    "explanation": "Planned doubles the n before adding -ed: plan → planned."
+  },
+  {
+    "id": "eng-spell-272",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'clap' (doubling the last letter)?",
+    "options": [
+      "clapet",
+      "clapped",
+      "claped",
+      "clappped"
+    ],
+    "answer": "clapped",
+    "explanation": "Clapped doubles the p before adding -ed: clap → clapped."
+  },
+  {
+    "id": "eng-spell-273",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'hug' (doubling the last letter)?",
+    "options": [
+      "hugged",
+      "huged",
+      "huggged",
+      "hugd"
+    ],
+    "answer": "hugged",
+    "explanation": "Hugged doubles the g before adding -ed: hug → hugged."
+  },
+  {
+    "id": "eng-spell-274",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'dance' (drop the e then add -ed)?",
+    "options": [
+      "danced",
+      "dancced",
+      "dansd",
+      "dansed"
+    ],
+    "answer": "danced",
+    "explanation": "Danced drops the e then adds -ed: danc-ed."
+  },
+  {
+    "id": "eng-spell-275",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'smile' (drop the e then add -ed)?",
+    "options": [
+      "smieled",
+      "smiled",
+      "smilled",
+      "smiiled"
+    ],
+    "answer": "smiled",
+    "explanation": "Smiled drops the e then adds -ed: smil-ed."
+  },
+  {
+    "id": "eng-spell-276",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'close' (drop the e then add -ed)?",
+    "options": [
+      "closd",
+      "closed",
+      "clossed",
+      "cloosed"
+    ],
+    "answer": "closed",
+    "explanation": "Closed drops the e then adds -ed: clos-ed."
+  },
+  {
+    "id": "eng-spell-277",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct past tense of 'change' (drop the e then add -ed)?",
+    "options": [
+      "chaned",
+      "changed",
+      "changd",
+      "changeed"
+    ],
+    "answer": "changed",
+    "explanation": "Changed drops the e then adds -ed: chang-ed."
+  },
+  {
+    "id": "eng-spell-278",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning right away or without delay?",
+    "options": [
+      "immedietly",
+      "immediatly",
+      "immediatley",
+      "immediately"
+    ],
+    "answer": "immediately",
+    "explanation": "Immediately is spelled i-m-m-e-d-i-a-t-e-l-y."
+  },
+  {
+    "id": "eng-spell-279",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning in a specific or special way?",
+    "options": [
+      "particularly",
+      "particulary",
+      "particularely",
+      "particulerly"
+    ],
+    "answer": "particularly",
+    "explanation": "Particularly is spelled p-a-r-t-i-c-u-l-a-r-l-y."
+  },
+  {
+    "id": "eng-spell-280",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning roughly or nearly?",
+    "options": [
+      "aproximately",
+      "approximatley",
+      "approximetly",
+      "approximately"
+    ],
+    "answer": "approximately",
+    "explanation": "Approximately is spelled a-p-p-r-o-x-i-m-a-t-e-l-y."
+  },
+  {
+    "id": "eng-spell-281",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning sadly or unluckily?",
+    "options": [
+      "unfortunatley",
+      "unfortunatly",
+      "unfortuanately",
+      "unfortunately"
+    ],
+    "answer": "unfortunately",
+    "explanation": "Unfortunately is spelled u-n-f-o-r-t-u-n-a-t-e-l-y."
+  },
+  {
+    "id": "eng-spell-282",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning not controlled by others?",
+    "options": [
+      "independant",
+      "independint",
+      "indeppendent",
+      "independent"
+    ],
+    "answer": "independent",
+    "explanation": "Independent is spelled i-n-d-e-p-e-n-d-e-n-t."
+  },
+  {
+    "id": "eng-spell-283",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning to watch carefully?",
+    "options": [
+      "obsserve",
+      "observe",
+      "obsurve",
+      "obzerve"
+    ],
+    "answer": "observe",
+    "explanation": "Observe is spelled o-b-s-e-r-v-e."
+  },
+  {
+    "id": "eng-spell-284",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning to find something for the first time?",
+    "options": [
+      "discover",
+      "discovar",
+      "discuver",
+      "disccover"
+    ],
+    "answer": "discover",
+    "explanation": "Discover is spelled d-i-s-c-o-v-e-r."
+  },
+  {
+    "id": "eng-spell-285",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning a time of rest away from school?",
+    "options": [
+      "holiday",
+      "holliday",
+      "holyday",
+      "holidey"
+    ],
+    "answer": "holiday",
+    "explanation": "Holiday is spelled h-o-l-i-d-a-y."
+  },
+  {
+    "id": "eng-spell-286",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling meaning the substance something is made of?",
+    "options": [
+      "matterial",
+      "materiel",
+      "matrial",
+      "material"
+    ],
+    "answer": "material",
+    "explanation": "Material is spelled m-a-t-e-r-i-a-l."
+  },
+  {
+    "id": "eng-spell-287",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which is the correct spelling of the subject that studies the natural world?",
+    "options": [
+      "sience",
+      "science",
+      "sciance",
+      "scince"
+    ],
+    "answer": "science",
+    "explanation": "Science is spelled s-c-i-e-n-c-e."
+  },
+  {
+    "id": "eng-vocab-142",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'sad'?",
+    "options": [
+      "happy",
+      "excited",
+      "brave",
+      "miserable"
+    ],
+    "answer": "miserable",
+    "explanation": "Miserable means very sad or unhappy."
+  },
+  {
+    "id": "eng-vocab-143",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'big'?",
+    "options": [
+      "tiny",
+      "quiet",
+      "soft",
+      "enormous"
+    ],
+    "answer": "enormous",
+    "explanation": "Enormous means the same as very big or huge."
+  },
+  {
+    "id": "eng-vocab-144",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'fast'?",
+    "options": [
+      "dark",
+      "swift",
+      "slow",
+      "heavy"
+    ],
+    "answer": "swift",
+    "explanation": "Swift means moving very quickly — it is a synonym for fast."
+  },
+  {
+    "id": "eng-vocab-145",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'brave'?",
+    "options": [
+      "noisy",
+      "courageous",
+      "cowardly",
+      "lazy"
+    ],
+    "answer": "courageous",
+    "explanation": "Courageous means very brave and not afraid."
+  },
+  {
+    "id": "eng-vocab-146",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'smart'?",
+    "options": [
+      "weak",
+      "clever",
+      "foolish",
+      "clumsy"
+    ],
+    "answer": "clever",
+    "explanation": "Clever means the same as smart — both mean quick to understand."
+  },
+  {
+    "id": "eng-vocab-147",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'tired'?",
+    "options": [
+      "energetic",
+      "happy",
+      "loud",
+      "exhausted"
+    ],
+    "answer": "exhausted",
+    "explanation": "Exhausted means extremely tired — it is a stronger synonym."
+  },
+  {
+    "id": "eng-vocab-148",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'angry'?",
+    "options": [
+      "joyful",
+      "peaceful",
+      "furious",
+      "calm"
+    ],
+    "answer": "furious",
+    "explanation": "Furious means very angry — it is a stronger synonym for angry."
+  },
+  {
+    "id": "eng-vocab-149",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'cold'?",
+    "options": [
+      "hot",
+      "bright",
+      "freezing",
+      "warm"
+    ],
+    "answer": "freezing",
+    "explanation": "Freezing means extremely cold — it is a stronger synonym."
+  },
+  {
+    "id": "eng-vocab-150",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'hot'?",
+    "options": [
+      "wet",
+      "loud",
+      "boiling",
+      "cold"
+    ],
+    "answer": "boiling",
+    "explanation": "Boiling means extremely hot — it is a stronger synonym."
+  },
+  {
+    "id": "eng-vocab-151",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'little'?",
+    "options": [
+      "tiny",
+      "massive",
+      "heavy",
+      "rough"
+    ],
+    "answer": "tiny",
+    "explanation": "Tiny means very little or very small."
+  },
+  {
+    "id": "eng-vocab-152",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'funny'?",
+    "options": [
+      "hilarious",
+      "serious",
+      "sad",
+      "boring"
+    ],
+    "answer": "hilarious",
+    "explanation": "Hilarious means very funny — it is a stronger synonym."
+  },
+  {
+    "id": "eng-vocab-153",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'pretty'?",
+    "options": [
+      "boring",
+      "plain",
+      "beautiful",
+      "ugly"
+    ],
+    "answer": "beautiful",
+    "explanation": "Beautiful means the same as pretty — pleasing to look at."
+  },
+  {
+    "id": "eng-vocab-154",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'dirty'?",
+    "options": [
+      "tidy",
+      "fresh",
+      "filthy",
+      "clean"
+    ],
+    "answer": "filthy",
+    "explanation": "Filthy means very dirty — it is a stronger synonym."
+  },
+  {
+    "id": "eng-vocab-155",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'quiet'?",
+    "options": [
+      "busy",
+      "silent",
+      "noisy",
+      "loud"
+    ],
+    "answer": "silent",
+    "explanation": "Silent means completely quiet — it is a stronger synonym."
+  },
+  {
+    "id": "eng-vocab-156",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'scared'?",
+    "options": [
+      "terrified",
+      "brave",
+      "calm",
+      "happy"
+    ],
+    "answer": "terrified",
+    "explanation": "Terrified means extremely scared — it is a stronger synonym."
+  },
+  {
+    "id": "eng-vocab-157",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'strange'?",
+    "options": [
+      "peculiar",
+      "normal",
+      "ordinary",
+      "usual"
+    ],
+    "answer": "peculiar",
+    "explanation": "Peculiar means strange or unusual."
+  },
+  {
+    "id": "eng-vocab-158",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'begin'?",
+    "options": [
+      "stop",
+      "commence",
+      "finish",
+      "end"
+    ],
+    "answer": "commence",
+    "explanation": "Commence means to begin or start."
+  },
+  {
+    "id": "eng-vocab-159",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'end'?",
+    "options": [
+      "open",
+      "conclude",
+      "start",
+      "begin"
+    ],
+    "answer": "conclude",
+    "explanation": "Conclude means to bring something to an end."
+  },
+  {
+    "id": "eng-vocab-160",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a synonym for 'fix'?",
+    "options": [
+      "destroy",
+      "ruin",
+      "repair",
+      "break"
+    ],
+    "answer": "repair",
+    "explanation": "Repair means to fix something that is broken."
+  },
+  {
+    "id": "eng-vocab-161",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'brave'?",
+    "options": [
+      "daring",
+      "cowardly",
+      "courageous",
+      "bold"
+    ],
+    "answer": "cowardly",
+    "explanation": "The opposite of brave is cowardly — showing fear instead of courage."
+  },
+  {
+    "id": "eng-vocab-162",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'hot'?",
+    "options": [
+      "chilly",
+      "cold",
+      "warm",
+      "cool"
+    ],
+    "answer": "cold",
+    "explanation": "Cold is the opposite of hot."
+  },
+  {
+    "id": "eng-vocab-163",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'light'?",
+    "options": [
+      "dark",
+      "bright",
+      "sunny",
+      "clear"
+    ],
+    "answer": "dark",
+    "explanation": "Dark is the opposite of light."
+  },
+  {
+    "id": "eng-vocab-164",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'ancient'?",
+    "options": [
+      "old",
+      "historical",
+      "past",
+      "modern"
+    ],
+    "answer": "modern",
+    "explanation": "Modern means new or up to date — the opposite of ancient."
+  },
+  {
+    "id": "eng-vocab-165",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'gigantic'?",
+    "options": [
+      "tiny",
+      "large",
+      "huge",
+      "enormous"
+    ],
+    "answer": "tiny",
+    "explanation": "Tiny is the opposite of gigantic."
+  },
+  {
+    "id": "eng-vocab-166",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'graceful'?",
+    "options": [
+      "agile",
+      "clumsy",
+      "elegant",
+      "nimble"
+    ],
+    "answer": "clumsy",
+    "explanation": "Clumsy means awkward — the opposite of graceful."
+  },
+  {
+    "id": "eng-vocab-167",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'gentle'?",
+    "options": [
+      "kind",
+      "tender",
+      "rough",
+      "soft"
+    ],
+    "answer": "rough",
+    "explanation": "Rough is the opposite of gentle."
+  },
+  {
+    "id": "eng-vocab-168",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'shallow'?",
+    "options": [
+      "deep",
+      "flat",
+      "wide",
+      "narrow"
+    ],
+    "answer": "deep",
+    "explanation": "Deep is the opposite of shallow."
+  },
+  {
+    "id": "eng-vocab-169",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'victory'?",
+    "options": [
+      "defeat",
+      "win",
+      "triumph",
+      "success"
+    ],
+    "answer": "defeat",
+    "explanation": "Defeat is the opposite of victory."
+  },
+  {
+    "id": "eng-vocab-170",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'generous'?",
+    "options": [
+      "charitable",
+      "selfish",
+      "kind",
+      "giving"
+    ],
+    "answer": "selfish",
+    "explanation": "Selfish is the opposite of generous."
+  },
+  {
+    "id": "eng-vocab-171",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'dangerous'?",
+    "options": [
+      "perilous",
+      "safe",
+      "risky",
+      "harmful"
+    ],
+    "answer": "safe",
+    "explanation": "Safe is the opposite of dangerous."
+  },
+  {
+    "id": "eng-vocab-172",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'wild'?",
+    "options": [
+      "tame",
+      "fierce",
+      "free",
+      "natural"
+    ],
+    "answer": "tame",
+    "explanation": "Tame is the opposite of wild — describing animals that are not fierce."
+  },
+  {
+    "id": "eng-vocab-173",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'absent'?",
+    "options": [
+      "present",
+      "missing",
+      "away",
+      "gone"
+    ],
+    "answer": "present",
+    "explanation": "Present means here — the opposite of absent."
+  },
+  {
+    "id": "eng-vocab-174",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'expand'?",
+    "options": [
+      "enlarge",
+      "shrink",
+      "grow",
+      "increase"
+    ],
+    "answer": "shrink",
+    "explanation": "Shrink means to get smaller — the opposite of expand."
+  },
+  {
+    "id": "eng-vocab-175",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the OPPOSITE of 'include'?",
+    "options": [
+      "add",
+      "contain",
+      "hold",
+      "exclude"
+    ],
+    "answer": "exclude",
+    "explanation": "Exclude means to leave out — the opposite of include."
+  },
+  {
+    "id": "eng-vocab-176",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In 'The ancient castle stood on a hill', what does 'ancient' mean?",
+    "options": [
+      "very new",
+      "very dark",
+      "very old",
+      "very tall"
+    ],
+    "answer": "very old",
+    "explanation": "Ancient means very old — the castle has been there for a very long time."
+  },
+  {
+    "id": "eng-vocab-177",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "In 'After the race, she was exhausted', what does 'exhausted' mean?",
+    "options": [
+      "very fast",
+      "very strong",
+      "very tired",
+      "very happy"
+    ],
+    "answer": "very tired",
+    "explanation": "Exhausted means very tired, especially after great effort."
+  },
+  {
+    "id": "eng-vocab-178",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In 'They had a magnificent view from the top', what does 'magnificent' mean?",
+    "options": [
+      "distant and blurry",
+      "wonderful and impressive",
+      "small and dull",
+      "foggy and grey"
+    ],
+    "answer": "wonderful and impressive",
+    "explanation": "Magnificent means wonderful and impressive — extremely beautiful or grand."
+  },
+  {
+    "id": "eng-vocab-179",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In 'The timid mouse hid behind the box', what does 'timid' mean?",
+    "options": [
+      "fast and clever",
+      "shy and easily frightened",
+      "large and brave",
+      "loud and playful"
+    ],
+    "answer": "shy and easily frightened",
+    "explanation": "Timid means shy and easily frightened."
+  },
+  {
+    "id": "eng-vocab-180",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In 'The gleaming trophy sat on the shelf', what does 'gleaming' mean?",
+    "options": [
+      "cracked and broken",
+      "shining brightly",
+      "very heavy",
+      "dusty and old"
+    ],
+    "answer": "shining brightly",
+    "explanation": "Gleaming means shining brightly with reflected light."
+  },
+  {
+    "id": "eng-vocab-181",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In 'There was a peculiar smell in the kitchen', what does 'peculiar' mean?",
+    "options": [
+      "very faint",
+      "strange or unusual",
+      "very pleasant",
+      "very familiar"
+    ],
+    "answer": "strange or unusual",
+    "explanation": "Peculiar means strange or unusual."
+  },
+  {
+    "id": "eng-vocab-182",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In 'The frail old lady walked slowly', what does 'frail' mean?",
+    "options": [
+      "young and energetic",
+      "weak and delicate",
+      "strong and tall",
+      "loud and cheerful"
+    ],
+    "answer": "weak and delicate",
+    "explanation": "Frail means weak and delicate in body."
+  },
+  {
+    "id": "eng-vocab-183",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In 'The cautious driver checked both ways', what does 'cautious' mean?",
+    "options": [
+      "very tired",
+      "very late",
+      "very careful",
+      "very fast"
+    ],
+    "answer": "very careful",
+    "explanation": "Cautious means very careful and avoiding danger."
+  },
+  {
+    "id": "eng-vocab-184",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "In 'We sat beside the tranquil lake', what does 'tranquil' mean?",
+    "options": [
+      "peaceful and calm",
+      "loud and rough",
+      "deep and cold",
+      "large and busy"
+    ],
+    "answer": "peaceful and calm",
+    "explanation": "Tranquil means peaceful and calm, free from disturbance."
+  },
+  {
+    "id": "eng-vocab-185",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'sub-' mean in 'submarine'?",
+    "options": [
+      "over",
+      "before",
+      "after",
+      "under"
+    ],
+    "answer": "under",
+    "explanation": "Sub- means under. A submarine travels under the water."
+  },
+  {
+    "id": "eng-vocab-186",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'trans-' mean in 'transport'?",
+    "options": [
+      "under",
+      "against",
+      "without",
+      "across"
+    ],
+    "answer": "across",
+    "explanation": "Trans- means across. Transport carries things from one place across to another."
+  },
+  {
+    "id": "eng-vocab-187",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'uni-' mean in 'unicycle'?",
+    "options": [
+      "many",
+      "one",
+      "two",
+      "three"
+    ],
+    "answer": "one",
+    "explanation": "Uni- means one. A unicycle has only one wheel."
+  },
+  {
+    "id": "eng-vocab-188",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'bi-' mean in 'bicycle'?",
+    "options": [
+      "two",
+      "one",
+      "three",
+      "four"
+    ],
+    "answer": "two",
+    "explanation": "Bi- means two. A bicycle has two wheels."
+  },
+  {
+    "id": "eng-vocab-189",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'tri-' mean in 'triangle'?",
+    "options": [
+      "three",
+      "four",
+      "two",
+      "five"
+    ],
+    "answer": "three",
+    "explanation": "Tri- means three. A triangle has three sides."
+  },
+  {
+    "id": "eng-vocab-190",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'pre-' mean in 'preview'?",
+    "options": [
+      "again",
+      "not",
+      "before",
+      "after"
+    ],
+    "answer": "before",
+    "explanation": "Pre- means before. A preview lets you see something before others do."
+  },
+  {
+    "id": "eng-vocab-191",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'anti-' mean in 'antiseptic'?",
+    "options": [
+      "with",
+      "before",
+      "under",
+      "against"
+    ],
+    "answer": "against",
+    "explanation": "Anti- means against. Antiseptic works against germs."
+  },
+  {
+    "id": "eng-vocab-192",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'auto-' mean in 'automatic'?",
+    "options": [
+      "fast",
+      "self",
+      "other",
+      "big"
+    ],
+    "answer": "self",
+    "explanation": "Auto- means self. Automatic means it works by itself."
+  },
+  {
+    "id": "eng-vocab-193",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'micro-' mean in 'microscope'?",
+    "options": [
+      "very fast",
+      "very bright",
+      "very small",
+      "very large"
+    ],
+    "answer": "very small",
+    "explanation": "Micro- means very small. A microscope lets you see very small things."
+  },
+  {
+    "id": "eng-vocab-194",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'tele-' mean in 'telephone'?",
+    "options": [
+      "underground",
+      "underwater",
+      "far away",
+      "nearby"
+    ],
+    "answer": "far away",
+    "explanation": "Tele- means far away. A telephone lets you talk to someone far away."
+  },
+  {
+    "id": "eng-vocab-195",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word means 'a boat that travels under water'?",
+    "options": [
+      "subflight",
+      "submarine",
+      "subtrack",
+      "subbird"
+    ],
+    "answer": "submarine",
+    "explanation": "Submarine uses sub- (under) + marine (sea) = vessel that goes under the sea."
+  },
+  {
+    "id": "eng-vocab-196",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word means 'to carry things from one place to another'?",
+    "options": [
+      "transport",
+      "transtree",
+      "transhome",
+      "transleap"
+    ],
+    "answer": "transport",
+    "explanation": "Transport uses trans- (across) + port (carry) = carry across."
+  },
+  {
+    "id": "eng-vocab-197",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word means 'a vehicle with only one wheel'?",
+    "options": [
+      "unitruck",
+      "uniboat",
+      "uniplane",
+      "unicycle"
+    ],
+    "answer": "unicycle",
+    "explanation": "Unicycle uses uni- (one) + cycle (wheel) = one wheel."
+  },
+  {
+    "id": "eng-vocab-198",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'hopeful' mean?",
+    "options": [
+      "hopeless",
+      "hoping never",
+      "full of hope",
+      "without hope"
+    ],
+    "answer": "full of hope",
+    "explanation": "The suffix -ful means full of. Hopeful means full of hope."
+  },
+  {
+    "id": "eng-vocab-199",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'thankful' mean?",
+    "options": [
+      "unthankful",
+      "never thanked",
+      "full of thanks",
+      "without thanks"
+    ],
+    "answer": "full of thanks",
+    "explanation": "The suffix -ful means full of. Thankful means full of thanks."
+  },
+  {
+    "id": "eng-vocab-200",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'harmful' mean?",
+    "options": [
+      "being safe",
+      "causing harm",
+      "without harm",
+      "helping others"
+    ],
+    "answer": "causing harm",
+    "explanation": "Harmful means causing harm or danger."
+  },
+  {
+    "id": "eng-vocab-201",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'fearful' mean?",
+    "options": [
+      "very brave",
+      "perfectly calm",
+      "full of fear",
+      "without fear"
+    ],
+    "answer": "full of fear",
+    "explanation": "Fearful means full of fear."
+  },
+  {
+    "id": "eng-vocab-202",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'cheerful' mean?",
+    "options": [
+      "without any feeling",
+      "extremely angry",
+      "full of cheer and happiness",
+      "very sad"
+    ],
+    "answer": "full of cheer and happiness",
+    "explanation": "Cheerful means full of cheer and happiness."
+  },
+  {
+    "id": "eng-vocab-203",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which suffix turns 'enjoy' into a noun?",
+    "options": [
+      "-ment",
+      "--ment",
+      "--ful",
+      "--less"
+    ],
+    "answer": "-ment",
+    "explanation": "The suffix -ment turns a verb into a noun: enjoy → enjoyment."
+  },
+  {
+    "id": "eng-vocab-204",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the noun form of 'govern'?",
+    "options": [
+      "governful",
+      "government",
+      "governless",
+      "governly"
+    ],
+    "answer": "government",
+    "explanation": "Govern + -ment = government. The -ment suffix makes it a noun."
+  },
+  {
+    "id": "eng-vocab-205",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the noun form of 'move'?",
+    "options": [
+      "moveful",
+      "moveless",
+      "movely",
+      "movement"
+    ],
+    "answer": "movement",
+    "explanation": "Move + -ment = movement. The -ment suffix makes it a noun."
+  },
+  {
+    "id": "eng-vocab-206",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the noun form of 'pay'?",
+    "options": [
+      "payment",
+      "payful",
+      "payless",
+      "payly"
+    ],
+    "answer": "payment",
+    "explanation": "Pay + -ment = payment. The -ment suffix makes it a noun."
+  },
+  {
+    "id": "eng-vocab-207",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the noun form of 'agree'?",
+    "options": [
+      "agreeful",
+      "agreeless",
+      "agreely",
+      "agreement"
+    ],
+    "answer": "agreement",
+    "explanation": "Agree + -ment = agreement. The -ment suffix makes it a noun."
+  },
+  {
+    "id": "eng-vocab-208",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'lighthouse' mean?",
+    "options": [
+      "a house made of light materials",
+      "a very small house",
+      "a house near a lake",
+      "a tower with a bright light to guide ships"
+    ],
+    "answer": "a tower with a bright light to guide ships",
+    "explanation": "A lighthouse is a tall tower with a flashing light to guide ships at sea."
+  },
+  {
+    "id": "eng-vocab-209",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'raincoat' mean?",
+    "options": [
+      "a coat made of rain",
+      "a coat for sunny days",
+      "a very thin coat",
+      "a coat that keeps you dry in the rain"
+    ],
+    "answer": "a coat that keeps you dry in the rain",
+    "explanation": "A raincoat is a waterproof coat that protects you from the rain."
+  },
+  {
+    "id": "eng-vocab-210",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'football' mean?",
+    "options": [
+      "a ball made of feet",
+      "a type of dancing",
+      "a game played on water",
+      "a sport where players kick a ball with their feet"
+    ],
+    "answer": "a sport where players kick a ball with their feet",
+    "explanation": "Football is a sport where players kick a ball into a goal using their feet."
+  },
+  {
+    "id": "eng-vocab-211",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'sunflower' mean?",
+    "options": [
+      "a flower that only blooms at night",
+      "a flower that grows underwater",
+      "a very tiny flower",
+      "a flower that turns to face the sun"
+    ],
+    "answer": "a flower that turns to face the sun",
+    "explanation": "A sunflower is a tall yellow flower that follows the sun across the sky."
+  },
+  {
+    "id": "eng-vocab-212",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'bookworm' mean?",
+    "options": [
+      "a worm that eats books",
+      "a type of caterpillar",
+      "a book with pictures of worms",
+      "a person who loves reading books"
+    ],
+    "answer": "a person who loves reading books",
+    "explanation": "A bookworm is someone who reads a lot and loves books."
+  },
+  {
+    "id": "eng-vocab-213",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'daydream' mean?",
+    "options": [
+      "to imagine pleasant things while awake",
+      "a dream you have during the night",
+      "a nightmare",
+      "a very short sleep"
+    ],
+    "answer": "to imagine pleasant things while awake",
+    "explanation": "To daydream means to let your mind wander and imagine pleasant things while you are awake."
+  },
+  {
+    "id": "eng-vocab-214",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'earthquake' mean?",
+    "options": [
+      "a type of cake with earth in it",
+      "an earth-coloured painting",
+      "a very heavy stone",
+      "a sudden shaking of the ground"
+    ],
+    "answer": "a sudden shaking of the ground",
+    "explanation": "An earthquake is a sudden, violent shaking of the ground caused by movements underground."
+  },
+  {
+    "id": "eng-vocab-215",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'snowflake' mean?",
+    "options": [
+      "a type of cereal",
+      "a white flower",
+      "a cloud in the sky",
+      "a single crystal of snow"
+    ],
+    "answer": "a single crystal of snow",
+    "explanation": "A snowflake is a single, delicate crystal of snow with a unique pattern."
+  },
+  {
+    "id": "eng-vocab-216",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'starfish' mean?",
+    "options": [
+      "a fish that lives among stars",
+      "a type of shooting star",
+      "a very bright deep sea light",
+      "a sea creature shaped like a star"
+    ],
+    "answer": "a sea creature shaped like a star",
+    "explanation": "A starfish is a sea creature with five arms arranged like a star."
+  },
+  {
+    "id": "eng-vocab-217",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'butterfly' mean?",
+    "options": [
+      "a type of butter made from flies",
+      "a flying piece of butter",
+      "a yellow flower",
+      "an insect with colourful wings"
+    ],
+    "answer": "an insect with colourful wings",
+    "explanation": "A butterfly is a beautiful insect with large, colourful wings."
+  },
+  {
+    "id": "eng-gram-236",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of cattle?",
+    "options": [
+      "herd",
+      "flock",
+      "pack",
+      "pride"
+    ],
+    "answer": "herd",
+    "explanation": "A group of cattle is called a herd."
+  },
+  {
+    "id": "eng-gram-238",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of dolphins?",
+    "options": [
+      "pod",
+      "pride",
+      "shoal",
+      "pack"
+    ],
+    "answer": "pod",
+    "explanation": "A group of dolphins is called a pod."
+  },
+  {
+    "id": "eng-gram-239",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of crows?",
+    "options": [
+      "flock",
+      "gaggle",
+      "herd",
+      "murder"
+    ],
+    "answer": "murder",
+    "explanation": "A group of crows is called a murder — a surprising name!"
+  },
+  {
+    "id": "eng-gram-240",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of geese?",
+    "options": [
+      "swarm",
+      "gaggle",
+      "flock",
+      "pod"
+    ],
+    "answer": "gaggle",
+    "explanation": "A group of geese is called a gaggle."
+  },
+  {
+    "id": "eng-gram-241",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of elephants?",
+    "options": [
+      "herd",
+      "pride",
+      "pack",
+      "colony"
+    ],
+    "answer": "herd",
+    "explanation": "A group of elephants is called a herd."
+  },
+  {
+    "id": "eng-gram-242",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of butterflies?",
+    "options": [
+      "swarm",
+      "colony",
+      "flutter",
+      "flock"
+    ],
+    "answer": "flutter",
+    "explanation": "A group of butterflies is called a flutter."
+  },
+  {
+    "id": "eng-gram-243",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of monkeys?",
+    "options": [
+      "troop",
+      "pack",
+      "herd",
+      "flock"
+    ],
+    "answer": "troop",
+    "explanation": "A group of monkeys is called a troop."
+  },
+  {
+    "id": "eng-gram-244",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of owls?",
+    "options": [
+      "parliament",
+      "colony",
+      "flock",
+      "murder"
+    ],
+    "answer": "parliament",
+    "explanation": "A group of owls is called a parliament."
+  },
+  {
+    "id": "eng-gram-245",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the collective noun for a group of frogs?",
+    "options": [
+      "colony",
+      "swarm",
+      "pack",
+      "army"
+    ],
+    "answer": "army",
+    "explanation": "A group of frogs is called an army."
+  },
+  {
+    "id": "eng-gram-246",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'fly'?",
+    "options": [
+      "flyed",
+      "flewn",
+      "flew",
+      "flied"
+    ],
+    "answer": "flew",
+    "explanation": "The past tense of fly is flew. (I fly → Yesterday I flew.)"
+  },
+  {
+    "id": "eng-gram-247",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'grow'?",
+    "options": [
+      "grewn",
+      "grew",
+      "growed",
+      "grewed"
+    ],
+    "answer": "grew",
+    "explanation": "The past tense of grow is grew. (I grow → Yesterday I grew.)"
+  },
+  {
+    "id": "eng-gram-248",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'know'?",
+    "options": [
+      "knowen",
+      "knew",
+      "knowed",
+      "knewed"
+    ],
+    "answer": "knew",
+    "explanation": "The past tense of know is knew. (I know → Yesterday I knew.)"
+  },
+  {
+    "id": "eng-gram-249",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'throw'?",
+    "options": [
+      "threw",
+      "throwed",
+      "threwed",
+      "thrun"
+    ],
+    "answer": "threw",
+    "explanation": "The past tense of throw is threw. (I throw → Yesterday I threw.)"
+  },
+  {
+    "id": "eng-gram-250",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'draw'?",
+    "options": [
+      "drew",
+      "drawed",
+      "drewed",
+      "drawwed"
+    ],
+    "answer": "drew",
+    "explanation": "The past tense of draw is drew. (I draw → Yesterday I drew.)"
+  },
+  {
+    "id": "eng-gram-251",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'buy'?",
+    "options": [
+      "boughten",
+      "buied",
+      "bought",
+      "buyed"
+    ],
+    "answer": "bought",
+    "explanation": "The past tense of buy is bought. (I buy → Yesterday I bought.)"
+  },
+  {
+    "id": "eng-gram-253",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'think'?",
+    "options": [
+      "thought",
+      "thinked",
+      "thunk",
+      "thoughted"
+    ],
+    "answer": "thought",
+    "explanation": "The past tense of think is thought. (I think → Yesterday I thought.)"
+  },
+  {
+    "id": "eng-gram-255",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'teach'?",
+    "options": [
+      "taught",
+      "teached",
+      "taughted",
+      "teacht"
+    ],
+    "answer": "taught",
+    "explanation": "The past tense of teach is taught. (I teach → Yesterday I taught.)"
+  },
+  {
+    "id": "eng-gram-256",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'fight'?",
+    "options": [
+      "foughten",
+      "fightd",
+      "fought",
+      "fighted"
+    ],
+    "answer": "fought",
+    "explanation": "The past tense of fight is fought. (I fight → Yesterday I fought.)"
+  },
+  {
+    "id": "eng-gram-257",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'stand'?",
+    "options": [
+      "standd",
+      "stood",
+      "standed",
+      "stod"
+    ],
+    "answer": "stood",
+    "explanation": "The past tense of stand is stood. (I stand → Yesterday I stood.)"
+  },
+  {
+    "id": "eng-gram-258",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'lose'?",
+    "options": [
+      "lost",
+      "losed",
+      "losted",
+      "lossed"
+    ],
+    "answer": "lost",
+    "explanation": "The past tense of lose is lost. (I lose → Yesterday I lost.)"
+  },
+  {
+    "id": "eng-gram-259",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'find'?",
+    "options": [
+      "foud",
+      "finnd",
+      "found",
+      "finded"
+    ],
+    "answer": "found",
+    "explanation": "The past tense of find is found. (I find → Yesterday I found.)"
+  },
+  {
+    "id": "eng-gram-260",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'hold'?",
+    "options": [
+      "held",
+      "holded",
+      "holdeed",
+      "heled"
+    ],
+    "answer": "held",
+    "explanation": "The past tense of hold is held. (I hold → Yesterday I held.)"
+  },
+  {
+    "id": "eng-gram-261",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'tell'?",
+    "options": [
+      "told",
+      "telled",
+      "tolled",
+      "teld"
+    ],
+    "answer": "told",
+    "explanation": "The past tense of tell is told. (I tell → Yesterday I told.)"
+  },
+  {
+    "id": "eng-gram-262",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'sell'?",
+    "options": [
+      "seld",
+      "sold",
+      "selled",
+      "solled"
+    ],
+    "answer": "sold",
+    "explanation": "The past tense of sell is sold. (I sell → Yesterday I sold.)"
+  },
+  {
+    "id": "eng-gram-263",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'keep'?",
+    "options": [
+      "kepted",
+      "kept",
+      "keeped",
+      "kep"
+    ],
+    "answer": "kept",
+    "explanation": "The past tense of keep is kept. (I keep → Yesterday I kept.)"
+  },
+  {
+    "id": "eng-gram-264",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'sleep'?",
+    "options": [
+      "sleptt",
+      "slept",
+      "sleeped",
+      "slep"
+    ],
+    "answer": "slept",
+    "explanation": "The past tense of sleep is slept. (I sleep → Yesterday I slept.)"
+  },
+  {
+    "id": "eng-gram-265",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'feel'?",
+    "options": [
+      "feled",
+      "feelted",
+      "felt",
+      "feeled"
+    ],
+    "answer": "felt",
+    "explanation": "The past tense of feel is felt. (I feel → Yesterday I felt.)"
+  },
+  {
+    "id": "eng-gram-266",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'leave'?",
+    "options": [
+      "left",
+      "leaved",
+      "lefted",
+      "laved"
+    ],
+    "answer": "left",
+    "explanation": "The past tense of leave is left. (I leave → Yesterday I left.)"
+  },
+  {
+    "id": "eng-gram-267",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'sit'?",
+    "options": [
+      "sited",
+      "sat",
+      "sitted",
+      "sated"
+    ],
+    "answer": "sat",
+    "explanation": "The past tense of sit is sat. (I sit → Yesterday I sat.)"
+  },
+  {
+    "id": "eng-gram-268",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'dig'?",
+    "options": [
+      "dug",
+      "digged",
+      "dugged",
+      "digd"
+    ],
+    "answer": "dug",
+    "explanation": "The past tense of dig is dug. (I dig → Yesterday I dug.)"
+  },
+  {
+    "id": "eng-gram-269",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'win'?",
+    "options": [
+      "wond",
+      "won",
+      "winned",
+      "wun"
+    ],
+    "answer": "won",
+    "explanation": "The past tense of win is won. (I win → Yesterday I won.)"
+  },
+  {
+    "id": "eng-gram-270",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'spin'?",
+    "options": [
+      "spind",
+      "spun",
+      "spinned",
+      "spunned"
+    ],
+    "answer": "spun",
+    "explanation": "The past tense of spin is spun. (I spin → Yesterday I spun.)"
+  },
+  {
+    "id": "eng-gram-271",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'seek'?",
+    "options": [
+      "seekt",
+      "sought",
+      "seeked",
+      "soughted"
+    ],
+    "answer": "sought",
+    "explanation": "The past tense of seek is sought. (I seek → Yesterday I sought.)"
+  },
+  {
+    "id": "eng-gram-272",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'mean'?",
+    "options": [
+      "meaned",
+      "ment",
+      "meanted",
+      "meant"
+    ],
+    "answer": "meant",
+    "explanation": "The past tense of mean is meant. (I mean → Yesterday I meant.)"
+  },
+  {
+    "id": "eng-gram-273",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'deal'?",
+    "options": [
+      "dealt",
+      "dealed",
+      "deelt",
+      "deald"
+    ],
+    "answer": "dealt",
+    "explanation": "The past tense of deal is dealt. (I deal → Yesterday I dealt.)"
+  },
+  {
+    "id": "eng-gram-274",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'understand'?",
+    "options": [
+      "understanded",
+      "understandd",
+      "understod",
+      "understood"
+    ],
+    "answer": "understood",
+    "explanation": "The past tense of understand is understood."
+  },
+  {
+    "id": "eng-gram-275",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'strike'?",
+    "options": [
+      "strikd",
+      "struck",
+      "striked",
+      "strucked"
+    ],
+    "answer": "struck",
+    "explanation": "The past tense of strike is struck."
+  },
+  {
+    "id": "eng-gram-276",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the past tense of 'swing'?",
+    "options": [
+      "swingd",
+      "swung",
+      "swinged",
+      "swunged"
+    ],
+    "answer": "swung",
+    "explanation": "The past tense of swing is swung."
+  },
+  {
+    "id": "eng-gram-281",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which sentence uses the verb correctly?",
+    "options": [
+      "The dogs run in the park.",
+      "The dogs runs in the park.",
+      "The dogs running in the park.",
+      "The dogs runned in the park."
+    ],
+    "answer": "The dogs run in the park.",
+    "explanation": "With a plural subject (dogs), use the base form run (not runs)."
+  },
+  {
+    "id": "eng-gram-283",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence is 'The sun rises in the east.'?",
+    "options": [
+      "declarative",
+      "interrogative",
+      "imperative",
+      "exclamatory"
+    ],
+    "answer": "declarative",
+    "explanation": "A declarative sentence makes a statement. It ends with a full stop."
+  },
+  {
+    "id": "eng-gram-284",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence is 'Where are you going?'?",
+    "options": [
+      "declarative",
+      "imperative",
+      "exclamatory",
+      "interrogative"
+    ],
+    "answer": "interrogative",
+    "explanation": "An interrogative sentence asks a question. It ends with a question mark."
+  },
+  {
+    "id": "eng-gram-285",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence is 'Please close the door.'?",
+    "options": [
+      "declarative",
+      "interrogative",
+      "exclamatory",
+      "imperative"
+    ],
+    "answer": "imperative",
+    "explanation": "An imperative sentence gives a command or instruction."
+  },
+  {
+    "id": "eng-gram-286",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence is 'What a beautiful day!'?",
+    "options": [
+      "declarative",
+      "interrogative",
+      "imperative",
+      "exclamatory"
+    ],
+    "answer": "exclamatory",
+    "explanation": "An exclamatory sentence shows strong feeling. It ends with an exclamation mark."
+  },
+  {
+    "id": "eng-gram-287",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence makes a statement?",
+    "options": [
+      "declarative",
+      "interrogative",
+      "imperative",
+      "exclamatory"
+    ],
+    "answer": "declarative",
+    "explanation": "A declarative sentence makes a statement or gives information."
+  },
+  {
+    "id": "eng-gram-288",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence asks a question?",
+    "options": [
+      "declarative",
+      "imperative",
+      "exclamatory",
+      "interrogative"
+    ],
+    "answer": "interrogative",
+    "explanation": "An interrogative sentence asks a question."
+  },
+  {
+    "id": "eng-gram-289",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence gives a command or instruction?",
+    "options": [
+      "declarative",
+      "interrogative",
+      "exclamatory",
+      "imperative"
+    ],
+    "answer": "imperative",
+    "explanation": "An imperative sentence gives an order, command, or instruction."
+  },
+  {
+    "id": "eng-gram-290",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What type of sentence shows strong feeling and ends with '!'?",
+    "options": [
+      "declarative",
+      "interrogative",
+      "imperative",
+      "exclamatory"
+    ],
+    "answer": "exclamatory",
+    "explanation": "An exclamatory sentence shows a strong emotion and ends with an exclamation mark."
+  },
+  {
+    "id": "eng-gram-291",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which conjunction best completes the sentence: '_____ it was raining, we went to the park.'?",
+    "options": [
+      "Because",
+      "Until",
+      "While",
+      "Although"
+    ],
+    "answer": "Although",
+    "explanation": "Although introduces a contrast — we went despite the rain."
+  },
+  {
+    "id": "eng-gram-292",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which conjunction best completes: 'I will not go _____ you come with me.'?",
+    "options": [
+      "although",
+      "during",
+      "since",
+      "unless"
+    ],
+    "answer": "unless",
+    "explanation": "Unless means except if — I will not go except if you come."
+  },
+  {
+    "id": "eng-gram-293",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which conjunction best completes: 'We waited _____ the rain stopped.'?",
+    "options": [
+      "although",
+      "since",
+      "unless",
+      "until"
+    ],
+    "answer": "until",
+    "explanation": "Until means up to the time when — we waited up to when the rain stopped."
+  },
+  {
+    "id": "eng-gram-294",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which conjunction best completes: 'She read her book _____ he cooked dinner.'?",
+    "options": [
+      "although",
+      "while",
+      "unless",
+      "until"
+    ],
+    "answer": "while",
+    "explanation": "While means at the same time as — she read as he cooked."
+  },
+  {
+    "id": "eng-gram-295",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which conjunction best completes: 'I have lived here _____ I was born.'?",
+    "options": [
+      "unless",
+      "since",
+      "until",
+      "while"
+    ],
+    "answer": "since",
+    "explanation": "Since means from the time when — I have lived here from when I was born."
+  },
+  {
+    "id": "eng-gram-296",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which conjunction best completes: 'She was late _____ the bus broke down.'?",
+    "options": [
+      "unless",
+      "until",
+      "because",
+      "although"
+    ],
+    "answer": "because",
+    "explanation": "Because explains the reason — the broken bus caused her to be late."
+  },
+  {
+    "id": "eng-gram-297",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which conjunction best completes: 'He practised every day _____ he could improve.'?",
+    "options": [
+      "even though",
+      "so that",
+      "because of",
+      "in case"
+    ],
+    "answer": "so that",
+    "explanation": "So that shows purpose — he practised with the aim of improving."
+  },
+  {
+    "id": "eng-gram-298",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a conjunction in 'I like cats although I am allergic to them.'?",
+    "options": [
+      "cats",
+      "allergic",
+      "them",
+      "although"
+    ],
+    "answer": "although",
+    "explanation": "Although is the conjunction joining the two clauses."
+  },
+  {
+    "id": "eng-gram-299",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a conjunction in 'We will start unless it gets too late.'?",
+    "options": [
+      "start",
+      "late",
+      "too",
+      "unless"
+    ],
+    "answer": "unless",
+    "explanation": "Unless is the conjunction introducing the condition."
+  },
+  {
+    "id": "eng-gram-300",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a conjunction in 'She was happy because she won the prize.'?",
+    "options": [
+      "prize",
+      "won",
+      "because",
+      "happy"
+    ],
+    "answer": "because",
+    "explanation": "Because is the conjunction explaining the reason."
+  },
+  {
+    "id": "eng-gram-301",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb in 'She ran quickly to catch the bus.'?",
+    "options": [
+      "ran",
+      "bus",
+      "catch",
+      "quickly"
+    ],
+    "answer": "quickly",
+    "explanation": "Quickly is an adverb of manner — it tells us how she ran."
+  },
+  {
+    "id": "eng-gram-302",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb in 'The dog barked loudly at the postman.'?",
+    "options": [
+      "loudly",
+      "barked",
+      "postman",
+      "dog"
+    ],
+    "answer": "loudly",
+    "explanation": "Loudly is an adverb of manner — it tells us how the dog barked."
+  },
+  {
+    "id": "eng-gram-303",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb in 'He answered the question correctly.'?",
+    "options": [
+      "he",
+      "correctly",
+      "answered",
+      "question"
+    ],
+    "answer": "correctly",
+    "explanation": "Correctly is an adverb of manner — it tells us how he answered."
+  },
+  {
+    "id": "eng-gram-304",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is an adverb in 'She sang beautifully at the concert.'?",
+    "options": [
+      "concert",
+      "she",
+      "beautifully",
+      "sang"
+    ],
+    "answer": "beautifully",
+    "explanation": "Beautifully is an adverb of manner — it tells us how she sang."
+  },
+  {
+    "id": "eng-gram-310",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Change to active voice: 'The cake was eaten by the children.'",
+    "options": [
+      "The children ate the cake.",
+      "The cake ate the children.",
+      "Eaten was the cake by children.",
+      "The children were eating by the cake."
+    ],
+    "answer": "The children ate the cake.",
+    "explanation": "Active voice: subject (children) + verb (ate) + object (cake)."
+  },
+  {
+    "id": "eng-gram-311",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Change to active voice: 'The ball was kicked by the boy.'",
+    "options": [
+      "The boy kicked the ball.",
+      "The ball kicked the boy.",
+      "Kicked was the ball by the boy.",
+      "The boy was kicked by the ball."
+    ],
+    "answer": "The boy kicked the ball.",
+    "explanation": "Active voice: subject (boy) + verb (kicked) + object (ball)."
+  },
+  {
+    "id": "eng-gram-312",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Change to active voice: 'The letter was written by Maria.'",
+    "options": [
+      "The letter wrote Maria.",
+      "Written was the letter by Maria.",
+      "Maria was writing by the letter.",
+      "Maria wrote the letter."
+    ],
+    "answer": "Maria wrote the letter.",
+    "explanation": "Active voice: subject (Maria) + verb (wrote) + object (letter)."
+  },
+  {
+    "id": "eng-gram-313",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which sentence is in the passive voice?",
+    "options": [
+      "The dog was walked by Emma.",
+      "Emma walked the dog.",
+      "The dog walked with Emma.",
+      "Emma and the dog went walking."
+    ],
+    "answer": "The dog was walked by Emma.",
+    "explanation": "Passive voice: object (dog) + was + past participle (walked) + by + subject (Emma)."
+  },
+  {
+    "id": "eng-gram-315",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which sentence uses the apostrophe correctly?",
+    "options": [
+      "The dog's bone was buried.",
+      "The dogs bone was buried.",
+      "The dogs' bone was buried.",
+      "The dog bone's was buried."
+    ],
+    "answer": "The dog's bone was buried.",
+    "explanation": "The dog's bone — apostrophe + s after the owner (dog) shows it belongs to one dog."
+  },
+  {
+    "id": "eng-gram-319",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which preposition correctly completes: 'We eat lunch ___ noon.'?",
+    "options": [
+      "in",
+      "on",
+      "by",
+      "at"
+    ],
+    "answer": "at",
+    "explanation": "We use at with specific times: at noon, at 3 o'clock."
+  },
+  {
+    "id": "eng-gram-320",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which preposition correctly completes: 'I go to school ___ the morning.'?",
+    "options": [
+      "at",
+      "on",
+      "during",
+      "in"
+    ],
+    "answer": "in",
+    "explanation": "We use in with parts of the day: in the morning, in the afternoon."
+  },
+  {
+    "id": "eng-gram-321",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which preposition correctly completes: 'We have PE ___ Monday.'?",
+    "options": [
+      "by",
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": "on",
+    "explanation": "We use on with days of the week: on Monday, on Friday."
+  },
+  {
+    "id": "eng-gram-322",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which preposition correctly completes: 'We go on holidays ___ the summer.'?",
+    "options": [
+      "during",
+      "at",
+      "in",
+      "by"
+    ],
+    "answer": "during",
+    "explanation": "We use during to mean throughout a period: during the summer."
+  },
+  {
+    "id": "eng-gram-323",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which preposition correctly completes: 'She finished her homework ___ Friday.'?",
+    "options": [
+      "on",
+      "in",
+      "by",
+      "at"
+    ],
+    "answer": "by",
+    "explanation": "We use by to mean no later than: she finished by Friday."
+  },
+  {
+    "id": "eng-gram-324",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which preposition correctly completes: 'He has been reading ___ last week.'?",
+    "options": [
+      "until",
+      "since",
+      "during",
+      "by"
+    ],
+    "answer": "since",
+    "explanation": "We use since to show a starting point: since last week."
+  },
+  {
+    "id": "eng-gram-325",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which preposition correctly completes: 'We go home ___ school.'?",
+    "options": [
+      "before",
+      "during",
+      "since",
+      "after"
+    ],
+    "answer": "after",
+    "explanation": "After school means when school has finished."
+  },
+  {
+    "id": "eng-gram-326",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which preposition correctly completes: 'She brushed her teeth ___ breakfast.'?",
+    "options": [
+      "during",
+      "since",
+      "before",
+      "after"
+    ],
+    "answer": "before",
+    "explanation": "Before breakfast means prior to eating breakfast."
+  },
+  {
+    "id": "eng-punc-021",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which sentence has the correct comma use for a list?",
+    "options": [
+      "We need milk, bread, eggs, and, butter.",
+      "We need milk, bread, eggs and butter.",
+      "We need milk bread eggs and butter.",
+      "We need, milk, bread, eggs, and, butter."
+    ],
+    "answer": "We need milk, bread, eggs and butter.",
+    "explanation": "Separate list items with commas. No comma before and in Irish/British style."
+  },
+  {
+    "id": "eng-punc-033",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Where do speech marks go in: She said ___ Hello ___ to everyone.",
+    "options": [
+      "She said Hello \"to everyone\".",
+      "She said \"Hello\" to everyone.",
+      "She \"said Hello\" to everyone.",
+      "\"She said Hello\" to everyone."
+    ],
+    "answer": "She said \"Hello\" to everyone.",
+    "explanation": "Speech marks go around just the word or words being spoken: \"Hello\"."
+  },
+  {
+    "id": "eng-punc-034",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which sentence uses the correct end punctuation for a question?",
+    "options": [
+      "Where are you going,",
+      "Where are you going?",
+      "Where are you going.",
+      "Where are you going!"
+    ],
+    "answer": "Where are you going?",
+    "explanation": "A question always ends with a question mark (?)."
+  },
+  {
+    "id": "eng-punc-035",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which sentence uses the correct end punctuation for a strong feeling?",
+    "options": [
+      "What an amazing goal,",
+      "What an amazing goal!",
+      "What an amazing goal?",
+      "What an amazing goal."
+    ],
+    "answer": "What an amazing goal!",
+    "explanation": "An exclamation ends with an exclamation mark (!)."
+  },
+  {
+    "id": "eng-punc-036",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "Which sentence uses the correct end punctuation for a statement?",
+    "options": [
+      "The cat sat on the mat.",
+      "The cat sat on the mat?",
+      "The cat sat on the mat!",
+      "The cat sat on the mat,"
+    ],
+    "answer": "The cat sat on the mat.",
+    "explanation": "A statement (declarative sentence) ends with a full stop."
+  },
+  {
+    "id": "eng-punc-037",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does the apostrophe replace in 'can't'?",
+    "options": [
+      "the letter 'o' in 'not'",
+      "the letters 'ca'",
+      "the letter 'n'",
+      "the whole word 'can'"
+    ],
+    "answer": "the letter 'o' in 'not'",
+    "explanation": "Can't = can + not. The apostrophe replaces the letter o from not."
+  },
+  {
+    "id": "eng-punc-038",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the full form of 'they\\'re'?",
+    "options": [
+      "they are",
+      "they were",
+      "they will",
+      "they have"
+    ],
+    "answer": "they are",
+    "explanation": "They're = they + are. The apostrophe replaces the a from are."
+  },
+  {
+    "id": "eng-punc-039",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the full form of 'it\\'s'?",
+    "options": [
+      "it has",
+      "its own",
+      "it was",
+      "it is"
+    ],
+    "answer": "it is",
+    "explanation": "It's = it + is. Note: its (without apostrophe) shows possession."
+  },
+  {
+    "id": "eng-punc-040",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the full form of 'I\\'d'?",
+    "options": [
+      "I did",
+      "I do",
+      "I should",
+      "I would"
+    ],
+    "answer": "I would",
+    "explanation": "I'd = I + would. The apostrophe replaces woul."
+  },
+  {
+    "id": "eng-punc-041",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the full form of 'we\\'ve'?",
+    "options": [
+      "we do",
+      "we have",
+      "we were",
+      "we will"
+    ],
+    "answer": "we have",
+    "explanation": "We've = we + have. The apostrophe replaces ha."
+  },
+  {
+    "id": "eng-punc-042",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What does 'won\\'t' mean?",
+    "options": [
+      "did not",
+      "will not",
+      "would not",
+      "do not"
+    ],
+    "answer": "will not",
+    "explanation": "Won't = will + not. It is an irregular contraction."
+  },
+  {
+    "id": "eng-punc-043",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What does 'shan\\'t' mean?",
+    "options": [
+      "do not",
+      "shall not",
+      "should not",
+      "will not"
+    ],
+    "answer": "shall not",
+    "explanation": "Shan't = shall + not. The apostrophe replaces no."
+  },
+  {
+    "id": "eng-punc-044",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the full form of 'they\\'d'?",
+    "options": [
+      "they would",
+      "they did",
+      "they do",
+      "they should"
+    ],
+    "answer": "they would",
+    "explanation": "They'd = they + would."
+  },
+  {
+    "id": "eng-punc-045",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What punctuation mark is used to separate items in a list?",
+    "options": [
+      "semicolon",
+      "comma",
+      "full stop",
+      "colon"
+    ],
+    "answer": "comma",
+    "explanation": "A comma (,) is used to separate items in a list."
+  },
+  {
+    "id": "eng-punc-046",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What punctuation mark is used at the end of a question?",
+    "options": [
+      "exclamation mark",
+      "full stop",
+      "comma",
+      "question mark"
+    ],
+    "answer": "question mark",
+    "explanation": "A question mark (?) goes at the end of every question."
+  },
+  {
+    "id": "eng-punc-047",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What punctuation mark shows strong emotion?",
+    "options": [
+      "question mark",
+      "full stop",
+      "comma",
+      "exclamation mark"
+    ],
+    "answer": "exclamation mark",
+    "explanation": "An exclamation mark (!) shows strong feeling like surprise, excitement, or anger."
+  },
+  {
+    "id": "eng-punc-048",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "What punctuation mark shows that someone is speaking?",
+    "options": [
+      "apostrophes",
+      "speech marks",
+      "commas",
+      "brackets"
+    ],
+    "answer": "speech marks",
+    "explanation": "Speech marks (\" \") are placed around the words that someone says aloud."
+  },
+  {
+    "id": "eng-punc-049",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What punctuation mark is used to show possession?",
+    "options": [
+      "comma",
+      "colon",
+      "hyphen",
+      "apostrophe"
+    ],
+    "answer": "apostrophe",
+    "explanation": "An apostrophe ('s) shows that something belongs to someone: the cat's hat."
+  },
+  {
+    "id": "eng-punc-050",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the punctuation mark '...' called?",
+    "options": [
+      "colon",
+      "semicolon",
+      "hyphen",
+      "ellipsis"
+    ],
+    "answer": "ellipsis",
+    "explanation": "The three dots (...) are called an ellipsis. They show a pause or that something has been left out."
+  },
+  {
+    "id": "eng-punc-051",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is a hyphen used for?",
+    "options": [
+      "showing someone is speaking",
+      "making a list",
+      "joining words together",
+      "ending a sentence"
+    ],
+    "answer": "joining words together",
+    "explanation": "A hyphen (-) joins words together, like well-known or ice-cream."
+  },
+  {
+    "id": "eng-writ-001",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What should come FIRST when planning a story?",
+    "options": [
+      "thinking about the characters and setting",
+      "writing the last sentence",
+      "choosing a title",
+      "writing as fast as possible"
+    ],
+    "answer": "thinking about the characters and setting",
+    "explanation": "Good writers plan first: think about who is in the story and where it takes place."
+  },
+  {
+    "id": "eng-writ-002",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the 'setting' of a story?",
+    "options": [
+      "the place and time where the story happens",
+      "the main character",
+      "the problem in the story",
+      "the ending of the story"
+    ],
+    "answer": "the place and time where the story happens",
+    "explanation": "The setting tells us where and when the story takes place."
+  },
+  {
+    "id": "eng-writ-003",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a 'protagonist'?",
+    "options": [
+      "the main character in a story",
+      "the villain in a story",
+      "the setting of a story",
+      "the ending of a story"
+    ],
+    "answer": "the main character in a story",
+    "explanation": "The protagonist is the main character — the hero of the story."
+  },
+  {
+    "id": "eng-writ-004",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is an 'antagonist'?",
+    "options": [
+      "the character who causes problems for the hero",
+      "the main hero of the story",
+      "the narrator of the story",
+      "the setting of the story"
+    ],
+    "answer": "the character who causes problems for the hero",
+    "explanation": "The antagonist is the villain or the force that creates problems for the hero."
+  },
+  {
+    "id": "eng-writ-006",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the 'resolution' of a story?",
+    "options": [
+      "how the problem in the story is solved",
+      "the exciting middle part",
+      "the very beginning",
+      "the main character's name"
+    ],
+    "answer": "how the problem in the story is solved",
+    "explanation": "The resolution is the ending where the main problem or conflict is sorted out."
+  },
+  {
+    "id": "eng-writ-007",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the 'conflict' in a story?",
+    "options": [
+      "the main problem that the character must face",
+      "the happy ending",
+      "the beginning of the story",
+      "the place where it happens"
+    ],
+    "answer": "the main problem that the character must face",
+    "explanation": "The conflict is the central problem or challenge the character must overcome."
+  },
+  {
+    "id": "eng-writ-009",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What type of writing would you use to share your opinions and try to change someone's mind?",
+    "options": [
+      "persuasive writing",
+      "report writing",
+      "story writing",
+      "diary writing"
+    ],
+    "answer": "persuasive writing",
+    "explanation": "Persuasive writing is used to convince the reader to agree with your point of view."
+  },
+  {
+    "id": "eng-writ-010",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a 'rhetorical question'?",
+    "options": [
+      "a question at the end of a letter",
+      "a question with only one answer",
+      "a question about science",
+      "a question asked for effect not expecting an answer"
+    ],
+    "answer": "a question asked for effect not expecting an answer",
+    "explanation": "A rhetorical question is asked to make a point, not to get an answer."
+  },
+  {
+    "id": "eng-writ-011",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What goes at the TOP RIGHT of a formal letter?",
+    "options": [
+      "a greeting",
+      "your signature",
+      "a heading",
+      "your address and the date"
+    ],
+    "answer": "your address and the date",
+    "explanation": "In a formal letter, your address and the date go in the top right corner."
+  },
+  {
+    "id": "eng-writ-012",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you begin a formal letter to someone whose name you know?",
+    "options": [
+      "Dear [Name],",
+      "To whom it may concern,",
+      "Hello there,",
+      "Hi,"
+    ],
+    "answer": "Dear [Name],",
+    "explanation": "Start a formal letter with Dear followed by the person's name and a comma."
+  },
+  {
+    "id": "eng-writ-013",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "How do you end a formal letter?",
+    "options": [
+      "Bye for now,",
+      "See you later,",
+      "Love from,",
+      "Yours sincerely,"
+    ],
+    "answer": "Yours sincerely,",
+    "explanation": "End a formal letter with Yours sincerely, followed by your signature."
+  },
+  {
+    "id": "eng-writ-014",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What is the main difference between a formal and informal letter?",
+    "options": [
+      "they are exactly the same",
+      "a formal letter is always longer",
+      "an informal letter must have a stamp",
+      "a formal letter is to someone you do not know well; an informal letter is to a friend"
+    ],
+    "answer": "a formal letter is to someone you do not know well; an informal letter is to a friend",
+    "explanation": "Formal letters use polite language for official purposes; informal letters are friendly messages."
+  },
+  {
+    "id": "eng-writ-015",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "What goes at the end of a letter just before your name?",
+    "options": [
+      "another paragraph",
+      "the date",
+      "the address",
+      "your sign-off such as Yours sincerely"
+    ],
+    "answer": "your sign-off such as Yours sincerely",
+    "explanation": "The sign-off (e.g. Yours sincerely or Love from) goes before you write your name."
+  },
+  {
+    "id": "eng-writ-016",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is a key feature of a report?",
+    "options": [
+      "it tells a made-up story",
+      "it is always very short",
+      "it must rhyme",
+      "it contains facts not opinions"
+    ],
+    "answer": "it contains facts not opinions",
+    "explanation": "A report presents true, factual information about a real topic."
+  },
+  {
+    "id": "eng-writ-017",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What do headings and subheadings do in a report?",
+    "options": [
+      "help the reader find information quickly",
+      "make the report look pretty",
+      "replace the need for any writing",
+      "always go at the very end"
+    ],
+    "answer": "help the reader find information quickly",
+    "explanation": "Headings and subheadings organise the report so readers can find information easily."
+  },
+  {
+    "id": "eng-writ-018",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the purpose of a report?",
+    "options": [
+      "to give information about a real topic",
+      "to make the reader feel sad",
+      "to entertain with a story",
+      "to share personal feelings"
+    ],
+    "answer": "to give information about a real topic",
+    "explanation": "Reports are non-fiction texts that inform the reader about a real subject."
+  },
+  {
+    "id": "eng-writ-019",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is the 'rule of three' in persuasive writing?",
+    "options": [
+      "writing exactly three sentences",
+      "having three characters",
+      "starting each paragraph three times",
+      "using three examples or adjectives in a row for effect"
+    ],
+    "answer": "using three examples or adjectives in a row for effect",
+    "explanation": "The rule of three creates a powerful rhythm: e.g. \"It is fast, fun, and fantastic!\""
+  },
+  {
+    "id": "eng-writ-020",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "What is 'emotional language' in persuasive writing?",
+    "options": [
+      "very long words",
+      "words that make the reader feel strong emotions",
+      "words that explain facts and figures",
+      "scientific language"
+    ],
+    "answer": "words that make the reader feel strong emotions",
+    "explanation": "Emotional language stirs feelings in the reader to make them agree with your argument."
+  },
+  {
+    "id": "eng-writ-021",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which is an example of a rhetorical question in persuasive writing?",
+    "options": [
+      "Please sign this petition to help the environment.",
+      "Surely we can all agree that our planet deserves to be saved?",
+      "The Earth is 4.5 billion years old.",
+      "Scientists have found that temperatures are rising."
+    ],
+    "answer": "Surely we can all agree that our planet deserves to be saved?",
+    "explanation": "A rhetorical question engages the reader — here it implies everyone should care about the planet."
+  },
+  {
+    "id": "eng-writ-022",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which connective shows TIME ORDER?",
+    "options": [
+      "furthermore",
+      "although",
+      "finally",
+      "however"
+    ],
+    "answer": "finally",
+    "explanation": "Finally is a time connective — it shows the last thing in a sequence."
+  },
+  {
+    "id": "eng-writ-024",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which connective shows ADDING INFORMATION?",
+    "options": [
+      "finally",
+      "although",
+      "furthermore",
+      "however"
+    ],
+    "answer": "furthermore",
+    "explanation": "Furthermore means in addition — it adds more information."
+  },
+  {
+    "id": "eng-writ-025",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a time connective?",
+    "options": [
+      "however",
+      "therefore",
+      "although",
+      "meanwhile"
+    ],
+    "answer": "meanwhile",
+    "explanation": "Meanwhile is a time connective — it means at the same time."
+  },
+  {
+    "id": "eng-writ-026",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which word is a contrast connective?",
+    "options": [
+      "meanwhile",
+      "furthermore",
+      "additionally",
+      "although"
+    ],
+    "answer": "although",
+    "explanation": "Although introduces a contrasting idea."
+  },
+  {
+    "id": "eng-writ-027",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which connective would you use to add more information to your writing?",
+    "options": [
+      "on the other hand",
+      "first of all",
+      "as a result",
+      "in addition"
+    ],
+    "answer": "in addition",
+    "explanation": "In addition is used to add another point or piece of information."
+  },
+  {
+    "id": "eng-writ-028",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "Which connective would you use to show a result?",
+    "options": [
+      "therefore",
+      "although",
+      "meanwhile",
+      "in addition"
+    ],
+    "answer": "therefore",
+    "explanation": "Therefore shows that something is a result or conclusion."
+  },
+  {
+    "id": "eng-writ-029",
+    "subject": "english",
+    "topic": "writing",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "Which group contains only TIME connectives?",
+    "options": [
+      "furthermore, moreover, in addition, also",
+      "therefore, as a result, consequently, so",
+      "first, then, finally, afterwards",
+      "however, although, but, yet"
+    ],
+    "answer": "first, then, finally, afterwards",
+    "explanation": "First, then, finally, and afterwards all show the order in which things happen."
   }
 ]
