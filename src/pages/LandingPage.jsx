@@ -18,7 +18,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '32px 20px 40px' }}>
+    <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '32px 20px 40px', backgroundColor: '#0d1f0b' }}>
 
       {/* Logo + Title */}
       <div style={{ textAlign: 'center', marginBottom: 8 }}>
