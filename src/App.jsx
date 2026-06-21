@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { supabase } from './services/supabase'
+import { supabase, getProgress, getAchievements } from './services/supabase'
 import useStore from './stores/useStore'
 
 // Pages
@@ -22,16 +22,33 @@ function ProtectedRoute({ children }) {
 }
 
 export default function App() {
-  const setUser    = useStore(s => s.setUser)
-  const setProfile = useStore(s => s.setProfile)
+  const setUser           = useStore(s => s.setUser)
+  const setProfile        = useStore(s => s.setProfile)
+  const setXP             = useStore(s => s.setXP)
+  const addAchievement    = useStore(s => s.addAchievement)
+  const loadMasteryFromDB = useStore(s => s.loadMasteryFromDB)
+
+  async function syncFromDB(userId) {
+    // Fetch profile — DB is source of truth for XP/level/streak
+    const { data: profile } = await supabase.from('profiles').select('*').eq('id', userId).single()
+    if (profile) {
+      setProfile(profile)
+      // Always sync XP from DB (DB is updated at end of every session)
+      const localXP = useStore.getState().xp
+      setXP(Math.max(localXP, profile.xp ?? 0))
+    }
+    // Sync mastery progress
+    getProgress(userId).then(rows => rows?.length && loadMasteryFromDB(rows)).catch(() => {})
+    // Sync achievements
+    getAchievements(userId).then(rows => rows?.forEach(r => addAchievement(r.badge_id))).catch(() => {})
+  }
 
   useEffect(() => {
     // Restore session on mount
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session?.user) {
         setUser(session.user)
-        supabase.from('profiles').select('*').eq('id', session.user.id).single()
-          .then(({ data }) => data && setProfile(data))
+        syncFromDB(session.user.id)
       }
     })
 

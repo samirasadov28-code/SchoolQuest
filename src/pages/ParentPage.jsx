@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
-import { SUBJECTS, DAILY_GOAL_SECONDS, formatTime, INITIAL_MASTERY } from '../services/adaptive'
+import { SUBJECTS, formatTime, INITIAL_MASTERY } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
 import { addPrize, confirmPrize, getPrizes } from '../services/supabase'
 import { QUESTION_BANK } from '../data/questions/index'
@@ -18,7 +18,9 @@ export default function ParentPage() {
   const achievements  = useStore(s => s.achievements)
   const prizes        = useStore(s => s.prizes)
   const setPrizes     = useStore(s => s.setPrizes)
-  const setParentMode = useStore(s => s.setParentMode)
+  const setParentMode         = useStore(s => s.setParentMode)
+  const dailyGoalMinutes      = useStore(s => s.dailyGoalMinutes)
+  const setDailyGoalMinutes   = useStore(s => s.setDailyGoalMinutes)
 
   const [newPrizeTitle,  setNewPrizeTitle]  = useState('')
   const [newPrizeXP,     setNewPrizeXP]     = useState(500)
@@ -110,7 +112,7 @@ export default function ParentPage() {
           { label: 'Total XP', value: xp, icon: '⭐' },
           { label: 'Day Streak', value: `${streak} 🔥`, icon: '📅' },
           { label: 'Today', value: formatTime(todaySeconds), icon: '⏰' },
-          { label: 'Goal', value: todaySeconds >= DAILY_GOAL_SECONDS ? '✅ Met!' : `${Math.round(todaySeconds / DAILY_GOAL_SECONDS * 100)}%`, icon: '🎯' },
+          { label: 'Goal', value: todaySeconds >= dailyGoalMinutes * 60 ? '✅ Met!' : `${Math.round(todaySeconds / (dailyGoalMinutes * 60) * 100)}%`, icon: '🎯' },
           { label: 'Badges', value: achievements.length, icon: '🏅' },
         ].map(stat => (
           <div key={stat.label} style={{ background: 'rgba(255,255,255,0.07)', borderRadius: 'var(--radius-md)', padding: '12px 10px', textAlign: 'center' }}>
@@ -199,6 +201,30 @@ export default function ParentPage() {
             <p style={{ color: 'var(--color-parchment)', fontSize: '0.82rem' }}>{weakest.map(s => s.label).join(', ')}</p>
           </div>
         )}
+      </section>
+
+      {/* Daily goal setting */}
+      <section style={{ marginBottom: 24 }}>
+        <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800, marginBottom: 12 }}>⏰ Daily Study Goal</h2>
+        <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 'var(--radius-md)', padding: '16px 18px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+            <p style={{ color: 'var(--color-parchment)', fontSize: '0.9rem' }}>Minutes per day</p>
+            <span style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '1.1rem' }}>{dailyGoalMinutes} min</span>
+          </div>
+          <input
+            type="range" min={5} max={120} step={5}
+            value={dailyGoalMinutes}
+            onChange={e => setDailyGoalMinutes(Number(e.target.value))}
+            style={{ width: '100%', accentColor: 'var(--color-gold)', marginBottom: 8 }}
+          />
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <span style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem' }}>5 min</span>
+            <span style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem' }}>120 min</span>
+          </div>
+          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.78rem', marginTop: 8 }}>
+            Today: {formatTime(todaySeconds)} studied {todaySeconds >= dailyGoalMinutes * 60 ? '✅' : `(${Math.max(0, dailyGoalMinutes * 60 - todaySeconds)}s left)`}
+          </p>
+        </div>
       </section>
 
       {/* Prize board */}

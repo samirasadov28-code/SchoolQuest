@@ -78,17 +78,22 @@ const useStore = create(
         return 1
       },
 
+      // ── Daily goal (minutes, set by parent) ──────
+      dailyGoalMinutes: 45,
+      setDailyGoalMinutes: (m) => set({ dailyGoalMinutes: Math.max(5, Math.min(120, m)) }),
+
       // ── Daily timer ───────────────────────────────
       todaySeconds:    0,
       dailyGoalMet:    false,
       sessionSeconds:  0,
 
       addSessionSeconds: (s) => {
+        const goal  = get().dailyGoalMinutes * 60
         const today = get().todaySeconds + s
         set({
           todaySeconds:   today,
           sessionSeconds: get().sessionSeconds + s,
-          dailyGoalMet:   today >= DAILY_GOAL_SECONDS,
+          dailyGoalMet:   today >= goal,
         })
       },
 
@@ -216,6 +221,7 @@ const useStore = create(
         level:             state.level,
         streak:            state.streak,
         lastSessionDate:   state.lastSessionDate,
+        dailyGoalMinutes:  state.dailyGoalMinutes,
         todaySeconds:      state.todaySeconds,
         dailyGoalMet:      state.dailyGoalMet,
         achievements:      state.achievements,

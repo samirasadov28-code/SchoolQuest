@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore, { xpForLevel, xpForNextLevel } from '../stores/useStore'
-import { getProgress, getAchievements, getPrizes, signOut } from '../services/supabase'
-import { SUBJECTS } from '../services/adaptive'
+import { getPrizes, signOut } from '../services/supabase'
+import { SUBJECTS, formatTime } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
 import { getUnlockedPrizes, getNextPrize } from '../data/prizes'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import PetCompanion from '../components/shared/PetCompanion'
 import { getPetStage, getPetMoodFromState } from '../data/pets'
-import { DAILY_GOAL_SECONDS, formatTime } from '../services/adaptive'
 
 export default function DashboardPage() {
   const navigate   = useNavigate()
@@ -18,16 +17,15 @@ export default function DashboardPage() {
   const level      = useStore(s => s.level)
   const streak     = useStore(s => s.streak)
   const masteryMap = useStore(s => s.masteryMap)
-  const todaySeconds = useStore(s => s.todaySeconds)
-  const dailyGoalMet = useStore(s => s.dailyGoalMet)
-  const loadMastery  = useStore(s => s.loadMasteryFromDB)
-  const setPrizes    = useStore(s => s.setPrizes)
-  const setXP        = useStore(s => s.setXP)
-  const achievements = useStore(s => s.achievements)
-  const setParentMode = useStore(s => s.setParentMode)
-  const pets          = useStore(s => s.pets)
-  const activePetId   = useStore(s => s.activePetId)
-  const activePet     = pets.find(p => p.id === activePetId)
+  const todaySeconds      = useStore(s => s.todaySeconds)
+  const dailyGoalMet      = useStore(s => s.dailyGoalMet)
+  const dailyGoalMinutes  = useStore(s => s.dailyGoalMinutes)
+  const setPrizes         = useStore(s => s.setPrizes)
+  const achievements      = useStore(s => s.achievements)
+  const setParentMode     = useStore(s => s.setParentMode)
+  const pets              = useStore(s => s.pets)
+  const activePetId       = useStore(s => s.activePetId)
+  const activePet         = pets.find(p => p.id === activePetId)
 
   const [showParentPIN, setShowParentPIN] = useState(false)
   const [pinInput,      setPinInput]      = useState('')
@@ -35,15 +33,13 @@ export default function DashboardPage() {
 
   useEffect(() => {
     if (!user) return
-    // Sync DB state
-    getProgress(user.id).then(rows => rows && loadMastery(rows))
+    // Prizes still fetched here (they change frequently)
     getPrizes(user.id).then(prizes => prizes && setPrizes(prizes))
-    // Sync XP from profile if higher (DB is source of truth)
-    if (profile?.xp > xp) setXP(profile.xp)
   }, [user])
 
+  const dailyGoalSeconds = dailyGoalMinutes * 60
   const subjectAvgs = getSubjectAverages(masteryMap)
-  const todayPct    = Math.min(1, todaySeconds / DAILY_GOAL_SECONDS)
+  const todayPct    = Math.min(1, todaySeconds / dailyGoalSeconds)
   const xpStart     = xpForLevel(level)
   const xpEnd       = xpForNextLevel(level)
   const xpPct       = Math.min(1, (xp - xpStart) / (xpEnd - xpStart))
@@ -111,7 +107,7 @@ export default function DashboardPage() {
             {dailyGoalMet ? '✅ Daily quest complete!' : '⏰ Today\'s quest'}
           </p>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem' }}>
-            {formatTime(todaySeconds)} / 45:00 studied
+            {formatTime(todaySeconds)} / {formatTime(dailyGoalSeconds)} studied
           </p>
         </div>
         <svg width="48" height="48" viewBox="0 0 36 36">

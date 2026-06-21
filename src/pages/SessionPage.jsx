@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
 import { QUESTION_BANK } from '../data/questions/index'
 import { pickNextQuestion, updateMastery, shouldTriggerLearnMode, formatTime, XP_PER_CORRECT, SUBJECTS, DRILL_QUESTIONS_PER_TOPIC, TOPICS_BEFORE_REVIEW, REVIEW_QUESTIONS } from '../services/adaptive'
-import { upsertProgress, logSession, grantAchievement } from '../services/supabase'
+import { upsertProgress, logSession, grantAchievement, updateProfile } from '../services/supabase'
 import { getExplanation as generateExplanation } from '../services/groq'
 import { checkBadges, getSubjectAverages, countMasteredSubjects } from '../services/gamification'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
@@ -306,7 +306,10 @@ export default function SessionPage() {
     const elapsed = Math.floor((Date.now() - sessionStartRef.current) / 1000)
     addSessionSeconds(elapsed)
     if (user) {
+      const s = useStore.getState()
       logSession(user.id, elapsed, sessionXP, [...new Set(sessionSubjects)]).catch(() => {})
+      // Persist XP/level/streak so other devices stay in sync
+      updateProfile(user.id, { xp: s.xp, level: s.level, streak: s.streak }).catch(() => {})
     }
     const currentXP = useStore.getState().xp
     const unlocked = prizes.filter(p =>
