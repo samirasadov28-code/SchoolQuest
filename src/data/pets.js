@@ -61,6 +61,10 @@ export const PET_SPECIES = [
     description: 'A magical friend who loves maths and sparkles!',
     unlockCondition: { type: 'level', value: 30 },
     defaultName: 'Sparkle',
+    favoriteSubjects: [
+      { subject: 'maths', topics: ['fractions', 'mental-maths', 'shapes'], reason: 'Loves magical number patterns!' },
+      { subject: 'irish', topics: ['animals', 'weather', 'seasons'], reason: 'Speaks the ancient tongue of Ireland!' },
+    ],
     stageNames: ['Foal', 'Young Unicorn', 'Winged Unicorn'],
     stageThresholds: [0, 200, 800],
     speechLines: {
@@ -80,6 +84,10 @@ export const PET_SPECIES = [
     description: 'A brave fire-breather who loves science and history!',
     unlockCondition: { type: 'level', value: 20 },
     defaultName: 'Ember',
+    favoriteSubjects: [
+      { subject: 'science', topics: ['forces', 'electricity', 'light-sound'], reason: 'Fire & science go hand in hand!' },
+      { subject: 'history', topics: ['celts', 'vikings', 'irish-myths'], reason: 'Ancient dragons remember everything!' },
+    ],
     stageNames: ['Hatchling', 'Wyrmling', 'Great Dragon'],
     stageThresholds: [0, 200, 800],
     speechLines: {
@@ -99,6 +107,10 @@ export const PET_SPECIES = [
     description: 'Your loyal buddy who cheers you on for every answer!',
     unlockCondition: { type: 'level', value: 10 },
     defaultName: 'Biscuit',
+    favoriteSubjects: [
+      { subject: 'english', topics: ['spelling', 'reading', 'vocabulary'], reason: 'Dogs love stories and words!' },
+      { subject: 'sphe', topics: ['friendship', 'feelings', 'healthy-living'], reason: 'Always by your side — just like a best friend!' },
+    ],
     stageNames: ['Puppy', 'Dog', 'Hero Hound'],
     stageThresholds: [0, 200, 800],
     speechLines: {
@@ -118,6 +130,10 @@ export const PET_SPECIES = [
     description: 'A mysterious feline with ancient Irish wisdom!',
     unlockCondition: { type: 'starter' },
     defaultName: 'Fionn',
+    favoriteSubjects: [
+      { subject: 'geography', topics: ['ireland-physical', 'ireland-counties', 'mapping'], reason: 'Cats roam every corner of ancient Ireland!' },
+      { subject: 'ethics', topics: ['right-wrong', 'fairness', 'respect'], reason: 'Cats have their own mysterious code of honour!' },
+    ],
     stageNames: ['Kitten', 'Cat', 'Mystic Feline'],
     stageThresholds: [0, 200, 800],
     speechLines: {

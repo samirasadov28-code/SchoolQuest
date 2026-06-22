@@ -134,7 +134,7 @@ export default function MapPage() {
 }
 
 function ProvinceCard({ province, score, selected, onSelect, wide }) {
-  const unlocked = score >= 40
+  const unlocked = score >= 50
   return (
     <div onClick={() => onSelect(selected ? null : province.id)}
       style={{

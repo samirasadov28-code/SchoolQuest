@@ -61,6 +61,7 @@ export default function LoginPage() {
               value={email}
               onChange={e => setEmail(e.target.value)}
               required
+              autoComplete="email"
               style={inputStyle}
             />
             <input
@@ -69,6 +70,7 @@ export default function LoginPage() {
               value={password}
               onChange={e => setPassword(e.target.value)}
               required
+              autoComplete="current-password"
               style={inputStyle}
             />
             <button type="submit" className="btn-primary" disabled={loading} style={{ marginTop: 8 }}>

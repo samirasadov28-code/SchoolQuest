@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
-import { PET_SPECIES, getArt, getPetMoodFromState, filterPetName, getPetStage } from '../data/pets'
+import { PET_SPECIES, getArt, getPetMoodFromState, filterPetName, getPetStage, getSpecies } from '../data/pets'
 import PetCompanion from '../components/shared/PetCompanion'
 import NavBar from '../components/shared/NavBar'
 
@@ -25,6 +25,7 @@ export default function PetHubPage() {
   const [renaming,    setRenaming]    = useState(null)
   const [renameInput, setRenameInput] = useState('')
   const [playMsg,     setPlayMsg]     = useState('')
+  const [showTopics,  setShowTopics]  = useState(false)
 
   const activePet = pets.find(p => p.id === activePetId)
 
@@ -98,7 +99,7 @@ export default function PetHubPage() {
               )
               return (
                 <button key={sp.id} onClick={() => { setChoosing(true); setChosenId(sp.id); setNameInput(sp.defaultName) }}
-                  style={{ background: 'rgba(255,255,255,0.07)', border: '2px solid var(--color-gold)', borderRadius: 16, padding: '16px 10px', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
+                  style={{ background: 'rgba(201,162,39,0.12)', border: '2px solid var(--color-gold)', borderRadius: 16, padding: '16px 10px', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
                   <img src={getArt(sp.id, 1, 'portrait')} alt={sp.name} style={{ width: 80, height: 80, objectFit: 'contain' }} />
                   <span style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.9rem' }}>{sp.emoji} {sp.name}</span>
                   <span style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem' }}>{sp.description}</span>
@@ -193,6 +194,10 @@ export default function PetHubPage() {
               onClick={() => { setRenaming(activePet.id); setRenameInput(activePet.name); setNameError('') }}>
               ✏️ Rename
             </button>
+            <button className="btn-secondary" style={{ fontSize: '0.85rem', padding: '9px 18px' }}
+              onClick={() => setShowTopics(true)}>
+              📚 Fave Topics
+            </button>
           </div>
         </div>
       )}
@@ -233,6 +238,34 @@ export default function PetHubPage() {
           ))}
         </>
       )}
+
+      {/* Favourite topics modal */}
+      {showTopics && activePet && (() => {
+        const sp = getSpecies(activePet.id)
+        return (
+          <div style={{ background: 'rgba(0,0,0,0.7)', position: 'fixed', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
+            <div style={{ background: 'var(--color-forest-dark)', border: '2px solid var(--color-gold)', borderRadius: 20, padding: 28, maxWidth: 340, width: '100%' }}>
+              <div style={{ textAlign: 'center', marginBottom: 16 }}>
+                <img src={getArt(activePet.id, 1, 'happy')} alt={activePet.name} style={{ width: 80, height: 80, objectFit: 'contain' }} />
+                <h3 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginTop: 8 }}>{activePet.name}'s Favourite Topics</h3>
+                <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginTop: 4 }}>Study these to make {activePet.name} extra happy! 🌟</p>
+              </div>
+              {sp.favoriteSubjects?.map((fav, i) => (
+                <div key={i} style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 12, padding: '12px 14px', marginBottom: 10 }}>
+                  <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.88rem', marginBottom: 4, textTransform: 'capitalize' }}>📖 {fav.subject}</p>
+                  <p style={{ color: 'var(--color-stone-light)', fontSize: '0.75rem', marginBottom: 6, fontStyle: 'italic' }}>{fav.reason}</p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                    {fav.topics.map(t => (
+                      <span key={t} style={{ background: 'rgba(201,162,39,0.18)', border: '1px solid rgba(201,162,39,0.4)', borderRadius: 20, padding: '3px 10px', color: 'var(--color-parchment)', fontSize: '0.72rem' }}>{t}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              <button className="btn-primary" style={{ width: '100%', marginTop: 8 }} onClick={() => setShowTopics(false)}>Got it! 🐾</button>
+            </div>
+          </div>
+        )
+      })()}
 
       <NavBar />
     </div>

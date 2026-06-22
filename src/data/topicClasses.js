@@ -36,7 +36,7 @@ export const TOPIC_CLASS = {
     environment: 3, justice: 3, 'global-citizenship': 3, religion: 3,
   },
   coding: {
-    sequences: 2, algorithms: 2, debugging: 2, patterns: 2,
+    sequences: 3, algorithms: 3, debugging: 3, patterns: 3,
     loops: 3, conditionals: 3, 'input-output': 3, data: 3,
   },
 }

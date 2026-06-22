@@ -153,13 +153,13 @@ export function countMasteredSubjects(masteryMap, threshold = 85) {
  * Irish mythology region unlocked per subject mastery level
  */
 export const MYTHOLOGY_REGIONS = [
-  { id: 'hill-of-tara',   subject: 'english',   name: 'Hill of Tara',    unlockAt: 40, emoji: '🏔️' },
-  { id: 'river-boyne',    subject: 'history',   name: 'River Boyne',     unlockAt: 40, emoji: '🌊' },
-  { id: 'burren',         subject: 'science',   name: 'The Burren',      unlockAt: 40, emoji: '🪨' },
-  { id: 'wicklow-mtns',   subject: 'geography', name: 'Wicklow Mountains',unlockAt: 40, emoji: '⛰️' },
-  { id: 'cliffs-moher',   subject: 'maths',     name: 'Cliffs of Moher', unlockAt: 40, emoji: '🌅' },
-  { id: 'connemara',      subject: 'irish',     name: 'Connemara',       unlockAt: 40, emoji: '🌿' },
-  { id: 'newgrange',      subject: 'genknow',   name: 'Newgrange',       unlockAt: 40, emoji: '🌀' },
-  { id: 'ring-of-kerry',  subject: 'sphe',      name: 'Ring of Kerry',   unlockAt: 40, emoji: '💚' },
-  { id: 'skellig-michael',subject: 'ethics',    name: 'Skellig Michael', unlockAt: 40, emoji: '🦅' },
+  { id: 'hill-of-tara',   subject: 'english',   name: 'Hill of Tara',    unlockAt: 50, emoji: '🏔️' },
+  { id: 'river-boyne',    subject: 'history',   name: 'River Boyne',     unlockAt: 50, emoji: '🌊' },
+  { id: 'burren',         subject: 'science',   name: 'The Burren',      unlockAt: 50, emoji: '🪨' },
+  { id: 'wicklow-mtns',   subject: 'geography', name: 'Wicklow Mountains',unlockAt: 50, emoji: '⛰️' },
+  { id: 'cliffs-moher',   subject: 'maths',     name: 'Cliffs of Moher', unlockAt: 50, emoji: '🌅' },
+  { id: 'connemara',      subject: 'irish',     name: 'Connemara',       unlockAt: 50, emoji: '🌿' },
+  { id: 'newgrange',      subject: 'genknow',   name: 'Newgrange',       unlockAt: 50, emoji: '🌀' },
+  { id: 'ring-of-kerry',  subject: 'sphe',      name: 'Ring of Kerry',   unlockAt: 50, emoji: '💚' },
+  { id: 'skellig-michael',subject: 'ethics',    name: 'Skellig Michael', unlockAt: 50, emoji: '🦅' },
 ]
