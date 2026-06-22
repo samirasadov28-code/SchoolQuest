@@ -1,30 +1,32 @@
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const items = [
-  { path: '/home', label: 'Home', icon: '🏠' },
-  { path: '/session', label: 'Learn', icon: '⚔️' },
-  { path: '/map', label: 'Map', icon: '🗺️' },
+  { path: '/home',    label: 'Home',    icon: '🏠' },
+  { path: '/session', label: 'Learn',   icon: '⚔️' },
+  { path: '/map',     label: 'Map',     icon: '🗺️' },
   { path: '/rewards', label: 'Rewards', icon: '🏆' },
-  { path: '/pets', label: 'Pets', icon: '🐾' },
-  { path: '/parent', label: 'Parent', icon: '👨‍👩‍👧' },
+  { path: '/pets',    label: 'Pets',    icon: '🐾' },
 ]
 
 export default function NavBar() {
-  const navigate = useNavigate()
-  const location = useLocation()
+  const navigate  = useNavigate()
+  const location  = useLocation()
 
   return (
     <nav className="nav-bar">
-      {items.map(item => (
-        <button
-          key={item.path}
-          className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
-          onClick={() => navigate(item.path)}
-        >
-          <span style={{ fontSize: '1.2rem' }}>{item.icon}</span>
-          <span>{item.label}</span>
-        </button>
-      ))}
+      {items.map(item => {
+        const active = location.pathname === item.path
+        return (
+          <button
+            key={item.path}
+            className={`nav-item ${active ? 'active' : ''}`}
+            onClick={() => navigate(item.path)}
+          >
+            <span className="nav-icon">{item.icon}</span>
+            <span className="nav-label">{item.label}</span>
+          </button>
+        )
+      })}
     </nav>
   )
 }

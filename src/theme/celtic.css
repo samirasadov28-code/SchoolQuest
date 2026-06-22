@@ -285,6 +285,84 @@ body {
   animation: breathe 4s ease-in-out infinite;
 }
 
+/* ── Bottom Navigation Bar ───────────────────────────────────── */
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(180deg, rgba(10,24,10,0.97) 0%, rgba(5,15,5,1) 100%);
+  border-top: 1px solid rgba(201,162,39,0.3);
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.6);
+  padding: 0;
+  z-index: 200;
+  height: 64px;
+}
+
+.nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 4px 10px;
+  transition: all 0.18s ease;
+  position: relative;
+  color: rgba(255,255,255,0.45);
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background: var(--color-gold);
+  border-radius: 0 0 4px 4px;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all 0.2s ease;
+}
+
+.nav-item.active {
+  color: var(--color-gold);
+}
+
+.nav-item.active::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.nav-item:active {
+  transform: scale(0.9);
+}
+
+.nav-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  transition: transform 0.18s ease;
+}
+
+.nav-item.active .nav-icon {
+  transform: scale(1.15) translateY(-1px);
+  filter: drop-shadow(0 0 6px rgba(201,162,39,0.7));
+}
+
+.nav-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pet-idle, .pet-eating, .pet-celebrating,
   .pet-float, .avatar-breathe,
