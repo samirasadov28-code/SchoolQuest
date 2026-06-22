@@ -150,6 +150,10 @@ const useStore = create(
       addGeneratedQuestions: (qs) =>
         set(state => ({ generatedQuestions: [...state.generatedQuestions, ...qs] })),
 
+      // ── Avatar ───────────────────────────────────────────────────
+      selectedAvatar: 'swimmer',
+      setSelectedAvatar: (id) => set({ selectedAvatar: id }),
+
       // ── Pets ─────────────────────────────────────────────────────
       activePetId: null,
       pets: [], // [{ id, name, stage, petXp, happiness, hunger, lastFed, acquiredAt }]
@@ -239,6 +243,7 @@ const useStore = create(
         generatedQuestions:state.generatedQuestions,
         activePetId:       state.activePetId,
         pets:              state.pets,
+        selectedAvatar:    state.selectedAvatar,
       }),
     }
   )

@@ -1,44 +1,6 @@
 import { useState, useEffect } from 'react'
-
-// Take 1 (primary — portrait style)
-import idle      from '../../assets/emilia/idle.png'
-import happy     from '../../assets/emilia/happy.png'
-import thinking  from '../../assets/emilia/thinking.png'
-import wrong     from '../../assets/emilia/wrong.png'
-
-// Take 2 (secondary — action style, for big moments)
-import celebrate   from '../../assets/emilia/celebrate.png'
-import sad         from '../../assets/emilia/sad.png'
-import nervous     from '../../assets/emilia/nervous.png'
-import frustrated  from '../../assets/emilia/frustrated.png'
-
-// Skate style — roller-skate Emilia moods
-import skatePortrait   from '../../assets/emilia/skate/portrait.jpg'
-import pureJoy         from '../../assets/emilia/skate/pure-joy.jpg'
-import pensive         from '../../assets/emilia/skate/pensive.jpg'
-import focused         from '../../assets/emilia/skate/focused.jpg'
-import mischievous     from '../../assets/emilia/skate/mischievous.jpg'
-import dynamicSkate    from '../../assets/emilia/skate/dynamic-skate.jpg'
-import triumphant      from '../../assets/emilia/skate/triumphant.jpg'
-import curbsideAdjust  from '../../assets/emilia/skate/curbside-adjust.jpg'
-import playfulWobble   from '../../assets/emilia/skate/playful-wobble.jpg'
-
-const TAKE1 = { idle, happy, thinking, wrong }
-const TAKE2 = { celebrate, sad, nervous, frustrated }
-const SKATE = {
-  idle:        skatePortrait,
-  happy:       pureJoy,
-  thinking:    pensive,
-  wrong:       curbsideAdjust,
-  celebrate:   triumphant,
-  sad:         curbsideAdjust,
-  nervous:     pensive,
-  frustrated:  dynamicSkate,
-  focused:     focused,
-  mischievous: mischievous,
-  skating:     dynamicSkate,
-  wobble:      playfulWobble,
-}
+import useStore from '../../stores/useStore'
+import { ART } from '../../data/avatars'
 
 const SPEECH_BUBBLES = {
   idle:        ["Ready for your quest, brave explorer! 🗺️", "Let's learn something amazing today! ⭐", "Ancient Ireland is waiting for you! ☘️"],
@@ -57,19 +19,22 @@ const SPEECH_BUBBLES = {
 
 /**
  * mood: 'idle'|'happy'|'thinking'|'wrong'|'celebrate'|'sad'|'nervous'|'frustrated'
- *       + skate extras: 'focused'|'mischievous'|'skating'|'wobble'
+ *       + extras: 'focused'|'mischievous'|'skating'|'wobble'
  * size: 'sm' | 'md' | 'lg'
  * showBubble: boolean
  * animate: boolean
- * skateMode: boolean — use roller-skate Emilia instead of fantasy Emilia
+ * skateMode: boolean — legacy prop, kept for API compatibility
+ * customMessage: string
  */
 export default function EmiliaCharacter({ mood = 'idle', size = 'md', showBubble = true, animate = true, skateMode = false, customMessage }) {
   const [bubble, setBubble] = useState('')
   const [bouncing, setBouncing] = useState(false)
+  const selectedAvatar = useStore(s => s.selectedAvatar)
 
-  const src = skateMode
-    ? (SKATE[mood] ?? SKATE.idle)
-    : (TAKE2[mood] ?? TAKE1[mood] ?? idle)
+  // Resolve image: use selected avatar art, fallback to swimmer
+  const avatarArt = ART[selectedAvatar] ?? ART.swimmer
+  const src = avatarArt[mood] ?? avatarArt.idle ?? ART.swimmer.idle
+
   const sizes = { sm: 90, md: 155, lg: 215 }
   const px    = sizes[size]
 

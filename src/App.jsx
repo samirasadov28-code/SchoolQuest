@@ -14,6 +14,7 @@ import ParentPage     from './pages/ParentPage'
 import MapPage        from './pages/MapPage'
 import PetHubPage     from './pages/PetHubPage'
 import TopicsPage     from './pages/TopicsPage'
+import AvatarPage     from './pages/AvatarPage'
 
 function ProtectedRoute({ children }) {
   const user = useStore(s => s.user)
@@ -74,6 +75,7 @@ export default function App() {
         <Route path="/pets"     element={<ProtectedRoute><PetHubPage /></ProtectedRoute>} />
         <Route path="/parent"   element={<ProtectedRoute><ParentPage /></ProtectedRoute>} />
         <Route path="/topics"   element={<ProtectedRoute><TopicsPage /></ProtectedRoute>} />
+        <Route path="/avatar"   element={<ProtectedRoute><AvatarPage /></ProtectedRoute>} />
         <Route path="*"         element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
