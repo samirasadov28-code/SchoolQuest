@@ -134,7 +134,9 @@ export function checkBadges(state, alreadyEarned) {
 export function getSubjectAverages(masteryMap) {
   const avgs = {}
   for (const [subject, topics] of Object.entries(masteryMap)) {
-    const scores = Object.values(topics).filter(v => typeof v === 'number')
+    const scores = Object.entries(topics)
+      .filter(([k, v]) => !k.startsWith('_') && typeof v === 'number')
+      .map(([, v]) => v)
     avgs[subject] = scores.length ? Math.round(scores.reduce((a,b)=>a+b,0) / scores.length) : 0
   }
   return avgs

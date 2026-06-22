@@ -157,23 +157,27 @@ export default function RewardsPage() {
 
 function PrizeGrid({ prizes, xp, onExpand }) {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
       {prizes.map(prize => {
         const unlocked = xp >= prize.xpRequired
         return (
           <div key={prize.id}
             onClick={() => unlocked && onExpand && onExpand(prize)}
-            style={{ borderRadius: 'var(--radius-md)', overflow: 'hidden', border: unlocked ? '2px solid var(--color-gold)' : '2px solid rgba(255,255,255,0.1)', boxShadow: unlocked ? RARITY_GLOW[prize.rarity] : 'none', position: 'relative', cursor: unlocked ? 'pointer' : 'default' }}>
-            <img
-              src={prize.image}
-              alt={prize.name}
-              style={{ width: '100%', aspectRatio: '1', objectFit: 'cover', filter: unlocked ? 'none' : 'brightness(0.2) blur(4px)' }}
-            />
-            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'linear-gradient(transparent, rgba(0,0,0,0.88))', padding: '12px 8px 8px' }}>
-              <p style={{ color: unlocked ? 'var(--color-gold)' : 'var(--color-stone-light)', fontWeight: 800, fontSize: '0.68rem' }}>
-                {unlocked ? prize.name : `🔒 ${prize.xpRequired} XP`}
+            style={{ borderRadius: 12, overflow: 'hidden', border: `2px solid ${unlocked ? 'var(--color-gold)' : 'rgba(255,255,255,0.1)'}`, boxShadow: unlocked ? RARITY_GLOW[prize.rarity] : 'none', cursor: unlocked ? 'pointer' : 'default', background: 'rgba(0,0,0,0.3)' }}>
+            <div style={{ position: 'relative', height: 90 }}>
+              <img
+                src={prize.image}
+                alt={prize.name}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', filter: unlocked ? 'none' : 'brightness(0.15) blur(3px)' }}
+              />
+              {!unlocked && (
+                <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>🔒</div>
+              )}
+            </div>
+            <div style={{ padding: '6px 8px' }}>
+              <p style={{ color: unlocked ? 'var(--color-gold)' : 'var(--color-stone-light)', fontWeight: 800, fontSize: '0.65rem', lineHeight: 1.3 }}>
+                {unlocked ? prize.name : `${prize.xpRequired} XP`}
               </p>
-              {unlocked && <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.6rem' }}>{RARITY_LABEL[prize.rarity]}</p>}
             </div>
           </div>
         )

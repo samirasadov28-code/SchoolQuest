@@ -35,15 +35,17 @@ export default function PetCompanion({ speciesId, stage = 1, mood = 'idle', name
           <div style={{ position: 'absolute', bottom: -7, left: '50%', transform: 'translateX(-50%)', width: 0, height: 0, borderLeft: '7px solid transparent', borderRight: '7px solid transparent', borderTop: '7px solid rgba(255,255,255,0.95)' }} />
         </div>
       )}
-      <img
-        src={src}
-        alt={`${name ?? speciesId} ${mood}`}
-        width={px}
-        height={px}
-        className={`pet-idle pet-float ${animClass}`}
-        style={{ objectFit: 'contain', cursor: onTap ? 'pointer' : 'default' }}
-        onClick={onTap}
-      />
+      <div style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 70%)', borderRadius: '50%', padding: 6, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img
+          src={src}
+          alt={`${name ?? speciesId} ${mood}`}
+          width={px}
+          height={px}
+          className={`pet-idle pet-float ${animClass}`}
+          style={{ objectFit: 'contain', cursor: onTap ? 'pointer' : 'default' }}
+          onClick={onTap}
+        />
+      </div>
       {name && <span style={{ fontSize: '0.7rem', color: 'var(--color-gold)', fontWeight: 800 }}>{name}</span>}
     </div>
   )

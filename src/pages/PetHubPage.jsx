@@ -123,8 +123,8 @@ export default function PetHubPage() {
             />
             {nameError && <p style={{ color: 'var(--color-crimson)', fontSize: '0.8rem', marginBottom: 8 }}>{nameError}</p>}
             <div style={{ display: 'flex', gap: 10 }}>
-              <button onClick={() => { setChoosing(false); setNameError('') }} style={{ flex: 1, padding: '10px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'rgba(255,255,255,0.07)', color: 'var(--color-stone-light)', cursor: 'pointer' }}>Cancel</button>
-              <button onClick={handleAdopt} style={{ flex: 2, padding: '10px', borderRadius: 10, border: 'none', background: 'var(--color-gold)', color: '#1a1a00', fontWeight: 800, cursor: 'pointer', fontSize: '0.95rem' }}>
+              <button className="btn-secondary" style={{ flex: 1 }} onClick={() => { setChoosing(false); setNameError('') }}>Cancel</button>
+              <button className="btn-primary" style={{ flex: 2, fontSize: '0.95rem' }} onClick={handleAdopt}>
                 Adopt {nameInput || '...'}! 🐾
               </button>
             </div>
@@ -141,8 +141,8 @@ export default function PetHubPage() {
               style={{ width: '100%', padding: '10px 14px', borderRadius: 10, border: '2px solid var(--color-gold)', background: 'rgba(255,255,255,0.08)', color: 'var(--color-parchment)', fontSize: '1rem', textAlign: 'center', marginBottom: 8 }} />
             {nameError && <p style={{ color: 'var(--color-crimson)', fontSize: '0.8rem', marginBottom: 8 }}>{nameError}</p>}
             <div style={{ display: 'flex', gap: 10 }}>
-              <button onClick={() => { setRenaming(null); setNameError('') }} style={{ flex: 1, padding: '10px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'rgba(255,255,255,0.07)', color: 'var(--color-stone-light)', cursor: 'pointer' }}>Cancel</button>
-              <button onClick={handleRename} style={{ flex: 2, padding: '10px', borderRadius: 10, border: 'none', background: 'var(--color-gold)', color: '#1a1a00', fontWeight: 800, cursor: 'pointer' }}>Save 💛</button>
+              <button className="btn-secondary" style={{ flex: 1 }} onClick={() => { setRenaming(null); setNameError('') }}>Cancel</button>
+              <button className="btn-primary" style={{ flex: 2 }} onClick={handleRename}>Save 💛</button>
             </div>
           </div>
         </div>
@@ -189,8 +189,8 @@ export default function PetHubPage() {
           </div>
 
           <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginTop: 14 }}>
-            <button onClick={() => { setRenaming(activePet.id); setRenameInput(activePet.name); setNameError('') }}
-              style={{ padding: '8px 16px', borderRadius: 10, border: '1px solid var(--color-stone)', background: 'rgba(255,255,255,0.07)', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '0.8rem' }}>
+            <button className="btn-secondary" style={{ fontSize: '0.85rem', padding: '9px 18px' }}
+              onClick={() => { setRenaming(activePet.id); setRenameInput(activePet.name); setNameError('') }}>
               ✏️ Rename
             </button>
           </div>

@@ -86,16 +86,25 @@ const useStore = create(
       todaySeconds:    0,
       dailyGoalMet:    false,
       sessionSeconds:  0,
+      studyHistory:    {}, // { 'YYYY-MM-DD': seconds }
 
       addSessionSeconds: (s) => {
-        const goal  = get().dailyGoalMinutes * 60
-        const today = get().todaySeconds + s
+        const dateKey = new Date().toISOString().split('T')[0]
+        const goal    = get().dailyGoalMinutes * 60
+        const today   = get().todaySeconds + s
+        const history = { ...get().studyHistory, [dateKey]: (get().studyHistory[dateKey] ?? 0) + s }
         set({
           todaySeconds:   today,
           sessionSeconds: get().sessionSeconds + s,
           dailyGoalMet:   today >= goal,
+          studyHistory:   history,
         })
       },
+
+      // ── Last session summary (for dashboard banner) ──
+      lastSessionSummary: null,
+      setLastSessionSummary: (summary) => set({ lastSessionSummary: summary }),
+      clearLastSessionSummary: () => set({ lastSessionSummary: null }),
 
       resetSession: () => set({ sessionSeconds: 0 }),
 
@@ -224,6 +233,7 @@ const useStore = create(
         dailyGoalMinutes:  state.dailyGoalMinutes,
         todaySeconds:      state.todaySeconds,
         dailyGoalMet:      state.dailyGoalMet,
+        studyHistory:      state.studyHistory,
         achievements:      state.achievements,
         prizes:            state.prizes,
         generatedQuestions:state.generatedQuestions,

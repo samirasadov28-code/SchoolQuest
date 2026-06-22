@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore, { xpForLevel, xpForNextLevel } from '../stores/useStore'
-import { getPrizes, signOut } from '../services/supabase'
+import { getPrizes, getProgress, signOut } from '../services/supabase'
 import { SUBJECTS, formatTime } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
-import { getUnlockedPrizes, getNextPrize } from '../data/prizes'
+import { getNextPrize } from '../data/prizes'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import PetCompanion from '../components/shared/PetCompanion'
 import { getPetStage, getPetMoodFromState } from '../data/pets'
@@ -20,12 +20,16 @@ export default function DashboardPage() {
   const todaySeconds      = useStore(s => s.todaySeconds)
   const dailyGoalMet      = useStore(s => s.dailyGoalMet)
   const dailyGoalMinutes  = useStore(s => s.dailyGoalMinutes)
+  const studyHistory      = useStore(s => s.studyHistory)
   const setPrizes         = useStore(s => s.setPrizes)
   const achievements      = useStore(s => s.achievements)
   const setParentMode     = useStore(s => s.setParentMode)
   const pets              = useStore(s => s.pets)
   const activePetId       = useStore(s => s.activePetId)
   const activePet         = pets.find(p => p.id === activePetId)
+  const lastSessionSummary      = useStore(s => s.lastSessionSummary)
+  const clearLastSessionSummary = useStore(s => s.clearLastSessionSummary)
+  const loadMasteryFromDB       = useStore(s => s.loadMasteryFromDB)
 
   const [showParentPIN, setShowParentPIN] = useState(false)
   const [pinInput,      setPinInput]      = useState('')
@@ -33,8 +37,8 @@ export default function DashboardPage() {
 
   useEffect(() => {
     if (!user) return
-    // Prizes still fetched here (they change frequently)
     getPrizes(user.id).then(prizes => prizes && setPrizes(prizes))
+    getProgress(user.id).then(rows => rows?.length && loadMasteryFromDB(rows))
   }, [user])
 
   const dailyGoalSeconds = dailyGoalMinutes * 60
@@ -44,7 +48,15 @@ export default function DashboardPage() {
   const xpEnd       = xpForNextLevel(level)
   const xpPct       = Math.min(1, (xp - xpStart) / (xpEnd - xpStart))
   const nextPrize   = getNextPrize(xp)
-  const unlockedPrizes = getUnlockedPrizes(xp)
+
+  // 7-day calendar strip
+  const today = new Date()
+  const last7 = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(today)
+    d.setDate(today.getDate() - (6 - i))
+    return d.toISOString().split('T')[0]
+  })
+  const dayLabels = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 
   function handleParentUnlock() {
     const storedPin = profile?.parent_pin ?? '1234'
@@ -73,18 +85,35 @@ export default function DashboardPage() {
           </p>
         </div>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-          {/* Streak */}
           <div className="streak-flame">🔥 {streak}</div>
-          {/* Parent button */}
           <button onClick={() => setShowParentPIN(true)} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '6px 12px', color: 'var(--color-parchment)', fontSize: '0.8rem', cursor: 'pointer' }}>
             👨‍👩‍👧 Parent
           </button>
-          {/* Sign out */}
           <button onClick={async () => { await signOut(); navigate('/') }} style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 8, padding: '6px 10px', color: 'var(--color-stone-light)', fontSize: '0.8rem', cursor: 'pointer' }}>
             🚪
           </button>
         </div>
       </div>
+
+      {/* Last session summary banner */}
+      {lastSessionSummary && (
+        <div style={{ background: 'rgba(39,174,96,0.15)', border: '2px solid var(--color-emerald)', borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+          <div>
+            <p style={{ color: '#5dde8b', fontWeight: 800, fontSize: '0.9rem', marginBottom: 4 }}>🎉 Last quest: +{lastSessionSummary.xp} XP earned!</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+              {Object.entries(lastSessionSummary.subjects).map(([subj, score]) => {
+                const s = SUBJECTS.find(x => x.id === subj)
+                return s ? (
+                  <span key={subj} style={{ background: `${s.color}22`, border: `1px solid ${s.color}44`, borderRadius: 20, padding: '2px 8px', fontSize: '0.72rem', color: s.color, fontWeight: 700 }}>
+                    {s.emoji} {s.label.split(' ')[0]} {score}%
+                  </span>
+                ) : null
+              })}
+            </div>
+          </div>
+          <button onClick={clearLastSessionSummary} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '1.1rem', lineHeight: 1 }}>×</button>
+        </div>
+      )}
 
       {/* Level + XP bar */}
       <div className="celtic-border" style={{ background: 'rgba(0,0,0,0.3)', borderRadius: 'var(--radius-md)', padding: '14px 18px', marginBottom: 16 }}>
@@ -100,35 +129,49 @@ export default function DashboardPage() {
         </p>
       </div>
 
-      {/* Daily goal */}
-      <div style={{ background: dailyGoalMet ? 'rgba(39,174,96,0.15)' : 'rgba(0,0,0,0.2)', border: `2px solid ${dailyGoalMet ? 'var(--color-emerald)' : 'rgba(255,255,255,0.1)'}`, borderRadius: 'var(--radius-md)', padding: '12px 18px', marginBottom: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div>
-          <p style={{ color: 'var(--color-parchment)', fontWeight: 700, fontSize: '0.9rem' }}>
-            {dailyGoalMet ? '✅ Daily quest complete!' : '⏰ Today\'s quest'}
+      {/* 7-day study calendar */}
+      <div style={{ background: 'rgba(0,0,0,0.2)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 16 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
+          <p style={{ color: 'var(--color-parchment)', fontWeight: 700, fontSize: '0.88rem' }}>
+            {dailyGoalMet ? '✅ Daily quest complete!' : '📅 This week'}
           </p>
-          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem' }}>
-            {formatTime(todaySeconds)} / {formatTime(dailyGoalSeconds)} studied
+          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.75rem' }}>
+            {formatTime(todaySeconds)} / {dailyGoalMinutes}min today
           </p>
         </div>
-        <svg width="48" height="48" viewBox="0 0 36 36">
-          <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="3.5" />
-          <circle cx="18" cy="18" r="15.9" fill="none"
-            stroke={dailyGoalMet ? '#27ae60' : '#c9a227'}
-            strokeWidth="3.5"
-            strokeDasharray={`${todayPct * 100} 100`}
-            strokeLinecap="round"
-            transform="rotate(-90 18 18)"
-          />
-          <text x="18" y="22" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">
-            {Math.round(todayPct * 100)}%
-          </text>
-        </svg>
+        <div style={{ display: 'flex', gap: 4, justifyContent: 'space-between' }}>
+          {last7.map((dateStr, i) => {
+            const secs = dateStr === today.toISOString().split('T')[0] ? todaySeconds : (studyHistory?.[dateStr] ?? 0)
+            const isToday = i === 6
+            const goalMet = secs >= dailyGoalSeconds
+            const someStudy = secs > 60
+            const dotColor = goalMet ? '#27ae60' : someStudy ? '#c9a227' : 'rgba(255,255,255,0.12)'
+            const dayOfWeek = new Date(dateStr).getDay()
+            const label = dayLabels[(dayOfWeek + 6) % 7]
+            return (
+              <div key={dateStr} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+                <div style={{
+                  width: '100%', height: 36, borderRadius: 8,
+                  background: dotColor,
+                  border: isToday ? '2px solid var(--color-gold)' : '2px solid transparent',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: '1rem'
+                }}>
+                  {goalMet ? '⭐' : someStudy ? '📖' : ''}
+                </div>
+                <span style={{ fontSize: '0.6rem', color: isToday ? 'var(--color-gold)' : 'var(--color-stone-light)', fontWeight: isToday ? 800 : 400 }}>
+                  {isToday ? 'Today' : label}
+                </span>
+              </div>
+            )
+          })}
+        </div>
       </div>
 
       {/* Next digital prize teaser */}
       {nextPrize && (
         <div style={{ background: 'rgba(201,162,39,0.1)', border: '2px solid rgba(201,162,39,0.3)', borderRadius: 'var(--radius-md)', padding: '12px 18px', marginBottom: 16, display: 'flex', gap: 14, alignItems: 'center' }}>
-          <img src={nextPrize.image} alt={nextPrize.name} style={{ width: 60, height: 60, borderRadius: 8, objectFit: 'cover', filter: 'brightness(0.4) blur(2px)' }} />
+          <img src={nextPrize.image} alt={nextPrize.name} style={{ width: 50, height: 50, borderRadius: 8, objectFit: 'cover', filter: 'brightness(0.4) blur(2px)' }} />
           <div>
             <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.9rem' }}>🌟 Next reward</p>
             <p style={{ color: 'var(--color-parchment)', fontSize: '0.85rem' }}>{nextPrize.name}</p>
@@ -142,7 +185,7 @@ export default function DashboardPage() {
         Your Subjects
       </h3>
       <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 12, opacity: 0.7 }}>
-        % = mastery score — how well you know that subject. Grows as you answer questions!
+        % = mastery score — grows as you answer questions!
       </p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 24 }}>
         {SUBJECTS.map(subj => {
@@ -163,13 +206,13 @@ export default function DashboardPage() {
         })}
       </div>
 
-      {/* Emilia + Pet + Start button */}
+      {/* Emilia (lg) + Pet (sm) + Start button */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
           <div style={{ cursor: 'pointer' }} onClick={() => navigate('/rewards')}>
-            <EmiliaCharacter mood="idle" size="md" showBubble />
+            <EmiliaCharacter mood="idle" size="lg" showBubble />
           </div>
-          <div style={{ textAlign: 'center', cursor: 'pointer' }} onClick={() => navigate('/pets')}>
+          <div style={{ textAlign: 'center', cursor: 'pointer', marginBottom: 8 }} onClick={() => navigate('/pets')}>
             {activePet ? (
               <PetCompanion
                 speciesId={activePet.id}

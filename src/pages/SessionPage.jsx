@@ -8,6 +8,7 @@ import { getExplanation as generateExplanation } from '../services/groq'
 import { checkBadges, getSubjectAverages, countMasteredSubjects } from '../services/gamification'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import { getTopicIntro } from '../data/topicIntros'
+import { getTopicClass } from '../data/topicClasses'
 
 // Topic-specific emojis for visual variety during sessions
 const TOPIC_EMOJIS = {
@@ -58,15 +59,12 @@ export default function SessionPage() {
   const addAchievement    = useStore(s => s.addAchievement)
   const clearSession      = useStore(s => s.clearSession)
   const sessionXP         = useStore(s => s.sessionXP)
-  const generatedQuestions= useStore(s => s.generatedQuestions)
-  const feedActivePet     = useStore(s => s.feedActivePet)
-  const prizes            = useStore(s => s.prizes)
+  const generatedQuestions    = useStore(s => s.generatedQuestions)
+  const feedActivePet         = useStore(s => s.feedActivePet)
+  const prizes                = useStore(s => s.prizes)
+  const setLastSessionSummary = useStore(s => s.setLastSessionSummary)
 
   const allQuestions = [...QUESTION_BANK, ...generatedQuestions]
-
-  // Mode selection — shown before session starts
-  const [sessionMode, setSessionMode] = useState(null) // null | 'quest' | 'explore'
-  const sessionModeRef = useRef(null)
 
   // Component state
   const [question,        setQuestion]       = useState(null)
@@ -92,7 +90,7 @@ export default function SessionPage() {
   // Review phase banner
   const [showReviewBanner, setShowReviewBanner] = useState(false)
 
-  // Topic intro (explore mode)
+  // Topic intro — always shown for every new topic
   const [showTopicIntro, setShowTopicIntro] = useState(false)
   const [introTopic,     setIntroTopic]     = useState(null)
 
@@ -110,16 +108,14 @@ export default function SessionPage() {
   const questionStartRef  = useRef(Date.now())
   const [lastAnswerMs, setLastAnswerMs] = useState(null)
 
-  // Load first question once mode is chosen
+  // Start session immediately on mount
   useEffect(() => {
-    if (!sessionMode) return
-    sessionModeRef.current = sessionMode
     clearSession()
     sessionStartXP.current = useStore.getState().xp
     loadNextQuestion()
     timerRef.current = setInterval(() => setSessionSecs(s => s + 1), 1000)
     return () => { clearInterval(timerRef.current); clearInterval(qTimerRef.current) }
-  }, [sessionMode])
+  }, [])
 
   // Question countdown timer
   useEffect(() => {
@@ -149,11 +145,9 @@ export default function SessionPage() {
         setDrillTopic(newDrillTopic)
         setTopicQCount(newTopicQCount)
 
-        // Show fullscreen intro in explore mode
-        if (sessionModeRef.current === 'explore') {
-          setShowTopicIntro(true)
-          setIntroTopic({ subject: q.subject, topic: q.topic })
-        }
+        // Always show topic intro for every new topic
+        setShowTopicIntro(true)
+        setIntroTopic({ subject: q.subject, topic: q.topic })
       } else {
         const newTopicQCount = p.topicQCount + 1
         phaseRef.current = { ...phaseRef.current, topicQCount: newTopicQCount }
@@ -305,10 +299,14 @@ export default function SessionPage() {
   async function handleEndSession() {
     const elapsed = Math.floor((Date.now() - sessionStartRef.current) / 1000)
     addSessionSeconds(elapsed)
+    // Save session summary for dashboard banner
+    const finalMastery = getSubjectAverages(useStore.getState().masteryMap)
+    const subjectGains = {}
+    ;[...new Set(sessionSubjects)].forEach(s => { subjectGains[s] = Math.round(finalMastery[s] ?? 0) })
+    setLastSessionSummary({ xp: sessionXP, subjects: subjectGains, badges: newBadges })
     if (user) {
       const s = useStore.getState()
       logSession(user.id, elapsed, sessionXP, [...new Set(sessionSubjects)]).catch(() => {})
-      // Persist XP/level/streak so other devices stay in sync
       updateProfile(user.id, { xp: s.xp, level: s.level, streak: s.streak }).catch(() => {})
     }
     const currentXP = useStore.getState().xp
@@ -320,35 +318,6 @@ export default function SessionPage() {
     setSessionPrizesUnlocked(unlocked)
     setShowEndScreen(true)
   }
-
-  // Mode picker screen
-  if (!sessionMode) return (
-    <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px 20px', gap: 24 }}>
-      <button onClick={() => navigate('/home')} style={{ position: 'absolute', top: 20, left: 20, background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '1rem' }}>← Back</button>
-      <EmiliaCharacter mood="happy" size="md" showBubble={false} />
-      <div style={{ textAlign: 'center' }}>
-        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.4rem', marginBottom: 6 }}>Choose your quest!</h1>
-        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.85rem' }}>What do you want to do today?</p>
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, width: '100%', maxWidth: 320 }}>
-        <button onClick={() => setSessionMode('quest')} className="btn-primary"
-          style={{ padding: '20px 24px', borderRadius: 'var(--radius-lg)', textAlign: 'left', display: 'flex', gap: 16, alignItems: 'center' }}>
-          <span style={{ fontSize: '2rem' }}>⚔️</span>
-          <div>
-            <p style={{ fontWeight: 800, fontSize: '1rem', marginBottom: 2 }}>Quest Mode</p>
-            <p style={{ fontSize: '0.78rem', opacity: 0.8, fontWeight: 400 }}>Answer questions, earn XP, beat your score!</p>
-          </div>
-        </button>
-        <button onClick={() => setSessionMode('explore')} style={{ padding: '20px 24px', borderRadius: 'var(--radius-lg)', textAlign: 'left', display: 'flex', gap: 16, alignItems: 'center', background: 'rgba(201,162,39,0.12)', border: '2px solid rgba(201,162,39,0.4)', color: 'var(--color-parchment)', cursor: 'pointer' }}>
-          <span style={{ fontSize: '2rem' }}>📖</span>
-          <div>
-            <p style={{ fontWeight: 800, fontSize: '1rem', marginBottom: 2, color: 'var(--color-gold)' }}>Explore Mode</p>
-            <p style={{ fontSize: '0.78rem', opacity: 0.8, fontWeight: 400 }}>Discover something new from 3rd class!</p>
-          </div>
-        </button>
-      </div>
-    </div>
-  )
 
   // End session screen
   if (showEndScreen) return (
@@ -384,28 +353,40 @@ export default function SessionPage() {
     </div>
   )
 
-  // Topic intro screen (explore mode)
-  if (showTopicIntro && introTopic) return (
-    <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '40px 24px', gap: 20 }}>
-      <div style={{ textAlign: 'center' }}>
-        <EmiliaCharacter mood="happy" size="md" showBubble={false} />
+  // Topic intro screen — always shown on new topic
+  if (showTopicIntro && introTopic) {
+    const topicClass = getTopicClass(introTopic.subject, introTopic.topic)
+    const subj = SUBJECTS.find(s => s.id === introTopic.subject)
+    return (
+      <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '32px 24px', gap: 20 }}>
+        <button onClick={() => navigate('/home')} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left' }}>← Exit</button>
+        <div style={{ textAlign: 'center' }}>
+          <EmiliaCharacter mood="happy" size="md" showBubble={false} />
+        </div>
+        <div style={{ background: 'rgba(201,162,39,0.1)', border: '2px solid var(--color-gold)', borderRadius: 20, padding: 24 }}>
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 10, flexWrap: 'wrap' }}>
+            {subj && (
+              <span style={{ background: `${subj.color}22`, border: `1px solid ${subj.color}55`, borderRadius: 20, padding: '3px 10px', fontSize: '0.75rem', color: subj.color, fontWeight: 800 }}>
+                {subj.emoji} {subj.label}
+              </span>
+            )}
+            <span style={{ background: topicClass === 2 ? 'rgba(39,174,96,0.25)' : 'rgba(74,144,217,0.25)', color: topicClass === 2 ? '#5dde8b' : '#7ec8e3', borderRadius: 20, padding: '3px 10px', fontSize: '0.75rem', fontWeight: 800 }}>
+              {topicClass === 2 ? '📚 2nd Class' : '🎓 3rd Class'}
+            </span>
+          </div>
+          <h2 style={{ color: 'var(--color-parchment)', fontFamily: 'var(--font-title)', fontSize: '1.4rem', marginBottom: 12, textTransform: 'capitalize' }}>
+            {getTopicEmoji(introTopic.topic)} {introTopic.topic.replace(/-/g, ' ')}
+          </h2>
+          <p style={{ color: 'var(--color-parchment)', lineHeight: 1.75, fontSize: '0.95rem' }}>
+            {getTopicIntro(introTopic.subject, introTopic.topic)}
+          </p>
+        </div>
+        <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => setShowTopicIntro(false)}>
+          Let's Go! ⚔️
+        </button>
       </div>
-      <div style={{ background: 'rgba(201,162,39,0.1)', border: '2px solid var(--color-gold)', borderRadius: 20, padding: 24 }}>
-        <p style={{ color: 'var(--color-gold)', fontWeight: 800, textTransform: 'uppercase', fontSize: '0.75rem', marginBottom: 8 }}>
-          📖 New Topic in {SUBJECTS.find(s=>s.id===introTopic.subject)?.label}
-        </p>
-        <h2 style={{ color: 'var(--color-parchment)', fontFamily: 'var(--font-title)', fontSize: '1.4rem', marginBottom: 16, textTransform: 'capitalize' }}>
-          {introTopic.topic.replace(/-/g, ' ')}
-        </h2>
-        <p style={{ color: 'var(--color-parchment)', lineHeight: 1.7, fontSize: '1rem' }}>
-          {getTopicIntro(introTopic.subject, introTopic.topic)}
-        </p>
-      </div>
-      <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => setShowTopicIntro(false)}>
-        Let's Begin! ⚔️
-      </button>
-    </div>
-  )
+    )
+  }
 
   if (!question) return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-gold)' }}>Loading quest...</div>
 
