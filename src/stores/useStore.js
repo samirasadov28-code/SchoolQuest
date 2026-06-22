@@ -79,7 +79,7 @@ const useStore = create(
       },
 
       // ── Daily goal (minutes, set by parent) ──────
-      dailyGoalMinutes: 45,
+      dailyGoalMinutes: 30,
       setDailyGoalMinutes: (m) => set({ dailyGoalMinutes: Math.max(5, Math.min(120, m)) }),
 
       // ── Daily timer ───────────────────────────────
