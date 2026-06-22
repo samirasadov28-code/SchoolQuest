@@ -164,11 +164,11 @@ function PrizeGrid({ prizes, xp, onExpand }) {
           <div key={prize.id}
             onClick={() => unlocked && onExpand && onExpand(prize)}
             style={{ borderRadius: 12, overflow: 'hidden', border: `2px solid ${unlocked ? 'var(--color-gold)' : 'rgba(255,255,255,0.1)'}`, boxShadow: unlocked ? RARITY_GLOW[prize.rarity] : 'none', cursor: unlocked ? 'pointer' : 'default', background: 'rgba(0,0,0,0.3)' }}>
-            <div style={{ position: 'relative', height: 90 }}>
+            <div style={{ position: 'relative', height: 120, background: 'rgba(0,0,0,0.4)' }}>
               <img
                 src={prize.image}
                 alt={prize.name}
-                style={{ width: '100%', height: '100%', objectFit: 'cover', filter: unlocked ? 'none' : 'brightness(0.15) blur(3px)' }}
+                style={{ width: '100%', height: '100%', objectFit: 'contain', filter: unlocked ? 'none' : 'brightness(0.1) blur(4px)' }}
               />
               {!unlocked && (
                 <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>🔒</div>

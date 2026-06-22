@@ -153,7 +153,7 @@ body {
 .btn-primary:active { transform: translateY(2px);  box-shadow: 0 2px 0 var(--color-gold-dark); }
 
 .btn-secondary {
-  background: transparent;
+  background: rgba(255,255,255,0.07);
   color: var(--color-parchment);
   border: 2px solid var(--color-stone-light);
   border-radius: var(--radius-md);

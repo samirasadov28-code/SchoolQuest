@@ -5,10 +5,11 @@ import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 
 export default function LoginPage() {
   const navigate = useNavigate()
-  const [email,    setEmail]    = useState('')
-  const [password, setPassword] = useState('')
-  const [error,    setError]    = useState('')
-  const [loading,  setLoading]  = useState(false)
+  const [email,      setEmail]      = useState('')
+  const [password,   setPassword]   = useState('')
+  const [error,      setError]      = useState('')
+  const [loading,    setLoading]    = useState(false)
+  const [rememberMe, setRememberMe] = useState(true)
 
   async function handleLogin(e) {
     e.preventDefault()
@@ -73,6 +74,15 @@ export default function LoginPage() {
               autoComplete="current-password"
               style={inputStyle}
             />
+            <label style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
+              <input
+                type="checkbox"
+                checked={rememberMe}
+                onChange={e => setRememberMe(e.target.checked)}
+                style={{ width: 18, height: 18, accentColor: 'var(--color-gold)', cursor: 'pointer' }}
+              />
+              <span style={{ color: 'var(--color-stone-light)', fontSize: '0.88rem' }}>Stay signed in</span>
+            </label>
             <button type="submit" className="btn-primary" disabled={loading} style={{ marginTop: 8 }}>
               {loading ? '✨ Opening the gates...' : '⚔️ Enter the Quest'}
             </button>

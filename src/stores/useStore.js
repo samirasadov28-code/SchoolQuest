@@ -50,12 +50,12 @@ const useStore = create(
       addXP: (amount) => {
         const currentLevel = get().level
         const newXP    = get().xp + amount
-        const newLevel = Math.floor(Math.sqrt(newXP / 50)) + 1
+        const newLevel = Math.floor(Math.sqrt(newXP / 20)) + 1
         set({ xp: newXP, level: newLevel })
         return { newXP, newLevel, leveledUp: newLevel > currentLevel }
       },
 
-      setXP:    (xp)    => set({ xp, level: Math.floor(Math.sqrt(xp / 50)) + 1 }),
+      setXP:    (xp)    => set({ xp, level: Math.floor(Math.sqrt(xp / 20)) + 1 }),
       setLevel: (level) => set({ level }),
 
       // ── Streak ───────────────────────────────────
@@ -247,8 +247,8 @@ const useStore = create(
 export default useStore
 
 // XP needed for a given level
-export function xpForLevel(level) { return (level - 1) ** 2 * 50 }
-export function xpForNextLevel(level) { return level ** 2 * 50 }
+export function xpForLevel(level) { return (level - 1) ** 2 * 20 }
+export function xpForNextLevel(level) { return level ** 2 * 20 }
 export function xpProgressInLevel(xp, level) {
   const start = xpForLevel(level)
   const end   = xpForNextLevel(level)

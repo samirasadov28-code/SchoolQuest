@@ -114,7 +114,20 @@ export default function SessionPage() {
     sessionStartXP.current = useStore.getState().xp
     loadNextQuestion()
     timerRef.current = setInterval(() => setSessionSecs(s => s + 1), 1000)
-    return () => { clearInterval(timerRef.current); clearInterval(qTimerRef.current) }
+
+    // Sync XP to Supabase when tab is hidden (cross-device safety net)
+    function handleVisibility() {
+      if (document.visibilityState === 'hidden' && user) {
+        const s = useStore.getState()
+        updateProfile(user.id, { xp: s.xp, level: s.level, streak: s.streak }).catch(() => {})
+      }
+    }
+    document.addEventListener('visibilitychange', handleVisibility)
+    return () => {
+      clearInterval(timerRef.current)
+      clearInterval(qTimerRef.current)
+      document.removeEventListener('visibilitychange', handleVisibility)
+    }
   }, [])
 
   // Question countdown timer
@@ -207,6 +220,12 @@ export default function SessionPage() {
       if (result?.leveledUp) setFeedbackMsg(`🎉 LEVEL UP! You're now Level ${result.newLevel}!`)
       const petResult = feedActivePet(xpGain)
       if (petResult?.stageUp) setFeedbackMsg(`⭐ ${petResult.petName} evolved to Stage ${petResult.newStage}!`)
+      // Periodically sync XP to Supabase (every 5 correct answers)
+      const totalSeen = useStore.getState().sessionSeenIds.length
+      if (user && totalSeen % 5 === 0) {
+        const s = useStore.getState()
+        updateProfile(user.id, { xp: s.xp, level: s.level, streak: s.streak }).catch(() => {})
+      }
     }
 
     // Streaks

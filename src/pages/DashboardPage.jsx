@@ -4,6 +4,7 @@ import useStore, { xpForLevel, xpForNextLevel } from '../stores/useStore'
 import { getPrizes, getProgress, signOut } from '../services/supabase'
 import { SUBJECTS, formatTime } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
+import { TOPIC_CLASS } from '../data/topicClasses'
 import { getNextPrize } from '../data/prizes'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import PetCompanion from '../components/shared/PetCompanion'
@@ -44,6 +45,19 @@ export default function DashboardPage() {
   const dailyGoalSeconds = dailyGoalMinutes * 60
   const subjectAvgs = getSubjectAverages(masteryMap)
   const todayPct    = Math.min(1, todaySeconds / dailyGoalSeconds)
+
+  // Progress metrics
+  const totalTopics = Object.values(TOPIC_CLASS).reduce((sum, t) => sum + Object.keys(t).length, 0)
+  let topicsTried = 0, topicsWithCorrect = 0
+  for (const [subj, topics] of Object.entries(masteryMap)) {
+    for (const [key, score] of Object.entries(topics)) {
+      if (key.startsWith('_')) continue
+      topicsTried++
+      if (score > 0) topicsWithCorrect++
+    }
+  }
+  const allScores = Object.values(subjectAvgs)
+  const overallMastery = allScores.length ? Math.round(allScores.reduce((a,b)=>a+b,0)/allScores.length) : 0
   const xpStart     = xpForLevel(level)
   const xpEnd       = xpForNextLevel(level)
   const xpPct       = Math.min(1, (xp - xpStart) / (xpEnd - xpStart))
@@ -180,12 +194,32 @@ export default function DashboardPage() {
         </div>
       )}
 
+      {/* 3-metric progress panel */}
+      <div style={{ background: 'rgba(0,0,0,0.25)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 'var(--radius-md)', padding: '14px 16px', marginBottom: 16 }}>
+        <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.88rem', marginBottom: 12 }}>📊 My Progress</p>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8 }}>
+          {[
+            { label: 'Topics Tried', value: topicsTried, total: totalTopics, color: '#4a90d9', icon: '📖' },
+            { label: 'Topics Correct', value: topicsWithCorrect, total: totalTopics, color: '#27ae60', icon: '✅' },
+            { label: 'Mastery Score', value: overallMastery, total: 100, color: 'var(--color-gold)', icon: '⭐', suffix: '%' },
+          ].map(stat => (
+            <div key={stat.label} style={{ background: 'rgba(255,255,255,0.05)', borderRadius: 10, padding: '10px 8px', textAlign: 'center' }}>
+              <p style={{ fontSize: '1.2rem', marginBottom: 4 }}>{stat.icon}</p>
+              <p style={{ color: stat.color, fontWeight: 800, fontSize: '1rem', lineHeight: 1 }}>
+                {stat.suffix ? `${stat.value}${stat.suffix}` : `${stat.value}/${stat.total}`}
+              </p>
+              <p style={{ color: 'var(--color-stone-light)', fontSize: '0.6rem', marginTop: 4, lineHeight: 1.3 }}>{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Subject mastery grid */}
       <h3 style={{ color: 'var(--color-gold-light)', fontFamily: 'var(--font-title)', fontSize: '0.95rem', marginBottom: 4 }}>
         Your Subjects
       </h3>
       <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 12, opacity: 0.7 }}>
-        % = mastery score — grows as you answer questions!
+        Mastery score — grows as you answer correctly!
       </p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 24 }}>
         {SUBJECTS.map(subj => {

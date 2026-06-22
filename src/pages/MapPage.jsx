@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import NavBar from '../components/shared/NavBar'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
 import { MYTHOLOGY_REGIONS } from '../services/gamification'
@@ -110,6 +111,12 @@ export default function MapPage() {
                   <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 5, overflow: 'hidden' }}>
                     <div style={{ width: `${score}%`, height: '100%', background: unlocked ? selected.color : 'rgba(255,255,255,0.2)', borderRadius: 20, transition: 'width 0.6s' }} />
                   </div>
+                  {unlocked && region.legend && (
+                    <div style={{ background: `${selected.color}18`, borderRadius: 8, padding: '8px 10px', marginTop: 8, border: `1px solid ${selected.color}33` }}>
+                      <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.7rem', marginBottom: 4 }}>🏺 Ancient Legend Unlocked!</p>
+                      <p style={{ color: 'var(--color-parchment)', fontSize: '0.72rem', lineHeight: 1.5 }}>{region.legend}</p>
+                    </div>
+                  )}
                   {!unlocked && (
                     <p style={{ color: 'var(--color-stone-light)', fontSize: '0.68rem', marginTop: 4 }}>
                       Reach {region.unlockAt}% in {region.subject} to reveal this landmark
@@ -123,12 +130,13 @@ export default function MapPage() {
       )}
 
       {/* Legend */}
-      <div style={{ background: 'rgba(201,162,39,0.08)', border: '1px solid rgba(201,162,39,0.25)', borderRadius: 12, padding: '14px 16px', textAlign: 'center' }}>
+      <div style={{ background: 'rgba(201,162,39,0.08)', border: '1px solid rgba(201,162,39,0.25)', borderRadius: 12, padding: '14px 16px', textAlign: 'center', marginBottom: 20 }}>
         <p style={{ color: 'var(--color-gold)', fontWeight: 700, marginBottom: 6 }}>🏔️ The Quest of the Sí Stones</p>
         <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', lineHeight: 1.6 }}>
-          Ancient druids hid magical stones across the four provinces of Ireland. Master each subject to reveal the hidden landmarks and collect all nine Sí Stones!
+          Ancient druids hid magical stones across the four provinces of Ireland. Master each subject to reveal the hidden landmarks and unlock their ancient legends!
         </p>
       </div>
+      <NavBar />
     </div>
   )
 }
