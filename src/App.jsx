@@ -37,11 +37,11 @@ export default function App() {
   const storeUser         = useStore(s => s.user)
   const [authReady, setAuthReady] = useState(false)
 
-  async function syncFromDB(userId) {
-    // If a different user is logging in, wipe local progress first so
-    // the new account always starts clean rather than inheriting cached data.
-    const currentStoredId = useStore.getState().user?.id
-    if (currentStoredId && currentStoredId !== userId) {
+  async function syncFromDB(userId, previousUserId) {
+    // If a different user is logging in, wipe ALL local progress so the new
+    // account always starts completely clean. Check is done with the previousUserId
+    // captured BEFORE setUser overwrites the store — otherwise the IDs always match.
+    if (previousUserId && previousUserId !== userId) {
       resetProgress()
     }
 
@@ -49,7 +49,6 @@ export default function App() {
     const { data: profile } = await supabase.from('profiles').select('*').eq('id', userId).single()
     if (profile) {
       setProfile(profile)
-      // For a returning user sync XP from DB; for a brand-new account DB has 0
       setXP(profile.xp ?? 0)
     }
     // Sync mastery progress
@@ -71,19 +70,26 @@ export default function App() {
         return
       }
       if (session?.user) {
+        // Capture previous user ID BEFORE setUser overwrites the store
+        const previousUserId = useStore.getState().user?.id
         setUser(session.user)
-        syncFromDB(session.user.id)
+        syncFromDB(session.user.id, previousUserId)
       } else {
         setUser(null)
       }
       setAuthReady(true)
     })
 
-    // Listen for auth changes
+    // Listen for auth changes (fires on login, logout, token refresh)
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (event === 'SIGNED_OUT') {
         setUser(null)
         setProfile(null)
+      } else if (event === 'SIGNED_IN' && session?.user) {
+        // Capture previous user ID BEFORE setUser overwrites the store
+        const previousUserId = useStore.getState().user?.id
+        setUser(session.user)
+        syncFromDB(session.user.id, previousUserId)
       } else if (session?.user) {
         setUser(session.user)
       }
