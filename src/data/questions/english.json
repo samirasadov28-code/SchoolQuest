@@ -20,14 +20,8 @@
     "subject": "english",
     "topic": "spelling",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "How do you spell the opposite of day?",
-    "options": [
-      "nite",
-      "night",
-      "nigt",
-      "niight"
-    ],
     "answer": "night",
     "explanation": "Night has a silent 'gh' — n-i-g-h-t."
   },
@@ -68,14 +62,8 @@
     "subject": "english",
     "topic": "spelling",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "Which is the correct spelling?",
-    "options": [
-      "peple",
-      "people",
-      "pepole",
-      "poeple"
-    ],
     "answer": "people",
     "explanation": "People: p-e-o-p-l-e. There are two p's and a hidden 'eo' in the middle."
   },
@@ -100,14 +88,8 @@
     "subject": "english",
     "topic": "spelling",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "How do you spell the number after seven?",
-    "options": [
-      "eit",
-      "eight",
-      "eihgt",
-      "eigth"
-    ],
     "answer": "eight",
     "explanation": "Eight: e-i-g-h-t. Remember the silent 'gh'!"
   },
@@ -148,14 +130,8 @@
     "subject": "english",
     "topic": "spelling",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "How do you spell the day that comes before Thursday?",
-    "options": [
-      "Wensday",
-      "Wendesday",
-      "Wednesday",
-      "Wedensday"
-    ],
     "answer": "Wednesday",
     "explanation": "Wednesday: Wed-nes-day. There is a hidden 'd' after 'Wed'!"
   },
@@ -180,32 +156,38 @@
     "subject": "english",
     "topic": "grammar",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which word is a noun?",
+    "type": "multi-select",
+    "question": "Which TWO of these words are nouns? (Select 2)",
     "options": [
+      "castle",
       "run",
-      "quickly",
-      "happy",
-      "castle"
+      "beautiful",
+      "teacher"
     ],
-    "answer": "castle",
-    "explanation": "A noun is a person, place, or thing. A castle is a thing!"
+    "explanation": "A noun is a person, place, or thing. A castle is a thing!",
+    "answers": [
+      "castle",
+      "teacher"
+    ]
   },
   {
     "id": "eng-gram-002",
     "subject": "english",
     "topic": "grammar",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which word is a verb?",
+    "type": "multi-select",
+    "question": "Which TWO of these words are verbs? (Select 2)",
     "options": [
-      "blue",
       "jump",
-      "tall",
-      "slowly"
+      "sky",
+      "swim",
+      "happy"
     ],
-    "answer": "jump",
-    "explanation": "A verb is an action word. Jump is something you do!"
+    "explanation": "A verb is an action word. Jump is something you do!",
+    "answers": [
+      "jump",
+      "swim"
+    ]
   },
   {
     "id": "eng-gram-003",
@@ -244,16 +226,19 @@
     "subject": "english",
     "topic": "grammar",
     "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which is an adjective?",
+    "type": "multi-select",
+    "question": "Which TWO of these words are adjectives? (Select 2)",
     "options": [
-      "dance",
-      "slowly",
       "green",
-      "and"
+      "run",
+      "tiny",
+      "quickly"
     ],
-    "answer": "green",
-    "explanation": "Adjectives describe nouns. Green describes what colour something is!"
+    "explanation": "Adjectives describe nouns. Green describes what colour something is!",
+    "answers": [
+      "green",
+      "tiny"
+    ]
   },
   {
     "id": "eng-gram-006",
@@ -26084,7 +26069,10 @@
     "type": "type-in",
     "question": "What is the plural of the word 'child'? Type your answer.",
     "answer": "children",
-    "answer_variants": ["children", "Children"],
+    "answer_variants": [
+      "children",
+      "Children"
+    ],
     "explanation": "The plural of child is children — an irregular plural. Other irregular plurals: mouse → mice, tooth → teeth, foot → feet."
   },
   {
@@ -26095,7 +26083,10 @@
     "type": "type-in",
     "question": "How do you spell the opposite of 'happy'? (starts with 'un-') Type your answer.",
     "answer": "unhappy",
-    "answer_variants": ["unhappy", "Unhappy"],
+    "answer_variants": [
+      "unhappy",
+      "Unhappy"
+    ],
     "explanation": "Unhappy — the prefix 'un-' means 'not', so un + happy = unhappy (not happy). Other examples: unkind, unfair, unwell."
   },
   {
@@ -26115,8 +26106,16 @@
     "difficulty": 2,
     "type": "multi-select",
     "question": "Select ALL words that are VERBS (doing/action words). 🏃",
-    "options": ["jump", "happy", "run", "beautiful"],
-    "answers": ["jump", "run"],
+    "options": [
+      "jump",
+      "happy",
+      "run",
+      "beautiful"
+    ],
+    "answers": [
+      "jump",
+      "run"
+    ],
     "explanation": "'Jump' and 'run' are verbs — they describe actions. 'Happy' and 'beautiful' are adjectives — they describe how something looks or feels."
   },
   {
@@ -26126,8 +26125,16 @@
     "difficulty": 2,
     "type": "multi-select",
     "question": "Select ALL words that are ADJECTIVES (describing words). ✨",
-    "options": ["tiny", "whisper", "enormous", "crawl"],
-    "answers": ["tiny", "enormous"],
+    "options": [
+      "tiny",
+      "whisper",
+      "enormous",
+      "crawl"
+    ],
+    "answers": [
+      "tiny",
+      "enormous"
+    ],
     "explanation": "'Tiny' and 'enormous' are adjectives — they describe the size of a noun. 'Whisper' and 'crawl' are verbs (action words)."
   },
   {
@@ -26137,7 +26144,12 @@
     "difficulty": 1,
     "type": "picture",
     "question": "Which punctuation mark goes at the END of a question?",
-    "options": ["❗ Exclamation Mark", "❓ Question Mark", "⏸ Comma", "⏹ Full Stop"],
+    "options": [
+      "❗ Exclamation Mark",
+      "❓ Question Mark",
+      "⏸ Comma",
+      "⏹ Full Stop"
+    ],
     "answer": "❓ Question Mark",
     "explanation": "A question mark (?) goes at the end of every question. 'What is your name?' — the ? tells the reader this is a question."
   },
@@ -26148,7 +26160,12 @@
     "difficulty": 2,
     "type": "picture",
     "question": "Which emoji best represents a NOUN (name of a thing)?",
-    "options": ["🏃 Running", "🏠 House", "😊 Feeling Happy", "💨 Blowing"],
+    "options": [
+      "🏃 Running",
+      "🏠 House",
+      "😊 Feeling Happy",
+      "💨 Blowing"
+    ],
     "answer": "🏠 House",
     "explanation": "'House' is a noun — it names a thing. 'Running' and 'blowing' are verbs (doing words), and 'feeling happy' describes an emotion."
   }
