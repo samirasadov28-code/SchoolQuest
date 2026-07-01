@@ -164,7 +164,9 @@ export default function MapPage() {
                           {region.storyTitle ?? 'Ancient Legend Unlocked!'}
                         </p>
                       </div>
-                      <p style={{ color: 'var(--color-parchment)', fontSize: '0.75rem', lineHeight: 1.65 }}>{region.legend}</p>
+                      {region.legend.split('\n\n').map((para, pi) => (
+                        <p key={pi} style={{ color: 'var(--color-parchment)', fontSize: '0.75rem', lineHeight: 1.65, marginBottom: pi < region.legend.split('\n\n').length - 1 ? 10 : 0 }}>{para}</p>
+                      ))}
                     </div>
                   )}
                   {!unlocked && (

@@ -265,7 +265,7 @@ export default function ParentPage() {
           {SUBJECTS.map(subj => {
             const priority = subjectPriorities[subj.id] ?? 1
             const priorityLabel = PRIORITY_LABELS[priority] ?? 'Normal'
-            const priorityColor = priority >= 3 ? '#ff6b6b' : priority >= 2 ? 'var(--color-gold)' : priority <= 0.5 ? 'rgba(255,255,255,0.3)' : 'var(--color-parchment)'
+            const priorityColor = priority >= 3 ? '#ff6b6b' : priority >= 2 ? 'var(--color-gold)' : priority <= 0.5 ? 'rgba(255,255,255,0.25)' : '#4a90d9'
             return (
               <div key={subj.id} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                 <span style={{ width: 22, textAlign: 'center', fontSize: '0.9rem' }}>{subj.emoji}</span>
@@ -275,7 +275,7 @@ export default function ParentPage() {
                     <button key={v} onClick={() => setSubjectPriority(subj.id, v)} style={{
                       padding: '4px 8px', borderRadius: 8, border: 'none', cursor: 'pointer', fontSize: '0.68rem', fontWeight: 800,
                       background: priority === v ? priorityColor : 'rgba(255,255,255,0.08)',
-                      color: priority === v ? (priority >= 2 ? '#1a1a00' : 'var(--color-parchment)') : 'var(--color-stone-light)',
+                      color: priority === v ? (priority >= 2 && priority < 3 ? '#1a1a00' : '#fff') : 'var(--color-stone-light)',
                     }}>{PRIORITY_LABELS[v]}</button>
                   ))}
                 </div>
