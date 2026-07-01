@@ -6,6 +6,9 @@ import { getSubjectAverages } from '../services/gamification'
 import { addPrize, confirmPrize, getPrizes } from '../services/supabase'
 import { QUESTION_BANK } from '../data/questions/index'
 
+const PRIORITY_LABELS = { 0.5: 'Low', 1: 'Normal', 2: 'High', 3: 'Max' }
+const PRIORITY_VALUES = [0.5, 1, 2, 3]
+
 export default function ParentPage() {
   const navigate      = useNavigate()
   const user          = useStore(s => s.user)
@@ -24,11 +27,15 @@ export default function ParentPage() {
   const dailyGoalMinutes      = useStore(s => s.dailyGoalMinutes)
   const setDailyGoalMinutes   = useStore(s => s.setDailyGoalMinutes)
 
+  const subjectPriorities  = useStore(s => s.subjectPriorities)
+  const setSubjectPriority = useStore(s => s.setSubjectPriority)
+
   const [newPrizeTitle,  setNewPrizeTitle]  = useState('')
   const [newPrizeXP,     setNewPrizeXP]     = useState(500)
   const [addingPrize,    setAddingPrize]    = useState(false)
   const [savingPrize,    setSavingPrize]    = useState(false)
   const [expandedSubject, setExpandedSubject] = useState(null)
+  const [statsView,       setStatsView]      = useState('answered')
 
   const [suggestions,    setSuggestions]    = useState([])
   const [loadingSugg,    setLoadingSugg]    = useState(false)
@@ -125,49 +132,67 @@ export default function ParentPage() {
         ))}
       </div>
 
-      {/* Subject breakdown — questions answered */}
+      {/* Subject breakdown — tab-based */}
       <section style={{ marginBottom: 24 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
-          <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800 }}>📊 Questions Answered</h2>
-        </div>
-        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 12, opacity: 0.8 }}>
-          Questions answered per subject out of total available. Tap to see topic breakdown.
-        </p>
+        <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800, marginBottom: 12 }}>📊 Subject Progress</h2>
 
-        {/* Overall total */}
+        {/* Stats tabs */}
+        <div style={{ display: 'flex', gap: 6, marginBottom: 14 }}>
+          {[
+            { key: 'answered', label: '📝 Answered' },
+            { key: 'correct',  label: '✅ Correct %' },
+            { key: 'mastery',  label: '⭐ Mastery' },
+          ].map(tab => (
+            <button key={tab.key} onClick={() => setStatsView(tab.key)} style={{
+              flex: 1, padding: '8px 4px', borderRadius: 20, border: 'none', cursor: 'pointer', fontSize: '0.72rem', fontWeight: 800,
+              background: statsView === tab.key ? 'var(--color-gold)' : 'rgba(255,255,255,0.08)',
+              color: statsView === tab.key ? '#1a1a00' : 'var(--color-parchment)',
+            }}>{tab.label}</button>
+          ))}
+        </div>
+
+        {/* Overall summary */}
         {(() => {
-          const grandTotal   = QUESTION_BANK.length
-          const grandAnswered = Object.values(questionsSeenMap).reduce((sum, topics) =>
-            sum + Object.values(topics).reduce((s, n) => s + n, 0), 0)
-          const grandPct = grandTotal ? Math.round(grandAnswered / grandTotal * 100) : 0
+          const grandTotal    = QUESTION_BANK.length
+          const grandAnswered = Object.values(questionsSeenMap).reduce((sum, topics) => sum + Object.values(topics).reduce((s, n) => s + n, 0), 0)
+          const grandCorrect  = Object.values(questionsCorrectMap ?? {}).reduce((sum, topics) => sum + Object.values(topics).reduce((s, n) => s + n, 0), 0)
+          const grandPct      = grandTotal ? Math.round(grandAnswered / grandTotal * 100) : 0
+          const grandCorPct   = grandAnswered ? Math.round(grandCorrect / grandAnswered * 100) : 0
+          const overallMastery = Math.round(Object.values(subjectAvgs).reduce((a, b) => a + b, 0) / (Object.values(subjectAvgs).length || 1))
+          const summaryVal = statsView === 'answered' ? `${grandAnswered.toLocaleString()} / ${grandTotal.toLocaleString()} (${grandPct}%)` : statsView === 'correct' ? `${grandCorPct}% correct overall` : `${overallMastery}% average mastery`
           return (
-            <div style={{ background: 'rgba(201,162,39,0.1)', border: '1px solid rgba(201,162,39,0.3)', borderRadius: 10, padding: '10px 14px', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 12 }}>
-              <span style={{ fontSize: '1.1rem' }}>📚</span>
-              <div style={{ flex: 1 }}>
-                <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.85rem' }}>
-                  {grandAnswered.toLocaleString()} / {grandTotal.toLocaleString()} questions
-                </p>
-                <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 6, marginTop: 4 }}>
-                  <div style={{ width: `${grandPct}%`, height: '100%', background: 'var(--color-gold)', borderRadius: 20, transition: 'width 0.4s' }} />
-                </div>
-              </div>
-              <span style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.9rem' }}>{grandPct}%</span>
+            <div style={{ background: 'rgba(201,162,39,0.1)', border: '1px solid rgba(201,162,39,0.3)', borderRadius: 10, padding: '10px 14px', marginBottom: 12 }}>
+              <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.85rem' }}>📚 {summaryVal}</p>
             </div>
           )
         })()}
 
+        {/* Per-subject rows */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           {SUBJECTS.map(subj => {
             const subjQuestions = QUESTION_BANK.filter(q => q.subject === subj.id)
-            const totalQ  = subjQuestions.length
+            const totalQ     = subjQuestions.length
             const seenMap    = questionsSeenMap[subj.id] ?? {}
             const correctMap = questionsCorrectMap?.[subj.id] ?? {}
             const answered   = Object.values(seenMap).reduce((s, n) => s + n, 0)
             const correct    = Object.values(correctMap).reduce((s, n) => s + n, 0)
             const correctPct = answered ? Math.round(correct / answered * 100) : 0
-            const barPct  = totalQ ? Math.min(100, Math.round(answered / totalQ * 100)) : 0
-            const barColor = barPct >= 50 ? 'var(--color-emerald)' : barPct >= 15 ? 'var(--color-gold)' : 'rgba(255,255,255,0.25)'
-            const mastery  = Math.round(subjectAvgs[subj.id] ?? 0)
+            const mastery    = Math.round(subjectAvgs[subj.id] ?? 0)
+
+            let barPct, barColor, valueLabel
+            if (statsView === 'answered') {
+              barPct = totalQ ? Math.min(100, Math.round(answered / totalQ * 100)) : 0
+              barColor = barPct >= 50 ? 'var(--color-emerald)' : barPct >= 15 ? 'var(--color-gold)' : 'rgba(255,255,255,0.25)'
+              valueLabel = `${answered}/${totalQ}`
+            } else if (statsView === 'correct') {
+              barPct = correctPct
+              barColor = correctPct >= 80 ? 'var(--color-emerald)' : correctPct >= 50 ? 'var(--color-gold)' : answered ? '#ff8a8a' : 'rgba(255,255,255,0.25)'
+              valueLabel = answered ? `${correctPct}%` : '—'
+            } else {
+              barPct = mastery
+              barColor = mastery >= 80 ? 'var(--color-emerald)' : mastery >= 50 ? 'var(--color-gold)' : 'rgba(255,255,255,0.35)'
+              valueLabel = `${mastery}%`
+            }
 
             const isExpanded = expandedSubject === subj.id
             const allTopics  = [...new Set(subjQuestions.map(q => q.topic))].sort()
@@ -181,25 +206,12 @@ export default function ParentPage() {
                   <div style={{ width: 80, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 6 }}>
                     <div style={{ width: `${barPct}%`, height: '100%', background: barColor, borderRadius: 20, transition: 'width 0.4s' }} />
                   </div>
-                  <span style={{ width: 52, color: barColor, fontSize: '0.72rem', textAlign: 'right', fontWeight: 800 }}>{answered}/{totalQ}</span>
+                  <span style={{ width: 44, color: barColor, fontSize: '0.72rem', textAlign: 'right', fontWeight: 800 }}>{valueLabel}</span>
                   <span style={{ color: 'var(--color-stone-light)', fontSize: '0.65rem' }}>{isExpanded ? '▲' : '▼'}</span>
                 </div>
 
                 {isExpanded && (
                   <div style={{ marginLeft: 32, marginBottom: 8, background: 'rgba(0,0,0,0.2)', borderRadius: 10, padding: '10px 12px' }}>
-                    {/* Summary row */}
-                    <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
-                      {[
-                        { label: 'Answered',  value: `${answered}/${totalQ}` },
-                        { label: '% Correct', value: answered ? `${correctPct}%` : '—' },
-                        { label: 'Mastery',   value: `${mastery}%` },
-                      ].map(m => (
-                        <div key={m.label} style={{ flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: 8, padding: '5px 6px', textAlign: 'center' }}>
-                          <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.8rem' }}>{m.value}</p>
-                          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.6rem' }}>{m.label}</p>
-                        </div>
-                      ))}
-                    </div>
                     {/* Per-topic breakdown */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                       {allTopics.map(topic => {
@@ -211,6 +223,12 @@ export default function ParentPage() {
                         const majorityAnswered = topicTotal > 0 && topicAnswered >= Math.ceil(topicTotal / 2)
                         const topicMastered   = majorityAnswered && tCorPct !== null && tCorPct >= 60
                         const tColor  = topicAnswered === 0 ? 'rgba(255,255,255,0.2)' : topicMastered ? 'var(--color-emerald)' : tPct >= 25 ? 'var(--color-gold)' : 'rgba(255,255,255,0.35)'
+
+                        let topicDisplay
+                        if (statsView === 'answered') topicDisplay = `${topicAnswered}/${topicTotal}`
+                        else if (statsView === 'correct') topicDisplay = tCorPct !== null ? `${tCorPct}%` : '—'
+                        else topicDisplay = `${Math.round((masteryMap[subj.id]?.[topic] ?? 50))}%`
+
                         return (
                           <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                             <span style={{ fontSize: '0.6rem', color: topicMastered ? 'var(--color-emerald)' : topicAnswered > 0 ? 'var(--color-gold)' : 'rgba(255,255,255,0.2)' }}>{topicMastered ? '✓' : topicAnswered > 0 ? '●' : '○'}</span>
@@ -218,8 +236,7 @@ export default function ParentPage() {
                             <div style={{ width: 50, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 4 }}>
                               <div style={{ width: `${tPct}%`, height: '100%', background: tColor, borderRadius: 20 }} />
                             </div>
-                            <span style={{ width: 36, color: tColor, fontSize: '0.7rem', fontWeight: 800, textAlign: 'right' }}>{topicAnswered}/{topicTotal}</span>
-                            {tCorPct !== null && <span style={{ width: 32, color: topicMastered ? 'var(--color-emerald)' : '#ffaa44', fontSize: '0.65rem', textAlign: 'right' }}>{tCorPct}%✓</span>}
+                            <span style={{ width: 40, color: tColor, fontSize: '0.7rem', fontWeight: 800, textAlign: 'right' }}>{topicDisplay}</span>
                           </div>
                         )
                       })}
@@ -236,6 +253,36 @@ export default function ParentPage() {
             <p style={{ color: 'var(--color-parchment)', fontSize: '0.82rem' }}>{weakest.map(s => s.label).join(', ')}</p>
           </div>
         )}
+      </section>
+
+      {/* Subject Priorities */}
+      <section style={{ marginBottom: 24 }}>
+        <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800, marginBottom: 6 }}>🎯 Focus Priorities</h2>
+        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 12, opacity: 0.8 }}>
+          Boost subjects you want Emilia to practise more. The adaptive engine will pick these topics more often.
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {SUBJECTS.map(subj => {
+            const priority = subjectPriorities[subj.id] ?? 1
+            const priorityLabel = PRIORITY_LABELS[priority] ?? 'Normal'
+            const priorityColor = priority >= 3 ? '#ff6b6b' : priority >= 2 ? 'var(--color-gold)' : priority <= 0.5 ? 'rgba(255,255,255,0.3)' : 'var(--color-parchment)'
+            return (
+              <div key={subj.id} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                <span style={{ width: 22, textAlign: 'center', fontSize: '0.9rem' }}>{subj.emoji}</span>
+                <span style={{ flex: 1, color: 'var(--color-parchment)', fontSize: '0.82rem', fontWeight: 600 }}>{subj.label}</span>
+                <div style={{ display: 'flex', gap: 4 }}>
+                  {PRIORITY_VALUES.map(v => (
+                    <button key={v} onClick={() => setSubjectPriority(subj.id, v)} style={{
+                      padding: '4px 8px', borderRadius: 8, border: 'none', cursor: 'pointer', fontSize: '0.68rem', fontWeight: 800,
+                      background: priority === v ? priorityColor : 'rgba(255,255,255,0.08)',
+                      color: priority === v ? (priority >= 2 ? '#1a1a00' : 'var(--color-parchment)') : 'var(--color-stone-light)',
+                    }}>{PRIORITY_LABELS[v]}</button>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </section>
 
       {/* Daily goal setting */}

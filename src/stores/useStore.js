@@ -113,6 +113,11 @@ const useStore = create(
       dailyGoalMinutes: 30,
       setDailyGoalMinutes: (m) => set({ dailyGoalMinutes: Math.max(5, Math.min(120, m)) }),
 
+      // ── Subject priorities set by parent (1=low, 2=normal, 3=high) ───
+      subjectPriorities: {},
+      setSubjectPriority: (subject, priority) =>
+        set(state => ({ subjectPriorities: { ...state.subjectPriorities, [subject]: priority } })),
+
       // ── Daily timer ───────────────────────────────
       todaySeconds:    0,
       dailyGoalMet:    false,
@@ -283,8 +288,9 @@ const useStore = create(
         activePetId:       state.activePetId,
         pets:              state.pets,
         selectedAvatar:    state.selectedAvatar,
-        questionsSeenMap:   state.questionsSeenMap,
+        questionsSeenMap:    state.questionsSeenMap,
         questionsCorrectMap: state.questionsCorrectMap,
+        subjectPriorities:   state.subjectPriorities,
       }),
     }
   )

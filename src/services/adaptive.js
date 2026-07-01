@@ -22,7 +22,7 @@ export const SUBJECTS = [
 export const XP_PER_CORRECT = { 1: 5, 2: 10, 3: 15, 4: 20, 5: 25 }
 
 // Session phase constants
-export const DRILL_QUESTIONS_PER_TOPIC = 3  // questions per new topic in drill mode
+export const DRILL_QUESTIONS_PER_TOPIC = 5  // questions per new topic in drill mode
 export const TOPICS_BEFORE_REVIEW      = 5  // new topics before a review session kicks in
 export const REVIEW_QUESTIONS          = 10 // questions in each adaptive review session
 export const MASTERY_DELTA   = { correct: +10, incorrect: -5 }
@@ -87,7 +87,7 @@ export function allClass2TopicsCovered(questionBank, questionsSeenMap) {
  * Drill mode  — 3 Qs per new topic, then review after every 5 new topics.
  * Review mode — pure adaptive weighted pick (weakest topics get more questions).
  */
-export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects, ctx = {}, level = 1, questionsSeenMap = {}) {
+export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects, ctx = {}, level = 1, questionsSeenMap = {}, subjectPriorities = {}) {
   const { phase = 'drill', drillTopic = null } = ctx
 
   // Keep class-2 only until all class-2 topics have at least 3 answers each
@@ -99,10 +99,10 @@ export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubje
 
   const unseenBank = effectiveBank.filter(q => !seenIds.includes(q.id))
   // When all session questions seen, allow repeating — but weight by mastery to focus on weak areas
-  if (unseenBank.length === 0) return _topicFairWeightedPick(effectiveBank, masteryMap)
+  if (unseenBank.length === 0) return _topicFairWeightedPick(effectiveBank, masteryMap, subjectPriorities)
 
   // REVIEW phase — topic-fair adaptive (pick topic first, then question)
-  if (phase === 'review') return _topicFairWeightedPick(unseenBank, masteryMap)
+  if (phase === 'review') return _topicFairWeightedPick(unseenBank, masteryMap, subjectPriorities)
 
   // DRILL phase — continue current topic if set
   if (drillTopic) {
@@ -124,8 +124,8 @@ export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubje
   }
   const freshTopicKeys = Object.keys(freshTopicMap)
   if (freshTopicKeys.length > 0) {
-    // Apply subject boost so English/Maths/Irish get picked more often even in drill mode
-    const weighted = freshTopicKeys.map(k => ({ k, w: SUBJECT_BOOST[k.split('::')[0]] ?? 1.0 }))
+    // Apply subject boost + parent priority so English/Maths/Irish get picked more often even in drill mode
+    const weighted = freshTopicKeys.map(k => ({ k, w: (SUBJECT_BOOST[k.split('::')[0]] ?? 1.0) * (subjectPriorities[k.split('::')[0]] ?? 1.0) }))
     const total = weighted.reduce((s, t) => s + t.w, 0)
     let rand = Math.random() * total
     for (const { k, w } of weighted) { rand -= w; if (rand <= 0) { const qs = freshTopicMap[k]; return qs[Math.floor(Math.random() * qs.length)] } }
@@ -134,11 +134,11 @@ export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubje
   }
 
   // All topics seen — fall back to topic-fair adaptive
-  return _topicFairWeightedPick(unseenBank, masteryMap)
+  return _topicFairWeightedPick(unseenBank, masteryMap, subjectPriorities)
 }
 
-// Pick topic weighted by (100 - mastery) × subject boost, then random question within topic.
-function _topicFairWeightedPick(bank, masteryMap) {
+// Pick topic weighted by (100 - mastery) × subject boost × parent priority, then random question within topic.
+function _topicFairWeightedPick(bank, masteryMap, subjectPriorities = {}) {
   const topicMap = {}
   for (const q of bank) {
     const key = `${q.subject}::${q.topic}`
@@ -149,7 +149,8 @@ function _topicFairWeightedPick(bank, masteryMap) {
   const weighted = topics.map(t => ({
     t,
     weight: Math.max(1, 100 - (masteryMap[t.subject]?.[t.topic] ?? INITIAL_MASTERY[t.subject] ?? 50))
-           * (SUBJECT_BOOST[t.subject] ?? 1.0),
+           * (SUBJECT_BOOST[t.subject] ?? 1.0)
+           * (subjectPriorities[t.subject] ?? 1.0),
   }))
   const total = weighted.reduce((s, w) => s + w.weight, 0)
   let rand = Math.random() * total
