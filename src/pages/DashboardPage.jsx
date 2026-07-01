@@ -295,12 +295,11 @@ export default function DashboardPage() {
               style={{ ...inputStyle, textAlign: 'center', fontSize: '1.5rem', letterSpacing: '0.5em', marginBottom: 8 }}
               autoFocus
             />
-            <p style={{ textAlign: 'center', marginBottom: 16 }}>
-              <button onClick={() => alert(`Your parent PIN is: ${profile?.parent_pin ?? '1234'}`)}
-                style={{ background: 'none', border: 'none', color: 'var(--color-stone-light)', fontSize: '0.75rem', cursor: 'pointer', textDecoration: 'underline' }}>
-                Forgot PIN?
-              </button>
-            </p>
+            <button
+              onClick={() => alert(`Your parent PIN is: ${profile?.parent_pin ?? '1234'}`)}
+              style={{ display: 'block', width: '100%', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 10, padding: '10px', color: 'var(--color-stone-light)', fontSize: '0.85rem', cursor: 'pointer', marginBottom: 16, marginTop: 4 }}>
+              🔑 Forgot PIN? Tap to reveal
+            </button>
             <div style={{ display: 'flex', gap: 10 }}>
               <button className="btn-secondary" style={{ flex: 1 }} onClick={() => { setShowParentPIN(false); setPinInput(''); setPinError('') }}>Cancel</button>
               <button className="btn-primary" style={{ flex: 1 }} onClick={handleParentUnlock}>Unlock</button>
