@@ -83,6 +83,7 @@ export default function App() {
     // Listen for auth changes (fires on login, logout, token refresh)
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (event === 'SIGNED_OUT') {
+        resetProgress()
         setUser(null)
         setProfile(null)
       } else if (event === 'SIGNED_IN' && session?.user) {
