@@ -59,7 +59,7 @@ export const PET_SPECIES = [
     name: 'Unicorn',
     emoji: '🦄',
     description: 'A magical friend who loves maths and sparkles!',
-    unlockCondition: { type: 'level', value: 30 },
+    unlockCondition: { type: 'level', value: 50 },
     defaultName: 'Sparkle',
     favoriteSubjects: [
       { subject: 'maths', topics: ['fractions', 'mental-maths', 'shapes'], reason: 'Loves magical number patterns!' },
@@ -82,7 +82,7 @@ export const PET_SPECIES = [
     name: 'Dragon',
     emoji: '🐉',
     description: 'A brave fire-breather who loves science and history!',
-    unlockCondition: { type: 'level', value: 20 },
+    unlockCondition: { type: 'level', value: 35 },
     defaultName: 'Ember',
     favoriteSubjects: [
       { subject: 'science', topics: ['forces', 'electricity', 'light-sound'], reason: 'Fire & science go hand in hand!' },

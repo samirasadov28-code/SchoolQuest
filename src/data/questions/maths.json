@@ -33758,5 +33758,87 @@
     ],
     "answer": "10",
     "explanation": "Sum = 40, ÷ 4 numbers = 10!"
+  },
+  {
+    "id": "math-typein-001",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 1,
+    "type": "type-in",
+    "question": "What is 8 × 7? Type your answer.",
+    "answer": "56",
+    "explanation": "8 × 7 = 56. You can count by 8s: 8, 16, 24, 32, 40, 48, 56 — or by 7s: 7, 14, 21, 28, 35, 42, 49, 56!"
+  },
+  {
+    "id": "math-typein-002",
+    "subject": "maths",
+    "topic": "addition",
+    "difficulty": 2,
+    "type": "type-in",
+    "question": "What is 365 + 247? Type your answer.",
+    "answer": "612",
+    "explanation": "Column addition: Units 5+7=12, write 2 carry 1. Tens 6+4+1=11, write 1 carry 1. Hundreds 3+2+1=6. Answer: 612."
+  },
+  {
+    "id": "math-typein-003",
+    "subject": "maths",
+    "topic": "division",
+    "difficulty": 2,
+    "type": "type-in",
+    "question": "What is 72 ÷ 9? Type your answer.",
+    "answer": "8",
+    "explanation": "72 ÷ 9 = 8. Think: 9 × 8 = 72. Division is the inverse of multiplication — knowing your times tables makes division easy!"
+  },
+  {
+    "id": "math-scale-001",
+    "subject": "maths",
+    "topic": "mental-maths",
+    "difficulty": 2,
+    "type": "scale",
+    "question": "Drag the slider to show what 25% of 200 equals.",
+    "answer": 50,
+    "min": 0,
+    "max": 200,
+    "step": 1,
+    "unit": "",
+    "tolerance": 5,
+    "explanation": "25% means one quarter. To find a quarter, divide by 4. 200 ÷ 4 = 50."
+  },
+  {
+    "id": "math-scale-002",
+    "subject": "maths",
+    "topic": "multiplication",
+    "difficulty": 1,
+    "type": "scale",
+    "question": "Slide to show the answer: 9 × 7 = ?",
+    "answer": 63,
+    "min": 1,
+    "max": 100,
+    "step": 1,
+    "unit": "",
+    "tolerance": 0,
+    "explanation": "9 × 7 = 63. Finger trick: fold down the 7th finger — 6 fingers left, 3 to the right = 63!"
+  },
+  {
+    "id": "math-multi-001",
+    "subject": "maths",
+    "topic": "fractions",
+    "difficulty": 3,
+    "type": "multi-select",
+    "question": "Select ALL fractions that are equivalent to one half (½).",
+    "options": ["2/4", "3/5", "4/8", "3/4"],
+    "answers": ["2/4", "4/8"],
+    "explanation": "2/4 and 4/8 both equal ½. Multiply both top and bottom of ½ by 2 → 2/4; by 4 → 4/8. The value stays the same!"
+  },
+  {
+    "id": "math-multi-002",
+    "subject": "maths",
+    "topic": "place-value",
+    "difficulty": 2,
+    "type": "multi-select",
+    "question": "Select ALL numbers that are greater than 500.",
+    "options": ["312", "750", "499", "1001"],
+    "answers": ["750", "1001"],
+    "explanation": "750 > 500 and 1001 > 500. 312 and 499 are both less than 500."
   }
 ]

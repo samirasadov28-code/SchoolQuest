@@ -6094,5 +6094,63 @@
     ],
     "answer": "The Great Barrier Reef",
     "explanation": "The Great Barrier Reef off Australia is the largest coral reef on Earth and can be seen from space!"
+  },
+  {
+    "id": "gk-typein-001",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "type-in",
+    "question": "How many planets are in our Solar System? Type the number.",
+    "answer": "8",
+    "explanation": "There are 8 planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. Pluto was reclassified as a dwarf planet in 2006."
+  },
+  {
+    "id": "gk-scale-001",
+    "subject": "genknow",
+    "topic": "world-facts",
+    "difficulty": 2,
+    "type": "scale",
+    "question": "Approximately how many countries are there in the world? Slide to your guess!",
+    "answer": 195,
+    "min": 50,
+    "max": 350,
+    "step": 1,
+    "unit": "countries",
+    "tolerance": 8,
+    "explanation": "There are 195 countries in the world recognised by the United Nations — 193 member states plus 2 observer states (Vatican City and Palestine)."
+  },
+  {
+    "id": "gk-pic-001",
+    "subject": "genknow",
+    "topic": "irish-culture",
+    "difficulty": 1,
+    "type": "picture",
+    "question": "Which flag emoji represents Ireland? 🍀",
+    "options": ["🇮🇹 Italy", "🇫🇷 France", "🇮🇪 Ireland", "🇳🇬 Nigeria"],
+    "answer": "🇮🇪 Ireland",
+    "explanation": "The Irish tricolour 🇮🇪 has green (Irish Catholics), white (peace), and orange (Irish Protestants). Italy's 🇮🇹 is also green, white and red, but in a different shade!"
+  },
+  {
+    "id": "gk-pic-002",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 1,
+    "type": "picture",
+    "question": "Which emoji represents the planet that we live on?",
+    "options": ["🌕 Moon", "⭐ Star", "🌍 Earth", "🌞 Sun"],
+    "answer": "🌍 Earth",
+    "explanation": "🌍 represents Earth, the third planet from the Sun and the only planet known to support life. The Moon orbits Earth, and the Sun is our nearest star."
+  },
+  {
+    "id": "gk-multi-001",
+    "subject": "genknow",
+    "topic": "space",
+    "difficulty": 2,
+    "type": "multi-select",
+    "question": "Select ALL objects that are planets in our Solar System. 🚀",
+    "options": ["🌍 Earth", "🌕 Moon", "♂ Mars", "☀️ Sun"],
+    "answers": ["🌍 Earth", "♂ Mars"],
+    "explanation": "Earth and Mars are both planets in our Solar System. The Moon is Earth's natural satellite, and the Sun is our star — not a planet!"
   }
 ]

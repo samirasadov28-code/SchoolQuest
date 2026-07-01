@@ -38,7 +38,14 @@ function getTopicEmoji(topic) {
   return TOPIC_EMOJIS[topic] ?? TOPIC_EMOJIS.general
 }
 
-function getTimerForQuestion(q) { return q?.type === 'reading-passage' ? 90 : 60 }
+function getTimerForQuestion(q) {
+  if (q?.type === 'reading-passage') return 90
+  if (q?.type === 'type-in')        return 45
+  if (q?.type === 'scale')          return 35
+  if (q?.type === 'multi-select')   return 60
+  if (q?.type === 'picture')        return 40
+  return 60
+}
 
 export default function SessionPage() {
   const navigate    = useNavigate()
@@ -113,6 +120,12 @@ export default function SessionPage() {
   const [lastAnswerMs, setLastAnswerMs] = useState(null)
   const [paused,       setPaused]       = useState(false)
 
+  // New question-type state
+  const [selectedMulti, setSelectedMulti] = useState(new Set())
+  const [typeInValue,   setTypeInValue]   = useState('')
+  const [scaleValue,    setScaleValue]    = useState(50)
+  const [answerCorrect, setAnswerCorrect] = useState(false)
+
   // Start session immediately on mount
   useEffect(() => {
     clearSession()
@@ -143,7 +156,7 @@ export default function SessionPage() {
     clearInterval(qTimerRef.current)
     qTimerRef.current = setInterval(() => {
       setQuestionTimer(prev => {
-        if (prev <= 1) { clearInterval(qTimerRef.current); handleAnswer(null); return 0 }
+        if (prev <= 1) { clearInterval(qTimerRef.current); handleTimeout(); return 0 }
         return prev - 1
       })
     }, 1000)
@@ -177,22 +190,26 @@ export default function SessionPage() {
     setShuffledOptions(q.options ? [...q.options].sort(() => Math.random() - 0.5) : [])
     setSelected(null)
     setRevealed(false)
+    setAnswerCorrect(false)
     setEmiliaMood('thinking')
     setLearnMode(false)
     setLearnText('')
     setFeedbackMsg('')
+    setSelectedMulti(new Set())
+    setTypeInValue('')
+    if (q.type === 'scale') setScaleValue(Math.round((q.min + q.max) / 2))
     questionStartRef.current = Date.now()
   }
 
-  async function handleAnswer(choice) {
+  // Core answer-processing logic shared by all question types
+  async function processAnswer(isCorrect, displayChoice = null) {
     if (revealed) return
     clearInterval(qTimerRef.current)
     const msElapsed = Date.now() - questionStartRef.current
     setLastAnswerMs(msElapsed)
-
-    const isCorrect = choice === question.answer
-    setSelected(choice)
+    setSelected(displayChoice)
     setRevealed(true)
+    setAnswerCorrect(isCorrect)
 
     // Timing multiplier
     const secs = msElapsed / 1000
@@ -285,6 +302,39 @@ export default function SessionPage() {
         if (user) grantAchievement(user.id, badgeId).catch(() => {})
       }
     }
+  }
+
+  // Standard multiple-choice / picture wrapper
+  function handleAnswer(choice) { processAnswer(choice === question.answer, choice) }
+
+  // Multi-select: correct only if selection matches answers exactly
+  function handleMultiSubmit() {
+    const correctSet = new Set(question.answers ?? [])
+    const isCorrect = selectedMulti.size === correctSet.size && [...selectedMulti].every(s => correctSet.has(s))
+    processAnswer(isCorrect)
+  }
+
+  // Type-in: check against answer + variants, case-insensitive
+  function handleTypeInSubmit() {
+    if (!typeInValue.trim()) return
+    const variants = [question.answer, ...(question.answer_variants ?? [])].map(v => v.toLowerCase().trim())
+    const isCorrect = variants.includes(typeInValue.toLowerCase().trim())
+    processAnswer(isCorrect, typeInValue.trim())
+  }
+
+  // Scale: correct if within tolerance %
+  function handleScaleSubmit() {
+    const pct = question.answer === 0 ? 0 : Math.abs(scaleValue - question.answer) / Math.abs(question.answer) * 100
+    const isCorrect = pct <= (question.tolerance ?? 10)
+    processAnswer(isCorrect, String(scaleValue))
+  }
+
+  // Timeout handler — called when timer hits 0
+  function handleTimeout() {
+    if (question?.type === 'scale')        handleScaleSubmit()
+    else if (question?.type === 'type-in') processAnswer(false, typeInValue || '—')
+    else if (question?.type === 'multi-select') processAnswer(false)
+    else handleAnswer(null)
   }
 
   function handleNext() {
@@ -385,7 +435,7 @@ export default function SessionPage() {
     const topicClass = getTopicClass(introTopic.subject, introTopic.topic)
     const subj = SUBJECTS.find(s => s.id === introTopic.subject)
     return (
-      <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '32px 24px', gap: 20 }}>
+      <div className="bg-mythic" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '32px 24px 40px', gap: 20, overflowY: 'auto' }}>
         <button onClick={() => navigate('/home')} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left' }}>← Exit</button>
         <div style={{ textAlign: 'center' }}>
           <EmiliaCharacter mood="happy" size="md" showBubble={false} />
@@ -512,45 +562,168 @@ export default function SessionPage() {
           {question.question}
         </p>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-          {shuffledOptions.map((opt, i) => {
-            const letters = ['A', 'B', 'C', 'D']
-            let variant = ''
-            if (revealed) {
-              if (opt === question.answer) variant = 'correct'
-              else if (opt === selected)   variant = 'incorrect'
-            }
-            return (
-              <button
-                key={opt}
-                className={`answer-option ${variant}`}
-                onClick={() => !revealed && handleAnswer(opt)}
-                disabled={revealed}
-                style={{ display: 'flex', alignItems: 'center', gap: 12, textAlign: 'left' }}
-              >
-                <span style={{ minWidth: 28, height: 28, borderRadius: '50%', background: revealed && opt === question.answer ? 'rgba(39,174,96,0.4)' : revealed && opt === selected ? 'rgba(192,57,43,0.4)' : 'rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.8rem', flexShrink: 0 }}>
-                  {revealed && opt === question.answer ? '✅' : revealed && opt === selected && opt !== question.answer ? '❌' : letters[i]}
-                </span>
-                {opt}
+        {/* ── PICTURE: 2×2 emoji grid ── */}
+        {question.type === 'picture' && (
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+            {shuffledOptions.map(opt => {
+              let border = '2px solid rgba(255,255,255,0.15)'
+              let bg = 'rgba(255,255,255,0.06)'
+              if (revealed) {
+                if (opt === question.answer) { border = '2px solid var(--color-emerald)'; bg = 'rgba(39,174,96,0.2)' }
+                else if (opt === selected)   { border = '2px solid var(--color-crimson)';  bg = 'rgba(192,57,43,0.2)' }
+              }
+              return (
+                <button key={opt} onClick={() => !revealed && handleAnswer(opt)} disabled={revealed}
+                  style={{ background: bg, border, borderRadius: 14, padding: '16px 8px', textAlign: 'center', cursor: revealed ? 'default' : 'pointer', transition: 'all 0.15s' }}>
+                  <div style={{ fontSize: '2.2rem', marginBottom: 6, lineHeight: 1 }}>{opt.split(' ')[0]}</div>
+                  <div style={{ color: 'var(--color-parchment)', fontSize: '0.78rem', fontWeight: 700 }}>{opt.split(' ').slice(1).join(' ')}</div>
+                  {revealed && opt === question.answer && <div style={{ fontSize: '1.2rem', marginTop: 4 }}>✅</div>}
+                  {revealed && opt === selected && opt !== question.answer && <div style={{ fontSize: '1.2rem', marginTop: 4 }}>❌</div>}
+                </button>
+              )
+            })}
+          </div>
+        )}
+
+        {/* ── MULTI-SELECT: checkboxes ── */}
+        {question.type === 'multi-select' && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <p style={{ color: 'var(--color-gold)', fontSize: '0.78rem', fontWeight: 800, textAlign: 'center', marginBottom: 4 }}>
+              ☑️ Select ALL correct answers
+            </p>
+            {shuffledOptions.map(opt => {
+              const isSelected = selectedMulti.has(opt)
+              const isCorrectOpt = revealed && (question.answers ?? []).includes(opt)
+              const isWrongSel   = revealed && isSelected && !isCorrectOpt
+              const isMissed     = revealed && !isSelected && isCorrectOpt
+              let bg = isSelected ? 'rgba(201,162,39,0.2)' : 'rgba(255,255,255,0.06)'
+              let border = isSelected ? '2px solid var(--color-gold)' : '2px solid rgba(255,255,255,0.15)'
+              if (revealed) {
+                if (isCorrectOpt) { bg = 'rgba(39,174,96,0.2)'; border = '2px solid var(--color-emerald)' }
+                if (isWrongSel)   { bg = 'rgba(192,57,43,0.2)'; border = '2px solid var(--color-crimson)' }
+                if (isMissed)     { bg = 'rgba(201,162,39,0.15)'; border = '2px dashed var(--color-gold)' }
+              }
+              return (
+                <button key={opt} disabled={revealed}
+                  onClick={() => { if (!revealed) setSelectedMulti(prev => { const n = new Set(prev); n.has(opt) ? n.delete(opt) : n.add(opt); return n }) }}
+                  style={{ display: 'flex', alignItems: 'center', gap: 12, background: bg, border, borderRadius: 12, padding: '12px 16px', textAlign: 'left', cursor: revealed ? 'default' : 'pointer', transition: 'all 0.15s' }}>
+                  <span style={{ width: 22, height: 22, borderRadius: 6, border: isSelected && !revealed ? '2px solid var(--color-gold)' : '2px solid rgba(255,255,255,0.3)', background: isSelected ? 'var(--color-gold)' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', flexShrink: 0, transition: 'all 0.15s' }}>
+                    {isSelected && !revealed ? '✓' : revealed && isCorrectOpt ? '✅' : revealed && isWrongSel ? '❌' : revealed && isMissed ? '💡' : ''}
+                  </span>
+                  <span style={{ color: 'var(--color-parchment)', fontSize: '0.95rem' }}>{opt}</span>
+                </button>
+              )
+            })}
+            {!revealed && (
+              <button className="btn-primary" style={{ marginTop: 6 }}
+                onClick={handleMultiSubmit} disabled={selectedMulti.size === 0}>
+                Check Answers ✔
               </button>
-            )
-          })}
-        </div>
+            )}
+          </div>
+        )}
+
+        {/* ── TYPE-IN: text input ── */}
+        {question.type === 'type-in' && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <input
+              type="text"
+              value={typeInValue}
+              onChange={e => !revealed && setTypeInValue(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && !revealed && typeInValue.trim() && handleTypeInSubmit()}
+              placeholder="Type your answer here..."
+              disabled={revealed}
+              autoFocus
+              style={{ width: '100%', background: 'rgba(255,255,255,0.08)', border: `2px solid ${revealed ? (answerCorrect ? 'var(--color-emerald)' : 'var(--color-crimson)') : 'rgba(201,162,39,0.5)'}`, borderRadius: 12, padding: '14px 18px', color: 'var(--color-parchment)', fontSize: '1.1rem', fontFamily: 'var(--font-body)', outline: 'none', boxSizing: 'border-box', textAlign: 'center' }}
+            />
+            {revealed && !answerCorrect && (
+              <p style={{ color: 'var(--color-gold)', textAlign: 'center', fontSize: '0.9rem' }}>
+                ✨ Correct answer: <strong>{question.answer}</strong>
+              </p>
+            )}
+            {!revealed && (
+              <button className="btn-primary" onClick={handleTypeInSubmit} disabled={!typeInValue.trim()}>
+                Submit Answer 📝
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* ── SCALE: slider ── */}
+        {question.type === 'scale' && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div style={{ textAlign: 'center', fontSize: '2rem', fontWeight: 800, color: 'var(--color-gold)', fontFamily: 'var(--font-title)' }}>
+              {scaleValue}{question.unit ? ' ' + question.unit : ''}
+            </div>
+            <input type="range" min={question.min} max={question.max} step={question.step ?? 1}
+              value={scaleValue} onChange={e => !revealed && setScaleValue(Number(e.target.value))}
+              disabled={revealed}
+              style={{ width: '100%', accentColor: 'var(--color-gold)', height: 6, cursor: revealed ? 'default' : 'pointer' }}
+            />
+            <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--color-stone-light)', fontSize: '0.75rem' }}>
+              <span>{question.min}{question.unit ? ' ' + question.unit : ''}</span>
+              <span>{question.max}{question.unit ? ' ' + question.unit : ''}</span>
+            </div>
+            {revealed && (
+              <div style={{ textAlign: 'center', padding: '10px', background: 'rgba(255,255,255,0.06)', borderRadius: 10 }}>
+                <p style={{ color: 'var(--color-stone-light)', fontSize: '0.82rem', marginBottom: 4 }}>
+                  Your answer: <strong style={{ color: answerCorrect ? '#5dde8b' : '#ff8a8a' }}>{scaleValue}{question.unit ? ' ' + question.unit : ''}</strong>
+                </p>
+                <p style={{ color: 'var(--color-gold)', fontSize: '0.82rem' }}>
+                  Correct answer: <strong>{question.answer}{question.unit ? ' ' + question.unit : ''}</strong>
+                </p>
+              </div>
+            )}
+            {!revealed && (
+              <button className="btn-primary" onClick={handleScaleSubmit}>
+                Lock In Answer 🎯
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* ── STANDARD MC (default + reading-passage) ── */}
+        {(!question.type || question.type === 'multiple-choice' || question.type === 'reading-passage') && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {shuffledOptions.map((opt, i) => {
+              const letters = ['A', 'B', 'C', 'D', 'E']
+              let variant = ''
+              if (revealed) {
+                if (opt === question.answer) variant = 'correct'
+                else if (opt === selected)   variant = 'incorrect'
+              }
+              return (
+                <button
+                  key={opt}
+                  className={`answer-option ${variant}`}
+                  onClick={() => !revealed && handleAnswer(opt)}
+                  disabled={revealed}
+                  style={{ display: 'flex', alignItems: 'center', gap: 12, textAlign: 'left' }}
+                >
+                  <span style={{ minWidth: 28, height: 28, borderRadius: '50%', background: revealed && opt === question.answer ? 'rgba(39,174,96,0.4)' : revealed && opt === selected ? 'rgba(192,57,43,0.4)' : 'rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.8rem', flexShrink: 0 }}>
+                    {revealed && opt === question.answer ? '✅' : revealed && opt === selected && opt !== question.answer ? '❌' : letters[i]}
+                  </span>
+                  {opt}
+                </button>
+              )
+            })}
+          </div>
+        )}
       </div>
 
       {/* Feedback / explanation after answer */}
       {revealed && (
         <div>
           {/* Star burst on correct */}
-          {selected === question.answer && (
+          {answerCorrect && (
             <div style={{ textAlign: 'center', fontSize: '2rem', marginBottom: 8, animation: 'bounceIn 0.4s ease' }}>
               {'⭐'.repeat(Math.min(3, Math.ceil(lastXpGain / 10)))}
             </div>
           )}
-          <div style={{ background: selected === question.answer ? 'rgba(39,174,96,0.15)' : 'rgba(192,57,43,0.15)', border: `2px solid ${selected === question.answer ? 'var(--color-emerald)' : 'var(--color-crimson)'}`, borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 12 }}>
+          <div style={{ background: answerCorrect ? 'rgba(39,174,96,0.15)' : 'rgba(192,57,43,0.15)', border: `2px solid ${answerCorrect ? 'var(--color-emerald)' : 'var(--color-crimson)'}`, borderRadius: 'var(--radius-md)', padding: '12px 16px', marginBottom: 12 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
-              <p style={{ fontWeight: 800, color: selected === question.answer ? '#5dde8b' : '#ff8a8a', fontSize: '1rem' }}>
-                {selected === question.answer ? `🎉 Brilliant! +${lastXpGain} XP` : '💪 Not quite — keep going!'}
+              <p style={{ fontWeight: 800, color: answerCorrect ? '#5dde8b' : '#ff8a8a', fontSize: '1rem' }}>
+                {answerCorrect ? `🎉 Brilliant! +${lastXpGain} XP` : '💪 Not quite — keep going!'}
               </p>
               {lastAnswerMs != null && (
                 <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem', opacity: 0.6 }}>

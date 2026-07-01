@@ -8814,5 +8814,67 @@
     ],
     "answer": "Continents",
     "explanation": "The seven biggest pieces of land on Earth are called continents."
+  },
+  {
+    "id": "geo-typein-001",
+    "subject": "geography",
+    "topic": "ireland",
+    "difficulty": 1,
+    "type": "type-in",
+    "question": "What is the capital city of Ireland? Type your answer.",
+    "answer": "Dublin",
+    "answer_variants": ["dublin", "Dublin", "baile átha cliath", "baile atha cliath"],
+    "explanation": "Dublin (Baile Átha Cliath in Irish) is the capital and largest city of Ireland, located on the east coast."
+  },
+  {
+    "id": "geo-typein-002",
+    "subject": "geography",
+    "topic": "continents-oceans",
+    "difficulty": 2,
+    "type": "type-in",
+    "question": "How many continents are there on Earth? Type the number.",
+    "answer": "7",
+    "explanation": "There are 7 continents: Africa, Antarctica, Asia, Australia/Oceania, Europe, North America and South America."
+  },
+  {
+    "id": "geo-scale-001",
+    "subject": "geography",
+    "topic": "ireland",
+    "difficulty": 2,
+    "type": "scale",
+    "question": "Ireland has how many counties in total? Slide to your answer!",
+    "answer": 32,
+    "min": 10,
+    "max": 60,
+    "step": 1,
+    "unit": "counties",
+    "tolerance": 3,
+    "explanation": "Ireland has 32 counties in total — 26 in the Republic of Ireland and 6 in Northern Ireland (part of the UK)."
+  },
+  {
+    "id": "geo-scale-002",
+    "subject": "geography",
+    "topic": "rivers-mountains",
+    "difficulty": 3,
+    "type": "scale",
+    "question": "The River Shannon is approximately how many kilometres long? Slide to guess!",
+    "answer": 360,
+    "min": 50,
+    "max": 800,
+    "step": 5,
+    "unit": "km",
+    "tolerance": 10,
+    "explanation": "The River Shannon is approximately 360 km long, making it the longest river in Ireland and the British Isles."
+  },
+  {
+    "id": "geo-pic-001",
+    "subject": "geography",
+    "topic": "continents-oceans",
+    "difficulty": 1,
+    "type": "picture",
+    "question": "Which globe emoji shows Africa and Europe? 🌍🌎🌏",
+    "options": ["🌎 The Americas", "🌍 Africa & Europe", "🌏 Asia & Oceania", "🌐 All continents"],
+    "answer": "🌍 Africa & Europe",
+    "explanation": "🌍 shows Africa and Europe. 🌎 shows the Americas. 🌏 shows Asia and Australia/Oceania."
   }
 ]
