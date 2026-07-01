@@ -77,13 +77,13 @@ export default function RewardsPage() {
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginBottom: 14 }}>
             🏅 {achievements.length}/{BADGES.length} badges earned — tap to see details!
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8, paddingBottom: 8 }}>
             {BADGES.map(badge => {
               const earned  = achievements.includes(badge.id)
               const imgSrc  = badge.img ? BADGE_IMAGES[`../assets/badges/${badge.img}.png`] : null
               return (
                 <div key={badge.id} onClick={() => setExpandedBadge(earned ? badge : null)}
-                  style={{ background: earned ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.2)', borderRadius: 12, padding: '10px 6px', textAlign: 'center', border: `2px solid ${earned ? RARITY_COLORS[badge.rarity] : 'rgba(255,255,255,0.06)'}`, opacity: earned ? 1 : 0.45, cursor: earned ? 'pointer' : 'default' }}>
+                  style={{ background: earned ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.15)', borderRadius: 12, padding: '10px 6px', textAlign: 'center', border: `2px solid ${earned ? RARITY_COLORS[badge.rarity] : 'rgba(255,255,255,0.08)'}`, opacity: earned ? 1 : 0.5, cursor: earned ? 'pointer' : 'default' }}>
                   <div style={{ height: 44, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 4 }}>
                     {earned && imgSrc
                       ? <img src={imgSrc} alt={badge.name} style={{ height: 42, width: 42, objectFit: 'contain' }} />

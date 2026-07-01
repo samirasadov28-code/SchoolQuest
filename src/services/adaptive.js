@@ -124,8 +124,13 @@ export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubje
   }
   const freshTopicKeys = Object.keys(freshTopicMap)
   if (freshTopicKeys.length > 0) {
-    const chosenKey = freshTopicKeys[Math.floor(Math.random() * freshTopicKeys.length)]
-    return freshTopicMap[chosenKey][Math.floor(Math.random() * freshTopicMap[chosenKey].length)]
+    // Apply subject boost so English/Maths/Irish get picked more often even in drill mode
+    const weighted = freshTopicKeys.map(k => ({ k, w: SUBJECT_BOOST[k.split('::')[0]] ?? 1.0 }))
+    const total = weighted.reduce((s, t) => s + t.w, 0)
+    let rand = Math.random() * total
+    for (const { k, w } of weighted) { rand -= w; if (rand <= 0) { const qs = freshTopicMap[k]; return qs[Math.floor(Math.random() * qs.length)] } }
+    const fallback = freshTopicKeys[freshTopicKeys.length - 1]
+    return freshTopicMap[fallback][Math.floor(Math.random() * freshTopicMap[fallback].length)]
   }
 
   // All topics seen — fall back to topic-fair adaptive
