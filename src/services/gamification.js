@@ -361,22 +361,49 @@ export function countMasteredSubjects(masteryMap, threshold = 85) {
  * Irish mythology region unlocked per subject mastery level
  */
 export const MYTHOLOGY_REGIONS = [
-  { id: 'hill-of-tara',   subject: 'english',   name: 'Hill of Tara',     unlockAt: 50, emoji: '🏔️',
-    legend: 'The ancient seat of Ireland\'s High Kings! Legend says the Lia Fáil — the Stone of Destiny — screams aloud when the true king stands upon it. You have mastered the English language, worthy scholar!' },
-  { id: 'river-boyne',    subject: 'history',   name: 'River Boyne',      unlockAt: 50, emoji: '🌊',
-    legend: 'Along these sacred banks, the great warrior Fionn Mac Cumhaill caught the Salmon of Knowledge and gained all the wisdom in the world with a single taste. Your history knowledge flows as deep as this mighty river!' },
-  { id: 'burren',         subject: 'science',   name: 'The Burren',       unlockAt: 50, emoji: '🪨',
-    legend: 'This magical limestone landscape was shaped over 350 million years! Arctic flowers grow beside Mediterranean plants here — a living science experiment. You have unlocked the secrets of the natural world!' },
-  { id: 'wicklow-mtns',   subject: 'geography', name: 'Wicklow Mountains', unlockAt: 50, emoji: '⛰️',
-    legend: 'The Garden of Ireland! These ancient mountains hide the Vale of Avoca and Glendalough — a valley of two lakes where Saint Kevin lived as a hermit for seven years. Your knowledge spans the whole island!' },
-  { id: 'cliffs-moher',   subject: 'maths',     name: 'Cliffs of Moher',  unlockAt: 50, emoji: '🌅',
-    legend: 'Standing 214 metres above the wild Atlantic Ocean — as tall as 70 double-decker buses! The druids used the stars and numbers to track the seasons from cliffs like these. Your maths skills are rock solid!' },
-  { id: 'connemara',      subject: 'irish',     name: 'Connemara',        unlockAt: 50, emoji: '🌿',
-    legend: 'Caite i gConamara, tír na Gaeilge! This wild and beautiful land is a stronghold of the Irish language. The mountains, bogs, and lakes here whisper in Irish. Tá Gaeilge mhaith agat — you speak the tongue of our ancestors!' },
-  { id: 'newgrange',      subject: 'genknow',   name: 'Newgrange',        unlockAt: 50, emoji: '🌀',
-    legend: 'Older than Stonehenge and the Pyramids of Egypt, Newgrange was built 5,200 years ago! Every winter solstice, a single beam of sunlight enters the chamber and lights it up at dawn. Your general knowledge rivals the ancient druids!' },
-  { id: 'ring-of-kerry',  subject: 'sphe',      name: 'Ring of Kerry',    unlockAt: 50, emoji: '💚',
-    legend: 'A circle of kindness and community! The people of Kerry are famous for their warm welcome — the Irish tradition of "meitheal" means neighbours helping neighbours. Your understanding of people and wellbeing shines like the Kerry sunset!' },
-  { id: 'skellig-michael',subject: 'ethics',    name: 'Skellig Michael',  unlockAt: 50, emoji: '🦅',
-    legend: 'A tiny island rising from the stormy Atlantic, home to brave monks who copied manuscripts by hand and kept learning alive during the Dark Ages. Their courage to do what is right still echoes here. Your ethical thinking is as strong as these ancient stone walls!' },
+  {
+    id: 'hill-of-tara', subject: 'english', name: 'Hill of Tara', unlockAt: 50, emoji: '🏔️',
+    storyTitle: 'The Stone of Destiny Roars!',
+    legend: 'Long ago, Ireland\'s High Kings were crowned atop this sacred hill. At its heart stands the Lia Fáil — the magical Stone of Destiny. Legend says it roared like thunder when the true king touched it, so loud it could be heard across all of Ireland! The druids believed that words held the greatest power of all, and only those who mastered language could speak the ancient spells. You have proven your command of words — the Lia Fáil would roar for you! 🦁',
+  },
+  {
+    id: 'river-boyne', subject: 'history', name: 'River Boyne', unlockAt: 50, emoji: '🌊',
+    storyTitle: 'Fionn and the Salmon of Knowledge',
+    legend: 'A young boy named Fionn Mac Cumhaill was cooking a magical salmon for his druid teacher when a drop of its fat landed on his thumb. He sucked his thumb — and in an instant, knew everything that had ever happened in all of history! The salmon had eaten nine hazelnuts that fell from the Tree of Knowledge. From that day on, whenever Fionn needed wisdom, he only had to suck his thumb. Your history knowledge now flows as deep and wide as this mighty, magical river! 🐟',
+  },
+  {
+    id: 'burren', subject: 'science', name: 'The Burren', unlockAt: 50, emoji: '🪨',
+    storyTitle: 'Where Arctic Meets Mediterranean',
+    legend: 'The Burren is Ireland\'s most magical science experiment! This vast limestone plateau was carved by glaciers 10,000 years ago, and here something extraordinary happens — Arctic plants like mountain avens grow right beside Mediterranean orchids, side by side! Scientists came from all over the world to discover why. The answer lies underground: warm water flows through hidden caves keeping the soil just right. Nature found a way. Just like a great scientist, you have learned to look closely and ask WHY! 🌸',
+  },
+  {
+    id: 'wicklow-mtns', subject: 'geography', name: 'Wicklow Mountains', unlockAt: 50, emoji: '⛰️',
+    storyTitle: 'Saint Kevin and the Blackbird',
+    legend: 'Long ago, a monk named Kevin climbed into these mountains to pray in solitude. One spring morning as he stretched out his arms, a blackbird landed in his open palm and began to build a nest! Kevin was so gentle and kind that he held his hand perfectly still for weeks, until the eggs hatched and the chicks flew away. The valley he found — Glendalough, the Valley of Two Lakes — became one of Ireland\'s most beautiful places. You have mapped this land as surely as Kevin mapped his own heart! 🐦',
+  },
+  {
+    id: 'cliffs-moher', subject: 'maths', name: 'Cliffs of Moher', unlockAt: 50, emoji: '🌅',
+    storyTitle: 'The Druid Who Counted the Stars',
+    legend: 'Standing 214 metres tall — as high as 70 double-decker buses stacked up! The ancient druids stood on cliffs just like these and used maths to count the stars, predict eclipses, and calculate the exact moment of midsummer sunrise. Without calculators or phones, they were so precise that Newgrange was built to catch a single beam of sunlight on the winter solstice — and it still works perfectly, 5,200 years later! Maths was the original magic. And you have mastered it! 🌠',
+  },
+  {
+    id: 'connemara', subject: 'irish', name: 'Connemara', unlockAt: 50, emoji: '🌿',
+    storyTitle: 'Tír na nÓg — Land of the Young',
+    legend: 'Deep in the wild bogs and mountains of Connemara, the old stories say there is a secret path to Tír na nÓg — the magical Land of the Young where nobody ever grows old. The warrior Oisín rode there on a white horse across the sea with Niamh of the Golden Hair. The language of Connemara is Irish — Gaeilge — the same ancient tongue the fairy people spoke. Tá an Ghaeilge beo i gConamara fós — Irish is still alive in Connemara! Maith thú — well done! ☘️',
+  },
+  {
+    id: 'newgrange', subject: 'genknow', name: 'Newgrange', unlockAt: 50, emoji: '🌀',
+    storyTitle: 'Older Than the Pyramids',
+    legend: 'Imagine building a house 5,200 years ago with no machines, no trucks, no computers! That\'s exactly what the people of ancient Ireland did when they constructed Newgrange — 200,000 tonnes of stone, perfectly built so that on the shortest day of the year, a single beam of winter sunlight travels 19 metres down the passage and lights up the chamber like a lamp. Archaeologists, historians, and astronomers are STILL discovering its secrets. Curiosity and knowledge are the greatest treasures of all — and you are full of both! 🌞',
+  },
+  {
+    id: 'ring-of-kerry', subject: 'sphe', name: 'Ring of Kerry', unlockAt: 50, emoji: '💚',
+    storyTitle: 'The Tradition of Meitheal',
+    legend: 'In the old days along the Ring of Kerry, when a farmer needed to build a new home or harvest crops, all the neighbours would come together — nobody asked to be paid, nobody waited to be invited. This tradition was called "meitheal" (pronounced meh-hal), the spirit of working together. The sea, the mountains, the puffin colonies — everything in Kerry thrives because it works in harmony. Wellbeing isn\'t just about yourself; it\'s about the whole community around you. You understand this in your heart! 🤝',
+  },
+  {
+    id: 'skellig-michael', subject: 'ethics', name: 'Skellig Michael', unlockAt: 50, emoji: '🦅',
+    storyTitle: 'The Monks Who Saved Knowledge',
+    legend: 'Picture 12 brave monks climbing to the very top of a rocky spike in the wild Atlantic, 600 steps carved by hand, to build a tiny monastery. For 600 years, while wars swept through Europe, these monks copied manuscripts by candlelight — every book of knowledge they could find — so that the wisdom of the world would never be lost. They did what was right, not what was easy. Because of their courage and sense of justice, libraries exist today. Your ethical thinking is as brave and as lasting as those ancient stone walls! ✨',
+  },
 ]

@@ -157,9 +157,14 @@ export default function MapPage() {
                     <div style={{ width: `${score}%`, height: '100%', background: unlocked ? selected.color : 'rgba(255,255,255,0.2)', borderRadius: 20, transition: 'width 0.6s' }} />
                   </div>
                   {unlocked && region.legend && (
-                    <div style={{ background: `${selected.color}18`, borderRadius: 8, padding: '8px 10px', marginTop: 8, border: `1px solid ${selected.color}33` }}>
-                      <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.7rem', marginBottom: 4 }}>🏺 Ancient Legend Unlocked!</p>
-                      <p style={{ color: 'var(--color-parchment)', fontSize: '0.72rem', lineHeight: 1.5 }}>{region.legend}</p>
+                    <div style={{ background: `${selected.color}18`, borderRadius: 10, padding: '12px 14px', marginTop: 10, border: `1px solid ${selected.color}44` }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>
+                        <span style={{ fontSize: '1rem' }}>🏺</span>
+                        <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.78rem' }}>
+                          {region.storyTitle ?? 'Ancient Legend Unlocked!'}
+                        </p>
+                      </div>
+                      <p style={{ color: 'var(--color-parchment)', fontSize: '0.75rem', lineHeight: 1.65 }}>{region.legend}</p>
                     </div>
                   )}
                   {!unlocked && (

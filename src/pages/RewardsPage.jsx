@@ -49,7 +49,7 @@ export default function RewardsPage() {
       {activeTab === 0 && (
         <section>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginBottom: 14 }}>
-            🦄 Collect all 6 magical unicorn scenes — {DIGITAL_PRIZES.filter(p => xp >= p.xpRequired).length}/{DIGITAL_PRIZES.length} unlocked!
+            🦄 Collect all {DIGITAL_PRIZES.length} magical story cards — {DIGITAL_PRIZES.filter(p => xp >= p.xpRequired).length}/{DIGITAL_PRIZES.length} unlocked!
           </p>
           <PrizeGrid prizes={DIGITAL_PRIZES} xp={xp} onExpand={setExpandedPrize} />
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 28 }}>
