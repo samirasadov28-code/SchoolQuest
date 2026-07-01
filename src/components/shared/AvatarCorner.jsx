@@ -5,7 +5,7 @@ import { ART } from '../../data/avatars'
 export default function AvatarCorner() {
   const navigate       = useNavigate()
   const selectedAvatar = useStore(s => s.selectedAvatar)
-  const portrait       = ART[selectedAvatar]?.portrait ?? ART.swimmer.portrait
+  const portrait       = ART[selectedAvatar]?.portrait ?? ART.explorer.portrait
 
   return (
     <button

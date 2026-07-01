@@ -151,7 +151,7 @@ const useStore = create(
         set(state => ({ generatedQuestions: [...state.generatedQuestions, ...qs] })),
 
       // ── Avatar ───────────────────────────────────────────────────
-      selectedAvatar: 'swimmer',
+      selectedAvatar: 'explorer',
       setSelectedAvatar: (id) => set({ selectedAvatar: id }),
 
       // ── Pets ─────────────────────────────────────────────────────

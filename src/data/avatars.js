@@ -1,7 +1,7 @@
 // Avatar style definitions
 export const AVATAR_STYLES = [
-  { id: 'swimmer',     name: 'Ocean Explorer',  emoji: '🏊',  unlockLevel: 1,  description: 'Ready to dive in!' },
-  { id: 'explorer',    name: 'Adventure Scout', emoji: '🎩',  unlockLevel: 15, description: 'Hat on, quest on!' },
+  { id: 'explorer',    name: 'Adventure Scout', emoji: '🎩',  unlockLevel: 1,  description: 'Hat on, quest on!' },
+  { id: 'swimmer',     name: 'Ocean Explorer',  emoji: '🏊',  unlockLevel: 15, description: 'Ready to dive in!' },
   { id: 'traditional', name: 'Island Princess', emoji: '🌺',  unlockLevel: 30, description: 'Ancient wisdom!' },
   { id: 'skater',      name: 'Skate Star',      emoji: '🛼',  unlockLevel: 45, description: 'Rolling to victory!' },
 ]
