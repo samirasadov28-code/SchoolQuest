@@ -48,7 +48,8 @@ export default function SessionPage() {
   const sessionSeenIds    = useStore(s => s.sessionSeenIds)
   const sessionSubjects   = useStore(s => s.sessionSubjects)
   const consecutiveWrong  = useStore(s => s.consecutiveWrong)
-  const addSeenQuestion   = useStore(s => s.addSeenQuestion)
+  const addSeenQuestion        = useStore(s => s.addSeenQuestion)
+  const incrementQuestionsSeen = useStore(s => s.incrementQuestionsSeen)
   const incrementWrong    = useStore(s => s.incrementWrong)
   const resetWrong        = useStore(s => s.resetWrong)
   const addSessionXP      = useStore(s => s.addSessionXP)
@@ -235,11 +236,13 @@ export default function SessionPage() {
       const newStreak = correctStreak + 1
       setCorrectStreak(newStreak)
       addSeenQuestion(question.id, question.subject)
+      incrementQuestionsSeen(question.subject, question.topic)
     } else {
       incrementWrong()
       setCorrectStreak(0)
       setEmiliaMood(consecutiveWrong + 1 >= 2 ? 'frustrated' : 'wrong')
       addSeenQuestion(question.id, question.subject)
+      incrementQuestionsSeen(question.subject, question.topic)
 
       if (shouldTriggerLearnMode(newScore, consecutiveWrong + 1)) {
         setLearnMode(true)

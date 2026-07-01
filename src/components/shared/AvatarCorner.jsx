@@ -16,18 +16,27 @@ export default function AvatarCorner() {
         cursor: 'pointer', flexShrink: 0,
       }}
     >
-      <img
-        src={portrait}
-        alt="Avatar"
-        width={40}
-        height={40}
-        style={{
-          borderRadius: '50%',
-          objectFit: 'cover',
-          border: '2px solid #ffd700',
-          display: 'block',
-        }}
-      />
+      <div style={{
+        width: 44, height: 44,
+        borderRadius: '50%',
+        background: 'linear-gradient(135deg, rgba(201,162,39,0.25) 0%, rgba(100,60,180,0.25) 100%)',
+        border: '2px solid rgba(201,162,39,0.6)',
+        boxShadow: '0 0 10px rgba(201,162,39,0.3)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        overflow: 'hidden',
+      }}>
+        <img
+          src={portrait}
+          alt="Avatar"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            objectPosition: 'center bottom',
+            display: 'block',
+          }}
+        />
+      </div>
     </button>
   )
 }
