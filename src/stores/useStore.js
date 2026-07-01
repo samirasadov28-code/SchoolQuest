@@ -60,6 +60,20 @@ const useStore = create(
           },
         })),
 
+      // ── Questions correct map: { subject: { topic: count } } ──────
+      questionsCorrectMap: {},
+
+      incrementQuestionsCorrect: (subject, topic) =>
+        set(state => ({
+          questionsCorrectMap: {
+            ...state.questionsCorrectMap,
+            [subject]: {
+              ...state.questionsCorrectMap[subject],
+              [topic]: (state.questionsCorrectMap[subject]?.[topic] ?? 0) + 1,
+            },
+          },
+        })),
+
       // ── XP & Level ───────────────────────────────
       xp:    0,
       level: 1,
@@ -269,7 +283,8 @@ const useStore = create(
         activePetId:       state.activePetId,
         pets:              state.pets,
         selectedAvatar:    state.selectedAvatar,
-        questionsSeenMap:  state.questionsSeenMap,
+        questionsSeenMap:   state.questionsSeenMap,
+        questionsCorrectMap: state.questionsCorrectMap,
       }),
     }
   )

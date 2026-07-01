@@ -13,8 +13,9 @@ export default function ParentPage() {
   const xp            = useStore(s => s.xp)
   const level         = useStore(s => s.level)
   const streak        = useStore(s => s.streak)
-  const masteryMap        = useStore(s => s.masteryMap)
-  const questionsSeenMap  = useStore(s => s.questionsSeenMap)
+  const masteryMap          = useStore(s => s.masteryMap)
+  const questionsSeenMap    = useStore(s => s.questionsSeenMap)
+  const questionsCorrectMap = useStore(s => s.questionsCorrectMap)
   const todaySeconds  = useStore(s => s.todaySeconds)
   const achievements  = useStore(s => s.achievements)
   const prizes        = useStore(s => s.prizes)
@@ -159,8 +160,11 @@ export default function ParentPage() {
           {SUBJECTS.map(subj => {
             const subjQuestions = QUESTION_BANK.filter(q => q.subject === subj.id)
             const totalQ  = subjQuestions.length
-            const seenMap = questionsSeenMap[subj.id] ?? {}
-            const answered = Object.values(seenMap).reduce((s, n) => s + n, 0)
+            const seenMap    = questionsSeenMap[subj.id] ?? {}
+            const correctMap = questionsCorrectMap?.[subj.id] ?? {}
+            const answered   = Object.values(seenMap).reduce((s, n) => s + n, 0)
+            const correct    = Object.values(correctMap).reduce((s, n) => s + n, 0)
+            const correctPct = answered ? Math.round(correct / answered * 100) : 0
             const barPct  = totalQ ? Math.min(100, Math.round(answered / totalQ * 100)) : 0
             const barColor = barPct >= 50 ? 'var(--color-emerald)' : barPct >= 15 ? 'var(--color-gold)' : 'rgba(255,255,255,0.25)'
             const mastery  = Math.round(subjectAvgs[subj.id] ?? 0)
@@ -187,8 +191,8 @@ export default function ParentPage() {
                     <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
                       {[
                         { label: 'Answered',  value: `${answered}/${totalQ}` },
+                        { label: '% Correct', value: answered ? `${correctPct}%` : '—' },
                         { label: 'Mastery',   value: `${mastery}%` },
-                        { label: 'Coverage',  value: `${barPct}%` },
                       ].map(m => (
                         <div key={m.label} style={{ flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: 8, padding: '5px 6px', textAlign: 'center' }}>
                           <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.8rem' }}>{m.value}</p>
@@ -199,18 +203,21 @@ export default function ParentPage() {
                     {/* Per-topic breakdown */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                       {allTopics.map(topic => {
-                        const topicTotal   = subjQuestions.filter(q => q.topic === topic).length
+                        const topicTotal    = subjQuestions.filter(q => q.topic === topic).length
                         const topicAnswered = seenMap[topic] ?? 0
-                        const tPct  = topicTotal ? Math.min(100, Math.round(topicAnswered / topicTotal * 100)) : 0
-                        const tColor = topicAnswered === 0 ? 'rgba(255,255,255,0.2)' : tPct >= 50 ? 'var(--color-emerald)' : 'var(--color-gold)'
+                        const topicCorrect  = correctMap[topic] ?? 0
+                        const tPct    = topicTotal ? Math.min(100, Math.round(topicAnswered / topicTotal * 100)) : 0
+                        const tCorPct = topicAnswered ? Math.round(topicCorrect / topicAnswered * 100) : null
+                        const tColor  = topicAnswered === 0 ? 'rgba(255,255,255,0.2)' : tPct >= 50 ? 'var(--color-emerald)' : 'var(--color-gold)'
                         return (
                           <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                             <span style={{ fontSize: '0.6rem', color: topicAnswered > 0 ? 'var(--color-gold)' : 'rgba(255,255,255,0.2)' }}>{topicAnswered > 0 ? '●' : '○'}</span>
                             <span style={{ flex: 1, color: topicAnswered > 0 ? 'var(--color-stone-light)' : 'rgba(255,255,255,0.3)', fontSize: '0.73rem', textTransform: 'capitalize' }}>{topic.replace(/-/g, ' ')}</span>
-                            <div style={{ width: 60, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 4 }}>
+                            <div style={{ width: 50, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 4 }}>
                               <div style={{ width: `${tPct}%`, height: '100%', background: tColor, borderRadius: 20 }} />
                             </div>
-                            <span style={{ width: 44, color: tColor, fontSize: '0.7rem', fontWeight: 800, textAlign: 'right' }}>{topicAnswered}/{topicTotal}</span>
+                            <span style={{ width: 36, color: tColor, fontSize: '0.7rem', fontWeight: 800, textAlign: 'right' }}>{topicAnswered}/{topicTotal}</span>
+                            {tCorPct !== null && <span style={{ width: 32, color: tCorPct >= 60 ? 'var(--color-emerald)' : '#ffaa44', fontSize: '0.65rem', textAlign: 'right' }}>{tCorPct}%✓</span>}
                           </div>
                         )
                       })}

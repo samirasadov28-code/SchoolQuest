@@ -10,7 +10,7 @@ export const TOPIC_CLASS = {
     'place-value': 2, time: 2, money: 2,
     fractions: 3, measurement: 3, shapes: 3, data: 3, 'mental-maths': 3, 'word-problems': 3,
   },
-  irish: { greetings: 2, numbers: 2, colours: 2, animals: 3, family: 2, school: 2, food: 2, weather: 3, seasons: 3, body: 2 },
+  irish: { greetings: 2, numbers: 2, colours: 2, animals: 2, family: 2, school: 2, food: 2, weather: 2, seasons: 2, body: 2, vocabulary: 2, phrases: 2 },
   history: {
     'ancient-ireland': 2, celts: 2, 'irish-myths': 2, 'local-history': 2,
     vikings: 3, normans: 3, famine: 3, independence: 3, 'world-history': 3,

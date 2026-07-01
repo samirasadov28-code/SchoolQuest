@@ -38,7 +38,7 @@ export default function AvatarPage() {
         <img
           src={ART[selectedAvatar]?.portrait ?? ART.explorer.portrait}
           alt={activeStyle.name}
-          style={{ height: 160, objectFit: 'contain', display: 'block', margin: '0 auto' }}
+          style={{ height: 180, width: 'auto', objectFit: 'contain', display: 'block', margin: '0 auto' }}
         />
         <div style={{ fontWeight: 800, fontSize: '1.1rem', marginTop: 8 }}>{activeStyle.name}</div>
         <div style={{ fontSize: '0.8rem', opacity: 0.7 }}>{activeStyle.description}</div>
@@ -100,12 +100,12 @@ export default function AvatarPage() {
                 <div style={{ position: 'absolute', top: 8, left: 8, fontSize: '1rem' }}>🔒</div>
               )}
 
-              {/* Avatar image — no circle, no border, consistent height */}
-              <div style={{ height: 130, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', marginBottom: 10 }}>
+              {/* Avatar image — consistent height, auto width, no clipping */}
+              <div style={{ height: 150, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
                 <img
                   src={portrait}
                   alt={style.name}
-                  style={{ maxHeight: 130, maxWidth: '100%', objectFit: 'contain', display: 'block' }}
+                  style={{ height: '100%', width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }}
                 />
               </div>
 

@@ -5,6 +5,7 @@ import AvatarCorner from '../components/shared/AvatarCorner'
 import useStore from '../stores/useStore'
 import { MYTHOLOGY_REGIONS } from '../services/gamification'
 import { getSubjectAverages } from '../services/gamification'
+import irelandMap from '../assets/ireland-map.png'
 
 // Province groupings — each province on the Irish map holds certain subjects
 const PROVINCES = [
@@ -71,19 +72,61 @@ export default function MapPage() {
         Master subjects to unlock ancient Irish landmarks! Tap a province to explore.
       </p>
 
-      {/* Stylised Ireland province map */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: 'auto auto auto', gap: 8, marginBottom: 24, maxWidth: 340, margin: '0 auto 24px' }}>
-        {/* Ulster — top centre */}
-        <div style={{ gridRow: '1', gridColumn: '1 / span 2', display: 'flex', justifyContent: 'center' }}>
-          <ProvinceCard province={PROVINCES[0]} score={getProvinceScore(PROVINCES[0])} selected={selectedProvince === PROVINCES[0].id} onSelect={setSelectedProvince} />
-        </div>
-        {/* Connacht — left */}
-        <ProvinceCard province={PROVINCES[1]} score={getProvinceScore(PROVINCES[1])} selected={selectedProvince === PROVINCES[1].id} onSelect={setSelectedProvince} />
-        {/* Leinster — right */}
-        <ProvinceCard province={PROVINCES[2]} score={getProvinceScore(PROVINCES[2])} selected={selectedProvince === PROVINCES[2].id} onSelect={setSelectedProvince} />
-        {/* Munster — bottom spanning full */}
-        <div style={{ gridColumn: '1 / span 2' }}>
-          <ProvinceCard province={PROVINCES[3]} score={getProvinceScore(PROVINCES[3])} selected={selectedProvince === PROVINCES[3].id} onSelect={setSelectedProvince} wide />
+      {/* Ireland map image with province tap overlays */}
+      <div style={{ position: 'relative', maxWidth: 360, margin: '0 auto 20px', borderRadius: 16, overflow: 'hidden' }}>
+        <img src={irelandMap} alt="Map of Ireland" style={{ width: '100%', display: 'block', borderRadius: 16 }} />
+        {/* Province tap zones — positioned over approximate map regions */}
+        <div style={{ position: 'absolute', inset: 0 }}>
+          {/* Ulster — top 30% */}
+          <div onClick={() => setSelectedProvince(selectedProvince === 'ulster' ? null : 'ulster')}
+            style={{ position: 'absolute', top: '2%', left: '20%', right: '10%', height: '28%', cursor: 'pointer',
+              background: selectedProvince === 'ulster' ? 'rgba(74,144,217,0.25)' : 'transparent',
+              border: selectedProvince === 'ulster' ? '2px solid rgba(74,144,217,0.7)' : 'none',
+              borderRadius: 8, transition: 'all 0.2s', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {selectedProvince === 'ulster' && <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#4a90d9', background: 'rgba(0,0,0,0.6)', padding: '2px 8px', borderRadius: 8 }}>Ulster</span>}
+          </div>
+          {/* Connacht — left 25-70% */}
+          <div onClick={() => setSelectedProvince(selectedProvince === 'connacht' ? null : 'connacht')}
+            style={{ position: 'absolute', top: '28%', left: '3%', width: '38%', height: '38%', cursor: 'pointer',
+              background: selectedProvince === 'connacht' ? 'rgba(39,174,96,0.25)' : 'transparent',
+              border: selectedProvince === 'connacht' ? '2px solid rgba(39,174,96,0.7)' : 'none',
+              borderRadius: 8, transition: 'all 0.2s', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {selectedProvince === 'connacht' && <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#27ae60', background: 'rgba(0,0,0,0.6)', padding: '2px 8px', borderRadius: 8 }}>Connacht</span>}
+          </div>
+          {/* Leinster — right 28-68% */}
+          <div onClick={() => setSelectedProvince(selectedProvince === 'leinster' ? null : 'leinster')}
+            style={{ position: 'absolute', top: '28%', right: '5%', width: '45%', height: '40%', cursor: 'pointer',
+              background: selectedProvince === 'leinster' ? 'rgba(201,162,39,0.25)' : 'transparent',
+              border: selectedProvince === 'leinster' ? '2px solid rgba(201,162,39,0.7)' : 'none',
+              borderRadius: 8, transition: 'all 0.2s', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {selectedProvince === 'leinster' && <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#c9a227', background: 'rgba(0,0,0,0.6)', padding: '2px 8px', borderRadius: 8 }}>Leinster</span>}
+          </div>
+          {/* Munster — bottom 35% */}
+          <div onClick={() => setSelectedProvince(selectedProvince === 'munster' ? null : 'munster')}
+            style={{ position: 'absolute', bottom: '4%', left: '5%', right: '10%', height: '32%', cursor: 'pointer',
+              background: selectedProvince === 'munster' ? 'rgba(142,68,173,0.25)' : 'transparent',
+              border: selectedProvince === 'munster' ? '2px solid rgba(142,68,173,0.7)' : 'none',
+              borderRadius: 8, transition: 'all 0.2s', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {selectedProvince === 'munster' && <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#8e44ad', background: 'rgba(0,0,0,0.6)', padding: '2px 8px', borderRadius: 8 }}>Munster</span>}
+          </div>
+          {/* Province score badges — always visible */}
+          {PROVINCES.map(p => {
+            const score = getProvinceScore(p)
+            const positions = {
+              ulster: { top: '6%', left: '50%', transform: 'translateX(-50%)' },
+              connacht: { top: '40%', left: '8%' },
+              leinster: { top: '40%', right: '8%' },
+              munster: { bottom: '10%', left: '50%', transform: 'translateX(-50%)' },
+            }
+            return (
+              <div key={p.id} style={{ position: 'absolute', ...positions[p.id], pointerEvents: 'none' }}>
+                <div style={{ background: 'rgba(0,0,0,0.7)', borderRadius: 20, padding: '3px 8px', border: `1px solid ${p.color}`, display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <span style={{ fontSize: '0.7rem' }}>{p.emoji}</span>
+                  <span style={{ color: p.color, fontWeight: 800, fontSize: '0.65rem' }}>{score}%</span>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
 
