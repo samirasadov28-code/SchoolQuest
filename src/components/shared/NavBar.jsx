@@ -1,11 +1,12 @@
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const items = [
-  { path: '/home',    label: 'Home',    icon: '🏠' },
-  { path: '/session', label: 'Learn',   icon: '⚔️' },
-  { path: '/map',     label: 'Map',     icon: '🗺️' },
-  { path: '/rewards', label: 'Rewards', icon: '🏆' },
-  { path: '/pets',    label: 'Pets',    icon: '🐾' },
+  { path: '/home',        label: 'Home',   icon: '🏠' },
+  { path: '/session',     label: 'Learn',  icon: '⚔️' },
+  { path: '/map',         label: 'Map',    icon: '🗺️' },
+  { path: '/rewards',     label: 'Rewards',icon: '🏆' },
+  { path: '/pets',        label: 'Pets',   icon: '🐾' },
+  { path: '/leaderboard', label: 'Ranks',  icon: '🏅' },
 ]
 
 export default function NavBar() {

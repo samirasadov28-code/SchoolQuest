@@ -172,3 +172,29 @@ export async function confirmPrize(prizeId) {
     .eq('id', prizeId)
   if (error) throw error
 }
+
+// ── Leaderboard ───────────────────────────────────────────────
+
+export async function getLeaderboard() {
+  const { data, error } = await supabase
+    .from('profiles')
+    .select('id, name, xp, level, streak')
+    .order('xp', { ascending: false })
+    .limit(50)
+  if (error) throw error
+  return data ?? []
+}
+
+export async function getUserQuestionStats(userId) {
+  const { data, error } = await supabase
+    .from('progress')
+    .select('questions_seen, mastery_score')
+    .eq('user_id', userId)
+  if (error) return { totalSeen: 0, avgMastery: 0 }
+  const rows = data ?? []
+  const totalSeen = rows.reduce((sum, r) => sum + (r.questions_seen ?? 0), 0)
+  const avgMastery = rows.length
+    ? Math.round(rows.reduce((sum, r) => sum + (r.mastery_score ?? 0), 0) / rows.length)
+    : 0
+  return { totalSeen, avgMastery }
+}
