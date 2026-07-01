@@ -32,17 +32,24 @@ export default function App() {
   const setXP             = useStore(s => s.setXP)
   const addAchievement    = useStore(s => s.addAchievement)
   const loadMasteryFromDB = useStore(s => s.loadMasteryFromDB)
+  const resetProgress     = useStore(s => s.resetProgress)
   const storeUser         = useStore(s => s.user)
   const [authReady, setAuthReady] = useState(false)
 
   async function syncFromDB(userId) {
+    // If a different user is logging in, wipe local progress first so
+    // the new account always starts clean rather than inheriting cached data.
+    const currentStoredId = useStore.getState().user?.id
+    if (currentStoredId && currentStoredId !== userId) {
+      resetProgress()
+    }
+
     // Fetch profile — DB is source of truth for XP/level/streak
     const { data: profile } = await supabase.from('profiles').select('*').eq('id', userId).single()
     if (profile) {
       setProfile(profile)
-      // Always sync XP from DB (DB is updated at end of every session)
-      const localXP = useStore.getState().xp
-      setXP(Math.max(localXP, profile.xp ?? 0))
+      // For a returning user sync XP from DB; for a brand-new account DB has 0
+      setXP(profile.xp ?? 0)
     }
     // Sync mastery progress
     getProgress(userId).then(rows => rows?.length && loadMasteryFromDB(rows)).catch(() => {})

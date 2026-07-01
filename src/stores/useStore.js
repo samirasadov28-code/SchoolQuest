@@ -18,6 +18,30 @@ const useStore = create(
       setProfile:    (profile) => set({ profile }),
       setParentMode: (val)     => set({ isParentMode: val }),
 
+      // Reset all progress for a new user — called when a different account logs in
+      resetProgress: () => set({
+        masteryMap: Object.fromEntries(
+          Object.entries(INITIAL_MASTERY).map(([s, score]) => [s, { _overall: score }])
+        ),
+        questionsSeenMap:    {},
+        questionsCorrectMap: {},
+        xp:                  0,
+        level:               1,
+        streak:              0,
+        lastSessionDate:     null,
+        todaySeconds:        0,
+        sessionSeconds:      0,
+        dailyGoalMet:        false,
+        studyHistory:        {},
+        achievements:        [],
+        prizes:              [],
+        generatedQuestions:  [],
+        pets:                [],
+        activePetId:         null,
+        subjectPriorities:   {},
+        lastSessionSummary:  null,
+      }),
+
       // ── Mastery map: { subject: { topic: score } } ──
       masteryMap: Object.fromEntries(
         Object.entries(INITIAL_MASTERY).map(([s, score]) => [s, { _overall: score }])
