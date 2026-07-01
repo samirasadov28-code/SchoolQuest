@@ -49,6 +49,10 @@ import skaterSad         from '../assets/emilia/skater/sad.png'
 import skaterNervous     from '../assets/emilia/skater/nervous.png'
 import skaterFrustrated  from '../assets/emilia/skater/frustrated.png'
 import skaterPortrait    from '../assets/emilia/skater/portrait.png'
+import skaterFocused     from '../assets/emilia/skater/focused.png'
+import skaterMischievous from '../assets/emilia/skater/mischievous.png'
+import skaterSkating     from '../assets/emilia/skater/skating.png'
+import skaterWobble      from '../assets/emilia/skater/wobble.png'
 
 export const ART = {
   swimmer: {
@@ -70,5 +74,7 @@ export const ART = {
     idle: skaterIdle, happy: skaterHappy, thinking: skaterThinking,
     wrong: skaterWrong, celebrate: skaterCelebrate, sad: skaterSad,
     nervous: skaterNervous, frustrated: skaterFrustrated, portrait: skaterPortrait,
+    focused: skaterFocused, mischievous: skaterMischievous,
+    skating: skaterSkating, wobble: skaterWobble,
   },
 }

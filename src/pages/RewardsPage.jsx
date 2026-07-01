@@ -6,6 +6,9 @@ import { DIGITAL_PRIZES, SKATE_PRIZES, RARITY_GLOW, RARITY_LABEL } from '../data
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import AvatarCorner from '../components/shared/AvatarCorner'
 
+// Badge PNG images
+const BADGE_IMAGES = import.meta.glob('../assets/badges/*.png', { eager: true, import: 'default' })
+
 const TABS = ['🦄 Unicorn', '🛼 Skate', '🏅 Badges', '🎁 Prizes']
 
 export default function RewardsPage() {
@@ -76,11 +79,17 @@ export default function RewardsPage() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8 }}>
             {BADGES.map(badge => {
-              const earned = achievements.includes(badge.id)
+              const earned  = achievements.includes(badge.id)
+              const imgSrc  = badge.img ? BADGE_IMAGES[`../assets/badges/${badge.img}.png`] : null
               return (
                 <div key={badge.id} onClick={() => setExpandedBadge(earned ? badge : null)}
                   style={{ background: earned ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.2)', borderRadius: 12, padding: '10px 6px', textAlign: 'center', border: `2px solid ${earned ? RARITY_COLORS[badge.rarity] : 'rgba(255,255,255,0.06)'}`, opacity: earned ? 1 : 0.45, cursor: earned ? 'pointer' : 'default' }}>
-                  <div style={{ fontSize: '1.5rem', marginBottom: 4 }}>{earned ? badge.icon : '🔒'}</div>
+                  <div style={{ height: 44, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 4 }}>
+                    {earned && imgSrc
+                      ? <img src={imgSrc} alt={badge.name} style={{ height: 42, width: 42, objectFit: 'contain' }} />
+                      : <span style={{ fontSize: earned ? '1.5rem' : '1.2rem' }}>{earned ? badge.icon : '🔒'}</span>
+                    }
+                  </div>
                   <p style={{ color: earned ? RARITY_COLORS[badge.rarity] : 'var(--color-stone-light)', fontWeight: 800, fontSize: '0.6rem', lineHeight: 1.3 }}>
                     {badge.name}
                   </p>
@@ -135,7 +144,11 @@ export default function RewardsPage() {
       {expandedBadge && (
         <div onClick={() => setExpandedBadge(null)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 300, padding: 24 }}>
           <div onClick={e => e.stopPropagation()} style={{ background: 'var(--color-forest-dark)', border: `2px solid ${RARITY_COLORS[expandedBadge.rarity]}`, borderRadius: 24, padding: 32, maxWidth: 320, width: '100%', textAlign: 'center' }}>
-            <div style={{ fontSize: '4rem', marginBottom: 16 }}>{expandedBadge.icon}</div>
+            <div style={{ fontSize: '4rem', marginBottom: 16, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              {expandedBadge.img && BADGE_IMAGES[`../assets/badges/${expandedBadge.img}.png`]
+                ? <img src={BADGE_IMAGES[`../assets/badges/${expandedBadge.img}.png`]} alt={expandedBadge.name} style={{ height: 96, width: 96, objectFit: 'contain' }} />
+                : expandedBadge.icon}
+            </div>
             <h2 style={{ color: RARITY_COLORS[expandedBadge.rarity], fontFamily: 'var(--font-title)', marginBottom: 8 }}>{expandedBadge.name}</h2>
             <p style={{ color: 'var(--color-parchment)', lineHeight: 1.6, marginBottom: 16 }}>{expandedBadge.description}</p>
             <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{RARITY_LABEL[expandedBadge.rarity]}</p>
