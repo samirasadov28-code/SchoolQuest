@@ -65,7 +65,7 @@ export default function AvatarPage() {
       )}
 
       {/* Avatar grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, margin: '0 16px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, margin: '0 8px' }}>
         {AVATAR_STYLES.map(style => {
           const unlocked = level >= style.unlockLevel
           const isActive = selectedAvatar === style.id
@@ -101,11 +101,11 @@ export default function AvatarPage() {
               )}
 
               {/* Avatar image — consistent height, auto width, no clipping */}
-              <div style={{ height: 150, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
+              <div style={{ height: 180, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10, overflow: 'visible' }}>
                 <img
                   src={portrait}
                   alt={style.name}
-                  style={{ height: '100%', width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }}
+                  style={{ maxHeight: '100%', maxWidth: '100%', width: 'auto', height: 'auto', objectFit: 'contain', display: 'block' }}
                 />
               </div>
 

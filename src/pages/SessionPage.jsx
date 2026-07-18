@@ -52,6 +52,7 @@ export default function SessionPage() {
   const incrementQuestionsSeen    = useStore(s => s.incrementQuestionsSeen)
   const incrementQuestionsCorrect = useStore(s => s.incrementQuestionsCorrect)
   const questionsSeenMap          = useStore(s => s.questionsSeenMap)
+  const subjectPriorities         = useStore(s => s.subjectPriorities)
   const incrementWrong    = useStore(s => s.incrementWrong)
   const resetWrong        = useStore(s => s.resetWrong)
   const addSessionXP      = useStore(s => s.addSessionXP)
@@ -110,6 +111,7 @@ export default function SessionPage() {
   const sessionStartRef   = useRef(Date.now())
   const questionStartRef  = useRef(Date.now())
   const [lastAnswerMs, setLastAnswerMs] = useState(null)
+  const [paused,       setPaused]       = useState(false)
 
   // Start session immediately on mount
   useEffect(() => {
@@ -150,7 +152,7 @@ export default function SessionPage() {
 
   function loadNextQuestion(ctx) {
     const p = ctx ?? phaseRef.current
-    const q = pickNextQuestion(allQuestions, masteryMap, sessionSeenIds, sessionSubjects, p, level, questionsSeenMap)
+    const q = pickNextQuestion(allQuestions, masteryMap, sessionSeenIds, sessionSubjects, p, level, questionsSeenMap, subjectPriorities)
 
     if (p.phase === 'drill') {
       const isNewTopic = !p.drillTopic || q.subject !== p.drillTopic.subject || q.topic !== p.drillTopic.topic
@@ -435,8 +437,24 @@ export default function SessionPage() {
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
           <span style={{ color: 'var(--color-gold)', fontWeight: 800 }}>⚡ {sessionXP} XP</span>
           <span style={{ color: 'var(--color-parchment)', opacity: 0.7, fontSize: '0.85rem' }}>⏱ {formatTime(sessionSecs)}</span>
+          <button onClick={() => setPaused(true)} style={{ background: 'rgba(255,255,255,0.12)', border: 'none', borderRadius: 8, color: 'var(--color-parchment)', cursor: 'pointer', fontSize: '1rem', padding: '4px 10px', lineHeight: 1 }}>⏸</button>
         </div>
       </div>
+
+      {/* Pause overlay */}
+      {paused && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(10,6,20,0.97)', zIndex: 500, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 24 }}>
+          <div style={{ fontSize: '3rem' }}>⏸</div>
+          <h2 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.6rem' }}>Paused</h2>
+          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.9rem' }}>Take a break — your progress is saved!</p>
+          <button className="btn-primary" style={{ padding: '14px 40px', fontSize: '1rem' }} onClick={() => setPaused(false)}>
+            ▶ Continue Quest
+          </button>
+          <button onClick={handleEndSession} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '0.9rem', marginTop: 8 }}>
+            End session
+          </button>
+        </div>
+      )}
 
       {/* Question timer ring */}
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
