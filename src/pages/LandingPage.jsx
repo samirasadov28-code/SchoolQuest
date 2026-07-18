@@ -1,10 +1,13 @@
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import { APP_VERSION } from '../version'
 import { SUBJECTS } from '../services/adaptive'
+import useStore from '../stores/useStore'
 
 export default function LandingPage() {
   const navigate = useNavigate()
+  const user     = useStore(s => s.user)
 
   function handleForceUpdate() {
     if ('serviceWorker' in navigator) {
@@ -60,12 +63,20 @@ export default function LandingPage() {
 
       {/* CTA buttons */}
       <div style={{ width: '100%', maxWidth: 340, display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 24 }}>
-        <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => navigate('/register')}>
-          🌟 Start Your Quest
-        </button>
-        <button className="btn-secondary" onClick={() => navigate('/login')}>
-          Already on a quest? Sign in
-        </button>
+        {user ? (
+          <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => navigate('/home')}>
+            ⚔️ Continue the Quest
+          </button>
+        ) : (
+          <>
+            <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => navigate('/register')}>
+              🌟 Start Your Quest
+            </button>
+            <button className="btn-secondary" onClick={() => navigate('/login')}>
+              Already on a quest? Sign in
+            </button>
+          </>
+        )}
       </div>
 
       {/* Footer */}
