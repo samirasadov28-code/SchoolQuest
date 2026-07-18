@@ -53,6 +53,30 @@ export const INITIAL_MASTERY = {
  * @param {string[]} sessionSubjects - subjects covered this session
  * @returns Question object
  */
+// Subject boost multipliers — English and Maths get 2× weight vs other subjects
+const SUBJECT_BOOST = {
+  english: 2.0,
+  maths:   2.0,
+  irish:   1.5,
+}
+
+/**
+ * Check if all class-2 topics have been adequately covered (≥3 answers each).
+ * Used to decide whether to unlock class-3 content.
+ */
+export function allClass2TopicsCovered(questionBank, questionsSeenMap) {
+  const class2Topics = new Set()
+  for (const q of questionBank) {
+    if (getTopicClass(q.subject, q.topic) === 2) class2Topics.add(`${q.subject}::${q.topic}`)
+  }
+  for (const key of class2Topics) {
+    const [subj, topic] = key.split('::')
+    const seen = questionsSeenMap?.[subj]?.[topic] ?? 0
+    if (seen < 3) return false
+  }
+  return class2Topics.size > 0
+}
+
 /**
  * Pick the next question based on the current session phase.
  *
@@ -63,16 +87,19 @@ export const INITIAL_MASTERY = {
  * Drill mode  — 3 Qs per new topic, then review after every 5 new topics.
  * Review mode — pure adaptive weighted pick (weakest topics get more questions).
  */
-export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects, ctx = {}, level = 1) {
+export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubjects, ctx = {}, level = 1, questionsSeenMap = {}) {
   const { phase = 'drill', drillTopic = null } = ctx
 
-  // Filter by topic class — only class 2 topics until level 5
-  const classLimit = level < 5 ? 2 : 3
-  const classFilteredBank = questionBank.filter(q => getTopicClass(q.subject, q.topic) <= classLimit)
+  // Keep class-2 only until all class-2 topics have at least 3 answers each
+  const limitToClass2 = !allClass2TopicsCovered(questionBank, questionsSeenMap)
+  const classFilteredBank = limitToClass2
+    ? questionBank.filter(q => getTopicClass(q.subject, q.topic) <= 2)
+    : questionBank
   const effectiveBank = classFilteredBank.length > 0 ? classFilteredBank : questionBank
 
   const unseenBank = effectiveBank.filter(q => !seenIds.includes(q.id))
-  if (unseenBank.length === 0) return effectiveBank[Math.floor(Math.random() * effectiveBank.length)]
+  // When all session questions seen, allow repeating — but weight by mastery to focus on weak areas
+  if (unseenBank.length === 0) return _topicFairWeightedPick(effectiveBank, masteryMap)
 
   // REVIEW phase — topic-fair adaptive (pick topic first, then question)
   if (phase === 'review') return _topicFairWeightedPick(unseenBank, masteryMap)
@@ -87,7 +114,6 @@ export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubje
   const seenTopicKeys = new Set(
     effectiveBank.filter(q => seenIds.includes(q.id)).map(q => `${q.subject}::${q.topic}`)
   )
-  // Collect unique fresh topic keys
   const freshTopicMap = {}
   for (const q of unseenBank) {
     const key = `${q.subject}::${q.topic}`
@@ -98,39 +124,33 @@ export function pickNextQuestion(questionBank, masteryMap, seenIds, sessionSubje
   }
   const freshTopicKeys = Object.keys(freshTopicMap)
   if (freshTopicKeys.length > 0) {
-    // Pick a random topic (each topic equally likely regardless of question count)
     const chosenKey = freshTopicKeys[Math.floor(Math.random() * freshTopicKeys.length)]
-    const qs = freshTopicMap[chosenKey]
-    return qs[Math.floor(Math.random() * qs.length)]
+    return freshTopicMap[chosenKey][Math.floor(Math.random() * freshTopicMap[chosenKey].length)]
   }
 
   // All topics seen — fall back to topic-fair adaptive
   return _topicFairWeightedPick(unseenBank, masteryMap)
 }
 
-// Pick topic first weighted by (100 - mastery), then random question within that topic.
-// Prevents high-volume subjects dominating just because they have more questions.
-function _topicFairWeightedPick(unseenBank, masteryMap) {
-  // Build a map of topic → questions
+// Pick topic weighted by (100 - mastery) × subject boost, then random question within topic.
+function _topicFairWeightedPick(bank, masteryMap) {
   const topicMap = {}
-  for (const q of unseenBank) {
+  for (const q of bank) {
     const key = `${q.subject}::${q.topic}`
     if (!topicMap[key]) topicMap[key] = { subject: q.subject, topic: q.topic, qs: [] }
     topicMap[key].qs.push(q)
   }
   const topics = Object.values(topicMap)
-  // Weight each topic by (100 - mastery score)
   const weighted = topics.map(t => ({
     t,
-    weight: Math.max(1, 100 - (masteryMap[t.subject]?.[t.topic] ?? INITIAL_MASTERY[t.subject] ?? 50)),
+    weight: Math.max(1, 100 - (masteryMap[t.subject]?.[t.topic] ?? INITIAL_MASTERY[t.subject] ?? 50))
+           * (SUBJECT_BOOST[t.subject] ?? 1.0),
   }))
   const total = weighted.reduce((s, w) => s + w.weight, 0)
   let rand = Math.random() * total
   for (const { t, weight } of weighted) {
     rand -= weight
-    if (rand <= 0) {
-      return t.qs[Math.floor(Math.random() * t.qs.length)]
-    }
+    if (rand <= 0) return t.qs[Math.floor(Math.random() * t.qs.length)]
   }
   const last = topics[topics.length - 1]
   return last.qs[Math.floor(Math.random() * last.qs.length)]

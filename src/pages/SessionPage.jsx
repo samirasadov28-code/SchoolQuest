@@ -49,7 +49,9 @@ export default function SessionPage() {
   const sessionSubjects   = useStore(s => s.sessionSubjects)
   const consecutiveWrong  = useStore(s => s.consecutiveWrong)
   const addSeenQuestion        = useStore(s => s.addSeenQuestion)
-  const incrementQuestionsSeen = useStore(s => s.incrementQuestionsSeen)
+  const incrementQuestionsSeen    = useStore(s => s.incrementQuestionsSeen)
+  const incrementQuestionsCorrect = useStore(s => s.incrementQuestionsCorrect)
+  const questionsSeenMap          = useStore(s => s.questionsSeenMap)
   const incrementWrong    = useStore(s => s.incrementWrong)
   const resetWrong        = useStore(s => s.resetWrong)
   const addSessionXP      = useStore(s => s.addSessionXP)
@@ -148,7 +150,7 @@ export default function SessionPage() {
 
   function loadNextQuestion(ctx) {
     const p = ctx ?? phaseRef.current
-    const q = pickNextQuestion(allQuestions, masteryMap, sessionSeenIds, sessionSubjects, p, level)
+    const q = pickNextQuestion(allQuestions, masteryMap, sessionSeenIds, sessionSubjects, p, level, questionsSeenMap)
 
     if (p.phase === 'drill') {
       const isNewTopic = !p.drillTopic || q.subject !== p.drillTopic.subject || q.topic !== p.drillTopic.topic
@@ -231,6 +233,7 @@ export default function SessionPage() {
 
     // Streaks
     if (isCorrect) {
+      incrementQuestionsCorrect(question.subject, question.topic)
       setEmiliaMood('happy')
       resetWrong()
       const newStreak = correctStreak + 1
