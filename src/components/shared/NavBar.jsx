@@ -4,7 +4,7 @@ const items = [
   { path: '/home',        label: 'Home',   icon: '🏠' },
   { path: '/session',     label: 'Learn',  icon: '⚔️' },
   { path: '/map',         label: 'Map',    icon: '🗺️' },
-  { path: '/rewards',     label: 'Rewards',icon: '🏆' },
+  { path: '/rewards',     label: 'Prizes', icon: '🏆' },
   { path: '/pets',        label: 'Pets',   icon: '🐾' },
   { path: '/leaderboard', label: 'Ranks',  icon: '🏅' },
 ]

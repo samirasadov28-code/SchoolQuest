@@ -292,9 +292,15 @@ export default function DashboardPage() {
               placeholder="• • • •"
               value={pinInput}
               onChange={e => setPinInput(e.target.value.replace(/\D/g, '').slice(0, 4))}
-              style={{ ...inputStyle, textAlign: 'center', fontSize: '1.5rem', letterSpacing: '0.5em', marginBottom: 16 }}
+              style={{ ...inputStyle, textAlign: 'center', fontSize: '1.5rem', letterSpacing: '0.5em', marginBottom: 8 }}
               autoFocus
             />
+            <p style={{ textAlign: 'center', marginBottom: 16 }}>
+              <button onClick={() => alert(`Your parent PIN is: ${profile?.parent_pin ?? '1234'}`)}
+                style={{ background: 'none', border: 'none', color: 'var(--color-stone-light)', fontSize: '0.75rem', cursor: 'pointer', textDecoration: 'underline' }}>
+                Forgot PIN?
+              </button>
+            </p>
             <div style={{ display: 'flex', gap: 10 }}>
               <button className="btn-secondary" style={{ flex: 1 }} onClick={() => { setShowParentPIN(false); setPinInput(''); setPinError('') }}>Cancel</button>
               <button className="btn-primary" style={{ flex: 1 }} onClick={handleParentUnlock}>Unlock</button>
