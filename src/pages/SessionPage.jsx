@@ -404,9 +404,11 @@ export default function SessionPage() {
           <h2 style={{ color: 'var(--color-parchment)', fontFamily: 'var(--font-title)', fontSize: '1.4rem', marginBottom: 12, textTransform: 'capitalize' }}>
             {getTopicEmoji(introTopic.topic)} {introTopic.topic.replace(/-/g, ' ')}
           </h2>
-          <p style={{ color: 'var(--color-parchment)', lineHeight: 1.75, fontSize: '0.95rem' }}>
-            {getTopicIntro(introTopic.subject, introTopic.topic)}
-          </p>
+          {getTopicIntro(introTopic.subject, introTopic.topic).map((para, i) => (
+            <p key={i} style={{ color: 'var(--color-parchment)', lineHeight: 1.75, fontSize: '0.95rem', marginBottom: i < getTopicIntro(introTopic.subject, introTopic.topic).length - 1 ? 12 : 0 }}>
+              {para}
+            </p>
+          ))}
         </div>
         <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => setShowTopicIntro(false)}>
           Let's Go! ⚔️

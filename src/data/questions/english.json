@@ -25956,5 +25956,124 @@
     ],
     "answer": "first, then, finally, afterwards",
     "explanation": "First, then, finally, and afterwards all show the order in which things happen."
+  },
+  {
+    "id": "eng-reading-passage-005a",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "Every spring, a pair of swallows returned to nest in the old barn at the edge of the Murphy farm. The children, Aoife and Ciarán, loved to watch them swoop and dive across the sky, catching insects in mid-air. Their father told them that swallows travel all the way from South Africa to Ireland every year — a journey of more than ten thousand kilometres. The birds built their nest from mud and grass on a high beam inside the barn, where cats and foxes could not reach it. By June, four tiny eggs appeared in the nest. Aoife drew pictures of the nest in her nature diary every week. When the eggs hatched, the parents worked from dawn to dusk to feed the hungry chicks. By late August, the young swallows were ready to make their own long journey south. 'Will they come back next year?' Aoife asked. 'They always do,' said her father, smiling.",
+    "question": "Where do the swallows travel from to reach Ireland?",
+    "options": [
+      "North America",
+      "South Africa",
+      "Spain",
+      "Australia"
+    ],
+    "answer": "South Africa",
+    "explanation": "The passage states that the swallows 'travel all the way from South Africa to Ireland every year'."
+  },
+  {
+    "id": "eng-reading-passage-005b",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "Every spring, a pair of swallows returned to nest in the old barn at the edge of the Murphy farm. The children, Aoife and Ciarán, loved to watch them swoop and dive across the sky, catching insects in mid-air. Their father told them that swallows travel all the way from South Africa to Ireland every year — a journey of more than ten thousand kilometres. The birds built their nest from mud and grass on a high beam inside the barn, where cats and foxes could not reach it. By June, four tiny eggs appeared in the nest. Aoife drew pictures of the nest in her nature diary every week. When the eggs hatched, the parents worked from dawn to dusk to feed the hungry chicks. By late August, the young swallows were ready to make their own long journey south. 'Will they come back next year?' Aoife asked. 'They always do,' said her father, smiling.",
+    "question": "Why did the swallows build their nest on a high beam inside the barn?",
+    "options": [
+      "Because it was warm near the roof",
+      "So that cats and foxes could not reach it",
+      "Because there was more room up high",
+      "To be closer to the insects they caught"
+    ],
+    "answer": "So that cats and foxes could not reach it",
+    "explanation": "The passage explains that the nest was built on a high beam 'where cats and foxes could not reach it', keeping the eggs and chicks safe."
+  },
+  {
+    "id": "eng-reading-passage-005c",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "reading-passage",
+    "passage": "Every spring, a pair of swallows returned to nest in the old barn at the edge of the Murphy farm. The children, Aoife and Ciarán, loved to watch them swoop and dive across the sky, catching insects in mid-air. Their father told them that swallows travel all the way from South Africa to Ireland every year — a journey of more than ten thousand kilometres. The birds built their nest from mud and grass on a high beam inside the barn, where cats and foxes could not reach it. By June, four tiny eggs appeared in the nest. Aoife drew pictures of the nest in her nature diary every week. When the eggs hatched, the parents worked from dawn to dusk to feed the hungry chicks. By late August, the young swallows were ready to make their own long journey south. 'Will they come back next year?' Aoife asked. 'They always do,' said her father, smiling.",
+    "question": "What does Aoife's nature diary tell us about her character?",
+    "options": [
+      "She is afraid of birds",
+      "She is observant and interested in nature",
+      "She prefers reading to going outside",
+      "She wants to be a farmer like her father"
+    ],
+    "answer": "She is observant and interested in nature",
+    "explanation": "Keeping a nature diary and drawing pictures of the nest every week shows that Aoife pays close attention to the natural world and is genuinely interested in it."
+  },
+  {
+    "id": "eng-reading-passage-005d",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "reading-passage",
+    "passage": "Every spring, a pair of swallows returned to nest in the old barn at the edge of the Murphy farm. The children, Aoife and Ciarán, loved to watch them swoop and dive across the sky, catching insects in mid-air. Their father told them that swallows travel all the way from South Africa to Ireland every year — a journey of more than ten thousand kilometres. The birds built their nest from mud and grass on a high beam inside the barn, where cats and foxes could not reach it. By June, four tiny eggs appeared in the nest. Aoife drew pictures of the nest in her nature diary every week. When the eggs hatched, the parents worked from dawn to dusk to feed the hungry chicks. By late August, the young swallows were ready to make their own long journey south. 'Will they come back next year?' Aoife asked. 'They always do,' said her father, smiling.",
+    "question": "What is the main theme of this passage?",
+    "options": [
+      "The dangers of living on a farm",
+      "The cycle of nature and returning home",
+      "How to build a bird's nest",
+      "A family argument about birds"
+    ],
+    "answer": "The cycle of nature and returning home",
+    "explanation": "The swallows return every spring, raise their young, and leave — only to return again. The father's final words 'They always do' reinforce the idea of a reliable, repeating natural cycle."
+  },
+  {
+    "id": "eng-reading-passage-006a",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "In the middle of Lough Derg, the largest lake on the River Shannon, there is a small island called Holy Island. It was once home to an important monastery founded by Saint Caimín in the seventh century. Today, the island is uninhabited, but visitors can take a boat across and explore the ruins of ancient churches and a round tower that still stands over fifteen metres tall. Round towers were built by monks in early Christian Ireland as bell towers and as places of refuge during Viking raids. The monks would climb inside, pull up a rope ladder behind them, and wait safely until the danger had passed. The doorway of the round tower on Holy Island is set several metres above the ground — further proof that it was designed to keep raiders out. Walking around the island on a quiet autumn day, it is easy to imagine the monks going about their peaceful lives, copying manuscripts and tending their gardens, more than a thousand years ago.",
+    "question": "What were round towers used for during Viking raids?",
+    "options": [
+      "To store food and water",
+      "As bell towers to call people to prayer",
+      "As places of refuge to hide safely",
+      "To watch for approaching ships"
+    ],
+    "answer": "As places of refuge to hide safely",
+    "explanation": "The passage explains that monks would 'climb inside, pull up a rope ladder behind them, and wait safely until the danger had passed', confirming the towers were used as refuges."
+  },
+  {
+    "id": "eng-reading-passage-006b",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 2,
+    "type": "reading-passage",
+    "passage": "In the middle of Lough Derg, the largest lake on the River Shannon, there is a small island called Holy Island. It was once home to an important monastery founded by Saint Caimín in the seventh century. Today, the island is uninhabited, but visitors can take a boat across and explore the ruins of ancient churches and a round tower that still stands over fifteen metres tall. Round towers were built by monks in early Christian Ireland as bell towers and as places of refuge during Viking raids. The monks would climb inside, pull up a rope ladder behind them, and wait safely until the danger had passed. The doorway of the round tower on Holy Island is set several metres above the ground — further proof that it was designed to keep raiders out. Walking around the island on a quiet autumn day, it is easy to imagine the monks going about their peaceful lives, copying manuscripts and tending their gardens, more than a thousand years ago.",
+    "question": "Why is the doorway of the round tower set several metres above the ground?",
+    "options": [
+      "Because the monks were very tall",
+      "To let more light into the tower",
+      "To make it harder for raiders to get in",
+      "Because the ground was flooded"
+    ],
+    "answer": "To make it harder for raiders to get in",
+    "explanation": "The passage calls this 'further proof that it was designed to keep raiders out' — by placing the entrance high up, attackers could not simply walk through the door."
+  },
+  {
+    "id": "eng-reading-passage-006c",
+    "subject": "english",
+    "topic": "reading",
+    "difficulty": 3,
+    "type": "reading-passage",
+    "passage": "In the middle of Lough Derg, the largest lake on the River Shannon, there is a small island called Holy Island. It was once home to an important monastery founded by Saint Caimín in the seventh century. Today, the island is uninhabited, but visitors can take a boat across and explore the ruins of ancient churches and a round tower that still stands over fifteen metres tall. Round towers were built by monks in early Christian Ireland as bell towers and as places of refuge during Viking raids. The monks would climb inside, pull up a rope ladder behind them, and wait safely until the danger had passed. The doorway of the round tower on Holy Island is set several metres above the ground — further proof that it was designed to keep raiders out. Walking around the island on a quiet autumn day, it is easy to imagine the monks going about their peaceful lives, copying manuscripts and tending their gardens, more than a thousand years ago.",
+    "question": "Which word best describes the mood at the end of the passage?",
+    "options": [
+      "Frightening",
+      "Reflective and peaceful",
+      "Exciting and energetic",
+      "Sad and hopeless"
+    ],
+    "answer": "Reflective and peaceful",
+    "explanation": "The final sentence describes a quiet autumn day and invites the reader to imagine the monks' peaceful lives a thousand years ago. The language creates a calm, thoughtful mood — the reader is looking back in time with a sense of wonder."
   }
 ]
