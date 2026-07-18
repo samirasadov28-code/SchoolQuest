@@ -35,13 +35,30 @@ const useStore = create(
         })),
 
       loadMasteryFromDB: (progressRows) => {
-        const map = { ...get().masteryMap }
+        const map  = { ...get().masteryMap }
+        const seen = { ...get().questionsSeenMap }
         for (const row of progressRows) {
-          if (!map[row.subject]) map[row.subject] = {}
-          map[row.subject][row.topic] = row.mastery_score
+          if (!map[row.subject])  map[row.subject]  = {}
+          if (!seen[row.subject]) seen[row.subject] = {}
+          map[row.subject][row.topic]  = row.mastery_score
+          seen[row.subject][row.topic] = row.questions_seen ?? 0
         }
-        set({ masteryMap: map })
+        set({ masteryMap: map, questionsSeenMap: seen })
       },
+
+      // ── Questions seen map: { subject: { topic: count } } ─────────
+      questionsSeenMap: {},
+
+      incrementQuestionsSeen: (subject, topic) =>
+        set(state => ({
+          questionsSeenMap: {
+            ...state.questionsSeenMap,
+            [subject]: {
+              ...state.questionsSeenMap[subject],
+              [topic]: (state.questionsSeenMap[subject]?.[topic] ?? 0) + 1,
+            },
+          },
+        })),
 
       // ── XP & Level ───────────────────────────────
       xp:    0,
@@ -252,6 +269,7 @@ const useStore = create(
         activePetId:       state.activePetId,
         pets:              state.pets,
         selectedAvatar:    state.selectedAvatar,
+        questionsSeenMap:  state.questionsSeenMap,
       }),
     }
   )

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
-import { SUBJECTS, formatTime, INITIAL_MASTERY } from '../services/adaptive'
+import { SUBJECTS, formatTime } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
 import { addPrize, confirmPrize, getPrizes } from '../services/supabase'
 import { QUESTION_BANK } from '../data/questions/index'
@@ -13,7 +13,8 @@ export default function ParentPage() {
   const xp            = useStore(s => s.xp)
   const level         = useStore(s => s.level)
   const streak        = useStore(s => s.streak)
-  const masteryMap    = useStore(s => s.masteryMap)
+  const masteryMap        = useStore(s => s.masteryMap)
+  const questionsSeenMap  = useStore(s => s.questionsSeenMap)
   const todaySeconds  = useStore(s => s.todaySeconds)
   const achievements  = useStore(s => s.achievements)
   const prizes        = useStore(s => s.prizes)
@@ -27,7 +28,7 @@ export default function ParentPage() {
   const [addingPrize,    setAddingPrize]    = useState(false)
   const [savingPrize,    setSavingPrize]    = useState(false)
   const [expandedSubject, setExpandedSubject] = useState(null)
-  const [progressView,   setProgressView]   = useState('tried') // 'tried' | 'correct' | 'mastery'
+
   const [suggestions,    setSuggestions]    = useState([])
   const [loadingSugg,    setLoadingSugg]    = useState(false)
 
@@ -123,101 +124,93 @@ export default function ParentPage() {
         ))}
       </div>
 
-      {/* Subject breakdown */}
+      {/* Subject breakdown — questions answered */}
       <section style={{ marginBottom: 24 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-          <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800 }}>📊 Subject Progress</h2>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+          <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800 }}>📊 Questions Answered</h2>
         </div>
-
-        {/* 3-metric toggle */}
-        <div style={{ display: 'flex', gap: 6, marginBottom: 12 }}>
-          {[
-            { key: 'tried',   label: '📖 Topics Tried',    desc: '% of topics with at least one attempt' },
-            { key: 'correct', label: '✅ Topics Correct',   desc: '% of tried topics with a correct answer' },
-            { key: 'mastery', label: '🧠 Mastery Score',    desc: 'Adaptive score driving question selection' },
-          ].map(v => (
-            <button key={v.key} onClick={() => setProgressView(v.key)}
-              style={{ flex: 1, fontSize: '0.65rem', padding: '6px 4px', borderRadius: 10, border: `1px solid ${progressView === v.key ? 'var(--color-gold)' : 'rgba(255,255,255,0.15)'}`, background: progressView === v.key ? 'rgba(201,162,39,0.2)' : 'transparent', color: progressView === v.key ? 'var(--color-gold)' : 'var(--color-stone-light)', cursor: 'pointer', fontWeight: 700, lineHeight: 1.3, textAlign: 'center' }}>
-              {v.label}
-            </button>
-          ))}
-        </div>
-        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.71rem', marginBottom: 10, opacity: 0.75 }}>
-          {progressView === 'tried'   && 'How many topics Emilia has attempted — starts at 0%'}
-          {progressView === 'correct' && 'Of the topics tried, how many had at least one correct answer'}
-          {progressView === 'mastery' && 'Internal score (0–100) used to prioritise harder topics'}
+        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 12, opacity: 0.8 }}>
+          Questions answered per subject out of total available. Tap to see topic breakdown.
         </p>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-          {SUBJECTS.map(subj => {
-            const allTopics   = [...new Set(QUESTION_BANK.filter(q => q.subject === subj.id).map(q => q.topic))]
-            const total       = allTopics.length
-            // topics with any entry in masteryMap (excluding _overall sentinel)
-            const triedTopics = allTopics.filter(t => masteryMap[subj.id]?.[t] !== undefined)
-            const triedCount  = triedTopics.length
-            // topics where mastery is above 50 (starting baseline means some correct answers)
-            const correctCount = triedTopics.filter(t => (masteryMap[subj.id]?.[t] ?? 0) > 50).length
-            const mastery      = Math.round(subjectAvgs[subj.id] ?? 0)
+        {/* Overall total */}
+        {(() => {
+          const grandTotal   = QUESTION_BANK.length
+          const grandAnswered = Object.values(questionsSeenMap).reduce((sum, topics) =>
+            sum + Object.values(topics).reduce((s, n) => s + n, 0), 0)
+          const grandPct = grandTotal ? Math.round(grandAnswered / grandTotal * 100) : 0
+          return (
+            <div style={{ background: 'rgba(201,162,39,0.1)', border: '1px solid rgba(201,162,39,0.3)', borderRadius: 10, padding: '10px 14px', marginBottom: 12, display: 'flex', alignItems: 'center', gap: 12 }}>
+              <span style={{ fontSize: '1.1rem' }}>📚</span>
+              <div style={{ flex: 1 }}>
+                <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.85rem' }}>
+                  {grandAnswered.toLocaleString()} / {grandTotal.toLocaleString()} questions
+                </p>
+                <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 6, marginTop: 4 }}>
+                  <div style={{ width: `${grandPct}%`, height: '100%', background: 'var(--color-gold)', borderRadius: 20, transition: 'width 0.4s' }} />
+                </div>
+              </div>
+              <span style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.9rem' }}>{grandPct}%</span>
+            </div>
+          )
+        })()}
 
-            let barPct, barColor, displayVal
-            if (progressView === 'tried') {
-              barPct = total ? Math.round(triedCount / total * 100) : 0
-              displayVal = `${barPct}%`
-              barColor = barPct >= 60 ? 'var(--color-emerald)' : barPct >= 20 ? 'var(--color-gold)' : 'rgba(255,255,255,0.25)'
-            } else if (progressView === 'correct') {
-              barPct = triedCount ? Math.round(correctCount / triedCount * 100) : 0
-              displayVal = triedCount ? `${barPct}%` : '—'
-              barColor = barPct >= 70 ? 'var(--color-emerald)' : barPct >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)'
-            } else {
-              barPct = mastery
-              displayVal = `${mastery}%`
-              barColor = mastery >= 70 ? 'var(--color-emerald)' : mastery >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)'
-            }
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+          {SUBJECTS.map(subj => {
+            const subjQuestions = QUESTION_BANK.filter(q => q.subject === subj.id)
+            const totalQ  = subjQuestions.length
+            const seenMap = questionsSeenMap[subj.id] ?? {}
+            const answered = Object.values(seenMap).reduce((s, n) => s + n, 0)
+            const barPct  = totalQ ? Math.min(100, Math.round(answered / totalQ * 100)) : 0
+            const barColor = barPct >= 50 ? 'var(--color-emerald)' : barPct >= 15 ? 'var(--color-gold)' : 'rgba(255,255,255,0.25)'
+            const mastery  = Math.round(subjectAvgs[subj.id] ?? 0)
 
             const isExpanded = expandedSubject === subj.id
+            const allTopics  = [...new Set(subjQuestions.map(q => q.topic))].sort()
+
             return (
               <div key={subj.id}>
                 <div onClick={() => setExpandedSubject(isExpanded ? null : subj.id)}
-                  style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', padding: '8px 0' }}>
+                  style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', padding: '7px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                   <span style={{ width: 22, textAlign: 'center', fontSize: '0.9rem' }}>{subj.emoji}</span>
-                  <span style={{ flex: 1, color: 'var(--color-parchment)', fontSize: '0.83rem', fontWeight: 600 }}>{subj.label}</span>
-                  <div style={{ width: 90, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 7 }}>
+                  <span style={{ flex: 1, color: 'var(--color-parchment)', fontSize: '0.82rem', fontWeight: 600 }}>{subj.label}</span>
+                  <div style={{ width: 80, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 6 }}>
                     <div style={{ width: `${barPct}%`, height: '100%', background: barColor, borderRadius: 20, transition: 'width 0.4s' }} />
                   </div>
-                  <span style={{ width: 38, color: barColor, fontSize: '0.78rem', textAlign: 'right', fontWeight: 800 }}>{displayVal}</span>
-                  <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem' }}>{isExpanded ? '▲' : '▼'}</span>
+                  <span style={{ width: 52, color: barColor, fontSize: '0.72rem', textAlign: 'right', fontWeight: 800 }}>{answered}/{totalQ}</span>
+                  <span style={{ color: 'var(--color-stone-light)', fontSize: '0.65rem' }}>{isExpanded ? '▲' : '▼'}</span>
                 </div>
 
-                {/* Expanded topic list — shows 0% for untouched topics */}
                 {isExpanded && (
                   <div style={{ marginLeft: 32, marginBottom: 8, background: 'rgba(0,0,0,0.2)', borderRadius: 10, padding: '10px 12px' }}>
-                    {/* Mini 3-stat summary */}
+                    {/* Summary row */}
                     <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
                       {[
-                        { label: 'Topics tried',   value: `${triedCount}/${total}` },
-                        { label: 'Got correct',     value: `${correctCount}/${triedCount || 0}` },
-                        { label: 'Mastery',         value: `${mastery}%` },
+                        { label: 'Answered',  value: `${answered}/${totalQ}` },
+                        { label: 'Mastery',   value: `${mastery}%` },
+                        { label: 'Coverage',  value: `${barPct}%` },
                       ].map(m => (
-                        <div key={m.label} style={{ flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: 8, padding: '6px 8px', textAlign: 'center' }}>
+                        <div key={m.label} style={{ flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: 8, padding: '5px 6px', textAlign: 'center' }}>
                           <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.8rem' }}>{m.value}</p>
-                          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.62rem' }}>{m.label}</p>
+                          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.6rem' }}>{m.label}</p>
                         </div>
                       ))}
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
-                      {allTopics.sort().map(topic => {
-                        const rawScore = masteryMap[subj.id]?.[topic]
-                        const tried    = rawScore !== undefined
-                        const ts       = tried ? Math.round(rawScore) : 0
-                        const tColor   = !tried ? 'rgba(255,255,255,0.2)' : ts >= 70 ? 'var(--color-emerald)' : ts >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)'
+                    {/* Per-topic breakdown */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                      {allTopics.map(topic => {
+                        const topicTotal   = subjQuestions.filter(q => q.topic === topic).length
+                        const topicAnswered = seenMap[topic] ?? 0
+                        const tPct  = topicTotal ? Math.min(100, Math.round(topicAnswered / topicTotal * 100)) : 0
+                        const tColor = topicAnswered === 0 ? 'rgba(255,255,255,0.2)' : tPct >= 50 ? 'var(--color-emerald)' : 'var(--color-gold)'
                         return (
                           <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                            <span style={{ fontSize: '0.65rem', color: tried ? 'var(--color-gold)' : 'rgba(255,255,255,0.2)' }}>{tried ? '●' : '○'}</span>
-                            <span style={{ flex: 1, color: tried ? 'var(--color-stone-light)' : 'rgba(255,255,255,0.3)', fontSize: '0.75rem', textTransform: 'capitalize' }}>{topic.replace(/-/g, ' ')}</span>
-                            <div style={{ width: 70, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 5 }}>
-                              <div style={{ width: `${ts}%`, height: '100%', background: tColor, borderRadius: 20 }} />
+                            <span style={{ fontSize: '0.6rem', color: topicAnswered > 0 ? 'var(--color-gold)' : 'rgba(255,255,255,0.2)' }}>{topicAnswered > 0 ? '●' : '○'}</span>
+                            <span style={{ flex: 1, color: topicAnswered > 0 ? 'var(--color-stone-light)' : 'rgba(255,255,255,0.3)', fontSize: '0.73rem', textTransform: 'capitalize' }}>{topic.replace(/-/g, ' ')}</span>
+                            <div style={{ width: 60, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 4 }}>
+                              <div style={{ width: `${tPct}%`, height: '100%', background: tColor, borderRadius: 20 }} />
                             </div>
-                            <span style={{ width: 34, color: tColor, fontSize: '0.72rem', fontWeight: 800, textAlign: 'right' }}>{tried ? `${ts}%` : '—'}</span>
+                            <span style={{ width: 44, color: tColor, fontSize: '0.7rem', fontWeight: 800, textAlign: 'right' }}>{topicAnswered}/{topicTotal}</span>
                           </div>
                         )
                       })}
