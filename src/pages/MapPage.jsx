@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import NavBar from '../components/shared/NavBar'
 import { useNavigate } from 'react-router-dom'
+import AvatarCorner from '../components/shared/AvatarCorner'
 import useStore from '../stores/useStore'
 import { MYTHOLOGY_REGIONS } from '../services/gamification'
 import { getSubjectAverages } from '../services/gamification'
@@ -62,7 +63,8 @@ export default function MapPage() {
     <div className="bg-mythic" style={{ minHeight: '100vh', padding: '16px 16px 80px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
         <button onClick={() => navigate('/home')} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '1.2rem' }}>←</button>
-        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.3rem' }}>🗺️ Map of Ireland</h1>
+        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.3rem', flex: 1 }}>🗺️ Map of Ireland</h1>
+        <AvatarCorner />
       </div>
 
       <p style={{ color: 'var(--color-stone-light)', fontSize: '0.82rem', marginBottom: 20, textAlign: 'center' }}>

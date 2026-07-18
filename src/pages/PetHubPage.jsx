@@ -4,6 +4,7 @@ import useStore from '../stores/useStore'
 import { PET_SPECIES, getArt, getPetMoodFromState, filterPetName, getPetStage, getSpecies } from '../data/pets'
 import PetCompanion from '../components/shared/PetCompanion'
 import NavBar from '../components/shared/NavBar'
+import AvatarCorner from '../components/shared/AvatarCorner'
 
 export default function PetHubPage() {
   const navigate       = useNavigate()
@@ -78,7 +79,8 @@ export default function PetHubPage() {
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 }}>
         <button onClick={() => navigate('/home')} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '1.2rem' }}>←</button>
-        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.3rem' }}>🐾 Pet Companions</h1>
+        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.3rem', flex: 1 }}>🐾 Pet Companions</h1>
+        <AvatarCorner />
       </div>
 
       {/* No pets yet → choose starter */}

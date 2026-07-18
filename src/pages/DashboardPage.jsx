@@ -7,6 +7,7 @@ import { getSubjectAverages } from '../services/gamification'
 import { TOPIC_CLASS } from '../data/topicClasses'
 import { getNextPrize } from '../data/prizes'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
+import AvatarCorner from '../components/shared/AvatarCorner'
 import PetCompanion from '../components/shared/PetCompanion'
 import { getPetStage, getPetMoodFromState } from '../data/pets'
 
@@ -99,6 +100,7 @@ export default function DashboardPage() {
           </p>
         </div>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+          <AvatarCorner />
           <div className="streak-flame">🔥 {streak}</div>
           <button onClick={() => setShowParentPIN(true)} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '6px 12px', color: 'var(--color-parchment)', fontSize: '0.8rem', cursor: 'pointer' }}>
             👨‍👩‍👧 Parent

@@ -4,6 +4,7 @@ import useStore from '../stores/useStore'
 import { BADGES, RARITY_COLORS } from '../services/gamification'
 import { DIGITAL_PRIZES, SKATE_PRIZES, RARITY_GLOW, RARITY_LABEL } from '../data/prizes'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
+import AvatarCorner from '../components/shared/AvatarCorner'
 
 const TABS = ['🦄 Unicorn', '🛼 Skate', '🏅 Badges', '🎁 Prizes']
 
@@ -23,7 +24,8 @@ export default function RewardsPage() {
     <div className="bg-mythic" style={{ minHeight: '100vh', padding: '16px 16px 80px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
         <button onClick={() => navigate('/home')} style={{ background: 'transparent', border: 'none', color: 'var(--color-stone-light)', cursor: 'pointer', fontSize: '1.2rem' }}>←</button>
-        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.3rem' }}>🏆 My Rewards</h1>
+        <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.3rem', flex: 1 }}>🏆 My Rewards</h1>
+        <AvatarCorner />
       </div>
 
       {/* Tab bar */}
