@@ -32,8 +32,8 @@ export default function EmiliaCharacter({ mood = 'idle', size = 'md', showBubble
   const selectedAvatar = useStore(s => s.selectedAvatar)
 
   // Resolve image: use selected avatar art, fallback to swimmer
-  const avatarArt = ART[selectedAvatar] ?? ART.swimmer
-  const src = avatarArt[mood] ?? avatarArt.idle ?? ART.swimmer.idle
+  const avatarArt = ART[selectedAvatar] ?? ART.explorer
+  const src = avatarArt[mood] ?? avatarArt.idle ?? ART.explorer.idle
 
   const sizes = { sm: 90, md: 155, lg: 215 }
   const px    = sizes[size]
