@@ -125,7 +125,8 @@ const useStore = create(
       studyHistory:    {}, // { 'YYYY-MM-DD': seconds }
 
       addSessionSeconds: (s) => {
-        const dateKey = new Date().toISOString().split('T')[0]
+        const now = new Date()
+        const dateKey = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`
         const goal    = get().dailyGoalMinutes * 60
         const today   = get().todaySeconds + s
         const history = { ...get().studyHistory, [dateKey]: (get().studyHistory[dateKey] ?? 0) + s }

@@ -64,12 +64,14 @@ export default function DashboardPage() {
   const xpPct       = Math.min(1, (xp - xpStart) / (xpEnd - xpStart))
   const nextPrize   = getNextPrize(xp)
 
-  // 7-day calendar strip
+  // 7-day calendar strip — use local date to match how studyHistory is keyed
   const today = new Date()
+  const localDateStr = (d) => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`
+  const todayStr = localDateStr(today)
   const last7 = Array.from({ length: 7 }, (_, i) => {
     const d = new Date(today)
     d.setDate(today.getDate() - (6 - i))
-    return d.toISOString().split('T')[0]
+    return localDateStr(d)
   })
   const dayLabels = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 
@@ -157,7 +159,7 @@ export default function DashboardPage() {
         </div>
         <div style={{ display: 'flex', gap: 4, justifyContent: 'space-between' }}>
           {last7.map((dateStr, i) => {
-            const secs = dateStr === today.toISOString().split('T')[0] ? todaySeconds : (studyHistory?.[dateStr] ?? 0)
+            const secs = dateStr === todayStr ? todaySeconds : (studyHistory?.[dateStr] ?? 0)
             const isToday = i === 6
             const goalMet = secs >= dailyGoalSeconds
             const someStudy = secs > 60
