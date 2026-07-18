@@ -148,9 +148,12 @@ export default function SessionPage() {
     }
   }, [])
 
-  // Question countdown timer
+  // Question countdown timer — does NOT run while topic intro is showing
   useEffect(() => {
-    if (!question || revealed) return
+    if (!question || revealed || showTopicIntro) {
+      clearInterval(qTimerRef.current)
+      return
+    }
     const t = getTimerForQuestion(question)
     setQuestionTimer(t)
     clearInterval(qTimerRef.current)
@@ -161,7 +164,7 @@ export default function SessionPage() {
       })
     }, 1000)
     return () => clearInterval(qTimerRef.current)
-  }, [question])
+  }, [question, showTopicIntro])
 
   function loadNextQuestion(ctx) {
     const p = ctx ?? phaseRef.current
