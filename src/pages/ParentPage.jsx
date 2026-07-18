@@ -19,7 +19,8 @@ export default function ParentPage() {
   const masteryMap          = useStore(s => s.masteryMap)
   const questionsSeenMap    = useStore(s => s.questionsSeenMap)
   const questionsCorrectMap = useStore(s => s.questionsCorrectMap)
-  const todaySeconds  = useStore(s => s.todaySeconds)
+  const todaySeconds       = useStore(s => s.todaySeconds)
+  const dailyGoalStreak    = useStore(s => s.dailyGoalStreak)
   const achievements  = useStore(s => s.achievements)
   const prizes        = useStore(s => s.prizes)
   const setPrizes     = useStore(s => s.setPrizes)
@@ -153,6 +154,7 @@ export default function ParentPage() {
           { label: 'Day Streak', value: `${streak} 🔥`, icon: '📅' },
           { label: 'Today', value: formatTime(todaySeconds), icon: '⏰' },
           { label: 'Goal', value: todaySeconds >= dailyGoalMinutes * 60 ? '✅ Met!' : `${Math.round(todaySeconds / (dailyGoalMinutes * 60) * 100)}%`, icon: '🎯' },
+          { label: 'Goal Streak', value: `${dailyGoalStreak} 🎯`, icon: '📆' },
           { label: 'Badges', value: achievements.length, icon: '🏅' },
         ].map(stat => (
           <div key={stat.label} style={{ background: 'rgba(255,255,255,0.07)', borderRadius: 'var(--radius-md)', padding: '12px 10px', textAlign: 'center' }}>

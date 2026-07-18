@@ -136,6 +136,8 @@ const useStore = create(
       // ── Daily goal (minutes, set by parent) ──────
       dailyGoalMinutes: 30,
       setDailyGoalMinutes: (m) => set({ dailyGoalMinutes: Math.max(5, Math.min(120, m)) }),
+      dailyGoalStreak:     0,  // consecutive days the daily goal was met
+      lastGoalMetDate:     null,
 
       // ── Subject priorities set by parent (1=low, 2=normal, 3=high) ───
       subjectPriorities: {},
@@ -151,15 +153,42 @@ const useStore = create(
       addSessionSeconds: (s) => {
         const now = new Date()
         const dateKey = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`
+        const yesterday = new Date(now - 86400000)
+        const yKey = `${yesterday.getFullYear()}-${String(yesterday.getMonth()+1).padStart(2,'0')}-${String(yesterday.getDate()).padStart(2,'0')}`
+
         const goal    = get().dailyGoalMinutes * 60
-        const today   = get().todaySeconds + s
         const history = { ...get().studyHistory, [dateKey]: (get().studyHistory[dateKey] ?? 0) + s }
+        // todaySeconds always reflects only the current calendar day
+        const today   = history[dateKey]
+        const wasGoalMet = get().dailyGoalMet
+        const nowGoalMet = today >= goal
+        const lastGoalDate = get().lastGoalMetDate
+
+        // Update consecutive goal streak only when goal is first met today
+        let dailyGoalStreak = get().dailyGoalStreak
+        let lastGoalMetDate = lastGoalDate
+        let bonusXP = 0
+        if (nowGoalMet && !wasGoalMet) {
+          // Goal just crossed today
+          if (lastGoalDate === yKey) {
+            dailyGoalStreak = dailyGoalStreak + 1
+          } else if (lastGoalDate !== dateKey) {
+            dailyGoalStreak = 1
+          }
+          lastGoalMetDate = dateKey
+          // Bonus XP: 20 base + 10 per extra consecutive day, capped at 100
+          bonusXP = Math.min(100, 20 + (dailyGoalStreak - 1) * 10)
+        }
+
         set({
-          todaySeconds:   today,
-          sessionSeconds: get().sessionSeconds + s,
-          dailyGoalMet:   today >= goal,
-          studyHistory:   history,
+          todaySeconds:    today,
+          sessionSeconds:  get().sessionSeconds + s,
+          dailyGoalMet:    nowGoalMet,
+          studyHistory:    history,
+          dailyGoalStreak,
+          lastGoalMetDate,
         })
+        return { goalJustMet: nowGoalMet && !wasGoalMet, bonusXP, dailyGoalStreak }
       },
 
       // ── Last session summary (for dashboard banner) ──
@@ -294,6 +323,15 @@ const useStore = create(
         }
         return persisted
       },
+      onRehydrateStorage: () => (state) => {
+        if (!state) return
+        // Recalculate todaySeconds from studyHistory so it always reflects the current calendar day
+        const now = new Date()
+        const dateKey = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`
+        const todayFromHistory = (state.studyHistory ?? {})[dateKey] ?? 0
+        state.todaySeconds = todayFromHistory
+        state.dailyGoalMet = todayFromHistory >= (state.dailyGoalMinutes ?? 30) * 60
+      },
       // Don't persist session-level transient state
       partialize: (state) => ({
         user:              state.user,
@@ -304,6 +342,8 @@ const useStore = create(
         streak:            state.streak,
         lastSessionDate:   state.lastSessionDate,
         dailyGoalMinutes:  state.dailyGoalMinutes,
+        dailyGoalStreak:   state.dailyGoalStreak,
+        lastGoalMetDate:   state.lastGoalMetDate,
         todaySeconds:      state.todaySeconds,
         dailyGoalMet:      state.dailyGoalMet,
         studyHistory:      state.studyHistory,

@@ -378,15 +378,28 @@ export default function SessionPage() {
 
   async function handleEndSession() {
     const elapsed = Math.floor((Date.now() - sessionStartRef.current) / 1000)
-    addSessionSeconds(elapsed)
+    const goalResult = addSessionSeconds(elapsed)
+
+    // Award bonus XP if daily goal just met on consecutive days
+    let bonusXP = 0
+    if (goalResult?.goalJustMet && goalResult.bonusXP > 0) {
+      bonusXP = goalResult.bonusXP
+      addXP(bonusXP)
+    }
+
     // Save session summary for dashboard banner
     const finalMastery = getSubjectAverages(useStore.getState().masteryMap)
     const subjectGains = {}
     ;[...new Set(sessionSubjects)].forEach(s => { subjectGains[s] = Math.round(finalMastery[s] ?? 0) })
-    setLastSessionSummary({ xp: sessionXP, subjects: subjectGains, badges: newBadges })
+    setLastSessionSummary({
+      xp: sessionXP + bonusXP,
+      subjects: subjectGains,
+      badges: newBadges,
+      goalBonus: goalResult?.goalJustMet ? { xp: bonusXP, streak: goalResult.dailyGoalStreak } : null,
+    })
     if (user) {
       const s = useStore.getState()
-      logSession(user.id, elapsed, sessionXP, [...new Set(sessionSubjects)]).catch(() => {})
+      logSession(user.id, elapsed, sessionXP + bonusXP, [...new Set(sessionSubjects)]).catch(() => {})
       updateProfile(user.id, { xp: s.xp, level: s.level, streak: s.streak }).catch(() => {})
     }
     const currentXP = useStore.getState().xp
@@ -407,6 +420,21 @@ export default function SessionPage() {
         <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.6rem', marginBottom: 8 }}>Quest Complete! 🎉</h1>
         <p style={{ color: 'var(--color-parchment)', fontSize: '1rem' }}>You earned <strong style={{ color: 'var(--color-gold)' }}>⚡ {sessionXP} XP</strong> this session!</p>
       </div>
+      {useStore.getState().lastSessionSummary?.goalBonus && (
+        <div style={{ background: 'rgba(93,222,139,0.15)', border: '2px solid var(--color-emerald)', borderRadius: 16, padding: '14px 20px', width: '100%' }}>
+          <p style={{ color: '#5dde8b', fontWeight: 800, marginBottom: 4 }}>🎯 Daily Goal Met!</p>
+          {useStore.getState().lastSessionSummary.goalBonus.streak > 1
+            ? <p style={{ color: 'var(--color-parchment)', fontSize: '0.9rem' }}>
+                {useStore.getState().lastSessionSummary.goalBonus.streak} days in a row! 🔥<br/>
+                Bonus <strong style={{ color: 'var(--color-gold)' }}>+{useStore.getState().lastSessionSummary.goalBonus.xp} XP</strong> streak reward!
+              </p>
+            : <p style={{ color: 'var(--color-parchment)', fontSize: '0.9rem' }}>
+                Keep it up tomorrow for a streak bonus! 💛<br/>
+                Bonus <strong style={{ color: 'var(--color-gold)' }}>+{useStore.getState().lastSessionSummary.goalBonus.xp} XP</strong>
+              </p>
+          }
+        </div>
+      )}
       {newBadges.length > 0 && (
         <div style={{ background: 'rgba(201,162,39,0.15)', border: '2px solid var(--color-gold)', borderRadius: 16, padding: '14px 20px', width: '100%' }}>
           <p style={{ color: 'var(--color-gold)', fontWeight: 800, marginBottom: 6 }}>🏅 New Badges!</p>
