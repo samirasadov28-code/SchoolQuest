@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import legacy from '@vitejs/plugin-legacy'
 
 export default defineConfig({
   define: {
@@ -8,13 +9,18 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    // Transpile for older Safari / iPad (iOS 12+, Safari 12+)
+    legacy({
+      targets: ['ios >= 12', 'safari >= 12', 'chrome >= 70'],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
         skipWaiting: true,
         clientsClaim: true,
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
-        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024, // 4 MiB
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024, // 6 MiB (covers legacy chunks)
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/.*supabase\.co\/.*/i,
@@ -36,5 +42,17 @@ export default defineConfig({
         ]
       }
     })
-  ]
+  ],
+  build: {
+    // Split vendor code so the initial chunk is smaller
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor':   ['react', 'react-dom', 'react-router-dom'],
+          'supabase':       ['@supabase/supabase-js'],
+          'state':          ['zustand'],
+        },
+      },
+    },
+  },
 })
