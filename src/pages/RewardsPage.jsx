@@ -5,6 +5,7 @@ import { BADGES, RARITY_COLORS } from '../services/gamification'
 import { DIGITAL_PRIZES, SKATE_PRIZES, RARITY_GLOW, RARITY_LABEL } from '../data/prizes'
 import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import AvatarCorner from '../components/shared/AvatarCorner'
+import NavBar from '../components/shared/NavBar'
 
 // Badge PNG images
 const BADGE_IMAGES = import.meta.glob('../assets/badges/*.png', { eager: true, import: 'default' })
@@ -166,6 +167,7 @@ export default function RewardsPage() {
           <button onClick={() => setExpandedPrize(null)} style={{ padding: '12px 28px', borderRadius: 12, border: 'none', background: 'var(--color-gold)', color: '#1a1a00', fontWeight: 800, cursor: 'pointer', fontSize: '0.95rem' }}>Close ✕</button>
         </div>
       )}
+      <NavBar />
     </div>
   )
 }

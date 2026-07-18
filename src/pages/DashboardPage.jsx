@@ -10,6 +10,7 @@ import EmiliaCharacter from '../components/shared/EmiliaCharacter'
 import AvatarCorner from '../components/shared/AvatarCorner'
 import PetCompanion from '../components/shared/PetCompanion'
 import { getPetStage, getPetMoodFromState } from '../data/pets'
+import NavBar from '../components/shared/NavBar'
 
 export default function DashboardPage() {
   const navigate   = useNavigate()
@@ -307,6 +308,7 @@ export default function DashboardPage() {
           </div>
         </div>
       )}
+      <NavBar />
     </div>
   )
 }

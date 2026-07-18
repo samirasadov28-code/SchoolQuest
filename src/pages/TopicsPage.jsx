@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SUBJECTS } from '../services/adaptive'
 import { INTROS } from '../data/topicIntros'
+import NavBar from '../components/shared/NavBar'
 
 export default function TopicsPage() {
   const navigate = useNavigate()
@@ -76,6 +77,7 @@ export default function TopicsPage() {
           </div>
         )
       })}
+      <NavBar />
     </div>
   )
 }

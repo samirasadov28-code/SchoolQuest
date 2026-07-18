@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
 import { AVATAR_STYLES, ART } from '../data/avatars'
+import NavBar from '../components/shared/NavBar'
 
 export default function AvatarPage() {
   const navigate          = useNavigate()
@@ -121,6 +122,7 @@ export default function AvatarPage() {
           )
         })}
       </div>
+      <NavBar />
     </div>
   )
 }
