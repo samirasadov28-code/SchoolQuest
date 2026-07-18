@@ -104,6 +104,8 @@ export default function SessionPage() {
   // Topic intro — always shown for every new topic
   const [showTopicIntro, setShowTopicIntro] = useState(false)
   const [introTopic,     setIntroTopic]     = useState(null)
+  const [graceCountdown, setGraceCountdown] = useState(0) // counts down 3→0 after intro dismissed
+  const graceRef = useRef(null)
 
   // Session phase state
   const [phase,         setPhase]         = useState('drill')
@@ -148,9 +150,22 @@ export default function SessionPage() {
     }
   }, [])
 
-  // Question countdown timer — does NOT run while topic intro is showing
+  // Grace countdown after intro dismissed — gives the kid 3 seconds before timer starts
   useEffect(() => {
-    if (!question || revealed || showTopicIntro) {
+    if (graceCountdown <= 0) return
+    clearInterval(graceRef.current)
+    graceRef.current = setInterval(() => {
+      setGraceCountdown(prev => {
+        if (prev <= 1) { clearInterval(graceRef.current); return 0 }
+        return prev - 1
+      })
+    }, 1000)
+    return () => clearInterval(graceRef.current)
+  }, [graceCountdown > 0]) // eslint-disable-line
+
+  // Question countdown timer — paused during intro, grace countdown, and when paused
+  useEffect(() => {
+    if (!question || revealed || showTopicIntro || graceCountdown > 0 || paused) {
       clearInterval(qTimerRef.current)
       return
     }
@@ -164,7 +179,7 @@ export default function SessionPage() {
       })
     }, 1000)
     return () => clearInterval(qTimerRef.current)
-  }, [question, showTopicIntro])
+  }, [question, showTopicIntro, graceCountdown, paused])
 
   function loadNextQuestion(ctx) {
     const p = ctx ?? phaseRef.current
@@ -491,7 +506,7 @@ export default function SessionPage() {
             </p>
           ))}
         </div>
-        <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => setShowTopicIntro(false)}>
+        <button className="btn-primary" style={{ fontSize: '1.1rem', padding: '16px' }} onClick={() => { setShowTopicIntro(false); setGraceCountdown(3) }}>
           Let's Go! ⚔️
         </button>
       </div>
@@ -507,6 +522,15 @@ export default function SessionPage() {
 
   return (
     <div className="bg-mythic" style={{ minHeight: '100vh', padding: '16px 16px 32px', maxWidth: 600, margin: '0 auto' }}>
+      {/* Grace countdown overlay — shown after intro, before timer starts */}
+      {graceCountdown > 0 && (
+        <div style={{ position: 'fixed', inset: 0, zIndex: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(15,10,30,0.85)', flexDirection: 'column', gap: 12 }}>
+          <p style={{ color: 'var(--color-stone-light)', fontSize: '1rem' }}>Get ready…</p>
+          <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'var(--color-gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.5rem', fontWeight: 900, color: '#1a1200', fontFamily: 'var(--font-title)' }}>
+            {graceCountdown}
+          </div>
+        </div>
+      )}
       {/* Review banner */}
       {showReviewBanner && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 200, background: 'var(--color-gold)', color: '#1a1a00', padding: '14px 20px', textAlign: 'center', fontWeight: 800, fontSize: '1.1rem', animation: 'slideDown 0.3s ease' }}>
