@@ -14,7 +14,8 @@ import ParentPage     from './pages/ParentPage'
 import MapPage        from './pages/MapPage'
 import PetHubPage     from './pages/PetHubPage'
 import TopicsPage     from './pages/TopicsPage'
-import AvatarPage     from './pages/AvatarPage'
+import AvatarPage        from './pages/AvatarPage'
+import LeaderboardPage  from './pages/LeaderboardPage'
 
 function ProtectedRoute({ children, authReady, user }) {
   if (!authReady) return (
@@ -104,7 +105,8 @@ export default function App() {
         <Route path="/pets"     element={<ProtectedRoute authReady={authReady} user={storeUser}><PetHubPage /></ProtectedRoute>} />
         <Route path="/parent"   element={<ProtectedRoute authReady={authReady} user={storeUser}><ParentPage /></ProtectedRoute>} />
         <Route path="/topics"   element={<ProtectedRoute authReady={authReady} user={storeUser}><TopicsPage /></ProtectedRoute>} />
-        <Route path="/avatar"   element={<ProtectedRoute authReady={authReady} user={storeUser}><AvatarPage /></ProtectedRoute>} />
+        <Route path="/avatar"       element={<ProtectedRoute authReady={authReady} user={storeUser}><AvatarPage /></ProtectedRoute>} />
+        <Route path="/leaderboard"  element={<ProtectedRoute authReady={authReady} user={storeUser}><LeaderboardPage /></ProtectedRoute>} />
         <Route path="*"         element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
