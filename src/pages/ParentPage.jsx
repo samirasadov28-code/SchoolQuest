@@ -27,7 +27,7 @@ export default function ParentPage() {
   const [addingPrize,    setAddingPrize]    = useState(false)
   const [savingPrize,    setSavingPrize]    = useState(false)
   const [expandedSubject, setExpandedSubject] = useState(null)
-  const [progressView,   setProgressView]   = useState('absolute') // 'absolute' | 'delta'
+  const [progressView,   setProgressView]   = useState('tried') // 'tried' | 'correct' | 'mastery'
   const [suggestions,    setSuggestions]    = useState([])
   const [loadingSugg,    setLoadingSugg]    = useState(false)
 
@@ -125,36 +125,54 @@ export default function ParentPage() {
 
       {/* Subject breakdown */}
       <section style={{ marginBottom: 24 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
           <h2 style={{ color: 'var(--color-gold-light)', fontSize: '0.95rem', fontWeight: 800 }}>📊 Subject Progress</h2>
-          <div style={{ display: 'flex', gap: 6 }}>
-            {[{ key: 'absolute', label: '0–100%' }, { key: 'delta', label: 'Progress' }].map(v => (
-              <button key={v.key} onClick={() => setProgressView(v.key)}
-                style={{ fontSize: '0.7rem', padding: '4px 10px', borderRadius: 20, border: '1px solid rgba(255,255,255,0.2)', background: progressView === v.key ? 'var(--color-gold)' : 'transparent', color: progressView === v.key ? '#1a1a00' : 'var(--color-stone-light)', cursor: 'pointer', fontWeight: 700 }}>
-                {v.label}
-              </button>
-            ))}
-          </div>
         </div>
-        {progressView === 'delta' && (
-          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.72rem', marginBottom: 10, opacity: 0.8 }}>
-            Shows improvement from 50% starting point. Green = growing, grey = not yet started.
-          </p>
-        )}
+
+        {/* 3-metric toggle */}
+        <div style={{ display: 'flex', gap: 6, marginBottom: 12 }}>
+          {[
+            { key: 'tried',   label: '📖 Topics Tried',    desc: '% of topics with at least one attempt' },
+            { key: 'correct', label: '✅ Topics Correct',   desc: '% of tried topics with a correct answer' },
+            { key: 'mastery', label: '🧠 Mastery Score',    desc: 'Adaptive score driving question selection' },
+          ].map(v => (
+            <button key={v.key} onClick={() => setProgressView(v.key)}
+              style={{ flex: 1, fontSize: '0.65rem', padding: '6px 4px', borderRadius: 10, border: `1px solid ${progressView === v.key ? 'var(--color-gold)' : 'rgba(255,255,255,0.15)'}`, background: progressView === v.key ? 'rgba(201,162,39,0.2)' : 'transparent', color: progressView === v.key ? 'var(--color-gold)' : 'var(--color-stone-light)', cursor: 'pointer', fontWeight: 700, lineHeight: 1.3, textAlign: 'center' }}>
+              {v.label}
+            </button>
+          ))}
+        </div>
+        <p style={{ color: 'var(--color-stone-light)', fontSize: '0.71rem', marginBottom: 10, opacity: 0.75 }}>
+          {progressView === 'tried'   && 'How many topics Emilia has attempted — starts at 0%'}
+          {progressView === 'correct' && 'Of the topics tried, how many had at least one correct answer'}
+          {progressView === 'mastery' && 'Internal score (0–100) used to prioritise harder topics'}
+        </p>
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
           {SUBJECTS.map(subj => {
-            const score  = Math.round(subjectAvgs[subj.id] ?? INITIAL_MASTERY[subj.id] ?? 50)
-            const delta  = score - 50
-            const isDelta = progressView === 'delta'
-            const display = isDelta ? Math.max(0, delta) : score
-            const barPct  = isDelta ? Math.min(100, Math.max(0, delta) * 2) : score
-            const barColor = isDelta
-              ? (delta >= 0 ? 'var(--color-emerald)' : 'rgba(255,255,255,0.2)')
-              : (score >= 70 ? 'var(--color-emerald)' : score >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)')
+            const allTopics   = [...new Set(QUESTION_BANK.filter(q => q.subject === subj.id).map(q => q.topic))]
+            const total       = allTopics.length
+            // topics with any entry in masteryMap (excluding _overall sentinel)
+            const triedTopics = allTopics.filter(t => masteryMap[subj.id]?.[t] !== undefined)
+            const triedCount  = triedTopics.length
+            // topics where mastery is above 50 (starting baseline means some correct answers)
+            const correctCount = triedTopics.filter(t => (masteryMap[subj.id]?.[t] ?? 0) > 50).length
+            const mastery      = Math.round(subjectAvgs[subj.id] ?? 0)
 
-            // Show ALL topics from question bank, not just practiced ones
-            const allTopics = [...new Set(QUESTION_BANK.filter(q => q.subject === subj.id).map(q => q.topic))].sort()
-            const topicsWithScore = allTopics.map(topic => [topic, masteryMap[subj.id]?.[topic] ?? 50])
+            let barPct, barColor, displayVal
+            if (progressView === 'tried') {
+              barPct = total ? Math.round(triedCount / total * 100) : 0
+              displayVal = `${barPct}%`
+              barColor = barPct >= 60 ? 'var(--color-emerald)' : barPct >= 20 ? 'var(--color-gold)' : 'rgba(255,255,255,0.25)'
+            } else if (progressView === 'correct') {
+              barPct = triedCount ? Math.round(correctCount / triedCount * 100) : 0
+              displayVal = triedCount ? `${barPct}%` : '—'
+              barColor = barPct >= 70 ? 'var(--color-emerald)' : barPct >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)'
+            } else {
+              barPct = mastery
+              displayVal = `${mastery}%`
+              barColor = mastery >= 70 ? 'var(--color-emerald)' : mastery >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)'
+            }
 
             const isExpanded = expandedSubject === subj.id
             return (
@@ -166,29 +184,44 @@ export default function ParentPage() {
                   <div style={{ width: 90, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 7 }}>
                     <div style={{ width: `${barPct}%`, height: '100%', background: barColor, borderRadius: 20, transition: 'width 0.4s' }} />
                   </div>
-                  <span style={{ width: 42, color: barColor, fontSize: '0.78rem', textAlign: 'right', fontWeight: 800 }}>
-                    {isDelta ? (delta >= 0 ? `+${delta}` : '0') : `${score}%`}
-                  </span>
+                  <span style={{ width: 38, color: barColor, fontSize: '0.78rem', textAlign: 'right', fontWeight: 800 }}>{displayVal}</span>
                   <span style={{ color: 'var(--color-stone-light)', fontSize: '0.7rem' }}>{isExpanded ? '▲' : '▼'}</span>
                 </div>
+
+                {/* Expanded topic list — shows 0% for untouched topics */}
                 {isExpanded && (
-                  <div style={{ marginLeft: 32, marginBottom: 8, background: 'rgba(0,0,0,0.2)', borderRadius: 10, padding: '10px 12px', display: 'flex', flexDirection: 'column', gap: 7 }}>
-                    {topicsWithScore.sort((a, b) => a[1] - b[1]).map(([topic, topicScore]) => {
-                      const ts = Math.round(topicScore)
-                      const td = Math.max(0, ts - 50)
-                      const tDisplay = isDelta ? (td > 0 ? `+${td}` : '0') : `${ts}%`
-                      const tColor   = isDelta ? (td > 0 ? 'var(--color-emerald)' : 'rgba(255,255,255,0.3)') : (ts >= 70 ? 'var(--color-emerald)' : ts >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)')
-                      const tBar     = isDelta ? Math.min(100, td * 2) : ts
-                      return (
-                        <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                          <span style={{ flex: 1, color: 'var(--color-stone-light)', fontSize: '0.75rem', textTransform: 'capitalize' }}>{topic.replace(/-/g, ' ')}</span>
-                          <div style={{ width: 70, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 5 }}>
-                            <div style={{ width: `${tBar}%`, height: '100%', background: tColor, borderRadius: 20 }} />
-                          </div>
-                          <span style={{ width: 34, color: tColor, fontSize: '0.72rem', fontWeight: 800, textAlign: 'right' }}>{tDisplay}</span>
+                  <div style={{ marginLeft: 32, marginBottom: 8, background: 'rgba(0,0,0,0.2)', borderRadius: 10, padding: '10px 12px' }}>
+                    {/* Mini 3-stat summary */}
+                    <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
+                      {[
+                        { label: 'Topics tried',   value: `${triedCount}/${total}` },
+                        { label: 'Got correct',     value: `${correctCount}/${triedCount || 0}` },
+                        { label: 'Mastery',         value: `${mastery}%` },
+                      ].map(m => (
+                        <div key={m.label} style={{ flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: 8, padding: '6px 8px', textAlign: 'center' }}>
+                          <p style={{ color: 'var(--color-gold)', fontWeight: 800, fontSize: '0.8rem' }}>{m.value}</p>
+                          <p style={{ color: 'var(--color-stone-light)', fontSize: '0.62rem' }}>{m.label}</p>
                         </div>
-                      )
-                    })}
+                      ))}
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
+                      {allTopics.sort().map(topic => {
+                        const rawScore = masteryMap[subj.id]?.[topic]
+                        const tried    = rawScore !== undefined
+                        const ts       = tried ? Math.round(rawScore) : 0
+                        const tColor   = !tried ? 'rgba(255,255,255,0.2)' : ts >= 70 ? 'var(--color-emerald)' : ts >= 40 ? 'var(--color-gold)' : 'var(--color-crimson)'
+                        return (
+                          <div key={topic} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                            <span style={{ fontSize: '0.65rem', color: tried ? 'var(--color-gold)' : 'rgba(255,255,255,0.2)' }}>{tried ? '●' : '○'}</span>
+                            <span style={{ flex: 1, color: tried ? 'var(--color-stone-light)' : 'rgba(255,255,255,0.3)', fontSize: '0.75rem', textTransform: 'capitalize' }}>{topic.replace(/-/g, ' ')}</span>
+                            <div style={{ width: 70, background: 'rgba(0,0,0,0.3)', borderRadius: 20, height: 5 }}>
+                              <div style={{ width: `${ts}%`, height: '100%', background: tColor, borderRadius: 20 }} />
+                            </div>
+                            <span style={{ width: 34, color: tColor, fontSize: '0.72rem', fontWeight: 800, textAlign: 'right' }}>{tried ? `${ts}%` : '—'}</span>
+                          </div>
+                        )
+                      })}
+                    </div>
                   </div>
                 )}
               </div>

@@ -29,9 +29,16 @@ export async function signUp(email, password, name, pin = '1234') {
   return data.user
 }
 
-export async function signIn(email, password) {
+export async function signIn(email, password, rememberMe = true) {
   const { data, error } = await supabase.auth.signInWithPassword({ email, password })
   if (error) throw error
+  if (rememberMe) {
+    localStorage.removeItem('sq-no-persist')
+    sessionStorage.setItem('sq-logged-in', '1')
+  } else {
+    localStorage.setItem('sq-no-persist', '1')
+    sessionStorage.setItem('sq-logged-in', '1')
+  }
   return data.user
 }
 

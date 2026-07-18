@@ -47,6 +47,12 @@ export default function App() {
   useEffect(() => {
     // Restore session on mount
     supabase.auth.getSession().then(({ data: { session } }) => {
+      // Sign out on fresh browser open if user unchecked "Stay signed in"
+      if (session?.user && localStorage.getItem('sq-no-persist') === '1' && !sessionStorage.getItem('sq-logged-in')) {
+        supabase.auth.signOut()
+        localStorage.removeItem('sq-no-persist')
+        return
+      }
       if (session?.user) {
         setUser(session.user)
         syncFromDB(session.user.id)

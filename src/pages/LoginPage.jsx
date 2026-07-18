@@ -16,7 +16,7 @@ export default function LoginPage() {
     setLoading(true)
     setError('')
     try {
-      await signIn(email, password)
+      await signIn(email, password, rememberMe)
       navigate('/home')
     } catch (err) {
       setError('Wrong email or password. Try again!')
