@@ -26060,7 +26060,7 @@
     "explanation": "The passage calls this 'further proof that it was designed to keep raiders out' — by placing the entrance high up, attackers could not simply walk through the door."
   },
   {
-    "id": "eng-reading-passage-006c",
+    "id": "eng-reading-passage-007c",
     "subject": "english",
     "topic": "reading",
     "difficulty": 3,
@@ -26075,5 +26075,81 @@
     ],
     "answer": "Reflective and peaceful",
     "explanation": "The final sentence describes a quiet autumn day and invites the reader to imagine the monks' peaceful lives a thousand years ago. The language creates a calm, thoughtful mood — the reader is looking back in time with a sense of wonder."
+  },
+  {
+    "id": "eng-typein-001",
+    "subject": "english",
+    "topic": "plurals",
+    "difficulty": 2,
+    "type": "type-in",
+    "question": "What is the plural of the word 'child'? Type your answer.",
+    "answer": "children",
+    "answer_variants": ["children", "Children"],
+    "explanation": "The plural of child is children — an irregular plural. Other irregular plurals: mouse → mice, tooth → teeth, foot → feet."
+  },
+  {
+    "id": "eng-typein-002",
+    "subject": "english",
+    "topic": "spelling",
+    "difficulty": 2,
+    "type": "type-in",
+    "question": "How do you spell the opposite of 'happy'? (starts with 'un-') Type your answer.",
+    "answer": "unhappy",
+    "answer_variants": ["unhappy", "Unhappy"],
+    "explanation": "Unhappy — the prefix 'un-' means 'not', so un + happy = unhappy (not happy). Other examples: unkind, unfair, unwell."
+  },
+  {
+    "id": "eng-typein-003",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "type-in",
+    "question": "How many full stops are in this sentence? 'The cat sat. The dog ran. A bird flew.' Type the number.",
+    "answer": "3",
+    "explanation": "There are 3 full stops — one at the end of each sentence. Every sentence must end with a full stop, question mark or exclamation mark."
+  },
+  {
+    "id": "eng-multi-001",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "multi-select",
+    "question": "Select ALL words that are VERBS (doing/action words). 🏃",
+    "options": ["jump", "happy", "run", "beautiful"],
+    "answers": ["jump", "run"],
+    "explanation": "'Jump' and 'run' are verbs — they describe actions. 'Happy' and 'beautiful' are adjectives — they describe how something looks or feels."
+  },
+  {
+    "id": "eng-multi-002",
+    "subject": "english",
+    "topic": "vocabulary",
+    "difficulty": 2,
+    "type": "multi-select",
+    "question": "Select ALL words that are ADJECTIVES (describing words). ✨",
+    "options": ["tiny", "whisper", "enormous", "crawl"],
+    "answers": ["tiny", "enormous"],
+    "explanation": "'Tiny' and 'enormous' are adjectives — they describe the size of a noun. 'Whisper' and 'crawl' are verbs (action words)."
+  },
+  {
+    "id": "eng-pic-001",
+    "subject": "english",
+    "topic": "punctuation",
+    "difficulty": 1,
+    "type": "picture",
+    "question": "Which punctuation mark goes at the END of a question?",
+    "options": ["❗ Exclamation Mark", "❓ Question Mark", "⏸ Comma", "⏹ Full Stop"],
+    "answer": "❓ Question Mark",
+    "explanation": "A question mark (?) goes at the end of every question. 'What is your name?' — the ? tells the reader this is a question."
+  },
+  {
+    "id": "eng-pic-002",
+    "subject": "english",
+    "topic": "grammar",
+    "difficulty": 2,
+    "type": "picture",
+    "question": "Which emoji best represents a NOUN (name of a thing)?",
+    "options": ["🏃 Running", "🏠 House", "😊 Feeling Happy", "💨 Blowing"],
+    "answer": "🏠 House",
+    "explanation": "'House' is a noun — it names a thing. 'Running' and 'blowing' are verbs (doing words), and 'feeling happy' describes an emotion."
   }
 ]

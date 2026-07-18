@@ -8878,5 +8878,111 @@
     ],
     "answer": "Many living things depend on them to survive",
     "explanation": "Habitats provide food, water and shelter for many plants and animals, so protecting them keeps those living things alive."
+  },
+  {
+    "id": "sci-typein-001",
+    "subject": "science",
+    "topic": "plants",
+    "difficulty": 2,
+    "type": "type-in",
+    "question": "What is the process called where plants make their own food using sunlight? Type your answer.",
+    "answer": "photosynthesis",
+    "answer_variants": ["photosynthesis", "Photosynthesis"],
+    "explanation": "Photosynthesis is the process where plants use sunlight, water and carbon dioxide to make glucose (food) and release oxygen."
+  },
+  {
+    "id": "sci-typein-002",
+    "subject": "science",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "type-in",
+    "question": "How many bones does the adult human body have? Type the number.",
+    "answer": "206",
+    "explanation": "The adult human body has 206 bones. Babies are born with about 270-300 bones, but many fuse together as we grow!"
+  },
+  {
+    "id": "sci-scale-001",
+    "subject": "science",
+    "topic": "light-sound",
+    "difficulty": 3,
+    "type": "scale",
+    "question": "Light travels at approximately how many thousand kilometres per second? Slide to guess!",
+    "answer": 300,
+    "min": 1,
+    "max": 500,
+    "step": 1,
+    "unit": "thousand km/s",
+    "tolerance": 5,
+    "explanation": "Light travels at approximately 300,000 km per second — fast enough to circle the Earth seven times in one second!"
+  },
+  {
+    "id": "sci-scale-002",
+    "subject": "science",
+    "topic": "human-body",
+    "difficulty": 2,
+    "type": "scale",
+    "question": "Your heart beats approximately how many times per minute when resting? Slide to guess!",
+    "answer": 70,
+    "min": 10,
+    "max": 200,
+    "step": 1,
+    "unit": "beats per minute",
+    "tolerance": 15,
+    "explanation": "A healthy resting heart beats about 60-100 times per minute — around 70 bpm on average. During exercise it can double!"
+  },
+  {
+    "id": "sci-multi-001",
+    "subject": "science",
+    "topic": "animals",
+    "difficulty": 2,
+    "type": "multi-select",
+    "question": "Select ALL the animals that are mammals. 🐾",
+    "options": ["🐬 Dolphin", "🐟 Salmon", "🦇 Bat", "🦎 Gecko"],
+    "answers": ["🐬 Dolphin", "🦇 Bat"],
+    "explanation": "Dolphins and bats are mammals — warm-blooded, breathe air, and nurse their young on milk. Salmon are fish; geckos are reptiles."
+  },
+  {
+    "id": "sci-multi-002",
+    "subject": "science",
+    "topic": "living-things",
+    "difficulty": 2,
+    "type": "multi-select",
+    "question": "Select ALL the things that are LIVING. 🌱",
+    "options": ["🌳 Oak Tree", "🪨 Rock", "🐝 Bee", "💧 Water"],
+    "answers": ["🌳 Oak Tree", "🐝 Bee"],
+    "explanation": "The oak tree and the bee are living things — they both carry out life processes (movement, growth, reproduction etc.). Rocks and water are non-living."
+  },
+  {
+    "id": "sci-pic-001",
+    "subject": "science",
+    "topic": "animals",
+    "difficulty": 1,
+    "type": "picture",
+    "question": "Which of these is the largest animal that has ever lived on Earth?",
+    "options": ["🐘 Elephant", "🦈 Great White Shark", "🐋 Blue Whale", "🦁 Lion"],
+    "answer": "🐋 Blue Whale",
+    "explanation": "The blue whale is the largest animal that has ever lived — up to 30 metres long and 150 tonnes. Its heart alone is the size of a small car!"
+  },
+  {
+    "id": "sci-pic-002",
+    "subject": "science",
+    "topic": "plants",
+    "difficulty": 1,
+    "type": "picture",
+    "question": "Which part of the plant absorbs water and minerals from the soil?",
+    "options": ["🌸 Flower", "🍃 Leaf", "🌱 Root", "🌿 Stem"],
+    "answer": "🌱 Root",
+    "explanation": "Roots anchor the plant in the soil and absorb water and minerals that travel up the stem to the rest of the plant."
+  },
+  {
+    "id": "sci-pic-003",
+    "subject": "science",
+    "topic": "forces",
+    "difficulty": 2,
+    "type": "picture",
+    "question": "Which force pulls everything towards the centre of the Earth?",
+    "options": ["🧲 Magnetism", "🌊 Water Resistance", "🌍 Gravity", "💨 Air Resistance"],
+    "answer": "🌍 Gravity",
+    "explanation": "Gravity is the force that pulls all objects towards the Earth. It is why things fall when you drop them and why you stay on the ground!"
   }
 ]
