@@ -4,14 +4,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 2 × 3?",
-    "options": [
-      "5",
-      "6",
-      "8",
-      "4"
-    ],
     "answer": "6",
     "explanation": "2 × 3 = 6. Think of it as 2 groups of 3: 🍎🍎🍎 and 🍎🍎🍎 = 6 apples!"
   },
@@ -20,14 +14,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 5 × 4?",
-    "options": [
-      "9",
-      "20",
-      "15",
-      "25"
-    ],
     "answer": "20",
     "explanation": "5 × 4 = 20. Count by 5s: 5, 10, 15, 20!"
   },
@@ -36,14 +24,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 6 × 7?",
-    "options": [
-      "36",
-      "42",
-      "48",
-      "13"
-    ],
     "answer": "42",
     "explanation": "6 × 7 = 42. A fun trick: 5,6,7,8 — 56 = 7×8. And 42 = 6×7!"
   },
@@ -52,14 +34,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 8 × 9?",
-    "options": [
-      "72",
-      "63",
-      "81",
-      "54"
-    ],
     "answer": "72",
     "explanation": "8 × 9 = 72. Try: 8 × 10 = 80, then subtract 8: 80 - 8 = 72!"
   },
@@ -68,14 +44,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 10 × 7?",
-    "options": [
-      "17",
-      "70",
-      "77",
-      "700"
-    ],
     "answer": "70",
     "explanation": "Multiplying by 10 is easy — just add a zero! 7 × 10 = 70."
   },
@@ -84,14 +54,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 3 × 9?",
-    "options": [
-      "18",
-      "21",
-      "30",
-      "27"
-    ],
     "answer": "27",
     "explanation": "3 × 9 = 27. Trick: the digits of 9 times tables always add up to 9! 2+7 = 9 ✓"
   },
@@ -100,14 +64,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 4 × 8?",
-    "options": [
-      "28",
-      "36",
-      "32",
-      "24"
-    ],
     "answer": "32",
     "explanation": "4 × 8 = 32. Remember: 4×8 is the same as doubling 4 three times: 4→8→16→32!"
   },
@@ -116,14 +74,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 3,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 7 × 7?",
-    "options": [
-      "14",
-      "56",
-      "49",
-      "42"
-    ],
     "answer": "49",
     "explanation": "7 × 7 = 49. Seven sevens are forty-nine!"
   },
@@ -132,14 +84,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 3,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 12 × 3?",
-    "options": [
-      "15",
-      "36",
-      "33",
-      "30"
-    ],
     "answer": "36",
     "explanation": "12 × 3 = 36. Think of it as 10×3 + 2×3 = 30 + 6 = 36!"
   },
@@ -148,14 +94,8 @@
     "subject": "maths",
     "topic": "multiplication",
     "difficulty": 3,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is 6 × 8?",
-    "options": [
-      "36",
-      "42",
-      "48",
-      "56"
-    ],
     "answer": "48",
     "explanation": "6 × 8 = 48. Try 6×8 = 6×4×2 = 24×2 = 48!"
   },
@@ -33826,8 +33766,16 @@
     "difficulty": 3,
     "type": "multi-select",
     "question": "Select ALL fractions that are equivalent to one half (½).",
-    "options": ["2/4", "3/5", "4/8", "3/4"],
-    "answers": ["2/4", "4/8"],
+    "options": [
+      "2/4",
+      "3/5",
+      "4/8",
+      "3/4"
+    ],
+    "answers": [
+      "2/4",
+      "4/8"
+    ],
     "explanation": "2/4 and 4/8 both equal ½. Multiply both top and bottom of ½ by 2 → 2/4; by 4 → 4/8. The value stays the same!"
   },
   {
@@ -33837,8 +33785,16 @@
     "difficulty": 2,
     "type": "multi-select",
     "question": "Select ALL numbers that are greater than 500.",
-    "options": ["312", "750", "499", "1001"],
-    "answers": ["750", "1001"],
+    "options": [
+      "312",
+      "750",
+      "499",
+      "1001"
+    ],
+    "answers": [
+      "750",
+      "1001"
+    ],
     "explanation": "750 > 500 and 1001 > 500. 312 and 499 are both less than 500."
   }
 ]

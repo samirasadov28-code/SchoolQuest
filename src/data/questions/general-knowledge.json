@@ -4,15 +4,15 @@
     "subject": "genknow",
     "topic": "animals",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "What is the fastest land animal?",
+    "type": "picture",
+    "question": "Which is the fastest land animal? 🏃",
     "options": [
-      "Lion",
-      "Cheetah",
-      "Leopard",
-      "Horse"
+      "🐆 Cheetah",
+      "🦁 Lion",
+      "🐘 Elephant",
+      "🦓 Zebra"
     ],
-    "answer": "Cheetah",
+    "answer": "🐆 Cheetah",
     "explanation": "A cheetah can run up to 120 km/h — as fast as a car on a motorway! It can only keep that speed for short bursts though."
   },
   {
@@ -20,15 +20,15 @@
     "subject": "genknow",
     "topic": "animals",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which is the largest animal in the world?",
+    "type": "picture",
+    "question": "Which is the largest animal in the world? 🌊",
     "options": [
-      "African Elephant",
-      "Whale Shark",
-      "Blue Whale",
-      "Giraffe"
+      "🐋 Blue Whale",
+      "🦈 Shark",
+      "🐘 Elephant",
+      "🦒 Giraffe"
     ],
-    "answer": "Blue Whale",
+    "answer": "🐋 Blue Whale",
     "explanation": "The blue whale is the largest animal ever known on Earth! It can reach 30 metres long and weigh 200 tonnes — bigger than any dinosaur!"
   },
   {
@@ -36,16 +36,15 @@
     "subject": "genknow",
     "topic": "animals",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many legs does a spider have?",
-    "options": [
-      "6",
-      "8",
-      "10",
-      "4"
-    ],
-    "answer": "8",
-    "explanation": "Spiders have 8 legs — that's what makes them arachnids, not insects! Insects always have exactly 6 legs."
+    "answer": 8,
+    "explanation": "Spiders have 8 legs — that's what makes them arachnids, not insects! Insects always have exactly 6 legs.",
+    "min": 1,
+    "max": 20,
+    "step": 1,
+    "unit": "legs",
+    "tolerance": 0
   },
   {
     "id": "gk-animals-004",
@@ -68,15 +67,15 @@
     "subject": "genknow",
     "topic": "animals",
     "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which animal has the longest neck?",
+    "type": "picture",
+    "question": "Which animal has the longest neck? 🌿",
     "options": [
-      "Ostrich",
-      "Flamingo",
-      "Giraffe",
-      "Camel"
+      "🦒 Giraffe",
+      "🐘 Elephant",
+      "🦓 Zebra",
+      "🦛 Rhino"
     ],
-    "answer": "Giraffe",
+    "answer": "🦒 Giraffe",
     "explanation": "Giraffes have necks up to 2 metres long! Despite this, they have the same number of neck bones as humans (7) — just each bone is much, much bigger."
   },
   {
@@ -100,15 +99,15 @@
     "subject": "genknow",
     "topic": "animals",
     "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which bird can mimic (copy) human speech?",
+    "type": "picture",
+    "question": "Which bird can mimic (copy) human speech? 🗣️",
     "options": [
-      "Robin",
-      "Parrot",
-      "Eagle",
-      "Pigeon"
+      "🦜 Parrot",
+      "🦅 Eagle",
+      "🦉 Owl",
+      "🐧 Penguin"
     ],
-    "answer": "Parrot",
+    "answer": "🦜 Parrot",
     "explanation": "Parrots are amazing mimics and can copy human speech, other birds, and even sounds like ringtones! Some parrots can learn hundreds of words."
   },
   {
@@ -180,16 +179,15 @@
     "subject": "genknow",
     "topic": "animals",
     "difficulty": 3,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many hearts does an octopus have?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "answer": "3",
-    "explanation": "Octopuses have 3 hearts! Two pump blood to the gills, and one pumps it to the rest of the body. Their blood is also blue — it contains copper instead of iron!"
+    "answer": 3,
+    "explanation": "Octopuses have 3 hearts! Two pump blood to the gills, and one pumps it to the rest of the body. Their blood is also blue — it contains copper instead of iron!",
+    "min": 1,
+    "max": 10,
+    "step": 1,
+    "unit": "hearts",
+    "tolerance": 0
   },
   {
     "id": "gk-animals-013",
@@ -292,16 +290,15 @@
     "subject": "genknow",
     "topic": "animals",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many legs does an insect have?",
-    "options": [
-      "4",
-      "6",
-      "8",
-      "10"
-    ],
-    "answer": "6",
-    "explanation": "All insects have exactly 6 legs — it's one of the rules for being an insect! Bees, butterflies, beetles and ants all have 6 legs."
+    "answer": 6,
+    "explanation": "All insects have exactly 6 legs — it's one of the rules for being an insect! Bees, butterflies, beetles and ants all have 6 legs.",
+    "min": 1,
+    "max": 20,
+    "step": 1,
+    "unit": "legs",
+    "tolerance": 0
   },
   {
     "id": "gk-animals-020",
@@ -324,31 +321,30 @@
     "subject": "genknow",
     "topic": "human-body",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many bones are in the adult human body?",
-    "options": [
-      "106",
-      "206",
-      "306",
-      "406"
-    ],
-    "answer": "206",
-    "explanation": "An adult has 206 bones! Babies are born with about 270-300 (some fuse together as we grow). Your skeleton is your body's framework!"
+    "answer": 206,
+    "explanation": "An adult has 206 bones! Babies are born with about 270-300 (some fuse together as we grow). Your skeleton is your body's framework!",
+    "min": 100,
+    "max": 300,
+    "step": 1,
+    "unit": "bones",
+    "tolerance": 10
   },
   {
     "id": "gk-body-002",
     "subject": "genknow",
     "topic": "human-body",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "What is the largest organ in the human body?",
+    "type": "picture",
+    "question": "What is the largest organ in the human body? 🤔",
     "options": [
-      "Heart",
-      "Brain",
-      "Liver",
-      "Skin"
+      "🫀 Heart",
+      "🧠 Brain",
+      "🫁 Lungs",
+      "🧴 Skin"
     ],
-    "answer": "Skin",
+    "answer": "🧴 Skin",
     "explanation": "Skin is the largest organ! It covers your entire body, protects you from germs, helps control your temperature, and lets you feel things through touch."
   },
   {
@@ -356,15 +352,15 @@
     "subject": "genknow",
     "topic": "human-body",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which organ pumps blood around the body?",
+    "type": "picture",
+    "question": "Which organ pumps blood around the body? 💓",
     "options": [
-      "Lungs",
-      "Brain",
-      "Kidney",
-      "Heart"
+      "🧠 Brain",
+      "🫀 Heart",
+      "🫁 Lungs",
+      "🩸 Blood"
     ],
-    "answer": "Heart",
+    "answer": "🫀 Heart",
     "explanation": "Your heart is an amazing muscle that pumps blood around your body. It beats about 100,000 times every single day — that's about 70 times per minute!"
   },
   {
@@ -388,16 +384,15 @@
     "subject": "genknow",
     "topic": "human-body",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many teeth does an adult human have?",
-    "options": [
-      "20",
-      "28",
-      "32",
-      "36"
-    ],
-    "answer": "32",
-    "explanation": "Adults have 32 teeth, including 4 wisdom teeth. Children have 20 baby (milk) teeth which are gradually replaced by adult teeth from around age 6!"
+    "answer": 32,
+    "explanation": "Adults have 32 teeth, including 4 wisdom teeth. Children have 20 baby (milk) teeth which are gradually replaced by adult teeth from around age 6!",
+    "min": 10,
+    "max": 60,
+    "step": 1,
+    "unit": "teeth",
+    "tolerance": 0
   },
   {
     "id": "gk-body-006",
@@ -452,16 +447,15 @@
     "subject": "genknow",
     "topic": "human-body",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many senses do humans have (basic senses)?",
-    "options": [
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "answer": "5",
-    "explanation": "The five basic senses are: sight, hearing, taste, smell, and touch! Some scientists say we actually have more (like balance and temperature sense), but the 5 classic senses are most important."
+    "answer": 5,
+    "explanation": "The five basic senses are: sight, hearing, taste, smell, and touch! Some scientists say we actually have more (like balance and temperature sense), but the 5 classic senses are most important.",
+    "min": 1,
+    "max": 10,
+    "step": 1,
+    "unit": "senses",
+    "tolerance": 0
   },
   {
     "id": "gk-body-010",
@@ -6127,7 +6121,12 @@
     "difficulty": 1,
     "type": "picture",
     "question": "Which flag emoji represents Ireland? 🍀",
-    "options": ["🇮🇹 Italy", "🇫🇷 France", "🇮🇪 Ireland", "🇳🇬 Nigeria"],
+    "options": [
+      "🇮🇹 Italy",
+      "🇫🇷 France",
+      "🇮🇪 Ireland",
+      "🇳🇬 Nigeria"
+    ],
     "answer": "🇮🇪 Ireland",
     "explanation": "The Irish tricolour 🇮🇪 has green (Irish Catholics), white (peace), and orange (Irish Protestants). Italy's 🇮🇹 is also green, white and red, but in a different shade!"
   },
@@ -6138,7 +6137,12 @@
     "difficulty": 1,
     "type": "picture",
     "question": "Which emoji represents the planet that we live on?",
-    "options": ["🌕 Moon", "⭐ Star", "🌍 Earth", "🌞 Sun"],
+    "options": [
+      "🌕 Moon",
+      "⭐ Star",
+      "🌍 Earth",
+      "🌞 Sun"
+    ],
     "answer": "🌍 Earth",
     "explanation": "🌍 represents Earth, the third planet from the Sun and the only planet known to support life. The Moon orbits Earth, and the Sun is our nearest star."
   },
@@ -6149,8 +6153,16 @@
     "difficulty": 2,
     "type": "multi-select",
     "question": "Select ALL objects that are planets in our Solar System. 🚀",
-    "options": ["🌍 Earth", "🌕 Moon", "♂ Mars", "☀️ Sun"],
-    "answers": ["🌍 Earth", "♂ Mars"],
+    "options": [
+      "🌍 Earth",
+      "🌕 Moon",
+      "♂ Mars",
+      "☀️ Sun"
+    ],
+    "answers": [
+      "🌍 Earth",
+      "♂ Mars"
+    ],
     "explanation": "Earth and Mars are both planets in our Solar System. The Moon is Earth's natural satellite, and the Sun is our star — not a planet!"
   }
 ]

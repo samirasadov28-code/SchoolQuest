@@ -20,16 +20,14 @@
     "subject": "science",
     "topic": "living-things",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What gas do plants give off that we breathe?",
-    "options": [
-      "Carbon dioxide",
-      "Nitrogen",
-      "Oxygen",
-      "Hydrogen"
-    ],
     "answer": "Oxygen",
-    "explanation": "During photosynthesis, plants take in carbon dioxide and give out oxygen — the gas we need to breathe. Trees and plants are our oxygen factories!"
+    "explanation": "During photosynthesis, plants take in carbon dioxide and give out oxygen — the gas we need to breathe. Trees and plants are our oxygen factories!",
+    "answer_variants": [
+      "O2",
+      "Oxygen gas"
+    ]
   },
   {
     "id": "sci-life-003",
@@ -68,15 +66,15 @@
     "subject": "science",
     "topic": "living-things",
     "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which of these is a mammal?",
+    "type": "picture",
+    "question": "Which of these animals is a mammal? 🐾",
     "options": [
-      "Salmon",
-      "Eagle",
-      "Dolphin",
-      "Frog"
+      "🐬 Dolphin",
+      "🦎 Lizard",
+      "🐟 Fish",
+      "🦋 Butterfly"
     ],
-    "answer": "Dolphin",
+    "answer": "🐬 Dolphin",
     "explanation": "Mammals have fur/hair, are warm-blooded, and feed their young with milk. Dolphins breathe air and give birth to live young — so they're mammals even though they live in the sea!"
   },
   {
@@ -100,16 +98,14 @@
     "subject": "science",
     "topic": "living-things",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What do bees collect from flowers to make honey?",
-    "options": [
-      "Pollen only",
-      "Nectar",
-      "Sap",
-      "Water"
-    ],
     "answer": "Nectar",
-    "explanation": "Bees collect nectar (a sweet liquid) from flowers and bring it back to the hive, where they turn it into honey. They also collect pollen which helps fertilise flowers!"
+    "explanation": "Bees collect nectar (a sweet liquid) from flowers and bring it back to the hive, where they turn it into honey. They also collect pollen which helps fertilise flowers!",
+    "answer_variants": [
+      "Pollen",
+      "nectar from flowers"
+    ]
   },
   {
     "id": "sci-life-008",
@@ -148,15 +144,15 @@
     "subject": "science",
     "topic": "living-things",
     "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "What part of the plant absorbs water from the soil?",
+    "type": "picture",
+    "question": "Which part of the plant absorbs water from the soil? 🌱",
     "options": [
-      "Leaves",
-      "Flowers",
-      "Roots",
-      "Stem"
+      "🌿 Leaves",
+      "🌸 Flower",
+      "🪵 Stem",
+      "🌱 Roots"
     ],
-    "answer": "Roots",
+    "answer": "🌱 Roots",
     "explanation": "Roots anchor the plant in the soil and absorb water and minerals. The water then travels up through the stem to the leaves!"
   },
   {
@@ -164,15 +160,15 @@
     "subject": "science",
     "topic": "materials",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which of these is a natural material?",
+    "type": "picture",
+    "question": "Which of these is a natural material? 🌳",
     "options": [
-      "Plastic",
-      "Glass",
-      "Wood",
-      "Metal foil"
+      "🪵 Wood",
+      "🔧 Metal pipe",
+      "🧴 Plastic",
+      "🪟 Glass"
     ],
-    "answer": "Wood",
+    "answer": "🪵 Wood",
     "explanation": "Wood comes directly from trees — it's a natural material. Plastic, glass, and metal foil are all processed or manufactured materials!"
   },
   {
@@ -196,16 +192,14 @@
     "subject": "science",
     "topic": "materials",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "Which material is a good conductor of electricity?",
-    "options": [
-      "Wood",
-      "Rubber",
-      "Plastic",
-      "Copper"
-    ],
     "answer": "Copper",
-    "explanation": "Metals like copper are good conductors — electricity flows through them easily. That's why electrical wires are made of copper!"
+    "explanation": "Metals like copper are good conductors — electricity flows through them easily. That's why electrical wires are made of copper!",
+    "answer_variants": [
+      "copper wire",
+      "metal"
+    ]
   },
   {
     "id": "sci-mat-004",
@@ -244,15 +238,15 @@
     "subject": "science",
     "topic": "energy",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Where does most of Earth's energy come from?",
+    "type": "picture",
+    "question": "Where does most of Earth's energy come from? ⚡",
     "options": [
-      "The moon",
-      "Wind",
-      "The Sun",
-      "The ocean"
+      "☀️ The Sun",
+      "🌊 The Ocean",
+      "🌋 Volcanoes",
+      "💧 Rain"
     ],
-    "answer": "The Sun",
+    "answer": "☀️ The Sun",
     "explanation": "The Sun is our primary energy source. It powers plants through photosynthesis, creates wind, and warms our planet!"
   },
   {
@@ -276,15 +270,15 @@
     "subject": "science",
     "topic": "energy",
     "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "Which of these is a renewable energy source?",
+    "type": "picture",
+    "question": "Which of these is a renewable energy source? 🌿",
     "options": [
-      "Coal",
-      "Natural gas",
-      "Wind",
-      "Oil"
+      "💨 Wind",
+      "⛽ Petrol",
+      "🪨 Coal",
+      "☢️ Nuclear"
     ],
-    "answer": "Wind",
+    "answer": "💨 Wind",
     "explanation": "Wind is renewable — it never runs out! Coal, oil, and gas are fossil fuels that took millions of years to form and will run out one day. Ireland has lots of great wind energy!"
   },
   {
@@ -8887,7 +8881,10 @@
     "type": "type-in",
     "question": "What is the process called where plants make their own food using sunlight? Type your answer.",
     "answer": "photosynthesis",
-    "answer_variants": ["photosynthesis", "Photosynthesis"],
+    "answer_variants": [
+      "photosynthesis",
+      "Photosynthesis"
+    ],
     "explanation": "Photosynthesis is the process where plants use sunlight, water and carbon dioxide to make glucose (food) and release oxygen."
   },
   {
@@ -8937,8 +8934,16 @@
     "difficulty": 2,
     "type": "multi-select",
     "question": "Select ALL the animals that are mammals. 🐾",
-    "options": ["🐬 Dolphin", "🐟 Salmon", "🦇 Bat", "🦎 Gecko"],
-    "answers": ["🐬 Dolphin", "🦇 Bat"],
+    "options": [
+      "🐬 Dolphin",
+      "🐟 Salmon",
+      "🦇 Bat",
+      "🦎 Gecko"
+    ],
+    "answers": [
+      "🐬 Dolphin",
+      "🦇 Bat"
+    ],
     "explanation": "Dolphins and bats are mammals — warm-blooded, breathe air, and nurse their young on milk. Salmon are fish; geckos are reptiles."
   },
   {
@@ -8948,8 +8953,16 @@
     "difficulty": 2,
     "type": "multi-select",
     "question": "Select ALL the things that are LIVING. 🌱",
-    "options": ["🌳 Oak Tree", "🪨 Rock", "🐝 Bee", "💧 Water"],
-    "answers": ["🌳 Oak Tree", "🐝 Bee"],
+    "options": [
+      "🌳 Oak Tree",
+      "🪨 Rock",
+      "🐝 Bee",
+      "💧 Water"
+    ],
+    "answers": [
+      "🌳 Oak Tree",
+      "🐝 Bee"
+    ],
     "explanation": "The oak tree and the bee are living things — they both carry out life processes (movement, growth, reproduction etc.). Rocks and water are non-living."
   },
   {
@@ -8959,7 +8972,12 @@
     "difficulty": 1,
     "type": "picture",
     "question": "Which of these is the largest animal that has ever lived on Earth?",
-    "options": ["🐘 Elephant", "🦈 Great White Shark", "🐋 Blue Whale", "🦁 Lion"],
+    "options": [
+      "🐘 Elephant",
+      "🦈 Great White Shark",
+      "🐋 Blue Whale",
+      "🦁 Lion"
+    ],
     "answer": "🐋 Blue Whale",
     "explanation": "The blue whale is the largest animal that has ever lived — up to 30 metres long and 150 tonnes. Its heart alone is the size of a small car!"
   },
@@ -8970,7 +8988,12 @@
     "difficulty": 1,
     "type": "picture",
     "question": "Which part of the plant absorbs water and minerals from the soil?",
-    "options": ["🌸 Flower", "🍃 Leaf", "🌱 Root", "🌿 Stem"],
+    "options": [
+      "🌸 Flower",
+      "🍃 Leaf",
+      "🌱 Root",
+      "🌿 Stem"
+    ],
     "answer": "🌱 Root",
     "explanation": "Roots anchor the plant in the soil and absorb water and minerals that travel up the stem to the rest of the plant."
   },
@@ -8981,7 +9004,12 @@
     "difficulty": 2,
     "type": "picture",
     "question": "Which force pulls everything towards the centre of the Earth?",
-    "options": ["🧲 Magnetism", "🌊 Water Resistance", "🌍 Gravity", "💨 Air Resistance"],
+    "options": [
+      "🧲 Magnetism",
+      "🌊 Water Resistance",
+      "🌍 Gravity",
+      "💨 Air Resistance"
+    ],
     "answer": "🌍 Gravity",
     "explanation": "Gravity is the force that pulls all objects towards the Earth. It is why things fall when you drop them and why you stay on the ground!"
   }

@@ -4,14 +4,8 @@
     "subject": "geography",
     "topic": "ireland",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is the capital city of Ireland?",
-    "options": [
-      "Cork",
-      "Galway",
-      "Dublin",
-      "Limerick"
-    ],
     "answer": "Dublin",
     "explanation": "Dublin (Baile Átha Cliath in Irish) is Ireland's capital city and largest city. It's on the east coast!"
   },
@@ -20,64 +14,57 @@
     "subject": "geography",
     "topic": "ireland",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What ocean is to the west of Ireland?",
-    "options": [
-      "Pacific Ocean",
-      "Indian Ocean",
-      "Arctic Ocean",
-      "Atlantic Ocean"
-    ],
     "answer": "Atlantic Ocean",
-    "explanation": "The Atlantic Ocean is to the west of Ireland. That's why Ireland gets so much rain — the Atlantic brings lots of clouds!"
+    "explanation": "The Atlantic Ocean is to the west of Ireland. That's why Ireland gets so much rain — the Atlantic brings lots of clouds!",
+    "answer_variants": [
+      "The Atlantic Ocean",
+      "atlantic"
+    ]
   },
   {
     "id": "geo-ire-003",
     "subject": "geography",
     "topic": "ireland",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is the longest river in Ireland?",
-    "options": [
-      "River Boyne",
-      "River Lee",
-      "River Shannon",
-      "River Liffey"
-    ],
     "answer": "River Shannon",
-    "explanation": "The River Shannon is the longest river in Ireland, at about 360 km. It flows through the middle of the country!"
+    "explanation": "The River Shannon is the longest river in Ireland, at about 360 km. It flows through the middle of the country!",
+    "answer_variants": [
+      "The River Shannon",
+      "Shannon River"
+    ]
   },
   {
     "id": "geo-ire-004",
     "subject": "geography",
     "topic": "ireland",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is the highest mountain in Ireland?",
-    "options": [
-      "Croagh Patrick",
-      "Carrauntoohil",
-      "Brandon Mountain",
-      "Lugnaquilla"
-    ],
     "answer": "Carrauntoohil",
-    "explanation": "Carrauntoohil in County Kerry is the highest peak in Ireland at 1,038 metres. It's part of the MacGillycuddy's Reeks mountain range!"
+    "explanation": "Carrauntoohil in County Kerry is the highest peak in Ireland at 1,038 metres. It's part of the MacGillycuddy's Reeks mountain range!",
+    "answer_variants": [
+      "Carrantuohill",
+      "Corrán Tuathail"
+    ]
   },
   {
     "id": "geo-ire-005",
     "subject": "geography",
     "topic": "ireland",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many provinces are there in Ireland?",
-    "options": [
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "answer": "4",
-    "explanation": "Ireland has 4 provinces: Leinster, Munster, Connacht, and Ulster. You can remember them with: 'Lovely Munsters Can Unite'!"
+    "answer": 4,
+    "explanation": "Ireland has 4 provinces: Leinster, Munster, Connacht, and Ulster. You can remember them with: 'Lovely Munsters Can Unite'!",
+    "min": 1,
+    "max": 10,
+    "step": 1,
+    "unit": "provinces",
+    "tolerance": 0
   },
   {
     "id": "geo-ire-006",
@@ -164,15 +151,15 @@
     "subject": "geography",
     "topic": "world-geography",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "What is the largest continent?",
+    "type": "picture",
+    "question": "Which is the largest continent? 🌍",
     "options": [
-      "Africa",
-      "North America",
-      "Europe",
-      "Asia"
+      "🌏 Asia",
+      "🌍 Africa",
+      "🌎 Americas",
+      "🧊 Antarctica"
     ],
-    "answer": "Asia",
+    "answer": "🌏 Asia",
     "explanation": "Asia is the largest continent, covering about 30% of Earth's land area. It includes countries like China, India, Japan, and Russia!"
   },
   {
@@ -180,30 +167,23 @@
     "subject": "geography",
     "topic": "world-geography",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many continents are there?",
-    "options": [
-      "5",
-      "6",
-      "7",
-      "8"
-    ],
-    "answer": "7",
-    "explanation": "The 7 continents are: Africa, Antarctica, Asia, Australia/Oceania, Europe, North America, and South America!"
+    "answer": 7,
+    "explanation": "The 7 continents are: Africa, Antarctica, Asia, Australia/Oceania, Europe, North America, and South America!",
+    "min": 1,
+    "max": 10,
+    "step": 1,
+    "unit": "continents",
+    "tolerance": 0
   },
   {
     "id": "geo-world-003",
     "subject": "geography",
     "topic": "world-geography",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is the largest ocean?",
-    "options": [
-      "Atlantic Ocean",
-      "Indian Ocean",
-      "Arctic Ocean",
-      "Pacific Ocean"
-    ],
     "answer": "Pacific Ocean",
     "explanation": "The Pacific Ocean is the largest ocean — it's bigger than all the continents put together!"
   },
@@ -212,14 +192,8 @@
     "subject": "geography",
     "topic": "world-geography",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is the longest river in the world?",
-    "options": [
-      "Amazon",
-      "Mississippi",
-      "Nile",
-      "Yangtze"
-    ],
     "answer": "Nile",
     "explanation": "The River Nile in Africa is approximately 6,650 km long, making it the longest river in the world!"
   },
@@ -228,15 +202,15 @@
     "subject": "geography",
     "topic": "world-geography",
     "difficulty": 2,
-    "type": "multiple-choice",
-    "question": "On which continent is the Sahara Desert?",
+    "type": "picture",
+    "question": "On which continent is the Sahara Desert? 🏜️",
     "options": [
-      "Asia",
-      "South America",
-      "Australia",
-      "Africa"
+      "🌍 Africa",
+      "🌏 Asia",
+      "🌎 Americas",
+      "🧊 Antarctica"
     ],
-    "answer": "Africa",
+    "answer": "🌍 Africa",
     "explanation": "The Sahara Desert is in northern Africa. It's the world's largest hot desert — about the same size as the United States!"
   },
   {
@@ -388,32 +362,34 @@
     "subject": "geography",
     "topic": "ireland",
     "difficulty": 1,
-    "type": "multiple-choice",
+    "type": "scale",
     "question": "How many counties are there on the island of Ireland?",
-    "options": [
-      "26",
-      "30",
-      "32",
-      "36"
-    ],
-    "answer": "32",
-    "explanation": "There are 32 counties on the whole island of Ireland, Emilia."
+    "answer": 32,
+    "explanation": "There are 32 counties on the whole island of Ireland, Emilia.",
+    "min": 10,
+    "max": 50,
+    "step": 1,
+    "unit": "counties",
+    "tolerance": 0
   },
   {
     "id": "geo-ireland-004",
     "subject": "geography",
     "topic": "ireland",
     "difficulty": 1,
-    "type": "multiple-choice",
-    "question": "Which of these is one of Ireland's four provinces?",
+    "type": "multi-select",
+    "question": "Which TWO of these are provinces of Ireland? (Select 2)",
     "options": [
       "Munster",
-      "London",
-      "Wales",
-      "Paris"
+      "Leinster",
+      "Midlands",
+      "Shannon"
     ],
-    "answer": "Munster",
-    "explanation": "Munster is a province in the south of Ireland. The others are Leinster, Connacht and Ulster."
+    "explanation": "Munster is a province in the south of Ireland. The others are Leinster, Connacht and Ulster.",
+    "answers": [
+      "Munster",
+      "Leinster"
+    ]
   },
   {
     "id": "geo-ireland-005",
@@ -8823,7 +8799,12 @@
     "type": "type-in",
     "question": "What is the capital city of Ireland? Type your answer.",
     "answer": "Dublin",
-    "answer_variants": ["dublin", "Dublin", "baile átha cliath", "baile atha cliath"],
+    "answer_variants": [
+      "dublin",
+      "Dublin",
+      "baile átha cliath",
+      "baile atha cliath"
+    ],
     "explanation": "Dublin (Baile Átha Cliath in Irish) is the capital and largest city of Ireland, located on the east coast."
   },
   {
@@ -8873,7 +8854,12 @@
     "difficulty": 1,
     "type": "picture",
     "question": "Which globe emoji shows Africa and Europe? 🌍🌎🌏",
-    "options": ["🌎 The Americas", "🌍 Africa & Europe", "🌏 Asia & Oceania", "🌐 All continents"],
+    "options": [
+      "🌎 The Americas",
+      "🌍 Africa & Europe",
+      "🌏 Asia & Oceania",
+      "🌐 All continents"
+    ],
     "answer": "🌍 Africa & Europe",
     "explanation": "🌍 shows Africa and Europe. 🌎 shows the Americas. 🌏 shows Asia and Australia/Oceania."
   }

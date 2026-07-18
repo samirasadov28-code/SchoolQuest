@@ -4,16 +4,10 @@
     "subject": "history",
     "topic": "irish-history",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "What is the name of the ancient burial site near the River Boyne in Ireland?",
-    "options": [
-      "Blarney Castle",
-      "Newgrange",
-      "The Rock of Cashel",
-      "Croagh Patrick"
-    ],
     "answer": "Newgrange",
-    "explanation": "Newgrange is over 5,000 years old \u2014 older than Stonehenge and the Egyptian pyramids! Every winter solstice, the sun shines right into its inner chamber."
+    "explanation": "Newgrange is over 5,000 years old — older than Stonehenge and the Egyptian pyramids! Every winter solstice, the sun shines right into its inner chamber."
   },
   {
     "id": "his-ire-002",
@@ -23,7 +17,7 @@
     "type": "multiple-choice",
     "question": "Who was the legendary Irish hero known for his wisdom and leadership of the Fianna?",
     "options": [
-      "C\u00fa Chulainn",
+      "Cú Chulainn",
       "Brian Boru",
       "Fionn Mac Cumhaill",
       "St. Patrick"
@@ -36,16 +30,14 @@
     "subject": "history",
     "topic": "irish-history",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "Which saint is said to have brought Christianity to Ireland?",
-    "options": [
-      "St. Brigid",
-      "St. Columba",
-      "St. Patrick",
-      "St. Kevin"
-    ],
     "answer": "St. Patrick",
-    "explanation": "St. Patrick came to Ireland around 432 AD. He is Ireland's patron saint, celebrated every year on 17th March!"
+    "explanation": "St. Patrick came to Ireland around 432 AD. He is Ireland's patron saint, celebrated every year on 17th March!",
+    "answer_variants": [
+      "Saint Patrick",
+      "Patrick"
+    ]
   },
   {
     "id": "his-ire-004",
@@ -61,23 +53,21 @@
       "Walls"
     ],
     "answer": "Longphorts (harbours)",
-    "explanation": "The Vikings came to Ireland around 795 AD. They built harbour settlements called longphorts \u2014 Dublin, Waterford, and Limerick all started as Viking settlements!"
+    "explanation": "The Vikings came to Ireland around 795 AD. They built harbour settlements called longphorts — Dublin, Waterford, and Limerick all started as Viking settlements!"
   },
   {
     "id": "his-ire-005",
     "subject": "history",
     "topic": "irish-history",
     "difficulty": 3,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "Who was the High King of Ireland who defeated the Vikings at the Battle of Clontarf in 1014?",
-    "options": [
-      "C\u00fa Chulainn",
-      "Fionn Mac Cumhaill",
-      "Brian Boru",
-      "St. Columba"
-    ],
     "answer": "Brian Boru",
-    "explanation": "Brian Boru was a great Irish king who defeated the Vikings at the Battle of Clontarf in 1014. Sadly, he was killed after the battle, but he had ended Viking power in Ireland."
+    "explanation": "Brian Boru was a great Irish king who defeated the Vikings at the Battle of Clontarf in 1014. Sadly, he was killed after the battle, but he had ended Viking power in Ireland.",
+    "answer_variants": [
+      "Brian Ború",
+      "Brian Boru"
+    ]
   },
   {
     "id": "his-ire-006",
@@ -93,7 +83,7 @@
       "A stepping stone used by St. Patrick"
     ],
     "answer": "A stone said to give the gift of eloquent speech",
-    "explanation": "The Blarney Stone is in Blarney Castle, Cork. Legend says kissing it gives you 'the gift of the gab' \u2014 the ability to speak very well!"
+    "explanation": "The Blarney Stone is in Blarney Castle, Cork. Legend says kissing it gives you 'the gift of the gab' — the ability to speak very well!"
   },
   {
     "id": "his-ire-007",
@@ -109,23 +99,22 @@
       "A drought that dried up all rivers"
     ],
     "answer": "A shortage of food that caused millions to die or emigrate",
-    "explanation": "The Great Famine (An Gorta M\u00f3r) happened when the potato crop failed. About 1 million people died and another million emigrated. Ireland's population fell dramatically."
+    "explanation": "The Great Famine (An Gorta Mór) happened when the potato crop failed. About 1 million people died and another million emigrated. Ireland's population fell dramatically."
   },
   {
     "id": "his-ire-008",
     "subject": "history",
     "topic": "irish-history",
     "difficulty": 3,
-    "type": "multiple-choice",
-    "question": "In what year did Ireland become an independent country?",
-    "options": [
-      "1916",
-      "1921",
-      "1949",
-      "1800"
-    ],
-    "answer": "1921",
-    "explanation": "The Irish Free State was established in 1922 after the Anglo-Irish Treaty of 1921. Ireland officially became a Republic in 1949."
+    "type": "scale",
+    "question": "In what year did Ireland become an independent country? 📅",
+    "answer": 1921,
+    "explanation": "The Irish Free State was established in 1922 after the Anglo-Irish Treaty of 1921. Ireland officially became a Republic in 1949.",
+    "min": 1850,
+    "max": 2000,
+    "step": 1,
+    "unit": "year",
+    "tolerance": 0
   },
   {
     "id": "his-ire-009",
@@ -141,7 +130,7 @@
       "Underground cities"
     ],
     "answer": "Beautiful illuminated manuscripts like the Book of Kells",
-    "explanation": "Irish monks were amazing artists who decorated religious books with incredible patterns and illustrations. The Book of Kells (c.800 AD) is one of the most beautiful books ever made \u2014 you can see it in Trinity College Dublin!"
+    "explanation": "Irish monks were amazing artists who decorated religious books with incredible patterns and illustrations. The Book of Kells (c.800 AD) is one of the most beautiful books ever made — you can see it in Trinity College Dublin!"
   },
   {
     "id": "his-ire-010",
@@ -157,21 +146,15 @@
       "A lighthouse on the coast"
     ],
     "answer": "A tall, narrow stone tower built beside early Irish monasteries",
-    "explanation": "Round towers were built by Irish monks from about 900 AD. They were used as bell towers and as places of refuge when Vikings attacked \u2014 monks could pull up the ladder and be safe inside!"
+    "explanation": "Round towers were built by Irish monks from about 900 AD. They were used as bell towers and as places of refuge when Vikings attacked — monks could pull up the ladder and be safe inside!"
   },
   {
     "id": "his-world-001",
     "subject": "history",
     "topic": "world-history",
     "difficulty": 2,
-    "type": "multiple-choice",
+    "type": "type-in",
     "question": "Where were the ancient pyramids built?",
-    "options": [
-      "Greece",
-      "Rome",
-      "Egypt",
-      "Mesopotamia"
-    ],
     "answer": "Egypt",
     "explanation": "The Great Pyramids were built in ancient Egypt, over 4,500 years ago. They were built as tombs for the Pharaohs (Egyptian kings)!"
   },
@@ -221,7 +204,7 @@
       "Marco Polo"
     ],
     "answer": "Christopher Columbus",
-    "explanation": "Christopher Columbus sailed from Spain in 1492 and reached the Caribbean. However, indigenous people already lived there \u2014 Columbus opened up a new connection between Europe and the Americas."
+    "explanation": "Christopher Columbus sailed from Spain in 1492 and reached the Caribbean. However, indigenous people already lived there — Columbus opened up a new connection between Europe and the Americas."
   },
   {
     "id": "his-world-005",
@@ -237,7 +220,7 @@
       "A harvest celebration in ancient Egypt"
     ],
     "answer": "A religious and athletic festival in ancient Greece",
-    "explanation": "The ancient Olympics began in Olympia, Greece, around 776 BC. They were held every 4 years to honour Zeus. Only men could compete \u2014 and they competed without clothes!"
+    "explanation": "The ancient Olympics began in Olympia, Greece, around 776 BC. They were held every 4 years to honour Zeus. Only men could compete — and they competed without clothes!"
   },
   {
     "id": "his-ancient-001",
@@ -503,13 +486,13 @@
     "type": "multiple-choice",
     "question": "Newgrange is part of a group of ancient sites in a valley called what?",
     "options": [
-      "Br\u00fa na B\u00f3inne",
+      "Brú na Bóinne",
       "Phoenix Park",
       "The Burren",
       "Glendalough"
     ],
-    "answer": "Br\u00fa na B\u00f3inne",
-    "explanation": "Newgrange sits in Br\u00fa na B\u00f3inne, the Bend of the Boyne, along with the tombs of Knowth and Dowth."
+    "answer": "Brú na Bóinne",
+    "explanation": "Newgrange sits in Brú na Bóinne, the Bend of the Boyne, along with the tombs of Knowth and Dowth."
   },
   {
     "id": "his-ancient-018",
@@ -1549,7 +1532,7 @@
       "Blarney Castle"
     ],
     "answer": "Newgrange",
-    "explanation": "Knowth and Dowth are passage tombs close to Newgrange in the Br\u00fa na B\u00f3inne area of County Meath."
+    "explanation": "Knowth and Dowth are passage tombs close to Newgrange in the Brú na Bóinne area of County Meath."
   },
   {
     "id": "his-ancient-083",
@@ -1671,13 +1654,13 @@
     "type": "multiple-choice",
     "question": "Some Iron Age sites had a man-made island in a lake to live on for safety. What was this called?",
     "options": [
-      "A crann\u00f3g",
+      "A crannóg",
       "A castle",
       "A caravan",
       "A canoe"
     ],
-    "answer": "A crann\u00f3g",
-    "explanation": "A crann\u00f3g was a house built on an island in a lake, reached by boat, to keep families safe."
+    "answer": "A crannóg",
+    "explanation": "A crannóg was a house built on an island in a lake, reached by boat, to keep families safe."
   },
   {
     "id": "his-ancient-091",
@@ -2541,7 +2524,7 @@
       "The wide sea"
     ],
     "answer": "The valley of the two lakes",
-    "explanation": "Glendalough comes from the Irish 'Gleann D\u00e1 Loch', meaning the valley of the two lakes."
+    "explanation": "Glendalough comes from the Irish 'Gleann Dá Loch', meaning the valley of the two lakes."
   },
   {
     "id": "his-ec-050",
@@ -3303,13 +3286,13 @@
     "type": "multiple-choice",
     "question": "What is the Irish name for Grace O'Malley?",
     "options": [
-      "Gr\u00e1inne Mhaol",
-      "Niamh \u00d3g",
-      "Saoirse B\u00e1n",
+      "Gráinne Mhaol",
+      "Niamh Óg",
+      "Saoirse Bán",
       "Aoife Rua"
     ],
-    "answer": "Gr\u00e1inne Mhaol",
-    "explanation": "In Irish she is called Gr\u00e1inne Mhaol, which is how people in Ireland have known her for centuries."
+    "answer": "Gráinne Mhaol",
+    "explanation": "In Irish she is called Gráinne Mhaol, which is how people in Ireland have known her for centuries."
   },
   {
     "id": "his-famous-003",
@@ -3405,7 +3388,7 @@
       "She loved to sing"
     ],
     "answer": "She cut her hair short as a girl",
-    "explanation": "The story says young Grace cut her hair short so she could sail like the men, earning the name Gr\u00e1inne Mhaol."
+    "explanation": "The story says young Grace cut her hair short so she could sail like the men, earning the name Gráinne Mhaol."
   },
   {
     "id": "his-famous-009",
@@ -3533,7 +3516,7 @@
       "Head monk"
     ],
     "answer": "High King",
-    "explanation": "A High King, or Ard R\u00ed in Irish, ruled above all the smaller kings of Ireland."
+    "explanation": "A High King, or Ard Rí in Irish, ruled above all the smaller kings of Ireland."
   },
   {
     "id": "his-famous-017",
@@ -8696,9 +8679,9 @@
     "question": "What was the name of the Irish princess that Strongbow married?",
     "options": [
       "Aoife",
-      "Gr\u00e1inne",
+      "Gráinne",
       "Brigid",
-      "M\u00e9abh"
+      "Méabh"
     ],
     "answer": "Aoife",
     "explanation": "Strongbow married Aoife, the daughter of King Dermot MacMurrough, in a famous marriage at Waterford."
