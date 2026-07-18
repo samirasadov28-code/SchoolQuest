@@ -17,13 +17,11 @@ export default function AvatarCorner() {
       }}
     >
       <div style={{
-        width: 44, height: 44,
+        width: 48, height: 48,
         borderRadius: '50%',
-        background: 'linear-gradient(135deg, rgba(201,162,39,0.25) 0%, rgba(100,60,180,0.25) 100%)',
-        border: '2px solid rgba(201,162,39,0.6)',
-        boxShadow: '0 0 10px rgba(201,162,39,0.3)',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        background: 'rgba(255,255,255,0.07)',
         overflow: 'hidden',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
       }}>
         <img
           src={portrait}
@@ -32,7 +30,7 @@ export default function AvatarCorner() {
             width: '100%',
             height: '100%',
             objectFit: 'contain',
-            objectPosition: 'center bottom',
+            objectPosition: 'center',
             display: 'block',
           }}
         />
