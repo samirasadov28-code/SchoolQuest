@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import useStore from '../stores/useStore'
 import { SUBJECTS, formatTime } from '../services/adaptive'
 import { getSubjectAverages } from '../services/gamification'
-import { addPrize, confirmPrize, getPrizes } from '../services/supabase'
+import { addPrize, confirmPrize, getPrizes, updateProfile } from '../services/supabase'
 import { QUESTION_BANK } from '../data/questions/index'
 
 const PRIORITY_LABELS = { 0.5: 'Low', 1: 'Normal', 2: 'High', 3: 'Max' }
@@ -39,6 +39,14 @@ export default function ParentPage() {
 
   const [suggestions,    setSuggestions]    = useState([])
   const [loadingSugg,    setLoadingSugg]    = useState(false)
+
+  const setProfile = useStore(s => s.setProfile)
+  const [showChangePIN, setShowChangePIN] = useState(false)
+  const [currentPIN,    setCurrentPIN]    = useState('')
+  const [newPIN,        setNewPIN]        = useState('')
+  const [confirmPIN,    setConfirmPIN]    = useState('')
+  const [pinChangeMsg,  setPinChangeMsg]  = useState('')
+  const [savingPIN,     setSavingPIN]     = useState(false)
 
   const subjectAvgs = getSubjectAverages(masteryMap)
   const claimedPrizes = prizes.filter(p => p.status === 'claimed')
@@ -100,6 +108,26 @@ export default function ParentPage() {
     }
   }
 
+  async function handleChangePIN() {
+    setPinChangeMsg('')
+    const stored = profile?.parent_pin ?? '1234'
+    if (currentPIN !== stored) { setPinChangeMsg('Current PIN is incorrect.'); return }
+    if (!/^\d{4}$/.test(newPIN)) { setPinChangeMsg('New PIN must be exactly 4 digits.'); return }
+    if (newPIN !== confirmPIN) { setPinChangeMsg('New PINs do not match.'); return }
+    setSavingPIN(true)
+    try {
+      await updateProfile(user.id, { parent_pin: newPIN })
+      setProfile({ ...profile, parent_pin: newPIN })
+      setPinChangeMsg('✅ PIN changed successfully!')
+      setCurrentPIN(''); setNewPIN(''); setConfirmPIN('')
+      setTimeout(() => { setShowChangePIN(false); setPinChangeMsg('') }, 1500)
+    } catch (e) {
+      setPinChangeMsg('Error saving PIN: ' + e.message)
+    } finally {
+      setSavingPIN(false)
+    }
+  }
+
   const name = profile?.name ?? 'Your child'
   const weakest = SUBJECTS.filter(s => (subjectAvgs[s.id] ?? 0) < 50)
 
@@ -111,7 +139,10 @@ export default function ParentPage() {
           <h1 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.3rem' }}>👨‍👩‍👧 Parent Panel</h1>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem' }}>{name}'s learning dashboard</p>
         </div>
-        <button className="btn-secondary" style={{ fontSize: '0.85rem', padding: '8px 16px' }} onClick={handleExit}>Exit</button>
+        <div style={{ display: 'flex', gap: 8 }}>
+          <button className="btn-secondary" style={{ fontSize: '0.75rem', padding: '8px 12px' }} onClick={() => setShowChangePIN(true)}>🔐 PIN</button>
+          <button className="btn-secondary" style={{ fontSize: '0.85rem', padding: '8px 16px' }} onClick={handleExit}>Exit</button>
+        </div>
       </div>
 
       {/* Key stats */}
@@ -388,6 +419,34 @@ export default function ParentPage() {
           </div>
         )}
       </section>
+
+      {/* Change PIN modal */}
+      {showChangePIN && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', zIndex: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
+          <div style={{ background: '#1a1a2e', border: '2px solid rgba(201,162,39,0.4)', borderRadius: 20, padding: 28, width: '100%', maxWidth: 360 }}>
+            <h2 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginBottom: 6 }}>🔐 Change Parent PIN</h2>
+            <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginBottom: 20 }}>Enter your current PIN, then choose a new 4-digit PIN.</p>
+            {['Current PIN', 'New PIN', 'Confirm New PIN'].map((label, i) => {
+              const val   = [currentPIN, newPIN, confirmPIN][i]
+              const setter = [setCurrentPIN, setNewPIN, setConfirmPIN][i]
+              return (
+                <div key={label} style={{ marginBottom: 12 }}>
+                  <label style={{ color: 'var(--color-stone-light)', fontSize: '0.78rem', display: 'block', marginBottom: 4 }}>{label}</label>
+                  <input type="password" inputMode="numeric" maxLength={4} value={val} onChange={e => setter(e.target.value.replace(/\D/g, '').slice(0, 4))}
+                    placeholder="••••" style={{ ...inputStyle, letterSpacing: '0.3em', fontSize: '1.2rem' }} />
+                </div>
+              )
+            })}
+            {pinChangeMsg && (
+              <p style={{ color: pinChangeMsg.startsWith('✅') ? '#5dde8b' : '#ff6b6b', fontSize: '0.8rem', marginBottom: 12 }}>{pinChangeMsg}</p>
+            )}
+            <div style={{ display: 'flex', gap: 10, marginTop: 4 }}>
+              <button className="btn-secondary" style={{ flex: 1 }} onClick={() => { setShowChangePIN(false); setCurrentPIN(''); setNewPIN(''); setConfirmPIN(''); setPinChangeMsg('') }}>Cancel</button>
+              <button className="btn-primary" style={{ flex: 1 }} onClick={handleChangePIN} disabled={savingPIN}>{savingPIN ? 'Saving…' : 'Save PIN'}</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
