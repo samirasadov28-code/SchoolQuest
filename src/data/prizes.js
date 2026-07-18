@@ -1,148 +1,261 @@
 /**
  * Digital prize photo collectibles — unlocked at XP milestones.
- * Collection 1: "Unicorn Adventures" — fantasy Emilia scenes
- * Collection 2: "Skate Adventures"  — roller-skate Emilia scenes
+ * Collection 1: "Unicorn Adventures" — story chapters with explorer girl + unicorns
+ * Collection 2: "Skate Adventures"  — skater girl celestial adventures
  */
 
-// Unicorn Adventures
-import meadow    from '../assets/prizes/meadow-portrait.png'
-import flying    from '../assets/prizes/flying-high.png'
-import stable    from '../assets/prizes/stable-friends.png'
-import galaxy    from '../assets/prizes/galaxy-ride.png'
-import cave      from '../assets/prizes/cave-discovery.png'
-import carousel  from '../assets/prizes/whimsical-carousel.png'
+// Unicorn Adventures — Explorer girl series (4 scenes)
+import newFriends   from '../assets/prizes/unicorn/new-friends.png'
+import ridingHigh   from '../assets/prizes/unicorn/riding-high.png'
+import sharingSnack from '../assets/prizes/unicorn/sharing-snack.png'
+import overRainbow  from '../assets/prizes/unicorn/over-rainbow.png'
 
-// Skate Adventures
-import skatepark   from '../assets/prizes/skate/skatepark-challenge.jpg'
-import coastal     from '../assets/prizes/skate/coastal-glide.jpg'
-import forestSkate from '../assets/prizes/skate/forest-trail-skate.jpg'
-import neonCity    from '../assets/prizes/skate/neon-city-slide.jpg'
-import boardwalk   from '../assets/prizes/skate/boardwalk-cruiser.jpg'
-import alleyway    from '../assets/prizes/skate/alleyway-art.jpg'
-import concreteBowl from '../assets/prizes/skate/concrete-bowl.jpg'
-import forestExp   from '../assets/prizes/skate/forest-trail-exp.jpg'
+// Zoe & Starry story (8 panels)
+import zoeStarry1   from '../assets/prizes/unicorn/zoe-starry-1.png'
+import zoeStarry2   from '../assets/prizes/unicorn/zoe-starry-2.png'
+import zoeStarry3   from '../assets/prizes/unicorn/zoe-starry-3.png'
+import zoeStarry4   from '../assets/prizes/unicorn/zoe-starry-4.png'
+import zoeStarry5   from '../assets/prizes/unicorn/zoe-starry-5.png'
+import zoeStarry6   from '../assets/prizes/unicorn/zoe-starry-6.png'
+import zoeStarry7   from '../assets/prizes/unicorn/zoe-starry-7.png'
+import zoeStarry8   from '../assets/prizes/unicorn/zoe-starry-8.png'
+
+// Lily & Aurora story (8 panels)
+import lilyAurora1  from '../assets/prizes/unicorn/lily-aurora-1.png'
+import lilyAurora2  from '../assets/prizes/unicorn/lily-aurora-2.png'
+import lilyAurora3  from '../assets/prizes/unicorn/lily-aurora-3.png'
+import lilyAurora4  from '../assets/prizes/unicorn/lily-aurora-4.png'
+import lilyAurora5  from '../assets/prizes/unicorn/lily-aurora-5.png'
+import lilyAurora6  from '../assets/prizes/unicorn/lily-aurora-6.png'
+import lilyAurora7  from '../assets/prizes/unicorn/lily-aurora-7.png'
+import lilyAurora8  from '../assets/prizes/unicorn/lily-aurora-8.png'
+
+// Skate Adventures — celestial skater scenes
+import celestialFriends from '../assets/prizes/unicorn/celestial-new-friends.png'
+import skatingStars     from '../assets/prizes/unicorn/skating-past-stars.png'
+import sharingBird      from '../assets/prizes/unicorn/sharing-snack-bird.png'
+import skywardSkates    from '../assets/prizes/unicorn/skyward-skates.png'
 
 export const DIGITAL_PRIZES = [
+  // — Chapter 1: A New Friend —
   {
-    id:          'meadow-portrait',
-    name:        'Magical Meadow',
-    description: 'Emilia meets her first unicorn in a sunlit meadow!',
-    image:       meadow,
-    xpRequired:  100,
+    id:          'new-friends',
+    name:        'A Magical Discovery!',
+    description: 'I found a magical friend! An explorer girl meets a beautiful white unicorn in an enchanted forest.',
+    image:       newFriends,
+    xpRequired:  50,
     rarity:      'common',
+    chapter:     'Explorer Tales',
   },
   {
-    id:          'stable-friends',
-    name:        'Cozy Stable',
-    description: 'Emilia cares for a baby unicorn in a crystal stable.',
-    image:       stable,
+    id:          'riding-high',
+    name:        'Riding High!',
+    description: 'A magical ride over the hills! Galloping through a meadow of bluebells on a rainbow unicorn!',
+    image:       ridingHigh,
+    xpRequired:  150,
+    rarity:      'common',
+    chapter:     'Explorer Tales',
+  },
+  {
+    id:          'sharing-snack',
+    name:        'Sharing a Snack!',
+    description: 'Sharing is caring, even with a unicorn! Best friends share an apple in the magical forest.',
+    image:       sharingSnack,
     xpRequired:  300,
-    rarity:      'common',
-  },
-  {
-    id:          'flying-high',
-    name:        'Sky Soar',
-    description: 'Emilia soars through rainbow clouds on a unicorn!',
-    image:       flying,
-    xpRequired:  600,
     rarity:      'rare',
+    chapter:     'Explorer Tales',
   },
   {
-    id:          'cave-discovery',
-    name:        'Cave Secret',
-    description: 'Deep in a crystal cave, Emilia discovers a sleeping unicorn.',
-    image:       cave,
-    xpRequired:  1000,
+    id:          'over-rainbow',
+    name:        'Over the Rainbow!',
+    description: 'We can fly to new heights! Soaring above the clouds to a magical castle in the sky!',
+    image:       overRainbow,
+    xpRequired:  500,
     rarity:      'rare',
+    chapter:     'Explorer Tales',
+  },
+  // — Chapter 2: Zoe & Starry —
+  {
+    id:          'zoe-starry-1',
+    name:        'Zoe Meets Starry',
+    description: 'One day, Zoe was skating in the park when she found a magical unicorn!',
+    image:       zoeStarry1,
+    xpRequired:  700,
+    rarity:      'rare',
+    chapter:     'Zoe & Starry',
   },
   {
-    id:          'whimsical-carousel',
-    name:        'Carousel Magic',
-    description: 'A magical unicorn carousel at the fairy festival!',
-    image:       carousel,
+    id:          'zoe-starry-2',
+    name:        'Starry Needs Help',
+    description: 'Her name was Starry. Starry had lost her sparkle and needed Zoe\'s help.',
+    image:       zoeStarry2,
+    xpRequired:  900,
+    rarity:      'rare',
+    chapter:     'Zoe & Starry',
+  },
+  {
+    id:          'zoe-starry-3',
+    name:        'The Crystal Quest',
+    description: 'Together, they searched for five magic crystals hidden around the park.',
+    image:       zoeStarry3,
+    xpRequired:  1100,
+    rarity:      'rare',
+    chapter:     'Zoe & Starry',
+  },
+  {
+    id:          'zoe-starry-4',
+    name:        'Kindness Along the Way',
+    description: 'They solved puzzles, helped animals, and shared kindness every step of the way.',
+    image:       zoeStarry4,
+    xpRequired:  1300,
+    rarity:      'epic',
+    chapter:     'Zoe & Starry',
+  },
+  {
+    id:          'zoe-starry-5',
+    name:        'The Last Crystal',
+    description: 'When they found the last crystal, Starry\'s sparkle returned brighter than ever!',
+    image:       zoeStarry5,
     xpRequired:  1500,
     rarity:      'epic',
+    chapter:     'Zoe & Starry',
   },
   {
-    id:          'galaxy-ride',
-    name:        'Cosmic Journey',
-    description: 'Emilia rides a galaxy unicorn through the stars — legendary!',
-    image:       galaxy,
+    id:          'zoe-starry-6',
+    name:        'Words from the Heart',
+    description: 'Starry thanked Zoe and said, "You believed in magic, friendship, and yourself!"',
+    image:       zoeStarry6,
+    xpRequired:  1800,
+    rarity:      'epic',
+    chapter:     'Zoe & Starry',
+  },
+  {
+    id:          'zoe-starry-7',
+    name:        'Above the Clouds',
+    description: 'Starry took Zoe on a magical ride above the clouds to celebrate their adventure!',
+    image:       zoeStarry7,
+    xpRequired:  2100,
+    rarity:      'epic',
+    chapter:     'Zoe & Starry',
+  },
+  {
+    id:          'zoe-starry-8',
+    name:        'Friends Forever',
+    description: 'Zoe waved goodbye to Starry, knowing that true friends shine in your heart forever.',
+    image:       zoeStarry8,
     xpRequired:  2500,
     rarity:      'legendary',
+    chapter:     'Zoe & Starry',
+  },
+  // — Chapter 3: Lily & Aurora —
+  {
+    id:          'lily-aurora-1',
+    name:        'The Shimmering Path',
+    description: 'Lily loved exploring new places. One day, she stumbled upon a shimmering path in the forest.',
+    image:       lilyAurora1,
+    xpRequired:  2900,
+    rarity:      'legendary',
+    chapter:     'Lily & Aurora',
+  },
+  {
+    id:          'lily-aurora-2',
+    name:        'Meeting Aurora',
+    description: 'At the end of the path, she met a beautiful unicorn named Aurora. Aurora seemed shy and sad.',
+    image:       lilyAurora2,
+    xpRequired:  3300,
+    rarity:      'legendary',
+    chapter:     'Lily & Aurora',
+  },
+  {
+    id:          'lily-aurora-3',
+    name:        'Healing Touch',
+    description: 'Lily noticed Aurora was hurt. She cleaned the cut and wrapped it with a soft leaf.',
+    image:       lilyAurora3,
+    xpRequired:  3800,
+    rarity:      'legendary',
+    chapter:     'Lily & Aurora',
+  },
+  {
+    id:          'lily-aurora-4',
+    name:        'Above the Clouds',
+    description: 'Aurora\'s eyes sparkled with thanks. She showed Lily a secret place above the clouds.',
+    image:       lilyAurora4,
+    xpRequired:  4300,
+    rarity:      'legendary',
+    chapter:     'Lily & Aurora',
+  },
+  {
+    id:          'lily-aurora-5',
+    name:        'Soaring Together',
+    description: 'They soared through the sky, past twinkling stars and fluffy clouds, on a magical adventure!',
+    image:       lilyAurora5,
+    xpRequired:  4900,
+    rarity:      'legendary',
+    chapter:     'Lily & Aurora',
+  },
+  {
+    id:          'lily-aurora-6',
+    name:        'The Floating Island',
+    description: 'They found a floating island filled with glowing crystals and beautiful, colourful flowers.',
+    image:       lilyAurora6,
+    xpRequired:  5500,
+    rarity:      'legendary',
+    chapter:     'Lily & Aurora',
+  },
+  {
+    id:          'lily-aurora-7',
+    name:        'A Wish for Everyone',
+    description: 'Lily made a wish for courage, kindness, and happiness for everyone. Aurora added her magic to make it shine.',
+    image:       lilyAurora7,
+    xpRequired:  6200,
+    rarity:      'legendary',
+    chapter:     'Lily & Aurora',
+  },
+  {
+    id:          'lily-aurora-8',
+    name:        'Best Friends Always',
+    description: 'From that day on, Lily and Aurora were the best of friends, sharing adventures and magical moments.',
+    image:       lilyAurora8,
+    xpRequired:  7000,
+    rarity:      'legendary',
+    chapter:     'Lily & Aurora',
   },
 ]
 
 export const SKATE_PRIZES = [
   {
-    id:          'skatepark-challenge',
-    name:        'Skatepark Challenge',
-    description: 'Emilia conquers the concrete bowl at the skatepark!',
-    image:       skatepark,
-    xpRequired:  150,
+    id:          'celestial-new-friends',
+    name:        'A Tiny Celestial Friend!',
+    description: 'I found a tiny celestial friend! A magical bird hatches from a glowing egg at the skatepark.',
+    image:       celestialFriends,
+    xpRequired:  200,
     rarity:      'common',
     collection:  'skate',
   },
   {
-    id:          'boardwalk-cruiser',
-    name:        'Boardwalk Cruiser',
-    description: 'Emilia glides along the beach boardwalk at sunset!',
-    image:       boardwalk,
-    xpRequired:  350,
-    rarity:      'common',
-    collection:  'skate',
-  },
-  {
-    id:          'coastal-glide',
-    name:        'Coastal Glide',
-    description: 'Catching the golden hour on roller skates by the sea!',
-    image:       coastal,
-    xpRequired:  700,
+    id:          'skating-past-stars',
+    name:        'Skating Past Stars!',
+    description: 'Skating together, faster and faster! Racing through a swirling galaxy of stars on roller skates!',
+    image:       skatingStars,
+    xpRequired:  600,
     rarity:      'rare',
     collection:  'skate',
   },
   {
-    id:          'forest-trail-skate',
-    name:        'Forest Trail',
-    description: 'Emilia explores mossy trails deep in the enchanted forest!',
-    image:       forestSkate,
-    xpRequired:  1100,
-    rarity:      'rare',
-    collection:  'skate',
-  },
-  {
-    id:          'alleyway-art',
-    name:        'Alleyway Art Discovery',
-    description: 'Emilia skates past stunning street art — even a friendly alien!',
-    image:       alleyway,
+    id:          'sharing-snack-bird',
+    name:        'Treats with a Friend!',
+    description: 'Treats are better with a friend! Sharing a strawberry with a magical celestial bird on the moon.',
+    image:       sharingBird,
     xpRequired:  1200,
-    rarity:      'rare',
-    collection:  'skate',
-  },
-  {
-    id:          'concrete-bowl',
-    name:        'Concrete Bowl Challenge',
-    description: 'Leaning into the curve — Emilia nails the concrete bowl!',
-    image:       concreteBowl,
-    xpRequired:  1600,
     rarity:      'epic',
     collection:  'skate',
   },
   {
-    id:          'neon-city-slide',
-    name:        'Neon City Slide',
-    description: 'Emilia slides through a neon-lit arcade alley at night!',
-    image:       neonCity,
-    xpRequired:  2000,
-    rarity:      'epic',
-    collection:  'skate',
-  },
-  {
-    id:          'forest-trail-exp',
-    name:        'Forest Expedition',
-    description: 'Deep in the ancient Irish forest — legendary skater Emilia!',
-    image:       forestExp,
-    xpRequired:  3000,
+    id:          'skyward-skates',
+    name:        'Skyward Skates!',
+    description: 'We\'re skating past the stars! Soaring through the night sky carried by a magical phoenix bird!',
+    image:       skywardSkates,
+    xpRequired:  2200,
     rarity:      'legendary',
     collection:  'skate',
   },
