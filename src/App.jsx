@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { supabase, getProgress, getAchievements } from './services/supabase'
 import useStore from './stores/useStore'
@@ -16,8 +16,12 @@ import PetHubPage     from './pages/PetHubPage'
 import TopicsPage     from './pages/TopicsPage'
 import AvatarPage     from './pages/AvatarPage'
 
-function ProtectedRoute({ children }) {
-  const user = useStore(s => s.user)
+function ProtectedRoute({ children, authReady, user }) {
+  if (!authReady) return (
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0f1117' }}>
+      <div style={{ color: '#c9a227', fontSize: '2rem' }}>⏳</div>
+    </div>
+  )
   if (!user) return <Navigate to="/login" replace />
   return children
 }
@@ -28,6 +32,8 @@ export default function App() {
   const setXP             = useStore(s => s.setXP)
   const addAchievement    = useStore(s => s.addAchievement)
   const loadMasteryFromDB = useStore(s => s.loadMasteryFromDB)
+  const storeUser         = useStore(s => s.user)
+  const [authReady, setAuthReady] = useState(false)
 
   async function syncFromDB(userId) {
     // Fetch profile — DB is source of truth for XP/level/streak
@@ -45,24 +51,34 @@ export default function App() {
   }
 
   useEffect(() => {
-    // Restore session on mount
+    // Restore session on mount — wait for Supabase before routing
     supabase.auth.getSession().then(({ data: { session } }) => {
       // Sign out on fresh browser open if user unchecked "Stay signed in"
       if (session?.user && localStorage.getItem('sq-no-persist') === '1' && !sessionStorage.getItem('sq-logged-in')) {
-        supabase.auth.signOut()
-        localStorage.removeItem('sq-no-persist')
+        supabase.auth.signOut().then(() => {
+          localStorage.removeItem('sq-no-persist')
+          setUser(null)
+          setAuthReady(true)
+        })
         return
       }
       if (session?.user) {
         setUser(session.user)
         syncFromDB(session.user.id)
+      } else {
+        setUser(null)
       }
+      setAuthReady(true)
     })
 
     // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null)
-      if (!session?.user) setProfile(null)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'SIGNED_OUT') {
+        setUser(null)
+        setProfile(null)
+      } else if (session?.user) {
+        setUser(session.user)
+      }
     })
 
     return () => subscription.unsubscribe()
@@ -74,14 +90,14 @@ export default function App() {
         <Route path="/"         element={<LandingPage />} />
         <Route path="/login"    element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/home"     element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
-        <Route path="/session"  element={<ProtectedRoute><SessionPage /></ProtectedRoute>} />
-        <Route path="/rewards"  element={<ProtectedRoute><RewardsPage /></ProtectedRoute>} />
-        <Route path="/map"      element={<ProtectedRoute><MapPage /></ProtectedRoute>} />
-        <Route path="/pets"     element={<ProtectedRoute><PetHubPage /></ProtectedRoute>} />
-        <Route path="/parent"   element={<ProtectedRoute><ParentPage /></ProtectedRoute>} />
-        <Route path="/topics"   element={<ProtectedRoute><TopicsPage /></ProtectedRoute>} />
-        <Route path="/avatar"   element={<ProtectedRoute><AvatarPage /></ProtectedRoute>} />
+        <Route path="/home"     element={<ProtectedRoute authReady={authReady} user={storeUser}><DashboardPage /></ProtectedRoute>} />
+        <Route path="/session"  element={<ProtectedRoute authReady={authReady} user={storeUser}><SessionPage /></ProtectedRoute>} />
+        <Route path="/rewards"  element={<ProtectedRoute authReady={authReady} user={storeUser}><RewardsPage /></ProtectedRoute>} />
+        <Route path="/map"      element={<ProtectedRoute authReady={authReady} user={storeUser}><MapPage /></ProtectedRoute>} />
+        <Route path="/pets"     element={<ProtectedRoute authReady={authReady} user={storeUser}><PetHubPage /></ProtectedRoute>} />
+        <Route path="/parent"   element={<ProtectedRoute authReady={authReady} user={storeUser}><ParentPage /></ProtectedRoute>} />
+        <Route path="/topics"   element={<ProtectedRoute authReady={authReady} user={storeUser}><TopicsPage /></ProtectedRoute>} />
+        <Route path="/avatar"   element={<ProtectedRoute authReady={authReady} user={storeUser}><AvatarPage /></ProtectedRoute>} />
         <Route path="*"         element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
