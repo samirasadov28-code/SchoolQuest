@@ -62,7 +62,7 @@ export default function RewardsPage() {
       {activeTab === 1 && (
         <section>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginBottom: 14 }}>
-            🛼 Emilia on wheels — {SKATE_PRIZES.filter(p => xp >= p.xpRequired).length}/{SKATE_PRIZES.length} skate scenes unlocked!
+            🛼 Emilia on wheels — {SKATE_PRIZES.filter(p => xp >= p.xpRequired).length}/{SKATE_PRIZES.length} skate adventures unlocked!
           </p>
           <PrizeGrid prizes={SKATE_PRIZES} xp={xp} onExpand={setExpandedPrize} />
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 28 }}>
