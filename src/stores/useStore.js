@@ -225,6 +225,14 @@ const useStore = create(
     }),
     {
       name: 'emilia-quest-store',
+      version: 2,
+      migrate: (persisted, version) => {
+        // v1→v2: explorer is now the starter avatar
+        if (version < 2 && persisted.selectedAvatar === 'swimmer') {
+          persisted.selectedAvatar = 'explorer'
+        }
+        return persisted
+      },
       // Don't persist session-level transient state
       partialize: (state) => ({
         user:              state.user,
