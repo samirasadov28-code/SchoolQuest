@@ -12,7 +12,7 @@ export default defineConfig({
     // Transpile for older Safari / iPad (iOS 12+, Safari 12+)
     legacy({
       targets: ['ios >= 9', 'safari >= 9', 'chrome >= 49'],
-      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime', 'whatwg-fetch'],
     }),
     VitePWA({
       registerType: 'autoUpdate',

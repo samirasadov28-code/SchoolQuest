@@ -11,6 +11,61 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/icon-192.png" />
     <title>SchoolQuest ☘️</title>
+    <!-- iOS 9 / Safari 9 polyfills: TextEncoder, URLSearchParams, AbortController -->
+    <script>
+    if (typeof TextEncoder === 'undefined') {
+      (function() {
+        function TextEncoder() {}
+        TextEncoder.prototype.encode = function(str) {
+          var out = [], i = 0;
+          str = String(str);
+          while (i < str.length) {
+            var c = str.charCodeAt(i++);
+            if (c < 128) { out.push(c); }
+            else if (c < 2048) { out.push((c >> 6) | 192, (c & 63) | 128); }
+            else if (c < 55296 || c >= 57344) { out.push((c >> 12) | 224, ((c >> 6) & 63) | 128, (c & 63) | 128); }
+            else { c = 65536 + (((c & 1023) << 10) | (str.charCodeAt(i++) & 1023)); out.push((c >> 18) | 240, ((c >> 12) & 63) | 128, ((c >> 6) & 63) | 128, (c & 63) | 128); }
+          }
+          return new Uint8Array(out);
+        };
+        window.TextEncoder = TextEncoder;
+        function TextDecoder() {}
+        TextDecoder.prototype.decode = function(buf) {
+          var arr = new Uint8Array(buf), str = '', i = 0;
+          while (i < arr.length) {
+            var b = arr[i++];
+            if (b < 128) { str += String.fromCharCode(b); }
+            else if ((b & 224) === 192) { str += String.fromCharCode(((b & 31) << 6) | (arr[i++] & 63)); }
+            else if ((b & 240) === 224) { str += String.fromCharCode(((b & 15) << 12) | ((arr[i++] & 63) << 6) | (arr[i++] & 63)); }
+          }
+          return str;
+        };
+        window.TextDecoder = TextDecoder;
+      })();
+    }
+    if (typeof URLSearchParams === 'undefined') {
+      window.URLSearchParams = function(init) {
+        this._data = {};
+        var self = this;
+        if (typeof init === 'string') {
+          init.replace(/^\?/, '').split('&').forEach(function(pair) {
+            var kv = pair.split('=');
+            if (kv[0]) self._data[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || '');
+          });
+        }
+      };
+      URLSearchParams.prototype.get = function(k) { return this._data[k] !== undefined ? this._data[k] : null; };
+      URLSearchParams.prototype.set = function(k, v) { this._data[k] = String(v); };
+      URLSearchParams.prototype.has = function(k) { return k in this._data; };
+      URLSearchParams.prototype.toString = function() {
+        return Object.keys(this._data).map(function(k) { return encodeURIComponent(k) + '=' + encodeURIComponent(this._data[k]); }, this).join('&');
+      };
+    }
+    if (typeof AbortController === 'undefined') {
+      window.AbortController = function() { this.signal = { aborted: false, addEventListener: function(){} }; };
+      AbortController.prototype.abort = function() { this.signal.aborted = true; };
+    }
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ6G128MQ5"></script>
     <script>
