@@ -143,7 +143,7 @@ export default function RewardsPage() {
 
       {/* Badge expanded modal */}
       {expandedBadge && (
-        <div onClick={() => setExpandedBadge(null)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 300, padding: 24 }}>
+        <div onClick={() => setExpandedBadge(null)} style={{ position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 300, padding: 24 }}>
           <div onClick={e => e.stopPropagation()} style={{ background: 'var(--color-forest-dark)', border: `2px solid ${RARITY_COLORS[expandedBadge.rarity]}`, borderRadius: 24, padding: 32, maxWidth: 320, width: '100%', textAlign: 'center' }}>
             <div style={{ fontSize: '4rem', marginBottom: 16, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               {expandedBadge.img && BADGE_IMAGES[`../assets/badges/${expandedBadge.img}.png`]
@@ -160,7 +160,7 @@ export default function RewardsPage() {
 
       {/* Prize expanded modal */}
       {expandedPrize && (
-        <div onClick={() => setExpandedPrize(null)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.92)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', zIndex: 300, padding: 24 }}>
+        <div onClick={() => setExpandedPrize(null)} style={{ position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, background: 'rgba(0,0,0,0.92)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', zIndex: 300, padding: 24 }}>
           <img src={expandedPrize.image} alt={expandedPrize.name} style={{ maxWidth: '90vw', maxHeight: '70vh', objectFit: 'contain', borderRadius: 16, marginBottom: 20 }} />
           <h2 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginBottom: 8, textAlign: 'center' }}>{expandedPrize.name}</h2>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.85rem', marginBottom: 20 }}>{RARITY_LABEL[expandedPrize.rarity]}</p>
@@ -188,7 +188,7 @@ function PrizeGrid({ prizes, xp, onExpand }) {
                 style={{ width: '100%', height: '100%', objectFit: 'contain', filter: unlocked ? 'none' : 'brightness(0.1) blur(4px)' }}
               />
               {!unlocked && (
-                <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>🔒</div>
+                <div style={{ position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>🔒</div>
               )}
             </div>
             <div style={{ padding: '6px 8px' }}>

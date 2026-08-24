@@ -114,7 +114,7 @@ export default function PetHubPage() {
 
       {/* Name input modal */}
       {choosing && chosenId && (
-        <div style={{ background: 'rgba(0,0,0,0.6)', position: 'fixed', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
+        <div style={{ background: 'rgba(0,0,0,0.6)', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
           <div style={{ background: 'var(--color-forest-dark)', border: '2px solid var(--color-gold)', borderRadius: 20, padding: 28, maxWidth: 320, width: '100%', textAlign: 'center' }}>
             <img src={getArt(chosenId, 1, 'happy')} alt={chosenId} style={{ width: 100, height: 100, objectFit: 'contain', marginBottom: 12 }} />
             <h3 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginBottom: 8 }}>Name your {PET_SPECIES.find(s=>s.id===chosenId)?.name}!</h3>
@@ -137,7 +137,7 @@ export default function PetHubPage() {
 
       {/* Rename modal */}
       {renaming && (
-        <div style={{ background: 'rgba(0,0,0,0.6)', position: 'fixed', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
+        <div style={{ background: 'rgba(0,0,0,0.6)', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
           <div style={{ background: 'var(--color-forest-dark)', border: '2px solid var(--color-gold)', borderRadius: 20, padding: 28, maxWidth: 300, width: '100%', textAlign: 'center' }}>
             <h3 style={{ color: 'var(--color-gold)', marginBottom: 12 }}>Rename your pet 💛</h3>
             <input value={renameInput} onChange={e => setRenameInput(e.target.value)} maxLength={16}
@@ -245,7 +245,7 @@ export default function PetHubPage() {
       {showTopics && activePet && (() => {
         const sp = getSpecies(activePet.id)
         return (
-          <div style={{ background: 'rgba(0,0,0,0.7)', position: 'fixed', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
+          <div style={{ background: 'rgba(0,0,0,0.7)', position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
             <div style={{ background: 'var(--color-forest-dark)', border: '2px solid var(--color-gold)', borderRadius: 20, padding: 28, maxWidth: 340, width: '100%' }}>
               <div style={{ textAlign: 'center', marginBottom: 16 }}>
                 <img src={getArt(activePet.id, 1, 'happy')} alt={activePet.name} style={{ width: 80, height: 80, objectFit: 'contain' }} />

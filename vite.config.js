@@ -11,7 +11,7 @@ export default defineConfig({
     react(),
     // Transpile for older Safari / iPad (iOS 12+, Safari 12+)
     legacy({
-      targets: ['ios >= 12', 'safari >= 12', 'chrome >= 70'],
+      targets: ['ios >= 9', 'safari >= 9', 'chrome >= 49'],
       additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
     }),
     VitePWA({

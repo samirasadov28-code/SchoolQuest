@@ -524,7 +524,7 @@ export default function SessionPage() {
     <div className="bg-mythic" style={{ minHeight: '100vh', padding: '16px 16px 32px', maxWidth: 600, margin: '0 auto' }}>
       {/* Grace countdown overlay — shown after intro, before timer starts */}
       {graceCountdown > 0 && (
-        <div style={{ position: 'fixed', inset: 0, zIndex: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(15,10,30,0.85)', flexDirection: 'column', gap: 12 }}>
+        <div style={{ position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, zIndex: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(15,10,30,0.85)', flexDirection: 'column', gap: 12 }}>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '1rem' }}>Get ready…</p>
           <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'var(--color-gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.5rem', fontWeight: 900, color: '#1a1200', fontFamily: 'var(--font-title)' }}>
             {graceCountdown}
@@ -550,7 +550,7 @@ export default function SessionPage() {
 
       {/* Pause overlay */}
       {paused && (
-        <div style={{ position: 'fixed', inset: 0, background: 'rgba(10,6,20,0.97)', zIndex: 500, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 24 }}>
+        <div style={{ position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, background: 'rgba(10,6,20,0.97)', zIndex: 500, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 24 }}>
           <div style={{ fontSize: '3rem' }}>⏸</div>
           <h2 style={{ fontFamily: 'var(--font-title)', color: 'var(--color-gold)', fontSize: '1.6rem' }}>Paused</h2>
           <p style={{ color: 'var(--color-stone-light)', fontSize: '0.9rem' }}>Take a break — your progress is saved!</p>

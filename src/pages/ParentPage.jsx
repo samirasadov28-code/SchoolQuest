@@ -424,7 +424,7 @@ export default function ParentPage() {
 
       {/* Change PIN modal */}
       {showChangePIN && (
-        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', zIndex: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
+        <div style={{ position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, background: 'rgba(0,0,0,0.85)', zIndex: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
           <div style={{ background: '#1a1a2e', border: '2px solid rgba(201,162,39,0.4)', borderRadius: 20, padding: 28, width: '100%', maxWidth: 360 }}>
             <h2 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginBottom: 6 }}>🔐 Change Parent PIN</h2>
             <p style={{ color: 'var(--color-stone-light)', fontSize: '0.8rem', marginBottom: 20 }}>Enter your current PIN, then choose a new 4-digit PIN.</p>

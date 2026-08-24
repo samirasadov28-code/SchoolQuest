@@ -281,7 +281,7 @@ export default function DashboardPage() {
 
       {/* Parent PIN modal */}
       {showParentPIN && (
-        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
+        <div style={{ position: 'fixed', top: 0, right: 0, bottom: 0, left: 0, background: 'rgba(0,0,0,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100, padding: 20 }}>
           <div className="celtic-border" style={{ background: '#1a3a15', borderRadius: 'var(--radius-lg)', padding: 28, width: '100%', maxWidth: 340 }}>
             <h3 style={{ color: 'var(--color-gold)', fontFamily: 'var(--font-title)', marginBottom: 8, textAlign: 'center' }}>Parent Access</h3>
             <p style={{ color: 'var(--color-stone-light)', fontSize: '0.85rem', textAlign: 'center', marginBottom: 20 }}>Enter your 4-digit parent PIN</p>

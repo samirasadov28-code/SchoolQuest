@@ -76,7 +76,7 @@ export default function MapPage() {
       <div style={{ position: 'relative', maxWidth: 360, margin: '0 auto 20px', borderRadius: 16, overflow: 'hidden' }}>
         <img src={irelandMap} alt="Map of Ireland" style={{ width: '100%', display: 'block', borderRadius: 16 }} />
         {/* Province tap zones — positioned over approximate map regions */}
-        <div style={{ position: 'absolute', inset: 0 }}>
+        <div style={{ position: 'absolute', top: 0, right: 0, bottom: 0, left: 0 }}>
           {/* Ulster — top 30% */}
           <div onClick={() => setSelectedProvince(selectedProvince === 'ulster' ? null : 'ulster')}
             style={{ position: 'absolute', top: '2%', left: '20%', right: '10%', height: '28%', cursor: 'pointer',

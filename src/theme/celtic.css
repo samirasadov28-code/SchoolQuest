@@ -371,3 +371,18 @@ body {
     transition: none !important;
   }
 }
+
+/* ── iOS 9 / Safari 9 compatibility ── */
+/* Flexbox webkit prefixes for Safari 9 */
+.flex-col { display: -webkit-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; }
+
+/* grid fallback: on browsers without grid support, children stack vertically */
+@supports not (display: grid) {
+  [style*="display: grid"],
+  [style*="display:grid"] {
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
