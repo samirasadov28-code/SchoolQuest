@@ -176,13 +176,8 @@ export async function confirmPrize(prizeId) {
 // ── Leaderboard ───────────────────────────────────────────────
 
 export async function getLeaderboard() {
-  // Requires a Supabase RLS policy allowing authenticated users to SELECT all profiles:
-  //   create policy "leaderboard read" on profiles for select to authenticated using (true);
-  const { data, error } = await supabase
-    .from('profiles')
-    .select('id, name, xp, level, streak')
-    .order('xp', { ascending: false })
-    .limit(50)
+  // Only public ranking fields are returned; private profiles stay owner-only.
+  const { data, error } = await supabase.rpc('schoolquest_leaderboard')
   if (error) throw error
   return data ?? []
 }
